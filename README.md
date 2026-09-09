@@ -241,8 +241,447 @@ El análisis busca identificar las principales ventajas, debilidades y caracter�
 
 ### 2.1.1. Análisis competitivo
 
+Para comprender la posición preliminar de Livva Care frente a las alternativas existentes en el mercado, se desarrolló un **Competitive Analysis Landscape** considerando a SeguroSimple, QuePlan y Seguros Falabella.
+
+El análisis compara aspectos relacionados con el perfil de cada empresa, su mercado objetivo, estrategias de marketing, productos y servicios, precios, costos y canales de distribución.
+
+
+
+
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="6">Competitive Analysis Landscape</th>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <strong>¿Por qué llevar a cabo este análisis?</strong>
+      </td>
+      <td colspan="4">
+        ¿Cómo puede Livva Care posicionar a Livva como una alternativa
+        especializada en la intermediación y gestión digital de seguros
+        vehiculares y de vida frente a corredores y plataformas digitales
+        de seguros ya existentes en el mercado peruano?
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <strong>
+          (En la cabecera colocar por cada competidor nombre y logo)
+        </strong>
+      </td>
+      <th>
+        Livva Care<br>
+        <img
+          src="./assets/md-images-competitors/livva-care-logo.png"
+          alt="Livva Care"
+          width="90"
+        >
+      </th>
+      <th>
+        SeguroSimple<br>
+        <img
+          src="./assets/md-images-competitors/segurosimple-logo.png"
+          alt="SeguroSimple"
+          width="90"
+        >
+      </th>
+      <th>
+        QuePlan<br>
+        <img
+          src="./assets/md-images-competitors/queplan-logo.png"
+          alt="QuePlan"
+          width="90"
+        >
+      </th>
+      <th>
+        Seguros Falabella<br>
+        <img
+          src="./assets/md-images-competitors/seguros-falabella-logo.png"
+          alt="Seguros Falabella"
+          width="90"
+        >
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- PERFIL -->
+    <tr>
+      <th rowspan="2">Perfil</th>
+      <td>
+        <strong>Overview</strong>
+      </td>
+      <td>
+        Livva Care es una startup InsurTech peruana que desarrolla Livva,
+        una plataforma orientada a la intermediación digital de seguros
+        vehiculares y de vida. La propuesta busca centralizar procesos como
+        solicitud, contratación, consulta de pólizas, renovaciones y
+        acompañamiento ante siniestros, conectando a los usuarios con
+        compañías aseguradoras asociadas.
+      </td>
+      <td>
+        SeguroSimple es un corredor digital de seguros peruano especializado
+        principalmente en seguros vehiculares. Su plataforma permite cotizar
+        alternativas de diferentes aseguradoras y brinda asesoría antes,
+        durante y después de la contratación, incluyendo apoyo durante
+        siniestros y renovaciones (SeguroSimple.com, s.f.).
+      </td>
+      <td>
+        QuePlan es una plataforma digital orientada principalmente a la
+        comparación y contratación de seguros de salud y seguros para
+        empresas. Permite comparar productos de diferentes aseguradoras,
+        visualizar coberturas y precios y recibir orientación durante el
+        proceso de selección (QuePlan, s.f.).
+      </td>
+      <td>
+        Seguros Falabella comercializa diferentes categorías de seguros
+        mediante canales digitales y presenciales. Su oferta incluye seguros
+        vehiculares, seguros de vida, SOAT, viajes y otros productos
+        proporcionados por distintas compañías aseguradoras
+        (Seguros Falabella, s.f.).
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>Ventaja competitiva</strong><br>
+        ¿Qué valor ofrece a los clientes?
+      </td>
+      <td>
+        Livva Care busca diferenciarse mediante una experiencia especializada
+        inicialmente en seguros vehiculares y de vida, manteniendo continuidad
+        digital durante diferentes etapas del ciclo del seguro. Además,
+        incorpora una propuesta B2B para que las aseguradoras asociadas puedan
+        utilizar Livva como canal de distribución y seguimiento de operaciones.
+      </td>
+      <td>
+        Permite comparar alternativas de distintas aseguradoras para seguros
+        vehiculares y ofrece acompañamiento especializado durante el proceso
+        de cotización, contratación, siniestro y renovación. También comunica
+        una propuesta centrada en facilitar la elección y encontrar condiciones
+        competitivas para el cliente.
+      </td>
+      <td>
+        Permite comparar planes y coberturas de diferentes aseguradoras desde
+        una única plataforma. La propuesta destaca la comparación imparcial,
+        el acceso gratuito para el usuario y la posibilidad de recibir
+        orientación adicional cuando sea necesaria.
+      </td>
+      <td>
+        Combina una amplia variedad de productos aseguradores con el
+        reconocimiento y ecosistema comercial de Falabella. Además, ofrece
+        contratación digital de determinados productos y un portal en el que
+        los clientes pueden consultar seguros, realizar pagos y registrar
+        siniestros.
+      </td>
+    </tr>
+    <!-- PERFIL DE MARKETING -->
+    <tr>
+      <th rowspan="2">Perfil de Marketing</th>
+      <td>
+        <strong>Mercado objetivo</strong>
+      </td>
+      <td>
+        Propietarios de vehículos particulares interesados en seguros
+        vehiculares, personas interesadas en seguros de vida y compañías
+        aseguradoras que buscan canales digitales de distribución y gestión
+        de operaciones.
+      </td>
+      <td>
+        Principalmente propietarios y conductores de vehículos interesados
+        en comparar y contratar seguros vehiculares ofrecidos por diferentes
+        compañías aseguradoras.
+      </td>
+      <td>
+        Personas interesadas principalmente en seguros de salud y empresas
+        que requieren productos como EPS, SCTR, responsabilidad civil,
+        seguros colectivos y otras coberturas empresariales.
+      </td>
+      <td>
+        Consumidores del mercado peruano interesados en productos como
+        seguros vehiculares, seguros de vida, SOAT, seguros de viaje y otras
+        coberturas, incluyendo usuarios relacionados con el ecosistema
+        Falabella.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>Estrategias de marketing</strong>
+      </td>
+      <td>
+        Se plantea utilizar presencia digital, contenido educativo relacionado
+        con seguros vehiculares y de vida, comunicación clara sobre coberturas
+        y procesos, demostraciones de la plataforma y contacto comercial con
+        compañías aseguradoras para desarrollar alianzas B2B.
+      </td>
+      <td>
+        Utiliza la cotización gratuita como mecanismo de captación, comunica
+        la posibilidad de comparar aseguradoras y enfatiza elementos como
+        ahorro, rapidez y asesoría especializada durante el proceso.
+      </td>
+      <td>
+        Utiliza herramientas de comparación, contenido educativo,
+        posicionamiento digital y comunicación basada en facilidad,
+        transparencia y gratuidad para captar usuarios interesados en seguros.
+      </td>
+      <td>
+        Utiliza campañas digitales, promociones, beneficios comerciales,
+        presencia dentro del ecosistema Falabella y canales complementarios
+        como web, atención telefónica y WhatsApp.
+      </td>
+    </tr>
+    <!-- PERFIL DE PRODUCTO -->
+    <tr>
+      <th rowspan="3">Perfil de Producto</th>
+      <td>
+        <strong>Productos &amp; Servicios</strong>
+      </td>
+      <td>
+        Livva plantea ofrecer intermediación digital de seguros vehiculares y
+        de vida, registro y seguimiento de solicitudes, consulta de pólizas,
+        gestión de beneficiarios, recordatorios de renovación, acompañamiento
+        ante siniestros y herramientas de gestión para compañías aseguradoras
+        asociadas.
+      </td>
+      <td>
+        Cotización y comparación de seguros vehiculares de diferentes
+        aseguradoras, acompañamiento durante la contratación, orientación
+        frente a siniestros y soporte durante el proceso de renovación.
+      </td>
+      <td>
+        Comparación y contratación de seguros de salud y soluciones dirigidas
+        a empresas, incluyendo EPS, SCTR, responsabilidad civil, vida ley,
+        accidentes personales y otros productos empresariales.
+      </td>
+      <td>
+        Seguros vehiculares, seguros de vida, SOAT, seguros de viaje,
+        protección de tarjetas y otros productos comercializados mediante
+        compañías aseguradoras asociadas.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>Precios &amp; Costos</strong>
+      </td>
+      <td>
+        El precio final de cada seguro dependerá de las condiciones
+        establecidas por la compañía aseguradora correspondiente. Livva Care
+        plantea obtener ingresos derivados de la intermediación y mediante
+        planes de suscripción B2B para compañías aseguradoras asociadas.
+      </td>
+      <td>
+        La cotización depende de factores como las características del
+        vehículo, perfil del conductor y compañía aseguradora seleccionada.
+        SeguroSimple indica que el proceso de cotización es gratuito para el
+        usuario y que los pagos se realizan directamente a la aseguradora.
+      </td>
+      <td>
+        Los precios dependen del seguro, cobertura, aseguradora y
+        características del usuario o empresa. QuePlan indica que el uso de
+        su plataforma de comparación no genera un costo para el usuario.
+      </td>
+      <td>
+        Los precios varían de acuerdo con el producto, las condiciones del
+        asegurado y la compañía aseguradora correspondiente. Determinados
+        productos pueden incluir promociones o beneficios asociados al
+        ecosistema Falabella.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>Canales de distribución</strong><br>
+        (Web y/o Móvil)
+      </td>
+      <td>
+        Landing Page y Web Application responsive accesibles mediante
+        Internet.
+      </td>
+      <td>
+        Plataforma web complementada con atención telefónica y asesoría
+        durante el proceso de contratación.
+      </td>
+      <td>
+        Plataforma web y portal para clientes, complementados con canales
+        digitales y atención mediante asesores.
+      </td>
+      <td>
+        Plataforma web, portal de clientes, canales del ecosistema Falabella,
+        WhatsApp, atención telefónica y determinados puntos de atención
+        presenciales.
+      </td>
+    </tr>
+    <!-- SWOT -->
+    <tr>
+      <th colspan="2">Análisis SWOT</th>
+      <td colspan="4">
+        Se realiza el análisis para Livva Care y sus competidores. Las
+        fortalezas de Livva Care deben apoyar sus oportunidades y contribuir
+        a la posible ventaja competitiva de la propuesta.
+      </td>
+    </tr>
+    <tr>
+      <th rowspan="4">Análisis SWOT</th>
+      <td>
+        <strong>Fortalezas</strong>
+      </td>
+      <td>
+        <ul>
+          <li>Especialización inicial en seguros vehiculares y de vida.</li>
+          <li>Propuesta orientada a distintas etapas del ciclo del seguro.</li>
+          <li>Orientación tanto al asegurado como a las compañías aseguradoras.</li>
+          <li>Propuesta B2B mediante herramientas de gestión para aseguradoras.</li>
+          <li>Experiencia digital diseñada desde el inicio para canales web responsive.</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>Especialización y experiencia en seguros vehiculares.</li>
+          <li>Comparación entre distintas compañías aseguradoras.</li>
+          <li>Acompañamiento durante cotización, contratación, siniestro y renovación.</li>
+          <li>Proceso de cotización digital.</li>
+          <li>Posicionamiento previo dentro del mercado peruano.</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>Comparación de productos de diferentes aseguradoras.</li>
+          <li>Plataforma gratuita para el usuario.</li>
+          <li>Oferta tanto para personas como para empresas.</li>
+          <li>Proceso de comparación digital.</li>
+          <li>Presencia regional.</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>Reconocimiento de la marca Falabella.</li>
+          <li>Amplia variedad de productos aseguradores.</li>
+          <li>Acceso a diferentes compañías aseguradoras.</li>
+          <li>Portal digital para clientes.</li>
+          <li>Integración con un ecosistema comercial y financiero establecido.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>Debilidades</strong>
+      </td>
+      <td>
+        <ul>
+          <li>Startup nueva y todavía en etapa de desarrollo.</li>
+          <li>Ausencia inicial de reconocimiento de marca.</li>
+          <li>Dependencia de acuerdos con compañías aseguradoras.</li>
+          <li>Catálogo inicial limitado a seguros vehiculares y de vida.</li>
+          <li>Necesidad de validar la disposición de las aseguradoras para utilizar los planes B2B.</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>Su posicionamiento visible está fuertemente concentrado en seguros vehiculares.</li>
+          <li>La finalización de la contratación puede requerir participación de un asesor.</li>
+          <li>Parte de la experiencia depende posteriormente de los procesos de cada aseguradora.</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>Su propuesta actual está fuertemente orientada a salud y seguros empresariales.</li>
+          <li>Parte del valor de la plataforma se concentra en la comparación de productos.</li>
+          <li>La experiencia final también depende de las aseguradoras cuyos productos comercializa.</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>La amplitud de su catálogo reduce la especialización en seguros vehiculares y de vida.</li>
+          <li>La experiencia se distribuye entre diferentes productos y canales.</li>
+          <li>Parte de su diferenciación está vinculada al ecosistema Falabella.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>Oportunidades</strong>
+      </td>
+      <td>
+        <ul>
+          <li>Mayor adopción de canales digitales para contratar y gestionar seguros.</li>
+          <li>Interés de aseguradoras en ampliar sus canales digitales de distribución.</li>
+          <li>Digitalización de procesos tradicionalmente asistidos.</li>
+          <li>Incorporación progresiva de nuevas líneas de seguros.</li>
+          <li>Desarrollo de servicios tecnológicos B2B para aseguradoras.</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>Expandir sus procesos digitales posteriores a la contratación.</li>
+          <li>Incorporar nuevas categorías de seguros.</li>
+          <li>Incrementar funcionalidades de autoservicio.</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>Expandirse hacia nuevas categorías de seguros personales.</li>
+          <li>Incrementar servicios digitales autoservidos.</li>
+          <li>Ampliar productos dirigidos al mercado empresarial.</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>Aprovechar aún más la base de usuarios del ecosistema Falabella.</li>
+          <li>Incrementar los procesos completamente digitales.</li>
+          <li>Desarrollar experiencias más personalizadas.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>Amenazas</strong>
+      </td>
+      <td>
+        <ul>
+          <li>Presencia de corredores digitales ya consolidados.</li>
+          <li>Fortalecimiento de los canales digitales propios de las aseguradoras.</li>
+          <li>Dificultad inicial para construir confianza.</li>
+          <li>Entrada de nuevas soluciones InsurTech.</li>
+          <li>Restricciones y obligaciones regulatorias relacionadas con la intermediación de seguros.</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>Aseguradoras que fortalezcan sus canales de venta directa.</li>
+          <li>Nuevas plataformas InsurTech especializadas.</li>
+          <li>Mayor competencia en servicios digitales de comparación.</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>Competidores con mayor especialización en determinadas categorías.</li>
+          <li>Venta directa mediante plataformas de las aseguradoras.</li>
+          <li>Nuevos comparadores y corredores digitales.</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>InsurTechs con experiencias más especializadas y ágiles.</li>
+          <li>Mayor capacidad digital de las propias compañías aseguradoras.</li>
+          <li>Consumidores que prefieran contratar directamente con la aseguradora.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+El análisis SWOT evidencia que Livva Care se encuentra en una posición diferente a la de sus principales competidores debido a que se trata de una propuesta nueva que todavía debe desarrollar reconocimiento, confianza y relaciones con compañías aseguradoras.
+
+Esta condición representa una debilidad inicial frente a empresas que ya poseen experiencia, canales establecidos y relaciones comerciales dentro del sector. Sin embargo, también permite que Livva Care diseñe su propuesta desde el inicio alrededor de una experiencia digital especializada.
+
+Entre las principales oportunidades identificadas se encuentra la posibilidad de proporcionar una experiencia continua durante diferentes etapas del seguro y desarrollar herramientas B2B que permitan a las aseguradoras utilizar Livva como un canal adicional de distribución y seguimiento de operaciones.
+
+Por otra parte, una de las principales amenazas corresponde al fortalecimiento de los canales digitales propios de las aseguradoras y a la presencia de corredores digitales con mayor experiencia dentro del mercado.
+
+Las fortalezas y debilidades atribuidas a los competidores corresponden al análisis realizado a partir de las características observadas en sus propuestas digitales. Las oportunidades y amenazas representan una interpretación estratégica realizada por el equipo sobre el contexto competitivo.
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
+
 
 ## 2.2. Entrevistas
 
