@@ -283,7 +283,7 @@ El análisis compara aspectos relacionados con el perfil de cada empresa, su mer
       <th>
         SeguroSimple<br>
         <img
-          src="./assets/md-images-competitors/segurosimple-logo.png"
+          src="./assets/md-images-competitors/seguro-simple-logo.png"
           alt="SeguroSimple"
           width="90"
         >
@@ -291,7 +291,7 @@ El análisis compara aspectos relacionados con el perfil de cada empresa, su mer
       <th>
         QuePlan<br>
         <img
-          src="./assets/md-images-competitors/queplan-logo.png"
+          src="./assets/md-images-competitors/queplan-logo.PNG"
           alt="QuePlan"
           width="90"
         >
@@ -299,7 +299,7 @@ El análisis compara aspectos relacionados con el perfil de cada empresa, su mer
       <th>
         Seguros Falabella<br>
         <img
-          src="./assets/md-images-competitors/seguros-falabella-logo.png"
+          src="./assets/md-images-competitors/seguros-falabella-logo.PNG"
           alt="Seguros Falabella"
           width="90"
         >
