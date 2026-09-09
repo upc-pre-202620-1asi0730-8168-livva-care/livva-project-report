@@ -224,7 +224,65 @@ Livva se plantea como un bróker digital que facilita la interacción entre los 
 
 La solución está dirigida inicialmente a dos segmentos objetivo: propietarios de vehículos particulares interesados en seguros vehiculares y personas interesadas en contratar o gestionar seguros de vida.
 
-### 1.2.1. Antecedentes y problemática
+### 1.2.1. Antecedentes y Problemática
+
+La contratación y posterior gestión de un seguro puede involucrar distintas etapas, documentos, conceptos y canales de comunicación.
+
+En el caso de los seguros vehiculares, una persona debe buscar información, proporcionar datos sobre su vehículo, comprender las coberturas disponibles, revisar las condiciones de la póliza y conocer qué debe realizar ante un eventual accidente o siniestro.
+
+En los seguros de vida, el usuario debe comprender conceptos relacionados con la cobertura, el monto asegurado y los beneficiarios, además de mantener disponible la información de su póliza y conocer los procedimientos relacionados con una eventual solicitud de indemnización.
+
+Estas actividades pueden encontrarse distribuidas entre páginas web, documentos, correos electrónicos, llamadas telefónicas y otros canales de atención, dificultando que el usuario mantenga una visión clara y continua de la protección contratada.
+
+Livva propone abordar esta situación mediante una plataforma que centralice digitalmente las principales actividades correspondientes a la solicitud y posterior gestión de seguros vehiculares y de vida.
+
+#### Análisis preliminar mediante 5W2H
+
+##### What?
+**¿Qué sucede?**
+
+- La búsqueda, contratación y administración de seguros puede involucrar información, documentos y actividades distribuidos entre distintas etapas y canales, dificultando que los usuarios comprendan y gestionen de manera continua su protección.
+
+##### When
+**¿Cuándo ocurre?**
+
+- Durante diferentes momentos del ciclo de vida del seguro, como la búsqueda de información, cotización, solicitud, contratación, emisión, vigencia, renovación y atención de un siniestro o solicitud de indemnización.
+
+##### Where
+**¿Dónde ocurre?**
+
+- Inicialmente, el proyecto se plantea para el mercado peruano y para interacciones realizadas mediante canales digitales entre los usuarios, Livva y las compañías aseguradoras asociadas.
+
+##### Who
+**¿Quiénes están involucrados?**
+
+- Propietarios de vehículos particulares que tengan, hayan tenido o estén interesados en contratar un seguro vehicular.
+- Personas mayores de edad que tengan, hayan considerado o estén interesadas en contratar un seguro de vida para proteger económicamente a sus familiares o beneficiarios.
+
+Las compañías aseguradoras participan como entidades asociadas dentro del proceso de intermediación, pero no constituyen un segmento objetivo de la presente investigación.
+
+##### Why
+**¿Por qué es relevante?**
+
+- Porque la utilidad de un seguro no termina después de su contratación. Los usuarios necesitan comprender sus coberturas, consultar la información de sus pólizas, mantener determinados datos actualizados y conocer qué acciones realizar ante una renovación, siniestro o solicitud de indemnización.
+
+##### How?
+**¿Cómo se aborda el problema actualmente?**
+
+- Los usuarios recurren a compañías aseguradoras, corredores, páginas web y diferentes canales comerciales o de atención para buscar, contratar y posteriormente administrar sus seguros. Livva propone centralizar digitalmente las principales etapas correspondientes a la intermediación y acompañamiento dentro de una experiencia web.
+
+##### How Much
+**¿Cuál es el impacto?**
+
+- El impacto depende de factores como el tipo de seguro, la cobertura contratada, los canales utilizados y la experiencia particular de cada usuario. Durante las entrevistas se buscará identificar el nivel de tiempo, esfuerzo, dificultad y comprensión percibido por los dos segmentos objetivo en los procesos actuales, evitando establecer cifras sin evidencia.
+
+A partir del análisis preliminar, se identifica como principal oportunidad la creación de una experiencia digital que mantenga continuidad desde la búsqueda y solicitud de un seguro hasta su gestión posterior.
+
+Livva administrará la experiencia de intermediación, organización de información y acompañamiento digital, mientras que la compañía aseguradora asociada conservará responsabilidades como la evaluación correspondiente, emisión de la póliza y resolución final de las solicitudes de cobertura o indemnización.
+
+Como restricción del modelo de negocio, una operación real de Livva como corredor de seguros estaría sujeta al marco regulatorio peruano correspondiente. Para efectos del proyecto académico, no se implementarán procesos regulatorios, actuariales ni financieros propios de una compañía aseguradora.
+
+**Problema central:** las actividades relacionadas con la búsqueda, solicitud, contratación y posterior gestión de seguros vehiculares y de vida pueden encontrarse distribuidas entre diferentes procesos y canales, dificultando que los usuarios comprendan y administren su protección mediante una experiencia continua y centralizada.
 
 ### 1.2.2. Lean UX Process
 
