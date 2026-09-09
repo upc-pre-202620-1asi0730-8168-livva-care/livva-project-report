@@ -216,17 +216,231 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 ## 1.2. Solution Profile
 
-### 1.2.1. Antecedentes y problemática
+La solución propuesta por Livva consiste en una plataforma web orientada a facilitar la intermediación y gestión digital de seguros vehiculares y de vida.
+
+La experiencia busca acompañar al usuario durante diferentes etapas del ciclo del seguro, desde la búsqueda de información y solicitud inicial hasta la consulta y administración posterior de la póliza, incluyendo documentos, coberturas, beneficiarios, renovaciones y procesos relacionados con siniestros o solicitudes de indemnización.
+
+Livva se plantea como un bróker digital que facilita la interacción entre los usuarios y las compañías aseguradoras asociadas. Las aseguradoras mantienen responsabilidades como la evaluación correspondiente, emisión de pólizas y resolución de solicitudes de cobertura o indemnización, mientras que Livva concentra la experiencia digital de intermediación y acompañamiento.
+
+La solución está dirigida inicialmente a dos segmentos objetivo: propietarios de vehículos particulares interesados en seguros vehiculares y personas interesadas en contratar o gestionar seguros de vida.
+
+### 1.2.1. Antecedentes y Problemática
+
+La contratación y posterior gestión de un seguro puede involucrar distintas etapas, documentos, conceptos y canales de comunicación.
+
+En el caso de los seguros vehiculares, una persona debe buscar información, proporcionar datos sobre su vehículo, comprender las coberturas disponibles, revisar las condiciones de la póliza y conocer qué debe realizar ante un eventual accidente o siniestro.
+
+En los seguros de vida, el usuario debe comprender conceptos relacionados con la cobertura, el monto asegurado y los beneficiarios, además de mantener disponible la información de su póliza y conocer los procedimientos relacionados con una eventual solicitud de indemnización.
+
+Estas actividades pueden encontrarse distribuidas entre páginas web, documentos, correos electrónicos, llamadas telefónicas y otros canales de atención, dificultando que el usuario mantenga una visión clara y continua de la protección contratada.
+
+Livva propone abordar esta situación mediante una plataforma que centralice digitalmente las principales actividades correspondientes a la solicitud y posterior gestión de seguros vehiculares y de vida.
+
+#### Análisis preliminar mediante 5W2H
+
+##### What?
+**¿Qué sucede?**
+
+- La búsqueda, contratación y administración de seguros puede involucrar información, documentos y actividades distribuidos entre distintas etapas y canales, dificultando que los usuarios comprendan y gestionen de manera continua su protección.
+
+##### When
+**¿Cuándo ocurre?**
+
+- Durante diferentes momentos del ciclo de vida del seguro, como la búsqueda de información, cotización, solicitud, contratación, emisión, vigencia, renovación y atención de un siniestro o solicitud de indemnización.
+
+##### Where
+**¿Dónde ocurre?**
+
+- Inicialmente, el proyecto se plantea para el mercado peruano y para interacciones realizadas mediante canales digitales entre los usuarios, Livva y las compañías aseguradoras asociadas.
+
+##### Who
+**¿Quiénes están involucrados?**
+
+- Propietarios de vehículos particulares que tengan, hayan tenido o estén interesados en contratar un seguro vehicular.
+- Personas mayores de edad que tengan, hayan considerado o estén interesadas en contratar un seguro de vida para proteger económicamente a sus familiares o beneficiarios.
+
+Las compañías aseguradoras participan como entidades asociadas dentro del proceso de intermediación, pero no constituyen un segmento objetivo de la presente investigación.
+
+##### Why
+**¿Por qué es relevante?**
+
+- Porque la utilidad de un seguro no termina después de su contratación. Los usuarios necesitan comprender sus coberturas, consultar la información de sus pólizas, mantener determinados datos actualizados y conocer qué acciones realizar ante una renovación, siniestro o solicitud de indemnización.
+
+##### How?
+**¿Cómo se aborda el problema actualmente?**
+
+- Los usuarios recurren a compañías aseguradoras, corredores, páginas web y diferentes canales comerciales o de atención para buscar, contratar y posteriormente administrar sus seguros. Livva propone centralizar digitalmente las principales etapas correspondientes a la intermediación y acompañamiento dentro de una experiencia web.
+
+##### How Much
+**¿Cuál es el impacto?**
+
+- El impacto depende de factores como el tipo de seguro, la cobertura contratada, los canales utilizados y la experiencia particular de cada usuario. Durante las entrevistas se buscará identificar el nivel de tiempo, esfuerzo, dificultad y comprensión percibido por los dos segmentos objetivo en los procesos actuales, evitando establecer cifras sin evidencia.
+
+A partir del análisis preliminar, se identifica como principal oportunidad la creación de una experiencia digital que mantenga continuidad desde la búsqueda y solicitud de un seguro hasta su gestión posterior.
+
+Livva administrará la experiencia de intermediación, organización de información y acompañamiento digital, mientras que la compañía aseguradora asociada conservará responsabilidades como la evaluación correspondiente, emisión de la póliza y resolución final de las solicitudes de cobertura o indemnización.
+
+Como restricción del modelo de negocio, una operación real de Livva como corredor de seguros estaría sujeta al marco regulatorio peruano correspondiente. Para efectos del proyecto académico, no se implementarán procesos regulatorios, actuariales ni financieros propios de una compañía aseguradora.
+
+**Problema central:** las actividades relacionadas con la búsqueda, solicitud, contratación y posterior gestión de seguros vehiculares y de vida pueden encontrarse distribuidas entre diferentes procesos y canales, dificultando que los usuarios comprendan y administren su protección mediante una experiencia continua y centralizada.
 
 ### 1.2.2. Lean UX Process
 
+Para Livva se aplica el Lean UX Process con el propósito de establecer explícitamente las principales creencias relacionadas con el problema, los segmentos objetivo, los resultados esperados y las características propuestas antes de asumirlas como hechos comprobados.
+
+Estas creencias serán posteriormente contrastadas mediante las entrevistas realizadas a propietarios de vehículos particulares y personas interesadas en seguros de vida, así como mediante las posteriores actividades de validación del producto.
+
+El proceso considera Business Assumptions, Business Outcome Assumptions, User Assumptions, User Outcome and Benefit Assumptions y Feature Assumptions. A partir de los Feature Assumptions se establecen los respectivos Lean UX Hypothesis Statements.
+
 #### 1.2.2.1. Lean UX Problem Statements
+
+La situación actual de la intermediación digital de seguros se ha centrado principalmente en personas que buscan seguros vehiculares o de vida mediante procesos que pueden involucrar distintas etapas, canales de comunicación, documentos e interacciones para completar la contratación y gestionar posteriormente su póliza.
+
+Lo que los productos y servicios existentes no siempre logran abordar de manera integral es una experiencia digital continua que facilite tanto la comprensión y solicitud del seguro como la administración posterior de la información relacionada con la póliza, coberturas, beneficiarios, renovaciones y siniestros.
+
+Livva abordará esta oportunidad mediante una plataforma digital de corretaje de seguros que proporcione flujos especializados para seguros vehiculares y de vida, centralice la información relacionada con las pólizas y acompañe digitalmente al usuario durante diferentes etapas del ciclo de vida del seguro.
+
+Nuestro enfoque inicial se centrará en propietarios de vehículos particulares que tengan, hayan tenido o estén interesados en contratar un seguro vehicular y en personas mayores de edad que tengan, hayan considerado o estén interesadas en contratar un seguro de vida para proteger económicamente a sus familiares o beneficiarios.
+
+Sabremos que hemos tenido éxito cuando observemos que los usuarios completan los procesos digitales de solicitud mediante Livva, utilizan posteriormente la plataforma para consultar y gestionar la información relacionada con sus seguros y realizan oportunamente acciones vinculadas con sus pólizas, renovaciones, beneficiarios o siniestros.
 
 #### 1.2.2.2. Lean UX Assumptions
 
+##### Business Assumptions
+
+**BA01.** Creemos que existe una oportunidad de crear valor digitalizando no solamente la solicitud inicial de un seguro, sino también diferentes actividades relacionadas con la gestión posterior de la póliza.
+
+**BA02.** Consideramos que los seguros vehiculares y de vida poseen características suficientemente diferentes como para requerir flujos especializados, aunque pueden compartir funcionalidades como gestión de pólizas, documentación, notificaciones y asistencia relacionada con siniestros o indemnizaciones.
+
+**BA03.** Creemos que los usuarios valorarán una experiencia que centralice información actualmente consultada mediante diferentes documentos o canales.
+
+**BA04.** Creemos que el acompañamiento digital posterior a la contratación puede diferenciar a Livva de experiencias concentradas principalmente en la búsqueda o cotización inicial del seguro.
+
+**BA05.** Creemos que Livva puede desarrollar un modelo de negocio sostenible mediante los ingresos derivados de la intermediación de los seguros contratados a través de la plataforma.
+
+**BA06.** Creemos que comenzar con seguros vehiculares y de vida permitirá validar la propuesta de valor antes de incorporar nuevas categorías de seguros.
+
+##### Business Outcome Assumptions
+
+**BOA01.** Creemos que el éxito de Livva se reflejará en un porcentaje creciente de usuarios que completan una solicitud de seguro después de iniciar el flujo correspondiente.
+
+**BOA02.** Creemos que una reducción de solicitudes incompletas indicará que los procesos digitales guiados ayudan a los usuarios a proporcionar correctamente la información necesaria.
+
+**BOA03.** Creemos que el uso recurrente de funcionalidades relacionadas con pólizas, documentos, beneficiarios, renovaciones y siniestros indicará que Livva genera valor después de la contratación inicial.
+
+**BOA04.** Creemos que un aumento en la cantidad de usuarios que realizan oportunamente acciones relacionadas con sus pólizas indicará que las notificaciones y herramientas de seguimiento resultan útiles.
+
+**BOA05.** Creemos que un incremento progresivo de seguros solicitados y gestionados mediante Livva contribuirá a la sostenibilidad del modelo de intermediación.
+
+##### User Assumptions
+
+**UA01.** Creemos que los propietarios de vehículos particulares desean comprender las coberturas y condiciones de un seguro vehicular antes de completar su contratación.
+
+**UA02.** Creemos que los propietarios de vehículos valoran disponer de información clara sobre su póliza, documentos y coberturas desde un entorno digital centralizado.
+
+**UA03.** Creemos que los propietarios de vehículos que experimentan un accidente o siniestro necesitan orientación clara sobre los pasos, información y documentación requeridos.
+
+**UA04.** Creemos que las personas interesadas en seguros de vida pueden presentar dificultades para comprender conceptos como cobertura, monto asegurado y beneficiarios.
+
+**UA05.** Creemos que los usuarios de seguros de vida valoran poder consultar y mantener actualizada la información relacionada con sus beneficiarios.
+
+**UA06.** Creemos que los usuarios de ambos segmentos valoran recibir recordatorios sobre vencimientos, renovaciones, información pendiente u otras acciones relacionadas con sus seguros.
+
+**UA07.** Creemos que los usuarios de ambos segmentos valoran tener sus pólizas, documentos y coberturas disponibles dentro de una misma plataforma.
+
+##### User Outcome and Benefit Assumptions
+
+**UOBA01.** Los propietarios de vehículos desean completar la solicitud de un seguro comprendiendo claramente la información requerida, las coberturas disponibles y las características de la protección seleccionada.
+
+**UOBA02.** Los propietarios de vehículos desean consultar fácilmente su póliza, documentos y coberturas y recibir orientación cuando ocurre un accidente o siniestro.
+
+**UOBA03.** Las personas interesadas en seguros de vida desean comprender conceptos como cobertura, monto asegurado y beneficiarios antes de tomar una decisión de contratación.
+
+**UOBA04.** Los usuarios de seguros de vida desean registrar, consultar y mantener actualizada la información de sus beneficiarios con facilidad.
+
+**UOBA05.** Los usuarios de ambos segmentos desean disponer de información centralizada sobre sus seguros sin tener que reconstruir su historial mediante diferentes canales.
+
+**UOBA06.** Los usuarios de ambos segmentos desean recibir información oportuna cuando deban realizar acciones relacionadas con la vigencia o gestión de sus seguros.
+
+##### Feature Assumptions
+
+**FA01.** Creemos que un flujo guiado para el registro del vehículo y la solicitud de seguro ayudará a los propietarios de vehículos a proporcionar correctamente la información necesaria y comprender mejor el proceso.
+
+**FA02.** Creemos que un flujo guiado para la solicitud de seguro de vida, incluyendo información sobre cobertura, monto asegurado y beneficiarios, facilitará la comprensión y finalización del proceso.
+
+**FA03.** Creemos que un espacio centralizado para consultar pólizas, documentos y coberturas facilitará a los usuarios la administración de sus seguros.
+
+**FA04.** Creemos que una funcionalidad digital para consultar y actualizar beneficiarios permitirá a los usuarios de seguros de vida mantener esta información con mayor facilidad.
+
+**FA05.** Creemos que un flujo guiado de asistencia ante siniestros o solicitudes de indemnización ayudará a los usuarios a comprender qué información, documentación y pasos son necesarios durante estos procesos.
+
+**FA06.** Creemos que las notificaciones proactivas sobre vencimientos, renovaciones, información pendiente y cambios de estado ayudarán a los usuarios a realizar oportunamente las acciones relacionadas con sus seguros.
+
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
+##### HS01 — Solicitud guiada de seguro vehicular
+
+Creemos que lograremos una mayor tasa de finalización de solicitudes de seguro vehicular.
+
+Si los propietarios de vehículos particulares
+
+Obtienen una experiencia de solicitud más clara y estructurada
+
+Con un flujo guiado para el registro del vehículo y la solicitud del seguro.
+
+##### HS02 — Solicitud guiada de seguro de vida
+
+Creemos que lograremos una mayor tasa de finalización de solicitudes de seguro de vida.
+
+Si las personas interesadas en seguros de vida
+
+Obtienen mayor claridad sobre la cobertura, el monto asegurado y la información de sus beneficiarios
+
+Con un flujo guiado para la solicitud de seguro de vida.
+
+##### HS03 — Gestión centralizada de pólizas
+
+Creemos que lograremos una mayor interacción de los usuarios con Livva después de la contratación.
+
+Si los usuarios que poseen un seguro activo
+
+Obtienen acceso centralizado a sus pólizas, documentos y coberturas
+
+Con un espacio digital para la gestión de sus seguros.
+
+##### HS04 — Gestión de beneficiarios
+
+Creemos que lograremos reducir la dificultad asociada con la consulta y actualización de información de beneficiarios.
+
+Si los usuarios que poseen un seguro de vida
+
+Obtienen mayor control sobre la información de sus beneficiarios
+
+Con una funcionalidad digital para consultar y actualizar beneficiarios.
+
+##### HS05 — Asistencia ante siniestros e indemnizaciones
+
+Creemos que lograremos que un mayor porcentaje de solicitudes relacionadas con siniestros o indemnizaciones sea registrado con la información requerida.
+
+Si los usuarios que necesitan iniciar uno de estos procesos
+
+Obtienen orientación clara sobre la información, documentación y pasos necesarios
+
+Con un flujo guiado de asistencia y seguimiento.
+
+##### HS06 — Notificaciones proactivas
+
+Creemos que lograremos una mayor cantidad de acciones realizadas oportunamente en relación con la gestión de los seguros.
+
+Si los usuarios con seguros activos
+
+Obtienen información oportuna sobre vencimientos, renovaciones, información pendiente y cambios de estado
+
+Con notificaciones proactivas y alertas dentro de Livva.
+
 #### 1.2.2.4. Lean UX Canvas
+
+![](./assets/md-images-lean-ux-canva/lean-ux-canvas.PNG)
 
 ## 1.3. Segmentos objetivo
 
