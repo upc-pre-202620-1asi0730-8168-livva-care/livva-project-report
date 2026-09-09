@@ -216,6 +216,14 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 ## 1.2. Solution Profile
 
+La solución propuesta por Livva consiste en una plataforma web orientada a facilitar la intermediación y gestión digital de seguros vehiculares y de vida.
+
+La experiencia busca acompañar al usuario durante diferentes etapas del ciclo del seguro, desde la búsqueda de información y solicitud inicial hasta la consulta y administración posterior de la póliza, incluyendo documentos, coberturas, beneficiarios, renovaciones y procesos relacionados con siniestros o solicitudes de indemnización.
+
+Livva se plantea como un bróker digital que facilita la interacción entre los usuarios y las compañías aseguradoras asociadas. Las aseguradoras mantienen responsabilidades como la evaluación correspondiente, emisión de pólizas y resolución de solicitudes de cobertura o indemnización, mientras que Livva concentra la experiencia digital de intermediación y acompañamiento.
+
+La solución está dirigida inicialmente a dos segmentos objetivo: propietarios de vehículos particulares interesados en seguros vehiculares y personas interesadas en contratar o gestionar seguros de vida.
+
 ### 1.2.1. Antecedentes y problemática
 
 ### 1.2.2. Lean UX Process
