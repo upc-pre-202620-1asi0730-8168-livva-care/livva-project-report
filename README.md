@@ -440,6 +440,8 @@ Con notificaciones proactivas y alertas dentro de Livva.
 
 #### 1.2.2.4. Lean UX Canvas
 
+![](./assets/md-images-lean-ux-canva/lean-ux-canvas.PNG)
+
 ## 1.3. Segmentos objetivo
 
 # Capítulo II: Requirements Elicitation & Analysis
