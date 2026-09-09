@@ -286,7 +286,23 @@ Como restricción del modelo de negocio, una operación real de Livva como corre
 
 ### 1.2.2. Lean UX Process
 
+Para Livva se aplica el Lean UX Process con el propósito de establecer explícitamente las principales creencias relacionadas con el problema, los segmentos objetivo, los resultados esperados y las características propuestas antes de asumirlas como hechos comprobados.
+
+Estas creencias serán posteriormente contrastadas mediante las entrevistas realizadas a propietarios de vehículos particulares y personas interesadas en seguros de vida, así como mediante las posteriores actividades de validación del producto.
+
+El proceso considera Business Assumptions, Business Outcome Assumptions, User Assumptions, User Outcome and Benefit Assumptions y Feature Assumptions. A partir de los Feature Assumptions se establecen los respectivos Lean UX Hypothesis Statements.
+
 #### 1.2.2.1. Lean UX Problem Statements
+
+La situación actual de la intermediación digital de seguros se ha centrado principalmente en personas que buscan seguros vehiculares o de vida mediante procesos que pueden involucrar distintas etapas, canales de comunicación, documentos e interacciones para completar la contratación y gestionar posteriormente su póliza.
+
+Lo que los productos y servicios existentes no siempre logran abordar de manera integral es una experiencia digital continua que facilite tanto la comprensión y solicitud del seguro como la administración posterior de la información relacionada con la póliza, coberturas, beneficiarios, renovaciones y siniestros.
+
+Livva abordará esta oportunidad mediante una plataforma digital de corretaje de seguros que proporcione flujos especializados para seguros vehiculares y de vida, centralice la información relacionada con las pólizas y acompañe digitalmente al usuario durante diferentes etapas del ciclo de vida del seguro.
+
+Nuestro enfoque inicial se centrará en propietarios de vehículos particulares que tengan, hayan tenido o estén interesados en contratar un seguro vehicular y en personas mayores de edad que tengan, hayan considerado o estén interesadas en contratar un seguro de vida para proteger económicamente a sus familiares o beneficiarios.
+
+Sabremos que hemos tenido éxito cuando observemos que los usuarios completan los procesos digitales de solicitud mediante Livva, utilizan posteriormente la plataforma para consultar y gestionar la información relacionada con sus seguros y realizan oportunamente acciones vinculadas con sus pólizas, renovaciones, beneficiarios o siniestros.
 
 #### 1.2.2.2. Lean UX Assumptions
 
