@@ -378,6 +378,66 @@ Sabremos que hemos tenido éxito cuando observemos que los usuarios completan lo
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
+##### HS01 — Solicitud guiada de seguro vehicular
+
+Creemos que lograremos una mayor tasa de finalización de solicitudes de seguro vehicular.
+
+Si los propietarios de vehículos particulares
+
+Obtienen una experiencia de solicitud más clara y estructurada
+
+Con un flujo guiado para el registro del vehículo y la solicitud del seguro.
+
+##### HS02 — Solicitud guiada de seguro de vida
+
+Creemos que lograremos una mayor tasa de finalización de solicitudes de seguro de vida.
+
+Si las personas interesadas en seguros de vida
+
+Obtienen mayor claridad sobre la cobertura, el monto asegurado y la información de sus beneficiarios
+
+Con un flujo guiado para la solicitud de seguro de vida.
+
+##### HS03 — Gestión centralizada de pólizas
+
+Creemos que lograremos una mayor interacción de los usuarios con Livva después de la contratación.
+
+Si los usuarios que poseen un seguro activo
+
+Obtienen acceso centralizado a sus pólizas, documentos y coberturas
+
+Con un espacio digital para la gestión de sus seguros.
+
+##### HS04 — Gestión de beneficiarios
+
+Creemos que lograremos reducir la dificultad asociada con la consulta y actualización de información de beneficiarios.
+
+Si los usuarios que poseen un seguro de vida
+
+Obtienen mayor control sobre la información de sus beneficiarios
+
+Con una funcionalidad digital para consultar y actualizar beneficiarios.
+
+##### HS05 — Asistencia ante siniestros e indemnizaciones
+
+Creemos que lograremos que un mayor porcentaje de solicitudes relacionadas con siniestros o indemnizaciones sea registrado con la información requerida.
+
+Si los usuarios que necesitan iniciar uno de estos procesos
+
+Obtienen orientación clara sobre la información, documentación y pasos necesarios
+
+Con un flujo guiado de asistencia y seguimiento.
+
+##### HS06 — Notificaciones proactivas
+
+Creemos que lograremos una mayor cantidad de acciones realizadas oportunamente en relación con la gestión de los seguros.
+
+Si los usuarios con seguros activos
+
+Obtienen información oportuna sobre vencimientos, renovaciones, información pendiente y cambios de estado
+
+Con notificaciones proactivas y alertas dentro de Livva.
+
 #### 1.2.2.4. Lean UX Canvas
 
 ## 1.3. Segmentos objetivo
