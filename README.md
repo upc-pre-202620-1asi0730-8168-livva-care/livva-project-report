@@ -680,8 +680,106 @@ Por otra parte, una de las principales amenazas corresponde al fortalecimiento d
 
 Las fortalezas y debilidades atribuidas a los competidores corresponden al análisis realizado a partir de las características observadas en sus propuestas digitales. Las oportunidades y amenazas representan una interpretación estratégica realizada por el equipo sobre el contexto competitivo.
 
+
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
+A partir del análisis competitivo realizado, Livva Care plantea las siguientes estrategias y tácticas preliminares para posicionar a Livva frente a las soluciones identificadas. Estas propuestas buscan aprovechar las oportunidades del mercado, utilizar las fortalezas de Livva, responder a las fortalezas de los competidores y aprovechar las limitaciones identificadas en sus propuestas.
+
+#### 1. Aprovechar la fortaleza: especialización en seguros vehiculares y de vida
+
+**Estrategia**
+
+Posicionar a Livva como una plataforma especializada inicialmente en la intermediación y gestión digital de seguros vehiculares y de vida, evitando competir únicamente mediante la cantidad de productos o compañías aseguradoras disponibles.
+
+La propuesta busca concentrarse en dos tipos de seguros y mantener una experiencia digital que acompañe al usuario durante diferentes etapas, desde la solicitud inicial hasta la consulta de pólizas, renovaciones y seguimiento de siniestros.
+
+**Tácticas**
+
+- **Flujos especializados por tipo de seguro:** diseñar procesos diferenciados para seguros vehiculares y seguros de vida, considerando la información y necesidades particulares de cada producto.
+- **Terminología clara:** utilizar conceptos propios del dominio asegurador de manera consistente, acompañados de explicaciones comprensibles para usuarios que no poseen conocimientos especializados.
+- **Gestión posterior a la contratación:** incorporar funcionalidades relacionadas con consulta de pólizas, beneficiarios, renovaciones, documentación y seguimiento de siniestros.
+- **Priorización del alcance:** concentrar las primeras versiones de Livva en las funcionalidades de mayor valor para los segmentos objetivo antes de incorporar nuevas categorías de seguros.
+- **Validación con usuarios:** utilizar las entrevistas y posteriormente las Validation Interviews para identificar cuáles de estas funcionalidades generan mayor valor.
+
+**Valor añadido**
+
+- Mayor adaptación de la experiencia a los seguros vehiculares y de vida.
+- Reducción de funcionalidades innecesarias durante las primeras etapas del producto.
+- Mayor continuidad entre la contratación y la gestión posterior del seguro.
+- Experiencia más clara para usuarios que requieren comprender coberturas, pólizas y procedimientos relacionados con sus seguros.
+
+#### 2. Aprovechar las debilidades de competidores: experiencias centradas en comparación y amplitud de productos
+
+**Estrategia**
+
+Diferenciar a Livva de plataformas cuya propuesta se concentra principalmente en comparar alternativas o comercializar una amplia variedad de productos, priorizando una experiencia especializada y continua durante el ciclo de vida del seguro.
+
+SeguroSimple concentra gran parte de su propuesta digital en la comparación y contratación de seguros vehiculares de distintas aseguradoras, aunque también brinda acompañamiento durante siniestros y renovaciones (SeguroSimple.com, s.f.). Por su parte, QuePlan utiliza la comparación de precios, coberturas y aseguradoras como uno de los principales elementos de su propuesta, especialmente en seguros de salud y productos dirigidos a empresas (QuePlan, s.f.).
+
+**Tácticas**
+
+- **Centralización de información:** mantener solicitudes, pólizas, beneficiarios, documentos, renovaciones y registros relacionados con siniestros dentro de una misma plataforma.
+- **Autoservicio digital:** permitir que el usuario consulte el estado de sus operaciones y actualice determinada información sin depender constantemente de la intervención de un asesor.
+- **Experiencia posterior a la contratación:** mantener funcionalidades útiles durante la vigencia de la póliza y no limitar la interacción al proceso inicial de cotización.
+- **Especialización antes que amplitud:** incorporar nuevas categorías de seguros únicamente cuando los productos iniciales hayan sido validados con los segmentos objetivo.
+- **Comunicación orientada a comprensión:** presentar coberturas y condiciones utilizando información estructurada y lenguaje comprensible.
+
+**Valor añadido**
+
+- Menor dispersión de información entre distintos canales y etapas.
+- Mayor capacidad de autoservicio para el usuario.
+- Utilidad de Livva después de finalizar la contratación.
+- Experiencia enfocada en comprender y gestionar la protección contratada, además de adquirirla.
+
+#### 3. Afrontar las fortalezas de competidores consolidados
+
+**Estrategia**
+
+Frente a la experiencia, reconocimiento y relaciones comerciales previamente establecidas por SeguroSimple, QuePlan y Seguros Falabella, Livva Care buscará construir confianza mediante especialización, transparencia, trazabilidad y una experiencia digital consistente.
+
+SeguroSimple se presenta como un corredor especializado en seguros vehiculares y trabaja con diferentes compañías aseguradoras, acompañando al usuario durante cotización, contratación, siniestro y renovación (SeguroSimple.com, s.f.). QuePlan permite comparar alternativas de diferentes compañías y comunica una propuesta basada en facilitar la comprensión y elección de los productos disponibles (QuePlan, s.f.). Seguros Falabella cuenta con una oferta amplia de seguros, incluyendo productos vehiculares y de vida, además de un portal en el que sus clientes pueden consultar seguros, realizar pagos y registrar siniestros (Seguros Falabella, s.f.).
+
+**Tácticas**
+
+- **Seguimiento de operaciones:** mostrar claramente al usuario el estado de solicitudes, pólizas, renovaciones y procesos relacionados con siniestros.
+- **Historial centralizado:** conservar información relevante sobre las operaciones realizadas mediante Livva.
+- **Transparencia de responsabilidades:** diferenciar claramente qué actividades corresponden a Livva como intermediario y cuáles corresponden a la compañía aseguradora.
+- **Experiencia consistente:** mantener coherencia de contenido, navegación y comunicación entre el Landing Page y la Web Application.
+- **Mejora basada en retroalimentación:** incorporar progresivamente cambios a partir de los resultados de Needfinding y Validation Interviews.
+
+**Valor añadido**
+
+- Mayor visibilidad sobre el estado de las operaciones relacionadas con el seguro.
+- Reducción de incertidumbre durante procesos que pueden involucrar distintas etapas.
+- Construcción progresiva de confianza mediante información clara y trazable.
+- Experiencia coherente durante los diferentes puntos de contacto digitales de Livva.
+
+#### 4. Aprovechar la oportunidad: canal digital B2B para compañías aseguradoras
+
+**Estrategia**
+
+Desarrollar una propuesta que genere valor no solamente para las personas que contratan seguros, sino también para las compañías aseguradoras que utilicen Livva como canal digital de distribución y gestión de operaciones.
+
+Las plataformas analizadas muestran públicamente una propuesta fuertemente orientada al consumidor final. SeguroSimple destaca la comparación y contratación de seguros vehiculares, QuePlan la comparación y elección de productos aseguradores, mientras que Seguros Falabella ofrece diferentes seguros mediante su ecosistema de canales digitales (SeguroSimple.com, s.f.; QuePlan, s.f.; Seguros Falabella, s.f.).
+
+Livva Care plantea aprovechar esta oportunidad mediante herramientas B2B destinadas a compañías aseguradoras asociadas.
+
+**Tácticas**
+
+- **Portal para aseguradoras:** proporcionar un espacio donde las compañías asociadas puedan consultar las operaciones generadas mediante Livva.
+- **Información estructurada:** registrar solicitudes mediante formatos consistentes que faciliten su posterior procesamiento.
+- **Seguimiento de operaciones:** permitir consultar estados y trazabilidad de las solicitudes originadas mediante la plataforma.
+- **Analítica básica:** proporcionar indicadores relacionados con solicitudes, productos y operaciones gestionadas mediante Livva.
+- **Planes de suscripción B2B:** plantear diferentes niveles de servicio según las capacidades ofrecidas a cada compañía aseguradora.
+- **Incorporación progresiva de aliados:** iniciar con un conjunto reducido de compañías y utilizar los resultados obtenidos para facilitar futuras alianzas.
+
+**Valor añadido**
+
+- Nuevo canal digital de distribución para las compañías aseguradoras asociadas.
+- Mayor trazabilidad de las operaciones originadas mediante Livva.
+- Información organizada para facilitar la gestión de solicitudes.
+- Posibilidad de desarrollar una relación comercial recurrente mediante planes B2B.
+- Diferenciación de Livva mediante una propuesta orientada simultáneamente al usuario final y a las compañías aseguradoras.
 
 ## 2.2. Entrevistas
 
