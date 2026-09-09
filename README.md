@@ -907,4 +907,16 @@ Livva Care plantea aprovechar esta oportunidad mediante herramientas B2B destina
 
 # Bibliografía
 
+QuePlan. (s.f.-a). *Seguros de salud: compara y ahorra*. https://queplan.pe/Comparar/Seguros-de-Salud
+
+QuePlan. (s.f.-b). *Seguros EPS para empresas: compara y ahorra*. https://queplan.pe/Comparar/EPS/Empresa
+
+SeguroSimple.com. (s.f.). *Seguro vehicular: cotiza y compara los mejores precios*. https://www.segurosimple.com/pe/Seguro-Vehicular
+
+Seguros Falabella. (s.f.-a). *Acceso clientes*. https://clientes.segurosfalabella.com.pe/
+
+Seguros Falabella. (s.f.-b). *Seguro vehicular full cobertura*. https://auto.segurosfalabella.com.pe/
+
+Seguros Falabella. (s.f.-c). *Seguros de vida*. https://www.segurosfalabella.com.pe/seguros-de-vida
+
 # Anexos
