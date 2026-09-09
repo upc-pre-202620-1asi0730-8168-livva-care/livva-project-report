@@ -233,8 +233,14 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 # Capítulo II: Requirements Elicitation & Analysis
 
 ## 2.1. Competidores
+Livva Care participa en el sector InsurTech y de corretaje digital de seguros en el mercado peruano. Para el análisis competitivo se han seleccionado tres empresas con propuestas digitales relacionadas con la intermediación y comercialización de seguros: **SeguroSimple, QuePlan y Seguros Falabella**.
+
+SeguroSimple y QuePlan constituyen competidores directos debido a que utilizan plataformas digitales para intermediar productos de diferentes compañías aseguradoras y brindar asesoría durante el proceso de contratación. Seguros Falabella también representa una competencia relevante debido a su oferta digital de seguros vehiculares y de vida, así como por el respaldo del ecosistema comercial y financiero de Falabella.
+
+El análisis busca identificar las principales ventajas, debilidades y características de estas propuestas para establecer oportunidades de diferenciación para Livva Care.
 
 ### 2.1.1. Análisis competitivo
+
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
