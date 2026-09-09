@@ -306,6 +306,20 @@ Sabremos que hemos tenido éxito cuando observemos que los usuarios completan lo
 
 #### 1.2.2.2. Lean UX Assumptions
 
+##### Business Assumptions
+
+**BA01.** Creemos que existe una oportunidad de crear valor digitalizando no solamente la solicitud inicial de un seguro, sino también diferentes actividades relacionadas con la gestión posterior de la póliza.
+
+**BA02.** Consideramos que los seguros vehiculares y de vida poseen características suficientemente diferentes como para requerir flujos especializados, aunque pueden compartir funcionalidades como gestión de pólizas, documentación, notificaciones y asistencia relacionada con siniestros o indemnizaciones.
+
+**BA03.** Creemos que los usuarios valorarán una experiencia que centralice información actualmente consultada mediante diferentes documentos o canales.
+
+**BA04.** Creemos que el acompañamiento digital posterior a la contratación puede diferenciar a Livva de experiencias concentradas principalmente en la búsqueda o cotización inicial del seguro.
+
+**BA05.** Creemos que Livva puede desarrollar un modelo de negocio sostenible mediante los ingresos derivados de la intermediación de los seguros contratados a través de la plataforma.
+
+**BA06.** Creemos que comenzar con seguros vehiculares y de vida permitirá validar la propuesta de valor antes de incorporar nuevas categorías de seguros.
+
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
 #### 1.2.2.4. Lean UX Canvas
