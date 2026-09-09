@@ -320,6 +320,62 @@ Sabremos que hemos tenido éxito cuando observemos que los usuarios completan lo
 
 **BA06.** Creemos que comenzar con seguros vehiculares y de vida permitirá validar la propuesta de valor antes de incorporar nuevas categorías de seguros.
 
+##### Business Outcome Assumptions
+
+**BOA01.** Creemos que el éxito de Livva se reflejará en un porcentaje creciente de usuarios que completan una solicitud de seguro después de iniciar el flujo correspondiente.
+
+**BOA02.** Creemos que una reducción de solicitudes incompletas indicará que los procesos digitales guiados ayudan a los usuarios a proporcionar correctamente la información necesaria.
+
+**BOA03.** Creemos que el uso recurrente de funcionalidades relacionadas con pólizas, documentos, beneficiarios, renovaciones y siniestros indicará que Livva genera valor después de la contratación inicial.
+
+**BOA04.** Creemos que un aumento en la cantidad de usuarios que realizan oportunamente acciones relacionadas con sus pólizas indicará que las notificaciones y herramientas de seguimiento resultan útiles.
+
+**BOA05.** Creemos que un incremento progresivo de seguros solicitados y gestionados mediante Livva contribuirá a la sostenibilidad del modelo de intermediación.
+
+##### User Assumptions
+
+**UA01.** Creemos que los propietarios de vehículos particulares desean comprender las coberturas y condiciones de un seguro vehicular antes de completar su contratación.
+
+**UA02.** Creemos que los propietarios de vehículos valoran disponer de información clara sobre su póliza, documentos y coberturas desde un entorno digital centralizado.
+
+**UA03.** Creemos que los propietarios de vehículos que experimentan un accidente o siniestro necesitan orientación clara sobre los pasos, información y documentación requeridos.
+
+**UA04.** Creemos que las personas interesadas en seguros de vida pueden presentar dificultades para comprender conceptos como cobertura, monto asegurado y beneficiarios.
+
+**UA05.** Creemos que los usuarios de seguros de vida valoran poder consultar y mantener actualizada la información relacionada con sus beneficiarios.
+
+**UA06.** Creemos que los usuarios de ambos segmentos valoran recibir recordatorios sobre vencimientos, renovaciones, información pendiente u otras acciones relacionadas con sus seguros.
+
+**UA07.** Creemos que los usuarios de ambos segmentos valoran tener sus pólizas, documentos y coberturas disponibles dentro de una misma plataforma.
+
+##### User Outcome and Benefit Assumptions
+
+**UOBA01.** Los propietarios de vehículos desean completar la solicitud de un seguro comprendiendo claramente la información requerida, las coberturas disponibles y las características de la protección seleccionada.
+
+**UOBA02.** Los propietarios de vehículos desean consultar fácilmente su póliza, documentos y coberturas y recibir orientación cuando ocurre un accidente o siniestro.
+
+**UOBA03.** Las personas interesadas en seguros de vida desean comprender conceptos como cobertura, monto asegurado y beneficiarios antes de tomar una decisión de contratación.
+
+**UOBA04.** Los usuarios de seguros de vida desean registrar, consultar y mantener actualizada la información de sus beneficiarios con facilidad.
+
+**UOBA05.** Los usuarios de ambos segmentos desean disponer de información centralizada sobre sus seguros sin tener que reconstruir su historial mediante diferentes canales.
+
+**UOBA06.** Los usuarios de ambos segmentos desean recibir información oportuna cuando deban realizar acciones relacionadas con la vigencia o gestión de sus seguros.
+
+##### Feature Assumptions
+
+**FA01.** Creemos que un flujo guiado para el registro del vehículo y la solicitud de seguro ayudará a los propietarios de vehículos a proporcionar correctamente la información necesaria y comprender mejor el proceso.
+
+**FA02.** Creemos que un flujo guiado para la solicitud de seguro de vida, incluyendo información sobre cobertura, monto asegurado y beneficiarios, facilitará la comprensión y finalización del proceso.
+
+**FA03.** Creemos que un espacio centralizado para consultar pólizas, documentos y coberturas facilitará a los usuarios la administración de sus seguros.
+
+**FA04.** Creemos que una funcionalidad digital para consultar y actualizar beneficiarios permitirá a los usuarios de seguros de vida mantener esta información con mayor facilidad.
+
+**FA05.** Creemos que un flujo guiado de asistencia ante siniestros o solicitudes de indemnización ayudará a los usuarios a comprender qué información, documentación y pasos son necesarios durante estos procesos.
+
+**FA06.** Creemos que las notificaciones proactivas sobre vencimientos, renovaciones, información pendiente y cambios de estado ayudarán a los usuarios a realizar oportunamente las acciones relacionadas con sus seguros.
+
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
 #### 1.2.2.4. Lean UX Canvas
