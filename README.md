@@ -997,7 +997,114 @@ Livva Care plantea aprovechar esta oportunidad mediante herramientas B2B destina
 
 ## 2.2. Entrevistas
 
+Con el propósito de comprender mejor las necesidades, dificultades y comportamientos de los potenciales usuarios de Livva, se realizarán entrevistas a personas que formen parte de los dos segmentos objetivo definidos para el proyecto.
+
+Estas entrevistas permitirán obtener información cualitativa sobre la forma en que los usuarios buscan, contratan y administran actualmente sus seguros, así como identificar dificultades relacionadas con la comprensión de coberturas, documentación, renovaciones, beneficiarios y atención ante siniestros.
+
+Los resultados obtenidos servirán para contrastar las suposiciones planteadas previamente durante el Lean UX Process y determinar cuáles de las funcionalidades propuestas para Livva generan mayor valor para los usuarios.
+
+Los segmentos seleccionados para las entrevistas son:
+
+- Propietarios de vehículos particulares interesados en seguros vehiculares.
+- Personas interesadas en contratar o gestionar seguros de vida.
+
 ### 2.2.1. Diseño de entrevistas
+
+Para la investigación se utilizarán entrevistas semiestructuradas. Se contará con una serie de preguntas previamente definidas para cada segmento, pero se podrán realizar preguntas adicionales dependiendo de las respuestas y experiencias compartidas por cada entrevistado.
+
+El objetivo principal será conocer situaciones reales relacionadas con la contratación y gestión de seguros, evitando limitar las respuestas únicamente a las funcionalidades propuestas por Livva.
+
+De esta manera, se buscará identificar problemas, necesidades, comportamientos y oportunidades que posteriormente puedan utilizarse durante el proceso de Needfinding y en la definición de los requerimientos del producto.
+
+---
+
+#### Segmento Objetivo 1: Propietarios de vehículos particulares
+
+**Perfil del entrevistado:**
+
+Personas mayores de edad que posean un automóvil o camioneta particular y que actualmente cuenten con un seguro vehicular, hayan tenido uno anteriormente o hayan considerado contratar uno.
+
+**Objetivo de la entrevista:**
+
+Comprender cómo los propietarios de vehículos buscan, seleccionan, contratan y gestionan sus seguros vehiculares, identificando dificultades relacionadas con las coberturas, documentación, renovaciones y atención frente a accidentes o siniestros.
+
+**Aspectos que se busca validar:**
+
+- Forma en que los usuarios buscan información sobre seguros vehiculares.
+- Nivel de comprensión de coberturas y condiciones.
+- Dificultades durante la contratación.
+- Forma actual de consultar pólizas y documentos.
+- Problemas durante la atención de accidentes o siniestros.
+- Necesidad de recordatorios y seguimiento.
+- Valor percibido de una plataforma centralizada.
+
+**Preguntas de entrevista:**
+
+1. ¿Actualmente tienes un seguro vehicular o has tenido uno anteriormente?
+
+2. Cuéntame cómo fue o cómo sería el proceso que seguirías para buscar un seguro para tu vehículo.
+
+3. ¿Qué información consideras más importante antes de decidir qué seguro contratar?
+
+4. ¿Has utilizado páginas web, aplicaciones o corredores para cotizar seguros? ¿Cómo fue tu experiencia?
+
+5. ¿Hubo alguna parte del proceso de contratación o de las coberturas que te resultara difícil de entender?
+
+6. Cuando necesitas revisar tu póliza, coberturas o documentos, ¿cómo lo haces actualmente?
+
+7. ¿Alguna vez tuviste que comunicarte con una aseguradora por un accidente o siniestro? ¿Cómo fue el proceso?
+
+8. ¿Has tenido algún problema relacionado con vencimientos, renovaciones o documentos pendientes?
+
+9. ¿Qué tan útil sería para ti tener tus pólizas, documentos, coberturas y estado de solicitudes en un mismo lugar?
+
+10. Si pudieras mejorar una sola cosa del proceso actual de contratación o gestión de tu seguro vehicular, ¿qué mejorarías?
+
+---
+
+#### Segmento Objetivo 2: Personas interesadas en seguros de vida
+
+**Perfil del entrevistado:**
+
+Personas mayores de edad que actualmente cuenten con un seguro de vida, hayan tenido uno, hayan considerado contratarlo o tengan interés en proteger económicamente a sus familiares o beneficiarios.
+
+**Objetivo de la entrevista:**
+
+Comprender el nivel de conocimiento de los usuarios sobre los seguros de vida, las dificultades que presentan para entender sus características y la forma en que administran información relacionada con pólizas, coberturas y beneficiarios.
+
+**Aspectos que se busca validar:**
+
+- Nivel de conocimiento sobre seguros de vida.
+- Dificultad para comprender conceptos del producto.
+- Factores considerados antes de contratar.
+- Forma de consulta de la póliza.
+- Gestión de beneficiarios.
+- Necesidad de recordatorios.
+- Valor percibido de centralizar la información.
+
+**Preguntas de entrevista:**
+
+1. ¿Actualmente tienes un seguro de vida o alguna vez has considerado contratar uno?
+
+2. ¿Qué entiendes por seguro de vida y para qué consideras que sirve?
+
+3. Si quisieras contratar uno, ¿dónde buscarías información antes de tomar una decisión?
+
+4. ¿Qué factores considerarías más importantes para elegir un seguro de vida?
+
+5. ¿Qué conceptos relacionados con un seguro de vida consideras difíciles de entender?
+
+6. Si ya cuentas con uno, ¿cómo consultas actualmente la información de tu póliza y cobertura?
+
+7. ¿Cómo se realiza actualmente la consulta o modificación de tus beneficiarios?
+
+8. ¿Has tenido dificultades para recordar pagos, vencimientos, renovaciones o información pendiente?
+
+9. ¿Qué tan útil sería para ti tener tu póliza, documentos, coberturas y beneficiarios organizados dentro de una sola plataforma?
+
+10. Si existiera una plataforma digital para gestionar tu seguro de vida, ¿qué función considerarías indispensable?
+
+---
 
 ### 2.2.2. Registro de entrevistas
 
@@ -1021,11 +1128,66 @@ Livva Care plantea aprovechar esta oportunidad mediante herramientas B2B destina
 
 ## 3.1. User Stories
 
-## 3.1. User Stories
+A partir de las necesidades identificadas para los segmentos objetivo de Livva, se definieron las siguientes User Stories. Estas representan las principales funcionalidades que tendrá la aplicación web.
+
+| ID | Título | User Story | Criterios de aceptación | Prioridad |
+|---|---|---|---|---|
+| US01 | Registro de usuario | Como usuario, quiero registrarme en Livva para poder acceder a las funcionalidades de la plataforma. | El usuario puede ingresar nombre, correo y contraseña. Se validan los campos obligatorios y se muestra una confirmación al completar el registro. | Alta |
+| US02 | Inicio de sesión | Como usuario registrado, quiero iniciar sesión para acceder a mi cuenta personal. | El usuario ingresa correo y contraseña. Si los datos son correctos, accede al panel principal. | Alta |
+| US03 | Cerrar sesión | Como usuario, quiero cerrar sesión para salir de manera segura de mi cuenta. | Al seleccionar cerrar sesión, se finaliza la sesión y el usuario regresa a la página principal o de inicio de sesión. | Alta |
+| US04 | Visualizar seguros disponibles | Como usuario, quiero visualizar los seguros disponibles para conocer las opciones ofrecidas por Livva. | Se muestran seguros vehiculares y de vida mediante tarjetas con información básica. | Alta |
+| US05 | Consultar detalle de seguro | Como usuario, quiero consultar los detalles de un seguro para conocer sus principales características antes de solicitarlo. | El usuario puede visualizar el tipo de seguro, descripción, principales coberturas y beneficios. | Alta |
+| US06 | Solicitar seguro vehicular | Como propietario de un vehículo, quiero registrar los datos de mi vehículo para solicitar un seguro vehicular. | El usuario completa los datos básicos del vehículo y recibe una confirmación después de enviar la solicitud. | Alta |
+| US07 | Solicitar seguro de vida | Como usuario, quiero completar una solicitud de seguro de vida para registrar mi interés en contratarlo. | El usuario ingresa sus datos principales, cobertura aproximada y beneficiario. El sistema confirma el registro. | Alta |
+| US08 | Consultar mis solicitudes | Como usuario, quiero visualizar las solicitudes de seguros que he realizado para conocer su estado. | Se muestra una lista con el tipo de seguro, fecha de solicitud y estado correspondiente. | Alta |
+| US09 | Consultar mis pólizas | Como usuario, quiero visualizar mis pólizas para consultar fácilmente los seguros que tengo registrados. | La plataforma muestra las pólizas con tipo, aseguradora, fechas de vigencia y estado. | Alta |
+| US10 | Consultar detalle de póliza | Como usuario, quiero consultar los detalles de una póliza para conocer sus coberturas y vigencia. | El usuario puede seleccionar una póliza y visualizar información ampliada sobre ella. | Media |
+| US11 | Gestionar beneficiarios | Como usuario con seguro de vida, quiero registrar y editar mis beneficiarios para mantener su información actualizada. | El usuario puede agregar, editar y eliminar beneficiarios mediante un formulario. | Media |
+| US12 | Visualizar recordatorios | Como usuario, quiero visualizar recordatorios relacionados con mis seguros para conocer fechas importantes. | La aplicación muestra alertas sobre vencimientos, renovaciones u otras fechas relacionadas con las pólizas. | Media |
+| US13 | Registrar un siniestro | Como usuario con seguro vehicular, quiero registrar información sobre un accidente para iniciar su seguimiento. | El usuario puede ingresar fecha, ubicación y descripción del accidente. Al enviar el formulario se registra el siniestro. | Media |
+| US14 | Consultar estado de siniestro | Como usuario, quiero consultar el estado de mis siniestros para conocer su avance. | La plataforma muestra los siniestros registrados y estados como pendiente, en revisión o finalizado. | Media |
+| US15 | Editar perfil | Como usuario, quiero modificar mis datos personales para mantener mi información actualizada. | El usuario puede editar datos como nombre, teléfono y dirección y guardar los cambios. | Media |
+| US16 | Consultar dashboard | Como usuario, quiero visualizar un resumen de mis seguros al ingresar para conocer rápidamente la información más importante. | El dashboard muestra cantidad de pólizas, solicitudes, próximos vencimientos y siniestros registrados. | Alta |
+| US17 | Buscar seguros | Como usuario, quiero buscar seguros por nombre o tipo para encontrar rápidamente una opción de mi interés. | El usuario puede ingresar un término de búsqueda y la lista de seguros se actualiza según la coincidencia. | Baja |
+| US18 | Filtrar seguros | Como usuario, quiero filtrar los seguros por categoría para visualizar únicamente los productos que me interesan. | El usuario puede elegir entre seguro vehicular y seguro de vida y visualizar los resultados correspondientes. | Baja |
+| US19 | Visualizar preguntas frecuentes | Como usuario, quiero consultar preguntas frecuentes para resolver dudas básicas sobre Livva y los seguros disponibles. | La plataforma presenta una sección de preguntas y respuestas organizadas por temas. | Baja |
+| US20 | Enviar consulta de soporte | Como usuario, quiero enviar una consulta desde la plataforma para solicitar ayuda cuando tenga alguna duda o inconveniente. | El usuario puede completar un formulario con asunto y mensaje. Al enviarlo se muestra una confirmación. | Baja |
 
 ## 3.2. Impact Mapping
 
 ## 3.3. Product Backlog
+
+El Product Backlog de Livva contiene las funcionalidades que serán desarrolladas dentro de la aplicación web. La priorización se realizó considerando primero las características necesarias para completar los principales flujos de la plataforma.
+
+Para calificar el esfuerzo se utiliza una escala de Story Points:
+
+- **1 punto:** muy sencillo.
+- **2 puntos:** sencillo.
+- **3 puntos:** dificultad media.
+- **5 puntos:** mayor cantidad de lógica.
+
+| Orden | ID | Épica | User Story | Prioridad | Story Points |
+|---:|---|---|---|---|---:|
+| 1 | US01 | Autenticación | Registro de usuario | Alta | 2 |
+| 2 | US02 | Autenticación | Inicio de sesión | Alta | 2 |
+| 3 | US03 | Autenticación | Cerrar sesión | Alta | 1 |
+| 4 | US04 | Seguros | Visualizar seguros disponibles | Alta | 2 |
+| 5 | US05 | Seguros | Consultar detalle de seguro | Alta | 2 |
+| 6 | US06 | Seguro vehicular | Solicitar seguro vehicular | Alta | 3 |
+| 7 | US07 | Seguro de vida | Solicitar seguro de vida | Alta | 3 |
+| 8 | US08 | Solicitudes | Consultar mis solicitudes | Alta | 2 |
+| 9 | US09 | Pólizas | Consultar mis pólizas | Alta | 3 |
+| 10 | US10 | Pólizas | Consultar detalle de póliza | Media | 2 |
+| 11 | US11 | Seguro de vida | Gestionar beneficiarios | Media | 3 |
+| 12 | US12 | Seguimiento | Visualizar recordatorios | Media | 2 |
+| 13 | US13 | Siniestros | Registrar un siniestro | Media | 3 |
+| 14 | US14 | Siniestros | Consultar estado de siniestro | Media | 2 |
+| 15 | US15 | Perfil | Editar perfil | Media | 2 |
+| 16 | US16 | Dashboard | Consultar dashboard | Alta | 3 |
+| 17 | US17 | Seguros | Buscar seguros | Baja | 1 |
+| 18 | US18 | Seguros | Filtrar seguros | Baja | 1 |
+| 19 | US19 | Soporte | Visualizar preguntas frecuentes | Baja | 1 |
+| 20 | US20 | Soporte | Enviar consulta de soporte | Baja | 2 |
 
 # Capítulo IV: Product Design
 
