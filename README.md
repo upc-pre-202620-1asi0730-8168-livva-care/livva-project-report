@@ -1066,6 +1066,21 @@ Los conceptos se encuentran agrupados por áreas del dominio. Esta clasificació
 | **Life Insurance Application** | Insurance Application presentada por una persona interesada en contratar un Life Insurance Product. |
 | **Application Status** | Estado actual de una Insurance Application durante su proceso de evaluación, por ejemplo pendiente, en evaluación, aprobada o rechazada. |
 
+### Policies and Coverage
+
+| Term | Definition |
+|---|---|
+| **Insurance Policy** | Contrato de seguro emitido por una Insurance Company que establece las condiciones, coberturas, vigencia y participantes del seguro contratado. |
+| **Vehicle Insurance Policy** | Insurance Policy correspondiente a un seguro vehicular y asociada a un Insured Vehicle. |
+| **Life Insurance Policy** | Insurance Policy correspondiente a un seguro de vida que establece la protección de una Insured Person y sus Beneficiaries. |
+| **Coverage** | Protección o conjunto de situaciones contempladas dentro de las condiciones de un Insurance Product o Insurance Policy. |
+| **Vehicle** | Vehículo particular registrado por un usuario dentro de Livva. |
+| **Insured Vehicle** | Vehicle que se encuentra cubierto por una Vehicle Insurance Policy. |
+| **Policy Document** | Documento asociado a una Insurance Policy que contiene o respalda información relacionada con sus condiciones, coberturas y vigencia. |
+| **Policy Expiration Date** | Fecha en la que finaliza la vigencia establecida de una Insurance Policy. |
+| **Renewal** | Proceso mediante el cual se busca extender la vigencia de una Insurance Policy próxima a vencer. |
+| **Renewal Request** | Solicitud iniciada por un Policyholder para comenzar el proceso de renovación de una Insurance Policy. |
+
 # Capítulo III: Requirements Specification
 
 ## 3.1. User Stories
