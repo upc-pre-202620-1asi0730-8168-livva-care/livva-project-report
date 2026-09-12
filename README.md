@@ -1092,6 +1092,17 @@ Los conceptos se encuentran agrupados por áreas del dominio. Esta clasificació
 | **Indemnity Request** | Solicitud presentada por un Beneficiary para iniciar el proceso correspondiente a la prestación de un seguro de vida después de un Covered Event. |
 | **Indemnity Status** | Estado que representa el progreso de una Indemnity Request durante su evaluación y resolución. |
 
+### Subscriptions and Payments
+
+| Term | Definition |
+|---|---|
+| **Subscription Plan** | Nivel de servicio ofrecido directamente por Livva que define un conjunto determinado de beneficios para sus usuarios. |
+| **Livva Subscription** | Relación de servicio entre un Registered User y Livva originada por la contratación de un Subscription Plan. Es independiente de cualquier Insurance Policy. |
+| **Subscription Status** | Estado actual de una Livva Subscription, por ejemplo activa, pendiente de activación o cancelada. |
+| **Subscription Payment** | Pago asociado exclusivamente con la contratación de un Subscription Plan de Livva. No representa el pago de una prima de seguro. |
+| **Subscription Activation** | Proceso mediante el cual el Subscription Plan seleccionado pasa a encontrarse activo para el usuario después de cumplirse las condiciones correspondientes. |
+| **Subscription Cancellation** | Proceso mediante el cual un usuario solicita finalizar su Livva Subscription. |
+
 # Capítulo III: Requirements Specification
 
 ## 3.1. User Stories
