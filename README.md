@@ -683,12 +683,13 @@ El análisis compara aspectos relacionados con el perfil de cada empresa, su mer
         ¿Qué valor ofrece a los clientes?
       </td>
       <td>
-        Livva Care busca diferenciarse mediante una experiencia especializada
-        inicialmente en seguros vehiculares y de vida, manteniendo continuidad
-        digital durante diferentes etapas del ciclo del seguro. Además,
-        incorpora una propuesta B2B para que las aseguradoras asociadas puedan
-        utilizar Livva como canal de distribución y seguimiento de operaciones.
-      </td>
+        Livva Care busca diferenciarse mediante una experiencia especializada 
+		inicialmente en seguros vehiculares y de vida, manteniendo continuidad
+		digital durante diferentes etapas del ciclo del seguro. La propuesta 
+		combina intermediación, gestión posterior de pólizas, acompañamiento ante
+		eventos relacionados con la cobertura y planes de suscripción propios que
+		permiten ofrecer distintos niveles de beneficios a los usuarios.
+	  </td>
       <td>
         Permite comparar alternativas de distintas aseguradoras para seguros
         vehiculares y ofrece acompañamiento especializado durante el proceso
