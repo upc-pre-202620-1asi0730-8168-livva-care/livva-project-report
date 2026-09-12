@@ -124,7 +124,7 @@ A continuación, se presenta el repositorio utilizado para la elaboración colab
         - [2.3.2. User Task Matrix](#232-user-task-matrix)
         - [2.3.3. User Journey Mapping](#233-user-journey-mapping)
         - [2.3.4. Empathy Mapping](#234-empathy-mapping)
-    - [2.4. Big Picture Event Storming](#24-big-picture-event-storming)
+    - [2.4. Big Picture Event Storming](#24-big-picture-eventstorming)
     - [2.5. Ubiquitous Language](#25-ubiquitous-language)
 - [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
     - [3.1. User Stories](#31-user-stories)
@@ -1013,7 +1013,23 @@ Livva Care plantea aprovechar esta oportunidad mediante herramientas B2B destina
 
 ### 2.3.4. Empathy Mapping
 
-## 2.4. Big Picture Event Storming
+## 2.4. Big Picture EventStorming
+
+El Big Picture EventStorming de Livva fue elaborado colaborativamente con el objetivo de comprender el dominio general de la intermediación y gestión digital de seguros vehiculares y de vida. Durante la sesión se identificaron los principales eventos de negocio que ocurren desde la solicitud de un seguro hasta la gestión posterior de pólizas, renovaciones, siniestros, indemnizaciones y suscripciones.
+
+El modelado se desarrolló desde una perspectiva de negocio, identificando Domain Events, actores, sistemas externos, reglas de negocio y hotspots. Se evitó incorporar elementos técnicos propios del diseño de software, debido a que estos serán desarrollados posteriormente en el Design-Level EventStorming.
+
+### Big Picture EventStorming
+
+![Livva Big Picture EventStorming](assets/md-big-picture-event-storming/big-picture-event-storming.PNG)
+
+El modelo muestra dos recorridos principales: seguros vehiculares y seguros de vida. En ambos casos, Livva facilita la solicitud y gestión digital, mientras que las compañías aseguradoras participan como entidades externas responsables de procesos como evaluación, emisión de pólizas, renovaciones y resolución de siniestros o indemnizaciones.
+
+Después de la emisión de una póliza se identifica un ciclo común relacionado con su vigencia y renovación. Para seguros vehiculares se representa adicionalmente el registro y seguimiento de siniestros, mientras que en seguros de vida se diferencia el proceso de solicitud de indemnización realizado por los beneficiarios.
+
+De manera transversal, se representa el proceso de suscripciones de Livva, desde la selección del plan hasta su activación o cancelación. Este flujo se mantiene separado de las pólizas de seguro, ya que una Livva Subscription representa un servicio de la plataforma y no un producto emitido por una aseguradora.
+
+Finalmente, durante el modelado se identificaron hotspots relacionados con la sincronización de decisiones de las aseguradoras, información requerida para las solicitudes, validación de beneficiarios, estados de seguimiento y definición de beneficios de los planes. Estos puntos serán refinados en etapas posteriores del proyecto.
 
 ## 2.5. Ubiquitous Language
 
