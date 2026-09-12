@@ -1112,6 +1112,22 @@ Los conceptos se encuentran agrupados por áreas del dominio. Esta clasificació
 | **Insurance Intermediation** | Proceso mediante el cual Livva facilita la relación entre los usuarios y las Insurance Companies sin asumir las funciones propias de una compañía aseguradora. |
 | **Notification** | Comunicación generada por Livva para informar al usuario sobre un evento relevante relacionado con solicitudes, pólizas, renovaciones, siniestros, indemnizaciones o suscripciones. |
 
+### Key Domain Distinctions
+
+Para mantener consistencia dentro del dominio de Livva se establecen las siguientes diferencias conceptuales:
+
+- **Insurance Policy ≠ Livva Subscription:** una Insurance Policy es emitida por una Insurance Company y representa un contrato de seguro. Una Livva Subscription corresponde a un servicio contratado directamente con Livva.
+
+- **Vehicle Claim ≠ Indemnity Request:** un Vehicle Claim representa el reporte y seguimiento de un evento relacionado con un seguro vehicular, mientras que una Indemnity Request corresponde al proceso iniciado por un Beneficiary dentro de un seguro de vida.
+
+- **Vehicle ≠ Insured Vehicle:** un Vehicle representa un vehículo registrado dentro de Livva, mientras que un Insured Vehicle representa un vehículo que ya se encuentra cubierto por una Vehicle Insurance Policy.
+
+- **Policyholder ≠ Insured Person:** el Policyholder es el titular de la póliza, mientras que la Insured Person es la persona cuya vida se encuentra cubierta. Dependiendo del producto, ambos roles pueden corresponder a la misma persona o a personas diferentes.
+
+- **Livva ≠ Insurance Company:** Livva facilita la intermediación y gestión digital de seguros, mientras que la Insurance Company mantiene la responsabilidad sobre evaluación, emisión de pólizas y resolución de procesos relacionados con la cobertura.
+
+- **Subscription Payment ≠ Insurance Premium Payment:** el Subscription Payment corresponde al pago por un servicio propio de Livva. El pago de primas de seguros no forma parte del alcance inicial del proyecto.
+
 # Capítulo III: Requirements Specification
 
 ## 3.1. User Stories
