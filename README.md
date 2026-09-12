@@ -1054,6 +1054,18 @@ Los conceptos se encuentran agrupados por áreas del dominio. Esta clasificació
 | **Insured Person** | Persona cuya vida se encuentra cubierta por una Life Insurance Policy. |
 | **Beneficiary** | Persona designada en una Life Insurance Policy para recibir la prestación correspondiente cuando ocurre un Covered Event que da origen a una Indemnity Request. |
 
+### Insurance Products and Applications
+
+| Term | Definition |
+|---|---|
+| **Insurance Product** | Oferta de seguro proporcionada por una Insurance Company que establece determinadas coberturas, condiciones y características. |
+| **Vehicle Insurance Product** | Insurance Product diseñado para proporcionar protección asociada a un vehículo particular. |
+| **Life Insurance Product** | Insurance Product orientado a proporcionar protección económica relacionada con la vida de una Insured Person y sus Beneficiaries. |
+| **Insurance Application** | Solicitud presentada por un usuario para iniciar el proceso de evaluación de un Insurance Product. |
+| **Vehicle Insurance Application** | Insurance Application asociada a un vehículo registrado por un Vehicle Owner. |
+| **Life Insurance Application** | Insurance Application presentada por una persona interesada en contratar un Life Insurance Product. |
+| **Application Status** | Estado actual de una Insurance Application durante su proceso de evaluación, por ejemplo pendiente, en evaluación, aprobada o rechazada. |
+
 # Capítulo III: Requirements Specification
 
 ## 3.1. User Stories
