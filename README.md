@@ -1103,6 +1103,15 @@ Los conceptos se encuentran agrupados por áreas del dominio. Esta clasificació
 | **Subscription Activation** | Proceso mediante el cual el Subscription Plan seleccionado pasa a encontrarse activo para el usuario después de cumplirse las condiciones correspondientes. |
 | **Subscription Cancellation** | Proceso mediante el cual un usuario solicita finalizar su Livva Subscription. |
 
+### External Participants and Shared Concepts
+
+| Term | Definition |
+|---|---|
+| **Insurance Company** | Organización externa responsable de ofrecer Insurance Products, evaluar Insurance Applications, emitir Insurance Policies y resolver procesos relacionados con renovaciones, Vehicle Claims e Indemnity Requests. |
+| **Payment Provider** | Servicio externo utilizado por Livva para procesar o confirmar operaciones relacionadas con un Subscription Payment. |
+| **Insurance Intermediation** | Proceso mediante el cual Livva facilita la relación entre los usuarios y las Insurance Companies sin asumir las funciones propias de una compañía aseguradora. |
+| **Notification** | Comunicación generada por Livva para informar al usuario sobre un evento relevante relacionado con solicitudes, pólizas, renovaciones, siniestros, indemnizaciones o suscripciones. |
+
 # Capítulo III: Requirements Specification
 
 ## 3.1. User Stories
