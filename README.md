@@ -204,6 +204,23 @@ En el siguiente cuadro se describen las acciones realizadas por los integrantes 
 
 ### 1.1.1. Descripción de la Startup
 
+**Livva Care** es una startup peruana orientada al desarrollo de soluciones digitales para facilitar el acceso, intermediación y gestión de seguros mediante experiencias web simples, centralizadas y orientadas al usuario.
+
+Su producto principal, **Livva**, busca conectar digitalmente a los usuarios con productos de compañías aseguradoras asociadas, concentrándose inicialmente en seguros vehiculares y seguros de vida.
+
+La propuesta de Livva Care no consiste en asumir las funciones propias de una compañía aseguradora. Las compañías asociadas mantienen responsabilidades como la evaluación del riesgo, determinación de condiciones, emisión de pólizas y resolución final de siniestros o solicitudes de indemnización. Livva se concentra en proporcionar una experiencia digital para facilitar la búsqueda de información, solicitud, consulta y gestión posterior de los seguros.
+
+El modelo de negocio contempla ingresos derivados de la intermediación de seguros y de planes de suscripción propios de Livva, mediante los cuales los usuarios pueden acceder a beneficios adicionales de la plataforma.
+
+Durante la primera etapa del producto, Livva Care se enfocará exclusivamente en dos segmentos: propietarios de vehículos particulares interesados en seguros vehiculares y personas interesadas en seguros de vida.
+
+### Misión
+
+Facilitar el acceso y la gestión de seguros mediante una experiencia digital clara, centralizada y accesible, ayudando a las personas a comprender, solicitar y administrar su protección de forma más sencilla y acompañada.
+
+### Visión
+
+Convertir a Livva Care en una plataforma digital referente en el Perú para la intermediación y gestión de seguros, reconocida por simplificar la relación entre las personas y sus seguros mediante una experiencia confiable, transparente y orientada a sus necesidades.
 
 ### 1.1.2. Perfiles de integrantes del equipo
 
@@ -221,9 +238,13 @@ La solución propuesta por Livva consiste en una plataforma web orientada a faci
 
 La experiencia busca acompañar al usuario durante diferentes etapas del ciclo del seguro, desde la búsqueda de información y solicitud inicial hasta la consulta y administración posterior de la póliza, incluyendo documentos, coberturas, beneficiarios, renovaciones y procesos relacionados con siniestros o solicitudes de indemnización.
 
-Livva se plantea como un bróker digital que facilita la interacción entre los usuarios y las compañías aseguradoras asociadas. Las aseguradoras mantienen responsabilidades como la evaluación correspondiente, emisión de pólizas y resolución de solicitudes de cobertura o indemnización, mientras que Livva concentra la experiencia digital de intermediación y acompañamiento.
+Livva se plantea como un bróker digital que facilita la interacción entre los usuarios y las compañías aseguradoras asociadas. Las aseguradoras mantienen responsabilidades como la evaluación correspondiente, definición de las condiciones del producto, emisión de pólizas y resolución de solicitudes de cobertura o indemnización, mientras que Livva concentra la experiencia digital de intermediación y acompañamiento.
+
+Como parte de su modelo de negocio, Livva ofrecerá planes de suscripción dirigidos a sus usuarios. Estos planes permitirán diferenciar el nivel de beneficios y servicios digitales disponibles dentro de la plataforma, manteniendo un alcance simplificado y viable para la primera versión del producto.
 
 La solución está dirigida inicialmente a dos segmentos objetivo: propietarios de vehículos particulares interesados en seguros vehiculares y personas interesadas en contratar o gestionar seguros de vida.
+
+Las compañías aseguradoras participan como organizaciones externas asociadas al ecosistema de Livva, pero no constituyen un segmento objetivo ni dispondrán de una aplicación empresarial propia dentro del alcance inicial del proyecto.
 
 ### 1.2.1. Antecedentes y Problemática
 
@@ -252,7 +273,7 @@ Livva propone abordar esta situación mediante una plataforma que centralice dig
 ##### Where
 **¿Dónde ocurre?**
 
-- Inicialmente, el proyecto se plantea para el mercado peruano y para interacciones realizadas mediante canales digitales entre los usuarios, Livva y las compañías aseguradoras asociadas.
+- Inicialmente, el proyecto se plantea para el mercado peruano y para interacciones realizadas mediante canales digitales entre los usuarios, Livva y las compañías aseguradoras asociadas. La experiencia principal se desarrollará mediante un Landing Page y una Web Application responsive integrados con los servicios de Livva.
 
 ##### Who
 **¿Quiénes están involucrados?**
@@ -270,7 +291,7 @@ Las compañías aseguradoras participan como entidades asociadas dentro del proc
 ##### How?
 **¿Cómo se aborda el problema actualmente?**
 
-- Los usuarios recurren a compañías aseguradoras, corredores, páginas web y diferentes canales comerciales o de atención para buscar, contratar y posteriormente administrar sus seguros. Livva propone centralizar digitalmente las principales etapas correspondientes a la intermediación y acompañamiento dentro de una experiencia web.
+- Los usuarios recurren a compañías aseguradoras, corredores, páginas web y distintos canales comerciales o de atención para buscar, contratar y posteriormente administrar sus seguros. Livva propone centralizar digitalmente las principales etapas correspondientes a la intermediación y acompañamiento dentro de una experiencia web, ofreciendo adicionalmente planes de servicio propios que permitan acceder a distintos beneficios dentro de la plataforma.
 
 ##### How Much
 **¿Cuál es el impacto?**
@@ -281,9 +302,79 @@ A partir del análisis preliminar, se identifica como principal oportunidad la c
 
 Livva administrará la experiencia de intermediación, organización de información y acompañamiento digital, mientras que la compañía aseguradora asociada conservará responsabilidades como la evaluación correspondiente, emisión de la póliza y resolución final de las solicitudes de cobertura o indemnización.
 
-Como restricción del modelo de negocio, una operación real de Livva como corredor de seguros estaría sujeta al marco regulatorio peruano correspondiente. Para efectos del proyecto académico, no se implementarán procesos regulatorios, actuariales ni financieros propios de una compañía aseguradora.
-
 **Problema central:** las actividades relacionadas con la búsqueda, solicitud, contratación y posterior gestión de seguros vehiculares y de vida pueden encontrarse distribuidas entre diferentes procesos y canales, dificultando que los usuarios comprendan y administren su protección mediante una experiencia continua y centralizada.
+
+### Objetivos
+
+#### Objetivo General
+
+Diseñar, desarrollar y desplegar una plataforma web de intermediación y gestión digital de seguros vehiculares y de vida que permita a los usuarios acceder a información, realizar solicitudes, consultar y administrar sus pólizas y dar seguimiento a procesos posteriores relacionados con su protección, mediante una experiencia clara, centralizada, accesible y adaptable a distintos dispositivos.
+
+#### Objetivos Específicos
+
+- **Facilitar la solicitud de seguros:** proporcionar flujos digitales diferenciados para seguros vehiculares y seguros de vida, permitiendo que los usuarios registren la información necesaria de forma clara y estructurada.
+
+- **Centralizar la gestión de pólizas:** permitir que los usuarios consulten desde un mismo entorno información relevante como vigencia, coberturas, documentos y estado de sus seguros.
+
+- **Apoyar la gestión de seguros vehiculares:** permitir el registro y consulta de vehículos asociados al usuario, así como el inicio y seguimiento básico de solicitudes relacionadas con seguros vehiculares.
+
+- **Apoyar la gestión de seguros de vida:** permitir la solicitud de seguros de vida y la administración de información relacionada con beneficiarios.
+
+- **Facilitar el seguimiento posterior a la contratación:** brindar mecanismos para registrar y consultar el estado de siniestros vehiculares y solicitudes de indemnización relacionadas con seguros de vida.
+
+- **Mantener informado al usuario:** proporcionar notificaciones relacionadas con eventos relevantes como cambios de estado, renovación de pólizas, información pendiente o avances en procesos registrados.
+
+- **Incorporar un modelo de suscripción:** ofrecer planes de Livva con beneficios diferenciados, permitiendo al usuario consultar, contratar, revisar y cancelar su suscripción mediante un flujo simplificado.
+
+- **Integrar servicios externos:** utilizar al menos un servicio externo de terceros como parte de los procesos de la plataforma, priorizando una integración asociada al flujo de suscripción o pago en un entorno de prueba.
+
+- **Garantizar una experiencia web consistente:** mantener coherencia entre el Landing Page y la Web Application, incluyendo diseño responsive, accesibilidad e internacionalización según los requisitos establecidos para el proyecto.
+
+### Restricciones
+
+#### Restricciones de Alcance
+
+- **Segmentos objetivo:** la primera versión de Livva estará dirigida únicamente a propietarios de vehículos particulares y personas interesadas en seguros de vida.
+
+- **Participación de compañías aseguradoras:** las aseguradoras serán consideradas entidades externas asociadas al ecosistema de Livva. No se desarrollará un portal B2B ni funcionalidades destinadas a empleados de compañías aseguradoras dentro del alcance inicial.
+
+- **Intermediación y no aseguramiento:** Livva actuará como una plataforma de intermediación y acompañamiento digital. No asumirá funciones propias de una compañía aseguradora como evaluación actuarial, determinación real de primas, emisión legal de pólizas o resolución definitiva de siniestros e indemnizaciones.
+
+- **Cotizaciones y productos:** las alternativas de seguros mostradas en el sistema serán representaciones académicas o datos previamente registrados. No se implementará un motor actuarial real para calcular primas.
+
+- **Gestión de siniestros e indemnizaciones:** la primera versión permitirá registrar información y consultar estados básicos, pero no incluirá peritajes, evaluación automatizada de daños, liquidación de indemnizaciones ni pagos reales.
+
+- **Suscripciones:** la gestión de suscripciones se limitará a consultar planes, seleccionar un plan, activar una suscripción, consultar su estado y cancelarla. No se implementarán procesos avanzados de facturación, impuestos, devoluciones, cupones o prorrateos.
+
+- **Pagos:** cualquier integración de pago se realizará mediante un entorno de prueba o sandbox y tendrá fines exclusivamente académicos.
+
+- **Servicios externos:** la solución dependerá de al menos un servicio externo de terceros para cubrir un proceso específico del sistema. La indisponibilidad de dicho servicio podrá limitar temporalmente la funcionalidad asociada.
+
+#### Restricciones Técnicas
+
+- La solución estará compuesta por un **Landing Page**, una **Web Application responsive** y un **RESTful API** desarrollado internamente.
+
+- La Web Application deberá consumir el RESTful API propio para acceder a las principales capacidades del negocio.
+
+- El backend deberá desarrollarse utilizando **ASP.NET Core y C#**, con persistencia mediante **Entity Framework Core** y una base de datos relacional compatible con el alcance del proyecto.
+
+- La experiencia deberá contemplar internacionalización para **English (en_US)** y **Latin American Spanish (es_419)**, manteniendo inglés como idioma predeterminado según las especificaciones del curso.
+
+- El Landing Page y la Web Application deberán considerar principios de accesibilidad, incluyendo atributos ARIA y diseño adaptable a diferentes tamaños de pantalla.
+
+#### Restricciones de Tiempo
+
+- El desarrollo del producto estará limitado al calendario académico del curso.
+
+- El alcance funcional principal deberá poder diseñarse, implementarse, probarse y desplegarse en aproximadamente **12 semanas**, priorizando funcionalidades esenciales sobre procesos empresariales avanzados.
+
+- Las funcionalidades deberán organizarse progresivamente entre los diferentes Sprints y entregables del curso, manteniendo coherencia entre el Product Backlog y los objetivos de cada Sprint.
+
+#### Restricciones de Complejidad
+
+- Se priorizará un MVP funcional y demostrable sobre la implementación completa de procesos reales del sector asegurador.
+
+- No se incluirán en la primera versión funcionalidades como inteligencia artificial para recomendar seguros, firma digital, OCR, validación con RENIEC o SUNARP, aplicaciones móviles nativas, geolocalización de accidentes o integración directa con sistemas internos de aseguradoras.
 
 ### 1.2.2. Lean UX Process
 
