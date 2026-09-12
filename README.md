@@ -114,7 +114,7 @@ A continuación, se presenta el repositorio utilizado para la elaboración colab
 - [Capítulo II: Requirements Elicitation & Analysis](#capítulo-ii-requirements-elicitation--analysis)
     - [2.1. Competidores](#21-competidores)
         - [2.1.1. Análisis competitivo](#211-análisis-competitivo)
-        - [2.1.2. Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
+        - [ Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
     - [2.2. Entrevistas](#22-entrevistas)
         - [2.2.1. Diseño de entrevistas](#221-diseño-de-entrevistas)
         - [2.2.2. Registro de entrevistas](#222-registro-de-entrevistas)
@@ -167,7 +167,7 @@ A continuación, se presenta el repositorio utilizado para la elaboración colab
     - [5.2. Landing Page, Services & Applications Implementation](#52-landing-page-services--applications-implementation)
         - [5.2.1. Sprint 1](#521-sprint-1)
             - [5.2.1.1. Sprint Planning 1](#5211-sprint-planning-1)
-            - [5.2.1.2. Aspect Leaders and Collaborators](#5212-aspect-leaders-and-collaborators)
+            - [5. Aspect Leaders and Collaborators](#5212-aspect-leaders-and-collaborators)
             - [5.2.1.3. Sprint Backlog 1](#5213-sprint-backlog-1)
             - [5.2.1.4. Development Evidence for Sprint Review](#5214-development-evidence-for-sprint-review)
             - [5.2.1.5. Execution Evidence for Sprint Review](#5215-execution-evidence-for-sprint-review)
@@ -1084,6 +1084,7 @@ SeguroSimple se presenta como un corredor especializado en seguros vehiculares y
 - **Transparencia de responsabilidades:** diferenciar claramente qué actividades corresponden a Livva como intermediario y cuáles corresponden a la compañía aseguradora.
 - **Experiencia consistente:** mantener coherencia de contenido, navegación y comunicación entre el Landing Page y la Web Application.
 - **Mejora basada en retroalimentación:** incorporar progresivamente cambios a partir de los resultados de Needfinding y Validation Interviews.
+- **Transparencia de planes:** comunicar claramente las diferencias entre el servicio base y los beneficios adicionales de cada suscripción, evitando que el usuario confunda una suscripción de Livva con una póliza de seguro.
 
 **Valor añadido**
 
@@ -1092,32 +1093,30 @@ SeguroSimple se presenta como un corredor especializado en seguros vehiculares y
 - Construcción progresiva de confianza mediante información clara y trazable.
 - Experiencia coherente durante los diferentes puntos de contacto digitales de Livva.
 
-#### 4. Aprovechar la oportunidad: canal digital B2B para compañías aseguradoras
+#### 4. Aprovechar la oportunidad: relación continua mediante planes de suscripción
 
 **Estrategia**
 
-Desarrollar una propuesta que genere valor no solamente para las personas que contratan seguros, sino también para las compañías aseguradoras que utilicen Livva como canal digital de distribución y gestión de operaciones.
+Desarrollar una propuesta de valor que permita mantener una relación continua con los usuarios más allá del proceso inicial de solicitud del seguro, ofreciendo beneficios digitales adicionales mediante planes de suscripción propios de Livva.
 
-Las plataformas analizadas muestran públicamente una propuesta fuertemente orientada al consumidor final. SeguroSimple destaca la comparación y contratación de seguros vehiculares, QuePlan la comparación y elección de productos aseguradores, mientras que Seguros Falabella ofrece diferentes seguros mediante su ecosistema de canales digitales (SeguroSimple.com, s.f.; QuePlan, s.f.; Seguros Falabella, s.f.).
-
-Livva Care plantea aprovechar esta oportunidad mediante herramientas B2B destinadas a compañías aseguradoras asociadas.
+La suscripción no sustituye al seguro ni modifica las responsabilidades de las compañías aseguradoras. Corresponde a un servicio independiente ofrecido por Livva para proporcionar diferentes niveles de acompañamiento y funcionalidades dentro de la plataforma.
 
 **Tácticas**
 
-- **Portal para aseguradoras:** proporcionar un espacio donde las compañías asociadas puedan consultar las operaciones generadas mediante Livva.
-- **Información estructurada:** registrar solicitudes mediante formatos consistentes que faciliten su posterior procesamiento.
-- **Seguimiento de operaciones:** permitir consultar estados y trazabilidad de las solicitudes originadas mediante la plataforma.
-- **Analítica básica:** proporcionar indicadores relacionados con solicitudes, productos y operaciones gestionadas mediante Livva.
-- **Planes de suscripción B2B:** plantear diferentes niveles de servicio según las capacidades ofrecidas a cada compañía aseguradora.
-- **Incorporación progresiva de aliados:** iniciar con un conjunto reducido de compañías y utilizar los resultados obtenidos para facilitar futuras alianzas.
+- **Planes claramente diferenciados:** establecer un número reducido de planes cuyos beneficios puedan compararse con facilidad.
+- **Información transparente:** mostrar precio, periodicidad, beneficios y condiciones antes de la contratación.
+- **Gestión autoservida:** permitir que los usuarios consulten el estado de su suscripción y puedan cancelarla sin intervención de personal de soporte.
+- **Integración con servicio externo:** utilizar un proveedor de pagos en ambiente de prueba para soportar el proceso de activación de la suscripción.
+- **Validación del valor:** utilizar entrevistas y sesiones de validación para identificar qué beneficios adicionales son realmente valorados.
+- **Alcance progresivo:** evitar incluir funcionalidades financieras avanzadas durante la primera versión del producto.
 
 **Valor añadido**
 
-- Nuevo canal digital de distribución para las compañías aseguradoras asociadas.
-- Mayor trazabilidad de las operaciones originadas mediante Livva.
-- Información organizada para facilitar la gestión de solicitudes.
-- Posibilidad de desarrollar una relación comercial recurrente mediante planes B2B.
-- Diferenciación de Livva mediante una propuesta orientada simultáneamente al usuario final y a las compañías aseguradoras.
+- Fuente adicional de ingresos recurrentes para Livva.
+- Mayor continuidad en la relación con los usuarios.
+- Posibilidad de ofrecer diferentes niveles de servicio.
+- Mayor capacidad para validar qué funcionalidades generan valor recurrente.
+- Integración de un servicio externo dentro del modelo funcional del producto.
 
 ## 2.2. Entrevistas
 
