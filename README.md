@@ -1033,6 +1033,101 @@ Finalmente, durante el modelado se identificaron hotspots relacionados con la si
 
 ## 2.5. Ubiquitous Language
 
+El Ubiquitous Language de Livva establece un vocabulario común para describir de forma consistente los principales conceptos del dominio de intermediación y gestión digital de seguros vehiculares y de vida.
+
+Su propósito es facilitar la comunicación entre los integrantes del equipo durante el análisis, diseño, implementación y documentación del producto, evitando utilizar diferentes términos para representar un mismo concepto del negocio.
+
+Los términos principales se expresan en inglés con el objetivo de mantener consistencia con el código fuente y los artefactos de Domain-Driven Design. Sus definiciones se presentan en español para facilitar su comprensión dentro del equipo.
+
+Los conceptos se encuentran agrupados por áreas del dominio. Esta clasificación no representa Bounded Contexts definitivos, ya que estos serán identificados posteriormente durante el Design-Level EventStorming.
+
+### Actors and Roles
+
+| Term | Definition |
+|---|---|
+| **Visitor** | Persona que accede a la Landing Page de Livva sin haber iniciado sesión y puede consultar información pública sobre la plataforma, seguros y planes disponibles. |
+| **Registered User** | Persona que posee una cuenta registrada en Livva y puede acceder a las funcionalidades disponibles dentro de la Web Application. |
+| **Vehicle Owner** | Usuario propietario de un vehículo particular que puede registrarlo en Livva para utilizarlo dentro de una solicitud de seguro vehicular. |
+| **Life Insurance Applicant** | Persona interesada en solicitar un seguro de vida mediante Livva. |
+| **Applicant** | Usuario que ha iniciado o presentado una Insurance Application. |
+| **Policyholder** | Persona titular de una Insurance Policy y responsable de la relación contractual asociada a dicha póliza. Puede ser diferente de la Insured Person en un seguro de vida. |
+| **Insured Person** | Persona cuya vida se encuentra cubierta por una Life Insurance Policy. |
+| **Beneficiary** | Persona designada en una Life Insurance Policy para recibir la prestación correspondiente cuando ocurre un Covered Event que da origen a una Indemnity Request. |
+
+### Insurance Products and Applications
+
+| Term | Definition |
+|---|---|
+| **Insurance Product** | Oferta de seguro proporcionada por una Insurance Company que establece determinadas coberturas, condiciones y características. |
+| **Vehicle Insurance Product** | Insurance Product diseñado para proporcionar protección asociada a un vehículo particular. |
+| **Life Insurance Product** | Insurance Product orientado a proporcionar protección económica relacionada con la vida de una Insured Person y sus Beneficiaries. |
+| **Insurance Application** | Solicitud presentada por un usuario para iniciar el proceso de evaluación de un Insurance Product. |
+| **Vehicle Insurance Application** | Insurance Application asociada a un vehículo registrado por un Vehicle Owner. |
+| **Life Insurance Application** | Insurance Application presentada por una persona interesada en contratar un Life Insurance Product. |
+| **Application Status** | Estado actual de una Insurance Application durante su proceso de evaluación, por ejemplo pendiente, en evaluación, aprobada o rechazada. |
+
+### Policies and Coverage
+
+| Term | Definition |
+|---|---|
+| **Insurance Policy** | Contrato de seguro emitido por una Insurance Company que establece las condiciones, coberturas, vigencia y participantes del seguro contratado. |
+| **Vehicle Insurance Policy** | Insurance Policy correspondiente a un seguro vehicular y asociada a un Insured Vehicle. |
+| **Life Insurance Policy** | Insurance Policy correspondiente a un seguro de vida que establece la protección de una Insured Person y sus Beneficiaries. |
+| **Coverage** | Protección o conjunto de situaciones contempladas dentro de las condiciones de un Insurance Product o Insurance Policy. |
+| **Vehicle** | Vehículo particular registrado por un usuario dentro de Livva. |
+| **Insured Vehicle** | Vehicle que se encuentra cubierto por una Vehicle Insurance Policy. |
+| **Policy Document** | Documento asociado a una Insurance Policy que contiene o respalda información relacionada con sus condiciones, coberturas y vigencia. |
+| **Policy Expiration Date** | Fecha en la que finaliza la vigencia establecida de una Insurance Policy. |
+| **Renewal** | Proceso mediante el cual se busca extender la vigencia de una Insurance Policy próxima a vencer. |
+| **Renewal Request** | Solicitud iniciada por un Policyholder para comenzar el proceso de renovación de una Insurance Policy. |
+
+### Vehicle Claims and Life Indemnities
+
+| Term | Definition |
+|---|---|
+| **Vehicle Incident** | Evento ocurrido a un Insured Vehicle que potencialmente puede encontrarse relacionado con una Coverage de la póliza. |
+| **Vehicle Claim** | Reporte realizado por el asegurado respecto a un Vehicle Incident para iniciar el proceso correspondiente con la Insurance Company. |
+| **Claim Status** | Estado que representa el progreso de un Vehicle Claim durante su evaluación y resolución. |
+| **Covered Event** | Evento contemplado dentro de las condiciones de una Insurance Policy y que puede originar una solicitud relacionada con la cobertura contratada. |
+| **Indemnity Request** | Solicitud presentada por un Beneficiary para iniciar el proceso correspondiente a la prestación de un seguro de vida después de un Covered Event. |
+| **Indemnity Status** | Estado que representa el progreso de una Indemnity Request durante su evaluación y resolución. |
+
+### Subscriptions and Payments
+
+| Term | Definition |
+|---|---|
+| **Subscription Plan** | Nivel de servicio ofrecido directamente por Livva que define un conjunto determinado de beneficios para sus usuarios. |
+| **Livva Subscription** | Relación de servicio entre un Registered User y Livva originada por la contratación de un Subscription Plan. Es independiente de cualquier Insurance Policy. |
+| **Subscription Status** | Estado actual de una Livva Subscription, por ejemplo activa, pendiente de activación o cancelada. |
+| **Subscription Payment** | Pago asociado exclusivamente con la contratación de un Subscription Plan de Livva. No representa el pago de una prima de seguro. |
+| **Subscription Activation** | Proceso mediante el cual el Subscription Plan seleccionado pasa a encontrarse activo para el usuario después de cumplirse las condiciones correspondientes. |
+| **Subscription Cancellation** | Proceso mediante el cual un usuario solicita finalizar su Livva Subscription. |
+
+### External Participants and Shared Concepts
+
+| Term | Definition |
+|---|---|
+| **Insurance Company** | Organización externa responsable de ofrecer Insurance Products, evaluar Insurance Applications, emitir Insurance Policies y resolver procesos relacionados con renovaciones, Vehicle Claims e Indemnity Requests. |
+| **Payment Provider** | Servicio externo utilizado por Livva para procesar o confirmar operaciones relacionadas con un Subscription Payment. |
+| **Insurance Intermediation** | Proceso mediante el cual Livva facilita la relación entre los usuarios y las Insurance Companies sin asumir las funciones propias de una compañía aseguradora. |
+| **Notification** | Comunicación generada por Livva para informar al usuario sobre un evento relevante relacionado con solicitudes, pólizas, renovaciones, siniestros, indemnizaciones o suscripciones. |
+
+### Key Domain Distinctions
+
+Para mantener consistencia dentro del dominio de Livva se establecen las siguientes diferencias conceptuales:
+
+- **Insurance Policy ≠ Livva Subscription:** una Insurance Policy es emitida por una Insurance Company y representa un contrato de seguro. Una Livva Subscription corresponde a un servicio contratado directamente con Livva.
+
+- **Vehicle Claim ≠ Indemnity Request:** un Vehicle Claim representa el reporte y seguimiento de un evento relacionado con un seguro vehicular, mientras que una Indemnity Request corresponde al proceso iniciado por un Beneficiary dentro de un seguro de vida.
+
+- **Vehicle ≠ Insured Vehicle:** un Vehicle representa un vehículo registrado dentro de Livva, mientras que un Insured Vehicle representa un vehículo que ya se encuentra cubierto por una Vehicle Insurance Policy.
+
+- **Policyholder ≠ Insured Person:** el Policyholder es el titular de la póliza, mientras que la Insured Person es la persona cuya vida se encuentra cubierta. Dependiendo del producto, ambos roles pueden corresponder a la misma persona o a personas diferentes.
+
+- **Livva ≠ Insurance Company:** Livva facilita la intermediación y gestión digital de seguros, mientras que la Insurance Company mantiene la responsabilidad sobre evaluación, emisión de pólizas y resolución de procesos relacionados con la cobertura.
+
+- **Subscription Payment ≠ Insurance Premium Payment:** el Subscription Payment corresponde al pago por un servicio propio de Livva. El pago de primas de seguros no forma parte del alcance inicial del proyecto.
+
 # Capítulo III: Requirements Specification
 
 ## 3.1. User Stories
