@@ -183,17 +183,18 @@ A continuación, se presenta el repositorio utilizado para la elaboración colab
 
 ## Student Outcome
 
-El curso contribuye al cumplimiento del Student Outcome ABET:  
-**ABET - EAC - Student Outcome 3**
+El curso contribuye al cumplimiento del siguiente Student Outcome ABET:
 
-**Criterio:** *Capacidad de comunicarse efectivamente con un rango de audiencias.*
+**ABET – EAC – Student Outcome 5**
 
-En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET - EAC - Student Outcome 3.
+**Criterio:** La capacidad de funcionar efectivamente en un equipo cuyos miembros juntos proporcionan liderazgo, crean un entorno de colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen objetivos.
+
+En el siguiente cuadro se describen las acciones realizadas por los integrantes del equipo y las conclusiones obtenidas durante el desarrollo del proyecto Livva, con el propósito de evidenciar el cumplimiento del ABET – EAC – Student Outcome 5.
 
 | Criterio específico | Acciones realizadas | Conclusiones |
-| :--- | :--- | :--- |
-| **Comunica oralmente con efectividad a diferentes rangos de audiencia.** | **Paredes Chavez, Carlos Augusto**<br>**AV1:**<br><br>**Torres Diaz, Rolando Andre**<br>**AV1:**<br><br>**Contreras Panuera, Fernando Fabrizio**<br>**AV1:**<br><br>**Cespedes Lezcano, Carlos Gabriel**<br>**AV1:**<br><br>**Rivera Aguilar, Scarlet Josefina**<br>**AV1:** | **AV1:** |
-| **Comunica por escrito con efectividad a diferentes rangos de audiencia.** | **Paredes Chavez, Carlos Augusto**<br>**AV1:**<br><br>**Torres Diaz, Rolando Andre**<br>**AV1:**<br><br>**Contreras Panuera, Fernando Fabrizio**<br>**AV1:**<br><br>**Cespedes Lezcano, Carlos Gabriel**<br>**AV1:**<br><br>**Rivera Aguilar, Scarlet Josefina**<br>**AV1:** | **AV1:** |
+|---|---|---|
+| **Trabaja en equipo para proporcionar liderazgo en forma conjunta.** | **Paredes Chavez, Carlos Augusto**<br>**AV1:**<br><br>**Torres Diaz, Rolando Andre**<br>**AV1:**<br><br>**Contreras Panuera, Fernando Fabrizio**<br>**AV1:**<br><br>**Céspedes Lezcano, Carlos Gabriel**<br>**AV1:**<br><br>**Rivera Aguilar, Scarlet Josefina**<br>**AV1:** | **AV1:** |
+| **Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.** | **Paredes Chavez, Carlos Augusto**<br>**AV1:**<br><br>**Torres Diaz, Rolando Andre**<br>**AV1:**<br><br>**Contreras Panuera, Fernando Fabrizio**<br>**AV1:**<br><br>**Céspedes Lezcano, Carlos Gabriel**<br>**AV1:**<br><br>**Rivera Aguilar, Scarlet Josefina**<br>**AV1:** | **AV1:** |
 
 <div style="page-break-after: always;"></div>
 
