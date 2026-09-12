@@ -546,6 +546,16 @@ Obtienen información oportuna sobre vencimientos, renovaciones, información pe
 
 Con notificaciones proactivas y alertas dentro de Livva.
 
+##### HS07 — Planes de suscripción Livva
+
+Creemos que lograremos incrementar los ingresos recurrentes generados mediante la plataforma.
+
+Si los usuarios de seguros vehiculares y de vida
+
+Obtienen beneficios adicionales acordes con sus necesidades y comprenden claramente las diferencias entre los niveles de servicio
+
+Con planes de suscripción de Livva que puedan seleccionar y gestionar digitalmente.
+
 #### 1.2.2.4. Lean UX Canvas
 
 ![](./assets/md-images-lean-ux-canva/lean-ux-canvas.PNG)
