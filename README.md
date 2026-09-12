@@ -717,10 +717,10 @@ El análisis compara aspectos relacionados con el perfil de cada empresa, su mer
         <strong>Mercado objetivo</strong>
       </td>
       <td>
-        Propietarios de vehículos particulares interesados en seguros
-        vehiculares, personas interesadas en seguros de vida y compañías
-        aseguradoras que buscan canales digitales de distribución y gestión
-        de operaciones.
+        Propietarios de vehículos particulares interesados en contratar o
+		gestionar seguros vehiculares y personas mayores de edad interesadas
+		en contratar o gestionar seguros de vida para proteger económicamente
+		a sus familiares o beneficiarios.
       </td>
       <td>
         Principalmente propietarios y conductores de vehículos interesados
@@ -745,9 +745,11 @@ El análisis compara aspectos relacionados con el perfil de cada empresa, su mer
       </td>
       <td>
         Se plantea utilizar presencia digital, contenido educativo relacionado
-        con seguros vehiculares y de vida, comunicación clara sobre coberturas
-        y procesos, demostraciones de la plataforma y contacto comercial con
-        compañías aseguradoras para desarrollar alianzas B2B.
+		con seguros vehiculares y de vida, comunicación clara sobre coberturas 
+		y procesos, demostraciones de la plataforma y comunicación de los 
+		beneficios incluidos en los diferentes planes de Livva. Los call-to-action 
+		del Landing Page estarán orientados a dirigir a cada segmento hacia su
+		flujo correspondiente dentro de la Web Application.
       </td>
       <td>
         Utiliza la cotización gratuita como mecanismo de captación, comunica
@@ -771,11 +773,12 @@ El análisis compara aspectos relacionados con el perfil de cada empresa, su mer
         <strong>Productos &amp; Servicios</strong>
       </td>
       <td>
-        Livva plantea ofrecer intermediación digital de seguros vehiculares y
-        de vida, registro y seguimiento de solicitudes, consulta de pólizas,
-        gestión de beneficiarios, recordatorios de renovación, acompañamiento
-        ante siniestros y herramientas de gestión para compañías aseguradoras
-        asociadas.
+        Livva plantea ofrecer intermediación digital de seguros vehiculares
+		y de vida, registro y seguimiento de solicitudes, consulta centralizada
+		de pólizas, gestión de beneficiarios, recordatorios relacionados con 
+		la vigencia y renovación, acompañamiento ante siniestros o solicitudes
+		de indemnización, notificaciones y planes de suscripción con beneficios
+		diferenciados dentro de la plataforma.
       </td>
       <td>
         Cotización y comparación de seguros vehiculares de diferentes
@@ -798,10 +801,11 @@ El análisis compara aspectos relacionados con el perfil de cada empresa, su mer
         <strong>Precios &amp; Costos</strong>
       </td>
       <td>
-        El precio final de cada seguro dependerá de las condiciones
-        establecidas por la compañía aseguradora correspondiente. Livva Care
-        plantea obtener ingresos derivados de la intermediación y mediante
-        planes de suscripción B2B para compañías aseguradoras asociadas.
+        El precio final de cada seguro dependerá de las condiciones establecidas
+		por la compañía aseguradora correspondiente. Livva Care plantea obtener
+		ingresos derivados de la intermediación de los seguros gestionados mediante
+		la plataforma y mediante planes de suscripción dirigidos a los usuarios de
+		Livva, cuyos precios dependerán del nivel de beneficios digitales ofrecidos.
       </td>
       <td>
         La cotización depende de factores como las características del
@@ -868,12 +872,12 @@ El análisis compara aspectos relacionados con el perfil de cada empresa, su mer
       </td>
       <td>
         <ul>
-          <li>Especialización y experiencia en seguros vehiculares.</li>
-          <li>Comparación entre distintas compañías aseguradoras.</li>
-          <li>Acompañamiento durante cotización, contratación, siniestro y renovación.</li>
-          <li>Proceso de cotización digital.</li>
-          <li>Posicionamiento previo dentro del mercado peruano.</li>
-        </ul>
+  		  <li>Especialización inicial en seguros vehiculares y de vida.</li>
+  		  <li>Propuesta orientada a distintas etapas del ciclo del seguro.</li>
+  		  <li>Centralización de pólizas, documentación y procesos relacionados con la gestión posterior.</li>
+  		  <li>Modelo de servicio que combina intermediación con planes de suscripción dirigidos a los usuarios.</li>
+  		  <li>Experiencia digital diseñada desde el inicio para canales web responsive.</li>
+	    </ul>
       </td>
       <td>
         <ul>
@@ -900,12 +904,12 @@ El análisis compara aspectos relacionados con el perfil de cada empresa, su mer
       </td>
       <td>
         <ul>
-          <li>Startup nueva y todavía en etapa de desarrollo.</li>
-          <li>Ausencia inicial de reconocimiento de marca.</li>
-          <li>Dependencia de acuerdos con compañías aseguradoras.</li>
-          <li>Catálogo inicial limitado a seguros vehiculares y de vida.</li>
-          <li>Necesidad de validar la disposición de las aseguradoras para utilizar los planes B2B.</li>
-        </ul>
+  		  <li>Startup nueva y todavía en etapa de desarrollo.</li>
+ 		  <li>Ausencia inicial de reconocimiento de marca.</li>
+  		  <li>Dependencia de relaciones y acuerdos con compañías aseguradoras.</li>
+		  <li>Catálogo inicial limitado a seguros vehiculares y de vida.</li>
+		  <li>Necesidad de validar qué beneficios generan suficiente valor para justificar una suscripción por parte de los usuarios.</li>
+	    </ul>
       </td>
       <td>
         <ul>
@@ -935,12 +939,12 @@ El análisis compara aspectos relacionados con el perfil de cada empresa, su mer
       </td>
       <td>
         <ul>
-          <li>Mayor adopción de canales digitales para contratar y gestionar seguros.</li>
-          <li>Interés de aseguradoras en ampliar sus canales digitales de distribución.</li>
-          <li>Digitalización de procesos tradicionalmente asistidos.</li>
-          <li>Incorporación progresiva de nuevas líneas de seguros.</li>
-          <li>Desarrollo de servicios tecnológicos B2B para aseguradoras.</li>
-        </ul>
+ 	      <li>Mayor adopción de canales digitales para contratar y gestionar seguros.</li>
+		  <li>Creciente interés de los usuarios por experiencias digitales de autoservicio.</li>
+		  <li>Digitalización de procesos tradicionalmente asistidos.</li>
+		  <li>Incorporación progresiva de nuevas líneas de seguros después de validar el producto inicial.</li>
+		  <li>Desarrollo de servicios de valor agregado mediante planes de suscripción.</li>
+		</ul>
       </td>
       <td>
         <ul>
@@ -1006,7 +1010,9 @@ El análisis SWOT evidencia que Livva Care se encuentra en una posición diferen
 
 Esta condición representa una debilidad inicial frente a empresas que ya poseen experiencia, canales establecidos y relaciones comerciales dentro del sector. Sin embargo, también permite que Livva Care diseñe su propuesta desde el inicio alrededor de una experiencia digital especializada.
 
-Entre las principales oportunidades identificadas se encuentra la posibilidad de proporcionar una experiencia continua durante diferentes etapas del seguro y desarrollar herramientas B2B que permitan a las aseguradoras utilizar Livva como un canal adicional de distribución y seguimiento de operaciones.
+Entre las principales oportunidades identificadas se encuentra la posibilidad de proporcionar una experiencia continua durante diferentes etapas del ciclo del seguro, incrementar las capacidades de autoservicio y desarrollar beneficios digitales adicionales que puedan ofrecerse mediante planes de suscripción de Livva.
+
+De esta manera, la propuesta busca diferenciarse no solamente durante el proceso inicial de contratación, sino también mediante funcionalidades útiles durante la gestión posterior de los seguros.
 
 Por otra parte, una de las principales amenazas corresponde al fortalecimiento de los canales digitales propios de las aseguradoras y a la presencia de corredores digitales con mayor experiencia dentro del mercado.
 
