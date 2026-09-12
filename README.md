@@ -1081,6 +1081,17 @@ Los conceptos se encuentran agrupados por áreas del dominio. Esta clasificació
 | **Renewal** | Proceso mediante el cual se busca extender la vigencia de una Insurance Policy próxima a vencer. |
 | **Renewal Request** | Solicitud iniciada por un Policyholder para comenzar el proceso de renovación de una Insurance Policy. |
 
+### Vehicle Claims and Life Indemnities
+
+| Term | Definition |
+|---|---|
+| **Vehicle Incident** | Evento ocurrido a un Insured Vehicle que potencialmente puede encontrarse relacionado con una Coverage de la póliza. |
+| **Vehicle Claim** | Reporte realizado por el asegurado respecto a un Vehicle Incident para iniciar el proceso correspondiente con la Insurance Company. |
+| **Claim Status** | Estado que representa el progreso de un Vehicle Claim durante su evaluación y resolución. |
+| **Covered Event** | Evento contemplado dentro de las condiciones de una Insurance Policy y que puede originar una solicitud relacionada con la cobertura contratada. |
+| **Indemnity Request** | Solicitud presentada por un Beneficiary para iniciar el proceso correspondiente a la prestación de un seguro de vida después de un Covered Event. |
+| **Indemnity Status** | Estado que representa el progreso de una Indemnity Request durante su evaluación y resolución. |
+
 # Capítulo III: Requirements Specification
 
 ## 3.1. User Stories
