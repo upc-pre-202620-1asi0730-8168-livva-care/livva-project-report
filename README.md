@@ -408,9 +408,11 @@ Sabremos que hemos tenido éxito cuando observemos que los usuarios completan lo
 
 **BA04.** Creemos que el acompañamiento digital posterior a la contratación puede diferenciar a Livva de experiencias concentradas principalmente en la búsqueda o cotización inicial del seguro.
 
-**BA05.** Creemos que Livva puede desarrollar un modelo de negocio sostenible mediante los ingresos derivados de la intermediación de los seguros contratados a través de la plataforma.
+**BA05.** Creemos que Livva puede desarrollar un modelo de negocio sostenible combinando ingresos derivados de la intermediación de seguros contratados mediante la plataforma con ingresos recurrentes provenientes de planes de suscripción dirigidos a sus usuarios.
 
 **BA06.** Creemos que comenzar con seguros vehiculares y de vida permitirá validar la propuesta de valor antes de incorporar nuevas categorías de seguros.
+
+**BA07.** Creemos que determinados usuarios estarán dispuestos a contratar un plan de Livva si los beneficios adicionales proporcionan suficiente valor durante la contratación y gestión posterior de sus seguros.
 
 ##### Business Outcome Assumptions
 
@@ -423,6 +425,10 @@ Sabremos que hemos tenido éxito cuando observemos que los usuarios completan lo
 **BOA04.** Creemos que un aumento en la cantidad de usuarios que realizan oportunamente acciones relacionadas con sus pólizas indicará que las notificaciones y herramientas de seguimiento resultan útiles.
 
 **BOA05.** Creemos que un incremento progresivo de seguros solicitados y gestionados mediante Livva contribuirá a la sostenibilidad del modelo de intermediación.
+
+**BOA06.** Creemos que un porcentaje creciente de usuarios que seleccionan un plan de suscripción después de conocer sus beneficios indicará que la propuesta de valor adicional resulta relevante.
+
+**BOA07.** Creemos que una proporción significativa de suscripciones que se mantienen activas durante su período correspondiente indicará que los beneficios del plan generan valor recurrente para los usuarios.
 
 ##### User Assumptions
 
@@ -440,6 +446,10 @@ Sabremos que hemos tenido éxito cuando observemos que los usuarios completan lo
 
 **UA07.** Creemos que los usuarios de ambos segmentos valoran tener sus pólizas, documentos y coberturas disponibles dentro de una misma plataforma.
 
+**UA08.** Creemos que algunos usuarios de ambos segmentos pueden valorar beneficios adicionales relacionados con el acompañamiento, seguimiento y gestión digital de sus seguros lo suficiente como para considerar un plan de suscripción.
+
+**UA09.** Creemos que los usuarios desean comprender claramente las diferencias entre los planes disponibles antes de decidir si un nivel de servicio adicional justifica su costo.
+
 ##### User Outcome and Benefit Assumptions
 
 **UOBA01.** Los propietarios de vehículos desean completar la solicitud de un seguro comprendiendo claramente la información requerida, las coberturas disponibles y las características de la protección seleccionada.
@@ -454,6 +464,10 @@ Sabremos que hemos tenido éxito cuando observemos que los usuarios completan lo
 
 **UOBA06.** Los usuarios de ambos segmentos desean recibir información oportuna cuando deban realizar acciones relacionadas con la vigencia o gestión de sus seguros.
 
+**UOBA07.** Los usuarios de ambos segmentos desean conocer de manera clara qué beneficios adicionales obtienen mediante cada plan de Livva para decidir si una suscripción se adapta a sus necesidades.
+
+**UOBA08.** Los usuarios suscritos desean consultar fácilmente el plan contratado y el estado de su suscripción para mantener control sobre el servicio adquirido.
+
 ##### Feature Assumptions
 
 **FA01.** Creemos que un flujo guiado para el registro del vehículo y la solicitud de seguro ayudará a los propietarios de vehículos a proporcionar correctamente la información necesaria y comprender mejor el proceso.
@@ -467,6 +481,8 @@ Sabremos que hemos tenido éxito cuando observemos que los usuarios completan lo
 **FA05.** Creemos que un flujo guiado de asistencia ante siniestros o solicitudes de indemnización ayudará a los usuarios a comprender qué información, documentación y pasos son necesarios durante estos procesos.
 
 **FA06.** Creemos que las notificaciones proactivas sobre vencimientos, renovaciones, información pendiente y cambios de estado ayudarán a los usuarios a realizar oportunamente las acciones relacionadas con sus seguros.
+
+**FA07.** Creemos que ofrecer planes de suscripción claramente diferenciados, junto con un proceso sencillo para seleccionar, activar, consultar y cancelar una suscripción, permitirá a los usuarios acceder a niveles de servicio acordes con sus necesidades y contribuirá a generar ingresos recurrentes para Livva.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
