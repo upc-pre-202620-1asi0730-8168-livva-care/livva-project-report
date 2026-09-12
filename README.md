@@ -646,12 +646,14 @@ El análisis compara aspectos relacionados con el perfil de cada empresa, su mer
         <strong>Overview</strong>
       </td>
       <td>
-        Livva Care es una startup InsurTech peruana que desarrolla Livva,
-        una plataforma orientada a la intermediación digital de seguros
-        vehiculares y de vida. La propuesta busca centralizar procesos como
-        solicitud, contratación, consulta de pólizas, renovaciones y
-        acompañamiento ante siniestros, conectando a los usuarios con
-        compañías aseguradoras asociadas.
+        Livva Care es una startup InsurTech peruana que desarrolla Livva, una 
+		plataforma orientada a la intermediación y gestión digital de seguros 
+		vehiculares y de vida. La propuesta busca centralizar procesos como 
+		solicitud, consulta de pólizas, beneficiarios, renovaciones y 
+		acompañamiento ante siniestros o solicitudes de indemnización, 
+		conectando digitalmente a los usuarios con compañías aseguradoras 
+		asociadas e incorporando planes de suscripción propios para ofrecer 
+		distintos niveles de beneficios dentro de la plataforma.
       </td>
       <td>
         SeguroSimple es un corredor digital de seguros peruano especializado
@@ -708,7 +710,6 @@ El análisis compara aspectos relacionados con el perfil de cada empresa, su mer
         siniestros.
       </td>
     </tr>
-    <!-- PERFIL DE MARKETING -->
     <tr>
       <th rowspan="2">Perfil de Marketing</th>
       <td>
@@ -763,7 +764,6 @@ El análisis compara aspectos relacionados con el perfil de cada empresa, su mer
         como web, atención telefónica y WhatsApp.
       </td>
     </tr>
-    <!-- PERFIL DE PRODUCTO -->
     <tr>
       <th rowspan="3">Perfil de Producto</th>
       <td>
@@ -843,7 +843,6 @@ El análisis compara aspectos relacionados con el perfil de cada empresa, su mer
         presenciales.
       </td>
     </tr>
-    <!-- SWOT -->
     <tr>
       <th colspan="2">Análisis SWOT</th>
       <td colspan="4">
