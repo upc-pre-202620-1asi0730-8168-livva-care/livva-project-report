@@ -1335,6 +1335,8 @@ Comprender el nivel de conocimiento de los usuarios sobre los seguros de vida, l
 
 ## 4.1. Style Guidelines
 
+Las Style Guidelines de Livva establecen los lineamientos visuales y comunicacionales que se aplicarán de manera consistente en los productos digitales de la solución. Estas guías definen una base común para el Landing Page y la Web Application, considerando elementos como la identidad visual, tipografía, paleta de colores, espaciado, tono de comunicación y patrones de interacción. Su propósito es mantener una experiencia coherente, reconocible, accesible y fácil de utilizar para los segmentos objetivo de Livva.
+
 ### 4.1.1. General Style Guidelines
 
 ### 4.1.2. Web Style Guidelines
