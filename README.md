@@ -1041,6 +1041,19 @@ Los términos principales se expresan en inglés con el objetivo de mantener con
 
 Los conceptos se encuentran agrupados por áreas del dominio. Esta clasificación no representa Bounded Contexts definitivos, ya que estos serán identificados posteriormente durante el Design-Level EventStorming.
 
+### Actors and Roles
+
+| Term | Definition |
+|---|---|
+| **Visitor** | Persona que accede a la Landing Page de Livva sin haber iniciado sesión y puede consultar información pública sobre la plataforma, seguros y planes disponibles. |
+| **Registered User** | Persona que posee una cuenta registrada en Livva y puede acceder a las funcionalidades disponibles dentro de la Web Application. |
+| **Vehicle Owner** | Usuario propietario de un vehículo particular que puede registrarlo en Livva para utilizarlo dentro de una solicitud de seguro vehicular. |
+| **Life Insurance Applicant** | Persona interesada en solicitar un seguro de vida mediante Livva. |
+| **Applicant** | Usuario que ha iniciado o presentado una Insurance Application. |
+| **Policyholder** | Persona titular de una Insurance Policy y responsable de la relación contractual asociada a dicha póliza. Puede ser diferente de la Insured Person en un seguro de vida. |
+| **Insured Person** | Persona cuya vida se encuentra cubierta por una Life Insurance Policy. |
+| **Beneficiary** | Persona designada en una Life Insurance Policy para recibir la prestación correspondiente cuando ocurre un Covered Event que da origen a una Indemnity Request. |
+
 # Capítulo III: Requirements Specification
 
 ## 3.1. User Stories
