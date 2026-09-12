@@ -1128,66 +1128,85 @@ Comprender el nivel de conocimiento de los usuarios sobre los seguros de vida, l
 
 ## 3.1. User Stories
 
-A partir de las necesidades identificadas para los segmentos objetivo de Livva, se definieron las siguientes User Stories. Estas representan las principales funcionalidades que tendrá la aplicación web.
-
-| ID | Título | User Story | Criterios de aceptación | Prioridad |
+| Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con |
 |---|---|---|---|---|
-| US01 | Registro de usuario | Como usuario, quiero registrarme en Livva para poder acceder a las funcionalidades de la plataforma. | El usuario puede ingresar nombre, correo y contraseña. Se validan los campos obligatorios y se muestra una confirmación al completar el registro. | Alta |
-| US02 | Inicio de sesión | Como usuario registrado, quiero iniciar sesión para acceder a mi cuenta personal. | El usuario ingresa correo y contraseña. Si los datos son correctos, accede al panel principal. | Alta |
-| US03 | Cerrar sesión | Como usuario, quiero cerrar sesión para salir de manera segura de mi cuenta. | Al seleccionar cerrar sesión, se finaliza la sesión y el usuario regresa a la página principal o de inicio de sesión. | Alta |
-| US04 | Visualizar seguros disponibles | Como usuario, quiero visualizar los seguros disponibles para conocer las opciones ofrecidas por Livva. | Se muestran seguros vehiculares y de vida mediante tarjetas con información básica. | Alta |
-| US05 | Consultar detalle de seguro | Como usuario, quiero consultar los detalles de un seguro para conocer sus principales características antes de solicitarlo. | El usuario puede visualizar el tipo de seguro, descripción, principales coberturas y beneficios. | Alta |
-| US06 | Solicitar seguro vehicular | Como propietario de un vehículo, quiero registrar los datos de mi vehículo para solicitar un seguro vehicular. | El usuario completa los datos básicos del vehículo y recibe una confirmación después de enviar la solicitud. | Alta |
-| US07 | Solicitar seguro de vida | Como usuario, quiero completar una solicitud de seguro de vida para registrar mi interés en contratarlo. | El usuario ingresa sus datos principales, cobertura aproximada y beneficiario. El sistema confirma el registro. | Alta |
-| US08 | Consultar mis solicitudes | Como usuario, quiero visualizar las solicitudes de seguros que he realizado para conocer su estado. | Se muestra una lista con el tipo de seguro, fecha de solicitud y estado correspondiente. | Alta |
-| US09 | Consultar mis pólizas | Como usuario, quiero visualizar mis pólizas para consultar fácilmente los seguros que tengo registrados. | La plataforma muestra las pólizas con tipo, aseguradora, fechas de vigencia y estado. | Alta |
-| US10 | Consultar detalle de póliza | Como usuario, quiero consultar los detalles de una póliza para conocer sus coberturas y vigencia. | El usuario puede seleccionar una póliza y visualizar información ampliada sobre ella. | Media |
-| US11 | Gestionar beneficiarios | Como usuario con seguro de vida, quiero registrar y editar mis beneficiarios para mantener su información actualizada. | El usuario puede agregar, editar y eliminar beneficiarios mediante un formulario. | Media |
-| US12 | Visualizar recordatorios | Como usuario, quiero visualizar recordatorios relacionados con mis seguros para conocer fechas importantes. | La aplicación muestra alertas sobre vencimientos, renovaciones u otras fechas relacionadas con las pólizas. | Media |
-| US13 | Registrar un siniestro | Como usuario con seguro vehicular, quiero registrar información sobre un accidente para iniciar su seguimiento. | El usuario puede ingresar fecha, ubicación y descripción del accidente. Al enviar el formulario se registra el siniestro. | Media |
-| US14 | Consultar estado de siniestro | Como usuario, quiero consultar el estado de mis siniestros para conocer su avance. | La plataforma muestra los siniestros registrados y estados como pendiente, en revisión o finalizado. | Media |
-| US15 | Editar perfil | Como usuario, quiero modificar mis datos personales para mantener mi información actualizada. | El usuario puede editar datos como nombre, teléfono y dirección y guardar los cambios. | Media |
-| US16 | Consultar dashboard | Como usuario, quiero visualizar un resumen de mis seguros al ingresar para conocer rápidamente la información más importante. | El dashboard muestra cantidad de pólizas, solicitudes, próximos vencimientos y siniestros registrados. | Alta |
-| US17 | Buscar seguros | Como usuario, quiero buscar seguros por nombre o tipo para encontrar rápidamente una opción de mi interés. | El usuario puede ingresar un término de búsqueda y la lista de seguros se actualiza según la coincidencia. | Baja |
-| US18 | Filtrar seguros | Como usuario, quiero filtrar los seguros por categoría para visualizar únicamente los productos que me interesan. | El usuario puede elegir entre seguro vehicular y seguro de vida y visualizar los resultados correspondientes. | Baja |
-| US19 | Visualizar preguntas frecuentes | Como usuario, quiero consultar preguntas frecuentes para resolver dudas básicas sobre Livva y los seguros disponibles. | La plataforma presenta una sección de preguntas y respuestas organizadas por temas. | Baja |
-| US20 | Enviar consulta de soporte | Como usuario, quiero enviar una consulta desde la plataforma para solicitar ayuda cuando tenga alguna duda o inconveniente. | El usuario puede completar un formulario con asunto y mensaje. Al enviarlo se muestra una confirmación. | Baja |
+| US-01 | Conocer Livva | Como visitante, deseo conocer la propuesta de Livva para determinar si la plataforma puede ayudarme a gestionar mis seguros. | **Scenario 1: Consulta de información**<br>**Given** que el visitante accede al Landing Page<br>**When** consulta la información principal de Livva<br>**Then** el sistema presenta la propuesta de valor de la plataforma.<br><br>**Scenario 2: Servicios disponibles**<br>**Given** que el visitante revisa la información de Livva<br>**When** consulta los servicios disponibles<br>**Then** el sistema informa sobre seguros vehiculares y seguros de vida. | EP-01 |
+| US-02 | Consultar beneficios de Livva | Como visitante, deseo conocer los beneficios de Livva para comprender las ventajas de utilizar la plataforma. | **Scenario 1: Beneficios disponibles**<br>**Given** que el visitante consulta el Landing Page<br>**When** revisa los beneficios de Livva<br>**Then** el sistema presenta los principales beneficios del servicio. | EP-01 |
+| US-03 | Consultar información de seguro vehicular | Como visitante propietario de un vehículo, deseo conocer información sobre seguros vehiculares para evaluar si se ajustan a mis necesidades. | **Scenario 1: Información disponible**<br>**Given** que el visitante está interesado en un seguro vehicular<br>**When** consulta este tipo de seguro<br>**Then** el sistema presenta su descripción y beneficios principales. | EP-01 |
+| US-04 | Consultar información de seguro de vida | Como visitante interesado en seguros de vida, deseo conocer información sobre este producto para evaluar si puede proteger económicamente a mis beneficiarios. | **Scenario 1: Información disponible**<br>**Given** que el visitante está interesado en un seguro de vida<br>**When** consulta este tipo de seguro<br>**Then** el sistema presenta su descripción y beneficios principales. | EP-01 |
+| US-05 | Registrar una cuenta | Como usuario nuevo, deseo registrar una cuenta para utilizar los servicios de Livva. | **Scenario 1: Registro correcto**<br>**Given** que el usuario proporciona datos válidos y un correo no registrado<br>**When** solicita crear su cuenta<br>**Then** el sistema registra la cuenta correctamente.<br><br>**Scenario 2: Correo existente**<br>**Given** que el correo ya está registrado<br>**When** el usuario intenta crear una cuenta<br>**Then** el sistema rechaza el registro. | EP-02 |
+| US-06 | Iniciar sesión | Como usuario registrado, deseo iniciar sesión para acceder a mi información y gestionar mis seguros. | **Scenario 1: Credenciales correctas**<br>**Given** que el usuario posee una cuenta registrada<br>**When** proporciona credenciales válidas<br>**Then** el sistema permite el acceso. | EP-02 |
+| US-07 | Consultar perfil personal | Como usuario registrado, deseo consultar mi información personal para verificar mis datos registrados. | **Scenario 1: Consulta de perfil**<br>**Given** que el usuario ha iniciado sesión<br>**When** consulta su perfil<br>**Then** el sistema presenta la información asociada a su cuenta. | EP-02 |
+| US-08 | Actualizar perfil personal | Como usuario registrado, deseo actualizar mis datos personales para mantener mi información vigente. | **Scenario 1: Actualización correcta**<br>**Given** que el usuario proporciona datos válidos<br>**When** solicita actualizar su perfil<br>**Then** el sistema guarda la nueva información. | EP-02 |
+| US-09 | Registrar un vehículo | Como propietario de un vehículo, deseo registrar los datos de mi vehículo para utilizarlo en una solicitud de seguro. | **Scenario 1: Registro correcto**<br>**Given** que el usuario proporciona datos válidos del vehículo<br>**When** solicita registrarlo<br>**Then** el sistema almacena el vehículo asociado a su cuenta. | EP-03 |
+| US-10 | Consultar vehículos registrados | Como propietario, deseo consultar mis vehículos registrados para saber cuáles están disponibles para solicitar un seguro. | **Scenario 1: Vehículos registrados**<br>**Given** que el usuario posee vehículos registrados<br>**When** consulta sus vehículos<br>**Then** el sistema presenta los vehículos asociados a su cuenta. | EP-03 |
+| US-11 | Actualizar datos de un vehículo | Como propietario, deseo actualizar los datos de mi vehículo para mantener su información correcta. | **Scenario 1: Actualización válida**<br>**Given** que el vehículo pertenece al usuario<br>**When** proporciona información válida<br>**Then** el sistema guarda los cambios. | EP-03 |
+| US-12 | Solicitar seguro vehicular | Como propietario de un vehículo, deseo solicitar un seguro vehicular para proteger mi vehículo ante posibles riesgos. | **Scenario 1: Solicitud correcta**<br>**Given** que el usuario posee un vehículo registrado y proporciona los datos requeridos<br>**When** envía la solicitud<br>**Then** el sistema registra la solicitud de seguro vehicular. | EP-03 |
+| US-13 | Consultar solicitud de seguro vehicular | Como propietario de un vehículo, deseo consultar mi solicitud para conocer su estado. | **Scenario 1: Solicitud existente**<br>**Given** que el usuario posee una solicitud registrada<br>**When** consulta su solicitud<br>**Then** el sistema muestra la información y su estado actual. | EP-03 |
+| US-14 | Solicitar seguro de vida | Como persona interesada en protección financiera, deseo solicitar un seguro de vida para brindar respaldo económico a mis beneficiarios. | **Scenario 1: Solicitud correcta**<br>**Given** que el usuario proporciona la información requerida<br>**When** envía la solicitud<br>**Then** el sistema registra la solicitud de seguro de vida. | EP-04 |
+| US-15 | Consultar solicitud de seguro de vida | Como solicitante, deseo consultar mi solicitud de seguro de vida para conocer su estado. | **Scenario 1: Solicitud existente**<br>**Given** que existe una solicitud asociada al usuario<br>**When** consulta la solicitud<br>**Then** el sistema presenta su información y estado actual. | EP-04 |
+| US-16 | Registrar beneficiario | Como titular de un seguro de vida, deseo registrar un beneficiario para indicar quién recibirá la protección correspondiente. | **Scenario 1: Registro correcto**<br>**Given** que el usuario proporciona información válida del beneficiario<br>**When** solicita registrarlo<br>**Then** el sistema almacena al beneficiario. | EP-04 |
+| US-17 | Consultar beneficiarios | Como titular de un seguro de vida, deseo consultar mis beneficiarios para verificar quiénes están registrados. | **Scenario 1: Beneficiarios existentes**<br>**Given** que existen beneficiarios registrados<br>**When** el usuario consulta sus beneficiarios<br>**Then** el sistema presenta la información registrada. | EP-04 |
+| US-18 | Actualizar beneficiario | Como titular de un seguro de vida, deseo actualizar la información de un beneficiario para mantener sus datos vigentes. | **Scenario 1: Actualización correcta**<br>**Given** que el beneficiario pertenece al usuario<br>**When** proporciona datos válidos<br>**Then** el sistema actualiza la información. | EP-04 |
+| US-19 | Consultar pólizas | Como asegurado, deseo consultar mis pólizas para conocer los seguros que tengo contratados. | **Scenario 1: Pólizas disponibles**<br>**Given** que el usuario posee pólizas asociadas<br>**When** consulta sus pólizas<br>**Then** el sistema presenta las pólizas registradas. | EP-05 |
+| US-20 | Consultar detalle de póliza | Como asegurado, deseo consultar los detalles de una póliza para conocer su cobertura y vigencia. | **Scenario 1: Póliza existente**<br>**Given** que la póliza pertenece al usuario<br>**When** consulta sus detalles<br>**Then** el sistema presenta la información correspondiente. | EP-05 |
+| US-21 | Solicitar renovación de póliza | Como asegurado, deseo solicitar la renovación de una póliza para mantener mi cobertura vigente. | **Scenario 1: Renovación permitida**<br>**Given** que la póliza puede ser renovada<br>**When** el usuario solicita su renovación<br>**Then** el sistema registra la solicitud. | EP-05 |
+| US-22 | Registrar un siniestro | Como asegurado, deseo registrar un siniestro para iniciar el proceso correspondiente con mi seguro. | **Scenario 1: Registro correcto**<br>**Given** que el usuario posee una póliza vigente y proporciona la información requerida<br>**When** registra el siniestro<br>**Then** el sistema almacena la solicitud. | EP-05 |
+| US-23 | Consultar estado de siniestro | Como asegurado, deseo consultar el estado de un siniestro para conocer el avance de mi solicitud. | **Scenario 1: Siniestro existente**<br>**Given** que existe un siniestro registrado<br>**When** el usuario consulta su estado<br>**Then** el sistema presenta el estado actual. | EP-05 |
+| US-24 | Recibir aviso de vencimiento | Como asegurado, deseo recibir información sobre el próximo vencimiento de una póliza para poder gestionar su renovación. | **Scenario 1: Póliza próxima a vencer**<br>**Given** que una póliza se aproxima a su fecha de vencimiento<br>**When** el sistema identifica esta condición<br>**Then** genera una notificación para el usuario. | EP-06 |
+| US-25 | Consultar notificaciones | Como usuario, deseo consultar mis notificaciones para conocer eventos importantes relacionados con mis seguros. | **Scenario 1: Notificaciones existentes**<br>**Given** que el usuario posee notificaciones<br>**When** consulta sus notificaciones<br>**Then** el sistema presenta los avisos asociados a su cuenta. | EP-06 |
+| US-26 | Registrar una compañía aseguradora | Como representante de una aseguradora, deseo registrar la información de mi compañía para participar en Livva. | **Scenario 1: Registro correcto**<br>**Given** que se proporciona información válida de la compañía<br>**When** se solicita su registro<br>**Then** el sistema registra la compañía aseguradora. | EP-07 |
+| US-27 | Registrar un producto de seguro | Como representante de una aseguradora, deseo registrar un producto de seguro para ofrecerlo mediante Livva. | **Scenario 1: Registro correcto**<br>**Given** que la compañía está registrada y proporciona información válida<br>**When** registra un producto de seguro<br>**Then** el sistema almacena el producto asociado a la compañía. | EP-07 |
+| US-28 | Consultar solicitudes recibidas | Como representante de una aseguradora, deseo consultar las solicitudes asociadas a mis productos para realizar su seguimiento. | **Scenario 1: Solicitudes disponibles**<br>**Given** que existen solicitudes asociadas a la compañía<br>**When** consulta las solicitudes<br>**Then** el sistema presenta las solicitudes correspondientes. | EP-07 |
+
+### Epics
+
+| Epic ID | Título | Descripción |
+|---|---|---|
+| EP-01 | Landing Page e información de Livva | Agrupa las funcionalidades orientadas a visitantes que desean conocer Livva, su propuesta de valor y los tipos de seguros disponibles. |
+| EP-02 | Gestión de cuentas y perfiles | Agrupa las funcionalidades relacionadas con registro, autenticación y administración de información personal. |
+| EP-03 | Gestión de seguros vehiculares | Agrupa las funcionalidades relacionadas con vehículos y solicitudes de seguros vehiculares. |
+| EP-04 | Gestión de seguros de vida | Agrupa las funcionalidades relacionadas con solicitudes de seguros de vida y gestión de beneficiarios. |
+| EP-05 | Gestión de pólizas y siniestros | Agrupa las funcionalidades relacionadas con consulta de pólizas, renovaciones, siniestros e indemnizaciones. |
+| EP-06 | Notificaciones | Agrupa las funcionalidades relacionadas con avisos importantes para los usuarios. |
+| EP-07 | Gestión de compañías aseguradoras | Agrupa las funcionalidades destinadas a las compañías aseguradoras asociadas con Livva. |
 
 ## 3.2. Impact Mapping
 
+----
+
 ## 3.3. Product Backlog
 
-El Product Backlog de Livva contiene las funcionalidades que serán desarrolladas dentro de la aplicación web. La priorización se realizó considerando primero las características necesarias para completar los principales flujos de la plataforma.
-
-Para calificar el esfuerzo se utiliza una escala de Story Points:
-
-- **1 punto:** muy sencillo.
-- **2 puntos:** sencillo.
-- **3 puntos:** dificultad media.
-- **5 puntos:** mayor cantidad de lógica.
-
-| Orden | ID | Épica | User Story | Prioridad | Story Points |
-|---:|---|---|---|---|---:|
-| 1 | US01 | Autenticación | Registro de usuario | Alta | 2 |
-| 2 | US02 | Autenticación | Inicio de sesión | Alta | 2 |
-| 3 | US03 | Autenticación | Cerrar sesión | Alta | 1 |
-| 4 | US04 | Seguros | Visualizar seguros disponibles | Alta | 2 |
-| 5 | US05 | Seguros | Consultar detalle de seguro | Alta | 2 |
-| 6 | US06 | Seguro vehicular | Solicitar seguro vehicular | Alta | 3 |
-| 7 | US07 | Seguro de vida | Solicitar seguro de vida | Alta | 3 |
-| 8 | US08 | Solicitudes | Consultar mis solicitudes | Alta | 2 |
-| 9 | US09 | Pólizas | Consultar mis pólizas | Alta | 3 |
-| 10 | US10 | Pólizas | Consultar detalle de póliza | Media | 2 |
-| 11 | US11 | Seguro de vida | Gestionar beneficiarios | Media | 3 |
-| 12 | US12 | Seguimiento | Visualizar recordatorios | Media | 2 |
-| 13 | US13 | Siniestros | Registrar un siniestro | Media | 3 |
-| 14 | US14 | Siniestros | Consultar estado de siniestro | Media | 2 |
-| 15 | US15 | Perfil | Editar perfil | Media | 2 |
-| 16 | US16 | Dashboard | Consultar dashboard | Alta | 3 |
-| 17 | US17 | Seguros | Buscar seguros | Baja | 1 |
-| 18 | US18 | Seguros | Filtrar seguros | Baja | 1 |
-| 19 | US19 | Soporte | Visualizar preguntas frecuentes | Baja | 1 |
-| 20 | US20 | Soporte | Enviar consulta de soporte | Baja | 2 |
+| # Orden | User Story Id | Título | Descripción | Story Points |
+|---:|---|---|---|---:|
+| 1 | US-01 | Conocer Livva | Como visitante, deseo conocer la propuesta de Livva para determinar si la plataforma puede ayudarme a gestionar mis seguros. | 2 |
+| 2 | US-03 | Consultar información de seguro vehicular | Como visitante propietario de un vehículo, deseo conocer información sobre seguros vehiculares para evaluar si se ajustan a mis necesidades. | 2 |
+| 3 | US-04 | Consultar información de seguro de vida | Como visitante interesado en seguros de vida, deseo conocer información sobre este producto para evaluar si puede proteger económicamente a mis beneficiarios. | 2 |
+| 4 | US-02 | Consultar beneficios de Livva | Como visitante, deseo conocer los beneficios de Livva para comprender las ventajas de utilizar la plataforma. | 1 |
+| 5 | US-05 | Registrar una cuenta | Como usuario nuevo, deseo registrar una cuenta para utilizar los servicios de Livva. | 3 |
+| 6 | US-06 | Iniciar sesión | Como usuario registrado, deseo iniciar sesión para acceder a mi información y gestionar mis seguros. | 3 |
+| 7 | US-09 | Registrar un vehículo | Como propietario de un vehículo, deseo registrar los datos de mi vehículo para utilizarlo en una solicitud de seguro. | 3 |
+| 8 | US-12 | Solicitar seguro vehicular | Como propietario de un vehículo, deseo solicitar un seguro vehicular para proteger mi vehículo ante posibles riesgos. | 5 |
+| 9 | US-13 | Consultar solicitud de seguro vehicular | Como propietario de un vehículo, deseo consultar mi solicitud para conocer su estado. | 3 |
+| 10 | US-14 | Solicitar seguro de vida | Como persona interesada en protección financiera, deseo solicitar un seguro de vida para brindar respaldo económico a mis beneficiarios. | 5 |
+| 11 | US-16 | Registrar beneficiario | Como titular de un seguro de vida, deseo registrar un beneficiario para indicar quién recibirá la protección correspondiente. | 3 |
+| 12 | US-15 | Consultar solicitud de seguro de vida | Como solicitante, deseo consultar mi solicitud de seguro de vida para conocer su estado. | 3 |
+| 13 | US-19 | Consultar pólizas | Como asegurado, deseo consultar mis pólizas para conocer los seguros que tengo contratados. | 3 |
+| 14 | US-20 | Consultar detalle de póliza | Como asegurado, deseo consultar los detalles de una póliza para conocer su cobertura y vigencia. | 3 |
+| 15 | US-22 | Registrar un siniestro | Como asegurado, deseo registrar un siniestro para iniciar el proceso correspondiente con mi seguro. | 5 |
+| 16 | US-23 | Consultar estado de siniestro | Como asegurado, deseo consultar el estado de un siniestro para conocer el avance de mi solicitud. | 3 |
+| 17 | US-21 | Solicitar renovación de póliza | Como asegurado, deseo solicitar la renovación de una póliza para mantener mi cobertura vigente. | 3 |
+| 18 | US-24 | Recibir aviso de vencimiento | Como asegurado, deseo recibir información sobre el próximo vencimiento de una póliza para poder gestionar su renovación. | 3 |
+| 19 | US-17 | Consultar beneficiarios | Como titular de un seguro de vida, deseo consultar mis beneficiarios para verificar quiénes están registrados. | 2 |
+| 20 | US-18 | Actualizar beneficiario | Como titular de un seguro de vida, deseo actualizar la información de un beneficiario para mantener sus datos vigentes. | 3 |
+| 21 | US-10 | Consultar vehículos registrados | Como propietario, deseo consultar mis vehículos registrados para saber cuáles están disponibles para solicitar un seguro. | 2 |
+| 22 | US-11 | Actualizar datos de un vehículo | Como propietario, deseo actualizar los datos de mi vehículo para mantener su información correcta. | 3 |
+| 23 | US-26 | Registrar una compañía aseguradora | Como representante de una aseguradora, deseo registrar la información de mi compañía para participar en Livva. | 5 |
+| 24 | US-27 | Registrar un producto de seguro | Como representante de una aseguradora, deseo registrar un producto de seguro para ofrecerlo mediante Livva. | 5 |
+| 25 | US-28 | Consultar solicitudes recibidas | Como representante de una aseguradora, deseo consultar las solicitudes asociadas a mis productos para realizar su seguimiento. | 3 |
+| 26 | US-25 | Consultar notificaciones | Como usuario, deseo consultar mis notificaciones para conocer eventos importantes relacionados con mis seguros. | 2 |
+| 27 | US-07 | Consultar perfil personal | Como usuario registrado, deseo consultar mi información personal para verificar mis datos registrados. | 2 |
+| 28 | US-08 | Actualizar perfil personal | Como usuario registrado, deseo actualizar mis datos personales para mantener mi información vigente. | 3 |
 
 # Capítulo IV: Product Design
 
