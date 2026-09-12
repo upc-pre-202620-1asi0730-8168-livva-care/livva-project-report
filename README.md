@@ -1033,6 +1033,14 @@ Finalmente, durante el modelado se identificaron hotspots relacionados con la si
 
 ## 2.5. Ubiquitous Language
 
+El Ubiquitous Language de Livva establece un vocabulario común para describir de forma consistente los principales conceptos del dominio de intermediación y gestión digital de seguros vehiculares y de vida.
+
+Su propósito es facilitar la comunicación entre los integrantes del equipo durante el análisis, diseño, implementación y documentación del producto, evitando utilizar diferentes términos para representar un mismo concepto del negocio.
+
+Los términos principales se expresan en inglés con el objetivo de mantener consistencia con el código fuente y los artefactos de Domain-Driven Design. Sus definiciones se presentan en español para facilitar su comprensión dentro del equipo.
+
+Los conceptos se encuentran agrupados por áreas del dominio. Esta clasificación no representa Bounded Contexts definitivos, ya que estos serán identificados posteriormente durante el Design-Level EventStorming.
+
 # Capítulo III: Requirements Specification
 
 ## 3.1. User Stories
