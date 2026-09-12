@@ -390,11 +390,11 @@ La situación actual de la intermediación digital de seguros se ha centrado pri
 
 Lo que los productos y servicios existentes no siempre logran abordar de manera integral es una experiencia digital continua que facilite tanto la comprensión y solicitud del seguro como la administración posterior de la información relacionada con la póliza, coberturas, beneficiarios, renovaciones y siniestros.
 
-Livva abordará esta oportunidad mediante una plataforma digital de corretaje de seguros que proporcione flujos especializados para seguros vehiculares y de vida, centralice la información relacionada con las pólizas y acompañe digitalmente al usuario durante diferentes etapas del ciclo de vida del seguro.
+Livva abordará esta oportunidad mediante una plataforma digital de corretaje de seguros que proporcione flujos especializados para seguros vehiculares y de vida, centralice la información relacionada con las pólizas y acompañe digitalmente al usuario durante diferentes etapas del ciclo de vida del seguro. La plataforma podrá ofrecer distintos niveles de beneficios mediante planes de suscripción propios de Livva.
 
 Nuestro enfoque inicial se centrará en propietarios de vehículos particulares que tengan, hayan tenido o estén interesados en contratar un seguro vehicular y en personas mayores de edad que tengan, hayan considerado o estén interesadas en contratar un seguro de vida para proteger económicamente a sus familiares o beneficiarios.
 
-Sabremos que hemos tenido éxito cuando observemos que los usuarios completan los procesos digitales de solicitud mediante Livva, utilizan posteriormente la plataforma para consultar y gestionar la información relacionada con sus seguros y realizan oportunamente acciones vinculadas con sus pólizas, renovaciones, beneficiarios o siniestros.
+Sabremos que hemos tenido éxito cuando observemos que los usuarios completan los procesos digitales de solicitud mediante Livva, utilizan posteriormente la plataforma para consultar y gestionar información relacionada con sus seguros, realizan oportunamente acciones vinculadas con sus pólizas y una proporción de usuarios encuentra suficiente valor en los beneficios adicionales como para utilizar un plan de suscripción de Livva.
 
 #### 1.2.2.2. Lean UX Assumptions
 
