@@ -1063,7 +1063,26 @@ En este segmento destaca la necesidad de comprender correctamente las condicione
 
 ### 2.3.3. User Journey Mapping
 
+Segmento 1: Propietarios de vehículos particulares
+
+<img width="1645" height="860" alt="image" src="https://github.com/user-attachments/assets/bbf9d24a-5f85-4cae-9f3b-9ea8d7c4f963" />
+
+Segmento 2: Personas interesadas en seguros de vida
+
+<img width="1649" height="862" alt="image" src="https://github.com/user-attachments/assets/ccf46038-ce30-4550-addb-66726ef21a36" />
+
+
+
 ### 2.3.4. Empathy Mapping
+
+Empathy Map - Segmento 1
+
+<img width="1050" height="1318" alt="Empathy Map - Propietarios de vehículos particulares" src="https://github.com/user-attachments/assets/c57d91db-2368-4c9c-a6a4-661cf64777c2" />
+
+Empathy Map - Segmento 2
+
+<img width="1050" height="1408" alt="Empathy map" src="https://github.com/user-attachments/assets/f2724724-6762-43be-9140-3744f0961c97" />
+
 
 ## 2.4. Big Picture EventStorming
 
