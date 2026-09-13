@@ -1564,7 +1564,11 @@ A continuación, se presentan los wireframes correspondientes a la versión Desk
 ![Landing Page MockUp Movil 5](assets/md-images-product-design/Landing-mockup-Movil-5.png)
 
 ## 4.4. Web Applications UX/UI Design
+El diseño UX/UI de la Web Application de Livva se desarrolla tomando como base los resultados obtenidos durante el proceso de UX Research, los User Stories definidos en el Product Backlog y los lineamientos visuales establecidos previamente.
 
+El objetivo de esta sección es representar la estructura, navegación e interacción de las principales funcionalidades de la aplicación, asegurando que los usuarios puedan completar sus tareas de manera clara y eficiente.
+
+Para ello, se desarrollarán wireframes, wireflows, mock-ups y user flow diagrams que permitan visualizar tanto la distribución de los elementos de la interfaz como los diferentes recorridos que pueden realizar los usuarios dentro de la Web Application.
 ### 4.4.1. Web Applications Wireframes
 
 ### 4.4.2. Web Applications Wireflow Diagrams
