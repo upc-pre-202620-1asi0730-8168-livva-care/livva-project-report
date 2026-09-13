@@ -1339,21 +1339,172 @@ Las Style Guidelines de Livva establecen los lineamientos visuales y comunicacio
 
 ### 4.1.1. General Style Guidelines
 
+Las General Style Guidelines de Livva definen los criterios visuales y comunicacionales que permiten mantener una identidad consistente en los productos digitales de la solución. Estas decisiones toman como base la propuesta visual desarrollada para el Landing Page y buscan transmitir confianza, claridad, accesibilidad y simplicidad a los segmentos objetivo relacionados con seguros vehiculares y seguros de salud.
+
+#### Branding
+
+La identidad visual de Livva busca comunicar una imagen moderna, confiable y cercana. La marca utiliza el nombre “Livva” como elemento principal de reconocimiento, acompañado por una propuesta visual limpia y minimalista. El diseño evita elementos innecesarios y prioriza la claridad en la presentación de la información, con el objetivo de reducir la complejidad asociada a la búsqueda y comparación de seguros.
+
+La propuesta de marca se orienta a transmitir seguridad y confianza sin utilizar una comunicación excesivamente formal. Esto permite que Livva mantenga una imagen profesional y, al mismo tiempo, accesible para usuarios que buscan información relacionada con seguros vehiculares y de salud.
+
+#### Typography
+
+Livva utiliza la familia tipográfica Poppins como fuente principal para la experiencia web. Esta tipografía fue seleccionada por su legibilidad, apariencia moderna y variedad de pesos, lo que permite establecer una jerarquía visual clara entre títulos, subtítulos, textos descriptivos y elementos interactivos.
+
+Se emplean pesos más altos para títulos y elementos relevantes, mientras que los textos descriptivos utilizan pesos regulares. La jerarquía tipográfica facilita el recorrido visual del usuario y permite diferenciar rápidamente la información principal de los contenidos complementarios.
+
+#### Colors
+
+La paleta de colores de Livva utiliza principalmente tonalidades de azul, blanco y tonos neutros. El azul funciona como color principal de la marca y se utiliza en botones, elementos destacados, enlaces y componentes interactivos. Este color busca reforzar conceptos asociados a confianza, seguridad y estabilidad.
+
+El blanco y los tonos claros se utilizan como fondos para mantener una interfaz limpia y facilitar la lectura. Los tonos oscuros se emplean principalmente en títulos y textos de alta relevancia, mientras que los tonos grises se utilizan en textos secundarios y elementos de apoyo.
+
+#### Spacing
+
+El sistema de espaciado de Livva busca mantener una distribución ordenada de los contenidos y evitar la saturación visual. Se aplican márgenes y espacios consistentes entre secciones, tarjetas, botones, títulos y bloques de texto.
+
+El Landing Page utiliza contenedores centrados con un ancho máximo definido, permitiendo mantener una adecuada distribución del contenido en pantallas grandes. En dispositivos de menor tamaño, el espaciado se adapta mediante reglas de responsive design para conservar la legibilidad y facilidad de interacción.
+
+#### Tone of Voice
+
+El tono de comunicación de Livva se caracteriza por ser serio, respetuoso, claro y sereno. Debido a que la plataforma aborda decisiones relacionadas con seguros y protección personal, se evita un lenguaje excesivamente informal o irreverente.
+
+La comunicación busca explicar la información de manera directa y comprensible, reduciendo el uso de términos complejos y priorizando mensajes orientados a facilitar la toma de decisiones. Al mismo tiempo, mantiene un tono cercano que permita generar confianza y reducir la percepción de complejidad asociada al proceso de selección de seguros.
+
 ### 4.1.2. Web Style Guidelines
+
+Las Web Style Guidelines de Livva establecen los criterios visuales y de interacción específicos para la experiencia web, asegurando consistencia entre las diferentes secciones del Landing Page y sirviendo como referencia para el desarrollo posterior de la Web Application. Estas reglas buscan mantener una interfaz clara, predecible y accesible para los usuarios.
+
+#### Navigation Bar
+
+La barra de navegación se mantiene visible en la parte superior de la página y permite el acceso directo a las principales secciones del Landing Page. Los enlaces utilizan etiquetas breves y descriptivas como Inicio, Seguros, Planes, Nosotros y Contacto, con el objetivo de facilitar la orientación del usuario.
+
+Los elementos principales de acción, como “Iniciar Sesión” y “Empezar Gratis”, se diferencian visualmente mediante botones con estilos de mayor énfasis. La navegación mantiene una distribución ordenada y se adapta a diferentes tamaños de pantalla mediante responsive design.
+
+#### Buttons
+
+Los botones utilizan bordes redondeados, tipografía legible y una jerarquía visual basada en su nivel de importancia. Los botones principales utilizan el color azul de la marca con texto blanco, mientras que las acciones secundarias emplean estilos con borde y fondo transparente.
+
+Los botones incluyen estados visuales de interacción, como cambios de color durante el estado hover, con el objetivo de proporcionar retroalimentación al usuario y reforzar la percepción de interactividad.
+
+#### Cards
+
+Las tarjetas se utilizan para presentar información relacionada con los tipos de seguro, planes y otros contenidos relevantes de manera independiente y fácil de identificar. Estas utilizan fondos claros, bordes suaves, esquinas redondeadas y separación suficiente entre elementos.
+
+En la sección de seguros, las cards permiten diferenciar las soluciones de Seguro Vehicular y Seguro de Salud. En la sección de planes, las tarjetas permiten comparar características y beneficios, utilizando mayor énfasis visual en la alternativa recomendada.
+
+#### Forms
+
+Los formularios siguen una estructura vertical y utilizan labels visibles asociados a cada campo de entrada. Los inputs y textareas incluyen espacios suficientes, bordes definidos y estados de focus que permiten identificar claramente el elemento activo.
+
+Se busca evitar depender únicamente de placeholders para comunicar el propósito de cada campo, favoreciendo la accesibilidad y comprensión de la interfaz.
+
+#### Interaction States
+
+Los principales componentes interactivos consideran estados visuales de hover y focus. Estos estados permiten comunicar al usuario qué elementos pueden ser seleccionados o activados.
+
+El selector de modalidad de pago mensual y anual utiliza un cambio visual para representar el estado seleccionado, mientras que los botones y enlaces modifican su apariencia al recibir interacción.
+
+#### Responsive Web Design
+
+La interfaz de Livva utiliza un enfoque responsive para adaptar la presentación del contenido a distintos tamaños de pantalla. En resoluciones de escritorio se emplean distribuciones de varias columnas, mientras que en tablets y dispositivos móviles los componentes se reorganizan progresivamente en menos columnas.
+
+Las secciones de seguros, planes, información institucional, contacto y footer modifican su distribución para mantener la legibilidad y facilidad de interacción en pantallas reducidas. Los botones y elementos de navegación también ajustan su disposición para evitar desbordamientos horizontales.
+
+#### Accessibility
+
+La experiencia web considera prácticas básicas de accesibilidad, como el uso de labels asociados a formularios, atributos ARIA en componentes de navegación e interacción, estados de focus visibles y una estructura semántica basada en elementos HTML5.
+
+Asimismo, los componentes decorativos que no aportan información adicional al usuario utilizan atributos que permiten evitar interpretaciones innecesarias por parte de tecnologías de asistencia.
 
 ## 4.2. Information Architecture
 
+La arquitectura de información de Livva establece la forma en que se organiza, presenta y relaciona el contenido dentro de la experiencia digital. Su objetivo es facilitar que los usuarios puedan comprender la estructura de la plataforma, identificar rápidamente las opciones disponibles y acceder a la información necesaria con el menor esfuerzo posible.
+
+La propuesta considera tanto el Landing Page como la futura Web Application, manteniendo criterios consistentes de organización, etiquetado, navegación y búsqueda. Para ello, se prioriza una estructura clara y progresiva que permita a los usuarios reconocer las secciones principales, comprender la relación entre los contenidos y completar sus objetivos de manera eficiente.
+
 ### 4.2.1. Organization Systems
+
+Livva utiliza principalmente un sistema de organización jerárquico y por tópicos, con el objetivo de presentar la información de forma clara y facilitar que los usuarios identifiquen rápidamente las secciones principales de la experiencia digital.
+
+En el Landing Page, la información se organiza de manera jerárquica desde los contenidos de mayor relevancia hacia información más específica. La sección inicial presenta la propuesta de valor de Livva y los principales call-to-action, seguida por las soluciones de seguro, planes disponibles, información sobre la plataforma y medios de contacto.
+
+La categorización por tópicos permite agrupar el contenido de acuerdo con su propósito. En la sección de Seguros se distinguen las dos soluciones principales consideradas por Livva: Seguro Vehicular y Seguro de Salud. Esto permite que cada segmento objetivo pueda identificar con facilidad el contenido relacionado con sus necesidades.
+
+La sección de Planes utiliza una organización comparativa, permitiendo presentar diferentes alternativas de servicio con sus respectivos beneficios y precios. De esta manera, el usuario puede contrastar las opciones disponibles antes de realizar una elección.
+
+En la futura Web Application se mantendrá una organización jerárquica basada en las principales funcionalidades de la plataforma. Las opciones relacionadas con gestión de seguros, información del usuario y otras funcionalidades se agruparán de acuerdo con su propósito, buscando reducir la cantidad de pasos necesarios para acceder a la información.
+
+Asimismo, determinados procesos podrán utilizar una organización secuencial cuando el usuario deba completar una serie de pasos para alcanzar un objetivo, como seleccionar una alternativa de seguro, registrar información o completar una operación dentro de la plataforma.
 
 ### 4.2.2. Labeling Systems
 
+El sistema de etiquetado de Livva busca representar la información mediante nombres simples, breves y comprensibles, reduciendo la posibilidad de confusión durante la navegación. Las etiquetas utilizadas en el Landing Page se relacionan directamente con el contenido al que permiten acceder y mantienen una terminología consistente en toda la experiencia.
+
+La navegación principal utiliza las etiquetas “Inicio”, “Seguros”, “Planes”, “Nosotros” y “Contacto”. Cada una representa de forma directa el contenido asociado a su sección, permitiendo que el usuario anticipe el tipo de información que encontrará antes de seleccionarla.
+
+La etiqueta “Seguros” agrupa las principales soluciones consideradas dentro del alcance de Livva. Dentro de esta sección se utilizan las denominaciones “Seguro Vehicular” y “Seguro de Salud”, manteniendo una correspondencia directa con los dos segmentos objetivo definidos para el proyecto.
+
+La etiqueta “Planes” identifica la sección en la que se presentan las alternativas de servicio y sus respectivos beneficios. Para diferenciar las opciones se emplean nombres como “Plan Básico” y “Livva Pro”, facilitando la comparación entre niveles de servicio.
+
+Las acciones principales utilizan etiquetas orientadas a la intención del usuario, como “Cotizar mi Seguro”, “Ver Coberturas”, “Iniciar Sesión”, “Empezar Gratis”, “Elegir Plan” y “Enviar mensaje”. Estas etiquetas utilizan verbos de acción y buscan comunicar claramente el resultado esperado de la interacción.
+
+En la futura Web Application se mantendrá el mismo criterio de simplicidad y consistencia, utilizando etiquetas breves y relacionadas directamente con las tareas del usuario. Se evitarán nombres técnicos o ambiguos que puedan dificultar la comprensión de la funcionalidad.
+
 ### 4.2.3. SEO Tags and Meta Tags
+
+Livva utiliza etiquetas SEO y Meta Tags con el objetivo de mejorar la identificación del contenido por parte de los motores de búsqueda y proporcionar información descriptiva sobre las principales páginas de la experiencia digital. Estas etiquetas permiten comunicar de manera estructurada el propósito de cada página, su contenido principal y la autoría del producto.
+
+Para el Landing Page se establecen los siguientes valores:
+
+| Tag | Valor |
+|---|---|
+| Title | Livva - La plataforma inteligente para tu seguro ideal |
+| Description | Livva te permite comparar y gestionar alternativas de seguros vehiculares y de salud de forma simple, clara y digital. |
+| Keywords | seguros, seguro vehicular, seguro de salud, comparación de seguros, Livva |
+| Author | Livva Care |
+
+Estas etiquetas se incluyen dentro del elemento `<head>` del documento HTML y permiten describir de manera resumida el contenido principal del Landing Page.
+
+En la futura Web Application se utilizarán Meta Tags específicos de acuerdo con el propósito de cada vista principal, manteniendo una estructura consistente y utilizando términos relacionados directamente con las funcionalidades disponibles para el usuario.
+
+A medida que se implementen nuevas páginas y vistas, los valores de Title y Description se adaptarán al contenido específico de cada sección, evitando descripciones genéricas y procurando que cada página pueda identificarse claramente.
 
 ### 4.2.4. Searching Systems
 
+El sistema de búsqueda de Livva se plantea de acuerdo con el volumen y tipo de información disponible en cada producto digital.
+
+En el Landing Page no se implementa una barra de búsqueda debido a que el contenido se encuentra organizado en pocas secciones claramente identificadas mediante la navegación principal. El usuario puede acceder directamente a las secciones de Inicio, Seguros, Planes, Nosotros y Contacto sin necesidad de realizar búsquedas internas.
+
+En la futura Web Application se incorporarán mecanismos de búsqueda y filtrado para facilitar el acceso a información relacionada con seguros, alternativas disponibles y elementos gestionados por el usuario.
+
+Para las alternativas de seguros se podrá considerar una búsqueda complementada con filtros según características relevantes, como tipo de seguro, rango de precio, nivel de cobertura u otros criterios definidos durante la implementación de la plataforma.
+
+Los resultados se presentarán de forma estructurada mediante listas o tarjetas, permitiendo al usuario identificar rápidamente la información principal de cada alternativa y acceder a su detalle.
+
+El sistema de búsqueda deberá mantener criterios de simplicidad y claridad, evitando presentar una cantidad excesiva de filtros al mismo tiempo. Los filtros seleccionados deberán ser visibles para el usuario y permitir su modificación o eliminación de manera sencilla.
+
 ### 4.2.5. Navigation Systems
 
+El sistema de navegación de Livva busca permitir que los usuarios recorran la experiencia digital de manera sencilla, predecible y con el menor número de pasos posible.
+
+En el Landing Page se utiliza una navegación principal ubicada en la parte superior de la interfaz. Esta incluye accesos directos a las secciones Inicio, Seguros, Planes, Nosotros y Contacto. Cada opción permite realizar un desplazamiento directo hacia la sección correspondiente dentro de la misma página.
+
+Además de la navegación principal, se utilizan call-to-action ubicados en puntos estratégicos de la interfaz. Entre ellos se encuentran “Cotizar mi Seguro”, “Ver Coberturas”, “Iniciar Sesión”, “Empezar Gratis” y “Elegir Plan”. Estas acciones permiten dirigir al usuario hacia contenido relacionado con sus objetivos y, posteriormente, hacia las vistas correspondientes de la Web Application.
+
+El footer complementa la navegación mediante accesos a secciones principales y enlaces relacionados con información legal, como Términos y Condiciones y Política de Privacidad.
+
+En dispositivos de menor tamaño, la distribución de los elementos de navegación se adapta mediante responsive design, reorganizando los enlaces y botones para conservar su visibilidad y facilidad de interacción.
+
+En la futura Web Application, la navegación se organizará de acuerdo con las principales tareas del usuario. Se mantendrán etiquetas consistentes con el Landing Page y se utilizarán elementos de navegación que permitan acceder a las funcionalidades relacionadas con la gestión y consulta de seguros, información del usuario y otras operaciones definidas en los User Stories.
+
+Los flujos de navegación buscarán mantener rutas claras entre las distintas vistas, proporcionando retroalimentación visual y evitando que el usuario pierda el contexto de la tarea que está realizando.
+
 ## 4.3. Landing Page UI Design
+
+La propuesta de interfaz de usuario del Landing Page de Livva traduce las decisiones establecidas en las Style Guidelines y en la Information Architecture hacia una experiencia visual clara, consistente y orientada a los segmentos objetivo. El diseño prioriza la comprensión rápida de la propuesta de valor, la identificación de las soluciones de Seguro Vehicular y Seguro de Salud, así como el acceso sencillo a los principales call-to-action.
+
+La interfaz ha sido planteada siguiendo criterios de jerarquía visual, simplicidad, accesibilidad y responsive design, buscando mantener una experiencia coherente tanto en navegadores de escritorio como en dispositivos móviles.
 
 ### 4.3.1. Landing Page Wireframe
 
