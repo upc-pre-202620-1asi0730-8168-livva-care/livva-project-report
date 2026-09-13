@@ -1007,7 +1007,59 @@ Livva Care plantea aprovechar esta oportunidad mediante herramientas B2B destina
 
 ### 2.3.1. User Personas
 
+- Segmento 1 – Propietarios de vehículos particulares
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b9c99fc6-286a-4820-a0f5-c6eaa5d283c3" />
+
+- Segmento 2 - Personas interesadas en seguros de vida
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9c0deac4-6b6a-4bd4-b25c-786ce5420b4f" />
+
 ### 2.3.2. User Task Matrix
+
+A partir de las entrevistas realizadas, se identificaron las principales tareas que realizan actualmente los usuarios de cada segmento para buscar, contratar y gestionar sus seguros. Para cada tarea se considera su frecuencia aproximada y el nivel de importancia que representa dentro de la experiencia del usuario.
+
+#### Segmento 1: Propietarios de vehículos particulares
+
+| Tarea principal | Frecuencia | Importancia |
+|---|---|---|
+| Buscar información sobre seguros vehiculares | Ocasional | Alta |
+| Comparar precios, coberturas, deducibles y condiciones | Ocasional | Alta |
+| Consultar páginas de aseguradoras, comparadores o corredores | Ocasional | Alta |
+| Solicitar orientación a conocidos, asesores o compañías aseguradoras | Ocasional | Media |
+| Resolver dudas sobre coberturas, exclusiones y términos del seguro | Ocasional | Alta |
+| Revisar la póliza y sus coberturas | Ocasional | Alta |
+| Buscar y consultar documentos relacionados con el seguro | Ocasional | Alta |
+| Verificar la vigencia del seguro | Ocasional | Alta |
+| Gestionar la renovación del seguro | Anual | Alta |
+| Revisar avisos sobre vencimientos, renovaciones o información pendiente | Ocasional | Alta |
+| Comunicarse con la aseguradora ante un accidente o siniestro | Rara | Muy alta |
+| Consultar los pasos que debe seguir ante un siniestro | Rara | Muy alta |
+| Dar seguimiento al estado de un siniestro o solicitud | Rara | Muy alta |
+
+**Notas:**  
+En este segmento se observa que la búsqueda y comparación de información adquiere mayor relevancia durante la contratación o renovación del seguro. Los entrevistados también presentan dificultades para comprender determinados términos, coberturas y exclusiones, además de mantener la documentación distribuida entre distintos canales. Aunque los siniestros ocurren con poca frecuencia, las tareas relacionadas con su atención y seguimiento presentan una importancia muy alta debido a la necesidad de actuar correctamente ante estas situaciones.
+
+---
+
+#### Segmento 2: Personas interesadas en seguros de vida
+
+| Tarea principal | Frecuencia | Importancia |
+|---|---|---|
+| Buscar información sobre seguros de vida | Ocasional | Alta |
+| Comparar cobertura, costo, monto asegurado y condiciones | Ocasional | Alta |
+| Consultar páginas de aseguradoras y otras fuentes digitales | Ocasional | Alta |
+| Solicitar orientación a asesores para resolver dudas | Ocasional | Media |
+| Comprender conceptos como cobertura, monto asegurado, exclusiones y beneficiarios | Ocasional | Alta |
+| Revisar la información de la póliza | Ocasional | Alta |
+| Buscar y consultar documentos relacionados con el seguro | Ocasional | Alta |
+| Consultar la información de los beneficiarios | Ocasional | Alta |
+| Solicitar cambios o actualización de beneficiarios | Rara | Alta |
+| Verificar que la información personal y de beneficiarios esté actualizada | Ocasional | Alta |
+| Revisar avisos relacionados con vigencia, pagos o información pendiente | Ocasional | Alta |
+| Consultar los pasos necesarios ante una eventual solicitud de indemnización | Rara | Muy alta |
+| Dar seguimiento a una solicitud de indemnización | Rara | Muy alta |
+
+**Notas:**  
+En este segmento destaca la necesidad de comprender correctamente las condiciones del seguro de vida y mantener organizada la información relacionada con la póliza y los beneficiarios. Los entrevistados recurren principalmente a canales digitales y, cuando existen dudas, pueden buscar orientación adicional mediante asesores. Las tareas asociadas con una eventual indemnización presentan baja frecuencia, pero una importancia muy alta debido al impacto que tienen para los beneficiarios.
 
 ### 2.3.3. User Journey Mapping
 
