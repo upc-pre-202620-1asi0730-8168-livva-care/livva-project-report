@@ -1353,11 +1353,18 @@ Livva utiliza la familia tipográfica Poppins como fuente principal para la expe
 
 Se emplean pesos más altos para títulos y elementos relevantes, mientras que los textos descriptivos utilizan pesos regulares. La jerarquía tipográfica facilita el recorrido visual del usuario y permite diferenciar rápidamente la información principal de los contenidos complementarios.
 
+![Landing Page Tipografia](assets/md-images-product-design/popping.jpg)
+
 #### Colors
 
 La paleta de colores de Livva utiliza principalmente tonalidades de azul, blanco y tonos neutros. El azul funciona como color principal de la marca y se utiliza en botones, elementos destacados, enlaces y componentes interactivos. Este color busca reforzar conceptos asociados a confianza, seguridad y estabilidad.
 
 El blanco y los tonos claros se utilizan como fondos para mantener una interfaz limpia y facilitar la lectura. Los tonos oscuros se emplean principalmente en títulos y textos de alta relevancia, mientras que los tonos grises se utilizan en textos secundarios y elementos de apoyo.
+
+![Landing Page Color Azul](assets/md-images-product-design/color-blue.png)
+![Landing Page Color Blanco](assets/md-images-product-design/color-white.png)
+![Landing Page Color Negro](assets/md-images-product-design/color-black.png)
+![Landing Page Color Gris](assets/md-images-product-design/color-gray.png)
 
 #### Spacing
 
@@ -1507,8 +1514,54 @@ La propuesta de interfaz de usuario del Landing Page de Livva traduce las decisi
 La interfaz ha sido planteada siguiendo criterios de jerarquía visual, simplicidad, accesibilidad y responsive design, buscando mantener una experiencia coherente tanto en navegadores de escritorio como en dispositivos móviles.
 
 ### 4.3.1. Landing Page Wireframe
+Los wireframes del Landing Page de Livva representan la distribución preliminar de los principales elementos de la interfaz antes de aplicar los estilos visuales definitivos. Estos diseños permiten visualizar la organización del contenido, jerarquía de información, ubicación de los call-to-action y estructura general de navegación.
+
+A continuación, se presentan los wireframes correspondientes a la versión Desktop Web Browser del Landing Page.
+
+#### Desktop Web Browser
+
+![Landing Page Wireframe Desktop 1](assets/md-images-product-design/landing-wireframe-desktop-1.png)
+
+![Landing Page Wireframe Desktop 2](assets/md-images-product-design/landing-wireframe-desktop-2.png)
+
+![Landing Page Wireframe Desktop 3](assets/md-images-product-design/landing-wireframe-desktop-3.png)
+
+![Landing Page Wireframe Desktop 4](assets/md-images-product-design/landing-wireframe-desktop-4.png)
+
+![Landing Page Wireframe Desktop 5](assets/md-images-product-design/landing-wireframe-desktop-5.png)
+
+#### Mobile Web Browser
+![Landing Page Wireframe Movil 1](assets/md-images-product-design/landing-wireframe-movil-1.png)
+
+![Landing Page Wireframe Movil 2](assets/md-images-product-design/landing-wireframe-movil-2.png)
+
+![Landing Page Wireframe Movil 3](assets/md-images-product-design/landing-wireframe-movil-3.png)
+
+![Landing Page Wireframe Movil 4](assets/md-images-product-design/landing-wireframe-movil-4.png)
+
+![Landing Page Wireframe Movil 5](assets/md-images-product-design/landing-wireframe-movil-5.png)
 
 ### 4.3.2. Landing Page Mock-up
+![Landing Page MockUp Desktop 1](assets/md-images-product-design/Landing-mockup-Desktop-1.png)
+
+![Landing Page MockUp Desktop 2](assets/md-images-product-design/Landing-mockup-Desktop-2.png)
+
+![Landing Page MockUp Desktop 3](assets/md-images-product-design/Landing-mockup-Desktop-3.png)
+
+![Landing Page MockUp Desktop 4](assets/md-images-product-design/Landing-mockup-Desktop-4.png)
+
+![Landing Page MockUp Desktop 5](assets/md-images-product-design/Landing-mockup-Desktop-5.png)
+
+#### Mobile Web Browser
+![Landing Page MockUp Movil 1](assets/md-images-product-design/Landing-mockup-Movil-1.png)
+
+![Landing Page MockUp Movil 2](assets/md-images-product-design/Landing-mockup-Movil-2.png)
+
+![Landing Page MockUp Movil 3](assets/md-images-product-design/Landing-mockup-Movil-3.png)
+
+![Landing Page MockUp Movil 4](assets/md-images-product-design/Landing-mockup-Movil-4.png)
+
+![Landing Page MockUp Movil 5](assets/md-images-product-design/Landing-mockup-Movil-5.png)
 
 ## 4.4. Web Applications UX/UI Design
 
