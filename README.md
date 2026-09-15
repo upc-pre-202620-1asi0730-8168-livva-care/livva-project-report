@@ -124,7 +124,7 @@ A continuación, se presenta el repositorio utilizado para la elaboración colab
         - [2.3.2. User Task Matrix](#232-user-task-matrix)
         - [2.3.3. User Journey Mapping](#233-user-journey-mapping)
         - [2.3.4. Empathy Mapping](#234-empathy-mapping)
-    - [2.4. Big Picture Event Storming](#24-big-picture-event-storming)
+    - [2.4. Big Picture Event Storming](#24-big-picture-eventstorming)
     - [2.5. Ubiquitous Language](#25-ubiquitous-language)
 - [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
     - [3.1. User Stories](#31-user-stories)
@@ -1237,15 +1237,197 @@ Comprender el nivel de conocimiento de los usuarios sobre los seguros de vida, l
 
 ### 2.3.1. User Personas
 
+- Segmento 1 – Propietarios de vehículos particulares
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b9c99fc6-286a-4820-a0f5-c6eaa5d283c3" />
+
+- Segmento 2 - Personas interesadas en seguros de vida
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9c0deac4-6b6a-4bd4-b25c-786ce5420b4f" />
+
 ### 2.3.2. User Task Matrix
+
+A partir de las entrevistas realizadas, se identificaron las principales tareas que realizan actualmente los usuarios de cada segmento para buscar, contratar y gestionar sus seguros. Para cada tarea se considera su frecuencia aproximada y el nivel de importancia que representa dentro de la experiencia del usuario.
+
+#### Segmento 1: Propietarios de vehículos particulares
+
+| Tarea principal | Frecuencia | Importancia |
+|---|---|---|
+| Buscar información sobre seguros vehiculares | Ocasional | Alta |
+| Comparar precios, coberturas, deducibles y condiciones | Ocasional | Alta |
+| Consultar páginas de aseguradoras, comparadores o corredores | Ocasional | Alta |
+| Solicitar orientación a conocidos, asesores o compañías aseguradoras | Ocasional | Media |
+| Resolver dudas sobre coberturas, exclusiones y términos del seguro | Ocasional | Alta |
+| Revisar la póliza y sus coberturas | Ocasional | Alta |
+| Buscar y consultar documentos relacionados con el seguro | Ocasional | Alta |
+| Verificar la vigencia del seguro | Ocasional | Alta |
+| Gestionar la renovación del seguro | Anual | Alta |
+| Revisar avisos sobre vencimientos, renovaciones o información pendiente | Ocasional | Alta |
+| Comunicarse con la aseguradora ante un accidente o siniestro | Rara | Muy alta |
+| Consultar los pasos que debe seguir ante un siniestro | Rara | Muy alta |
+| Dar seguimiento al estado de un siniestro o solicitud | Rara | Muy alta |
+
+**Notas:**  
+En este segmento se observa que la búsqueda y comparación de información adquiere mayor relevancia durante la contratación o renovación del seguro. Los entrevistados también presentan dificultades para comprender determinados términos, coberturas y exclusiones, además de mantener la documentación distribuida entre distintos canales. Aunque los siniestros ocurren con poca frecuencia, las tareas relacionadas con su atención y seguimiento presentan una importancia muy alta debido a la necesidad de actuar correctamente ante estas situaciones.
+
+---
+
+#### Segmento 2: Personas interesadas en seguros de vida
+
+| Tarea principal | Frecuencia | Importancia |
+|---|---|---|
+| Buscar información sobre seguros de vida | Ocasional | Alta |
+| Comparar cobertura, costo, monto asegurado y condiciones | Ocasional | Alta |
+| Consultar páginas de aseguradoras y otras fuentes digitales | Ocasional | Alta |
+| Solicitar orientación a asesores para resolver dudas | Ocasional | Media |
+| Comprender conceptos como cobertura, monto asegurado, exclusiones y beneficiarios | Ocasional | Alta |
+| Revisar la información de la póliza | Ocasional | Alta |
+| Buscar y consultar documentos relacionados con el seguro | Ocasional | Alta |
+| Consultar la información de los beneficiarios | Ocasional | Alta |
+| Solicitar cambios o actualización de beneficiarios | Rara | Alta |
+| Verificar que la información personal y de beneficiarios esté actualizada | Ocasional | Alta |
+| Revisar avisos relacionados con vigencia, pagos o información pendiente | Ocasional | Alta |
+| Consultar los pasos necesarios ante una eventual solicitud de indemnización | Rara | Muy alta |
+| Dar seguimiento a una solicitud de indemnización | Rara | Muy alta |
+
+**Notas:**  
+En este segmento destaca la necesidad de comprender correctamente las condiciones del seguro de vida y mantener organizada la información relacionada con la póliza y los beneficiarios. Los entrevistados recurren principalmente a canales digitales y, cuando existen dudas, pueden buscar orientación adicional mediante asesores. Las tareas asociadas con una eventual indemnización presentan baja frecuencia, pero una importancia muy alta debido al impacto que tienen para los beneficiarios.
 
 ### 2.3.3. User Journey Mapping
 
+Segmento 1: Propietarios de vehículos particulares
+
+<img width="1645" height="860" alt="image" src="https://github.com/user-attachments/assets/bbf9d24a-5f85-4cae-9f3b-9ea8d7c4f963" />
+
+Segmento 2: Personas interesadas en seguros de vida
+
+<img width="1649" height="862" alt="image" src="https://github.com/user-attachments/assets/ccf46038-ce30-4550-addb-66726ef21a36" />
+
+
+
 ### 2.3.4. Empathy Mapping
 
-## 2.4. Big Picture Event Storming
+Empathy Map - Segmento 1
+
+<img width="1050" height="1318" alt="Empathy Map - Propietarios de vehículos particulares" src="https://github.com/user-attachments/assets/c57d91db-2368-4c9c-a6a4-661cf64777c2" />
+
+Empathy Map - Segmento 2
+
+<img width="1050" height="1408" alt="Empathy map" src="https://github.com/user-attachments/assets/f2724724-6762-43be-9140-3744f0961c97" />
+
+
+## 2.4. Big Picture EventStorming
+
+El Big Picture EventStorming de Livva fue elaborado colaborativamente con el objetivo de comprender el dominio general de la intermediación y gestión digital de seguros vehiculares y de vida. Durante la sesión se identificaron los principales eventos de negocio que ocurren desde la solicitud de un seguro hasta la gestión posterior de pólizas, renovaciones, siniestros, indemnizaciones y suscripciones.
+
+El modelado se desarrolló desde una perspectiva de negocio, identificando Domain Events, actores, sistemas externos, reglas de negocio y hotspots. Se evitó incorporar elementos técnicos propios del diseño de software, debido a que estos serán desarrollados posteriormente en el Design-Level EventStorming.
+
+### Big Picture EventStorming
+
+![Livva Big Picture EventStorming](assets/md-big-picture-event-storming/big-picture-event-storming.PNG)
+
+El modelo muestra dos recorridos principales: seguros vehiculares y seguros de vida. En ambos casos, Livva facilita la solicitud y gestión digital, mientras que las compañías aseguradoras participan como entidades externas responsables de procesos como evaluación, emisión de pólizas, renovaciones y resolución de siniestros o indemnizaciones.
+
+Después de la emisión de una póliza se identifica un ciclo común relacionado con su vigencia y renovación. Para seguros vehiculares se representa adicionalmente el registro y seguimiento de siniestros, mientras que en seguros de vida se diferencia el proceso de solicitud de indemnización realizado por los beneficiarios.
+
+De manera transversal, se representa el proceso de suscripciones de Livva, desde la selección del plan hasta su activación o cancelación. Este flujo se mantiene separado de las pólizas de seguro, ya que una Livva Subscription representa un servicio de la plataforma y no un producto emitido por una aseguradora.
+
+Finalmente, durante el modelado se identificaron hotspots relacionados con la sincronización de decisiones de las aseguradoras, información requerida para las solicitudes, validación de beneficiarios, estados de seguimiento y definición de beneficios de los planes. Estos puntos serán refinados en etapas posteriores del proyecto.
 
 ## 2.5. Ubiquitous Language
+
+El Ubiquitous Language de Livva establece un vocabulario común para describir de forma consistente los principales conceptos del dominio de intermediación y gestión digital de seguros vehiculares y de vida.
+
+Su propósito es facilitar la comunicación entre los integrantes del equipo durante el análisis, diseño, implementación y documentación del producto, evitando utilizar diferentes términos para representar un mismo concepto del negocio.
+
+Los términos principales se expresan en inglés con el objetivo de mantener consistencia con el código fuente y los artefactos de Domain-Driven Design. Sus definiciones se presentan en español para facilitar su comprensión dentro del equipo.
+
+Los conceptos se encuentran agrupados por áreas del dominio. Esta clasificación no representa Bounded Contexts definitivos, ya que estos serán identificados posteriormente durante el Design-Level EventStorming.
+
+### Actors and Roles
+
+| Term | Definition |
+|---|---|
+| **Visitor** | Persona que accede a la Landing Page de Livva sin haber iniciado sesión y puede consultar información pública sobre la plataforma, seguros y planes disponibles. |
+| **Registered User** | Persona que posee una cuenta registrada en Livva y puede acceder a las funcionalidades disponibles dentro de la Web Application. |
+| **Vehicle Owner** | Usuario propietario de un vehículo particular que puede registrarlo en Livva para utilizarlo dentro de una solicitud de seguro vehicular. |
+| **Life Insurance Applicant** | Persona interesada en solicitar un seguro de vida mediante Livva. |
+| **Applicant** | Usuario que ha iniciado o presentado una Insurance Application. |
+| **Policyholder** | Persona titular de una Insurance Policy y responsable de la relación contractual asociada a dicha póliza. Puede ser diferente de la Insured Person en un seguro de vida. |
+| **Insured Person** | Persona cuya vida se encuentra cubierta por una Life Insurance Policy. |
+| **Beneficiary** | Persona designada en una Life Insurance Policy para recibir la prestación correspondiente cuando ocurre un Covered Event que da origen a una Indemnity Request. |
+
+### Insurance Products and Applications
+
+| Term | Definition |
+|---|---|
+| **Insurance Product** | Oferta de seguro proporcionada por una Insurance Company que establece determinadas coberturas, condiciones y características. |
+| **Vehicle Insurance Product** | Insurance Product diseñado para proporcionar protección asociada a un vehículo particular. |
+| **Life Insurance Product** | Insurance Product orientado a proporcionar protección económica relacionada con la vida de una Insured Person y sus Beneficiaries. |
+| **Insurance Application** | Solicitud presentada por un usuario para iniciar el proceso de evaluación de un Insurance Product. |
+| **Vehicle Insurance Application** | Insurance Application asociada a un vehículo registrado por un Vehicle Owner. |
+| **Life Insurance Application** | Insurance Application presentada por una persona interesada en contratar un Life Insurance Product. |
+| **Application Status** | Estado actual de una Insurance Application durante su proceso de evaluación, por ejemplo pendiente, en evaluación, aprobada o rechazada. |
+
+### Policies and Coverage
+
+| Term | Definition |
+|---|---|
+| **Insurance Policy** | Contrato de seguro emitido por una Insurance Company que establece las condiciones, coberturas, vigencia y participantes del seguro contratado. |
+| **Vehicle Insurance Policy** | Insurance Policy correspondiente a un seguro vehicular y asociada a un Insured Vehicle. |
+| **Life Insurance Policy** | Insurance Policy correspondiente a un seguro de vida que establece la protección de una Insured Person y sus Beneficiaries. |
+| **Coverage** | Protección o conjunto de situaciones contempladas dentro de las condiciones de un Insurance Product o Insurance Policy. |
+| **Vehicle** | Vehículo particular registrado por un usuario dentro de Livva. |
+| **Insured Vehicle** | Vehicle que se encuentra cubierto por una Vehicle Insurance Policy. |
+| **Policy Document** | Documento asociado a una Insurance Policy que contiene o respalda información relacionada con sus condiciones, coberturas y vigencia. |
+| **Policy Expiration Date** | Fecha en la que finaliza la vigencia establecida de una Insurance Policy. |
+| **Renewal** | Proceso mediante el cual se busca extender la vigencia de una Insurance Policy próxima a vencer. |
+| **Renewal Request** | Solicitud iniciada por un Policyholder para comenzar el proceso de renovación de una Insurance Policy. |
+
+### Vehicle Claims and Life Indemnities
+
+| Term | Definition |
+|---|---|
+| **Vehicle Incident** | Evento ocurrido a un Insured Vehicle que potencialmente puede encontrarse relacionado con una Coverage de la póliza. |
+| **Vehicle Claim** | Reporte realizado por el asegurado respecto a un Vehicle Incident para iniciar el proceso correspondiente con la Insurance Company. |
+| **Claim Status** | Estado que representa el progreso de un Vehicle Claim durante su evaluación y resolución. |
+| **Covered Event** | Evento contemplado dentro de las condiciones de una Insurance Policy y que puede originar una solicitud relacionada con la cobertura contratada. |
+| **Indemnity Request** | Solicitud presentada por un Beneficiary para iniciar el proceso correspondiente a la prestación de un seguro de vida después de un Covered Event. |
+| **Indemnity Status** | Estado que representa el progreso de una Indemnity Request durante su evaluación y resolución. |
+
+### Subscriptions and Payments
+
+| Term | Definition |
+|---|---|
+| **Subscription Plan** | Nivel de servicio ofrecido directamente por Livva que define un conjunto determinado de beneficios para sus usuarios. |
+| **Livva Subscription** | Relación de servicio entre un Registered User y Livva originada por la contratación de un Subscription Plan. Es independiente de cualquier Insurance Policy. |
+| **Subscription Status** | Estado actual de una Livva Subscription, por ejemplo activa, pendiente de activación o cancelada. |
+| **Subscription Payment** | Pago asociado exclusivamente con la contratación de un Subscription Plan de Livva. No representa el pago de una prima de seguro. |
+| **Subscription Activation** | Proceso mediante el cual el Subscription Plan seleccionado pasa a encontrarse activo para el usuario después de cumplirse las condiciones correspondientes. |
+| **Subscription Cancellation** | Proceso mediante el cual un usuario solicita finalizar su Livva Subscription. |
+
+### External Participants and Shared Concepts
+
+| Term | Definition |
+|---|---|
+| **Insurance Company** | Organización externa responsable de ofrecer Insurance Products, evaluar Insurance Applications, emitir Insurance Policies y resolver procesos relacionados con renovaciones, Vehicle Claims e Indemnity Requests. |
+| **Payment Provider** | Servicio externo utilizado por Livva para procesar o confirmar operaciones relacionadas con un Subscription Payment. |
+| **Insurance Intermediation** | Proceso mediante el cual Livva facilita la relación entre los usuarios y las Insurance Companies sin asumir las funciones propias de una compañía aseguradora. |
+| **Notification** | Comunicación generada por Livva para informar al usuario sobre un evento relevante relacionado con solicitudes, pólizas, renovaciones, siniestros, indemnizaciones o suscripciones. |
+
+### Key Domain Distinctions
+
+Para mantener consistencia dentro del dominio de Livva se establecen las siguientes diferencias conceptuales:
+
+- **Insurance Policy ≠ Livva Subscription:** una Insurance Policy es emitida por una Insurance Company y representa un contrato de seguro. Una Livva Subscription corresponde a un servicio contratado directamente con Livva.
+
+- **Vehicle Claim ≠ Indemnity Request:** un Vehicle Claim representa el reporte y seguimiento de un evento relacionado con un seguro vehicular, mientras que una Indemnity Request corresponde al proceso iniciado por un Beneficiary dentro de un seguro de vida.
+
+- **Vehicle ≠ Insured Vehicle:** un Vehicle representa un vehículo registrado dentro de Livva, mientras que un Insured Vehicle representa un vehículo que ya se encuentra cubierto por una Vehicle Insurance Policy.
+
+- **Policyholder ≠ Insured Person:** el Policyholder es el titular de la póliza, mientras que la Insured Person es la persona cuya vida se encuentra cubierta. Dependiendo del producto, ambos roles pueden corresponder a la misma persona o a personas diferentes.
+
+- **Livva ≠ Insurance Company:** Livva facilita la intermediación y gestión digital de seguros, mientras que la Insurance Company mantiene la responsabilidad sobre evaluación, emisión de pólizas y resolución de procesos relacionados con la cobertura.
+
+- **Subscription Payment ≠ Insurance Premium Payment:** el Subscription Payment corresponde al pago por un servicio propio de Livva. El pago de primas de seguros no forma parte del alcance inicial del proyecto.
 
 # Capítulo III: Requirements Specification
 
