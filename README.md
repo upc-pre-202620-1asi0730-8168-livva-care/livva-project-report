@@ -1180,16 +1180,53 @@ Para mantener consistencia dentro del dominio de Livva se establecen las siguien
 
 ### 4.6.1. Design-Level Event Storming
 
+**Event Storming**
+
+![Design-Level Event Storming](assets/md-big-picture-event-storming/big-picture-event-storming.PNG)
+
+---
+
 ### 4.6.2. Software Architecture Context Diagram
+
+![Software Architecture Context Diagram](assets/md-images-c4-diagrams/software-architecture-context-diagram.png)
+
+---
 
 ### 4.6.3. Software Architecture Container Diagrams
 
+![Software Architecture Container Diagram](assets/md-images-c4-diagrams/software-architecture-container-diagram.png)
+
+---
+
 ### 4.6.4. Software Architecture Components Diagrams
+
+![Web Application Component Diagram](assets/md-images-c4-diagrams/web-application-component-diagram.png)
 
 ## 4.7. Software Object-Oriented Design
 
 ### 4.7.1. Class Diagrams
 
+#### Identity & Profile Management Class Diagram
+
+![Identity & Profile Management Class Diagram](assets/md-images-class-diagrams/identity-profile-management-class-diagram.png)
+
+---
+
+#### Insurance Request Management Class Diagram
+
+![Insurance Request Management Class Diagram](assets/md-images-class-diagrams/insurance-request-management-class-diagram.png)
+
+---
+
+#### Policy Management Class Diagram
+
+![Policy Management Class Diagram](assets/md-images-class-diagrams/policy-management-class-diagram.png)
+
+---
+
+#### Insurance Company, Product & Subscription Management Class Diagram
+
+![Insurance Company, Product & Subscription Management Class Diagram](assets/md-images-class-diagrams/insurancecompany-product-subsmanagement-class-diagram.png)
 ## 4.8. Database Design
 
 ### 4.8.1. Database Diagrams
