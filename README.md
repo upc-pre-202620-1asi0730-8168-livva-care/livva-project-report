@@ -999,9 +999,112 @@ Livva Care plantea aprovechar esta oportunidad mediante herramientas B2B destina
 
 ### 2.2.1. Diseño de entrevistas
 
+Las entrevistas serán semiestructuradas, es decir, se tendrá una lista de preguntas preparadas, pero también se podrán realizar preguntas adicionales dependiendo de las respuestas del entrevistado.
+
+El objetivo es conocer experiencias reales relacionadas con los seguros y encontrar necesidades que puedan ser tomadas en cuenta durante el desarrollo de Livva.
+
+#### Segmento 1: Propietarios de vehículos particulares
+
+**Perfil del entrevistado:**
+
+Personas mayores de edad que tengan un automóvil o camioneta particular y que actualmente tengan un seguro vehicular, hayan tenido uno anteriormente o estén interesados en contratar uno.
+
+**Objetivos:**
+
+- Conocer cómo buscan y contratan seguros vehiculares.
+- Identificar problemas durante la contratación.
+- Conocer cómo administran actualmente su póliza.
+- Identificar dificultades relacionadas con renovaciones y siniestros.
+- Conocer qué funciones esperan de una plataforma digital de seguros.
+
+**Preguntas:**
+
+1. ¿Actualmente tienes o has tenido un seguro vehicular?
+
+2. ¿Cómo buscaste o buscarías información para contratar un seguro para tu vehículo?
+
+3. ¿Qué aspectos consideras más importantes al elegir un seguro vehicular?
+
+4. ¿Has utilizado alguna página web para cotizar o comparar seguros? ¿Cómo fue tu experiencia?
+
+5. ¿Qué dificultades has encontrado al momento de contratar o entender un seguro vehicular?
+
+6. ¿Cómo consultas actualmente la información de tu póliza y tus coberturas?
+
+7. ¿Has tenido algún accidente o siniestro? Si es así, ¿cómo fue el proceso con la aseguradora?
+
+8. ¿Te gustaría recibir recordatorios sobre renovaciones, vencimientos o información pendiente?
+
+9. ¿Te sería útil tener tus pólizas, documentos y coberturas en una sola plataforma?
+
+10. ¿Qué función consideras más importante en una plataforma para gestionar tu seguro vehicular?
+
+---
+
+#### Segmento 2: Personas interesadas en seguros de vida
+
+**Perfil del entrevistado:**
+
+Personas mayores de edad que tengan actualmente un seguro de vida, hayan considerado contratar uno o estén interesadas en proteger económicamente a sus familiares o beneficiarios.
+
+**Objetivos:**
+
+- Conocer qué saben los usuarios sobre los seguros de vida.
+- Identificar dificultades para comprender este tipo de seguro.
+- Conocer qué factores consideran antes de contratar.
+- Identificar necesidades relacionadas con la gestión de beneficiarios.
+- Conocer qué funciones podrían ser útiles en una plataforma digital.
+
+**Preguntas:**
+
+1. ¿Actualmente tienes un seguro de vida o alguna vez has pensado en contratar uno?
+
+2. ¿Qué sabes sobre el funcionamiento de un seguro de vida?
+
+3. ¿Dónde buscarías información antes de contratar un seguro de vida?
+
+4. ¿Qué aspectos considerarías más importantes al elegir un seguro de vida?
+
+5. ¿Te resulta fácil entender conceptos como cobertura, monto asegurado y beneficiarios?
+
+6. Si ya tienes un seguro de vida, ¿cómo consultas actualmente la información de tu póliza?
+
+7. ¿Consideras fácil revisar o actualizar la información de tus beneficiarios?
+
+8. ¿Te gustaría recibir recordatorios o notificaciones relacionadas con tu seguro?
+
+9. ¿Te sería útil tener tus documentos, coberturas y beneficiarios en una sola plataforma?
+
+10. ¿Qué función consideras más importante en una plataforma para gestionar un seguro de vida?
+
+---
+
 ### 2.2.2. Registro de entrevistas
 
+#### Registro de entrevistas del Segmento 1: Propietarios de vehículos particulares
+
+| Entrevista | Nombres y apellidos | Edad | Distrito | Ocupación / cargo | Situación relacionada | Screenshot | URL del video | Timing | Duración |
+|---|---|---:|---|---|---|---|---|---|---|
+| E01 | [Completar] | [Completar] | [Completar] | [Completar] | Propietario de vehículo particular | [Insertar imagen] | [Completar] | [hh:mm:ss] | [mm:ss] |
+| E02 | [Completar] | [Completar] | [Completar] | [Completar] | Propietario de vehículo particular | [Insertar imagen] | [Completar] | [hh:mm:ss] | [mm:ss] |
+| E03 | [Completar] | [Completar] | [Completar] | [Completar] | Propietario de vehículo particular | [Insertar imagen] | [Completar] | [hh:mm:ss] | [mm:ss] |
+
+#### Registro de entrevistas del Segmento 2: Personas interesadas en seguros de vida
+
+| Entrevista | Nombres y apellidos | Edad | Distrito | Ocupación / cargo | Situación relacionada | Screenshot | URL del video | Duración |
+|---|---|---:|---|---|---|---|---|---|
+| E04 | Azul Delgado Sanchez | 23 | Santiago de Surco | Estudiante universitario | Persona interesada en contratar un seguro de vida | ![Azul Delgado](assets/md-images-interviews/ss_AzulDelgado.png) | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323369_upc_edu_pe/IQBdOISW5y9XTp7ssmTuqyyPASO4Fy06nFtBFS7LeTE6Xow?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=VfeZep) | 06:15 |
+| E05 | [Completar] | [Completar] | [Completar] | [Completar] | Persona interesada en contratar un seguro de vida | [Insertar imagen] | [Completar] | [mm:ss] |
+| E06 | [Completar] | [Completar] | [Completar] | [Completar] | Persona interesada en contratar un seguro de vida | [Insertar imagen] | [Completar] | [mm:ss] |
+
 ### 2.2.3. Análisis de entrevistas
+
+| Segmento | Variable de análisis | Resultado preliminar | Sustento |
+|---|---|---|---|
+| Personas interesadas en seguros de vida | Dificultad para comprender coberturas y condiciones de los seguros de vida | Sí presenta dificultad con términos técnicos como exclusiones y condiciones de cobertura | Entrevista E04 |
+| Personas interesadas en seguros de vida | Interés en comparar distintas opciones de seguros de vida | Sí, considera importante comparar precios, coberturas y beneficios | Entrevista E04 |
+| Personas interesadas en seguros de vida | Necesidad de registrar y gestionar beneficiarios de manera sencilla | Sí, considera útil realizar este proceso de forma digital | Entrevista E04 |
+| Personas interesadas en seguros de vida | Interés en consultar solicitudes, pólizas y beneficios desde una plataforma digital | Sí, muestra interés en gestionar pólizas, documentos, beneficiarios y notificaciones desde una sola plataforma | Entrevista E04 |
 
 ## 2.3. Needfinding
 
