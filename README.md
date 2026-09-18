@@ -1634,7 +1634,7 @@ El prototipo permite simular la navegación entre las principales vistas de la a
 Se consideraron las principales funcionalidades de Livva, como el acceso a la plataforma, visualización del dashboard, consulta y gestión de seguros, reservas, mantenimiento, disponibilidad y seguimiento de servicios.
 
 A continuación, se presenta una captura del prototipo en funcionamiento y el enlace al video de demostración, donde se muestran los principales flujos de navegación e interacción de la aplicación.
-![Web Application Prototype](assets/md-livva-webapp-mockups/prototipo.png)
+![Web Application Prototype](assets/md-livva-webapp-mockups/Prototipo.png)
 
 **Video:** [Livva Web Application Prototype](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202416147_upc_edu_pe/IQD5jQ6ZTjOhTqA-9nM85_AEAWTpRawI7w60mHgOE26IJLs?e=FBk1S2&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
