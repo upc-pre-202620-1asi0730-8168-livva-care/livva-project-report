@@ -1,4 +1,4 @@
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c5480c05-1134-4fda-a28d-439407005093" />﻿# Livva
+# Livva
 <div align="center">
 
   <img src="assets/md-images-front/upc-logo.png" width="150px" />
@@ -1087,7 +1087,7 @@ Personas mayores de edad que tengan actualmente un seguro de vida, hayan conside
 |---|---|---:|---|---|---|---|---|---|
 | E01 | Carlos Alberto Lozano | 23 | Comas | Estudiante | Propietario de vehículo particular con seguro vehicular vigente | ![Carlos Lozano](assets/md-images-interviews/ss_CarlosLozano.png) | 00:00:00 - 00:03:50 | 03:50 |
 | E02 | Yul Rivaldo Muñoz Bornás | 25 | Ate | Practicante de redes | Propietario de vehículo particular con seguro vehicular vigente; utiliza su vehículo principalmente para trasladarse | ![Rivaldo Muñoz](assets/md-images-interviews/ss_RivaldoMunoz.png) | 00:03:50 - 00:09:01 | 05:11 |
-| E03 | Diego Miranda | 22 | Surquillo | Estudiante | Propietario de vehículo particular sin experiencia previa contratando seguros vehiculares | [Insertar imagen] | 00:09:01 - 00:13:21 | 04:20 |
+| E03 | Diego Miranda | 22 | Surquillo | Estudiante | Propietario de vehículo particular sin experiencia previa contratando seguros vehiculares | ![Diego Miranda](assets/md-images-interviews/ss_DiegoMiranda.png) | 00:09:01 - 00:13:21 | 04:20 |
 
 #### Registro de entrevistas del Segmento 2: Personas interesadas en seguros de vida
 
