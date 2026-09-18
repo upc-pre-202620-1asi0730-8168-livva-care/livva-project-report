@@ -1481,7 +1481,9 @@ Para mantener consistencia dentro del dominio de Livva se establecen las siguien
 
 ## 3.2. Impact Mapping
 
-----
+![Livva Impact Mapping](assets/md-images-impact-mapping/impact-map.png)
+
+---
 
 ## 3.3. Product Backlog
 
