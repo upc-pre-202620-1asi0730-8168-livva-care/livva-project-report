@@ -1101,6 +1101,12 @@ Personas mayores de edad que tengan actualmente un seguro de vida, hayan conside
 
 | Segmento | Variable de análisis | Resultado preliminar | Sustento |
 |---|---|---|---|
+| Propietarios de vehículos particulares | Dificultad para comparar coberturas, precios y condiciones entre aseguradoras | Sí, la información se encuentra distribuida entre páginas web, correos y conversaciones de WhatsApp, lo que dificulta comparar las alternativas disponibles | Entrevista E01 |
+| Propietarios de vehículos particulares | Interés en centralizar la gestión del seguro vehicular | Sí, considera útil consultar pólizas, documentos, coberturas, vigencia y estado de siniestros desde una sola plataforma | Entrevista E01 |
+| Propietarios de vehículos particulares | Dificultad para comprender términos y condiciones del seguro | Sí, algunas coberturas y condiciones utilizan términos técnicos que requieren ser revisados varias veces para comprenderlos | Entrevista E02 |
+| Propietarios de vehículos particulares | Necesidad de recordatorios y seguimiento de renovaciones | Sí, estuvo cerca de superar la fecha de renovación y considera útiles las notificaciones para mantener vigente su seguro | Entrevista E02 |
+| Propietarios de vehículos particulares | Necesidad de acompañamiento durante la primera contratación de un seguro | Sí, al no tener experiencia previa, requiere un proceso guiado que explique los requisitos, coberturas y pasos de contratación | Entrevista E03 |
+| Propietarios de vehículos particulares | Preferencia por revisar las opciones antes de proporcionar datos personales | Sí, muestra incomodidad cuando las páginas solicitan información personal antes de presentar claramente los seguros y coberturas disponibles | Entrevista E03 |
 | Personas interesadas en seguros de vida | Dificultad para comprender coberturas y condiciones de los seguros de vida | Sí presenta dificultad con términos técnicos como exclusiones y condiciones de cobertura | Entrevista E04 |
 | Personas interesadas en seguros de vida | Interés en comparar distintas opciones de seguros de vida | Sí, considera importante comparar precios, coberturas y beneficios | Entrevista E04 |
 | Personas interesadas en seguros de vida | Necesidad de registrar y gestionar beneficiarios de manera sencilla | Sí, considera útil realizar este proceso de forma digital | Entrevista E04 |
