@@ -1083,20 +1083,20 @@ Personas mayores de edad que tengan actualmente un seguro de vida, hayan conside
 
 #### Registro de entrevistas del Segmento 1: Propietarios de vehículos particulares
 
-| Entrevista | Nombres y apellidos | Edad | Distrito | Ocupación / cargo | Situación relacionada | Screenshot | URL del video | Timing | Duración |
-|---|---|---:|---|---|---|---|---|---|---|
-| E01 | [Completar] | [Completar] | [Completar] | [Completar] | Propietario de vehículo particular | [Insertar imagen] | [Completar] | [hh:mm:ss] | [mm:ss] |
-| E02 | [Completar] | [Completar] | [Completar] | [Completar] | Propietario de vehículo particular | [Insertar imagen] | [Completar] | [hh:mm:ss] | [mm:ss] |
-| E03 | [Completar] | [Completar] | [Completar] | [Completar] | Propietario de vehículo particular | [Insertar imagen] | [Completar] | [hh:mm:ss] | [mm:ss] |
+| Entrevista | Nombres y apellidos | Edad | Distrito | Ocupación / cargo | Situación relacionada | Screenshot | Timing | Duración |
+|---|---|---:|---|---|---|---|---|---|
+| E01 | Carlos Alberto Lozano | 23 | Comas | Estudiante | Propietario de vehículo particular con seguro vehicular vigente | ![Carlos Lozano](assets/md-images-interviews/ss_CarlosLozano.png) | 00:00:00 - 00:03:50 | 03:50 |
+| E02 | Yul Rivaldo Muñoz Bornás | 25 | Ate | Practicante de redes | Propietario de vehículo particular con seguro vehicular vigente; utiliza su vehículo principalmente para trasladarse | ![Rivaldo Muñoz](assets/md-images-interviews/ss_RivaldoMunoz.png) | 00:03:50 - 00:09:01 | 05:11 |
+| E03 | Diego Miranda | 22 | Surquillo | Estudiante | Propietario de vehículo particular sin experiencia previa contratando seguros vehiculares | [Insertar imagen] | 00:09:01 - 00:13:21 | 04:20 |
 
 #### Registro de entrevistas del Segmento 2: Personas interesadas en seguros de vida
 
-| Entrevista | Nombres y apellidos | Edad | Distrito | Ocupación / cargo | Situación relacionada | Screenshot | URL del video | Duración |
+| Entrevista | Nombres y apellidos | Edad | Distrito | Ocupación / cargo | Situación relacionada | Screenshot | Timing | Duración |
 |---|---|---:|---|---|---|---|---|---|
-| E04 | Azul Delgado Sanchez | 23 | Santiago de Surco | Estudiante universitario | Persona interesada en contratar un seguro de vida | ![Azul Delgado](assets/md-images-interviews/ss_AzulDelgado.png) | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323369_upc_edu_pe/IQBdOISW5y9XTp7ssmTuqyyPASO4Fy06nFtBFS7LeTE6Xow?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=VfeZep) | 06:15 |
-| E05 | [Completar] | [Completar] | [Completar] | [Completar] | Persona interesada en contratar un seguro de vida | [Insertar imagen] | [Completar] | [mm:ss] |
+| E04 | Azul Delgado Sanchez | 23 | Santiago de Surco | Estudiante universitario | Persona interesada en contratar un seguro de vida | ![Azul Delgado](assets/md-images-interviews/ss_AzulDelgado.png) | 00:13:21 - 00:19:36 | 06:15 |
+<!-- | E05 | [Completar] | [Completar] | [Completar] | [Completar] | Persona interesada en contratar un seguro de vida | [Insertar imagen] | [Completar] | [mm:ss] |
 | E06 | [Completar] | [Completar] | [Completar] | [Completar] | Persona interesada en contratar un seguro de vida | [Insertar imagen] | [Completar] | [mm:ss] |
-
+-->
 ### 2.2.3. Análisis de entrevistas
 
 | Segmento | Variable de análisis | Resultado preliminar | Sustento |
