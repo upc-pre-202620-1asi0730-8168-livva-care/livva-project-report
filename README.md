@@ -1619,7 +1619,7 @@ Los wireframes de la Web Application de Livva representan la estructura y distri
 
 ### 4.4.4. Web Applications User Flow Diagrams
 
-![Flow Diagrams](assets/md-livva-webapp-mockups/flow diagrams.png)
+![Flow Diagrams](assets/md-livva-webapp-mockups/flow-diagrams.png)
 
 ## 4.5. Web Applications Prototyping
 
