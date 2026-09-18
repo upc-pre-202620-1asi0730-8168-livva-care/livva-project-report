@@ -1231,6 +1231,21 @@ Para mantener consistencia dentro del dominio de Livva se establecen las siguien
 
 ### 4.8.1. Database Diagrams
 
+### Indentity & Profile Management Bounded Context Database Design Diagram
+![Identity & Profile Management Bounded Context Database Design Diagram](assets/md-images-database-diagrams/identity-and-profile-management.PNG)
+
+### Insurance Offering & Applications Bounded Context Database Design Diagram
+![Insurance Offering & Applications Bounded Context Database Design Diagram](assets/md-images-database-diagrams/insurance-offering-and-applications.png)
+
+### Policy Management Bounded Context Database Design Diagram
+![Policy Management Bounded Context Database Design Diagram](assets/md-images-database-diagrams/policy-management.png)
+
+### Claims & Indemnities Bounded Context Database Design Diagram
+![Claims & Indemnities Bounded Context Database Design Diagram](assets/md-images-database-diagrams/claims-and-indemnities.png)
+
+### Subscription Management Bounded Context Database Design Diagram
+![Subscription Management Bounded Context Database Design Diagram](assets/md-images-database-diagrams/subscription-management.png)
+
 # Capítulo V: Product Implementation, Validation & Deployment
 
 ## 5.1. Software Configuration Management
