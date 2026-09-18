@@ -1,4 +1,4 @@
-﻿# Livva
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c5480c05-1134-4fda-a28d-439407005093" />﻿# Livva
 <div align="center">
 
   <img src="assets/md-images-front/upc-logo.png" width="150px" />
@@ -1097,6 +1097,9 @@ Personas mayores de edad que tengan actualmente un seguro de vida, hayan conside
 <!-- | E05 | [Completar] | [Completar] | [Completar] | [Completar] | Persona interesada en contratar un seguro de vida | [Insertar imagen] | [Completar] | [mm:ss] |
 | E06 | [Completar] | [Completar] | [Completar] | [Completar] | Persona interesada en contratar un seguro de vida | [Insertar imagen] | [Completar] | [mm:ss] |
 -->
+
+[Video de las entrevisas](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202321613_upc_edu_pe/IQDQawos-xc4RYxiC7U-FhUTARuGivS7Xwl13O9kQM_d4cY?e=rKwrYC)
+
 ### 2.2.3. Análisis de entrevistas
 
 | Segmento | Variable de análisis | Resultado preliminar | Sustento |
