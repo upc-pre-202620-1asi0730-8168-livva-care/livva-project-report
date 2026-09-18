@@ -1855,14 +1855,110 @@ Para ello, se desarrollarán wireframes, wireflows, mock-ups y user flow diagram
 # Capítulo V: Product Implementation, Validation & Deployment
 
 ## 5.1. Software Configuration Management
+La gestión de configuración de software de Livva establece las herramientas, prácticas y convenciones utilizadas por el equipo para mantener la consistencia de los artefactos desarrollados durante el ciclo de vida del proyecto.
+
+Para ello, se consideran mecanismos para la gestión del entorno de desarrollo, control de versiones, convenciones de código y configuración de despliegue. Estas prácticas permiten que los integrantes del equipo trabajen de manera colaborativa sobre una misma base, manteniendo trazabilidad sobre los cambios realizados y reduciendo conflictos durante el desarrollo.
+
+El equipo utiliza Git y GitHub para el control de versiones de los repositorios, aplicando GitFlow como workflow de ramificación y Conventional Commits para mantener mensajes de commit consistentes. Asimismo, se utilizan herramientas especializadas para las actividades de diseño UX/UI, documentación y desarrollo de los productos digitales de Livva.
 
 ### 5.1.1. Software Development Environment Configuration
+Para el desarrollo de Livva se definió un conjunto de herramientas que permiten cubrir las diferentes actividades del ciclo de vida del producto digital. La selección considera herramientas para gestión y colaboración, diseño UX/UI, control de versiones, desarrollo de software, documentación y despliegue.
+
+Las herramientas utilizadas por el equipo se presentan a continuación:
+
+| Software | Propósito de uso en el proyecto | Ruta de referencia / descarga |
+|---|---|---|
+| GitHub | Plataforma utilizada para alojar los repositorios del Project Report y de los productos de software de Livva. Permite la colaboración del equipo, revisión del historial de cambios y gestión de ramas. | https://github.com/ |
+| Git | Sistema de control de versiones distribuido utilizado para registrar cambios realizados en los archivos del proyecto y trabajar con el workflow GitFlow. | https://git-scm.com/downloads |
+| JetBrains Rider | Entorno de desarrollo utilizado para trabajar con los archivos del proyecto, editar la documentación en Markdown, utilizar la terminal integrada y gestionar operaciones relacionadas con Git y GitFlow. | https://www.jetbrains.com/rider/download/ |
+| Figma | Herramienta utilizada para elaborar los wireframes, mock-ups y prototipos de la Landing Page y Web Application de Livva. | https://www.figma.com/ |
+| FigJam | Herramienta utilizada como apoyo para la representación de flujos de usuario, wireflows y otros diagramas colaborativos relacionados con UX/UI. | https://www.figma.com/figjam/ |
+| HTML5 | Lenguaje de marcado utilizado para definir la estructura del Landing Page de Livva. | https://developer.mozilla.org/en-US/docs/Web/HTML |
+| CSS3 | Tecnología utilizada para definir los estilos visuales, distribución y comportamiento responsive del Landing Page. | https://developer.mozilla.org/en-US/docs/Web/CSS |
+| JavaScript | Lenguaje utilizado para implementar comportamiento e interactividad en el Landing Page, incluyendo funcionalidades de la interfaz de usuario. | https://developer.mozilla.org/en-US/docs/Web/JavaScript |
+| Markdown | Formato utilizado para elaborar y mantener la documentación principal del Final Project Documentation Report mediante el archivo README.md. | https://www.markdownguide.org/ |
+| Microsoft Edge / Brave | Navegadores web utilizados durante el desarrollo para visualizar, probar y validar el funcionamiento de las interfaces web implementadas. | https://www.microsoft.com/edge / https://brave.com/ |
 
 ### 5.1.2. Source Code Management
+La gestión del código fuente de Livva se realiza mediante Git como sistema de control de versiones distribuido y GitHub como plataforma de alojamiento y colaboración de los repositorios del proyecto.
+
+El equipo utiliza GitFlow como estrategia de ramificación para organizar el desarrollo y mantener separadas las versiones estables, las integraciones y las nuevas funcionalidades. La estructura principal empleada es la siguiente:
+
+- `main`: contiene las versiones estables y finales del proyecto.
+- `develop`: integra los avances aprobados provenientes de las diferentes ramas de trabajo.
+- `feature/*`: contiene el desarrollo de funcionalidades, documentación o artefactos específicos antes de ser integrados a `develop`.
+- `release/*`: se reserva para la preparación de versiones antes de ser integradas a producción.
+- `hotfix/*`: se utiliza para correcciones urgentes sobre una versión estable.
+
+Para mantener la trazabilidad del trabajo, cada integrante desarrolla sus cambios en una rama `feature` creada a partir de `develop`. Una vez completado el trabajo, los cambios se registran mediante commits y se publican en el repositorio remoto de GitHub. Posteriormente, las ramas son integradas a `develop` mediante el flujo establecido por GitFlow.
+
+El equipo también aplica Conventional Commits para mantener una estructura uniforme en los mensajes de commit. Entre los tipos utilizados se encuentran:
+
+- `feat`: incorporación de nuevas funcionalidades o contenido.
+- `fix`: corrección de errores.
+- `docs`: cambios relacionados con documentación.
+- `chore`: tareas de mantenimiento o configuración.
+- `refactor`: modificaciones internas que no alteran el comportamiento externo del sistema.
+
+Ejemplos de commits utilizados durante el desarrollo incluyen:
+
+- `docs: add web application ux ui design`
+- `fix: correct user flow diagram image path`
+- `feat: add landing page internationalization`
+- `docs: add landing page wireframes and mockups`
+
+El uso conjunto de Git, GitHub, GitFlow y Conventional Commits permite mantener un historial claro de los cambios, facilitar la colaboración entre los integrantes y reducir conflictos durante la integración de los diferentes componentes del proyecto.
 
 ### 5.1.3. Source Code Style Guide & Conventions
+Para mantener consistencia y facilitar la comprensión del código fuente, el equipo de Livva define convenciones de estilo aplicables a los diferentes artefactos del proyecto.
+
+En el caso del Landing Page, desarrollado con HTML5, CSS3 y JavaScript, se siguen las siguientes convenciones:
+
+- Se utilizan nombres descriptivos y en minúsculas para archivos y carpetas.
+- Los nombres compuestos se separan mediante guiones (`kebab-case`) cuando corresponde.
+- La estructura HTML se organiza utilizando etiquetas semánticas como `header`, `nav`, `main`, `section`, `footer` y otras etiquetas apropiadas.
+- Los atributos `id` y `class` se definen con nombres claros y relacionados con la responsabilidad visual o funcional del elemento.
+- El código CSS se organiza por secciones de la interfaz, procurando mantener agrupadas las reglas relacionadas.
+- Se evita el uso innecesario de estilos inline.
+- Las reglas responsive se gestionan mediante media queries.
+- El código JavaScript utiliza nombres descriptivos para variables y funciones.
+- Se utiliza indentación consistente para mejorar la legibilidad del código.
+- Se prioriza la reutilización de estilos y estructuras antes de duplicar código.
+- Los elementos interactivos consideran estados de interacción y criterios básicos de accesibilidad.
+
+Para la documentación del proyecto en Markdown, se mantiene una estructura jerárquica consistente mediante encabezados, listas, tablas, enlaces e imágenes. Los nombres de los archivos multimedia se definen de forma descriptiva y se almacenan dentro del directorio `assets`, agrupados según el tipo de evidencia o artefacto.
+
+Asimismo, el equipo aplica Conventional Commits para estandarizar los mensajes registrados en Git. La estructura utilizada es:
+
+`<type>: <description>`
+
+Por ejemplo:
+
+- `feat: add landing page internationalization`
+- `fix: correct user flow diagram image path`
+- `docs: add web application ux ui design`
+- `chore: initialize landing page repository`
+
+Estas convenciones permiten que el código y la documentación sean más fáciles de mantener, revisar e integrar entre los diferentes integrantes del equipo.
 
 ### 5.1.4. Software Deployment Configuration
+La configuración de despliegue de Livva define el proceso que permitirá publicar los productos digitales de la solución a partir de sus respectivos repositorios de código fuente.
+
+Para el AV1, el producto que debe encontrarse desplegado es la primera versión del Landing Page. El proceso de despliegue parte del repositorio correspondiente en GitHub y considera una versión estable del código previamente integrada y validada por el equipo.
+
+El flujo general de despliegue definido por el equipo es el siguiente:
+
+1. El desarrollo se realiza en ramas `feature/*` creadas a partir de `develop`.
+2. Una vez completada y revisada una funcionalidad, los cambios se integran a `develop`.
+3. Antes de realizar una publicación, se verifica el correcto funcionamiento del producto en el entorno local.
+4. La versión aprobada para publicación se integra a la rama estable correspondiente.
+5. La plataforma de despliegue obtiene el código fuente desde el repositorio de GitHub.
+6. Se ejecuta el proceso de publicación de los archivos necesarios para poner el producto disponible mediante una URL pública.
+7. Finalmente, el equipo realiza una validación de la versión desplegada para comprobar navegación, diseño responsive, accesibilidad básica, internacionalización y funcionamiento de los elementos interactivos.
+
+Para el Landing Page, el artefacto desplegado está compuesto principalmente por archivos HTML5, CSS3 y JavaScript. El despliegue debe conservar la estructura de directorios, los recursos multimedia y las referencias necesarias para que el sitio funcione correctamente fuera del entorno local.
+
+En entregas posteriores, este proceso será ampliado para incluir el despliegue de la Frontend Web Application y de los Web Services, manteniendo los repositorios de GitHub como fuente de las versiones que serán publicadas.
 
 ## 5.2. Landing Page, Services & Applications Implementation
 
