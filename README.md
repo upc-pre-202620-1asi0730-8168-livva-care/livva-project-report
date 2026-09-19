@@ -2005,17 +2005,60 @@ La siguiente matriz LACX muestra la distribución de liderazgo y colaboración d
 | Contreras Panuera, Fernando Fabrizio | FernSkibidi69   | C                           | C                      | C | C | C               |
 | Cespedes Lezcano, Carlos Gabriel | Leikop          | L                           | C                      | L | C | L               |
 | Rivera Aguilar, Scarlet Josefina | scarletriveraaguilar-spec       | C                           | C                      | C | C | C               |
+
 #### 5.2.1.3. Sprint Backlog 1
-  
+
+El Sprint Backlog 1 organiza las actividades necesarias para implementar y desplegar la primera versión del Landing Page de Livva. Su alcance comprende la presentación de la propuesta de valor, los beneficios de la plataforma y la información de seguros vehiculares y de vida, tomando como referencia las historias US-01, US-02, US-03 y US-04 del Product Backlog.
+
+Estas historias representan un total de 7 Story Points. Adicionalmente, se consideran tareas transversales relacionadas con internacionalización, accesibilidad, responsive design, pruebas y despliegue.
+
+El seguimiento del trabajo se registra en el tablero del sprint, donde se identifican las tareas, sus responsables y sus estados.
+
+**URL pública del tablero:** [Trello](https://trello.com/invite/b/6aadf928b7dce06014e34a37/ATTIfcb6a92bdabcaf622c9c9229abf3f79fFB3643C1/mi-tablero-de-trello).
+
+**Captura del tablero:** 
+
+<img src="assets/md-images-chapter-05/trelloav1.PNG" width="150px" />
+
+La siguiente descomposición constituye una propuesta que debe contrastarse con las actividades efectivamente realizadas. Los responsables, estimaciones y estados se completarán de acuerdo con el tablero del equipo.
+
+| Story ID | Story Title | Task ID | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
+|---|---|---|---|---|---|---|---|
+| US-01 | Conocer Livva | S1-T01 | Estructura del Landing Page | Implementar la estructura HTML, encabezado, navegación y footer a partir del diseño definido. | 1 | Carlos Céspedes | Done |
+| US-01 | Conocer Livva | S1-T02 | Presentación de Livva | Incorporar la propuesta de valor y explicar el propósito de la plataforma. | 2 | Carlos Céspedes | Done |
+| US-01 | Conocer Livva | S1-T03 | Navegación entre secciones | Implementar y comprobar los enlaces internos y las acciones de navegación. | 1 | Carlos Céspedes | Done |
+| US-02 | Consultar beneficios de Livva | S1-T04 | Sección de beneficios | Presentar los beneficios de Livva mediante contenido y componentes coherentes con el diseño. | 1 | Scarlet Rivera | Done |
+| US-03 | Consultar información de seguro vehicular | S1-T05 | Información de seguro vehicular | Incorporar la descripción y los principales beneficios del seguro vehicular. | 2 | Carlos Céspedes | Done |
+| US-04 | Consultar información de seguro de vida | S1-T06 | Información de seguro de vida | Incorporar la descripción del seguro de vida y su propósito de protección económica para los beneficiarios. | 1 | Scarlet Rivera | Done |
+| — | Requerimiento transversal | S1-T07 | Internacionalización | Implementar el contenido en inglés y español latinoamericano, con inglés como idioma predeterminado. | 1 | Carlos Céspedes | Done |
+| — | Requerimiento transversal | S1-T08 | Adaptación responsive | Ajustar la distribución de las secciones y la navegación para diferentes tamaños de pantalla. | 1 | Scarlet Rivera | Done |
+| — | Requerimiento transversal | S1-T09 | Accesibilidad básica | Revisar HTML semántico, labels, textos alternativos, navegación por teclado y atributos ARIA. | 1 | Carlos Céspedes | Done |
+| — | Requerimiento transversal | S1-T10 | Contenido complementario | Incorporar o revisar la información de planes, equipo, contacto y enlaces del footer previstos en el diseño. | 1 | Scarlet | Done |
+| — | Requerimiento transversal | S1-T11 | Verificación del Landing Page | Comprobar criterios de aceptación, navegación, idiomas, carga de recursos y comportamiento responsive. | 2 | Carlos Céspedes | Done |
+| — | Requerimiento transversal | S1-T12 | Despliegue del Landing Page | Publicar la versión aprobada y verificar su funcionamiento mediante la URL pública. | 3 | Carlos Céspedes | Done |
+| — | Requerimiento transversal | S1-T13 | Registro de evidencias | Recopilar commits, capturas, video de ejecución y registros de colaboración. | 1 | Carlos Paredes | Done |
+
+Los estados utilizados son To-do, In-Process, To-Review y Done. Las tareas transversales no representan nuevas User Stories ni incrementan por sí mismas la suma de Story Points seleccionada del Product Backlog.
+
+
 #### 5.2.1.4. Development Evidence for Sprint Review
 
-#### 5.2.1.5. Execution Evidence for Sprint Review
+En esta sección se presentan las evidencias de implementación del Landing Page de Livva correspondientes al Sprint 1. El registro permite relacionar los cambios del código fuente con las actividades del Sprint Backlog, identificando el repositorio, la rama, el commit y su fecha.
+
+Las evidencias deben corresponder a cambios reales en la estructura HTML, los estilos CSS, la lógica JavaScript y los recursos utilizados por el Landing Page.
+
+**Repositorio del Landing Page:** [Repositorio](https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-landing-page/tree/develop).
 
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
-#### 5.2.1.7. Software Deployment Evidence for Sprint Review
+El alcance del Sprint 1 se concentra en la implementación de la primera versión del Landing Page de Livva. Por este motivo, no contempla el desarrollo de Web Services y no se presentan endpoints documentados en esta iteración.
 
-#### 5.2.1.8. Team Collaboration Insights during Sprint
+La documentación del RESTful API se incorporará en los sprints correspondientes a la implementación del backend, utilizando OpenAPI Specification mediante Swagger.
+
+En dichas iteraciones, se incluirá la relación de endpoints implementados, sus verbos HTTP, rutas, parámetros, ejemplos y explicación de respuestas. Asimismo, se incorporarán enlaces a la documentación, capturas de interacción con datos de muestra y los commits relacionados.
+
+Las interacciones locales desarrolladas con JavaScript en el Landing Page no constituyen evidencia de implementación del RESTful API.
+
 
 # Conclusiones
 
