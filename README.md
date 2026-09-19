@@ -1917,38 +1917,250 @@ A continuación, se presenta una captura del prototipo en funcionamiento y el en
 # Capítulo V: Product Implementation, Validation & Deployment
 
 ## 5.1. Software Configuration Management
+La gestión de configuración de software de Livva establece las herramientas, prácticas y convenciones utilizadas por el equipo para mantener la consistencia de los artefactos desarrollados durante el ciclo de vida del proyecto.
+
+Para ello, se consideran mecanismos para la gestión del entorno de desarrollo, control de versiones, convenciones de código y configuración de despliegue. Estas prácticas permiten que los integrantes del equipo trabajen de manera colaborativa sobre una misma base, manteniendo trazabilidad sobre los cambios realizados y reduciendo conflictos durante el desarrollo.
+
+El equipo utiliza Git y GitHub para el control de versiones de los repositorios, aplicando GitFlow como workflow de ramificación y Conventional Commits para mantener mensajes de commit consistentes. Asimismo, se utilizan herramientas especializadas para las actividades de diseño UX/UI, documentación y desarrollo de los productos digitales de Livva.
 
 ### 5.1.1. Software Development Environment Configuration
+Para el desarrollo de Livva se definió un conjunto de herramientas que permiten cubrir las diferentes actividades del ciclo de vida del producto digital. La selección considera herramientas para gestión y colaboración, diseño UX/UI, control de versiones, desarrollo de software, documentación y despliegue.
+
+Las herramientas utilizadas por el equipo se presentan a continuación:
+
+| Software | Propósito de uso en el proyecto | Ruta de referencia / descarga |
+|---|---|---|
+| GitHub | Plataforma utilizada para alojar los repositorios del Project Report y de los productos de software de Livva. Permite la colaboración del equipo, revisión del historial de cambios y gestión de ramas. | https://github.com/ |
+| Git | Sistema de control de versiones distribuido utilizado para registrar cambios realizados en los archivos del proyecto y trabajar con el workflow GitFlow. | https://git-scm.com/downloads |
+| JetBrains Rider | Entorno de desarrollo utilizado para trabajar con los archivos del proyecto, editar la documentación en Markdown, utilizar la terminal integrada y gestionar operaciones relacionadas con Git y GitFlow. | https://www.jetbrains.com/rider/download/ |
+| Figma | Herramienta utilizada para elaborar los wireframes, mock-ups y prototipos de la Landing Page y Web Application de Livva. | https://www.figma.com/ |
+| FigJam | Herramienta utilizada como apoyo para la representación de flujos de usuario, wireflows y otros diagramas colaborativos relacionados con UX/UI. | https://www.figma.com/figjam/ |
+| HTML5 | Lenguaje de marcado utilizado para definir la estructura del Landing Page de Livva. | https://developer.mozilla.org/en-US/docs/Web/HTML |
+| CSS3 | Tecnología utilizada para definir los estilos visuales, distribución y comportamiento responsive del Landing Page. | https://developer.mozilla.org/en-US/docs/Web/CSS |
+| JavaScript | Lenguaje utilizado para implementar comportamiento e interactividad en el Landing Page, incluyendo funcionalidades de la interfaz de usuario. | https://developer.mozilla.org/en-US/docs/Web/JavaScript |
+| Markdown | Formato utilizado para elaborar y mantener la documentación principal del Final Project Documentation Report mediante el archivo README.md. | https://www.markdownguide.org/ |
+| Microsoft Edge / Brave | Navegadores web utilizados durante el desarrollo para visualizar, probar y validar el funcionamiento de las interfaces web implementadas. | https://www.microsoft.com/edge / https://brave.com/ |
 
 ### 5.1.2. Source Code Management
+La gestión del código fuente de Livva se realiza mediante Git como sistema de control de versiones distribuido y GitHub como plataforma de alojamiento y colaboración de los repositorios del proyecto.
+
+El equipo utiliza GitFlow como estrategia de ramificación para organizar el desarrollo y mantener separadas las versiones estables, las integraciones y las nuevas funcionalidades. La estructura principal empleada es la siguiente:
+
+- `main`: contiene las versiones estables y finales del proyecto.
+- `develop`: integra los avances aprobados provenientes de las diferentes ramas de trabajo.
+- `feature/*`: contiene el desarrollo de funcionalidades, documentación o artefactos específicos antes de ser integrados a `develop`.
+- `release/*`: se reserva para la preparación de versiones antes de ser integradas a producción.
+- `hotfix/*`: se utiliza para correcciones urgentes sobre una versión estable.
+
+Para mantener la trazabilidad del trabajo, cada integrante desarrolla sus cambios en una rama `feature` creada a partir de `develop`. Una vez completado el trabajo, los cambios se registran mediante commits y se publican en el repositorio remoto de GitHub. Posteriormente, las ramas son integradas a `develop` mediante el flujo establecido por GitFlow.
+
+El equipo también aplica Conventional Commits para mantener una estructura uniforme en los mensajes de commit. Entre los tipos utilizados se encuentran:
+
+- `feat`: incorporación de nuevas funcionalidades o contenido.
+- `fix`: corrección de errores.
+- `docs`: cambios relacionados con documentación.
+- `chore`: tareas de mantenimiento o configuración.
+- `refactor`: modificaciones internas que no alteran el comportamiento externo del sistema.
+
+Ejemplos de commits utilizados durante el desarrollo incluyen:
+
+- `docs: add web application ux ui design`
+- `fix: correct user flow diagram image path`
+- `feat: add landing page internationalization`
+- `docs: add landing page wireframes and mockups`
+
+El uso conjunto de Git, GitHub, GitFlow y Conventional Commits permite mantener un historial claro de los cambios, facilitar la colaboración entre los integrantes y reducir conflictos durante la integración de los diferentes componentes del proyecto.
 
 ### 5.1.3. Source Code Style Guide & Conventions
+Para mantener consistencia y facilitar la comprensión del código fuente, el equipo de Livva define convenciones de estilo aplicables a los diferentes artefactos del proyecto.
+
+En el caso del Landing Page, desarrollado con HTML5, CSS3 y JavaScript, se siguen las siguientes convenciones:
+
+- Se utilizan nombres descriptivos y en minúsculas para archivos y carpetas.
+- Los nombres compuestos se separan mediante guiones (`kebab-case`) cuando corresponde.
+- La estructura HTML se organiza utilizando etiquetas semánticas como `header`, `nav`, `main`, `section`, `footer` y otras etiquetas apropiadas.
+- Los atributos `id` y `class` se definen con nombres claros y relacionados con la responsabilidad visual o funcional del elemento.
+- El código CSS se organiza por secciones de la interfaz, procurando mantener agrupadas las reglas relacionadas.
+- Se evita el uso innecesario de estilos inline.
+- Las reglas responsive se gestionan mediante media queries.
+- El código JavaScript utiliza nombres descriptivos para variables y funciones.
+- Se utiliza indentación consistente para mejorar la legibilidad del código.
+- Se prioriza la reutilización de estilos y estructuras antes de duplicar código.
+- Los elementos interactivos consideran estados de interacción y criterios básicos de accesibilidad.
+
+Para la documentación del proyecto en Markdown, se mantiene una estructura jerárquica consistente mediante encabezados, listas, tablas, enlaces e imágenes. Los nombres de los archivos multimedia se definen de forma descriptiva y se almacenan dentro del directorio `assets`, agrupados según el tipo de evidencia o artefacto.
+
+Asimismo, el equipo aplica Conventional Commits para estandarizar los mensajes registrados en Git. La estructura utilizada es:
+
+`<type>: <description>`
+
+Por ejemplo:
+
+- `feat: add landing page internationalization`
+- `fix: correct user flow diagram image path`
+- `docs: add web application ux ui design`
+- `chore: initialize landing page repository`
+
+Estas convenciones permiten que el código y la documentación sean más fáciles de mantener, revisar e integrar entre los diferentes integrantes del equipo.
 
 ### 5.1.4. Software Deployment Configuration
+La configuración de despliegue de Livva define el proceso que permitirá publicar los productos digitales de la solución a partir de sus respectivos repositorios de código fuente.
+
+Para el AV1, el producto que debe encontrarse desplegado es la primera versión del Landing Page. El proceso de despliegue parte del repositorio correspondiente en GitHub y considera una versión estable del código previamente integrada y validada por el equipo.
+
+El flujo general de despliegue definido por el equipo es el siguiente:
+
+1. El desarrollo se realiza en ramas `feature/*` creadas a partir de `develop`.
+2. Una vez completada y revisada una funcionalidad, los cambios se integran a `develop`.
+3. Antes de realizar una publicación, se verifica el correcto funcionamiento del producto en el entorno local.
+4. La versión aprobada para publicación se integra a la rama estable correspondiente.
+5. La plataforma de despliegue obtiene el código fuente desde el repositorio de GitHub.
+6. Se ejecuta el proceso de publicación de los archivos necesarios para poner el producto disponible mediante una URL pública.
+7. Finalmente, el equipo realiza una validación de la versión desplegada para comprobar navegación, diseño responsive, accesibilidad básica, internacionalización y funcionamiento de los elementos interactivos.
+
+Para el Landing Page, el artefacto desplegado está compuesto principalmente por archivos HTML5, CSS3 y JavaScript. El despliegue debe conservar la estructura de directorios, los recursos multimedia y las referencias necesarias para que el sitio funcione correctamente fuera del entorno local.
+
+En entregas posteriores, este proceso será ampliado para incluir el despliegue de la Frontend Web Application y de los Web Services, manteniendo los repositorios de GitHub como fuente de las versiones que serán publicadas.
 
 ## 5.2. Landing Page, Services & Applications Implementation
+En esta sección se documenta el proceso de implementación de los productos digitales de Livva durante los diferentes sprints del proyecto.
+
+Para el AV1, el desarrollo se concentra principalmente en la primera versión funcional del Landing Page, implementada utilizando HTML5, CSS3 y JavaScript. Durante este proceso se aplicaron los lineamientos de diseño definidos previamente, considerando estructura responsive, accesibilidad básica, internacionalización y consistencia con la identidad visual de Livva.
+
+La implementación se gestiona mediante repositorios alojados en GitHub y siguiendo el workflow GitFlow. Las funcionalidades son desarrolladas en ramas `feature/*`, integradas posteriormente a `develop` y preparadas para su publicación una vez que han sido revisadas por el equipo.
+
+A continuación, se presentan las actividades, evidencias de desarrollo, ejecución, despliegue y colaboración correspondientes al Sprint 1.
 
 ### 5.2.1. Sprint 1
+El Sprint 1 corresponde a la primera iteración de implementación del proyecto Livva. Durante este sprint, el equipo trabajó en la construcción de la primera versión del Landing Page a partir de los wireframes, mock-ups, Style Guidelines e Information Architecture definidos durante la etapa de Product Design.
+
+El objetivo principal fue transformar los artefactos de diseño en una interfaz web funcional que permitiera comunicar la propuesta de valor de Livva y presentar sus principales servicios orientados a seguros vehiculares y seguros de salud.
+
+Asimismo, se trabajó de manera colaborativa mediante Git y GitHub, utilizando GitFlow para organizar el desarrollo y Conventional Commits para registrar de forma clara los cambios realizados en el repositorio.
 
 #### 5.2.1.1. Sprint Planning 1
+Durante el Sprint Planning 1, el equipo de Livva definió el objetivo principal del primer sprint, orientado a implementar la primera versión funcional del Landing Page y preparar los artefactos necesarios para su presentación en el AV1.
+
+En la reunión se revisó el Product Backlog disponible, se priorizaron las historias relacionadas con el Landing Page y se distribuyeron las actividades entre los integrantes del equipo. Asimismo, se acordó utilizar GitHub y GitFlow para organizar el desarrollo colaborativo y mantener trazabilidad sobre los cambios realizados.
+
+| Sprint Planning Background | Detalle                                                                                                                                                                               |
+|---|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Sprint # | Sprint 1                                                                                                                                                                              |
+| Date | 2026-08-28                                                                                                                                                                            |
+| Time | 1:00 PM                                                                                                                                                                               |
+| Location | Reunión virtual                                                                                                                                                                       |
+| Prepared By | Livva Care Team                                                                                                                                                                       |
+| Attendees | Paredes Chavez, Carlos Augusto / Torres Diaz, Rolando Andre / Contreras Panuera, Fernando Fabrizio / Cespedes Lezcano, Carlos Gabriel / Rivera Aguilar, Scarlet Josefina              |
+| Sprint Goal | Implementar la primera versión funcional del Landing Page de Livva, aplicando los diseños definidos previamente y preparando una versión lista para pruebas y despliegue para el AV1. |
 
 #### 5.2.1.2. Aspect Leaders and Collaborators
+Durante el Sprint 1, el equipo de Livva distribuyó las responsabilidades considerando los principales aspectos necesarios para completar la primera versión del Landing Page y la documentación asociada al AV1.
+
+Para cada aspecto se asignó un integrante como líder, responsable de coordinar y asegurar el cumplimiento de las actividades, mientras que los demás integrantes participaron como colaboradores de acuerdo con las tareas asignadas durante el sprint.
+
+La siguiente matriz LACX muestra la distribución de liderazgo y colaboración del equipo:
+
+| Team Member | GitHub Username | Landing Page Implementation | UX/UI & Product Design | Project Report Documentation | GitFlow & Repository Management | Sprint Evidence |
+|---|-----------------|-----------------------------|------------------------|---|---|-----------------|
+| Paredes Chavez, Carlos Augusto | CarlossUPC      | L                           | C                      | C | C | L               |
+| Torres Diaz, Rolando Andre | ROLO194         | C                           | L                      | C | L | C               |
+| Contreras Panuera, Fernando Fabrizio | FernSkibidi69   | C                           | C                      | C | C | C               |
+| Cespedes Lezcano, Carlos Gabriel | Leikop          | L                           | C                      | L | C | L               |
+| Rivera Aguilar, Scarlet Josefina | scarletriveraaguilar-spec       | C                           | C                      | C | C | C               |
 
 #### 5.2.1.3. Sprint Backlog 1
 
+El Sprint Backlog 1 organiza las actividades necesarias para implementar y desplegar la primera versión del Landing Page de Livva. Su alcance comprende la presentación de la propuesta de valor, los beneficios de la plataforma y la información de seguros vehiculares y de vida, tomando como referencia las historias US-01, US-02, US-03 y US-04 del Product Backlog.
+
+Estas historias representan un total de 7 Story Points. Adicionalmente, se consideran tareas transversales relacionadas con internacionalización, accesibilidad, responsive design, pruebas y despliegue.
+
+El seguimiento del trabajo se registra en el tablero del sprint, donde se identifican las tareas, sus responsables y sus estados.
+
+**URL pública del tablero:** [Trello](https://trello.com/invite/b/6aadf928b7dce06014e34a37/ATTIfcb6a92bdabcaf622c9c9229abf3f79fFB3643C1/mi-tablero-de-trello).
+
+**Captura del tablero:** 
+
+<img src="assets/md-images-chapter-05/trelloav1.PNG" width="700px" />
+
+La siguiente descomposición constituye una propuesta que debe contrastarse con las actividades efectivamente realizadas. Los responsables, estimaciones y estados se completarán de acuerdo con el tablero del equipo.
+
+| Story ID | Story Title | Task ID | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
+|---|---|---|---|---|---|---|---|
+| US-01 | Conocer Livva | S1-T01 | Estructura del Landing Page | Implementar la estructura HTML, encabezado, navegación y footer a partir del diseño definido. | 1 | Carlos Céspedes | Done |
+| US-01 | Conocer Livva | S1-T02 | Presentación de Livva | Incorporar la propuesta de valor y explicar el propósito de la plataforma. | 2 | Carlos Céspedes | Done |
+| US-01 | Conocer Livva | S1-T03 | Navegación entre secciones | Implementar y comprobar los enlaces internos y las acciones de navegación. | 1 | Carlos Céspedes | Done |
+| US-02 | Consultar beneficios de Livva | S1-T04 | Sección de beneficios | Presentar los beneficios de Livva mediante contenido y componentes coherentes con el diseño. | 1 | Scarlet Rivera | Done |
+| US-03 | Consultar información de seguro vehicular | S1-T05 | Información de seguro vehicular | Incorporar la descripción y los principales beneficios del seguro vehicular. | 2 | Carlos Céspedes | Done |
+| US-04 | Consultar información de seguro de vida | S1-T06 | Información de seguro de vida | Incorporar la descripción del seguro de vida y su propósito de protección económica para los beneficiarios. | 1 | Scarlet Rivera | Done |
+| — | Requerimiento transversal | S1-T07 | Internacionalización | Implementar el contenido en inglés y español latinoamericano, con inglés como idioma predeterminado. | 1 | Carlos Céspedes | Done |
+| — | Requerimiento transversal | S1-T08 | Adaptación responsive | Ajustar la distribución de las secciones y la navegación para diferentes tamaños de pantalla. | 1 | Scarlet Rivera | Done |
+| — | Requerimiento transversal | S1-T09 | Accesibilidad básica | Revisar HTML semántico, labels, textos alternativos, navegación por teclado y atributos ARIA. | 1 | Carlos Céspedes | Done |
+| — | Requerimiento transversal | S1-T10 | Contenido complementario | Incorporar o revisar la información de planes, equipo, contacto y enlaces del footer previstos en el diseño. | 1 | Scarlet | Done |
+| — | Requerimiento transversal | S1-T11 | Verificación del Landing Page | Comprobar criterios de aceptación, navegación, idiomas, carga de recursos y comportamiento responsive. | 2 | Carlos Céspedes | Done |
+| — | Requerimiento transversal | S1-T12 | Despliegue del Landing Page | Publicar la versión aprobada y verificar su funcionamiento mediante la URL pública. | 3 | Carlos Céspedes | Done |
+| — | Requerimiento transversal | S1-T13 | Registro de evidencias | Recopilar commits, capturas, video de ejecución y registros de colaboración. | 1 | Carlos Paredes | Done |
+
+Los estados utilizados son To-do, In-Process, To-Review y Done. Las tareas transversales no representan nuevas User Stories ni incrementan por sí mismas la suma de Story Points seleccionada del Product Backlog.
+
+
 #### 5.2.1.4. Development Evidence for Sprint Review
 
-#### 5.2.1.5. Execution Evidence for Sprint Review
+En esta sección se presentan las evidencias de implementación del Landing Page de Livva correspondientes al Sprint 1. El registro permite relacionar los cambios del código fuente con las actividades del Sprint Backlog, identificando el repositorio, la rama, el commit y su fecha.
+
+Las evidencias deben corresponder a cambios reales en la estructura HTML, los estilos CSS, la lógica JavaScript y los recursos utilizados por el Landing Page.
+
+**Repositorio del Landing Page:** [Repositorio](https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-landing-page/tree/develop).
 
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
-#### 5.2.1.7. Software Deployment Evidence for Sprint Review
+El alcance del Sprint 1 se concentra en la implementación de la primera versión del Landing Page de Livva. Por este motivo, no contempla el desarrollo de Web Services y no se presentan endpoints documentados en esta iteración.
 
-#### 5.2.1.8. Team Collaboration Insights during Sprint
+La documentación del RESTful API se incorporará en los sprints correspondientes a la implementación del backend, utilizando OpenAPI Specification mediante Swagger.
+
+En dichas iteraciones, se incluirá la relación de endpoints implementados, sus verbos HTTP, rutas, parámetros, ejemplos y explicación de respuestas. Asimismo, se incorporarán enlaces a la documentación, capturas de interacción con datos de muestra y los commits relacionados.
+
+Las interacciones locales desarrolladas con JavaScript en el Landing Page no constituyen evidencia de implementación del RESTful API.
+
 
 # Conclusiones
 
-## Conclusiones y recomendaciones
+1. El desarrollo realizado durante el AV1 permitió establecer una base coherente para Livva como plataforma de intermediación y acompañamiento digital orientada a seguros vehiculares y seguros de vida. La definición de los segmentos objetivo, sus necesidades y las principales dificultades relacionadas con la comprensión y gestión de seguros permitió delimitar una propuesta de valor centrada en ofrecer información clara, accesible y organizada.
+
+2. El proceso de Requirements Elicitation & Analysis permitió identificar que los usuarios no solo requieren información para elegir un seguro, sino también acompañamiento durante las etapas posteriores a su contratación. En consecuencia, Livva contempla funcionalidades relacionadas con solicitudes, pólizas, beneficiarios, renovaciones, siniestros e indemnizaciones, manteniendo un alcance académico viable y evitando asumir responsabilidades propias de una compañía aseguradora.
+
+3. La organización de los requisitos mediante Epics, User Stories y Product Backlog permitió estructurar progresivamente el desarrollo de la solución. Para el Sprint 1 se priorizaron las historias relacionadas con la presentación de Livva, sus beneficios y la información de seguros vehiculares y de vida, dejando las funcionalidades transaccionales para las siguientes iteraciones.
+
+4. Los artefactos de Product Design permitieron establecer una experiencia consistente entre el Landing Page y la futura Web Application. Las Style Guidelines, la arquitectura de información, los wireframes, mock-ups y prototipos proporcionan una referencia común para mantener claridad visual, navegación predecible, responsive design, accesibilidad e internacionalización.
+
+5. La aplicación de Domain-Driven Design permitió organizar el dominio de Livva mediante bounded contexts relacionados con la identidad de los usuarios, las solicitudes de seguros, la gestión de pólizas, los siniestros e indemnizaciones y las suscripciones. Esta separación contribuye a reducir el acoplamiento entre responsabilidades y proporciona una base ordenada para el desarrollo posterior de la Web Application y el RESTful API.
+
+6. La definición de prácticas de Software Configuration Management permitió establecer un flujo de trabajo colaborativo basado en Git, GitHub, GitFlow, Conventional Commits y Semantic Versioning. Estas prácticas facilitan la trazabilidad de los cambios, la integración progresiva del trabajo y la preparación de versiones estables de los productos digitales de Livva.
+
+7. El Sprint 1 permitió orientar el primer incremento del producto hacia la implementación del Landing Page. Este componente representa el primer punto de contacto entre Livva y sus potenciales usuarios, por lo que su propósito principal es comunicar la propuesta de valor, presentar los beneficios de la plataforma y diferenciar claramente los seguros vehiculares y de vida considerados dentro del alcance.
+
+8. En esta primera entrega todavía no corresponde confirmar de manera definitiva las hipótesis planteadas durante Lean UX. Las entrevistas de validación con usuarios y las evaluaciones heurísticas se realizarán en una etapa posterior, cuando los participantes puedan interactuar con el Landing Page y con las funcionalidades implementadas de la Web Application.
+
+## Recomendaciones
+
+1. Mantener una correspondencia verificable entre el Product Backlog, el tablero de cada sprint, los commits del repositorio y las funcionalidades implementadas. Cada User Story seleccionada debe descomponerse en tareas concretas y contar con evidencias que permitan demostrar su cumplimiento.
+
+2. Continuar priorizando un MVP viable para el periodo de desarrollo disponible. Las siguientes iteraciones deben concentrarse en los procesos esenciales de Livva, evitando incorporar funcionalidades complejas como cálculos actuariales reales, emisión legal de pólizas, evaluación automatizada de siniestros o integraciones directas con sistemas internos de aseguradoras.
+
+3. Revisar permanentemente la consistencia del contenido para evitar confundir los seguros de vida con seguros de salud. Toda la documentación, los diseños y las interfaces deben conservar el alcance definido para los dos segmentos objetivo: propietarios de vehículos particulares y personas interesadas en seguros de vida.
+
+4. Implementar progresivamente la Frontend Web Application mediante Vue y PrimeVue, y el RESTful API mediante ASP.NET Core, C# y Entity Framework Core, respetando los bounded contexts y las responsabilidades establecidas en el diseño de la arquitectura.
+
+5. Mantener inglés como idioma predeterminado e incorporar español latinoamericano en los productos de la solución. La internacionalización debe comprender no solo los textos visibles, sino también mensajes de validación, etiquetas accesibles y documentación de servicios cuando corresponda.
+
+6. Realizar comprobaciones de accesibilidad durante cada sprint y no únicamente al final del proyecto. Se recomienda verificar navegación por teclado, estados de foco, contraste, HTML semántico, labels, textos alternativos y uso adecuado de atributos ARIA.
+
+7. Preparar desde las siguientes iteraciones la documentación del RESTful API mediante OpenAPI y Swagger. Cada endpoint debe estar relacionado con una necesidad funcional, incluir ejemplos de solicitudes y respuestas y mantener coherencia con el modelo del dominio.
+
+8. Ejecutar las entrevistas de validación con participantes pertenecientes a ambos segmentos objetivo. Las sesiones deberán evaluar tareas concretas del Landing Page y de la Web Application, registrar las principales dificultades observadas y comparar los resultados con los assumptions, Hypothesis Statements y criterios de éxito definidos durante Lean UX.
+
+9. Utilizar los resultados de las validaciones para actualizar el Product Backlog. Los problemas que afecten la comprensión, navegación o realización de tareas deberán priorizarse antes de incorporar funcionalidades secundarias.
+
+10. Continuar documentando las decisiones, cambios y contribuciones del equipo durante cada sprint. Las evidencias deben proceder de los repositorios, tableros, versiones desplegadas y sesiones reales de trabajo, evitando presentar ejemplos, propuestas o mock-ups como resultados de implementación.
 
 # Bibliografía
 
