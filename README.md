@@ -1961,15 +1961,52 @@ Para el Landing Page, el artefacto desplegado está compuesto principalmente por
 En entregas posteriores, este proceso será ampliado para incluir el despliegue de la Frontend Web Application y de los Web Services, manteniendo los repositorios de GitHub como fuente de las versiones que serán publicadas.
 
 ## 5.2. Landing Page, Services & Applications Implementation
+En esta sección se documenta el proceso de implementación de los productos digitales de Livva durante los diferentes sprints del proyecto.
+
+Para el AV1, el desarrollo se concentra principalmente en la primera versión funcional del Landing Page, implementada utilizando HTML5, CSS3 y JavaScript. Durante este proceso se aplicaron los lineamientos de diseño definidos previamente, considerando estructura responsive, accesibilidad básica, internacionalización y consistencia con la identidad visual de Livva.
+
+La implementación se gestiona mediante repositorios alojados en GitHub y siguiendo el workflow GitFlow. Las funcionalidades son desarrolladas en ramas `feature/*`, integradas posteriormente a `develop` y preparadas para su publicación una vez que han sido revisadas por el equipo.
+
+A continuación, se presentan las actividades, evidencias de desarrollo, ejecución, despliegue y colaboración correspondientes al Sprint 1.
 
 ### 5.2.1. Sprint 1
+El Sprint 1 corresponde a la primera iteración de implementación del proyecto Livva. Durante este sprint, el equipo trabajó en la construcción de la primera versión del Landing Page a partir de los wireframes, mock-ups, Style Guidelines e Information Architecture definidos durante la etapa de Product Design.
+
+El objetivo principal fue transformar los artefactos de diseño en una interfaz web funcional que permitiera comunicar la propuesta de valor de Livva y presentar sus principales servicios orientados a seguros vehiculares y seguros de salud.
+
+Asimismo, se trabajó de manera colaborativa mediante Git y GitHub, utilizando GitFlow para organizar el desarrollo y Conventional Commits para registrar de forma clara los cambios realizados en el repositorio.
 
 #### 5.2.1.1. Sprint Planning 1
+Durante el Sprint Planning 1, el equipo de Livva definió el objetivo principal del primer sprint, orientado a implementar la primera versión funcional del Landing Page y preparar los artefactos necesarios para su presentación en el AV1.
+
+En la reunión se revisó el Product Backlog disponible, se priorizaron las historias relacionadas con el Landing Page y se distribuyeron las actividades entre los integrantes del equipo. Asimismo, se acordó utilizar GitHub y GitFlow para organizar el desarrollo colaborativo y mantener trazabilidad sobre los cambios realizados.
+
+| Sprint Planning Background | Detalle                                                                                                                                                                               |
+|---|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Sprint # | Sprint 1                                                                                                                                                                              |
+| Date | 2026-08-28                                                                                                                                                                            |
+| Time | 1:00 PM                                                                                                                                                                               |
+| Location | Reunión virtual                                                                                                                                                                       |
+| Prepared By | Livva Care Team                                                                                                                                                                       |
+| Attendees | Paredes Chavez, Carlos Augusto / Torres Diaz, Rolando Andre / Contreras Panuera, Fernando Fabrizio / Cespedes Lezcano, Carlos Gabriel / Rivera Aguilar, Scarlet Josefina              |
+| Sprint Goal | Implementar la primera versión funcional del Landing Page de Livva, aplicando los diseños definidos previamente y preparando una versión lista para pruebas y despliegue para el AV1. |
 
 #### 5.2.1.2. Aspect Leaders and Collaborators
+Durante el Sprint 1, el equipo de Livva distribuyó las responsabilidades considerando los principales aspectos necesarios para completar la primera versión del Landing Page y la documentación asociada al AV1.
 
+Para cada aspecto se asignó un integrante como líder, responsable de coordinar y asegurar el cumplimiento de las actividades, mientras que los demás integrantes participaron como colaboradores de acuerdo con las tareas asignadas durante el sprint.
+
+La siguiente matriz LACX muestra la distribución de liderazgo y colaboración del equipo:
+
+| Team Member | GitHub Username | Landing Page Implementation | UX/UI & Product Design | Project Report Documentation | GitFlow & Repository Management | Sprint Evidence |
+|---|-----------------|-----------------------------|------------------------|---|---|-----------------|
+| Paredes Chavez, Carlos Augusto | CarlossUPC      | L                           | C                      | C | C | L               |
+| Torres Diaz, Rolando Andre | ROLO194         | C                           | L                      | C | L | C               |
+| Contreras Panuera, Fernando Fabrizio | FernSkibidi69   | C                           | C                      | C | C | C               |
+| Cespedes Lezcano, Carlos Gabriel | Leikop          | L                           | C                      | L | C | L               |
+| Rivera Aguilar, Scarlet Josefina | scarletriveraaguilar-spec       | C                           | C                      | C | C | C               |
 #### 5.2.1.3. Sprint Backlog 1
-
+  
 #### 5.2.1.4. Development Evidence for Sprint Review
 
 #### 5.2.1.5. Execution Evidence for Sprint Review
