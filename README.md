@@ -1772,15 +1772,74 @@ El diseño UX/UI de la Web Application de Livva se desarrolla tomando como base 
 El objetivo de esta sección es representar la estructura, navegación e interacción de las principales funcionalidades de la aplicación, asegurando que los usuarios puedan completar sus tareas de manera clara y eficiente.
 
 Para ello, se desarrollarán wireframes, wireflows, mock-ups y user flow diagrams que permitan visualizar tanto la distribución de los elementos de la interfaz como los diferentes recorridos que pueden realizar los usuarios dentro de la Web Application.
+
 ### 4.4.1. Web Applications Wireframes
+Los wireframes de la Web Application de Livva representan la estructura y distribución preliminar de las principales pantallas de la plataforma. Estos diseños permiten visualizar la ubicación de los elementos de navegación, formularios, tarjetas, botones y secciones de contenido antes de aplicar el diseño visual definitivo.
+
+![wireframe 1](assets/md-livva-webapp-wireframes/wireframe-1.png)
+![wireframe 2](assets/md-livva-webapp-wireframes/wireframe-2.png)
+![wireframe 3](assets/md-livva-webapp-wireframes/wireframe-3.png)
+![wireframe 4](assets/md-livva-webapp-wireframes/wireframe-4.png)
+![wireframe 5](assets/md-livva-webapp-wireframes/wireframe-5.png)
+![wireframe 6](assets/md-livva-webapp-wireframes/wireframe-6.png)
+![wireframe 7](assets/md-livva-webapp-wireframes/wireframe-7.png)
+![wireframe 8](assets/md-livva-webapp-wireframes/wireframe-8.png)
+![wireframe 9](assets/md-livva-webapp-wireframes/wireframe-9.png)
+![wireframe 10](assets/md-livva-webapp-wireframes/wireframe-10.png)
+![wireframe 11](assets/md-livva-webapp-wireframes/wireframe-11.png)
+![wireframe 12](assets/md-livva-webapp-wireframes/wireframe-12.png)
+![wireframe 13](assets/md-livva-webapp-wireframes/wireframe-13.png)
+![wireframe 14](assets/md-livva-webapp-wireframes/wireframe-14.png)
+![wireframe 15](assets/md-livva-webapp-wireframes/wireframe-15.png)
+![wireframe 16](assets/md-livva-webapp-wireframes/wireframe-16.png)
+![wireframe 17](assets/md-livva-webapp-wireframes/wireframe-17.png)
+![wireframe 18](assets/md-livva-webapp-wireframes/wireframe-18.png)
+![wireframe 19](assets/md-livva-webapp-wireframes/wireframe-19.png)
 
 ### 4.4.2. Web Applications Wireflow Diagrams
+![wiereflow Diagrams](assets/md-livva-webapp-wireframes/WebApplicationsWireflowDiagrams.png)
 
 ### 4.4.3. Web Applications Mock-ups
+![mockup 1](assets/md-livva-webapp-mockups/mockup1.png)
+![mockup 2](assets/md-livva-webapp-mockups/mockup2.png)
+![mockup 3](assets/md-livva-webapp-mockups/mockup3.png)
+![mockup 4](assets/md-livva-webapp-mockups/mockup4.png)
+![mockup 5](assets/md-livva-webapp-mockups/mockup5.png)
+![mockup 6](assets/md-livva-webapp-mockups/mockup6.png)
+![mockup 7](assets/md-livva-webapp-mockups/mockup7.png)
+![mockup 8](assets/md-livva-webapp-mockups/mockup8.png)
+![mockup 9](assets/md-livva-webapp-mockups/mockup9.png)
+![mockup 10](assets/md-livva-webapp-mockups/mockup10.png)
+![mockup 11](assets/md-livva-webapp-mockups/mockup11.png)
+![mockup 12](assets/md-livva-webapp-mockups/mockup12.png)
+![mockup 13](assets/md-livva-webapp-mockups/mockup13.png)
+![mockup 14](assets/md-livva-webapp-mockups/mockup14.png)
+![mockup 15](assets/md-livva-webapp-mockups/mockup15.png)
+![mockup 16](assets/md-livva-webapp-mockups/mockup16.png)
+![mockup 17](assets/md-livva-webapp-mockups/mockup17.png)
+![mockup 18](assets/md-livva-webapp-mockups/mockup18.png)
+![mockup 19](assets/md-livva-webapp-mockups/mockup19.png)
 
 ### 4.4.4. Web Applications User Flow Diagrams
 
+![Flow Diagrams](assets/md-livva-webapp-mockups/flow-diagrams.png)
+
 ## 4.5. Web Applications Prototyping
+
+En esta sección se presenta el prototipo interactivo de la Web Application de Livva, desarrollado a partir de los mock-ups y User Flow Diagrams definidos previamente.
+
+El prototipo permite simular la navegación entre las principales vistas de la aplicación y validar la secuencia de interacción que siguen los usuarios para completar sus tareas principales. Las conexiones entre pantallas fueron definidas considerando los recorridos planteados en los User Flows y el sistema de navegación establecido para la aplicación.
+
+Se consideraron las principales funcionalidades de En esta sección se presenta el prototipo interactivo de la Web Application de Livva, desarrollado a partir de los mock-ups y User Flow Diagrams definidos previamente.
+
+El prototipo permite simular la navegación entre las principales vistas de la aplicación y validar la secuencia de interacción que siguen los usuarios para completar sus tareas principales. Las conexiones entre pantallas fueron definidas considerando los recorridos planteados en los User Flows y el sistema de navegación establecido para la aplicación.
+
+Se consideraron las principales funcionalidades de Livva, como el acceso a la plataforma, visualización del dashboard, consulta y gestión de seguros, reservas, mantenimiento, disponibilidad y seguimiento de servicios.
+
+A continuación, se presenta una captura del prototipo en funcionamiento y el enlace al video de demostración, donde se muestran los principales flujos de navegación e interacción de la aplicación.
+![Web Application Prototype](assets/md-livva-webapp-mockups/Prototipo.png)
+
+**Video:** [Livva Web Application Prototype](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202416147_upc_edu_pe/IQD5jQ6ZTjOhTqA-9nM85_AEAWTpRawI7w60mHgOE26IJLs?e=FBk1S2&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 ## 4.6. Domain-Driven Software Architecture
 
