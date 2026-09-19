@@ -67,9 +67,9 @@
 
 ## Registro de Versiones del Informe
 
-| Versión | Fecha |  Autor   |                                                  Descripción de modificación                                                   |
-| :-----: |:-----:|:--------:| :----------------------------------------------------------------------------------------------------------------------------: |
-|   AV1   |       |  Todos   | Se agregó la primera versión del informe, incluyendo carátula, registro de versiones, perfiles del equipo, análisis inicial del problema, artefactos de UX, arquitectura preliminar y evidencias del Sprint 1. |
+| Versión | Fecha | Autor | Descripción de modificación |
+|---|---|---|---|
+| 1.0.0 | 2026-09-18 | Livva Care Team | Primera versión del Project Report correspondiente al AV1. Incluye los capítulos I al V, la implementación del Landing Page y las evidencias del Sprint 1. |
 
 <div style="page-break-after: always;"></div>
 
