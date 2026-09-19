@@ -610,7 +610,7 @@ El análisis compara aspectos relacionados con el perfil de cada empresa, su mer
       <th>
         Livva Care<br>
         <img
-          src="./assets/md-images-competitors/livva-care-logo.png"
+          src="./assets/md-images-competitors/livva-care-logo.PNG"
           alt="Livva Care"
           width="90"
         >
