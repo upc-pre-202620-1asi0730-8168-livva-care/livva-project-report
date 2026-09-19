@@ -1257,10 +1257,13 @@ Personas mayores de edad que tengan actualmente un seguro de vida, hayan conside
 ### 2.3.1. User Personas
 
 - Segmento 1 – Propietarios de vehículos particulares
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b9c99fc6-286a-4820-a0f5-c6eaa5d283c3" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/02f248cd-eb55-4a51-9fb5-43722f5ed6b8" />
+
 
 - Segmento 2 - Personas interesadas en seguros de vida
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9c0deac4-6b6a-4bd4-b25c-786ce5420b4f" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0b6a4450-a945-433c-a6a6-5b80c338ee36" />
+
 
 ### 2.3.2. User Task Matrix
 
