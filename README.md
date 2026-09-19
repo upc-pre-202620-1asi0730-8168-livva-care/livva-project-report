@@ -2018,7 +2018,7 @@ El seguimiento del trabajo se registra en el tablero del sprint, donde se identi
 
 **Captura del tablero:** 
 
-<img src="assets/md-images-chapter-05/trelloav1.PNG" width="150px" />
+<img src="assets/md-images-chapter-05/trelloav1.PNG" width="700px" />
 
 La siguiente descomposición constituye una propuesta que debe contrastarse con las actividades efectivamente realizadas. Los responsables, estimaciones y estados se completarán de acuerdo con el tablero del equipo.
 
@@ -2062,7 +2062,43 @@ Las interacciones locales desarrolladas con JavaScript en el Landing Page no con
 
 # Conclusiones
 
-## Conclusiones y recomendaciones
+1. El desarrollo realizado durante el AV1 permitió establecer una base coherente para Livva como plataforma de intermediación y acompañamiento digital orientada a seguros vehiculares y seguros de vida. La definición de los segmentos objetivo, sus necesidades y las principales dificultades relacionadas con la comprensión y gestión de seguros permitió delimitar una propuesta de valor centrada en ofrecer información clara, accesible y organizada.
+
+2. El proceso de Requirements Elicitation & Analysis permitió identificar que los usuarios no solo requieren información para elegir un seguro, sino también acompañamiento durante las etapas posteriores a su contratación. En consecuencia, Livva contempla funcionalidades relacionadas con solicitudes, pólizas, beneficiarios, renovaciones, siniestros e indemnizaciones, manteniendo un alcance académico viable y evitando asumir responsabilidades propias de una compañía aseguradora.
+
+3. La organización de los requisitos mediante Epics, User Stories y Product Backlog permitió estructurar progresivamente el desarrollo de la solución. Para el Sprint 1 se priorizaron las historias relacionadas con la presentación de Livva, sus beneficios y la información de seguros vehiculares y de vida, dejando las funcionalidades transaccionales para las siguientes iteraciones.
+
+4. Los artefactos de Product Design permitieron establecer una experiencia consistente entre el Landing Page y la futura Web Application. Las Style Guidelines, la arquitectura de información, los wireframes, mock-ups y prototipos proporcionan una referencia común para mantener claridad visual, navegación predecible, responsive design, accesibilidad e internacionalización.
+
+5. La aplicación de Domain-Driven Design permitió organizar el dominio de Livva mediante bounded contexts relacionados con la identidad de los usuarios, las solicitudes de seguros, la gestión de pólizas, los siniestros e indemnizaciones y las suscripciones. Esta separación contribuye a reducir el acoplamiento entre responsabilidades y proporciona una base ordenada para el desarrollo posterior de la Web Application y el RESTful API.
+
+6. La definición de prácticas de Software Configuration Management permitió establecer un flujo de trabajo colaborativo basado en Git, GitHub, GitFlow, Conventional Commits y Semantic Versioning. Estas prácticas facilitan la trazabilidad de los cambios, la integración progresiva del trabajo y la preparación de versiones estables de los productos digitales de Livva.
+
+7. El Sprint 1 permitió orientar el primer incremento del producto hacia la implementación del Landing Page. Este componente representa el primer punto de contacto entre Livva y sus potenciales usuarios, por lo que su propósito principal es comunicar la propuesta de valor, presentar los beneficios de la plataforma y diferenciar claramente los seguros vehiculares y de vida considerados dentro del alcance.
+
+8. En esta primera entrega todavía no corresponde confirmar de manera definitiva las hipótesis planteadas durante Lean UX. Las entrevistas de validación con usuarios y las evaluaciones heurísticas se realizarán en una etapa posterior, cuando los participantes puedan interactuar con el Landing Page y con las funcionalidades implementadas de la Web Application.
+
+## Recomendaciones
+
+1. Mantener una correspondencia verificable entre el Product Backlog, el tablero de cada sprint, los commits del repositorio y las funcionalidades implementadas. Cada User Story seleccionada debe descomponerse en tareas concretas y contar con evidencias que permitan demostrar su cumplimiento.
+
+2. Continuar priorizando un MVP viable para el periodo de desarrollo disponible. Las siguientes iteraciones deben concentrarse en los procesos esenciales de Livva, evitando incorporar funcionalidades complejas como cálculos actuariales reales, emisión legal de pólizas, evaluación automatizada de siniestros o integraciones directas con sistemas internos de aseguradoras.
+
+3. Revisar permanentemente la consistencia del contenido para evitar confundir los seguros de vida con seguros de salud. Toda la documentación, los diseños y las interfaces deben conservar el alcance definido para los dos segmentos objetivo: propietarios de vehículos particulares y personas interesadas en seguros de vida.
+
+4. Implementar progresivamente la Frontend Web Application mediante Vue y PrimeVue, y el RESTful API mediante ASP.NET Core, C# y Entity Framework Core, respetando los bounded contexts y las responsabilidades establecidas en el diseño de la arquitectura.
+
+5. Mantener inglés como idioma predeterminado e incorporar español latinoamericano en los productos de la solución. La internacionalización debe comprender no solo los textos visibles, sino también mensajes de validación, etiquetas accesibles y documentación de servicios cuando corresponda.
+
+6. Realizar comprobaciones de accesibilidad durante cada sprint y no únicamente al final del proyecto. Se recomienda verificar navegación por teclado, estados de foco, contraste, HTML semántico, labels, textos alternativos y uso adecuado de atributos ARIA.
+
+7. Preparar desde las siguientes iteraciones la documentación del RESTful API mediante OpenAPI y Swagger. Cada endpoint debe estar relacionado con una necesidad funcional, incluir ejemplos de solicitudes y respuestas y mantener coherencia con el modelo del dominio.
+
+8. Ejecutar las entrevistas de validación con participantes pertenecientes a ambos segmentos objetivo. Las sesiones deberán evaluar tareas concretas del Landing Page y de la Web Application, registrar las principales dificultades observadas y comparar los resultados con los assumptions, Hypothesis Statements y criterios de éxito definidos durante Lean UX.
+
+9. Utilizar los resultados de las validaciones para actualizar el Product Backlog. Los problemas que afecten la comprensión, navegación o realización de tareas deberán priorizarse antes de incorporar funcionalidades secundarias.
+
+10. Continuar documentando las decisiones, cambios y contribuciones del equipo durante cada sprint. Las evidencias deben proceder de los repositorios, tableros, versiones desplegadas y sesiones reales de trabajo, evitando presentar ejemplos, propuestas o mock-ups como resultados de implementación.
 
 # Bibliografía
 
