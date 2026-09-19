@@ -1222,9 +1222,9 @@ Personas mayores de edad que tengan actualmente un seguro de vida, hayan conside
 
 | Entrevista | Nombres y apellidos | Edad | Distrito | Ocupación / cargo | Situación relacionada | Screenshot | Timing | Duración |
 |---|---|---:|---|---|---|---|---|---|
-| E01 | Carlos Alberto Lozano | 23 | Comas | Estudiante | Propietario de vehículo particular con seguro vehicular vigente | ![Carlos Lozano](assets/md-images-interviews/ss_CarlosLozano.png) | 00:00:00 - 00:03:50 | 03:50 |
-| E02 | Yul Rivaldo Muñoz Bornás | 25 | Ate | Practicante de redes | Propietario de vehículo particular con seguro vehicular vigente; utiliza su vehículo principalmente para trasladarse | ![Rivaldo Muñoz](assets/md-images-interviews/ss_RivaldoMunoz.png) | 00:03:50 - 00:09:01 | 05:11 |
-| E03 | Diego Miranda | 22 | Surquillo | Estudiante | Propietario de vehículo particular sin experiencia previa contratando seguros vehiculares | ![Diego Miranda](assets/md-images-interviews/ss_DiegoMiranda.png) | 00:09:01 - 00:13:21 | 04:20 |
+| E01 | Carlos Alberto Lozano | 23 | Comas | Estudiante | Propietario de vehículo particular con seguro vehicular vigente | ![Carlos Lozano](assets/md-images-interviews/ss_CarlosLozano.PNG) | 00:00:00 - 00:03:50 | 03:50 |
+| E02 | Yul Rivaldo Muñoz Bornás | 25 | Ate | Practicante de redes | Propietario de vehículo particular con seguro vehicular vigente; utiliza su vehículo principalmente para trasladarse | ![Rivaldo Muñoz](assets/md-images-interviews/ss_RivaldoMunoz.PNG) | 00:03:50 - 00:09:01 | 05:11 |
+| E03 | Diego Miranda | 22 | Surquillo | Estudiante | Propietario de vehículo particular sin experiencia previa contratando seguros vehiculares | ![Diego Miranda](assets/md-images-interviews/ss_DiegoMiranda.PNG) | 00:09:01 - 00:13:21 | 04:20 |
 
 #### Registro de entrevistas del Segmento 2: Personas interesadas en seguros de vida
 
