@@ -2121,6 +2121,49 @@ En dichas iteraciones, se incluirá la relación de endpoints implementados, sus
 
 Las interacciones locales desarrolladas con JavaScript en el Landing Page no constituyen evidencia de implementación del RESTful API.
 
+### 5.2.2. Sprint 2
+
+Durante el Sprint 2, el equipo de Livva Care continuó con el desarrollo de la plataforma Livva, enfocándose en la implementación de la primera versión funcional de la Web Application. En esta iteración se comenzó a trasladar los User Stories, wireframes, mock-ups y flujos definidos previamente hacia una aplicación web navegable, manteniendo coherencia con la experiencia visual establecida en el Landing Page.
+
+El desarrollo se orientó a implementar las primeras funcionalidades de interacción directa con los usuarios, considerando principalmente el acceso a la plataforma, la gestión inicial de la cuenta y los primeros procesos relacionados con los seguros vehiculares y de vida. Asimismo, se continuó utilizando GitHub y GitFlow para organizar las actividades, controlar las versiones y mantener trazabilidad sobre los avances realizados durante el Sprint.
+
+#### 5.2.2.1. Sprint Planning 2
+
+El Sprint Planning 2 permitió al equipo de Livva Care revisar los resultados obtenidos durante la primera iteración y definir el alcance de trabajo correspondiente al desarrollo inicial de la Web Application.
+
+Durante la reunión se revisaron las funcionalidades priorizadas en el Product Backlog, los diseños UX/UI definidos previamente y las actividades necesarias para comenzar la implementación de los principales flujos de interacción de Livva.
+
+| Campo | Descripción |
+|---|---|
+| Sprint # | Sprint 2 |
+| Date | 2026-04-10 |
+| Time | 7:40 PM |
+| Location | Meet via Discord |
+| Prepared By | Livva Care Team |
+| Attendees | Paredes Chavez, Carlos Augusto / Torres Diaz, Rolando Andre / Contreras Panuera, Fernando Fabrizio / Cespedes Lezcano, Carlos Gabriel / Rivera Aguilar, Scarlet Josefina |
+| Sprint 1 Review Summary | Durante el Sprint 1 se desarrolló e implementó la primera versión funcional del Landing Page de Livva, incluyendo la presentación de la propuesta de valor, los beneficios de la plataforma y la información correspondiente a seguros vehiculares y seguros de vida. Asimismo, se trabajó en responsive design, internacionalización, accesibilidad básica y despliegue del sitio. |
+| Sprint 1 Retrospective Summary | El equipo logró completar las principales funcionalidades planificadas para el Landing Page y consolidó el uso de GitHub y GitFlow para organizar el desarrollo. Como oportunidad de mejora, se identificó la necesidad de fortalecer la coordinación entre las funcionalidades desarrolladas por distintos integrantes y mantener una mayor correspondencia entre los User Stories, las tareas implementadas y las evidencias del Sprint. |
+| Sprint 2 Goal | Nuestro enfoque se centra en desarrollar la primera versión funcional de la Web Application de Livva, implementando los primeros flujos de interacción relacionados con el acceso a la plataforma, la gestión inicial del usuario y las operaciones asociadas a seguros vehiculares y de vida. Creemos que esto permitirá avanzar desde una experiencia principalmente informativa hacia una plataforma interactiva. Esto se confirmará cuando los usuarios puedan acceder a la Web Application, navegar por las principales vistas seleccionadas para el Sprint y completar los flujos implementados sin errores críticos. |
+| Sprint 2 Velocity | 15 Story Points |
+| Sum of Story Points | 11 Story Points |
+
+#### 5.2.2.2. Aspect Leaders and Collaborators
+
+Durante el Sprint 2, el equipo de Livva Care organizó las responsabilidades considerando los principales aspectos funcionales y técnicos necesarios para desarrollar la primera versión de la Web Application.
+
+Los aspectos considerados comprenden la gestión de cuentas y autenticación, las funcionalidades iniciales relacionadas con seguros vehiculares, las funcionalidades relacionadas con seguros de vida, el desarrollo UX/UI de la Web Application, la gestión del repositorio y despliegue, y la recopilación de evidencias del Sprint.
+
+Para cada aspecto se asignó un integrante como líder responsable de coordinar y asegurar el cumplimiento de las actividades, mientras que los demás integrantes participaron como colaboradores de acuerdo con las tareas desarrolladas durante el Sprint.
+
+La siguiente matriz LACX muestra la distribución de liderazgo y colaboración del equipo. La letra `L` identifica al responsable principal del aspecto y la letra `C` a los integrantes que participaron como colaboradores.
+
+| Team Member | GitHub Username | Authentication & Profile | Vehicle Insurance | Life Insurance | Web App UX/UI | GitFlow & Deployment | Sprint Evidence |
+|---|---|---|---|---|---|---|---|
+| Paredes Chavez, Carlos Augusto | CarlossUPC | C | L | C | C | C | L |
+| Torres Diaz, Rolando Andre | ROLO194 | C | C | C | C | L | C |
+| Contreras Panuera, Fernando Fabrizio | FernSkibidi69 | L | C | L | C | C | C |
+| Cespedes Lezcano, Carlos Gabriel | Leikop | C | C | C | C | C | L |
+| Rivera Aguilar, Scarlet Josefina | scarletriveraaguilar-spec | C | C | C | L | C | C |
 
 # Conclusiones
 
