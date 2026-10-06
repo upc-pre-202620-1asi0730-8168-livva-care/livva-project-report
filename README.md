@@ -174,6 +174,15 @@ A continuación, se presenta el repositorio utilizado para la elaboración colab
             - [5.2.1.6. Services Documentation Evidence for Sprint Review](#5216-services-documentation-evidence-for-sprint-review)
             - [5.2.1.7. Software Deployment Evidence for Sprint Review](#5217-software-deployment-evidence-for-sprint-review)
             - [5.2.1.8. Team Collaboration Insights during Sprint](#5218-team-collaboration-insights-during-sprint)
+		- [5.2.2. Sprint 2](#522-sprint-2)
+            - [5.2.2.1. Sprint Planning 2](#5221-sprint-planning-2)
+            - [5.2.2.2. Aspect Leaders and Collaborators](#5222-aspect-leaders-and-collaborators)
+            - [5.2.2.3. Sprint Backlog 2](#5223-sprint-backlog-2)
+            - [5.2.2.4. Development Evidence for Sprint Review](#5224-development-evidence-for-sprint-review)
+            - [5.2.2.5. Execution Evidence for Sprint Review](#5225-execution-evidence-for-sprint-review)
+            - [5.2.2.6. Services Documentation Evidence for Sprint Review](#5226-services-documentation-evidence-for-sprint-review)
+            - [5.2.2.7. Software Deployment Evidence for Sprint Review](#5227-software-deployment-evidence-for-sprint-review)
+            - [5.2.2.8. Team Collaboration Insights during Sprint](#5228-team-collaboration-insights-during-sprint)
 - [Conclusiones](#conclusiones)
     - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
 - [Bibliografía](#bibliografía)
@@ -2179,9 +2188,9 @@ El seguimiento del trabajo se realiza mediante el tablero del Sprint utilizando 
 
 **URL pública del tablero:** [Completar enlace de Trello]
 
-<!-- Colocar aquí enlace público del tablero correspondiente al Sprint 2 -->
+> **Pendiente:** Colocar aquí enlace público del tablero correspondiente al Sprint 2.
 
-<!-- Colocar aquí captura del Sprint Backlog 2 en Trello -->
+> **Pendiente:** Colocar aquí captura del Sprint Backlog 2 en Trello.
 
 | User Story ID | User Story Title | Task ID | Task Title | Description | Estimation (Hours) | Priority | Status | Assigned To |
 |---|---|---|---|---|---:|---|---|---|
@@ -2214,7 +2223,7 @@ Durante esta iteración se trabajó en la configuración inicial del proyecto, i
 El desarrollo se organizó mediante GitFlow, utilizando ramas `feature/*` para separar las funcionalidades antes de integrarlas a la rama `develop`. Esto permitió mantener una mayor trazabilidad sobre los cambios realizados y facilitar la integración progresiva de los diferentes módulos de la Web Application.
 
 **Repositorio de la Web Application:**  
-[[Completar URL del repositorio de Livva Web Application](https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-web-application)]
+[[URL del repositorio de Livva Web Application](https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-web-application)]
 
 
 ##### Feature Branches utilizadas
@@ -2300,7 +2309,7 @@ La aplicación incluye funcionalidades relacionadas con autenticación y perfil 
 **URL de la Web Application desplegada:**  
 [Completar URL de la Web Application]
 
-<!-- Colocar aquí la URL pública de la Web Application cuando se encuentre desplegada -->
+> **Pendiente:** Colocar aquí la URL pública de la Web Application cuando se encuentre desplegada.
 
 ##### 1. Autenticación y acceso a la Web Application
 
@@ -2308,9 +2317,9 @@ La Web Application incorpora el flujo de autenticación que permite al usuario a
 
 Una vez ingresadas las credenciales correspondientes, el usuario puede acceder a la aplicación y navegar hacia los diferentes módulos disponibles.
 
-<!-- Colocar aquí captura de la pantalla de inicio de sesión -->
+> **Pendiente:** Colocar aquí captura de la pantalla de inicio de sesión.
 
-<!-- Colocar aquí captura de la Web Application después de iniciar sesión -->
+> **Pendiente:** Colocar aquí captura de la Web Application después de iniciar sesión.
 
 ##### 2. Gestión del perfil de usuario
 
@@ -2318,9 +2327,9 @@ Dentro de la aplicación, el usuario puede acceder a la sección correspondiente
 
 Asimismo, se incorporó la posibilidad de actualizar los datos personales disponibles dentro de la plataforma.
 
-<!-- Colocar aquí captura de la vista del perfil del usuario -->
+> **Pendiente:** Colocar aquí captura de la vista del perfil del usuario.
 
-<!-- Colocar aquí captura de la interfaz para actualizar los datos del perfil -->
+> **Pendiente:** Colocar aquí captura de la interfaz para actualizar los datos del perfil.
 
 ##### 3. Gestión de vehículos
 
@@ -2328,13 +2337,13 @@ Livva permite registrar los vehículos que posteriormente podrán ser utilizados
 
 El módulo permite visualizar los vehículos registrados y realizar operaciones de actualización y eliminación sobre ellos.
 
-<!-- Colocar aquí captura del listado de vehículos registrados -->
+> **Pendiente:** Colocar aquí captura del listado de vehículos registrados.
 
-<!-- Colocar aquí captura del formulario para registrar un vehículo -->
+> **Pendiente:** Colocar aquí captura del formulario para registrar un vehículo.
 
-<!-- Colocar aquí captura de la funcionalidad de edición de vehículo -->
+> **Pendiente:** Colocar aquí captura de la funcionalidad de edición de vehículo.
 
-<!-- Colocar aquí captura de la opción para eliminar un vehículo -->
+> **Pendiente:** Colocar aquí captura de la opción para eliminar un vehículo.
 
 ##### 4. Solicitudes de seguro vehicular
 
@@ -2344,11 +2353,11 @@ La Web Application incorpora la interfaz necesaria para ingresar la información
 
 Asimismo, el usuario puede posteriormente consultar las solicitudes vehiculares realizadas y visualizar su estado.
 
-<!-- Colocar aquí captura del formulario de solicitud de seguro vehicular -->
+> **Pendiente:** Colocar aquí captura del formulario de solicitud de seguro vehicular.
 
-<!-- Colocar aquí captura de la solicitud de seguro vehicular registrada -->
+> **Pendiente:** Colocar aquí captura de la solicitud de seguro vehicular registrada.
 
-<!-- Colocar aquí captura del listado o estado de solicitudes de seguro vehicular -->
+> **Pendiente:** Colocar aquí captura del listado o estado de solicitudes de seguro vehicular.
 
 ##### 5. Solicitudes de seguro de vida
 
@@ -2356,11 +2365,11 @@ Livva incorpora un flujo independiente para la gestión de solicitudes de seguro
 
 Mediante esta sección, el usuario puede registrar la información necesaria para iniciar una solicitud y posteriormente consultar las solicitudes asociadas a su cuenta.
 
-<!-- Colocar aquí captura del formulario de solicitud de seguro de vida -->
+> **Pendiente:** Colocar aquí captura del formulario de solicitud de seguro de vida.
 
-<!-- Colocar aquí captura de una solicitud de seguro de vida registrada -->
+> **Pendiente:** Colocar aquí captura de una solicitud de seguro de vida registrada.
 
-<!-- Colocar aquí captura del listado o estado de solicitudes de seguro de vida -->
+> **Pendiente:** Colocar aquí captura del listado o estado de solicitudes de seguro de vida.
 
 ##### 6. Gestión de beneficiarios
 
@@ -2370,13 +2379,13 @@ Este módulo permite registrar y consultar beneficiarios asociados al usuario, a
 
 La sección también incorpora internacionalización para mantener consistencia con los idiomas soportados por Livva.
 
-<!-- Colocar aquí captura del listado de beneficiarios -->
+> **Pendiente:** Colocar aquí captura del listado de beneficiarios.
 
-<!-- Colocar aquí captura del formulario de registro de beneficiario -->
+> **Pendiente:** Colocar aquí captura del formulario de registro de beneficiario.
 
-<!-- Colocar aquí captura de la interfaz de gestión o actualización de beneficiarios -->
+> **Pendiente:** Colocar aquí captura de la interfaz de gestión o actualización de beneficiarios.
 
-<!-- Colocar aquí captura del módulo de beneficiarios utilizando el segundo idioma -->
+> **Pendiente:** Colocar aquí captura del módulo de beneficiarios utilizando el segundo idioma.
 
 ##### 7. Consulta de pólizas
 
@@ -2384,9 +2393,9 @@ La Web Application permite al usuario consultar las pólizas disponibles dentro 
 
 Desde el listado de pólizas, el usuario puede seleccionar una de ellas para acceder a una vista con información más detallada relacionada con la póliza seleccionada.
 
-<!-- Colocar aquí captura del listado de pólizas -->
+> **Pendiente:** Colocar aquí captura del listado de pólizas.
 
-<!-- Colocar aquí captura de la vista de detalle de una póliza -->
+> **Pendiente:** Colocar aquí captura de la vista de detalle de una póliza.
 
 ##### 8. Renovación de pólizas
 
@@ -2394,11 +2403,11 @@ Livva incorpora una funcionalidad destinada a la gestión de solicitudes de reno
 
 El usuario puede acceder a la información de una póliza y, cuando corresponda, iniciar el proceso de renovación mediante la interfaz implementada durante el Sprint.
 
-<!-- Colocar aquí captura de una póliza disponible para renovación -->
+> **Pendiente:** Colocar aquí captura de una póliza disponible para renovación.
 
-<!-- Colocar aquí captura de la interfaz para solicitar la renovación -->
+> **Pendiente:** Colocar aquí captura de la interfaz para solicitar la renovación.
 
-<!-- Colocar aquí captura de una solicitud de renovación registrada o pendiente -->
+> **Pendiente:** Colocar aquí captura de una solicitud de renovación registrada o pendiente.
 
 ##### 9. Registro y seguimiento de siniestros vehiculares
 
@@ -2406,11 +2415,11 @@ La Web Application incorpora un módulo destinado a registrar siniestros relacio
 
 El usuario puede ingresar la información requerida para registrar el siniestro y posteriormente consultar la información asociada al proceso.
 
-<!-- Colocar aquí captura de la interfaz de registro de siniestro vehicular -->
+> **Pendiente:** Colocar aquí captura de la interfaz de registro de siniestro vehicular.
 
-<!-- Colocar aquí captura de un siniestro registrado -->
+> **Pendiente:** Colocar aquí captura de un siniestro registrado.
 
-<!-- Colocar aquí captura de la visualización o estado del siniestro -->
+> **Pendiente:** Colocar aquí captura de la visualización o estado del siniestro.
 
 ##### 10. Internacionalización de la Web Application
 
@@ -2418,9 +2427,9 @@ La aplicación mantiene soporte para los idiomas español e inglés mediante la 
 
 Esto permite modificar dinámicamente los textos visibles de la interfaz y mantener una experiencia consistente en las principales secciones desarrolladas.
 
-<!-- Colocar aquí captura de una vista de la Web Application en español -->
+> **Pendiente:** Colocar aquí captura de una vista de la Web Application en español.
 
-<!-- Colocar aquí la misma vista de la Web Application en inglés -->
+> **Pendiente:** Colocar aquí la misma vista de la Web Application en inglés.
 
 ##### 11. Diseño responsive
 
@@ -2428,19 +2437,106 @@ Las principales vistas de la Web Application fueron desarrolladas considerando s
 
 El diseño busca mantener la organización de la información, navegación y elementos interactivos tanto en equipos de escritorio como en dispositivos con resoluciones reducidas.
 
-<!-- Colocar aquí captura de la Web Application en vista desktop -->
+> **Pendiente:** Colocar aquí captura de la Web Application en vista desktop.
 
-<!-- Colocar aquí captura de la Web Application en vista responsive o móvil -->
+> **Pendiente:** Colocar aquí captura de la Web Application en vista responsive o móvil.
 
 ##### Resumen de ejecución
 
 Las evidencias presentadas demuestran el avance funcional alcanzado durante el Sprint 2. La Web Application permite ejecutar los principales flujos relacionados con la gestión digital de seguros contemplados para esta iteración, estableciendo una base funcional que podrá ser integrada posteriormente con los Web Services definitivos de Livva.
 
-<!-- Colocar aquí enlace al video de Execution Evidence del Sprint 2, si corresponde -->
+> **Pendiente:** Colocar aquí enlace al video de Execution Evidence del Sprint 2, si corresponde.
 
-<!-- Verificar antes de la entrega que todas las capturas correspondan a funcionalidades realmente operativas -->
+> **Pendiente:** Verificar antes de la entrega que todas las capturas correspondan a funcionalidades realmente operativas.
+
+#### 5.2.2.6. Services Documentation Evidence for Sprint Review
+
+Durante el Sprint 2, el equipo de Livva Care se enfocó en el desarrollo de la primera versión funcional de la Web Application. Para permitir las pruebas de las principales funcionalidades antes de contar con el backend definitivo, se implementó una infraestructura inicial para el consumo de servicios REST y se utilizaron datos de desarrollo.
+
+1. **Integración de servicios REST:** Se preparó la estructura necesaria para permitir que la Web Application pueda consumir posteriormente los servicios proporcionados por la RESTful API de Livva.
+
+2. **Uso de datos de desarrollo:** Se utilizaron datos de prueba para validar funcionalidades relacionadas con vehículos, pólizas, solicitudes de seguros, beneficiarios, renovaciones y siniestros.
+
+3. **Documentación de servicios:** A continuación, se presentan los principales recursos utilizados durante el Sprint.
+
+| Recurso | Función |
+|---|---|
+| Landing Page | Presentar públicamente la propuesta de valor, seguros y beneficios de Livva. |
+| Web Application | Permitir al usuario interactuar con las funcionalidades desarrolladas durante el Sprint 2. |
+| REST Infrastructure | Preparar la integración entre la Web Application y los futuros servicios RESTful de Livva. |
+| Development Seed Data | Simular información necesaria para probar los diferentes módulos antes de implementar el backend definitivo. |
+
+> **Pendiente:** Colocar aquí URL pública de la Landing Page.
+
+> **Pendiente:** Colocar aquí URL pública de la Web Application.
+
+> **Pendiente:** Colocar aquí captura de la infraestructura REST o del consumo de datos.
+
+En esta etapa todavía no se cuenta con la RESTful API definitiva desarrollada en ASP.NET Core ni con documentación Swagger/OpenAPI desplegada. Estas evidencias serán incorporadas en los siguientes Sprints cuando se implemente el backend de Livva.
+
+#### 5.2.2.7. Software Deployment Evidence for Sprint Review
+
+Durante el Sprint 2 se preparó el despliegue de la primera versión funcional de la Web Application de Livva con el objetivo de permitir su ejecución fuera del entorno local y facilitar la revisión de las funcionalidades desarrolladas.
+
+El proceso de despliegue parte del código integrado en la rama `develop` del repositorio de la Web Application. Antes de publicar la versión correspondiente al Sprint, se verificó la correcta navegación entre las principales vistas y el funcionamiento de los módulos implementados.
+
+##### Evidencias del despliegue
+
+- **Web Application:** primera versión funcional de Livva preparada para su ejecución mediante una URL pública.
+- **Repositorio remoto:** código fuente de la Web Application versionado y administrado mediante GitHub.
+- **Rama de integración:** las funcionalidades desarrolladas mediante ramas `feature/*` fueron integradas progresivamente en `develop`.
+- **Pruebas preliminares:** se verificó la navegación y funcionamiento de los módulos de vehículos, solicitudes de seguros, beneficiarios, pólizas, renovaciones y siniestros.
+
+##### URLs del despliegue
+
+| Producto | URL |
+|---|---|
+| Landing Page | [Completar URL] |
+| Web Application | [Completar URL] |
+| Repositorio Web Application | [Completar URL] |
+
+> **Pendiente:** Colocar aquí URL pública de la Landing Page.
+
+> **Pendiente:** Colocar aquí URL pública de la Web Application desplegada.
+
+> **Pendiente:** Colocar aquí URL del repositorio de la Web Application.
+
+##### Capturas de evidencia
+
+> **Pendiente:** Colocar aquí captura de la plataforma utilizada para desplegar la Web Application.
+
+> **Pendiente:** Colocar aquí captura donde se observe que el deployment fue realizado correctamente.
+
+> **Pendiente:** Colocar aquí captura de la Web Application ejecutándose mediante la URL pública.
+
+> **Pendiente:** Colocar aquí captura de una funcionalidad de Livva ejecutándose desde la versión desplegada.
+
+##### Resultado obtenido
+
+El despliegue permite comprobar que la Web Application de Livva puede ejecutarse fuera del entorno local y que las funcionalidades desarrolladas durante el Sprint 2 pueden ser presentadas mediante una versión accesible para la revisión del producto.
+
+La aplicación queda preparada para continuar con la integración del backend definitivo y los Web Services de Livva durante las siguientes iteraciones.
+
+#### 5.2.2.8. Team Collaboration Insights during Sprint
+
+Durante el Sprint 2, el equipo de Livva Care trabajó de manera colaborativa en el desarrollo de la primera versión funcional de la Web Application. Las responsabilidades fueron distribuidas considerando los diferentes módulos y funcionalidades planificadas para la iteración.
+
+El desarrollo se organizó mediante Git y GitHub utilizando GitFlow. Las funcionalidades fueron trabajadas principalmente en ramas `feature/*`, permitiendo que los integrantes avanzaran de manera independiente antes de integrar los cambios a la rama `develop`.
+
+Durante el Sprint se desarrollaron e integraron funcionalidades relacionadas con configuración inicial de la aplicación, gestión de vehículos, solicitudes de seguros vehiculares y de vida, consulta de pólizas, beneficiarios, renovación de pólizas, siniestros vehiculares y autenticación y perfil de usuario.
+
+La integración progresiva de las ramas permitió mantener trazabilidad sobre los cambios realizados y reducir conflictos durante el desarrollo. Asimismo, el historial de commits permitió identificar los avances realizados en cada módulo y verificar su incorporación a la versión integrada de la Web Application.
+
+El equipo también realizó revisiones de las funcionalidades implementadas con el objetivo de comprobar su funcionamiento, mantener consistencia con los requerimientos definidos y preparar las evidencias correspondientes al Sprint Review.
 
 
+> **Pendiente:** Colocar aquí captura de los Contributors del repositorio de la Web Application.
+
+> **Pendiente:** Colocar aquí captura del historial de ramas y merges realizados hacia `develop`.
+
+> **Pendiente:** Colocar aquí captura de Pull Requests o revisiones realizadas durante el Sprint 2.
+
+> **Pendiente:** Colocar aquí evidencia del tablero de Trello utilizado para coordinar las tareas del equipo.
 
 # Conclusiones
 
