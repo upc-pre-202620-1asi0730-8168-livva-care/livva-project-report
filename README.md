@@ -2130,6 +2130,37 @@ En dichas iteraciones, se incluirá la relación de endpoints implementados, sus
 
 Las interacciones locales desarrolladas con JavaScript en el Landing Page no constituyen evidencia de implementación del RESTful API.
 
+#### 5.2.1.7. Software Deployment Evidence for Sprint Review
+
+Durante el Sprint 1 se realizó el despliegue de la primera versión funcional del Landing Page de Livva con el objetivo de permitir su acceso mediante una URL pública y validar su funcionamiento fuera del entorno local.
+
+El código fuente fue administrado mediante GitHub y organizado utilizando GitFlow. Una vez completadas y revisadas las funcionalidades correspondientes al Landing Page, los cambios fueron integrados en la rama `develop` y posteriormente utilizados para publicar la versión disponible para la revisión del Sprint.
+
+El despliegue permitió comprobar la correcta navegación entre las diferentes secciones, la visualización del contenido, el funcionamiento del cambio de idioma y la adaptación responsive del sitio.
+
+##### URL del despliegue
+
+**Landing Page:**  
+https://upc-pre-202620-1asi0730-8168-livva-care.github.io/livva-landing-page/
+
+<img width="1881" height="932" alt="image" src="https://github.com/user-attachments/assets/eddf43c3-f088-4dc7-8c84-9b5a2db375c0" />
+
+El despliegue permitió comprobar que el Landing Page de Livva puede ejecutarse correctamente fuera del entorno local y que las funcionalidades desarrolladas durante el Sprint 1 se encuentran disponibles mediante una URL pública para su revisión.
+
+
+#### 5.2.1.8. Team Collaboration Insights during Sprint
+
+Durante el Sprint 1, el equipo de Livva Care trabajó de manera colaborativa en la implementación y documentación de la primera versión del Landing Page.
+
+Las actividades fueron distribuidas entre los integrantes considerando tareas relacionadas con estructura HTML, estilos, contenido, internacionalización, responsive design, accesibilidad, pruebas y documentación del Sprint.
+
+Git y GitHub fueron utilizados como principales herramientas de control de versiones y colaboración. El desarrollo se organizó mediante ramas `feature/*`, permitiendo que los integrantes trabajaran en funcionalidades específicas antes de integrar los cambios a la rama `develop`.
+
+Asimismo, el historial de commits permitió mantener trazabilidad sobre los cambios realizados e identificar las contribuciones de los integrantes durante el Sprint.
+
+La coordinación del equipo permitió completar las User Stories relacionadas con la presentación de Livva, sus beneficios y la información correspondiente a seguros vehiculares y seguros de vida.
+
+
 ### 5.2.2. Sprint 2
 
 Durante el Sprint 2, el equipo de Livva Care continuó con el desarrollo de la plataforma Livva, enfocándose en la implementación de la primera versión funcional de la Web Application. En esta iteración se comenzó a trasladar los User Stories, wireframes, mock-ups y flujos definidos previamente hacia una aplicación web navegable, manteniendo coherencia con la experiencia visual establecida en el Landing Page.
