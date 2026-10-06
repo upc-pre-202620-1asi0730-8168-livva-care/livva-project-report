@@ -2186,11 +2186,13 @@ Las nuevas User Stories seleccionadas para el Sprint 2 representan un total de *
 
 El seguimiento del trabajo se realiza mediante el tablero del Sprint utilizando los estados `To Do`, `In Process`, `To Review` y `Done`.
 
-**URL pública del tablero:** [Completar enlace de Trello]
+**URL pública del tablero:** [[Enlace de Trello](https://trello.com/invite/b/6ac44a7d10d0612f182dfb05/ATTIcfa0acac5a6a89bf1fe51ba3abefb40fF9A7DBCF/sprint-2)]
 
-> **Pendiente:** Colocar aquí enlace público del tablero correspondiente al Sprint 2.
 
-> **Pendiente:** Colocar aquí captura del Sprint Backlog 2 en Trello.
+
+<img width="1903" height="894" alt="image" src="https://github.com/user-attachments/assets/c05b7593-65b9-4603-9feb-5e29279c31be" />
+
+
 
 | User Story ID | User Story Title | Task ID | Task Title | Description | Estimation (Hours) | Priority | Status | Assigned To |
 |---|---|---|---|---|---:|---|---|---|
