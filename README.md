@@ -2347,10 +2347,7 @@ Durante el Sprint 2 se implementó la primera versión funcional de la Web Appli
 
 La aplicación incluye funcionalidades relacionadas con autenticación y perfil de usuario, gestión de vehículos, solicitudes de seguros vehiculares y de vida, consulta de pólizas, gestión de beneficiarios, renovación de pólizas y registro de siniestros vehiculares.
 
-**URL de la Web Application desplegada:**  
-[Completar URL de la Web Application]
-
-> **Pendiente:** Colocar aquí la URL pública de la Web Application cuando se encuentre desplegada.
+[URL de la Web Application](https://livva-web-application.web.app/)
 
 ##### 1. Autenticación y acceso a la Web Application
 
@@ -2358,33 +2355,17 @@ La Web Application incorpora el flujo de autenticación que permite al usuario a
 
 Una vez ingresadas las credenciales correspondientes, el usuario puede acceder a la aplicación y navegar hacia los diferentes módulos disponibles.
 
-> **Pendiente:** Colocar aquí captura de la pantalla de inicio de sesión.
-
-> **Pendiente:** Colocar aquí captura de la Web Application después de iniciar sesión.
-
 ##### 2. Gestión del perfil de usuario
 
 Dentro de la aplicación, el usuario puede acceder a la sección correspondiente a su perfil personal, donde se presenta la información asociada a su cuenta.
 
 Asimismo, se incorporó la posibilidad de actualizar los datos personales disponibles dentro de la plataforma.
 
-> **Pendiente:** Colocar aquí captura de la vista del perfil del usuario.
-
-> **Pendiente:** Colocar aquí captura de la interfaz para actualizar los datos del perfil.
-
 ##### 3. Gestión de vehículos
 
 Livva permite registrar los vehículos que posteriormente podrán ser utilizados dentro de los procesos relacionados con seguros vehiculares.
 
 El módulo permite visualizar los vehículos registrados y realizar operaciones de actualización y eliminación sobre ellos.
-
-> **Pendiente:** Colocar aquí captura del listado de vehículos registrados.
-
-> **Pendiente:** Colocar aquí captura del formulario para registrar un vehículo.
-
-> **Pendiente:** Colocar aquí captura de la funcionalidad de edición de vehículo.
-
-> **Pendiente:** Colocar aquí captura de la opción para eliminar un vehículo.
 
 ##### 4. Solicitudes de seguro vehicular
 
@@ -2394,23 +2375,11 @@ La Web Application incorpora la interfaz necesaria para ingresar la información
 
 Asimismo, el usuario puede posteriormente consultar las solicitudes vehiculares realizadas y visualizar su estado.
 
-> **Pendiente:** Colocar aquí captura del formulario de solicitud de seguro vehicular.
-
-> **Pendiente:** Colocar aquí captura de la solicitud de seguro vehicular registrada.
-
-> **Pendiente:** Colocar aquí captura del listado o estado de solicitudes de seguro vehicular.
-
 ##### 5. Solicitudes de seguro de vida
 
 Livva incorpora un flujo independiente para la gestión de solicitudes de seguros de vida.
 
 Mediante esta sección, el usuario puede registrar la información necesaria para iniciar una solicitud y posteriormente consultar las solicitudes asociadas a su cuenta.
-
-> **Pendiente:** Colocar aquí captura del formulario de solicitud de seguro de vida.
-
-> **Pendiente:** Colocar aquí captura de una solicitud de seguro de vida registrada.
-
-> **Pendiente:** Colocar aquí captura del listado o estado de solicitudes de seguro de vida.
 
 ##### 6. Gestión de beneficiarios
 
@@ -2420,23 +2389,11 @@ Este módulo permite registrar y consultar beneficiarios asociados al usuario, a
 
 La sección también incorpora internacionalización para mantener consistencia con los idiomas soportados por Livva.
 
-> **Pendiente:** Colocar aquí captura del listado de beneficiarios.
-
-> **Pendiente:** Colocar aquí captura del formulario de registro de beneficiario.
-
-> **Pendiente:** Colocar aquí captura de la interfaz de gestión o actualización de beneficiarios.
-
-> **Pendiente:** Colocar aquí captura del módulo de beneficiarios utilizando el segundo idioma.
-
 ##### 7. Consulta de pólizas
 
 La Web Application permite al usuario consultar las pólizas disponibles dentro de su cuenta.
 
 Desde el listado de pólizas, el usuario puede seleccionar una de ellas para acceder a una vista con información más detallada relacionada con la póliza seleccionada.
-
-> **Pendiente:** Colocar aquí captura del listado de pólizas.
-
-> **Pendiente:** Colocar aquí captura de la vista de detalle de una póliza.
 
 ##### 8. Renovación de pólizas
 
@@ -2444,23 +2401,11 @@ Livva incorpora una funcionalidad destinada a la gestión de solicitudes de reno
 
 El usuario puede acceder a la información de una póliza y, cuando corresponda, iniciar el proceso de renovación mediante la interfaz implementada durante el Sprint.
 
-> **Pendiente:** Colocar aquí captura de una póliza disponible para renovación.
-
-> **Pendiente:** Colocar aquí captura de la interfaz para solicitar la renovación.
-
-> **Pendiente:** Colocar aquí captura de una solicitud de renovación registrada o pendiente.
-
 ##### 9. Registro y seguimiento de siniestros vehiculares
 
 La Web Application incorpora un módulo destinado a registrar siniestros relacionados con seguros vehiculares.
 
 El usuario puede ingresar la información requerida para registrar el siniestro y posteriormente consultar la información asociada al proceso.
-
-> **Pendiente:** Colocar aquí captura de la interfaz de registro de siniestro vehicular.
-
-> **Pendiente:** Colocar aquí captura de un siniestro registrado.
-
-> **Pendiente:** Colocar aquí captura de la visualización o estado del siniestro.
 
 ##### 10. Internacionalización de la Web Application
 
@@ -2468,27 +2413,17 @@ La aplicación mantiene soporte para los idiomas español e inglés mediante la 
 
 Esto permite modificar dinámicamente los textos visibles de la interfaz y mantener una experiencia consistente en las principales secciones desarrolladas.
 
-> **Pendiente:** Colocar aquí captura de una vista de la Web Application en español.
-
-> **Pendiente:** Colocar aquí la misma vista de la Web Application en inglés.
-
 ##### 11. Diseño responsive
 
 Las principales vistas de la Web Application fueron desarrolladas considerando su visualización en diferentes tamaños de pantalla.
 
 El diseño busca mantener la organización de la información, navegación y elementos interactivos tanto en equipos de escritorio como en dispositivos con resoluciones reducidas.
 
-> **Pendiente:** Colocar aquí captura de la Web Application en vista desktop.
-
-> **Pendiente:** Colocar aquí captura de la Web Application en vista responsive o móvil.
-
 ##### Resumen de ejecución
 
 Las evidencias presentadas demuestran el avance funcional alcanzado durante el Sprint 2. La Web Application permite ejecutar los principales flujos relacionados con la gestión digital de seguros contemplados para esta iteración, estableciendo una base funcional que podrá ser integrada posteriormente con los Web Services definitivos de Livva.
 
-> **Pendiente:** Colocar aquí enlace al video de Execution Evidence del Sprint 2, si corresponde.
-
-> **Pendiente:** Verificar antes de la entrega que todas las capturas correspondan a funcionalidades realmente operativas.
+[Execution Evidence]()
 
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review
 
@@ -2524,17 +2459,9 @@ El proceso de despliegue parte del código integrado en la rama `develop` del re
 
 | Producto | URL |
 |---|---|
-| Landing Page | [Completar URL] |
-| Web Application | [Completar URL] |
+<!--| Landing Page | [Completar URL] | -->
+| Web Application | [URL](https://livva-web-application.web.app/) |
 | Repositorio Web Application | [[URL](https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-web-application.git)] |
-
-##### Capturas de evidencia
-
-> **Pendiente:** Colocar aquí captura de la plataforma utilizada para desplegar la Web Application.
-
-> **Pendiente:** Colocar aquí captura donde se observe que el deployment fue realizado correctamente.
-
-> **Pendiente:** Colocar aquí captura de la Web Application ejecutándose mediante la URL pública.
 
 ##### Resultado obtenido
 
@@ -2553,9 +2480,6 @@ Durante el Sprint se desarrollaron e integraron funcionalidades relacionadas con
 La integración progresiva de las ramas permitió mantener trazabilidad sobre los cambios realizados y reducir conflictos durante el desarrollo. Asimismo, el historial de commits permitió identificar los avances realizados en cada módulo y verificar su incorporación a la versión integrada de la Web Application.
 
 El equipo también realizó revisiones de las funcionalidades implementadas con el objetivo de comprobar su funcionamiento, mantener consistencia con los requerimientos definidos y preparar las evidencias correspondientes al Sprint Review.
-
-
-> **Pendiente:** Colocar aquí captura de los Insights.
 
 ## Conclusiones
 
@@ -2597,4 +2521,4 @@ Seguros Falabella. (s.f.-b). *Seguro vehicular full cobertura*. https://auto.seg
 
 Seguros Falabella. (s.f.-c). *Seguros de vida*. https://www.segurosfalabella.com.pe/seguros-de-vida
 
-# Anexos
+<!-- # Anexos -->
