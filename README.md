@@ -2459,9 +2459,10 @@ El proceso de despliegue parte del código integrado en la rama `develop` del re
 
 | Producto | URL |
 |---|---|
-<!--| Landing Page | [Completar URL] | -->
 | Web Application | [URL](https://livva-web-application.web.app/) |
 | Repositorio Web Application | [[URL](https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-web-application.git)] |
+
+<!--| Landing Page | [Completar URL] | -->
 
 ##### Resultado obtenido
 
