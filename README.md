@@ -2264,7 +2264,7 @@ Durante esta iteración se trabajó en la configuración inicial del proyecto, i
 El desarrollo se organizó mediante GitFlow, utilizando ramas `feature/*` para separar las funcionalidades antes de integrarlas a la rama `develop`. Esto permitió mantener una mayor trazabilidad sobre los cambios realizados y facilitar la integración progresiva de los diferentes módulos de la Web Application.
 
 **Repositorio de la Web Application:**  
-[[URL del repositorio de Livva Web Application](https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-web-application)]
+[[URL del repositorio de Livva Web Application](https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-web-application.git)]
 
 
 ##### Feature Branches utilizadas
@@ -2507,14 +2507,6 @@ Durante el Sprint 2, el equipo de Livva Care se enfocó en el desarrollo de la p
 | REST Infrastructure | Preparar la integración entre la Web Application y los futuros servicios RESTful de Livva. |
 | Development Seed Data | Simular información necesaria para probar los diferentes módulos antes de implementar el backend definitivo. |
 
-> **Pendiente:** Colocar aquí URL pública de la Landing Page.
-
-> **Pendiente:** Colocar aquí URL pública de la Web Application.
-
-> **Pendiente:** Colocar aquí captura de la infraestructura REST o del consumo de datos.
-
-En esta etapa todavía no se cuenta con la RESTful API definitiva desarrollada en ASP.NET Core ni con documentación Swagger/OpenAPI desplegada. Estas evidencias serán incorporadas en los siguientes Sprints cuando se implemente el backend de Livva.
-
 #### 5.2.2.7. Software Deployment Evidence for Sprint Review
 
 Durante el Sprint 2 se preparó el despliegue de la primera versión funcional de la Web Application de Livva con el objetivo de permitir su ejecución fuera del entorno local y facilitar la revisión de las funcionalidades desarrolladas.
@@ -2534,13 +2526,7 @@ El proceso de despliegue parte del código integrado en la rama `develop` del re
 |---|---|
 | Landing Page | [Completar URL] |
 | Web Application | [Completar URL] |
-| Repositorio Web Application | [Completar URL] |
-
-> **Pendiente:** Colocar aquí URL pública de la Landing Page.
-
-> **Pendiente:** Colocar aquí URL pública de la Web Application desplegada.
-
-> **Pendiente:** Colocar aquí URL del repositorio de la Web Application.
+| Repositorio Web Application | [[URL](https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-web-application.git)] |
 
 ##### Capturas de evidencia
 
@@ -2549,8 +2535,6 @@ El proceso de despliegue parte del código integrado en la rama `develop` del re
 > **Pendiente:** Colocar aquí captura donde se observe que el deployment fue realizado correctamente.
 
 > **Pendiente:** Colocar aquí captura de la Web Application ejecutándose mediante la URL pública.
-
-> **Pendiente:** Colocar aquí captura de una funcionalidad de Livva ejecutándose desde la versión desplegada.
 
 ##### Resultado obtenido
 
@@ -2571,13 +2555,7 @@ La integración progresiva de las ramas permitió mantener trazabilidad sobre lo
 El equipo también realizó revisiones de las funcionalidades implementadas con el objetivo de comprobar su funcionamiento, mantener consistencia con los requerimientos definidos y preparar las evidencias correspondientes al Sprint Review.
 
 
-> **Pendiente:** Colocar aquí captura de los Contributors del repositorio de la Web Application.
-
-> **Pendiente:** Colocar aquí captura del historial de ramas y merges realizados hacia `develop`.
-
-> **Pendiente:** Colocar aquí captura de Pull Requests o revisiones realizadas durante el Sprint 2.
-
-> **Pendiente:** Colocar aquí evidencia del tablero de Trello utilizado para coordinar las tareas del equipo.
+> **Pendiente:** Colocar aquí captura de los Insights.
 
 # Conclusiones
 
