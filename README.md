@@ -82,6 +82,14 @@ A continuación, se presenta el repositorio utilizado para la elaboración colab
 
 - https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-project-report
 
+#### Link del repositorio de la Landing Page:
+
+- https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-landing-page.git
+
+#### Link del repositorio de la Web Application:
+
+- https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-web-application.git
+
 ### Entrega AV1:
 
 #### Participación por integrante:
