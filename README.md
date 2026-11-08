@@ -198,6 +198,21 @@ A continuación, se presenta el repositorio utilizado para la elaboración colab
             - [5.2.2.6. Services Documentation Evidence for Sprint Review](#5226-services-documentation-evidence-for-sprint-review)
             - [5.2.2.7. Software Deployment Evidence for Sprint Review](#5227-software-deployment-evidence-for-sprint-review)
             - [5.2.2.8. Team Collaboration Insights during Sprint](#5228-team-collaboration-insights-during-sprint)
+        - [5.2.3. Sprint 3](#523-sprint-3)
+            - [5.2.3.1. Sprint Planning 3](#5231-sprint-planning-3)
+            - [5.2.3.2. Aspect Leaders and Collaborators](#5232-aspect-leaders-and-collaborators)
+            - [5.2.3.3. Sprint Backlog 3](#5233-sprint-backlog-3)
+            - [5.2.3.4. Development Evidence for Sprint Review](#5234-development-evidence-for-sprint-review)
+            - [5.2.3.5. Execution Evidence for Sprint Review](#5235-execution-evidence-for-sprint-review)
+            - [5.2.3.6. Services Documentation Evidence for Sprint Review](#5236-services-documentation-evidence-for-sprint-review)
+            - [5.2.3.7. Software Deployment Evidence for Sprint Review](#5237-software-deployment-evidence-for-sprint-review)
+            - [5.2.3.8. Team Collaboration Insights during Sprint](#5238-team-collaboration-insights-during-sprint)
+    - [5.3. Validation Interviews](#53-validation-interviews)
+        - [5.3.1. Diseño de Entrevistas](#531-diseño-de-entrevistas)
+        - [5.3.2. Registro de Entrevistas](#532-registro-de-entrevistas)
+        - [5.3.3. Evaluaciones según heurísticas](#533-evaluaciones-según-heurísticas)
+    - [5.4. Video About-the-Product](#54-video-about-the-product)
+- [Video About-the-Team](#video-about-the-team)
 - [Conclusiones](#conclusiones)
 - [Recomendaciones](#recomendaciones)
 - [Bibliografía](#bibliografía)
@@ -3143,6 +3158,114 @@ La integración progresiva de las ramas permitió mantener trazabilidad sobre lo
 
 El equipo también realizó revisiones de las funcionalidades implementadas con el objetivo de comprobar su funcionamiento, mantener consistencia con los requerimientos definidos y preparar las evidencias correspondientes al Sprint Review.
 
+### 5.2.3. Sprint 3
+
+Durante el Sprint 3, el equipo de Livva Care se enfoca en la implementación de la primera versión de los Web Services de Livva, desarrollados como un RESTful API con C#, ASP.NET Core y Entity Framework Core sobre una base de datos MySQL. El desarrollo se organiza por los bounded contexts definidos en el diseño de base de datos (sección 4.8) y busca que la Web Application pueda consumir servicios reales en lugar de la Fake API utilizada durante el Sprint 2.
+
+#### 5.2.3.1. Sprint Planning 3
+
+| Campo | Descripción |
+|---|---|
+| Sprint # | Sprint 3 |
+| Date | [EQUIPO: fecha de la reunión] |
+| Time | [EQUIPO: hora] |
+| Location | [EQUIPO: lugar o medio de la reunión] |
+| Prepared By | Livva Care Team |
+| Attendees | Paredes Chavez, Carlos Augusto / Torres Diaz, Rolando Andre / Contreras Panuera, Fernando Fabrizio / Cespedes Lezcano, Carlos Gabriel / Rivera Aguilar, Scarlet Josefina |
+| Sprint 2 Review Summary | Durante el Sprint 2 se desarrolló y desplegó la primera versión funcional de la Web Application de Livva con Vue y PrimeVue, incluyendo autenticación y perfil de usuario, gestión de vehículos, solicitudes de seguros vehiculares y de vida, registro de beneficiarios, consulta y renovación de pólizas, registro de siniestros vehiculares, internacionalización y diseño responsive, utilizando una Fake API con JSON Server. |
+| Sprint 2 Retrospective Summary | [EQUIPO: aspectos positivos y oportunidades de mejora identificados en la retrospectiva del Sprint 2] |
+| Sprint 3 Goal | [EQUIPO: redactar el Sprint Goal con la estructura "Nuestro enfoque se centra en… Creemos que… Esto se confirmará cuando…"] |
+| Sprint 3 Velocity | [EQUIPO: Story Points] |
+| Sum of Story Points | [EQUIPO: Story Points] |
+
+#### 5.2.3.2. Aspect Leaders and Collaborators
+
+La siguiente matriz LACX muestra la distribución de liderazgo y colaboración del equipo durante el Sprint 3. La letra `L` identifica al responsable principal del aspecto y la letra `C` a los integrantes que participaron como colaboradores.
+
+| Team Member | GitHub Username | Identity & Profile Management | Insurance Offering & Applications | Policy Management | Claims & Indemnities | Subscription Management | Notification Management | Web Services Deployment |
+|---|---|---|---|---|---|---|---|---|
+| Paredes Chavez, Carlos Augusto | CarlossUPC | [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] |
+| Torres Diaz, Rolando Andre | ROLO194 | [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] |
+| Contreras Panuera, Fernando Fabrizio | FernSkibidi69 | [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] |
+| Cespedes Lezcano, Carlos Gabriel | Leikop | [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] |
+| Rivera Aguilar, Scarlet Josefina | scarletriveraaguilar-spec | [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] |
+
+#### 5.2.3.3. Sprint Backlog 3
+
+El Sprint Backlog 3 organiza las actividades necesarias para implementar la primera versión de los Web Services de Livva, tomando como referencia las Technical Stories de la sección 3.1.
+
+**URL pública del tablero:** [EQUIPO: enlace del tablero de Trello del Sprint 3]
+
+**Captura del tablero:** [EQUIPO: captura del tablero]
+
+| Story ID | Story Title | Task ID | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
+|---|---|---|---|---|---|---|---|
+| [EQUIPO] | [EQUIPO] | S3-T01 | [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] |
+
+Los estados utilizados son To-do, In-Process, To-Review y Done.
+
+#### 5.2.3.4. Development Evidence for Sprint Review
+
+En esta sección se presentan las evidencias de implementación de los Web Services de Livva correspondientes al Sprint 3, identificando el repositorio, la rama, el commit y su fecha.
+
+**Repositorio de los Web Services:** [livva-web-services](https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-web-services)
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|---|---|---|---|---|---|
+| livva-web-services | develop | `ca33303` | `chore: initialize asp.net core web api project` | Se creó la solución `livva-web-services` con el proyecto ASP.NET Core Web API `LivvaPlatform.API` sobre .NET 10. | 2026-11-08 |
+| livva-web-services | feature/project-setup | `46d37fe` | `feat: add shared kernel, localization, openapi configuration and test projects` | Se incorporaron el bounded context Shared, la localización, la documentación OpenAPI con Scalar y Swagger UI, la conexión a MySQL y los proyectos de pruebas unitarias y de integración. | 2026-11-08 |
+
+<!-- [EQUIPO] Agregar los commits de los bounded contexts implementados durante el Sprint 3. -->
+
+#### 5.2.3.5. Execution Evidence for Sprint Review
+
+<!-- [EQUIPO] Agregar capturas de la Web Application consumiendo los Web Services y el enlace al video de ejecución del Sprint 3. -->
+
+#### 5.2.3.6. Services Documentation Evidence for Sprint Review
+
+La documentación de los Web Services se genera mediante la especificación OpenAPI integrada en ASP.NET Core. El documento OpenAPI se encuentra disponible en `/openapi/v1.json`, y la documentación interactiva puede consultarse mediante Scalar (`/scalar`) y Swagger UI (`/swagger`).
+
+| Endpoint | Verbo HTTP | Descripción | Parámetros | Respuestas |
+|---|---|---|---|---|
+| [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] |
+
+<!-- [EQUIPO] Agregar capturas de la interacción con los endpoints en Swagger UI o Scalar con datos de muestra y los commits relacionados. -->
+
+#### 5.2.3.7. Software Deployment Evidence for Sprint Review
+
+<!-- [EQUIPO] Describir la plataforma de despliegue de los Web Services y de la base de datos MySQL, los pasos realizados y las URLs públicas. -->
+
+| Producto | URL |
+|---|---|
+| Landing Page | https://upc-pre-202620-1asi0730-8168-livva-care.github.io/livva-landing-page/ |
+| Web Application | https://livva-web-application.web.app/ |
+| Web Services | [EQUIPO: URL pública de los Web Services] |
+
+#### 5.2.3.8. Team Collaboration Insights during Sprint
+
+<!-- [EQUIPO] Agregar capturas de GitHub Insights (commits por integrante) de los repositorios livva-web-services y livva-web-application durante el Sprint 3, y una breve descripción de la colaboración del equipo. -->
+
+## 5.3. Validation Interviews
+
+### 5.3.1. Diseño de Entrevistas
+
+<!-- [EQUIPO] Definir los segmentos objetivo, las preguntas y los flujos de la aplicación que se validarán con los entrevistados. -->
+
+### 5.3.2. Registro de Entrevistas
+
+<!-- [EQUIPO] Registrar por cada entrevista: nombre, edad, distrito, segmento, captura, enlace al video y resumen. -->
+
+### 5.3.3. Evaluaciones según heurísticas
+
+<!-- [EQUIPO] Registrar los problemas de usabilidad encontrados, su severidad y la propuesta de solución. -->
+
+## 5.4. Video About-the-Product
+
+<!-- [EQUIPO] Agregar el enlace al video About-the-Product y una breve descripción de su contenido. -->
+
+## Video About-the-Team
+
+<!-- [EQUIPO] Agregar el enlace al video About-the-Team y una breve descripción de su contenido. -->
 ## Conclusiones
 
 Durante esta etapa se logró consolidar una versión funcional de Livva, integrada por la Landing Page y la Web Application. La solución permite gestionar usuarios, vehículos, solicitudes de seguros vehiculares y de vida, pólizas, renovaciones, beneficiarios, siniestros, notificaciones y suscripciones.
