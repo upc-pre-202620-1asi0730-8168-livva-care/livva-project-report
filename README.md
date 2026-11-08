@@ -1508,11 +1508,17 @@ Para mantener consistencia dentro del dominio de Livva se establecen las siguien
 | US-26 | Registrar una compañía aseguradora | Como representante de una aseguradora, deseo registrar la información de mi compañía para participar en Livva. | **Scenario 1: Registro correcto**<br>**Given** que se proporciona información válida de la compañía<br>**When** se solicita su registro<br>**Then** el sistema registra la compañía aseguradora. | EP-07 |
 | US-27 | Registrar un producto de seguro | Como representante de una aseguradora, deseo registrar un producto de seguro para ofrecerlo mediante Livva. | **Scenario 1: Registro correcto**<br>**Given** que la compañía está registrada y proporciona información válida<br>**When** registra un producto de seguro<br>**Then** el sistema almacena el producto asociado a la compañía. | EP-07 |
 | US-28 | Consultar solicitudes recibidas | Como representante de una aseguradora, deseo consultar las solicitudes asociadas a mis productos para realizar su seguimiento. | **Scenario 1: Solicitudes disponibles**<br>**Given** que existen solicitudes asociadas a la compañía<br>**When** consulta las solicitudes<br>**Then** el sistema presenta las solicitudes correspondientes. | EP-07 |
+| US-29 | Solicitar indemnización de seguro de vida | Como beneficiario de un seguro de vida, deseo registrar una solicitud de indemnización para iniciar el proceso de pago correspondiente. | **Scenario 1: Solicitud correcta**<br>**Given** que el usuario es beneficiario de una póliza de vida y proporciona la información requerida<br>**When** envía la solicitud de indemnización<br>**Then** el sistema registra la solicitud con su estado inicial.<br><br>**Scenario 2: Póliza no válida**<br>**Given** que la información no corresponde con una póliza válida<br>**When** el usuario envía la solicitud<br>**Then** el sistema rechaza el registro. | EP-05 |
+| US-30 | Consultar estado de indemnización | Como beneficiario de un seguro de vida, deseo consultar el estado de mi solicitud de indemnización para conocer su avance. | **Scenario 1: Solicitud existente**<br>**Given** que el beneficiario posee una solicitud registrada<br>**When** consulta su estado<br>**Then** el sistema presenta la información y el estado actual de la solicitud. | EP-05 |
+| US-31 | Consultar planes de suscripción | Como usuario, deseo consultar los planes de suscripción de Livva para conocer sus precios y beneficios. | **Scenario 1: Planes disponibles**<br>**Given** que existen planes activos<br>**When** el usuario consulta los planes<br>**Then** el sistema presenta el nombre, precio y descripción de cada plan. | EP-08 |
+| US-32 | Contratar un plan de suscripción | Como usuario, deseo contratar un plan de suscripción para acceder a los servicios de Livva. | **Scenario 1: Contratación correcta**<br>**Given** que el usuario selecciona un plan activo<br>**When** confirma la contratación y el pago es aprobado<br>**Then** el sistema activa la suscripción.<br><br>**Scenario 2: Suscripción activa existente**<br>**Given** que el usuario ya posee una suscripción activa<br>**When** intenta contratar otro plan<br>**Then** el sistema rechaza la contratación. | EP-08 |
+| US-33 | Consultar mi suscripción | Como usuario suscrito, deseo consultar mi suscripción para conocer el plan contratado, su estado y su vigencia. | **Scenario 1: Suscripción existente**<br>**Given** que el usuario posee una suscripción<br>**When** consulta su suscripción<br>**Then** el sistema presenta el plan, el estado y las fechas correspondientes. | EP-08 |
+| US-34 | Cancelar mi suscripción | Como usuario suscrito, deseo cancelar mi suscripción para finalizar el servicio contratado con Livva. | **Scenario 1: Cancelación correcta**<br>**Given** que el usuario posee una suscripción activa<br>**When** solicita su cancelación<br>**Then** el sistema registra la suscripción como cancelada. | EP-08 |
 
 
 ### Technical Stories
 
-Las Technical Stories especifican las capacidades que el RESTful API de Livva deberá ofrecer a la Web Application. Cada historia se redacta desde la perspectiva de un Developer y define sus interacciones request/response mediante criterios Gherkin.
+Las Technical Stories especifican las capacidades que el RESTful API de Livva deberá ofrecer a la Web Application. Cada historia se redacta desde la perspectiva de un Developer y define sus interacciones request/response mediante criterios Gherkin. Las historias se agrupan según los bounded contexts definidos en el diseño de base de datos (sección 4.8), y las rutas corresponden a los recursos consumidos por la Web Application.
 
 Para todos los endpoints protegidos:
 
@@ -1528,36 +1534,26 @@ Para todos los endpoints protegidos:
 |---|---|---|---|---|
 | TS-01 | Register User Account | Como Developer, deseo registrar una cuenta mediante `POST /api/v1/authentication/sign-up` para permitir que nuevos usuarios accedan a Livva. | **Scenario 1: Successful registration**<br>**Given** que se proporcionan datos válidos y un correo no registrado<br>**When** se envía la solicitud<br>**Then** el API responde `201 Created` con el identificador del usuario.<br><br>**Scenario 2: Duplicate email**<br>**Given** que el correo ya está registrado<br>**When** se envía la solicitud<br>**Then** el API responde `409 Conflict`. | US-05 / EP-02 |
 | TS-02 | Authenticate User | Como Developer, deseo autenticar a un usuario mediante `POST /api/v1/authentication/sign-in` para permitirle acceder a los recursos protegidos. | **Scenario 1: Valid credentials**<br>**Given** que las credenciales son correctas<br>**When** se solicita iniciar sesión<br>**Then** el API responde `200 OK` con un token de acceso.<br><br>**Scenario 2: Invalid credentials**<br>**Given** que las credenciales son incorrectas<br>**When** se solicita iniciar sesión<br>**Then** el API responde `401 Unauthorized`. | US-06 / EP-02 |
-| TS-03 | Retrieve Current Profile | Como Developer, deseo obtener el perfil mediante `GET /api/v1/profiles/me` para mostrar la información del usuario autenticado. | **Scenario 1: Existing profile**<br>**Given** que el usuario está autenticado<br>**When** solicita su perfil<br>**Then** el API responde `200 OK` con su información personal. | US-07 / EP-02 |
-| TS-04 | Update Current Profile | Como Developer, deseo actualizar el perfil mediante `PUT /api/v1/profiles/me` para mantener vigente la información del usuario. | **Scenario 1: Valid update**<br>**Given** que el usuario proporciona información válida<br>**When** solicita actualizar su perfil<br>**Then** el API responde `200 OK` con los datos actualizados.<br><br>**Scenario 2: Invalid information**<br>**Given** que la información no es válida<br>**When** se solicita la actualización<br>**Then** el API responde `400 Bad Request`. | US-08 / EP-02 |
+| TS-03 | Retrieve Current Profile | Como Developer, deseo obtener el perfil mediante `GET /api/v1/user-profiles?userId={userId}` para mostrar la información del usuario autenticado. | **Scenario 1: Existing profile**<br>**Given** que el usuario está autenticado<br>**When** solicita su perfil<br>**Then** el API responde `200 OK` con su información personal. | US-07 / EP-02 |
+| TS-04 | Update Current Profile | Como Developer, deseo actualizar el perfil mediante `PUT /api/v1/user-profiles/{profileId}` para mantener vigente la información del usuario. | **Scenario 1: Valid update**<br>**Given** que el usuario proporciona información válida<br>**When** solicita actualizar su perfil<br>**Then** el API responde `200 OK` con los datos actualizados.<br><br>**Scenario 2: Invalid information**<br>**Given** que la información no es válida<br>**When** se solicita la actualización<br>**Then** el API responde `400 Bad Request`. | US-08 / EP-02 |
 
-#### Insurance Offering Management
+#### Insurance Offering and Applications
 
 | Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con |
 |---|---|---|---|---|
 | TS-05 | Retrieve Insurance Products | Como Developer, deseo consultar productos mediante `GET /api/v1/insurance-products` para presentar las alternativas académicas de seguros vehiculares y de vida. | **Scenario 1: Available products**<br>**Given** que existen productos registrados<br>**When** se solicita la lista con un tipo de seguro opcional<br>**Then** el API responde `200 OK` con los productos correspondientes.<br><br>**Scenario 2: No matching products**<br>**Given** que no existen productos para el filtro indicado<br>**When** se realiza la consulta<br>**Then** el API responde `200 OK` con una colección vacía. | US-03, US-04, US-12 y US-14 |
-
-#### Vehicle and Vehicle Insurance Application Management
-
-| Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con |
-|---|---|---|---|---|
 | TS-06 | Register Vehicle | Como Developer, deseo registrar un vehículo mediante `POST /api/v1/vehicles` para asociarlo con el usuario autenticado. | **Scenario 1: Valid vehicle**<br>**Given** que se proporcionan datos válidos<br>**When** se registra el vehículo<br>**Then** el API responde `201 Created` con su identificador.<br><br>**Scenario 2: Duplicate license plate**<br>**Given** que la placa ya está registrada<br>**When** se envía la solicitud<br>**Then** el API responde `409 Conflict`. | US-09 / EP-03 |
 | TS-07 | Retrieve User Vehicles | Como Developer, deseo consultar vehículos mediante `GET /api/v1/vehicles` para mostrar los asociados al usuario autenticado. | **Scenario 1: Registered vehicles**<br>**Given** que el usuario posee vehículos<br>**When** solicita la lista<br>**Then** el API responde `200 OK` con sus vehículos.<br><br>**Scenario 2: No vehicles**<br>**Given** que no posee vehículos<br>**When** solicita la lista<br>**Then** el API responde `200 OK` con una colección vacía. | US-10 / EP-03 |
 | TS-08 | Update Vehicle | Como Developer, deseo actualizar un vehículo mediante `PUT /api/v1/vehicles/{vehicleId}` para mantener correcta su información. | **Scenario 1: Valid update**<br>**Given** que el vehículo pertenece al usuario y los datos son válidos<br>**When** se solicita la actualización<br>**Then** el API responde `200 OK` con el vehículo actualizado.<br><br>**Scenario 2: Vehicle unavailable**<br>**Given** que el vehículo no existe o no pertenece al usuario<br>**When** se solicita actualizarlo<br>**Then** el API responde `404 Not Found`. | US-11 / EP-03 |
 | TS-09 | Create Vehicle Insurance Application | Como Developer, deseo registrar una solicitud mediante `POST /api/v1/vehicle-insurance-applications` para iniciar la intermediación de un seguro vehicular. | **Scenario 1: Valid application**<br>**Given** que el vehículo pertenece al usuario y el producto está disponible<br>**When** se envía la solicitud<br>**Then** el API responde `201 Created` con su identificador y estado inicial.<br><br>**Scenario 2: Invalid vehicle or product**<br>**Given** que el vehículo o producto no está disponible<br>**When** se envía la solicitud<br>**Then** el API responde `404 Not Found`. | US-12 / EP-03 |
 | TS-10 | Retrieve Vehicle Insurance Applications | Como Developer, deseo consultar `GET /api/v1/vehicle-insurance-applications` para mostrar las solicitudes vehiculares del usuario autenticado. | **Scenario 1: Existing applications**<br>**Given** que el usuario posee solicitudes vehiculares<br>**When** solicita la lista<br>**Then** el API responde `200 OK` con sus solicitudes y estados.<br><br>**Scenario 2: No applications**<br>**Given** que no posee solicitudes<br>**When** realiza la consulta<br>**Then** el API responde `200 OK` con una colección vacía. | US-13 / EP-03 |
 | TS-11 | Retrieve Vehicle Insurance Application Details | Como Developer, deseo consultar `GET /api/v1/vehicle-insurance-applications/{applicationId}` para mostrar el detalle y estado de una solicitud vehicular. | **Scenario 1: Existing application**<br>**Given** que la solicitud pertenece al usuario<br>**When** se consulta su detalle<br>**Then** el API responde `200 OK` con la información correspondiente.<br><br>**Scenario 2: Application unavailable**<br>**Given** que la solicitud no existe o no pertenece al usuario<br>**When** se realiza la consulta<br>**Then** el API responde `404 Not Found`. | US-13 / EP-03 |
-
-#### Life Insurance Application and Beneficiary Management
-
-| Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con |
-|---|---|---|---|---|
 | TS-12 | Create Life Insurance Application | Como Developer, deseo registrar una solicitud mediante `POST /api/v1/life-insurance-applications` para iniciar la intermediación de un seguro de vida. | **Scenario 1: Valid application**<br>**Given** que el usuario proporciona la información requerida y selecciona un producto disponible<br>**When** envía la solicitud<br>**Then** el API responde `201 Created` con su identificador y estado inicial.<br><br>**Scenario 2: Invalid product**<br>**Given** que el producto no existe o no está disponible<br>**When** se envía la solicitud<br>**Then** el API responde `404 Not Found`. | US-14 / EP-04 |
 | TS-13 | Retrieve Life Insurance Applications | Como Developer, deseo consultar `GET /api/v1/life-insurance-applications` para mostrar las solicitudes de vida del usuario autenticado. | **Scenario 1: Existing applications**<br>**Given** que el usuario posee solicitudes<br>**When** solicita la lista<br>**Then** el API responde `200 OK` con sus solicitudes y estados.<br><br>**Scenario 2: No applications**<br>**Given** que no posee solicitudes<br>**When** realiza la consulta<br>**Then** el API responde `200 OK` con una colección vacía. | US-15 / EP-04 |
 | TS-14 | Retrieve Life Insurance Application Details | Como Developer, deseo consultar `GET /api/v1/life-insurance-applications/{applicationId}` para mostrar el detalle y estado de una solicitud de vida. | **Scenario 1: Existing application**<br>**Given** que la solicitud pertenece al usuario<br>**When** se consulta su detalle<br>**Then** el API responde `200 OK` con la información correspondiente.<br><br>**Scenario 2: Application unavailable**<br>**Given** que la solicitud no existe o no pertenece al usuario<br>**When** se realiza la consulta<br>**Then** el API responde `404 Not Found`. | US-15 / EP-04 |
-| TS-15 | Register Beneficiary | Como Developer, deseo registrar un beneficiario mediante `POST /api/v1/life-insurance-policies/{policyId}/beneficiaries` para asociarlo con una póliza de vida. | **Scenario 1: Valid beneficiary**<br>**Given** que la póliza pertenece al usuario y los datos son válidos<br>**When** se registra el beneficiario<br>**Then** el API responde `201 Created`.<br><br>**Scenario 2: Invalid policy**<br>**Given** que la póliza no existe o no pertenece al usuario<br>**When** se envía la solicitud<br>**Then** el API responde `404 Not Found`. | US-16 / EP-04 |
-| TS-16 | Retrieve Beneficiaries | Como Developer, deseo consultar `GET /api/v1/life-insurance-policies/{policyId}/beneficiaries` para mostrar los beneficiarios de una póliza. | **Scenario 1: Existing beneficiaries**<br>**Given** que la póliza pertenece al usuario<br>**When** solicita sus beneficiarios<br>**Then** el API responde `200 OK` con la lista correspondiente.<br><br>**Scenario 2: No beneficiaries**<br>**Given** que la póliza no posee beneficiarios<br>**When** se realiza la consulta<br>**Then** el API responde `200 OK` con una colección vacía. | US-17 / EP-04 |
-| TS-17 | Update Beneficiary | Como Developer, deseo actualizar un beneficiario mediante `PUT /api/v1/life-insurance-policies/{policyId}/beneficiaries/{beneficiaryId}` para mantener sus datos vigentes. | **Scenario 1: Valid update**<br>**Given** que la póliza y el beneficiario pertenecen al usuario<br>**When** se proporcionan datos válidos<br>**Then** el API responde `200 OK` con la información actualizada.<br><br>**Scenario 2: Beneficiary unavailable**<br>**Given** que el beneficiario no existe o no pertenece a la póliza<br>**When** se solicita actualizarlo<br>**Then** el API responde `404 Not Found`. | US-18 / EP-04 |
+| TS-15 | Register Beneficiary | Como Developer, deseo registrar un beneficiario mediante `POST /api/v1/beneficiaries` para asociarlo con una solicitud de seguro de vida. | **Scenario 1: Valid beneficiary**<br>**Given** que la solicitud de seguro de vida pertenece al usuario y los datos son válidos<br>**When** se registra el beneficiario<br>**Then** el API responde `201 Created`.<br><br>**Scenario 2: Invalid application**<br>**Given** que la solicitud de seguro de vida no existe o no pertenece al usuario<br>**When** se envía la solicitud<br>**Then** el API responde `404 Not Found`. | US-16 / EP-04 |
+| TS-16 | Retrieve Beneficiaries | Como Developer, deseo consultar `GET /api/v1/beneficiaries?lifeApplicationId={applicationId}` para mostrar los beneficiarios de una solicitud de seguro de vida. | **Scenario 1: Existing beneficiaries**<br>**Given** que la solicitud pertenece al usuario<br>**When** solicita sus beneficiarios<br>**Then** el API responde `200 OK` con la lista correspondiente.<br><br>**Scenario 2: No beneficiaries**<br>**Given** que la solicitud no posee beneficiarios<br>**When** se realiza la consulta<br>**Then** el API responde `200 OK` con una colección vacía. | US-17 / EP-04 |
+| TS-17 | Update Beneficiary | Como Developer, deseo actualizar un beneficiario mediante `PUT /api/v1/beneficiaries/{beneficiaryId}` para mantener sus datos vigentes. | **Scenario 1: Valid update**<br>**Given** que el beneficiario pertenece a una solicitud del usuario<br>**When** se proporcionan datos válidos<br>**Then** el API responde `200 OK` con la información actualizada.<br><br>**Scenario 2: Beneficiary unavailable**<br>**Given** que el beneficiario no existe o no pertenece a una solicitud del usuario<br>**When** se solicita actualizarlo<br>**Then** el API responde `404 Not Found`. | US-18 / EP-04 |
 
 #### Policy Management
 
@@ -1565,23 +1561,18 @@ Para todos los endpoints protegidos:
 |---|---|---|---|---|
 | TS-18 | Retrieve User Policies | Como Developer, deseo consultar pólizas mediante `GET /api/v1/policies` para mostrar las asociadas al usuario autenticado. | **Scenario 1: Existing policies**<br>**Given** que el usuario posee pólizas<br>**When** solicita la lista<br>**Then** el API responde `200 OK` con sus pólizas.<br><br>**Scenario 2: No policies**<br>**Given** que el usuario no posee pólizas<br>**When** realiza la consulta<br>**Then** el API responde `200 OK` con una colección vacía. | US-19 / EP-05 |
 | TS-19 | Retrieve Policy Details | Como Developer, deseo consultar `GET /api/v1/policies/{policyId}` para mostrar la cobertura, vigencia y documentos de una póliza. | **Scenario 1: Existing policy**<br>**Given** que la póliza pertenece al usuario<br>**When** se consulta su detalle<br>**Then** el API responde `200 OK` con su información, coberturas y vigencia.<br><br>**Scenario 2: Policy unavailable**<br>**Given** que la póliza no existe o no pertenece al usuario<br>**When** se realiza la consulta<br>**Then** el API responde `404 Not Found`. | US-20 / EP-05 |
-| TS-20 | Create Policy Renewal Request | Como Developer, deseo registrar una renovación mediante `POST /api/v1/policies/{policyId}/renewal-requests` para iniciar el proceso correspondiente. | **Scenario 1: Eligible policy**<br>**Given** que la póliza pertenece al usuario y puede renovarse<br>**When** se solicita la renovación<br>**Then** el API responde `201 Created` con el estado inicial.<br><br>**Scenario 2: Renewal unavailable**<br>**Given** que la póliza no puede renovarse o ya posee una solicitud pendiente<br>**When** se envía la solicitud<br>**Then** el API responde `409 Conflict`. | US-21 / EP-05 |
+| TS-20 | Create Policy Renewal Request | Como Developer, deseo registrar una renovación mediante `POST /api/v1/renewals` para iniciar el proceso correspondiente para una póliza. | **Scenario 1: Eligible policy**<br>**Given** que la póliza pertenece al usuario y puede renovarse<br>**When** se solicita la renovación<br>**Then** el API responde `201 Created` con el estado inicial.<br><br>**Scenario 2: Renewal unavailable**<br>**Given** que la póliza no puede renovarse o ya posee una solicitud pendiente<br>**When** se envía la solicitud<br>**Then** el API responde `409 Conflict`. | US-21 / EP-05 |
 
-#### Vehicle Claim Management
+#### Claims and Indemnities
 
 | Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con |
 |---|---|---|---|---|
 | TS-21 | Register Vehicle Claim | Como Developer, deseo registrar un siniestro mediante `POST /api/v1/vehicle-claims` para iniciar su seguimiento básico. | **Scenario 1: Valid claim**<br>**Given** que la póliza pertenece al usuario y está vigente<br>**When** se proporciona información válida del incidente<br>**Then** el API responde `201 Created` con el identificador y estado inicial.<br><br>**Scenario 2: Ineligible policy**<br>**Given** que la póliza no está vigente<br>**When** se intenta registrar el siniestro<br>**Then** el API responde `409 Conflict`. | US-22 / EP-05 |
 | TS-22 | Retrieve Vehicle Claims | Como Developer, deseo consultar `GET /api/v1/vehicle-claims` para mostrar los siniestros registrados por el usuario. | **Scenario 1: Existing claims**<br>**Given** que el usuario posee siniestros<br>**When** solicita la lista<br>**Then** el API responde `200 OK` con sus siniestros y estados.<br><br>**Scenario 2: No claims**<br>**Given** que el usuario no posee siniestros<br>**When** realiza la consulta<br>**Then** el API responde `200 OK` con una colección vacía. | US-23 / EP-05 |
 | TS-23 | Retrieve Vehicle Claim Details | Como Developer, deseo consultar `GET /api/v1/vehicle-claims/{claimId}` para mostrar el detalle y estado de un siniestro. | **Scenario 1: Existing claim**<br>**Given** que el siniestro pertenece al usuario<br>**When** se consulta su detalle<br>**Then** el API responde `200 OK` con su información y estado.<br><br>**Scenario 2: Claim unavailable**<br>**Given** que el siniestro no existe o no pertenece al usuario<br>**When** se realiza la consulta<br>**Then** el API responde `404 Not Found`. | US-23 / EP-05 |
-
-#### Life Indemnity Management
-
-| Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con |
-|---|---|---|---|---|
-| TS-24 | Register Life Indemnity Request | Como Developer, deseo registrar una solicitud mediante `POST /api/v1/indemnity-requests` para iniciar el seguimiento de una indemnización de seguro de vida. | **Scenario 1: Valid request**<br>**Given** que el solicitante es beneficiario de la póliza y proporciona la información requerida<br>**When** envía la solicitud<br>**Then** el API responde `201 Created` con su identificador y estado inicial.<br><br>**Scenario 2: Invalid covered event**<br>**Given** que la información no corresponde con una póliza válida<br>**When** se envía la solicitud<br>**Then** el API responde `409 Conflict`. | US-26 propuesta / EP-05 |
-| TS-25 | Retrieve Life Indemnity Requests | Como Developer, deseo consultar `GET /api/v1/indemnity-requests` para mostrar las solicitudes de indemnización del beneficiario autenticado. | **Scenario 1: Existing requests**<br>**Given** que el beneficiario posee solicitudes<br>**When** solicita la lista<br>**Then** el API responde `200 OK` con sus solicitudes y estados.<br><br>**Scenario 2: No requests**<br>**Given** que no posee solicitudes<br>**When** realiza la consulta<br>**Then** el API responde `200 OK` con una colección vacía. | US-27 propuesta / EP-05 |
-| TS-26 | Retrieve Life Indemnity Request Details | Como Developer, deseo consultar `GET /api/v1/indemnity-requests/{requestId}` para mostrar el detalle y estado de una indemnización. | **Scenario 1: Existing request**<br>**Given** que la solicitud corresponde al beneficiario autenticado<br>**When** se consulta su detalle<br>**Then** el API responde `200 OK` con la información y estado.<br><br>**Scenario 2: Request unavailable**<br>**Given** que la solicitud no existe o no corresponde al usuario<br>**When** se realiza la consulta<br>**Then** el API responde `404 Not Found`. | US-27 propuesta / EP-05 |
+| TS-24 | Register Life Indemnity Request | Como Developer, deseo registrar una solicitud mediante `POST /api/v1/indemnity-requests` para iniciar el seguimiento de una indemnización de seguro de vida. | **Scenario 1: Valid request**<br>**Given** que el solicitante es beneficiario de la póliza y proporciona la información requerida<br>**When** envía la solicitud<br>**Then** el API responde `201 Created` con su identificador y estado inicial.<br><br>**Scenario 2: Invalid covered event**<br>**Given** que la información no corresponde con una póliza válida<br>**When** se envía la solicitud<br>**Then** el API responde `409 Conflict`. | US-29 / EP-05 |
+| TS-25 | Retrieve Life Indemnity Requests | Como Developer, deseo consultar `GET /api/v1/indemnity-requests` para mostrar las solicitudes de indemnización del beneficiario autenticado. | **Scenario 1: Existing requests**<br>**Given** que el beneficiario posee solicitudes<br>**When** solicita la lista<br>**Then** el API responde `200 OK` con sus solicitudes y estados.<br><br>**Scenario 2: No requests**<br>**Given** que no posee solicitudes<br>**When** realiza la consulta<br>**Then** el API responde `200 OK` con una colección vacía. | US-30 / EP-05 |
+| TS-26 | Retrieve Life Indemnity Request Details | Como Developer, deseo consultar `GET /api/v1/indemnity-requests/{requestId}` para mostrar el detalle y estado de una indemnización. | **Scenario 1: Existing request**<br>**Given** que la solicitud corresponde al beneficiario autenticado<br>**When** se consulta su detalle<br>**Then** el API responde `200 OK` con la información y estado.<br><br>**Scenario 2: Request unavailable**<br>**Given** que la solicitud no existe o no corresponde al usuario<br>**When** se realiza la consulta<br>**Then** el API responde `404 Not Found`. | US-30 / EP-05 |
 
 #### Notification Management
 
@@ -1589,22 +1580,22 @@ Para todos los endpoints protegidos:
 |---|---|---|---|---|
 | TS-27 | Retrieve User Notifications | Como Developer, deseo consultar notificaciones mediante `GET /api/v1/notifications` para presentar los avisos del usuario autenticado. | **Scenario 1: Existing notifications**<br>**Given** que el usuario posee notificaciones<br>**When** solicita la lista<br>**Then** el API responde `200 OK` con sus avisos ordenados por fecha.<br><br>**Scenario 2: No notifications**<br>**Given** que el usuario no posee avisos<br>**When** realiza la consulta<br>**Then** el API responde `200 OK` con una colección vacía. | US-24 y US-25 / EP-06 |
 
-#### Subscription and Payment Management
+#### Subscription Management
 
 | Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con |
 |---|---|---|---|---|
-| TS-28 | Retrieve Subscription Plans | Como Developer, deseo consultar planes mediante `GET /api/v1/subscription-plans` para mostrar los niveles de servicio ofrecidos por Livva. | **Scenario 1: Active plans**<br>**Given** que existen planes activos<br>**When** se solicita la lista<br>**Then** el API responde `200 OK` con precios, periodicidad y beneficios.<br><br>**Scenario 2: No active plans**<br>**Given** que no existen planes disponibles<br>**When** se realiza la consulta<br>**Then** el API responde `200 OK` con una colección vacía. | US-28 propuesta / EP-07 propuesto |
-| TS-29 | Create Livva Subscription | Como Developer, deseo crear una suscripción mediante `POST /api/v1/subscriptions` para iniciar la contratación de un plan de Livva. | **Scenario 1: Valid plan**<br>**Given** que el usuario selecciona un plan activo<br>**When** crea la suscripción<br>**Then** el API responde `201 Created` con estado pendiente y una referencia de pago sandbox.<br><br>**Scenario 2: Existing active subscription**<br>**Given** que el usuario ya posee una suscripción activa<br>**When** intenta crear otra<br>**Then** el API responde `409 Conflict`. | US-29 propuesta / EP-07 propuesto |
-| TS-30 | Confirm Sandbox Subscription Payment | Como Developer, deseo recibir confirmaciones mediante `POST /api/v1/payments/webhooks/{provider}` para activar una suscripción después de un pago sandbox aprobado. | **Scenario 1: Approved payment**<br>**Given** que el proveedor envía una confirmación válida<br>**When** el API verifica la operación<br>**Then** responde `200 OK` y activa la suscripción.<br><br>**Scenario 2: Invalid signature**<br>**Given** que la confirmación no puede validarse<br>**When** se recibe la solicitud<br>**Then** el API responde `401 Unauthorized` sin activar la suscripción.<br><br>**Scenario 3: Repeated confirmation**<br>**Given** que la operación ya fue procesada<br>**When** se recibe nuevamente<br>**Then** el API responde `200 OK` sin duplicar la activación. | US-29 propuesta / EP-07 propuesto |
-| TS-31 | Retrieve Current Subscription | Como Developer, deseo consultar `GET /api/v1/subscriptions/me` para mostrar el plan y estado de la suscripción del usuario. | **Scenario 1: Existing subscription**<br>**Given** que el usuario posee una suscripción<br>**When** se realiza la consulta<br>**Then** el API responde `200 OK` con su plan, estado y fechas.<br><br>**Scenario 2: No subscription**<br>**Given** que el usuario no posee una suscripción<br>**When** se realiza la consulta<br>**Then** el API responde `404 Not Found`. | US-30 propuesta / EP-07 propuesto |
-| TS-32 | Cancel Livva Subscription | Como Developer, deseo cancelar una suscripción mediante `POST /api/v1/subscriptions/{subscriptionId}/cancellations` para finalizar el servicio contratado con Livva. | **Scenario 1: Active subscription**<br>**Given** que la suscripción pertenece al usuario y está activa<br>**When** se solicita la cancelación<br>**Then** el API responde `200 OK` con el estado cancelado.<br><br>**Scenario 2: Already cancelled**<br>**Given** que la suscripción ya está cancelada<br>**When** se solicita nuevamente la cancelación<br>**Then** el API responde `409 Conflict`. | US-31 propuesta / EP-07 propuesto |
+| TS-28 | Retrieve Subscription Plans | Como Developer, deseo consultar planes mediante `GET /api/v1/subscription-plans` para mostrar los niveles de servicio ofrecidos por Livva. | **Scenario 1: Active plans**<br>**Given** que existen planes activos<br>**When** se solicita la lista<br>**Then** el API responde `200 OK` con precios, periodicidad y beneficios.<br><br>**Scenario 2: No active plans**<br>**Given** que no existen planes disponibles<br>**When** se realiza la consulta<br>**Then** el API responde `200 OK` con una colección vacía. | US-31 / EP-08 |
+| TS-29 | Create Livva Subscription | Como Developer, deseo crear una suscripción mediante `POST /api/v1/user-subscriptions` para iniciar la contratación de un plan de Livva. | **Scenario 1: Valid plan**<br>**Given** que el usuario selecciona un plan activo<br>**When** crea la suscripción<br>**Then** el API responde `201 Created` con estado pendiente y una referencia de pago sandbox.<br><br>**Scenario 2: Existing active subscription**<br>**Given** que el usuario ya posee una suscripción activa<br>**When** intenta crear otra<br>**Then** el API responde `409 Conflict`. | US-32 / EP-08 |
+| TS-30 | Confirm Sandbox Subscription Payment | Como Developer, deseo recibir confirmaciones mediante `POST /api/v1/payments/webhooks/{provider}` para activar una suscripción después de un pago sandbox aprobado. | **Scenario 1: Approved payment**<br>**Given** que el proveedor envía una confirmación válida<br>**When** el API verifica la operación<br>**Then** responde `200 OK` y activa la suscripción.<br><br>**Scenario 2: Invalid signature**<br>**Given** que la confirmación no puede validarse<br>**When** se recibe la solicitud<br>**Then** el API responde `401 Unauthorized` sin activar la suscripción.<br><br>**Scenario 3: Repeated confirmation**<br>**Given** que la operación ya fue procesada<br>**When** se recibe nuevamente<br>**Then** el API responde `200 OK` sin duplicar la activación. | US-32 / EP-08 |
+| TS-31 | Retrieve Current Subscription | Como Developer, deseo consultar `GET /api/v1/user-subscriptions?userId={userId}` para mostrar el plan y estado de la suscripción del usuario. | **Scenario 1: Existing subscription**<br>**Given** que el usuario posee una suscripción<br>**When** se realiza la consulta<br>**Then** el API responde `200 OK` con su plan, estado y fechas.<br><br>**Scenario 2: No subscription**<br>**Given** que el usuario no posee una suscripción<br>**When** se realiza la consulta<br>**Then** el API responde `404 Not Found`. | US-33 / EP-08 |
+| TS-32 | Cancel Livva Subscription | Como Developer, deseo cancelar una suscripción mediante `POST /api/v1/user-subscriptions/{subscriptionId}/cancellations` para finalizar el servicio contratado con Livva. | **Scenario 1: Active subscription**<br>**Given** que la suscripción pertenece al usuario y está activa<br>**When** se solicita la cancelación<br>**Then** el API responde `200 OK` con el estado cancelado.<br><br>**Scenario 2: Already cancelled**<br>**Given** que la suscripción ya está cancelada<br>**When** se solicita nuevamente la cancelación<br>**Then** el API responde `409 Conflict`. | US-34 / EP-08 |
 
 #### API Internationalization and Documentation
 
 | Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con |
 |---|---|---|---|---|
 | TS-33 | Retrieve Localized API Responses | Como Developer, deseo solicitar respuestas localizadas mediante `Accept-Language` para integrar la internacionalización de Livva. | **Scenario 1: Latin American Spanish**<br>**Given** que la solicitud incluye `Accept-Language: es-419`<br>**When** el API genera mensajes dirigidos al usuario<br>**Then** los presenta en español latinoamericano.<br><br>**Scenario 2: Default language**<br>**Given** que no se indica un idioma compatible<br>**When** el API genera la respuesta<br>**Then** utiliza inglés como idioma predeterminado. | Requerimiento i18n |
-| TS-34 | Retrieve OpenAPI Documentation | Como Developer, deseo acceder a la documentación OpenAPI mediante Swagger para conocer y probar los endpoints disponibles. | **Scenario 1: OpenAPI specification**<br>**Given** que el Web Service está disponible<br>**When** se solicita `GET /swagger/v1/swagger.json`<br>**Then** el API responde `200 OK` con las rutas, parámetros, esquemas y respuestas documentadas.<br><br>**Scenario 2: Swagger interface**<br>**Given** que se accede a Swagger<br>**When** se visualiza la documentación<br>**Then** los endpoints pueden probarse y el contenido utiliza inglés como idioma predeterminado. | Documentación de servicios |
+| TS-34 | Retrieve OpenAPI Documentation | Como Developer, deseo acceder a la documentación OpenAPI mediante Swagger UI y Scalar para conocer y probar los endpoints disponibles. | **Scenario 1: OpenAPI specification**<br>**Given** que el Web Service está disponible<br>**When** se solicita `GET /openapi/v1.json`<br>**Then** el API responde `200 OK` con las rutas, parámetros, esquemas y respuestas documentadas.<br><br>**Scenario 2: Interactive documentation**<br>**Given** que se accede a `/swagger` o `/scalar`<br>**When** se visualiza la documentación<br>**Then** los endpoints pueden probarse y el contenido utiliza inglés como idioma predeterminado. | Documentación de servicios |
 
 
 ### Epics
@@ -1618,6 +1609,7 @@ Para todos los endpoints protegidos:
 | EP-05 | Gestión de pólizas y siniestros | Agrupa las funcionalidades relacionadas con consulta de pólizas, renovaciones, siniestros e indemnizaciones. |
 | EP-06 | Notificaciones | Agrupa las funcionalidades relacionadas con avisos importantes para los usuarios. |
 | EP-07 | Gestión de compañías aseguradoras | Agrupa las funcionalidades destinadas a las compañías aseguradoras asociadas con Livva. |
+| EP-08 | Gestión de suscripciones y pagos | Agrupa las funcionalidades relacionadas con la consulta, contratación, pago y cancelación de los planes de suscripción de Livva. |
 
 ## 3.2. Impact Mapping
 
@@ -1983,39 +1975,539 @@ A continuación, se presenta una captura del prototipo en funcionamiento y el en
 
 ### 4.6.3. Software Architecture Container Diagrams
 
-![Software Architecture Container Diagram](assets/md-images-c4-diagrams/software-architecture-container-diagram.png)
+El Container Diagram presenta los contenedores que conforman Livva: el Landing Page, la Web Application, el RESTful API y la base de datos MySQL, así como su relación con los usuarios y con los sistemas externos (Insurance Company System y Payment Provider). El diagrama se mantiene como código (Diagram-as-Code) mediante Mermaid.
+
+```mermaid
+flowchart TB
+    visitor(["Visitor"])
+    customer(["Customer"])
+    representative(["Insurance Company Representative"])
+
+    subgraph livva["Livva System"]
+        landing["<b>Landing Page</b><br/>[Container: HTML5, CSS3, JavaScript]<br/>Presents Livva services and value proposition."]
+        webapp["<b>Web Application</b><br/>[Container: Vue + PrimeVue]<br/>Manages insurance requests, policies, claims, renewals, subscriptions and notifications."]
+        api["<b>RESTful API</b><br/>[Container: ASP.NET Core / C# + Entity Framework Core]<br/>Handles business logic and application services."]
+        db[("<b>Livva Database</b><br/>[Container: MySQL]<br/>Stores users, vehicles, policies, requests, claims, subscriptions and notifications.")]
+    end
+
+    insurer["<b>Insurance Company System</b><br/>[External System]<br/>Evaluates applications, claims and renewals."]
+    payment["<b>Payment Provider</b><br/>[External System]<br/>Processes subscription payments."]
+
+    visitor -- "Browses services" --> landing
+    customer -- "Uses Livva" --> webapp
+    representative -- "Reviews insurance operations" --> webapp
+    landing -- "Redirects users" --> webapp
+    webapp -- "HTTPS / JSON REST" --> api
+    api -- "Reads / Writes" --> db
+    api -- "Applications, claims, renewals" --> insurer
+    insurer -- "Decisions and statuses" --> api
+    api -- "Payment request" --> payment
+    payment -- "Payment result" --> api
+
+    classDef person fill:#08427b,stroke:#052e56,color:#ffffff
+    classDef container fill:#1168bd,stroke:#0b4884,color:#ffffff
+    classDef external fill:#999999,stroke:#6b6b6b,color:#ffffff
+    class visitor,customer,representative person
+    class landing,webapp,api,db container
+    class insurer,payment external
+```
 
 ---
 
 ### 4.6.4. Software Architecture Components Diagrams
 
+#### Web Application Component Diagram
+
 ![Web Application Component Diagram](assets/md-images-c4-diagrams/web-application-component-diagram.png)
+
+#### RESTful API Component Diagram
+
+El Component Diagram del RESTful API muestra la organización interna del contenedor implementado con ASP.NET Core. Cada bounded context agrupa sus controladores REST, sus servicios de aplicación (comandos y consultas) y sus repositorios implementados con Entity Framework Core. El contexto Shared provee el Unit of Work y el AppDbContext utilizados para la persistencia en MySQL.
+
+```mermaid
+flowchart LR
+    webapp["<b>Web Application</b><br/>[Container: Vue + PrimeVue]"]
+
+    subgraph api["RESTful API [Container: ASP.NET Core / C#]"]
+        direction LR
+
+        subgraph iam["Identity & Profile Management"]
+            direction TB
+            iamCtl["<b>Authentication, Users and User Profiles Controllers</b><br/>[REST Controllers]"]
+            iamSvc["<b>Command & Query Services</b><br/>[Application Services]<br/>Sign-up, sign-in (BCrypt + JWT) and profile management."]
+            iamRepo["<b>User and UserProfile Repositories</b><br/>[EF Core Repositories]"]
+            iamCtl --> iamSvc --> iamRepo
+        end
+
+        subgraph ioa["Insurance Offering & Applications"]
+            direction TB
+            ioaCtl["<b>Insurers, Insurance Products, Vehicles, Applications and Beneficiaries Controllers</b><br/>[REST Controllers]"]
+            ioaSvc["<b>Command & Query Services</b><br/>[Application Services]"]
+            ioaRepo["<b>Offering and Application Repositories</b><br/>[EF Core Repositories]"]
+            ioaCtl --> ioaSvc --> ioaRepo
+        end
+
+        subgraph pm["Policy Management"]
+            direction TB
+            pmCtl["<b>Policies, Policy Coverages, Policy Documents and Renewals Controllers</b><br/>[REST Controllers]"]
+            pmSvc["<b>Command & Query Services</b><br/>[Application Services]"]
+            pmRepo["<b>Policy Repositories</b><br/>[EF Core Repositories]"]
+            pmCtl --> pmSvc --> pmRepo
+        end
+
+        subgraph ci["Claims & Indemnities"]
+            direction TB
+            ciCtl["<b>Vehicle Claims, Indemnity Requests and Status Histories Controllers</b><br/>[REST Controllers]"]
+            ciSvc["<b>Command & Query Services</b><br/>[Application Services]"]
+            ciRepo["<b>Claim and Indemnity Repositories</b><br/>[EF Core Repositories]"]
+            ciCtl --> ciSvc --> ciRepo
+        end
+
+        subgraph sm["Subscription Management"]
+            direction TB
+            smCtl["<b>Subscription Plans, User Subscriptions and Subscription Payments Controllers</b><br/>[REST Controllers]"]
+            smSvc["<b>Command & Query Services</b><br/>[Application Services]"]
+            smRepo["<b>Subscription Repositories</b><br/>[EF Core Repositories]"]
+            smCtl --> smSvc --> smRepo
+        end
+
+        subgraph nm["Notification Management"]
+            direction TB
+            nmCtl["<b>Notifications Controller</b><br/>[REST Controller]"]
+            nmSvc["<b>Command & Query Services</b><br/>[Application Services]"]
+            nmRepo["<b>Notification Repository</b><br/>[EF Core Repository]"]
+            nmCtl --> nmSvc --> nmRepo
+        end
+
+        subgraph shared["Shared"]
+            direction TB
+            uow["<b>Unit of Work</b><br/>[EF Core]"]
+            ctx["<b>AppDbContext</b><br/>[EF Core DbContext]<br/>snake_case naming and audit timestamps."]
+            uow --> ctx
+        end
+    end
+
+    db[("<b>Livva Database</b><br/>[Container: MySQL]")]
+    insurer["<b>Insurance Company System</b><br/>[External System]"]
+    payment["<b>Payment Provider</b><br/>[External System]"]
+
+    webapp -- "HTTPS / JSON REST" --> iamCtl & ioaCtl & pmCtl & ciCtl & smCtl & nmCtl
+    iamRepo & ioaRepo & pmRepo & ciRepo & smRepo & nmRepo --> ctx
+    iamSvc & ioaSvc & pmSvc & ciSvc & smSvc & nmSvc --> uow
+    ctx -- "Reads / Writes" --> db
+    ioaSvc -- "Applications" --> insurer
+    pmSvc -- "Renewals" --> insurer
+    ciSvc -- "Claims and indemnities" --> insurer
+    smSvc -- "Payment request" --> payment
+
+    classDef container fill:#1168bd,stroke:#0b4884,color:#ffffff
+    classDef component fill:#85bbf0,stroke:#5d82a8,color:#000000
+    classDef external fill:#999999,stroke:#6b6b6b,color:#ffffff
+    class webapp,db container
+    class iamCtl,iamSvc,iamRepo,ioaCtl,ioaSvc,ioaRepo,pmCtl,pmSvc,pmRepo,ciCtl,ciSvc,ciRepo,smCtl,smSvc,smRepo,nmCtl,nmSvc,nmRepo,uow,ctx component
+    class insurer,payment external
+```
 
 ## 4.7. Software Object-Oriented Design
 
 ### 4.7.1. Class Diagrams
 
+Los diagramas de clases se organizan según los bounded contexts definidos en el diseño de base de datos (sección 4.8). Los atributos corresponden a las columnas de cada tabla y los tipos enumerados representan los estados y categorías del dominio. Los diagramas se mantienen como código (Diagram-as-Code) mediante Mermaid.
+
 #### Identity & Profile Management Class Diagram
 
-![Identity & Profile Management Class Diagram](assets/md-images-class-diagrams/identity-profile-management-class-diagram.png)
+```mermaid
+classDiagram
+    direction LR
+    class UserRole {
+        <<enumeration>>
+        CUSTOMER
+        INSURANCE_REPRESENTATIVE
+        ADMIN
+    }
+    class User {
+        -id: Long
+        -firstName: String
+        -lastName: String
+        -email: String
+        -passwordHash: String
+        -phone: String
+        -role: UserRole
+        -active: Boolean
+        -createdAt: DateTime
+        -updatedAt: DateTime
+        +register() void
+        +authenticate(email: String, password: String) Boolean
+        +updateProfile() void
+        +deactivate() void
+    }
+    class UserProfile {
+        -id: Long
+        -userId: Long
+        -documentType: String
+        -documentNumber: String
+        -birthDate: Date
+        -address: String
+        -createdAt: DateTime
+        -updatedAt: DateTime
+        +updatePersonalData() void
+        +updateAddress() void
+    }
+    User "1" *-- "1" UserProfile : owns
+    User --> UserRole
+```
 
 ---
 
-#### Insurance Request Management Class Diagram
+#### Insurance Offering & Applications Class Diagram
 
-![Insurance Request Management Class Diagram](assets/md-images-class-diagrams/insurance-request-management-class-diagram.png)
+```mermaid
+classDiagram
+    class InsuranceType {
+        <<enumeration>>
+        VEHICLE
+        LIFE
+    }
+    class RequestStatus {
+        <<enumeration>>
+        PENDING
+        UNDER_REVIEW
+        APPROVED
+        REJECTED
+        CANCELLED
+    }
+    class Insurer {
+        -id: Long
+        -externalReference: String
+        -name: String
+        -active: Boolean
+        -createdAt: DateTime
+        -updatedAt: DateTime
+        +activate() void
+        +deactivate() void
+    }
+    class InsuranceProduct {
+        -id: Long
+        -insurerId: Long
+        -name: String
+        -insuranceType: InsuranceType
+        -coverageAmount: Decimal
+        -premiumAmount: Decimal
+        -active: Boolean
+        -createdAt: DateTime
+        -updatedAt: DateTime
+        +activate() void
+        +deactivate() void
+        +updateProduct() void
+    }
+    class InsuranceApplication {
+        <<abstract>>
+        -id: Long
+        -userId: Long
+        -productId: Long
+        -requestedCoverage: Decimal
+        -status: RequestStatus
+        -createdAt: DateTime
+        -updatedAt: DateTime
+        +submit() void
+        +startEvaluation() void
+        +approve() void
+        +reject() void
+        +cancel() void
+    }
+    class VehicleInsuranceApplication {
+        -vehicleId: Long
+        +validateVehicle() Boolean
+    }
+    class LifeInsuranceApplication {
+        +addBeneficiary(beneficiary: Beneficiary) void
+        +removeBeneficiary(beneficiaryId: Long) void
+        +validateBeneficiaries() Boolean
+    }
+    class Vehicle {
+        -id: Long
+        -userId: Long
+        -licensePlate: String
+        -brand: String
+        -model: String
+        -manufactureYear: Integer
+        -estimatedValue: Decimal
+        -createdAt: DateTime
+        -updatedAt: DateTime
+        +updateInformation() void
+        +validateData() Boolean
+    }
+    class Beneficiary {
+        -id: Long
+        -lifeApplicationId: Long
+        -firstName: String
+        -lastName: String
+        -documentNumber: String
+        -relationship: String
+        -percentage: Decimal
+        -createdAt: DateTime
+        -updatedAt: DateTime
+        +updateInformation() void
+        +validatePercentage() Boolean
+    }
+    Insurer "1" *-- "0..*" InsuranceProduct : offers
+    InsuranceProduct "1" -- "0..*" InsuranceApplication : selected for
+    InsuranceApplication <|-- VehicleInsuranceApplication
+    InsuranceApplication <|-- LifeInsuranceApplication
+    Vehicle "1" -- "0..*" VehicleInsuranceApplication : used for
+    LifeInsuranceApplication "1" *-- "1..*" Beneficiary : includes
+    InsuranceProduct --> InsuranceType
+    InsuranceApplication --> RequestStatus
+```
 
 ---
 
 #### Policy Management Class Diagram
 
-![Policy Management Class Diagram](assets/md-images-class-diagrams/policy-management-class-diagram.png)
+```mermaid
+classDiagram
+    class InsuranceType {
+        <<enumeration>>
+        VEHICLE
+        LIFE
+    }
+    class PolicyStatus {
+        <<enumeration>>
+        PENDING
+        ACTIVE
+        EXPIRED
+        CANCELLED
+        PENDING_RENEWAL
+    }
+    class RenewalStatus {
+        <<enumeration>>
+        PENDING
+        UNDER_REVIEW
+        APPROVED
+        REJECTED
+    }
+    class Policy {
+        -id: Long
+        -userId: Long
+        -applicationId: Long
+        -policyNumber: String
+        -insuranceType: InsuranceType
+        -startDate: Date
+        -expirationDate: Date
+        -premiumAmount: Decimal
+        -coverageAmount: Decimal
+        -status: PolicyStatus
+        -createdAt: DateTime
+        -updatedAt: DateTime
+        +activate() void
+        +markAsExpiring() void
+        +expire() void
+        +requestRenewal() Renewal
+    }
+    class PolicyCoverage {
+        -id: Long
+        -policyId: Long
+        -name: String
+        -description: String
+        -coverageLimit: Decimal
+        -createdAt: DateTime
+        -updatedAt: DateTime
+    }
+    class PolicyDocument {
+        -id: Long
+        -policyId: Long
+        -documentType: String
+        -name: String
+        -fileUrl: String
+        -createdAt: DateTime
+        -updatedAt: DateTime
+    }
+    class Renewal {
+        -id: Long
+        -policyId: Long
+        -requestDate: Date
+        -proposedExpirationDate: Date
+        -proposedPremium: Decimal
+        -status: RenewalStatus
+        -resolvedAt: DateTime
+        -createdAt: DateTime
+        -updatedAt: DateTime
+        +startReview() void
+        +approve() void
+        +reject() void
+    }
+    Policy "1" *-- "0..*" PolicyCoverage : contains
+    Policy "1" *-- "0..*" PolicyDocument : has
+    Policy "1" *-- "0..*" Renewal : renews
+    Policy --> InsuranceType
+    Policy --> PolicyStatus
+    Renewal --> RenewalStatus
+```
 
 ---
 
-#### Insurance Company, Product & Subscription Management Class Diagram
+#### Claims & Indemnities Class Diagram
 
-![Insurance Company, Product & Subscription Management Class Diagram](assets/md-images-class-diagrams/insurancecompany-product-subsmanagement-class-diagram.png)
+```mermaid
+classDiagram
+    class ClaimStatus {
+        <<enumeration>>
+        REPORTED
+        UNDER_REVIEW
+        APPROVED
+        REJECTED
+        RESOLVED
+    }
+    class IndemnityStatus {
+        <<enumeration>>
+        SUBMITTED
+        UNDER_REVIEW
+        APPROVED
+        REJECTED
+        RESOLVED
+    }
+    class VehicleClaim {
+        -id: Long
+        -policyId: Long
+        -userId: Long
+        -claimNumber: String
+        -incidentDate: Date
+        -description: String
+        -status: ClaimStatus
+        -compensationAmount: Decimal
+        -reportedAt: DateTime
+        -resolvedAt: DateTime
+        -createdAt: DateTime
+        -updatedAt: DateTime
+        +report() void
+        +startReview() void
+        +updateStatus() void
+        +resolve() void
+    }
+    class ClaimStatusHistory {
+        -id: Long
+        -claimId: Long
+        -status: ClaimStatus
+        -comment: String
+        -changedAt: DateTime
+    }
+    class IndemnityRequest {
+        -id: Long
+        -policyId: Long
+        -beneficiaryId: Long
+        -requestDate: Date
+        -description: String
+        -status: IndemnityStatus
+        -indemnityAmount: Decimal
+        -submittedAt: DateTime
+        -resolvedAt: DateTime
+        -createdAt: DateTime
+        -updatedAt: DateTime
+        +submit() void
+        +startReview() void
+        +updateStatus() void
+        +resolve() void
+    }
+    class IndemnityStatusHistory {
+        -id: Long
+        -indemnityRequestId: Long
+        -status: IndemnityStatus
+        -comment: String
+        -changedAt: DateTime
+    }
+    VehicleClaim "1" *-- "0..*" ClaimStatusHistory : has
+    IndemnityRequest "1" *-- "0..*" IndemnityStatusHistory : has
+    VehicleClaim --> ClaimStatus
+    IndemnityRequest --> IndemnityStatus
+```
+
+---
+
+#### Subscription Management Class Diagram
+
+```mermaid
+classDiagram
+    class SubscriptionStatus {
+        <<enumeration>>
+        PENDING
+        ACTIVE
+        CANCELLED
+        EXPIRED
+    }
+    class PaymentStatus {
+        <<enumeration>>
+        PENDING
+        CONFIRMED
+        FAILED
+    }
+    class SubscriptionPlan {
+        -id: Long
+        -name: String
+        -price: Decimal
+        -description: String
+        -active: Boolean
+        -createdAt: DateTime
+        -updatedAt: DateTime
+        +updatePrice() void
+        +activate() void
+        +deactivate() void
+    }
+    class UserSubscription {
+        -id: Long
+        -userId: Long
+        -planId: Long
+        -startDate: Date
+        -expirationDate: Date
+        -status: SubscriptionStatus
+        -cancellationRequestedAt: DateTime
+        -cancelledAt: DateTime
+        -createdAt: DateTime
+        -updatedAt: DateTime
+        +activate() void
+        +cancel() void
+        +expire() void
+    }
+    class SubscriptionPayment {
+        -id: Long
+        -subscriptionId: Long
+        -amount: Decimal
+        -currency: String
+        -paymentDate: DateTime
+        -status: PaymentStatus
+        -externalPaymentId: String
+        -createdAt: DateTime
+        -updatedAt: DateTime
+        +initiate() void
+        +confirm() void
+        +fail() void
+    }
+    SubscriptionPlan "1" -- "0..*" UserSubscription : selected for
+    UserSubscription "1" *-- "0..*" SubscriptionPayment : payments
+    UserSubscription --> SubscriptionStatus
+    SubscriptionPayment --> PaymentStatus
+```
+
+---
+
+#### Notification Management Class Diagram
+
+```mermaid
+classDiagram
+    class Notification {
+        -id: Long
+        -userId: Long
+        -type: String
+        -policyId: Long
+        -policyNumber: String
+        -expirationDate: Date
+        -isRead: Boolean
+        -readAt: DateTime
+        -createdAt: DateTime
+        -updatedAt: DateTime
+        +markAsRead() void
+    }
+```
+
 ## 4.8. Database Design
 
 ### 4.8.1. Database Diagrams
@@ -2034,6 +2526,26 @@ A continuación, se presenta una captura del prototipo en funcionamiento y el en
 
 ### Subscription Management Bounded Context Database Design Diagram
 ![Subscription Management Bounded Context Database Design Diagram](assets/md-images-database-diagrams/subscription-management.png)
+
+### Notification Management Bounded Context Database Design Diagram
+
+La tabla Notifications almacena los avisos generados para los usuarios, como el próximo vencimiento de una póliza. Al igual que las demás tablas principales, incluye las columnas de auditoría createdAt y updatedAt.
+
+```mermaid
+erDiagram
+    Notifications {
+        BIGINT id PK
+        BIGINT userId
+        VARCHAR type
+        BIGINT policyId
+        VARCHAR policyNumber
+        DATE expirationDate
+        BOOLEAN isRead
+        TIMESTAMP readAt
+        TIMESTAMP createdAt
+        TIMESTAMP updatedAt
+    }
+```
 
 # Capítulo V: Product Implementation, Validation & Deployment
 
