@@ -71,6 +71,7 @@
 |---|---|---|---|
 | 1.0.0 | 2026-09-18 | Livva Care Team | Primera versión del Project Report correspondiente al AV1. Incluye los capítulos I al V, la implementación del Landing Page y las evidencias del Sprint 1. |
 | 1.1.0 | 2026-10-07 | Livva Care Team | Actualización del informe para TB1: corrección de artefactos, documentación del Sprint 2, primera versión desplegada de la Frontend Web Application. |
+| 2.0.0 | [EQUIPO: fecha de entrega AV2] | Livva Care Team | Actualización del informe para AV2: corrección de errores detectados en la revisión del equipo (tipo de seguro, índice, nombres de secciones), incorporación de herramientas y convenciones de la Frontend Web Application y de los Web Services, registro del repositorio de los Web Services y documentación del Sprint 3. |
 <div style="page-break-after: always;"></div>
 
 
@@ -89,6 +90,10 @@ A continuación, se presenta el repositorio utilizado para la elaboración colab
 #### Link del repositorio de la Web Application:
 
 - https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-web-application.git
+
+#### Link del repositorio de los Web Services:
+
+- https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-web-services.git
 
 ### Entrega AV1:
 
@@ -122,7 +127,7 @@ A continuación, se presenta el repositorio utilizado para la elaboración colab
 - [Capítulo II: Requirements Elicitation & Analysis](#capítulo-ii-requirements-elicitation--analysis)
     - [2.1. Competidores](#21-competidores)
         - [2.1.1. Análisis competitivo](#211-análisis-competitivo)
-        - [ Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
+        - [2.1.2. Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
     - [2.2. Entrevistas](#22-entrevistas)
         - [2.2.1. Diseño de entrevistas](#221-diseño-de-entrevistas)
         - [2.2.2. Registro de entrevistas](#222-registro-de-entrevistas)
@@ -136,6 +141,8 @@ A continuación, se presenta el repositorio utilizado para la elaboración colab
     - [2.5. Ubiquitous Language](#25-ubiquitous-language)
 - [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
     - [3.1. User Stories](#31-user-stories)
+        - [Technical Stories](#technical-stories)
+        - [Epics](#epics)
     - [3.2. Impact Mapping](#32-impact-mapping)
     - [3.3. Product Backlog](#33-product-backlog)
 - [Capítulo IV: Product Design](#capítulo-iv-product-design)
@@ -175,14 +182,14 @@ A continuación, se presenta el repositorio utilizado para la elaboración colab
     - [5.2. Landing Page, Services & Applications Implementation](#52-landing-page-services--applications-implementation)
         - [5.2.1. Sprint 1](#521-sprint-1)
             - [5.2.1.1. Sprint Planning 1](#5211-sprint-planning-1)
-            - [5. Aspect Leaders and Collaborators](#5212-aspect-leaders-and-collaborators)
+            - [5.2.1.2. Aspect Leaders and Collaborators](#5212-aspect-leaders-and-collaborators)
             - [5.2.1.3. Sprint Backlog 1](#5213-sprint-backlog-1)
             - [5.2.1.4. Development Evidence for Sprint Review](#5214-development-evidence-for-sprint-review)
             - [5.2.1.5. Execution Evidence for Sprint Review](#5215-execution-evidence-for-sprint-review)
             - [5.2.1.6. Services Documentation Evidence for Sprint Review](#5216-services-documentation-evidence-for-sprint-review)
             - [5.2.1.7. Software Deployment Evidence for Sprint Review](#5217-software-deployment-evidence-for-sprint-review)
             - [5.2.1.8. Team Collaboration Insights during Sprint](#5218-team-collaboration-insights-during-sprint)
-		- [5.2.2. Sprint 2](#522-sprint-2)
+        - [5.2.2. Sprint 2](#522-sprint-2)
             - [5.2.2.1. Sprint Planning 2](#5221-sprint-planning-2)
             - [5.2.2.2. Aspect Leaders and Collaborators](#5222-aspect-leaders-and-collaborators)
             - [5.2.2.3. Sprint Backlog 2](#5223-sprint-backlog-2)
@@ -192,9 +199,8 @@ A continuación, se presenta el repositorio utilizado para la elaboración colab
             - [5.2.2.7. Software Deployment Evidence for Sprint Review](#5227-software-deployment-evidence-for-sprint-review)
             - [5.2.2.8. Team Collaboration Insights during Sprint](#5228-team-collaboration-insights-during-sprint)
 - [Conclusiones](#conclusiones)
-    - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
+- [Recomendaciones](#recomendaciones)
 - [Bibliografía](#bibliografía)
-- [Anexos](#anexos)
 
 <div style="page-break-after: always;"></div>
 
@@ -1660,13 +1666,13 @@ Las Style Guidelines de Livva establecen los lineamientos visuales y comunicacio
 
 ### 4.1.1. General Style Guidelines
 
-Las General Style Guidelines de Livva definen los criterios visuales y comunicacionales que permiten mantener una identidad consistente en los productos digitales de la solución. Estas decisiones toman como base la propuesta visual desarrollada para el Landing Page y buscan transmitir confianza, claridad, accesibilidad y simplicidad a los segmentos objetivo relacionados con seguros vehiculares y seguros de salud.
+Las General Style Guidelines de Livva definen los criterios visuales y comunicacionales que permiten mantener una identidad consistente en los productos digitales de la solución. Estas decisiones toman como base la propuesta visual desarrollada para el Landing Page y buscan transmitir confianza, claridad, accesibilidad y simplicidad a los segmentos objetivo relacionados con seguros vehiculares y seguros de vida.
 
 #### Branding
 
 La identidad visual de Livva busca comunicar una imagen moderna, confiable y cercana. La marca utiliza el nombre “Livva” como elemento principal de reconocimiento, acompañado por una propuesta visual limpia y minimalista. El diseño evita elementos innecesarios y prioriza la claridad en la presentación de la información, con el objetivo de reducir la complejidad asociada a la búsqueda y comparación de seguros.
 
-La propuesta de marca se orienta a transmitir seguridad y confianza sin utilizar una comunicación excesivamente formal. Esto permite que Livva mantenga una imagen profesional y, al mismo tiempo, accesible para usuarios que buscan información relacionada con seguros vehiculares y de salud.
+La propuesta de marca se orienta a transmitir seguridad y confianza sin utilizar una comunicación excesivamente formal. Esto permite que Livva mantenga una imagen profesional y, al mismo tiempo, accesible para usuarios que buscan información relacionada con seguros vehiculares y de vida.
 
 #### Typography
 
@@ -1719,7 +1725,7 @@ Los botones incluyen estados visuales de interacción, como cambios de color dur
 
 Las tarjetas se utilizan para presentar información relacionada con los tipos de seguro, planes y otros contenidos relevantes de manera independiente y fácil de identificar. Estas utilizan fondos claros, bordes suaves, esquinas redondeadas y separación suficiente entre elementos.
 
-En la sección de seguros, las cards permiten diferenciar las soluciones de Seguro Vehicular y Seguro de Salud. En la sección de planes, las tarjetas permiten comparar características y beneficios, utilizando mayor énfasis visual en la alternativa recomendada.
+En la sección de seguros, las cards permiten diferenciar las soluciones de Seguro Vehicular y Seguro de Vida. En la sección de planes, las tarjetas permiten comparar características y beneficios, utilizando mayor énfasis visual en la alternativa recomendada.
 
 #### Forms
 
@@ -1757,7 +1763,7 @@ Livva utiliza principalmente un sistema de organización jerárquico y por tópi
 
 En el Landing Page, la información se organiza de manera jerárquica desde los contenidos de mayor relevancia hacia información más específica. La sección inicial presenta la propuesta de valor de Livva y los principales call-to-action, seguida por las soluciones de seguro, planes disponibles, información sobre la plataforma y medios de contacto.
 
-La categorización por tópicos permite agrupar el contenido de acuerdo con su propósito. En la sección de Seguros se distinguen las dos soluciones principales consideradas por Livva: Seguro Vehicular y Seguro de Salud. Esto permite que cada segmento objetivo pueda identificar con facilidad el contenido relacionado con sus necesidades.
+La categorización por tópicos permite agrupar el contenido de acuerdo con su propósito. En la sección de Seguros se distinguen las dos soluciones principales consideradas por Livva: Seguro Vehicular y Seguro de Vida. Esto permite que cada segmento objetivo pueda identificar con facilidad el contenido relacionado con sus necesidades.
 
 La sección de Planes utiliza una organización comparativa, permitiendo presentar diferentes alternativas de servicio con sus respectivos beneficios y precios. De esta manera, el usuario puede contrastar las opciones disponibles antes de realizar una elección.
 
@@ -1771,7 +1777,7 @@ El sistema de etiquetado de Livva busca representar la información mediante nom
 
 La navegación principal utiliza las etiquetas “Inicio”, “Seguros”, “Planes”, “Nosotros” y “Contacto”. Cada una representa de forma directa el contenido asociado a su sección, permitiendo que el usuario anticipe el tipo de información que encontrará antes de seleccionarla.
 
-La etiqueta “Seguros” agrupa las principales soluciones consideradas dentro del alcance de Livva. Dentro de esta sección se utilizan las denominaciones “Seguro Vehicular” y “Seguro de Salud”, manteniendo una correspondencia directa con los dos segmentos objetivo definidos para el proyecto.
+La etiqueta “Seguros” agrupa las principales soluciones consideradas dentro del alcance de Livva. Dentro de esta sección se utilizan las denominaciones “Seguro Vehicular” y “Seguro de Vida”, manteniendo una correspondencia directa con los dos segmentos objetivo definidos para el proyecto.
 
 La etiqueta “Planes” identifica la sección en la que se presentan las alternativas de servicio y sus respectivos beneficios. Para diferenciar las opciones se emplean nombres como “Plan Básico” y “Livva Pro”, facilitando la comparación entre niveles de servicio.
 
@@ -1788,8 +1794,8 @@ Para el Landing Page se establecen los siguientes valores:
 | Tag | Valor |
 |---|---|
 | Title | Livva - La plataforma inteligente para tu seguro ideal |
-| Description | Livva te permite comparar y gestionar alternativas de seguros vehiculares y de salud de forma simple, clara y digital. |
-| Keywords | seguros, seguro vehicular, seguro de salud, comparación de seguros, Livva |
+| Description | Livva te permite comparar y gestionar alternativas de seguros vehiculares y de vida de forma simple, clara y digital. |
+| Keywords | seguros, seguro vehicular, seguro de vida, comparación de seguros, Livva |
 | Author | Livva Care |
 
 Estas etiquetas se incluyen dentro del elemento `<head>` del documento HTML y permiten describir de manera resumida el contenido principal del Landing Page.
@@ -1830,7 +1836,7 @@ Los flujos de navegación buscarán mantener rutas claras entre las distintas vi
 
 ## 4.3. Landing Page UI Design
 
-La propuesta de interfaz de usuario del Landing Page de Livva traduce las decisiones establecidas en las Style Guidelines y en la Information Architecture hacia una experiencia visual clara, consistente y orientada a los segmentos objetivo. El diseño prioriza la comprensión rápida de la propuesta de valor, la identificación de las soluciones de Seguro Vehicular y Seguro de Salud, así como el acceso sencillo a los principales call-to-action.
+La propuesta de interfaz de usuario del Landing Page de Livva traduce las decisiones establecidas en las Style Guidelines y en la Information Architecture hacia una experiencia visual clara, consistente y orientada a los segmentos objetivo. El diseño prioriza la comprensión rápida de la propuesta de valor, la identificación de las soluciones de Seguro Vehicular y Seguro de Vida, así como el acceso sencillo a los principales call-to-action.
 
 La interfaz ha sido planteada siguiendo criterios de jerarquía visual, simplicidad, accesibilidad y responsive design, buscando mantener una experiencia coherente tanto en navegadores de escritorio como en dispositivos móviles.
 
@@ -2014,7 +2020,7 @@ A continuación, se presenta una captura del prototipo en funcionamiento y el en
 
 ### 4.8.1. Database Diagrams
 
-### Indentity & Profile Management Bounded Context Database Design Diagram
+### Identity & Profile Management Bounded Context Database Design Diagram
 ![Identity & Profile Management Bounded Context Database Design Diagram](assets/md-images-database-diagrams/identity-and-profile-management.PNG)
 
 ### Insurance Offering & Applications Bounded Context Database Design Diagram
@@ -2047,7 +2053,7 @@ Las herramientas utilizadas por el equipo se presentan a continuación:
 |---|---|---|
 | GitHub | Plataforma utilizada para alojar los repositorios del Project Report y de los productos de software de Livva. Permite la colaboración del equipo, revisión del historial de cambios y gestión de ramas. | https://github.com/ |
 | Git | Sistema de control de versiones distribuido utilizado para registrar cambios realizados en los archivos del proyecto y trabajar con el workflow GitFlow. | https://git-scm.com/downloads |
-| JetBrains Rider | Entorno de desarrollo utilizado para trabajar con los archivos del proyecto, editar la documentación en Markdown, utilizar la terminal integrada y gestionar operaciones relacionadas con Git y GitFlow. | https://www.jetbrains.com/rider/download/ |
+| JetBrains Rider | Entorno de desarrollo utilizado para trabajar con los archivos del proyecto, editar la documentación en Markdown, implementar los Web Services en C#, utilizar la terminal integrada y gestionar operaciones relacionadas con Git y GitFlow. | https://www.jetbrains.com/rider/download/ |
 | Figma | Herramienta utilizada para elaborar los wireframes, mock-ups y prototipos de la Landing Page y Web Application de Livva. | https://www.figma.com/ |
 | FigJam | Herramienta utilizada como apoyo para la representación de flujos de usuario, wireflows y otros diagramas colaborativos relacionados con UX/UI. | https://www.figma.com/figjam/ |
 | HTML5 | Lenguaje de marcado utilizado para definir la estructura del Landing Page de Livva. | https://developer.mozilla.org/en-US/docs/Web/HTML |
@@ -2055,9 +2061,32 @@ Las herramientas utilizadas por el equipo se presentan a continuación:
 | JavaScript | Lenguaje utilizado para implementar comportamiento e interactividad en el Landing Page, incluyendo funcionalidades de la interfaz de usuario. | https://developer.mozilla.org/en-US/docs/Web/JavaScript |
 | Markdown | Formato utilizado para elaborar y mantener la documentación principal del Final Project Documentation Report mediante el archivo README.md. | https://www.markdownguide.org/ |
 | Microsoft Edge / Brave | Navegadores web utilizados durante el desarrollo para visualizar, probar y validar el funcionamiento de las interfaces web implementadas. | https://www.microsoft.com/edge / https://brave.com/ |
+| Vue 3 | Framework de JavaScript utilizado para construir la Frontend Web Application de Livva mediante componentes reutilizables. | https://vuejs.org/ |
+| PrimeVue / PrimeFlex / PrimeIcons | Biblioteca de componentes de interfaz, utilidades de diseño responsive e íconos utilizados en la Frontend Web Application. | https://primevue.org/ |
+| Pinia | Biblioteca de gestión de estado utilizada en los stores de cada bounded context de la Frontend Web Application. | https://pinia.vuejs.org/ |
+| Vue Router / Vue I18n | Bibliotecas utilizadas para la navegación entre vistas y la internacionalización (inglés y español latinoamericano) de la Frontend Web Application. | https://router.vuejs.org/ / https://vue-i18n.intlify.dev/ |
+| Axios | Cliente HTTP utilizado por la Frontend Web Application para consumir servicios REST. | https://axios-http.com/ |
+| Vite | Herramienta de construcción y servidor de desarrollo de la Frontend Web Application. | https://vite.dev/ |
+| JSON Server | Fake API utilizada durante el Sprint 2 para simular los servicios REST antes de contar con el backend definitivo. | https://github.com/typicode/json-server |
+| Node.js / npm | Entorno de ejecución y gestor de paquetes utilizados para instalar dependencias y ejecutar la Frontend Web Application. | https://nodejs.org/ |
+| .NET 10 SDK | Kit de desarrollo utilizado para compilar, ejecutar y probar los Web Services de Livva implementados con C# 14 y ASP.NET Core. | https://dotnet.microsoft.com/download/dotnet/10.0 |
+| ASP.NET Core Web API | Framework utilizado para implementar el RESTful API de Livva mediante controladores REST. | https://learn.microsoft.com/aspnet/core/web-api/ |
+| Entity Framework Core 10 | ORM utilizado para la persistencia de datos, el mapeo de entidades y la gestión de migraciones de base de datos. | https://learn.microsoft.com/ef/core/ |
+| MySQL Server / MySQL Workbench | Sistema de gestión de base de datos relacional utilizado por los Web Services y herramienta para administrar y consultar la base de datos. | https://dev.mysql.com/downloads/ |
+| OpenAPI / Scalar / Swagger UI | Especificación y herramientas utilizadas para documentar y probar los endpoints del RESTful API. | https://scalar.com/ / https://swagger.io/tools/swagger-ui/ |
+| xUnit / Moq | Framework de pruebas y biblioteca de objetos simulados utilizados para las pruebas unitarias y de integración de los Web Services. | https://xunit.net/ / https://github.com/devlooped/moq |
 
 ### 5.1.2. Source Code Management
 La gestión del código fuente de Livva se realiza mediante Git como sistema de control de versiones distribuido y GitHub como plataforma de alojamiento y colaboración de los repositorios del proyecto.
+
+Los repositorios del proyecto se encuentran en la organización de GitHub del equipo:
+
+| Repositorio | Contenido | URL |
+|---|---|---|
+| livva-project-report | Final Project Documentation Report (README.md y recursos en `assets`). | https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-project-report |
+| livva-landing-page | Landing Page implementado con HTML5, CSS3 y JavaScript. | https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-landing-page |
+| livva-web-application | Frontend Web Application implementada con Vue y PrimeVue. | https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-web-application |
+| livva-web-services | RESTful API implementado con C#, ASP.NET Core y Entity Framework Core. | https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-web-services |
 
 El equipo utiliza GitFlow como estrategia de ramificación para organizar el desarrollo y mantener separadas las versiones estables, las integraciones y las nuevas funcionalidades. La estructura principal empleada es la siguiente:
 
@@ -2102,6 +2131,26 @@ En el caso del Landing Page, desarrollado con HTML5, CSS3 y JavaScript, se sigue
 - Se utiliza indentación consistente para mejorar la legibilidad del código.
 - Se prioriza la reutilización de estilos y estructuras antes de duplicar código.
 - Los elementos interactivos consideran estados de interacción y criterios básicos de accesibilidad.
+
+En el caso de la Frontend Web Application, desarrollada con Vue 3 y PrimeVue, se siguen las siguientes convenciones:
+
+- El código se organiza por bounded context (por ejemplo, `identity-and-profile-management`, `policy-management`, `subscription-management`), y cada uno contiene las capas `domain`, `application`, `infrastructure` y `presentation`.
+- Los archivos y carpetas utilizan `kebab-case` con un sufijo que indica su responsabilidad: `*.entity.js`, `*.assembler.js`, `*-api.js`, `*.store.js`, `*-view.vue` y `*.routes.js`.
+- Las entidades del dominio se implementan como clases en `PascalCase`, y las variables y funciones en `camelCase`.
+- El estado de cada bounded context se gestiona mediante stores de Pinia, y el acceso a servicios REST se centraliza en clientes Axios que comparten una configuración base.
+- Los textos visibles se obtienen de los archivos de internacionalización de Vue I18n, evitando textos fijos en los componentes.
+- Las rutas de los recursos REST y la URL base del API se configuran mediante variables de entorno (`VITE_*`).
+
+En el caso de los Web Services, desarrollados con C# 14, ASP.NET Core y Entity Framework Core, se siguen las convenciones de codificación de C# recomendadas por Microsoft y las siguientes decisiones del equipo:
+
+- El código se organiza por bounded context, más un contexto `Shared` para abstracciones transversales. Cada bounded context contiene las capas `Domain`, `Application`, `Infrastructure` e `Interfaces`.
+- Los namespaces reflejan la estructura de carpetas (por ejemplo, `LivvaPlatform.API.Shared.Domain.Repositories`).
+- Las clases, records, métodos y propiedades utilizan `PascalCase`; los parámetros y variables locales utilizan `camelCase`; las interfaces llevan el prefijo `I` y los métodos asíncronos el sufijo `Async`.
+- Los nombres de clases indican su responsabilidad: `*Command`, `*Query`, `*CommandService`, `*QueryService`, `*Repository`, `*Controller`, `*Resource` y `*Assembler`.
+- Las rutas REST utilizan minúsculas, `kebab-case` y el prefijo `/api/v1`.
+- En la base de datos, las tablas y columnas utilizan `snake_case`, y los nombres de tabla se expresan en plural.
+- Los mensajes dirigidos al usuario se localizan mediante archivos `.resx`, y los errores se devuelven en formato `ProblemDetails`.
+- La documentación del código se redacta en inglés mediante comentarios XML.
 
 Para la documentación del proyecto en Markdown, se mantiene una estructura jerárquica consistente mediante encabezados, listas, tablas, enlaces e imágenes. Los nombres de los archivos multimedia se definen de forma descriptiva y se almacenan dentro del directorio `assets`, agrupados según el tipo de evidencia o artefacto.
 
@@ -2149,7 +2198,7 @@ A continuación, se presentan las actividades, evidencias de desarrollo, ejecuci
 ### 5.2.1. Sprint 1
 El Sprint 1 corresponde a la primera iteración de implementación del proyecto Livva. Durante este sprint, el equipo trabajó en la construcción de la primera versión del Landing Page a partir de los wireframes, mock-ups, Style Guidelines e Information Architecture definidos durante la etapa de Product Design.
 
-El objetivo principal fue transformar los artefactos de diseño en una interfaz web funcional que permitiera comunicar la propuesta de valor de Livva y presentar sus principales servicios orientados a seguros vehiculares y seguros de salud.
+El objetivo principal fue transformar los artefactos de diseño en una interfaz web funcional que permitiera comunicar la propuesta de valor de Livva y presentar sus principales servicios orientados a seguros vehiculares y seguros de vida.
 
 Asimismo, se trabajó de manera colaborativa mediante Git y GitHub, utilizando GitFlow para organizar el desarrollo y Conventional Commits para registrar de forma clara los cambios realizados en el repositorio.
 
@@ -2197,8 +2246,6 @@ El seguimiento del trabajo se registra en el tablero del sprint, donde se identi
 
 <img src="assets/md-images-chapter-05/trelloav1.PNG" width="700px" />
 
-La siguiente descomposición constituye una propuesta que debe contrastarse con las actividades efectivamente realizadas. Los responsables, estimaciones y estados se completarán de acuerdo con el tablero del equipo.
-
 | Story ID | Story Title | Task ID | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
 |---|---|---|---|---|---|---|---|
 | US-01 | Conocer Livva | S1-T01 | Estructura del Landing Page | Implementar la estructura HTML, encabezado, navegación y footer a partir del diseño definido. | 1 | Carlos Céspedes | Done |
@@ -2210,7 +2257,7 @@ La siguiente descomposición constituye una propuesta que debe contrastarse con 
 | — | Requerimiento transversal | S1-T07 | Internacionalización | Implementar el contenido en inglés y español latinoamericano, con inglés como idioma predeterminado. | 1 | Carlos Céspedes | Done |
 | — | Requerimiento transversal | S1-T08 | Adaptación responsive | Ajustar la distribución de las secciones y la navegación para diferentes tamaños de pantalla. | 1 | Scarlet Rivera | Done |
 | — | Requerimiento transversal | S1-T09 | Accesibilidad básica | Revisar HTML semántico, labels, textos alternativos, navegación por teclado y atributos ARIA. | 1 | Carlos Céspedes | Done |
-| — | Requerimiento transversal | S1-T10 | Contenido complementario | Incorporar o revisar la información de planes, equipo, contacto y enlaces del footer previstos en el diseño. | 1 | Scarlet | Done |
+| — | Requerimiento transversal | S1-T10 | Contenido complementario | Incorporar o revisar la información de planes, equipo, contacto y enlaces del footer previstos en el diseño. | 1 | Scarlet Rivera | Done |
 | — | Requerimiento transversal | S1-T11 | Verificación del Landing Page | Comprobar criterios de aceptación, navegación, idiomas, carga de recursos y comportamiento responsive. | 2 | Carlos Céspedes | Done |
 | — | Requerimiento transversal | S1-T12 | Despliegue del Landing Page | Publicar la versión aprobada y verificar su funcionamiento mediante la URL pública. | 3 | Carlos Céspedes | Done |
 | — | Requerimiento transversal | S1-T13 | Registro de evidencias | Recopilar commits, capturas, video de ejecución y registros de colaboración. | 1 | Carlos Paredes | Done |
@@ -2225,6 +2272,10 @@ En esta sección se presentan las evidencias de implementación del Landing Page
 Las evidencias deben corresponder a cambios reales en la estructura HTML, los estilos CSS, la lógica JavaScript y los recursos utilizados por el Landing Page.
 
 **Repositorio del Landing Page:** [Repositorio](https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-landing-page/tree/develop).
+
+#### 5.2.1.5. Execution Evidence for Sprint Review
+
+<!-- [EQUIPO] Completar con capturas de las principales vistas del Landing Page en ejecución (inicio, beneficios, seguros vehiculares y de vida, planes, cambio de idioma y vista responsive) y el enlace al video de ejecución del Sprint 1. -->
 
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
