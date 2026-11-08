@@ -1664,6 +1664,12 @@ Para todos los endpoints protegidos:
 | 26 | US-25 | Consultar notificaciones | Como usuario, deseo consultar mis notificaciones para conocer eventos importantes relacionados con mis seguros. | 2 |
 | 27 | US-07 | Consultar perfil personal | Como usuario registrado, deseo consultar mi información personal para verificar mis datos registrados. | 2 |
 | 28 | US-08 | Actualizar perfil personal | Como usuario registrado, deseo actualizar mis datos personales para mantener mi información vigente. | 3 |
+| 29 | US-31 | Consultar planes de suscripción | Como usuario, deseo consultar los planes de suscripción de Livva para conocer sus precios y beneficios. | 2 |
+| 30 | US-32 | Contratar un plan de suscripción | Como usuario, deseo contratar un plan de suscripción para acceder a los servicios de Livva. | 5 |
+| 31 | US-33 | Consultar mi suscripción | Como usuario suscrito, deseo consultar mi suscripción para conocer el plan contratado, su estado y su vigencia. | 2 |
+| 32 | US-34 | Cancelar mi suscripción | Como usuario suscrito, deseo cancelar mi suscripción para finalizar el servicio contratado con Livva. | 3 |
+| 33 | US-29 | Solicitar indemnización de seguro de vida | Como beneficiario de un seguro de vida, deseo registrar una solicitud de indemnización para iniciar el proceso de pago correspondiente. | 5 |
+| 34 | US-30 | Consultar estado de indemnización | Como beneficiario de un seguro de vida, deseo consultar el estado de mi solicitud de indemnización para conocer su avance. | 3 |
 # Capítulo IV: Product Design
 
 ## 4.1. Style Guidelines
@@ -1975,12 +1981,138 @@ A continuación, se presenta una captura del prototipo en funcionamiento y el en
 
 ### 4.6.1. Design-Level Event Storming
 
-**Event Storming**
+El Design-Level EventStorming refina el Big Picture EventStorming (sección 2.4) para cada uno de los bounded contexts definidos en el diseño de base de datos (sección 4.8). A partir de los Domain Events identificados previamente, se incorporan los comandos que los originan, los agregados que los procesan, las políticas que reaccionan ante ellos, los modelos de lectura que consulta la Web Application y los sistemas externos que participan en cada flujo. Los comandos y modelos de lectura se relacionan con las User Stories y Technical Stories de la sección 3.1. Los diagramas se mantienen como código (Diagram-as-Code) mediante Mermaid.
 
-![Design-Level Event Storming](assets/md-big-picture-event-storming/big-picture-event-storming.PNG)
+| Elemento | Color | Descripción |
+|---|---|---|
+| Actor | Amarillo | Persona que inicia un comando. |
+| Command | Azul | Acción o intención que se solicita al sistema. |
+| Aggregate | Amarillo claro | Entidad del dominio que procesa el comando y garantiza sus reglas. |
+| Domain Event | Naranja | Hecho relevante del negocio que ya ocurrió. |
+| Policy | Lila | Regla que reacciona ante un evento ("cuando ocurre…, entonces…"). |
+| Read Model | Verde | Información que se consulta para tomar decisiones. |
+| External System | Rosado | Sistema externo que participa en el flujo. |
+
+#### Identity & Profile Management
+
+```mermaid
+flowchart LR
+    visitor(["Visitor"]):::actor --> signUp["Sign Up"]:::command --> user1["User"]:::aggregate --> accountRegistered["User Account Registered"]:::event
+    registered(["Registered User"]):::actor --> signIn["Sign In"]:::command --> user2["User"]:::aggregate --> authenticated["User Authenticated"]:::event
+    registered --> updateProfile["Update User Profile"]:::command --> profile["UserProfile"]:::aggregate --> profileUpdated["User Profile Updated"]:::event
+    profileView[("User Profile")]:::readmodel -.-> registered
+    classDef actor fill:#fff59d,stroke:#c9b800,color:#000
+    classDef command fill:#90caf9,stroke:#1e6fb8,color:#000
+    classDef aggregate fill:#fff9c4,stroke:#c9b800,color:#000
+    classDef event fill:#ffb74d,stroke:#c77800,color:#000
+    classDef policy fill:#ce93d8,stroke:#7b3f8c,color:#000
+    classDef readmodel fill:#a5d6a7,stroke:#3d8b40,color:#000
+    classDef external fill:#f8bbd0,stroke:#b0476d,color:#000
+```
+
+#### Insurance Offering & Applications
+
+```mermaid
+flowchart LR
+    owner(["Vehicle Owner"]):::actor --> registerVehicle["Register Vehicle"]:::command --> vehicle["Vehicle"]:::aggregate --> vehicleRegistered["Vehicle Registered"]:::event
+    products[("Insurance Products")]:::readmodel -.-> owner
+    products -.-> lifeApplicant
+    owner --> submitVehicle["Submit Vehicle Insurance Application"]:::command --> app1["InsuranceApplication"]:::aggregate --> vehicleSubmitted["Vehicle Insurance Application Submitted"]:::event
+    lifeApplicant(["Life Insurance Applicant"]):::actor --> submitLife["Submit Life Insurance Application"]:::command --> app2["InsuranceApplication"]:::aggregate --> lifeSubmitted["Life Insurance Application Submitted"]:::event
+    vehicleSubmitted --> insurer["Insurance Company"]:::external
+    lifeSubmitted --> insurer
+    insurer --> underEvaluation["Application Under Evaluation"]:::event
+    underEvaluation --> approved["Application Approved"]:::event
+    underEvaluation --> rejected["Application Rejected"]:::event
+    approved --> notifyDecision["When an application decision occurs, notify the applicant"]:::policy
+    rejected --> notifyDecision
+    applicationsView[("Insurance Applications and Status")]:::readmodel -.-> owner
+    policyholder(["Policyholder"]):::actor --> registerBeneficiary["Register Beneficiary"]:::command --> beneficiary["Beneficiary"]:::aggregate --> beneficiaryRegistered["Beneficiary Registered"]:::event
+    classDef actor fill:#fff59d,stroke:#c9b800,color:#000
+    classDef command fill:#90caf9,stroke:#1e6fb8,color:#000
+    classDef aggregate fill:#fff9c4,stroke:#c9b800,color:#000
+    classDef event fill:#ffb74d,stroke:#c77800,color:#000
+    classDef policy fill:#ce93d8,stroke:#7b3f8c,color:#000
+    classDef readmodel fill:#a5d6a7,stroke:#3d8b40,color:#000
+    classDef external fill:#f8bbd0,stroke:#b0476d,color:#000
+```
+
+#### Policy Management
+
+```mermaid
+flowchart LR
+    approved["Application Approved"]:::event --> issuePolicy["When an application is approved, register the issued policy"]:::policy --> registerPolicy["Register Issued Policy"]:::command --> policy1["Policy"]:::aggregate --> policyRegistered["Issued Policy Registered"]:::event
+    policy2["Policy"]:::aggregate --> approaching["Policy Approaching Expiration"]:::event --> notifyExpiration["When expiration approaches, notify the policyholder"]:::policy
+    policyholder(["Policyholder"]):::actor --> requestRenewal["Request Renewal"]:::command --> renewal["Renewal"]:::aggregate --> renewalRequested["Renewal Requested"]:::event --> insurer["Insurance Company"]:::external
+    insurer --> renewed["Policy Renewed"]:::event
+    insurer --> renewalRejected["Renewal Rejected"]:::event
+    policiesView[("Policies with Coverages and Documents")]:::readmodel -.-> policyholder
+    classDef actor fill:#fff59d,stroke:#c9b800,color:#000
+    classDef command fill:#90caf9,stroke:#1e6fb8,color:#000
+    classDef aggregate fill:#fff9c4,stroke:#c9b800,color:#000
+    classDef event fill:#ffb74d,stroke:#c77800,color:#000
+    classDef policy fill:#ce93d8,stroke:#7b3f8c,color:#000
+    classDef readmodel fill:#a5d6a7,stroke:#3d8b40,color:#000
+    classDef external fill:#f8bbd0,stroke:#b0476d,color:#000
+```
+
+#### Claims & Indemnities
+
+```mermaid
+flowchart LR
+    owner(["Insured Vehicle Owner"]):::actor --> reportClaim["Report Vehicle Claim"]:::command --> claim["VehicleClaim"]:::aggregate --> claimReported["Vehicle Claim Reported"]:::event --> insurer1["Insurance Company"]:::external
+    insurer1 --> claimReview["Claim Under Review"]:::event --> claimUpdated["Claim Status Updated"]:::event --> claimResolved["Claim Status Resolved"]:::event
+    claimUpdated --> notifyClaim["When claim status changes, record it in the status history and notify the policyholder"]:::policy
+    claimsView[("Vehicle Claims and Status History")]:::readmodel -.-> owner
+    beneficiary(["Beneficiary"]):::actor --> submitIndemnity["Submit Indemnity Request"]:::command --> indemnity["IndemnityRequest"]:::aggregate --> indemnitySubmitted["Indemnity Request Submitted"]:::event --> insurer2["Insurance Company"]:::external
+    insurer2 --> indemnityReview["Indemnity Request Under Review"]:::event --> indemnityUpdated["Indemnity Status Updated"]:::event --> indemnityResolved["Indemnity Request Resolved"]:::event
+    indemnityUpdated --> notifyIndemnity["When indemnity status changes, record it in the status history and notify the beneficiary"]:::policy
+    indemnityView[("Indemnity Requests and Status History")]:::readmodel -.-> beneficiary
+    classDef actor fill:#fff59d,stroke:#c9b800,color:#000
+    classDef command fill:#90caf9,stroke:#1e6fb8,color:#000
+    classDef aggregate fill:#fff9c4,stroke:#c9b800,color:#000
+    classDef event fill:#ffb74d,stroke:#c77800,color:#000
+    classDef policy fill:#ce93d8,stroke:#7b3f8c,color:#000
+    classDef readmodel fill:#a5d6a7,stroke:#3d8b40,color:#000
+    classDef external fill:#f8bbd0,stroke:#b0476d,color:#000
+```
+
+#### Subscription Management
+
+```mermaid
+flowchart LR
+    plansView[("Subscription Plans")]:::readmodel -.-> user
+    user(["Registered User"]):::actor --> selectPlan["Select Subscription Plan"]:::command --> sub1["UserSubscription"]:::aggregate --> planSelected["Subscription Plan Selected"]:::event
+    planSelected --> initiatePayment["Initiate Subscription Payment"]:::command --> payment["SubscriptionPayment"]:::aggregate --> paymentInitiated["Subscription Payment Initiated"]:::event --> provider["Payment Provider"]:::external
+    provider --> paymentConfirmed["Subscription Payment Confirmed"]:::event --> activatePolicy["When payment is confirmed, activate the selected Livva plan"]:::policy --> activate["Activate Subscription"]:::command --> sub2["UserSubscription"]:::aggregate --> activated["Livva Subscription Activated"]:::event
+    user --> cancel["Cancel Subscription"]:::command --> sub3["UserSubscription"]:::aggregate --> cancellationRequested["Subscription Cancellation Requested"]:::event --> cancelled["Livva Subscription Cancelled"]:::event
+    mySubscription[("Current Subscription")]:::readmodel -.-> user
+    classDef actor fill:#fff59d,stroke:#c9b800,color:#000
+    classDef command fill:#90caf9,stroke:#1e6fb8,color:#000
+    classDef aggregate fill:#fff9c4,stroke:#c9b800,color:#000
+    classDef event fill:#ffb74d,stroke:#c77800,color:#000
+    classDef policy fill:#ce93d8,stroke:#7b3f8c,color:#000
+    classDef readmodel fill:#a5d6a7,stroke:#3d8b40,color:#000
+    classDef external fill:#f8bbd0,stroke:#b0476d,color:#000
+```
+
+#### Notification Management
+
+```mermaid
+flowchart LR
+    approaching["Policy Approaching Expiration"]:::event --> notifyExpiration["When expiration approaches, notify the policyholder"]:::policy --> generate["Generate Expiration Notification"]:::command --> notification1["Notification"]:::aggregate --> generated["Expiration Notification Generated"]:::event
+    user(["Registered User"]):::actor --> markRead["Mark Notification as Read"]:::command --> notification2["Notification"]:::aggregate --> read["Notification Read"]:::event
+    notificationsView[("User Notifications")]:::readmodel -.-> user
+    classDef actor fill:#fff59d,stroke:#c9b800,color:#000
+    classDef command fill:#90caf9,stroke:#1e6fb8,color:#000
+    classDef aggregate fill:#fff9c4,stroke:#c9b800,color:#000
+    classDef event fill:#ffb74d,stroke:#c77800,color:#000
+    classDef policy fill:#ce93d8,stroke:#7b3f8c,color:#000
+    classDef readmodel fill:#a5d6a7,stroke:#3d8b40,color:#000
+    classDef external fill:#f8bbd0,stroke:#b0476d,color:#000
+```
 
 ---
-
 ### 4.6.2. Software Architecture Context Diagram
 
 ![Software Architecture Context Diagram](assets/md-images-c4-diagrams/software-architecture-context-diagram.png)
