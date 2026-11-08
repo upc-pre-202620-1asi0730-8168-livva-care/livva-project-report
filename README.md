@@ -1550,7 +1550,7 @@ Para todos los endpoints protegidos:
 | TS-01 | Register User Account | Como Developer, deseo registrar una cuenta mediante `POST /api/v1/authentication/sign-up` para permitir que nuevos usuarios accedan a Livva. | **Scenario 1: Successful registration**<br>**Given** que se proporcionan datos válidos y un correo no registrado<br>**When** se envía la solicitud<br>**Then** el API responde `201 Created` con el identificador del usuario.<br><br>**Scenario 2: Duplicate email**<br>**Given** que el correo ya está registrado<br>**When** se envía la solicitud<br>**Then** el API responde `409 Conflict`. | US-05 / EP-02 |
 | TS-02 | Authenticate User | Como Developer, deseo autenticar a un usuario mediante `POST /api/v1/authentication/sign-in` para permitirle acceder a los recursos protegidos. | **Scenario 1: Valid credentials**<br>**Given** que las credenciales son correctas<br>**When** se solicita iniciar sesión<br>**Then** el API responde `200 OK` con un token de acceso.<br><br>**Scenario 2: Invalid credentials**<br>**Given** que las credenciales son incorrectas<br>**When** se solicita iniciar sesión<br>**Then** el API responde `401 Unauthorized`. | US-06 / EP-02 |
 | TS-03 | Retrieve Current Profile | Como Developer, deseo obtener el perfil mediante `GET /api/v1/user-profiles?userId={userId}` para mostrar la información del usuario autenticado. | **Scenario 1: Existing profile**<br>**Given** que el usuario está autenticado<br>**When** solicita su perfil<br>**Then** el API responde `200 OK` con su información personal. | US-07 / EP-02 |
-| TS-04 | Update Current Profile | Como Developer, deseo actualizar el perfil mediante `PUT /api/v1/user-profiles/{profileId}` para mantener vigente la información del usuario. | **Scenario 1: Valid update**<br>**Given** que el usuario proporciona información válida<br>**When** solicita actualizar su perfil<br>**Then** el API responde `200 OK` con los datos actualizados.<br><br>**Scenario 2: Invalid information**<br>**Given** que la información no es válida<br>**When** se solicita la actualización<br>**Then** el API responde `400 Bad Request`. | US-08 / EP-02 |
+| TS-04 | Update Current Profile | Como Developer, deseo actualizar el perfil mediante `PATCH /api/v1/user-profiles/{profileId}` para mantener vigente la información del usuario. | **Scenario 1: Valid update**<br>**Given** que el usuario proporciona información válida<br>**When** solicita actualizar su perfil<br>**Then** el API responde `200 OK` con los datos actualizados.<br><br>**Scenario 2: Invalid information**<br>**Given** que la información no es válida<br>**When** se solicita la actualización<br>**Then** el API responde `400 Bad Request`. | US-08 / EP-02 |
 
 #### Insurance Offering and Applications
 
@@ -1559,16 +1559,16 @@ Para todos los endpoints protegidos:
 | TS-05 | Retrieve Insurance Products | Como Developer, deseo consultar productos mediante `GET /api/v1/insurance-products` para presentar las alternativas académicas de seguros vehiculares y de vida. | **Scenario 1: Available products**<br>**Given** que existen productos registrados<br>**When** se solicita la lista con un tipo de seguro opcional<br>**Then** el API responde `200 OK` con los productos correspondientes.<br><br>**Scenario 2: No matching products**<br>**Given** que no existen productos para el filtro indicado<br>**When** se realiza la consulta<br>**Then** el API responde `200 OK` con una colección vacía. | US-03, US-04, US-12 y US-14 |
 | TS-06 | Register Vehicle | Como Developer, deseo registrar un vehículo mediante `POST /api/v1/vehicles` para asociarlo con el usuario autenticado. | **Scenario 1: Valid vehicle**<br>**Given** que se proporcionan datos válidos<br>**When** se registra el vehículo<br>**Then** el API responde `201 Created` con su identificador.<br><br>**Scenario 2: Duplicate license plate**<br>**Given** que la placa ya está registrada<br>**When** se envía la solicitud<br>**Then** el API responde `409 Conflict`. | US-09 / EP-03 |
 | TS-07 | Retrieve User Vehicles | Como Developer, deseo consultar vehículos mediante `GET /api/v1/vehicles` para mostrar los asociados al usuario autenticado. | **Scenario 1: Registered vehicles**<br>**Given** que el usuario posee vehículos<br>**When** solicita la lista<br>**Then** el API responde `200 OK` con sus vehículos.<br><br>**Scenario 2: No vehicles**<br>**Given** que no posee vehículos<br>**When** solicita la lista<br>**Then** el API responde `200 OK` con una colección vacía. | US-10 / EP-03 |
-| TS-08 | Update Vehicle | Como Developer, deseo actualizar un vehículo mediante `PUT /api/v1/vehicles/{vehicleId}` para mantener correcta su información. | **Scenario 1: Valid update**<br>**Given** que el vehículo pertenece al usuario y los datos son válidos<br>**When** se solicita la actualización<br>**Then** el API responde `200 OK` con el vehículo actualizado.<br><br>**Scenario 2: Vehicle unavailable**<br>**Given** que el vehículo no existe o no pertenece al usuario<br>**When** se solicita actualizarlo<br>**Then** el API responde `404 Not Found`. | US-11 / EP-03 |
+| TS-08 | Update Vehicle | Como Developer, deseo actualizar un vehículo mediante `PATCH /api/v1/vehicles/{vehicleId}` para mantener correcta su información. | **Scenario 1: Valid update**<br>**Given** que el vehículo pertenece al usuario y los datos son válidos<br>**When** se solicita la actualización<br>**Then** el API responde `200 OK` con el vehículo actualizado.<br><br>**Scenario 2: Vehicle unavailable**<br>**Given** que el vehículo no existe o no pertenece al usuario<br>**When** se solicita actualizarlo<br>**Then** el API responde `404 Not Found`. | US-11 / EP-03 |
 | TS-09 | Create Vehicle Insurance Application | Como Developer, deseo registrar una solicitud mediante `POST /api/v1/vehicle-insurance-applications` para iniciar la intermediación de un seguro vehicular. | **Scenario 1: Valid application**<br>**Given** que el vehículo pertenece al usuario y el producto está disponible<br>**When** se envía la solicitud<br>**Then** el API responde `201 Created` con su identificador y estado inicial.<br><br>**Scenario 2: Invalid vehicle or product**<br>**Given** que el vehículo o producto no está disponible<br>**When** se envía la solicitud<br>**Then** el API responde `404 Not Found`. | US-12 / EP-03 |
 | TS-10 | Retrieve Vehicle Insurance Applications | Como Developer, deseo consultar `GET /api/v1/vehicle-insurance-applications` para mostrar las solicitudes vehiculares del usuario autenticado. | **Scenario 1: Existing applications**<br>**Given** que el usuario posee solicitudes vehiculares<br>**When** solicita la lista<br>**Then** el API responde `200 OK` con sus solicitudes y estados.<br><br>**Scenario 2: No applications**<br>**Given** que no posee solicitudes<br>**When** realiza la consulta<br>**Then** el API responde `200 OK` con una colección vacía. | US-13 / EP-03 |
 | TS-11 | Retrieve Vehicle Insurance Application Details | Como Developer, deseo consultar `GET /api/v1/vehicle-insurance-applications/{applicationId}` para mostrar el detalle y estado de una solicitud vehicular. | **Scenario 1: Existing application**<br>**Given** que la solicitud pertenece al usuario<br>**When** se consulta su detalle<br>**Then** el API responde `200 OK` con la información correspondiente.<br><br>**Scenario 2: Application unavailable**<br>**Given** que la solicitud no existe o no pertenece al usuario<br>**When** se realiza la consulta<br>**Then** el API responde `404 Not Found`. | US-13 / EP-03 |
 | TS-12 | Create Life Insurance Application | Como Developer, deseo registrar una solicitud mediante `POST /api/v1/life-insurance-applications` para iniciar la intermediación de un seguro de vida. | **Scenario 1: Valid application**<br>**Given** que el usuario proporciona la información requerida y selecciona un producto disponible<br>**When** envía la solicitud<br>**Then** el API responde `201 Created` con su identificador y estado inicial.<br><br>**Scenario 2: Invalid product**<br>**Given** que el producto no existe o no está disponible<br>**When** se envía la solicitud<br>**Then** el API responde `404 Not Found`. | US-14 / EP-04 |
 | TS-13 | Retrieve Life Insurance Applications | Como Developer, deseo consultar `GET /api/v1/life-insurance-applications` para mostrar las solicitudes de vida del usuario autenticado. | **Scenario 1: Existing applications**<br>**Given** que el usuario posee solicitudes<br>**When** solicita la lista<br>**Then** el API responde `200 OK` con sus solicitudes y estados.<br><br>**Scenario 2: No applications**<br>**Given** que no posee solicitudes<br>**When** realiza la consulta<br>**Then** el API responde `200 OK` con una colección vacía. | US-15 / EP-04 |
 | TS-14 | Retrieve Life Insurance Application Details | Como Developer, deseo consultar `GET /api/v1/life-insurance-applications/{applicationId}` para mostrar el detalle y estado de una solicitud de vida. | **Scenario 1: Existing application**<br>**Given** que la solicitud pertenece al usuario<br>**When** se consulta su detalle<br>**Then** el API responde `200 OK` con la información correspondiente.<br><br>**Scenario 2: Application unavailable**<br>**Given** que la solicitud no existe o no pertenece al usuario<br>**When** se realiza la consulta<br>**Then** el API responde `404 Not Found`. | US-15 / EP-04 |
-| TS-15 | Register Beneficiary | Como Developer, deseo registrar un beneficiario mediante `POST /api/v1/beneficiaries` para asociarlo con una solicitud de seguro de vida. | **Scenario 1: Valid beneficiary**<br>**Given** que la solicitud de seguro de vida pertenece al usuario y los datos son válidos<br>**When** se registra el beneficiario<br>**Then** el API responde `201 Created`.<br><br>**Scenario 2: Invalid application**<br>**Given** que la solicitud de seguro de vida no existe o no pertenece al usuario<br>**When** se envía la solicitud<br>**Then** el API responde `404 Not Found`. | US-16 / EP-04 |
-| TS-16 | Retrieve Beneficiaries | Como Developer, deseo consultar `GET /api/v1/beneficiaries?lifeApplicationId={applicationId}` para mostrar los beneficiarios de una solicitud de seguro de vida. | **Scenario 1: Existing beneficiaries**<br>**Given** que la solicitud pertenece al usuario<br>**When** solicita sus beneficiarios<br>**Then** el API responde `200 OK` con la lista correspondiente.<br><br>**Scenario 2: No beneficiaries**<br>**Given** que la solicitud no posee beneficiarios<br>**When** se realiza la consulta<br>**Then** el API responde `200 OK` con una colección vacía. | US-17 / EP-04 |
-| TS-17 | Update Beneficiary | Como Developer, deseo actualizar un beneficiario mediante `PUT /api/v1/beneficiaries/{beneficiaryId}` para mantener sus datos vigentes. | **Scenario 1: Valid update**<br>**Given** que el beneficiario pertenece a una solicitud del usuario<br>**When** se proporcionan datos válidos<br>**Then** el API responde `200 OK` con la información actualizada.<br><br>**Scenario 2: Beneficiary unavailable**<br>**Given** que el beneficiario no existe o no pertenece a una solicitud del usuario<br>**When** se solicita actualizarlo<br>**Then** el API responde `404 Not Found`. | US-18 / EP-04 |
+| TS-15 | Register Beneficiary | Como Developer, deseo registrar un beneficiario mediante `POST /api/v1/beneficiaries` para asociarlo con una póliza de vida. | **Scenario 1: Valid beneficiary**<br>**Given** que la póliza pertenece al usuario y los datos son válidos<br>**When** se registra el beneficiario<br>**Then** el API responde `201 Created`.<br><br>**Scenario 2: Invalid policy**<br>**Given** que la póliza no existe o no pertenece al usuario<br>**When** se envía la solicitud<br>**Then** el API responde `404 Not Found`. | US-16 / EP-04 |
+| TS-16 | Retrieve Beneficiaries | Como Developer, deseo consultar `GET /api/v1/beneficiaries?policyId={policyId}` para mostrar los beneficiarios de una póliza. | **Scenario 1: Existing beneficiaries**<br>**Given** que la póliza pertenece al usuario<br>**When** solicita sus beneficiarios<br>**Then** el API responde `200 OK` con la lista correspondiente.<br><br>**Scenario 2: No beneficiaries**<br>**Given** que la póliza no posee beneficiarios<br>**When** se realiza la consulta<br>**Then** el API responde `200 OK` con una colección vacía. | US-17 / EP-04 |
+| TS-17 | Update Beneficiary | Como Developer, deseo actualizar un beneficiario mediante `PATCH /api/v1/beneficiaries/{beneficiaryId}` para mantener sus datos vigentes. | **Scenario 1: Valid update**<br>**Given** que el beneficiario pertenece a una póliza del usuario<br>**When** se proporcionan datos válidos<br>**Then** el API responde `200 OK` con la información actualizada.<br><br>**Scenario 2: Beneficiary unavailable**<br>**Given** que el beneficiario no existe o no pertenece a una póliza del usuario<br>**When** se solicita actualizarlo<br>**Then** el API responde `404 Not Found`. | US-18 / EP-04 |
 
 #### Policy Management
 
@@ -1603,7 +1603,7 @@ Para todos los endpoints protegidos:
 | TS-29 | Create Livva Subscription | Como Developer, deseo crear una suscripción mediante `POST /api/v1/user-subscriptions` para iniciar la contratación de un plan de Livva. | **Scenario 1: Valid plan**<br>**Given** que el usuario selecciona un plan activo<br>**When** crea la suscripción<br>**Then** el API responde `201 Created` con estado pendiente y una referencia de pago sandbox.<br><br>**Scenario 2: Existing active subscription**<br>**Given** que el usuario ya posee una suscripción activa<br>**When** intenta crear otra<br>**Then** el API responde `409 Conflict`. | US-32 / EP-08 |
 | TS-30 | Confirm Sandbox Subscription Payment | Como Developer, deseo recibir confirmaciones mediante `POST /api/v1/payments/webhooks/{provider}` para activar una suscripción después de un pago sandbox aprobado. | **Scenario 1: Approved payment**<br>**Given** que el proveedor envía una confirmación válida<br>**When** el API verifica la operación<br>**Then** responde `200 OK` y activa la suscripción.<br><br>**Scenario 2: Invalid signature**<br>**Given** que la confirmación no puede validarse<br>**When** se recibe la solicitud<br>**Then** el API responde `401 Unauthorized` sin activar la suscripción.<br><br>**Scenario 3: Repeated confirmation**<br>**Given** que la operación ya fue procesada<br>**When** se recibe nuevamente<br>**Then** el API responde `200 OK` sin duplicar la activación. | US-32 / EP-08 |
 | TS-31 | Retrieve Current Subscription | Como Developer, deseo consultar `GET /api/v1/user-subscriptions?userId={userId}` para mostrar el plan y estado de la suscripción del usuario. | **Scenario 1: Existing subscription**<br>**Given** que el usuario posee una suscripción<br>**When** se realiza la consulta<br>**Then** el API responde `200 OK` con su plan, estado y fechas.<br><br>**Scenario 2: No subscription**<br>**Given** que el usuario no posee una suscripción<br>**When** se realiza la consulta<br>**Then** el API responde `404 Not Found`. | US-33 / EP-08 |
-| TS-32 | Cancel Livva Subscription | Como Developer, deseo cancelar una suscripción mediante `POST /api/v1/user-subscriptions/{subscriptionId}/cancellations` para finalizar el servicio contratado con Livva. | **Scenario 1: Active subscription**<br>**Given** que la suscripción pertenece al usuario y está activa<br>**When** se solicita la cancelación<br>**Then** el API responde `200 OK` con el estado cancelado.<br><br>**Scenario 2: Already cancelled**<br>**Given** que la suscripción ya está cancelada<br>**When** se solicita nuevamente la cancelación<br>**Then** el API responde `409 Conflict`. | US-34 / EP-08 |
+| TS-32 | Cancel Livva Subscription | Como Developer, deseo cancelar una suscripción mediante `PATCH /api/v1/user-subscriptions/{subscriptionId}` con el estado `cancelled` para finalizar el servicio contratado con Livva. | **Scenario 1: Active subscription**<br>**Given** que la suscripción pertenece al usuario y está activa<br>**When** se solicita la cancelación<br>**Then** el API responde `200 OK` con el estado cancelado.<br><br>**Scenario 2: Already cancelled**<br>**Given** que la suscripción ya está cancelada<br>**When** se solicita nuevamente la cancelación<br>**Then** el API responde `409 Conflict`. | US-34 / EP-08 |
 
 #### API Internationalization and Documentation
 
@@ -2163,6 +2163,10 @@ classDiagram
         -documentNumber: String
         -birthDate: Date
         -address: String
+        -district: String
+        -province: String
+        -department: String
+        -country: String
         -createdAt: DateTime
         -updatedAt: DateTime
         +updatePersonalData() void
@@ -2231,13 +2235,12 @@ classDiagram
         +cancel() void
     }
     class VehicleInsuranceApplication {
+        -applicationId: Long
         -vehicleId: Long
         +validateVehicle() Boolean
     }
     class LifeInsuranceApplication {
-        +addBeneficiary(beneficiary: Beneficiary) void
-        +removeBeneficiary(beneficiaryId: Long) void
-        +validateBeneficiaries() Boolean
+        -applicationId: Long
     }
     class Vehicle {
         -id: Long
@@ -2254,12 +2257,13 @@ classDiagram
     }
     class Beneficiary {
         -id: Long
-        -lifeApplicationId: Long
-        -firstName: String
-        -lastName: String
+        -policyId: Long
+        -fullName: String
+        -documentType: String
         -documentNumber: String
         -relationship: String
-        -percentage: Decimal
+        -birthDate: Date
+        -participationPercentage: Decimal
         -createdAt: DateTime
         -updatedAt: DateTime
         +updateInformation() void
@@ -2270,7 +2274,6 @@ classDiagram
     InsuranceApplication <|-- VehicleInsuranceApplication
     InsuranceApplication <|-- LifeInsuranceApplication
     Vehicle "1" -- "0..*" VehicleInsuranceApplication : used for
-    LifeInsuranceApplication "1" *-- "1..*" Beneficiary : includes
     InsuranceProduct --> InsuranceType
     InsuranceApplication --> RequestStatus
 ```
@@ -2340,7 +2343,7 @@ classDiagram
     class Renewal {
         -id: Long
         -policyId: Long
-        -requestDate: Date
+        -requestedAt: DateTime
         -proposedExpirationDate: Date
         -proposedPremium: Decimal
         -status: RenewalStatus
@@ -2385,9 +2388,10 @@ classDiagram
         -id: Long
         -policyId: Long
         -userId: Long
-        -claimNumber: String
         -incidentDate: Date
+        -incidentLocation: String
         -description: String
+        -estimatedDamageAmount: Decimal
         -status: ClaimStatus
         -compensationAmount: Decimal
         -reportedAt: DateTime
@@ -2405,6 +2409,7 @@ classDiagram
         -status: ClaimStatus
         -comment: String
         -changedAt: DateTime
+        -createdAt: DateTime
     }
     class IndemnityRequest {
         -id: Long
@@ -2452,18 +2457,25 @@ classDiagram
     class PaymentStatus {
         <<enumeration>>
         PENDING
-        CONFIRMED
+        APPROVED
         FAILED
+    }
+    class BillingCycle {
+        <<enumeration>>
+        MONTHLY
+        ANNUAL
     }
     class SubscriptionPlan {
         -id: Long
         -name: String
-        -price: Decimal
         -description: String
+        -monthlyPrice: Decimal
+        -annualPrice: Decimal
+        -benefits: List~String~
         -active: Boolean
         -createdAt: DateTime
         -updatedAt: DateTime
-        +updatePrice() void
+        +updatePrices() void
         +activate() void
         +deactivate() void
     }
@@ -2471,9 +2483,10 @@ classDiagram
         -id: Long
         -userId: Long
         -planId: Long
-        -startDate: Date
-        -expirationDate: Date
+        -billingCycle: BillingCycle
         -status: SubscriptionStatus
+        -startDate: DateTime
+        -nextBillingDate: DateTime
         -cancellationRequestedAt: DateTime
         -cancelledAt: DateTime
         -createdAt: DateTime
@@ -2484,12 +2497,15 @@ classDiagram
     }
     class SubscriptionPayment {
         -id: Long
-        -subscriptionId: Long
+        -userSubscriptionId: Long
+        -userId: Long
+        -planId: Long
+        -provider: String
+        -providerPaymentId: String
         -amount: Decimal
         -currency: String
-        -paymentDate: DateTime
         -status: PaymentStatus
-        -externalPaymentId: String
+        -paidAt: DateTime
         -createdAt: DateTime
         -updatedAt: DateTime
         +initiate() void
@@ -2499,6 +2515,7 @@ classDiagram
     SubscriptionPlan "1" -- "0..*" UserSubscription : selected for
     UserSubscription "1" *-- "0..*" SubscriptionPayment : payments
     UserSubscription --> SubscriptionStatus
+    UserSubscription --> BillingCycle
     SubscriptionPayment --> PaymentStatus
 ```
 
@@ -2527,20 +2544,260 @@ classDiagram
 
 ### 4.8.1. Database Diagrams
 
+Los diagramas de base de datos se organizan por bounded context y se mantienen como código (Diagram-as-Code) mediante Mermaid. Las tablas y columnas corresponden a los recursos utilizados por la Web Application. Las referencias entre tablas de distintos bounded contexts (por ejemplo, `userId` o `policyId`) se almacenan como identificadores sin clave foránea, para mantener la independencia entre contextos.
+
 ### Identity & Profile Management Bounded Context Database Design Diagram
-![Identity & Profile Management Bounded Context Database Design Diagram](assets/md-images-database-diagrams/identity-and-profile-management.PNG)
+
+```mermaid
+erDiagram
+    Users ||--|| UserProfiles : owns
+    Users {
+        BIGINT id PK
+        VARCHAR(100) firstName "NOT NULL"
+        VARCHAR(100) lastName "NOT NULL"
+        VARCHAR(255) email UK "NOT NULL"
+        VARCHAR(255) passwordHash "NOT NULL"
+        VARCHAR(30) phone
+        VARCHAR(30) role "NOT NULL"
+        BOOLEAN active "NOT NULL, DEFAULT TRUE"
+        TIMESTAMP createdAt "NOT NULL"
+        TIMESTAMP updatedAt "NOT NULL"
+    }
+    UserProfiles {
+        BIGINT id PK
+        BIGINT userId FK, UK "NOT NULL"
+        VARCHAR(30) documentType "NOT NULL"
+        VARCHAR(30) documentNumber "NOT NULL"
+        DATE birthDate
+        VARCHAR(255) address
+        VARCHAR(100) district
+        VARCHAR(100) province
+        VARCHAR(100) department
+        VARCHAR(100) country
+        TIMESTAMP createdAt "NOT NULL"
+        TIMESTAMP updatedAt "NOT NULL"
+    }
+```
 
 ### Insurance Offering & Applications Bounded Context Database Design Diagram
-![Insurance Offering & Applications Bounded Context Database Design Diagram](assets/md-images-database-diagrams/insurance-offering-and-applications.png)
+
+```mermaid
+erDiagram
+    Insurers ||--o{ InsuranceProducts : offers
+    InsuranceProducts ||--o{ InsuranceApplications : selectedFor
+    InsuranceApplications ||--o| VehicleInsuranceApplications : vehicleDetails
+    InsuranceApplications ||--o| LifeInsuranceApplications : lifeDetails
+    Vehicles ||--o{ VehicleInsuranceApplications : usedFor
+    Insurers {
+        BIGINT id PK
+        VARCHAR externalReference UK
+        VARCHAR name
+        BOOLEAN active
+        TIMESTAMP createdAt
+        TIMESTAMP updatedAt
+    }
+    InsuranceProducts {
+        BIGINT id PK
+        BIGINT insurerId FK
+        VARCHAR name
+        VARCHAR insuranceType
+        DECIMAL coverageAmount
+        DECIMAL premiumAmount
+        BOOLEAN active
+        TIMESTAMP createdAt
+        TIMESTAMP updatedAt
+    }
+    InsuranceApplications {
+        BIGINT id PK
+        BIGINT userId
+        BIGINT productId FK
+        DECIMAL requestedCoverage
+        VARCHAR status
+        TIMESTAMP createdAt
+        TIMESTAMP updatedAt
+    }
+    VehicleInsuranceApplications {
+        BIGINT id PK
+        BIGINT applicationId FK, UK
+        BIGINT vehicleId FK
+    }
+    LifeInsuranceApplications {
+        BIGINT id PK
+        BIGINT applicationId FK, UK
+    }
+    Vehicles {
+        BIGINT id PK
+        BIGINT userId
+        VARCHAR licensePlate UK
+        VARCHAR brand
+        VARCHAR model
+        INTEGER manufactureYear
+        DECIMAL estimatedValue
+        TIMESTAMP createdAt
+        TIMESTAMP updatedAt
+    }
+    Beneficiaries {
+        BIGINT id PK
+        BIGINT policyId
+        VARCHAR fullName
+        VARCHAR documentType
+        VARCHAR documentNumber
+        VARCHAR relationship
+        DATE birthDate
+        DECIMAL participationPercentage
+        TIMESTAMP createdAt
+        TIMESTAMP updatedAt
+    }
+```
 
 ### Policy Management Bounded Context Database Design Diagram
-![Policy Management Bounded Context Database Design Diagram](assets/md-images-database-diagrams/policy-management.png)
+
+```mermaid
+erDiagram
+    Policies ||--o{ PolicyCoverages : contains
+    Policies ||--o{ PolicyDocuments : has
+    Policies ||--o{ Renewals : renews
+    Policies {
+        BIGINT id PK
+        BIGINT userId
+        BIGINT applicationId
+        VARCHAR policyNumber UK
+        VARCHAR insuranceType
+        DATE startDate
+        DATE expirationDate
+        DECIMAL premiumAmount
+        DECIMAL coverageAmount
+        VARCHAR status
+        TIMESTAMP createdAt
+        TIMESTAMP updatedAt
+    }
+    PolicyCoverages {
+        BIGINT id PK
+        BIGINT policyId FK
+        VARCHAR name
+        VARCHAR description
+        DECIMAL coverageLimit
+        TIMESTAMP createdAt
+        TIMESTAMP updatedAt
+    }
+    PolicyDocuments {
+        BIGINT id PK
+        BIGINT policyId FK
+        VARCHAR documentType
+        VARCHAR name
+        VARCHAR fileUrl
+        TIMESTAMP createdAt
+        TIMESTAMP updatedAt
+    }
+    Renewals {
+        BIGINT id PK
+        BIGINT policyId FK
+        TIMESTAMP requestedAt
+        DATE proposedExpirationDate
+        DECIMAL proposedPremium
+        VARCHAR status
+        TIMESTAMP resolvedAt
+        TIMESTAMP createdAt
+        TIMESTAMP updatedAt
+    }
+```
 
 ### Claims & Indemnities Bounded Context Database Design Diagram
-![Claims & Indemnities Bounded Context Database Design Diagram](assets/md-images-database-diagrams/claims-and-indemnities.png)
+
+```mermaid
+erDiagram
+    VehicleClaims ||--o{ ClaimStatusHistories : has
+    IndemnityRequests ||--o{ IndemnityStatusHistories : has
+    VehicleClaims {
+        BIGINT id PK
+        BIGINT policyId
+        BIGINT userId
+        DATE incidentDate
+        VARCHAR incidentLocation
+        VARCHAR description
+        DECIMAL estimatedDamageAmount
+        VARCHAR status
+        DECIMAL compensationAmount
+        TIMESTAMP reportedAt
+        TIMESTAMP resolvedAt
+        TIMESTAMP createdAt
+        TIMESTAMP updatedAt
+    }
+    ClaimStatusHistories {
+        BIGINT id PK
+        BIGINT claimId FK
+        VARCHAR status
+        VARCHAR comment
+        TIMESTAMP changedAt
+        TIMESTAMP createdAt
+    }
+    IndemnityRequests {
+        BIGINT id PK
+        BIGINT policyId
+        BIGINT beneficiaryId
+        DATE requestDate
+        VARCHAR description
+        VARCHAR status
+        DECIMAL indemnityAmount
+        TIMESTAMP submittedAt
+        TIMESTAMP resolvedAt
+        TIMESTAMP createdAt
+        TIMESTAMP updatedAt
+    }
+    IndemnityStatusHistories {
+        BIGINT id PK
+        BIGINT indemnityRequestId FK
+        VARCHAR status
+        VARCHAR comment
+        TIMESTAMP changedAt
+    }
+```
 
 ### Subscription Management Bounded Context Database Design Diagram
-![Subscription Management Bounded Context Database Design Diagram](assets/md-images-database-diagrams/subscription-management.png)
+
+```mermaid
+erDiagram
+    SubscriptionPlans ||--o{ UserSubscriptions : selectedFor
+    UserSubscriptions ||--o{ SubscriptionPayments : payments
+    SubscriptionPlans {
+        BIGINT id PK
+        VARCHAR name
+        VARCHAR description
+        DECIMAL monthlyPrice
+        DECIMAL annualPrice
+        JSON benefits
+        BOOLEAN active
+        TIMESTAMP createdAt
+        TIMESTAMP updatedAt
+    }
+    UserSubscriptions {
+        BIGINT id PK
+        BIGINT userId
+        BIGINT planId FK
+        VARCHAR billingCycle
+        VARCHAR status
+        TIMESTAMP startDate
+        TIMESTAMP nextBillingDate
+        TIMESTAMP cancellationRequestedAt
+        TIMESTAMP cancelledAt
+        TIMESTAMP createdAt
+        TIMESTAMP updatedAt
+    }
+    SubscriptionPayments {
+        BIGINT id PK
+        BIGINT userSubscriptionId FK
+        BIGINT userId
+        BIGINT planId
+        VARCHAR provider
+        VARCHAR providerPaymentId
+        DECIMAL amount
+        VARCHAR currency
+        VARCHAR status
+        TIMESTAMP paidAt
+        TIMESTAMP createdAt
+        TIMESTAMP updatedAt
+    }
+```
 
 ### Notification Management Bounded Context Database Design Diagram
 
@@ -2561,7 +2818,6 @@ erDiagram
         TIMESTAMP updatedAt
     }
 ```
-
 # Capítulo V: Product Implementation, Validation & Deployment
 
 ## 5.1. Software Configuration Management
