@@ -3084,21 +3084,23 @@ Estas convenciones permiten que el código y la documentación sean más fácile
 ### 5.1.4. Software Deployment Configuration
 La configuración de despliegue de Livva define el proceso que permitirá publicar los productos digitales de la solución a partir de sus respectivos repositorios de código fuente.
 
-Para el AV1, el producto que debe encontrarse desplegado es la primera versión del Landing Page. El proceso de despliegue parte del repositorio correspondiente en GitHub y considera una versión estable del código previamente integrada y validada por el equipo.
+Para el AV2, el proceso de despliegue se amplía para incluir los RESTful Web Services de Livva, desarrollados mediante ASP.NET Core 10 y Entity Framework Core. Para su publicación se utilizará Railway, una plataforma cloud que permite ejecutar aplicaciones mediante contenedores Docker y configurar los recursos necesarios para su funcionamiento.
 
-El flujo general de despliegue definido por el equipo es el siguiente:
+El repositorio `livva-web-services` dispone de un archivo `Dockerfile` que establece las instrucciones de construcción y ejecución de la aplicación. Este archivo utiliza imágenes oficiales de .NET 10 y permite configurar el puerto de escucha mediante la variable de entorno `PORT`, proporcionada por Railway.
 
-1. El desarrollo se realiza en ramas `feature/*` creadas a partir de `develop`.
-2. Una vez completada y revisada una funcionalidad, los cambios se integran a `develop`.
-3. Antes de realizar una publicación, se verifica el correcto funcionamiento del producto en el entorno local.
-4. La versión aprobada para publicación se integra a la rama estable correspondiente.
-5. La plataforma de despliegue obtiene el código fuente desde el repositorio de GitHub.
-6. Se ejecuta el proceso de publicación de los archivos necesarios para poner el producto disponible mediante una URL pública.
-7. Finalmente, el equipo realiza una validación de la versión desplegada para comprobar navegación, diseño responsive, accesibilidad básica, internacionalización y funcionamiento de los elementos interactivos.
+La configuración prevista para el despliegue contempla los siguientes elementos:
 
-Para el Landing Page, el artefacto desplegado está compuesto principalmente por archivos HTML5, CSS3 y JavaScript. El despliegue debe conservar la estructura de directorios, los recursos multimedia y las referencias necesarias para que el sitio funcione correctamente fuera del entorno local.
+- **Railway:** plataforma utilizada para alojar los Web Services y gestionar su ejecución.
+- **Docker:** herramienta que permite empaquetar la aplicación y sus dependencias en un contenedor.
+- **MySQL:** sistema de gestión de base de datos utilizado para almacenar la información de los diferentes módulos de Livva.
+- **GitHub:** plataforma de control de versiones desde la cual se obtendrá el código fuente del backend.
+- **Variables de entorno:** configuración de las credenciales de MySQL, la clave de autenticación JWT, el acceso a Mercado Pago y los orígenes permitidos mediante CORS.
 
-En entregas posteriores, este proceso será ampliado para incluir el despliegue de la Frontend Web Application y de los Web Services, manteniendo los repositorios de GitHub como fuente de las versiones que serán publicadas.
+El procedimiento considera vincular el repositorio de GitHub con Railway, configurar las variables de entorno del servicio, establecer la conexión con MySQL y realizar la publicación del backend. Asimismo, se contempla la ejecución de las migraciones de Entity Framework Core para preparar la estructura de la base de datos.
+
+Una vez realizado el despliegue, se verificará el funcionamiento de los endpoints mediante Scalar, disponible en la ruta `/scalar`, comprobando la comunicación con la base de datos y la disponibilidad de los servicios RESTful para su integración con la Frontend Web Application.
+
+Las evidencias del procedimiento, capturas de configuración y resultados de verificación se incorporarán en la sección **5.2.3.7. Software Deployment Evidence for Sprint Review**, correspondiente al Sprint 3.
 
 ## 5.2. Landing Page, Services & Applications Implementation
 En esta sección se documenta el proceso de implementación de los productos digitales de Livva durante los diferentes sprints del proyecto.
