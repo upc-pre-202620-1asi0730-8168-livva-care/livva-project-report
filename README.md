@@ -3621,14 +3621,64 @@ La documentación de los Web Services se genera mediante la especificación Open
 <!-- [EQUIPO] Agregar capturas de la interacción con los endpoints en Swagger UI o Scalar con datos de muestra y los commits relacionados. -->
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review
+Durante el Sprint 3, el equipo de Livva Care contempla el despliegue de la primera versión de los RESTful Web Services desarrollados mediante ASP.NET Core 10 y Entity Framework Core. Para este proceso se utilizará Railway como plataforma de alojamiento en la nube, permitiendo que los servicios del backend estén disponibles para su integración con la Web Application.
 
-<!-- [EQUIPO] Describir la plataforma de despliegue de los Web Services y de la base de datos MySQL, los pasos realizados y las URLs públicas. -->
+El despliegue se realizará utilizando el repositorio `livva-web-services`, el cual contiene la configuración necesaria para construir y ejecutar la aplicación mediante Docker. Asimismo, se utilizará MySQL como sistema de gestión de base de datos para garantizar la persistencia de información de los diferentes bounded contexts.
+
+
+Durante el Sprint 3, el equipo de Livva Care contempla el despliegue de la primera versión de los RESTful Web Services desarrollados mediante ASP.NET Core 10 y Entity Framework Core. Para este proceso se utilizará Railway como plataforma de alojamiento en la nube, permitiendo que los servicios del backend estén disponibles para su integración con la Web Application.
+
+El despliegue se realizará utilizando el repositorio `livva-web-services`, el cual contiene la configuración necesaria para construir y ejecutar la aplicación mediante Docker. Asimismo, se utilizará MySQL como sistema de gestión de base de datos para garantizar la persistencia de información de los diferentes bounded contexts.
+
+##### Proceso de despliegue de Web Services
+
+El procedimiento previsto comprende las siguientes actividades:
+
+1. Vincular el repositorio `livva-web-services` con Railway.
+2. Configurar el servicio utilizando el archivo `Dockerfile` existente.
+3. Crear y configurar la instancia de MySQL.
+4. Establecer las variables de entorno necesarias para la conexión a la base de datos y la autenticación JWT.
+5. Ejecutar el despliegue del backend en Railway.
+6. Verificar la aplicación de las migraciones mediante Entity Framework Core.
+7. Comprobar el funcionamiento de los endpoints utilizando Scalar.
+
+##### Evidencias del despliegue
+
+Las evidencias correspondientes serán incorporadas una vez finalizado el proceso de configuración y publicación de los Web Services.
+
+**Figura pendiente: Configuración del servicio de Web Services en Railway.**
+
+[insertar captura de la configuración del servicio en Railway]
+
+**Figura pendiente: Resultado del despliegue del backend.**
+
+[insertar captura del despliegue exitoso en Railway]
+
+**Figura pendiente: Configuración y conexión de MySQL.**
+
+[insertar captura de la base de datos y las tablas generadas]
+
+**Figura pendiente: Documentación de Web Services mediante Scalar.**
+
+[insertar captura de Scalar utilizando la URL pública del backend]
+
+##### URLs de los productos desplegados
 
 | Producto | URL |
 |---|---|
 | Landing Page | https://upc-pre-202620-1asi0730-8168-livva-care.github.io/livva-landing-page/ |
 | Web Application | https://livva-web-application.web.app/ |
 | Web Services | [EQUIPO: URL pública de los Web Services] |
+
+Una vez completado el despliegue, se realizarán pruebas de disponibilidad y comunicación con MySQL para comprobar que los servicios RESTful pueden responder correctamente a las solicitudes HTTP.
+
+Los resultados obtenidos y las evidencias correspondientes serán incorporados en esta sección para documentar el cumplimiento de los objetivos de despliegue establecidos durante el Sprint 3.
+| Producto | URL |
+|---|---|
+| Landing Page | https://upc-pre-202620-1asi0730-8168-livva-care.github.io/livva-landing-page/ |
+| Web Application | https://livva-web-application.web.app/ |
+| Web Services | [EQUIPO: URL pública de los Web Services] |
+
 
 #### 5.2.3.8. Team Collaboration Insights during Sprint
 
