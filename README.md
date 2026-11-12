@@ -4452,7 +4452,42 @@ Los hallazgos obtenidos serán documentados en la sección 5.3.3. Evaluaciones s
 
 ### 5.3.3. Evaluaciones según heurísticas
 
-<!-- [EQUIPO] Registrar los problemas de usabilidad encontrados, su severidad y la propuesta de solución. -->
+Para complementar las entrevistas de validación, se realizó una evaluación de la experiencia de usuario de Livva utilizando heurísticas de usabilidad basadas en los principios de Nielsen. Esta evaluación permite identificar posibles problemas relacionados con la interfaz, navegación, claridad de la información, prevención de errores y facilidad de interacción dentro de los principales flujos de la plataforma.
+
+Para el análisis se tomaron en consideración las observaciones obtenidas durante las entrevistas de validación realizadas a los segmentos objetivo. Los hallazgos identificados permiten determinar qué aspectos de Livva presentan una experiencia adecuada y cuáles requieren mejoras para facilitar el uso de la plataforma.
+
+La evaluación se concentra en los principales flujos relacionados con la consulta de seguros, navegación entre secciones, solicitudes de seguros, gestión de beneficiarios, pólizas y demás funcionalidades disponibles para los usuarios.
+
+##### Matriz de evaluación heurística
+
+| Heurística | Criterio de evaluación en Livva | Flujo evaluado | Severidad | Hallazgo | Recomendación |
+|---|---|---|---:|---|---|
+| Visibilidad del estado del sistema | El usuario debe saber si una acción fue completada correctamente, si una solicitud fue registrada o si una operación se encuentra en proceso. | Solicitudes de seguros, registro de información y gestión de pólizas | 2 | Durante la validación se identificó que algunas acciones podrían brindar una retroalimentación más clara luego de registrar o actualizar información. | Incorporar mensajes de confirmación, indicadores de carga y notificaciones visibles después de completar acciones importantes. |
+| Relación entre el sistema y el mundo real | La plataforma debe utilizar términos comprensibles para los usuarios al momento de consultar seguros, pólizas, beneficiarios y vehículos. | Consulta de seguros, pólizas y beneficiarios | 1 | Los términos principales utilizados en Livva fueron comprendidos por el participante, aunque algunos conceptos relacionados con seguros podrían requerir una explicación adicional. | Agregar descripciones breves o ayudas contextuales en términos específicos relacionados con seguros. |
+| Control y libertad del usuario | El usuario debe poder cancelar, retroceder o corregir información antes de completar una acción. | Formularios de solicitud y gestión de información | 2 | Algunas acciones podrían ofrecer opciones más visibles para volver, cancelar o modificar información durante el proceso. | Incorporar botones de volver, cancelar o cerrar en formularios y procesos donde sea necesario. |
+| Consistencia y estándares | Los botones, formularios, menús y elementos visuales deben mantener una apariencia y comportamiento uniforme en toda la plataforma. | Navegación general de la Web Application | 1 | El participante indicó que los botones y opciones son visibles y fáciles de reconocer, lo que demuestra una adecuada consistencia visual. | Mantener los mismos estilos, colores, tamaños y nombres de acciones en las diferentes secciones de Livva. |
+| Prevención de errores | La plataforma debe evitar que el usuario envíe información incompleta o incorrecta durante el uso de formularios. | Solicitudes de seguros, registro de beneficiarios y vehículos | 2 | No se reportaron errores graves durante la entrevista, pero los formularios podrían reforzar la prevención de datos incompletos o incorrectos. | Implementar validaciones claras en los campos obligatorios y mostrar indicaciones específicas antes de permitir el envío de información incorrecta. |
+| Reconocimiento antes que memoria | El usuario debe poder identificar fácilmente las acciones disponibles sin tener que recordar información de pantallas anteriores. | Navegación entre secciones, consulta de seguros y gestión de pólizas | 2 | Durante la entrevista se identificó que algunas opciones tomaron más tiempo en ser encontradas, aunque finalmente pudieron ser localizadas sin ayuda. | Mejorar la organización de ciertas opciones y utilizar nombres e íconos más descriptivos para facilitar su reconocimiento. |
+| Flexibilidad y eficiencia de uso | La plataforma debe permitir que el usuario complete sus tareas de manera rápida y sencilla. | Consulta de seguros, solicitudes y gestión de información | 1 | El participante consideró que Livva permite consultar información y realizar gestiones de manera práctica, lo que contribuye al ahorro de tiempo. | Incorporar accesos rápidos a las funcionalidades más utilizadas y mejorar filtros u opciones de búsqueda cuando sea necesario. |
+| Diseño estético y minimalista | La interfaz debe presentar únicamente la información necesaria, evitando sobrecargar al usuario. | Web Application general | 1 | La percepción del participante fue positiva, indicando que Livva posee un diseño agradable y fácil de entender. | Mantener una estructura visual simple y priorizar la información más relevante en cada sección. |
+| Ayuda para reconocer, diagnosticar y recuperarse de errores | La plataforma debe informar de manera clara cuando ocurre un error y orientar al usuario sobre cómo solucionarlo. | Inicio de sesión, formularios y solicitudes | 2 | Durante la entrevista no se presentaron errores graves, pero se identificó la necesidad de contar con mensajes más claros cuando una operación no pueda completarse correctamente. | Mostrar mensajes específicos que indiquen qué ocurrió y qué debe hacer el usuario para corregir el problema. |
+| Ayuda y documentación | El usuario debe contar con información suficiente para comprender las funcionalidades y tomar decisiones dentro de la plataforma. | Consulta de productos de seguros y proceso de solicitud | 2 | El participante indicó que sería útil disponer de más información sobre precios, coberturas, condiciones y beneficios de los seguros antes de tomar una decisión. | Incorporar información detallada de cada producto, ayudas contextuales, preguntas frecuentes y opciones de comparación entre seguros. |
+
+##### Resultado esperado de la evaluación
+
+La evaluación heurística permitió identificar que Livva presenta una base de usabilidad adecuada, especialmente en aspectos relacionados con la claridad general de la interfaz, la consistencia visual y la facilidad para comprender las principales funcionalidades de la plataforma.
+
+A partir de los hallazgos obtenidos, se identificaron las siguientes oportunidades de mejora:
+
+- Incorporar mensajes de confirmación y estados de carga después de realizar acciones importantes.
+- Mejorar la visibilidad de algunas opciones de navegación para que puedan ser encontradas con mayor rapidez.
+- Reforzar las validaciones en formularios para evitar el ingreso de información incompleta o incorrecta.
+- Mostrar mensajes de error más claros que indiquen cómo resolver un problema.
+- Incorporar información más detallada sobre precios, coberturas, condiciones y beneficios de los seguros.
+- Agregar opciones que permitan comparar productos de seguros de manera más sencilla.
+- Incluir ayudas contextuales en términos o procesos que puedan resultar poco familiares para los usuarios.
+
+En general, los hallazgos identificados presentan niveles de severidad bajos y medios, por lo que no se evidenciaron problemas críticos que impidan completar los principales flujos de la plataforma. Sin embargo, las mejoras propuestas permitirían optimizar la experiencia de usuario y facilitar la toma de decisiones dentro de Livva.
 
 ## 5.4. Video About-the-Product
 
