@@ -3556,9 +3556,9 @@ Durante el Sprint 3, el equipo de Livva Care se enfoca en la implementación de 
 | Campo | Descripción |
 |---|---|
 | Sprint # | Sprint 3 |
-| Date | [EQUIPO: fecha de la reunión] |
-| Time | [EQUIPO: hora] |
-| Location | [EQUIPO: lugar o medio de la reunión] |
+| Date | 2026 - 11 -11 |
+| Time | 5:00 PM |
+| Location | Reunion virtual |
 | Prepared By | Livva Care Team |
 | Attendees | Paredes Chavez, Carlos Augusto / Torres Diaz, Rolando Andre / Contreras Panuera, Fernando Fabrizio / Cespedes Lezcano, Carlos Gabriel / Rivera Aguilar, Scarlet Josefina |
 | Sprint 2 Review Summary | Durante el Sprint 2 se desarrolló y desplegó la primera versión funcional de la Web Application de Livva con Vue y PrimeVue, incluyendo autenticación y perfil de usuario, gestión de vehículos, solicitudes de seguros vehiculares y de vida, registro de beneficiarios, consulta y renovación de pólizas, registro de siniestros vehiculares, internacionalización y diseño responsive, utilizando una Fake API con JSON Server. |
@@ -3567,17 +3567,30 @@ Durante el Sprint 3, el equipo de Livva Care se enfoca en la implementación de 
 | Sprint 3 Velocity | [EQUIPO: Story Points] |
 | Sum of Story Points | [EQUIPO: Story Points] |
 
-#### 5.2.3.2. Aspect Leaders and Collaborators
+### 5.2.3.2. Aspect Leaders and Collaborators
 
-La siguiente matriz LACX muestra la distribución de liderazgo y colaboración del equipo durante el Sprint 3. La letra `L` identifica al responsable principal del aspecto y la letra `C` a los integrantes que participaron como colaboradores.
+Durante el Sprint 3, el equipo de Livva Care organiza sus responsabilidades considerando los diferentes bounded contexts del backend y las actividades relacionadas con su implementación y despliegue.
 
-| Team Member | GitHub Username | Identity & Profile Management | Insurance Offering & Applications | Policy Management | Claims & Indemnities | Subscription Management | Notification Management | Web Services Deployment |
+Para establecer una distribución adecuada de responsabilidades, se utiliza la Leadership-and-Collaboration Matrix (LACX), que permite identificar a los integrantes responsables del liderazgo y la colaboración en cada aspecto del desarrollo.
+
+La letra L representa al líder responsable de coordinar las actividades correspondientes a un aspecto, mientras que la letra C identifica a los integrantes que participan como colaboradores.
+
+Los aspectos considerados durante este Sprint son Identity & Profile Management, Insurance Offering & Applications, Policy Management, Claims & Indemnities, Subscription Management, Notification Management y Web Services Deployment.
+
+La asignación de responsabilidades debe corresponder con las actividades desarrolladas por cada integrante y las evidencias de participación registradas en GitHub.
+
+| Team Member | GitHub Username | Identity & Profile | Insurance Offering | Policy Management | Claims & Indemnities | Subscription Management | Notification Management | Web Services Deployment |
 |---|---|---|---|---|---|---|---|---|
-| Paredes Chavez, Carlos Augusto | CarlossUPC | [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] |
-| Torres Diaz, Rolando Andre | ROLO194 | [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] |
-| Contreras Panuera, Fernando Fabrizio | FernSkibidi69 | [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] |
-| Cespedes Lezcano, Carlos Gabriel | Leikop | [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] |
-| Rivera Aguilar, Scarlet Josefina | scarletriveraaguilar-spec | [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] |
+| Paredes Chavez, Carlos Augusto | CarlossUPC | L | C | L | L | C | C | C |
+| Torres Diaz, Rolando Andre | ROLO194 | C | C | C | C | C | C | C |
+| Contreras Panuera, Fernando Fabrizio | FernSkibidi69 | C | C | C | C | C | C | C |
+| Cespedes Lezcano, Carlos Gabriel | Leikop | L | L | L | C | L | L | C |
+| Rivera Aguilar, Scarlet Josefina | scarletriveraaguilar-spec | C | C | C | L | C | C | C |
+
+**Leyenda:**
+- **L (Leader):** Responsable principal del aspecto.
+- **C (Collaborator):** Integrante que colabora en el desarrollo del aspecto.
+- **—:** Sin participación asignada.
 
 #### 5.2.3.3. Sprint Backlog 3
 
@@ -3595,14 +3608,52 @@ Los estados utilizados son To-do, In-Process, To-Review y Done.
 
 #### 5.2.3.4. Development Evidence for Sprint Review
 
-En esta sección se presentan las evidencias de implementación de los Web Services de Livva correspondientes al Sprint 3, identificando el repositorio, la rama, el commit y su fecha.
 
-**Repositorio de los Web Services:** [livva-web-services](https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-web-services)
+Durante el Sprint 3, se registraron avances significativos en la implementación de los RESTful Web Services de Livva, siguiendo una arquitectura basada en Domain-Driven Design (DDD) y utilizando ASP.NET Core 10, Entity Framework Core y MySQL.
+
+El historial de GitHub evidencia el desarrollo incremental de los diferentes bounded contexts, mediante ramas independientes que permiten organizar las funcionalidades y mantener un control adecuado sobre los cambios realizados.
+
+Entre los principales avances se encuentran la configuración inicial del proyecto, la implementación de los módulos Identity & Profile Management, Insurance Offering & Applications, Policy Management, Subscription Management y Notification Management.
+
+Asimismo, se registraron avances en Claims & Indemnities, incluyendo la implementación de agregados de dominio, comandos, consultas, auditorías y mecanismos de seguimiento de estados relacionados con reclamos vehiculares y solicitudes de indemnización.
+
+Las evidencias obtenidas mediante el historial de commits permiten verificar la evolución del código fuente y la integración progresiva de funcionalidades hacia la rama `develop`.
+
+#### Registro de commits del Sprint 3
+
+La siguiente tabla presenta los principales commits identificados en el historial del repositorio.
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 |---|---|---|---|---|---|
-| livva-web-services | develop | `ca33303` | `chore: initialize asp.net core web api project` | Se creó la solución `livva-web-services` con el proyecto ASP.NET Core Web API `LivvaPlatform.API` sobre .NET 10. | 2026-11-08 |
-| livva-web-services | feature/project-setup | `46d37fe` | `feat: add shared kernel, localization, openapi configuration and test projects` | Se incorporaron el bounded context Shared, la localización, la documentación OpenAPI con Scalar y Swagger UI, la conexión a MySQL y los proyectos de pruebas unitarias y de integración. | 2026-11-08 |
+| livva-web-services | develop | ca33303 | chore: initialize asp.net core web api project | Inicialización de la solución ASP.NET Core Web API. | 2026-11-08 |
+| livva-web-services | feature/project-setup | 46d37fe | feat: add shared kernel, localization, openapi configuration and test projects | Incorporación de componentes compartidos, localización, OpenAPI y proyectos de pruebas. | 2026-11-08 |
+| livva-web-services | develop | a32d4a3 | Merge branch 'feature/project-setup' into develop | Integración de la configuración inicial del proyecto. | 2026-11-08 |
+| livva-web-services | feature/identity-and-profile-management | b389cfe | feat(iam): add identity and profile management with jwt authentication | Implementación del módulo de usuarios, perfiles y autenticación JWT. | 2026-11-08 |
+| livva-web-services | develop | 051ff40 | Merge branch 'feature/identity-and-profile-management' into develop | Integración del módulo Identity & Profile Management. | 2026-11-08 |
+| livva-web-services | feature/policy-management | 7102db6 | feat(policy-management): add policies, coverages, documents and renewals | Implementación de pólizas, coberturas, documentos y renovaciones. | 2026-11-08 |
+| livva-web-services | develop | 637821b | Merge branch 'feature/policy-management' into develop | Integración del módulo Policy Management. | 2026-11-08 |
+| livva-web-services | develop | bd19b2e | Merge branch 'feature/insurance-offering-and-applications' into develop | Integración de los servicios relacionados con seguros y solicitudes. | 2026-11-08 |
+| livva-web-services | develop | fb115a4 | Merge branch 'feature/subscription-management' into develop | Integración del módulo Subscription Management. | 2026-11-08 |
+| livva-web-services | develop | f3554bc | Merge branch 'feature/notification-management' into develop | Integración del módulo Notification Management. | 2026-11-09 |
+| livva-web-services | feature/claims-and-indemnities | da2ae2f | feat(claims-and-indemnities): add vehicle claim status | Incorporación de estados para reclamos vehiculares. | 2026-11-09 |
+| livva-web-services | feature/claims-and-indemnities | f7329f9 | feat(claims-and-indemnities): add indemnity request statuses | Incorporación de estados para solicitudes de indemnización. | 2026-11-09 |
+| livva-web-services | feature/claims-and-indemnities | aaff711 | feat(claims-and-indemnities): add create vehicle claim command | Incorporación del comando para registrar reclamos vehiculares. | 2026-11-09 |
+| livva-web-services | feature/claims-and-indemnities | a66a176 | feat(claims-and-indemnities): add change vehicle claim status command | Incorporación del comando para modificar estados de reclamos. | 2026-11-09 |
+| livva-web-services | feature/claims-and-indemnities | 840eeff | feat(claims-and-indemnities): add vehicle claim aggregate | Implementación del agregado de reclamos vehiculares. | 2026-11-09 |
+| livva-web-services | feature/claims-and-indemnities | 89d0f05 | feat(claims-and-indemnities): add vehicle claim status history | Incorporación del historial de estados de reclamos. | 2026-11-09 |
+| livva-web-services | feature/claims-and-indemnities | 0726ceb | feat(claims-and-indemnities): add vehicle claim audit | Incorporación de auditoría para reclamos vehiculares. | 2026-11-09 |
+| livva-web-services | feature/claims-and-indemnities | ecdbcff | feat(claims-and-indemnities): add indemnity request aggregate | Implementación del agregado de solicitudes de indemnización. | 2026-11-09 |
+| livva-web-services | feature/claims-and-indemnities | af9c084 | feat(claims-and-indemnities): add indemnity request audit | Incorporación de auditoría para solicitudes de indemnización. | 2026-11-09 |
+| livva-web-services | feature/claims-and-indemnities | ca0f049 | feat(claims-and-indemnities): add indemnity status history | Incorporación del historial de estados de indemnización. | 2026-11-09 |
+| livva-web-services | feature/claims-and-indemnities | c5e14d1 | feat(claims-and-indemnities): add get vehicle claim by id query | Implementación de la consulta de reclamos mediante identificador. | 2026-11-09 |
+
+
+#### Evidencias de implementación
+
+
+El desarrollo realizado durante el Sprint 3 permitió establecer la estructura técnica de los principales servicios de Livva y avanzar en la implementación de los componentes necesarios para su integración con la Web Application.
+
+La verificación del funcionamiento de los servicios y los resultados obtenidos mediante solicitudes HTTP serán documentados en la sección 5.2.3.5. Execution Evidence for Sprint Review.
 
 <!-- [EQUIPO] Agregar los commits de los bounded contexts implementados durante el Sprint 3. -->
 
