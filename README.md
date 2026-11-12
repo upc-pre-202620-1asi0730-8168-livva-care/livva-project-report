@@ -3657,93 +3657,730 @@ La verificación del funcionamiento de los servicios y los resultados obtenidos 
 
 <!-- [EQUIPO] Agregar los commits de los bounded contexts implementados durante el Sprint 3. -->
 
-#### 5.2.3.5. Execution Evidence for Sprint Review
-
-<!-- [EQUIPO] Agregar capturas de la Web Application consumiendo los Web Services y el enlace al video de ejecución del Sprint 3. -->
-
-#### 5.2.3.6. Services Documentation Evidence for Sprint Review
-
-La documentación de los Web Services se genera mediante la especificación OpenAPI integrada en ASP.NET Core. El documento OpenAPI se encuentra disponible en `/openapi/v1.json`, y la documentación interactiva puede consultarse mediante Scalar (`/scalar`) y Swagger UI (`/swagger`).
-
-| Endpoint | Verbo HTTP | Descripción | Parámetros | Respuestas |
-|---|---|---|---|---|
-| [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] |
-
-<!-- [EQUIPO] Agregar capturas de la interacción con los endpoints en Swagger UI o Scalar con datos de muestra y los commits relacionados. -->
-
-#### 5.2.3.7. Software Deployment Evidence for Sprint Review
-Durante el Sprint 3, el equipo de Livva Care contempla el despliegue de la primera versión de los RESTful Web Services desarrollados mediante ASP.NET Core 10 y Entity Framework Core. Para este proceso se utilizará Railway como plataforma de alojamiento en la nube, permitiendo que los servicios del backend estén disponibles para su integración con la Web Application.
-
-El despliegue se realizará utilizando el repositorio `livva-web-services`, el cual contiene la configuración necesaria para construir y ejecutar la aplicación mediante Docker. Asimismo, se utilizará MySQL como sistema de gestión de base de datos para garantizar la persistencia de información de los diferentes bounded contexts.
 
 
-Durante el Sprint 3, el equipo de Livva Care contempla el despliegue de la primera versión de los RESTful Web Services desarrollados mediante ASP.NET Core 10 y Entity Framework Core. Para este proceso se utilizará Railway como plataforma de alojamiento en la nube, permitiendo que los servicios del backend estén disponibles para su integración con la Web Application.
+### 5.2.3.5. Execution Evidence for Sprint Review
 
-El despliegue se realizará utilizando el repositorio `livva-web-services`, el cual contiene la configuración necesaria para construir y ejecutar la aplicación mediante Docker. Asimismo, se utilizará MySQL como sistema de gestión de base de datos para garantizar la persistencia de información de los diferentes bounded contexts.
+Durante el Sprint 3, Livva Care avanzó en la implementación de los Web Services encargados de gestionar los principales procesos de la plataforma. La solución utiliza ASP.NET Core 10, Entity Framework Core y MySQL, permitiendo estructurar los servicios mediante bounded contexts y preparar su integración con la Web Application.
 
-##### Proceso de despliegue de Web Services
+Para comprobar el funcionamiento de los servicios desarrollados, se contemplan los siguientes escenarios de ejecución:
 
-El procedimiento previsto comprende las siguientes actividades:
+- **Ejecución del backend:** verificación del inicio de la aplicación ASP.NET Core y la disponibilidad de los controladores REST mediante solicitudes HTTP.
+- **Autenticación de usuarios:** pruebas de registro e inicio de sesión mediante los endpoints SignUp y SignIn, verificando la generación de tokens JWT.
+- **Gestión de seguros:** consulta de aseguradoras, productos de seguros y vehículos mediante los endpoints del módulo Insurance Offering & Applications.
+- **Gestión de pólizas:** verificación de las operaciones de consulta y registro de pólizas, coberturas y renovaciones.
+- **Gestión de suscripciones:** consulta de planes y verificación de los servicios relacionados con suscripciones y órdenes de pago.
+- **Gestión de notificaciones:** consulta y administración de notificaciones asociadas a los usuarios.
+- **Persistencia de información:** comprobación de las tablas generadas mediante las migraciones de Entity Framework Core y su conexión con MySQL.
+- **Integración Frontend-Backend:** verificación de la comunicación entre la Web Application desarrollada con Vue 3 y los servicios RESTful, conforme se incorporen las conexiones reales.
 
-1. Vincular el repositorio `livva-web-services` con Railway.
-2. Configurar el servicio utilizando el archivo `Dockerfile` existente.
-3. Crear y configurar la instancia de MySQL.
-4. Establecer las variables de entorno necesarias para la conexión a la base de datos y la autenticación JWT.
-5. Ejecutar el despliegue del backend en Railway.
-6. Verificar la aplicación de las migraciones mediante Entity Framework Core.
-7. Comprobar el funcionamiento de los endpoints utilizando Scalar.
+#### Evidencias de ejecución de los Web Services
 
-##### Evidencias del despliegue
+La verificación de los endpoints se realizará mediante Scalar, que permite visualizar los recursos disponibles y ejecutar solicitudes HTTP.
 
-Las evidencias correspondientes serán incorporadas una vez finalizado el proceso de configuración y publicación de los Web Services.
+| Funcionalidad | Endpoint | Método HTTP | Evidencia |
+|---|---|---|---|
+| Registro de usuario | `/api/v1/Authentication/sign-up` | POST | Respuesta del registro |
+| Inicio de sesión | `/api/v1/Authentication/sign-in` | POST | Autenticación JWT |
+| Consulta de aseguradoras | `/api/v1/Insurers` | GET | Listado de aseguradoras |
+| Consulta de productos | `/api/v1/InsuranceProducts` | GET | Listado de seguros |
+| Consulta de vehículos | `/api/v1/Vehicles` | GET | Vehículos registrados |
+| Consulta de pólizas | `/api/v1/Policies` | GET | Pólizas disponibles |
+| Planes de suscripción | `/api/v1/SubscriptionPlans` | GET | Planes registrados |
+| Consulta de notificaciones | `/api/v1/Notifications` | GET | Notificaciones disponibles |
 
-**Figura pendiente: Configuración del servicio de Web Services en Railway.**
+#### Evidencias visuales
 
-[insertar captura de la configuración del servicio en Railway]
+**Figura 1. Ejecución del backend y documentación de endpoints mediante Scalar.**
 
-**Figura pendiente: Resultado del despliegue del backend.**
+[Insertar captura de Scalar con los servicios disponibles]
 
-[insertar captura del despliegue exitoso en Railway]
+**Figura 2. Verificación del registro e inicio de sesión.**
 
-**Figura pendiente: Configuración y conexión de MySQL.**
+[Insertar captura de las solicitudes HTTP y sus respuestas]
 
-[insertar captura de la base de datos y las tablas generadas]
+**Figura 3. Consulta de productos de seguros.**
 
-**Figura pendiente: Documentación de Web Services mediante Scalar.**
+[Insertar captura del endpoint y los datos obtenidos]
 
-[insertar captura de Scalar utilizando la URL pública del backend]
+**Figura 4. Verificación de la persistencia de información en MySQL.**
 
-##### URLs de los productos desplegados
+[Insertar captura de las tablas y registros de la base de datos]
+
+**Figura 5. Ejecución de la Web Application de Livva.**
+
+[Insertar captura de las principales funcionalidades disponibles]
+
+#### Video de ejecución
+
+Como complemento de las evidencias visuales, se incorporará un video demostrativo de las principales funcionalidades implementadas durante el Sprint 3.
+
+| Elemento | Descripción |
+|---|---|
+| Producto | Livva Web Services y Web Application |
+| Sprint | Sprint 3 |
+| Herramientas | ASP.NET Core 10, Scalar, MySQL y Vue 3 |
+| Video de ejecución | [EQUIPO: URL de Microsoft Stream] |
+| Duración | [EQUIPO: duración del video] |
+
+Los resultados de las pruebas permitirán comprobar el funcionamiento de los principales servicios, verificar la comunicación con MySQL e identificar posibles errores antes de completar la integración con la Web Application.
+
+
+### 5.2.3.6. Services Documentation Evidence for Sprint Review
+
+Durante el Sprint 3, Livva Care incorporó la documentación de los RESTful Web Services desarrollados mediante ASP.NET Core 10. Los servicios se encuentran organizados según los bounded contexts definidos en la arquitectura del sistema, permitiendo administrar usuarios, seguros, pólizas, suscripciones y notificaciones.
+
+Para documentar las operaciones disponibles se utiliza OpenAPI, junto con Scalar y Swagger UI, herramientas que permiten consultar los endpoints, identificar sus parámetros y visualizar los esquemas de solicitudes y respuestas HTTP.
+
+La versión del backend revisada contiene 57 operaciones HTTP distribuidas en 19 controladores REST, correspondientes a cinco bounded contexts integrados en la rama `develop`.
+
+#### Documentación OpenAPI
+
+El backend dispone de las siguientes rutas de documentación:
+
+| Herramienta | Ruta | Descripción |
+|---|---|---|
+| OpenAPI | `/openapi/v1.json` | Especificación de las operaciones REST disponibles. |
+| Scalar | `/scalar` | Interfaz interactiva para consultar y ejecutar endpoints. |
+| Swagger UI | `/swagger` | Interfaz alternativa para consultar la documentación de los servicios. |
+
+La documentación puede consultarse localmente mediante `http://localhost:5033/scalar`, siempre que la aplicación se encuentre ejecutándose en dicho puerto.
+
+#### Endpoints de Identity & Profile Management
+
+Este bounded context permite registrar usuarios, autenticar credenciales y administrar perfiles personales mediante servicios protegidos con JWT.
+
+| Método | Endpoint | Descripción | Respuesta |
+|---|---|---|---|
+| POST | `/api/v1/Authentication/sign-up` | Registra un usuario. | 201 |
+| POST | `/api/v1/Authentication/sign-in` | Autentica credenciales y genera un token JWT. | 200 |
+| GET | `/api/v1/Users` | Consulta usuarios registrados. | 200 |
+| GET | `/api/v1/Users/{userId}` | Obtiene un usuario por identificador. | 200 |
+| PATCH | `/api/v1/Users/{userId}` | Actualiza información del usuario. | 200 |
+| POST | `/api/v1/UserProfiles` | Crea un perfil de usuario. | 201 |
+| GET | `/api/v1/UserProfiles` | Consulta los perfiles registrados. | 200 |
+| GET | `/api/v1/UserProfiles/{userProfileId}` | Obtiene un perfil por identificador. | 200 |
+| PATCH | `/api/v1/UserProfiles/{userProfileId}` | Actualiza un perfil existente. | 200 |
+
+Las operaciones de consulta permiten utilizar filtros como `email` y `userId`, según el recurso solicitado.
+
+#### Endpoints de Insurance Offering & Applications
+
+Este bounded context gestiona aseguradoras, productos de seguros, vehículos, solicitudes de seguros vehiculares y de vida, así como beneficiarios.
+
+| Método | Endpoint | Descripción | Respuesta |
+|---|---|---|---|
+| GET | `/api/v1/Insurers` | Consulta aseguradoras. | 200 |
+| GET | `/api/v1/Insurers/{insurerId}` | Consulta una aseguradora por ID. | 200 |
+| GET | `/api/v1/InsuranceProducts` | Consulta productos de seguros. | 200 |
+| GET | `/api/v1/InsuranceProducts/{productId}` | Consulta un producto específico. | 200 |
+| POST | `/api/v1/Vehicles` | Registra un vehículo. | 201 |
+| GET | `/api/v1/Vehicles` | Consulta vehículos registrados. | 200 |
+| GET | `/api/v1/Vehicles/{vehicleId}` | Consulta un vehículo por ID. | 200 |
+| PATCH | `/api/v1/Vehicles/{vehicleId}` | Actualiza información de un vehículo. | 200 |
+| DELETE | `/api/v1/Vehicles/{vehicleId}` | Elimina un vehículo. | 204 |
+| POST | `/api/v1/InsuranceApplications` | Registra una solicitud de seguro. | 201 |
+| GET | `/api/v1/InsuranceApplications` | Consulta solicitudes de seguros. | 200 |
+| GET | `/api/v1/InsuranceApplications/{applicationId}` | Consulta una solicitud por ID. | 200 |
+| DELETE | `/api/v1/InsuranceApplications/{applicationId}` | Elimina una solicitud. | 204 |
+| POST | `/api/v1/VehicleInsuranceApplications` | Registra una solicitud de seguro vehicular. | 201 |
+| GET | `/api/v1/VehicleInsuranceApplications` | Consulta solicitudes vehiculares. | 200 |
+| GET | `/api/v1/VehicleInsuranceApplications/{id}` | Consulta el detalle de una solicitud vehicular. | 200 |
+| POST | `/api/v1/LifeInsuranceApplications` | Registra una solicitud de seguro de vida. | 201 |
+| GET | `/api/v1/LifeInsuranceApplications` | Consulta solicitudes de seguros de vida. | 200 |
+| GET | `/api/v1/LifeInsuranceApplications/{id}` | Consulta el detalle de una solicitud de vida. | 200 |
+| POST | `/api/v1/Beneficiaries` | Registra un beneficiario. | 201 |
+| GET | `/api/v1/Beneficiaries` | Consulta beneficiarios registrados. | 200 |
+| GET | `/api/v1/Beneficiaries/{beneficiaryId}` | Consulta un beneficiario por ID. | 200 |
+| PATCH | `/api/v1/Beneficiaries/{beneficiaryId}` | Actualiza información de un beneficiario. | 200 |
+
+Los servicios de consulta contemplan filtros como `insuranceType`, `insurerId`, `userId`, `applicationId` y `policyId`, según el recurso correspondiente.
+
+#### Endpoints de Policy Management
+
+Este bounded context administra pólizas emitidas, coberturas, documentos y solicitudes de renovación.
+
+| Método | Endpoint | Descripción | Respuesta |
+|---|---|---|---|
+| GET | `/api/v1/Policies` | Consulta pólizas. | 200 |
+| GET | `/api/v1/Policies/{policyId}` | Consulta una póliza por identificador. | 200 |
+| POST | `/api/v1/Policies` | Registra una póliza. | 201 |
+| GET | `/api/v1/PolicyCoverages` | Consulta coberturas de pólizas. | 200 |
+| GET | `/api/v1/PolicyCoverages/{id}` | Consulta una cobertura por ID. | 200 |
+| GET | `/api/v1/PolicyDocuments` | Consulta documentos asociados a pólizas. | 200 |
+| GET | `/api/v1/PolicyDocuments/{id}` | Consulta un documento por ID. | 200 |
+| POST | `/api/v1/Renewals` | Registra una solicitud de renovación. | 201 |
+| GET | `/api/v1/Renewals` | Consulta renovaciones. | 200 |
+| GET | `/api/v1/Renewals/{renewalId}` | Consulta una renovación por ID. | 200 |
+
+#### Endpoints de Subscription Management
+
+Este bounded context permite administrar planes, suscripciones y pagos. Además, incorpora un servicio de órdenes de pago asociado con Mercado Pago.
+
+| Método | Endpoint | Descripción | Respuesta |
+|---|---|---|---|
+| GET | `/api/v1/SubscriptionPlans` | Consulta planes disponibles. | 200 |
+| GET | `/api/v1/SubscriptionPlans/{planId}` | Consulta un plan por ID. | 200 |
+| POST | `/api/v1/UserSubscriptions` | Registra una suscripción. | 201 |
+| GET | `/api/v1/UserSubscriptions` | Consulta suscripciones de usuarios. | 200 |
+| GET | `/api/v1/UserSubscriptions/{userSubscriptionId}` | Consulta una suscripción por ID. | 200 |
+| PATCH | `/api/v1/UserSubscriptions/{userSubscriptionId}` | Actualiza una suscripción. | 200 |
+| DELETE | `/api/v1/UserSubscriptions/{userSubscriptionId}` | Elimina una suscripción. | 204 |
+| POST | `/api/v1/SubscriptionPayments` | Registra un pago de suscripción. | 201 |
+| GET | `/api/v1/SubscriptionPayments` | Consulta pagos registrados. | 200 |
+| GET | `/api/v1/SubscriptionPayments/{subscriptionPaymentId}` | Consulta un pago por ID. | 200 |
+| POST | `/api/v1/PaymentOrders` | Crea una orden de pago. | 201 |
+
+Los servicios incluyen filtros por usuario, suscripción y estado activo del plan, según la operación consultada.
+
+#### Endpoints de Notification Management
+
+Este bounded context proporciona operaciones para registrar, consultar y actualizar notificaciones de los usuarios.
+
+| Método | Endpoint | Descripción | Respuesta |
+|---|---|---|---|
+| POST | `/api/v1/Notifications` | Registra una notificación. | 201 |
+| GET | `/api/v1/Notifications` | Consulta notificaciones. | 200 |
+| GET | `/api/v1/Notifications/{notificationId}` | Consulta una notificación por ID. | 200 |
+| PATCH | `/api/v1/Notifications/{notificationId}` | Actualiza una notificación. | 200 |
+
+Las respuestas indicadas corresponden a los códigos de éxito declarados en los controladores. Dependiendo de la solicitud, también pueden producirse errores de validación, autenticación, recursos inexistentes o conflictos.
+
+#### Ejemplos de solicitudes y respuestas HTTP
+
+La documentación OpenAPI permite identificar los esquemas JSON que utilizan los diferentes servicios.
+
+A continuación se presentan ejemplos ilustrativos basados en los contratos de la API.
+
+**Ejemplo 1. Registro de usuario**
+
+Endpoint: `POST /api/v1/Authentication/sign-up`
+
+Solicitud:
+
+```json
+{
+  "firstName": "Usuario",
+  "lastName": "Prueba",
+  "email": "usuario@example.com",
+  "password": "Password123",
+  "phone": "999999999"
+}
+```
+
+Respuesta esperada: `201 Created`, con la información del usuario registrado.
+
+**Ejemplo 2. Inicio de sesión**
+
+Endpoint: `POST /api/v1/Authentication/sign-in`
+
+Solicitud:
+
+```json
+{
+  "email": "usuario@example.com",
+  "password": "Password123"
+}
+```
+
+Respuesta esperada: `200 OK`.
+
+El recurso de respuesta contiene el identificador del usuario, nombre, apellido, correo electrónico, teléfono, rol, estado de la cuenta y token JWT.
+
+**Ejemplo 3. Consulta de productos de seguros**
+
+Endpoint: `GET /api/v1/InsuranceProducts?insuranceType=vehicle`
+
+Parámetro utilizado:
+
+- `insuranceType`: permite filtrar productos según el tipo de seguro, vehicular o de vida.
+
+Respuesta esperada: `200 OK`, con una colección de productos que incluye identificadores, aseguradora, nombre del producto, tipo de seguro, cobertura, prima y estado.
+
+#### Seguridad y autenticación
+
+Los servicios protegidos utilizan autenticación JWT. Para acceder a ellos, el cliente debe enviar un token válido mediante el encabezado HTTP:
+
+`Authorization: Bearer {token}`
+
+Los tokens se obtienen mediante el endpoint de inicio de sesión y permiten autenticar las solicitudes realizadas a los recursos protegidos.
+
+#### Evidencias de documentación de servicios
+
+Se incorporarán capturas de Scalar que permitan demostrar la disponibilidad de la documentación y los contratos de los endpoints desarrollados.
+
+**Figura 1. Documentación OpenAPI de Livva mediante Scalar.**
+
+[Insertar captura de la interfaz de Scalar mostrando los controladores disponibles]
+
+**Figura 2. Documentación del endpoint de registro de usuarios.**
+
+[Insertar captura del método POST, parámetros y esquema de respuesta]
+
+**Figura 3. Documentación de los endpoints de Insurance Offering & Applications.**
+
+[Insertar captura de los endpoints de productos de seguros y vehículos]
+
+**Figura 4. Documentación del módulo Policy Management.**
+
+[Insertar captura de los endpoints relacionados con pólizas]
+
+**Figura 5. Documentación del módulo Subscription Management.**
+
+[Insertar captura de la documentación de suscripciones y órdenes de pago]
+
+**Figura 6. Documentación del módulo Notification Management.**
+
+[Insertar captura de los endpoints de notificaciones]
+
+#### Información de referencia
+
+| Elemento | Información |
+|---|---|
+| Repositorio | https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-web-services |
+| Documento OpenAPI local | http://localhost:5033/openapi/v1.json |
+| Documentación Scalar local | http://localhost:5033/scalar |
+| Documentación pública | [EQUIPO: URL pública de Scalar] |
+| Commits relacionados | [EQUIPO: identificadores de los commits de documentación] |
+
+La documentación de los Web Services facilita la comprensión de los contratos de comunicación y constituye una referencia técnica para el desarrollo, mantenimiento e integración de la API con la Web Application de Livva.
+
+Las capturas de solicitudes ejecutadas y sus resultados se presentarán en la sección de Execution Evidence, mientras que las evidencias de la publicación cloud se incorporarán en Software Deployment Evidence.
+
+
+
+### 5.2.3.7. Software Deployment Evidence for Sprint Review
+
+Durante el Sprint 3, Livva Care contempla el despliegue de la primera versión de sus RESTful Web Services mediante Railway, una plataforma cloud que permite alojar y ejecutar aplicaciones utilizando contenedores Docker.
+
+El objetivo de esta implementación es disponer de un backend accesible mediante una URL pública, permitiendo que la Web Application pueda consumir servicios reales para la gestión de usuarios, seguros, pólizas, suscripciones y notificaciones.
+
+Para el despliegue se utilizará el repositorio `livva-web-services`, desarrollado con ASP.NET Core 10 y Entity Framework Core, junto con una base de datos MySQL encargada de almacenar la información de los diferentes bounded contexts.
+
+#### Configuración del entorno de despliegue
+
+La arquitectura de despliegue contempla los siguientes componentes:
+
+| Componente | Tecnología | Descripción |
+|---|---|---|
+| Web Services | ASP.NET Core 10 | Implementación de los servicios RESTful de Livva. |
+| Cloud Hosting | Railway | Plataforma de alojamiento y ejecución del backend. |
+| Containerization | Docker | Construcción y ejecución del backend mediante contenedores. |
+| Database | MySQL | Almacenamiento de información de la plataforma. |
+| Data Persistence | Entity Framework Core | Gestión de entidades, consultas y migraciones de base de datos. |
+| API Documentation | Scalar y OpenAPI | Documentación y verificación de los endpoints disponibles. |
+| Version Control | GitHub | Administración del código fuente y sus versiones. |
+
+El repositorio cuenta con un archivo `Dockerfile` que permite construir la aplicación utilizando las imágenes oficiales de .NET 10.
+
+Este archivo establece las instrucciones necesarias para restaurar dependencias, compilar el proyecto y ejecutar la aplicación en un contenedor. Asimismo, permite utilizar la variable `PORT` proporcionada por Railway para configurar el puerto de escucha.
+
+#### Configuración de variables de entorno
+
+Para garantizar el funcionamiento del backend en Railway, se requiere establecer las variables de entorno relacionadas con la conexión a MySQL, autenticación JWT y comunicación con servicios externos.
+
+| Variable | Descripción |
+|---|---|
+| `MYSQLHOST` | Dirección del servidor MySQL. |
+| `MYSQLPORT` | Puerto utilizado para la conexión con MySQL. |
+| `MYSQLUSER` | Usuario de acceso a la base de datos. |
+| `MYSQLPASSWORD` | Contraseña de conexión a MySQL. |
+| `MYSQLDATABASE` | Nombre de la base de datos utilizada por Livva. |
+| `JWT_SECRET` | Clave secreta utilizada para firmar los tokens JWT. |
+| `MERCADO_PAGO_ACCESS_TOKEN` | Credencial utilizada para las operaciones de pago con Mercado Pago. |
+| `Cors__AllowedOrigins` | Direcciones autorizadas para consumir los Web Services desde aplicaciones externas. |
+
+La configuración de producción se encuentra definida en `appsettings.Production.json`, donde la cadena de conexión utiliza las variables correspondientes a MySQL.
+
+Asimismo, el backend requiere una clave JWT de al menos 32 caracteres para permitir el funcionamiento del sistema de autenticación.
+
+Las credenciales serán administradas mediante las variables de entorno de Railway, evitando almacenar información sensible directamente en el código fuente.
+
+#### Procedimiento de despliegue
+
+El procedimiento previsto para la publicación del backend comprende las siguientes actividades:
+
+1. Acceder a Railway y crear un proyecto para los Web Services de Livva.
+2. Vincular el repositorio `livva-web-services` alojado en GitHub.
+3. Seleccionar la rama correspondiente para realizar el despliegue.
+4. Configurar el servicio utilizando el archivo `Dockerfile`.
+5. Incorporar un servicio MySQL y establecer las variables de conexión.
+6. Configurar las variables de autenticación JWT, Mercado Pago y CORS.
+7. Ejecutar la construcción y publicación del backend.
+8. Verificar la aplicación de las migraciones de Entity Framework Core.
+9. Generar una URL pública para los Web Services.
+10. Comprobar la disponibilidad de los endpoints mediante Scalar.
+
+#### Evidencias del despliegue
+
+Las siguientes evidencias permitirán documentar el proceso de configuración y publicación de los Web Services.
+
+**Figura 1. Configuración del proyecto Livva Web Services en Railway.**
+
+[Insertar captura del proyecto creado en Railway]
+
+**Figura 2. Configuración y ejecución del servicio backend.**
+
+[Insertar captura del servicio ASP.NET Core y del resultado del despliegue]
+
+**Figura 3. Configuración del servicio MySQL.**
+
+[Insertar captura del servicio MySQL asociado al proyecto]
+
+**Figura 4. Variables de entorno del backend.**
+
+[Insertar captura de las variables configuradas, ocultando sus valores sensibles]
+
+**Figura 5. Verificación de las migraciones de Entity Framework Core.**
+
+[Insertar captura de las tablas generadas o registros de ejecución de las migraciones]
+
+**Figura 6. Documentación de los Web Services desplegados mediante Scalar.**
+
+[Insertar captura de Scalar utilizando la URL pública del backend]
+
+#### URLs de los productos desplegados
 
 | Producto | URL |
 |---|---|
 | Landing Page | https://upc-pre-202620-1asi0730-8168-livva-care.github.io/livva-landing-page/ |
 | Web Application | https://livva-web-application.web.app/ |
-| Web Services | [EQUIPO: URL pública de los Web Services] |
+| Web Services | [EQUIPO: URL pública de Railway] |
+| Documentación Scalar | [EQUIPO: URL pública de Scalar] |
 
-Una vez completado el despliegue, se realizarán pruebas de disponibilidad y comunicación con MySQL para comprobar que los servicios RESTful pueden responder correctamente a las solicitudes HTTP.
+#### Verificación del despliegue
 
-Los resultados obtenidos y las evidencias correspondientes serán incorporados en esta sección para documentar el cumplimiento de los objetivos de despliegue establecidos durante el Sprint 3.
-| Producto | URL |
-|---|---|
-| Landing Page | https://upc-pre-202620-1asi0730-8168-livva-care.github.io/livva-landing-page/ |
-| Web Application | https://livva-web-application.web.app/ |
-| Web Services | [EQUIPO: URL pública de los Web Services] |
+Una vez publicado el backend, se realizarán verificaciones para comprobar el funcionamiento de los servicios y su comunicación con la base de datos.
+
+Los aspectos principales que se evaluarán son los siguientes:
+
+- Disponibilidad del servicio ASP.NET Core desde una URL pública.
+- Conexión correcta con la instancia MySQL.
+- Aplicación satisfactoria de las migraciones de Entity Framework Core.
+- Acceso a la documentación interactiva mediante Scalar.
+- Funcionamiento de los endpoints RESTful mediante solicitudes HTTP.
+- Validación de la autenticación JWT.
+- Disponibilidad de los servicios para su integración con la Web Application.
+
+Los resultados obtenidos serán registrados mediante capturas y documentación de las pruebas realizadas.
+
+El despliegue de los Web Services permitirá avanzar en la integración de los componentes de Livva, estableciendo un entorno de ejecución externo que facilite la verificación y disponibilidad de las funcionalidades desarrolladas durante el Sprint 3.
 
 
 #### 5.2.3.8. Team Collaboration Insights during Sprint
 
-<!-- [EQUIPO] Agregar capturas de GitHub Insights (commits por integrante) de los repositorios livva-web-services y livva-web-application durante el Sprint 3, y una breve descripción de la colaboración del equipo. -->
+
+### 5.2.3.8. Team Collaboration Insights during Sprint
+
+Durante el Sprint 3, el equipo de Livva Care organizó el desarrollo de los Web Services mediante un esquema de trabajo colaborativo basado en GitFlow, utilizando GitHub para gestionar el código fuente, registrar los avances y facilitar la integración de las funcionalidades implementadas.
+
+El trabajo se distribuyó considerando los diferentes bounded contexts del sistema, permitiendo desarrollar los módulos de manera independiente y mantener una estructura organizada durante la implementación del backend.
+
+Para gestionar los cambios, se utilizaron ramas `feature/*`, donde se desarrollaron las funcionalidades correspondientes antes de incorporarlas progresivamente a la rama `develop`. Asimismo, los commits se registraron siguiendo la especificación Conventional Commits, facilitando la identificación de los cambios realizados.
+
+#### Organización y colaboración durante el Sprint 3
+
+La distribución de responsabilidades se estableció mediante la matriz Leadership-and-Collaboration (LACX), considerando las actividades de implementación, integración, pruebas, documentación y despliegue de los Web Services.
+
+Entre las principales actividades desarrolladas se encuentran:
+
+- Configuración inicial de la solución ASP.NET Core 10.
+- Implementación de los bounded contexts del backend.
+- Configuración de autenticación mediante JWT.
+- Integración de Entity Framework Core con MySQL.
+- Incorporación de documentación OpenAPI mediante Scalar.
+- Desarrollo de componentes relacionados con Claims & Indemnities.
+- Preparación de la configuración de despliegue de los Web Services.
+- Actualización de la documentación técnica correspondiente al Sprint 3.
+
+#### Evidencias de colaboración en GitHub
+
+El historial de commits permite identificar las contribuciones relacionadas con el desarrollo de los principales módulos del sistema.
+
+En las capturas del repositorio se observan integraciones de los módulos Identity & Profile Management, Insurance Offering & Applications, Policy Management, Subscription Management y Notification Management hacia la rama `develop`.
+
+Asimismo, se evidencia el desarrollo incremental del módulo Claims & Indemnities mediante commits relacionados con agregados de dominio, comandos, consultas, auditorías e historiales de estados.
+
+**Figura 1. Historial de commits del repositorio livva-web-services.**
+
+[Insertar captura del historial de commits de GitHub]
+
+**Figura 2. Ramas feature utilizadas durante el Sprint 3.**
+
+[Insertar captura de las ramas del repositorio]
+
+**Figura 3. Integración de funcionalidades hacia la rama develop.**
+
+[Insertar captura de los merges realizados]
+
+#### Registro de participación del equipo
+
+| Team Member | GitHub Username | Actividades y responsabilidades |
+|---|---|---|
+| Paredes Chavez, Carlos Augusto | CarlossUPC | [EQUIPO: incorporar actividades y evidencias verificadas] |
+| Torres Diaz, Rolando Andre | ROLO194 | [EQUIPO: incorporar actividades y evidencias verificadas] |
+| Contreras Panuera, Fernando Fabrizio | FernSkibidi69 | Documentación de la configuración de despliegue y preparación de las evidencias técnicas correspondientes al Sprint 3. |
+| Cespedes Lezcano, Carlos Gabriel | Leikop | Configuración inicial del proyecto e implementación de Identity & Profile Management, Insurance Offering & Applications, Policy Management, Subscription Management y Notification Management. |
+| Rivera Aguilar, Scarlet Josefina | scarletriveraaguilar-spec | Desarrollo de Claims & Indemnities, incluyendo agregados, comandos, consultas, auditorías e historiales de estados. |
+
+#### Project Collaboration Insights
+
+El proceso de desarrollo permitió organizar las funcionalidades del backend mediante ramas independientes, manteniendo un registro de los cambios realizados durante el Sprint 3.
+
+Las integraciones registradas en `develop` evidencian la incorporación progresiva de componentes, mientras que los commits de las ramas feature permiten identificar las actividades de implementación correspondientes a cada módulo.
+
+La utilización de GitHub contribuyó al seguimiento del proyecto, facilitando la revisión de cambios y la trazabilidad del código fuente.
+
+**Figura 4. Analíticos de colaboración del repositorio Web Services.**
+
+[Insertar captura de GitHub Insights mostrando las contribuciones del Sprint 3]
+
+**Figura 5. Historial de colaboración del repositorio Project Report.**
+
+[Insertar captura de los commits de documentación correspondientes al AV2]
+
+**Figura 6. Pull Requests del Sprint 3.**
+
+[Insertar captura de los Pull Requests utilizados para integrar los cambios, si corresponde]
+
+#### Resultados de la colaboración
+
+El desarrollo durante el Sprint 3 permitió avanzar en la construcción de los principales Web Services de Livva, estableciendo una base para la gestión de los procesos de negocio mediante una arquitectura orientada a servicios.
+
+La distribución de responsabilidades y la utilización de herramientas de control de versiones facilitaron la organización del trabajo y el seguimiento de los avances técnicos.
+
+Las evidencias de colaboración recopiladas permiten relacionar las actividades desarrolladas con los objetivos establecidos para el Sprint 3 y con el Student Outcome ABET 5, enfocado en liderazgo compartido, trabajo colaborativo, planificación y cumplimiento de objetivos.
+
 
 ## 5.3. Validation Interviews
 
+
 ### 5.3.1. Diseño de Entrevistas
 
-<!-- [EQUIPO] Definir los segmentos objetivo, las preguntas y los flujos de la aplicación que se validarán con los entrevistados. -->
+Durante el Sprint 3, el equipo de Livva Care plantea la realización de entrevistas de validación dirigidas a los segmentos objetivo de la plataforma, con la finalidad de evaluar la experiencia de usuario, identificar dificultades de interacción y recopilar opiniones sobre las funcionalidades implementadas.
+
+El diseño de las entrevistas se enfoca en analizar aspectos relacionados con la usabilidad, navegación, claridad de la información, accesibilidad y utilidad de las funcionalidades disponibles en la Landing Page y la Web Application.
+
+Para desarrollar este proceso, se consideran dos segmentos objetivo: propietarios de vehículos y personas interesadas en adquirir seguros de vida. Cada participante deberá interactuar previamente con las funcionalidades disponibles de Livva para posteriormente responder las preguntas correspondientes.
+
+Las entrevistas estarán organizadas en dos grupos de preguntas: generales sobre la experiencia con la plataforma y específicas relacionadas con las necesidades de cada segmento.
+
+#### Preguntas generales sobre el producto
+
+Estas preguntas están dirigidas a todos los participantes y buscan conocer su percepción general después de interactuar con Livva.
+
+1. Luego de utilizar Livva, ¿cuál fue tu primera impresión de la plataforma?
+2. ¿Te resultó fácil entender para qué sirve Livva y qué acciones puedes realizar dentro de ella?
+3. ¿La navegación entre las diferentes secciones te pareció clara y sencilla? ¿Por qué?
+4. ¿La información mostrada sobre seguros te pareció comprensible y suficientemente clara?
+5. ¿Tuviste alguna dificultad al utilizar alguna funcionalidad de la plataforma? ¿Cuál?
+6. ¿Qué funcionalidad de Livva te pareció más útil?
+7. ¿Hubo alguna función que esperabas encontrar y que actualmente no está disponible?
+8. ¿Consideras que el diseño de la plataforma permite identificar fácilmente botones, formularios y opciones de navegación?
+9. ¿Utilizarías una plataforma como Livva para realizar consultas o gestionar tus seguros? ¿Por qué?
+10. ¿Qué cambio o mejora realizarías para que la experiencia con Livva sea mejor?
+
+#### Preguntas para propietarios de vehículos
+
+Las siguientes preguntas permiten evaluar las funcionalidades relacionadas con seguros vehiculares, registro de vehículos, gestión de pólizas y seguimiento de siniestros.
+
+1. ¿Te resultó sencillo encontrar las opciones relacionadas con seguros vehiculares?
+2. ¿La información presentada te ayudaría a tomar una decisión al momento de solicitar un seguro para tu vehículo?
+3. ¿Te resultó comprensible el proceso para registrar o consultar información relacionada con tu vehículo?
+4. ¿Consideras útil poder visualizar y gestionar tus pólizas desde una misma plataforma?
+5. ¿Te resultaría útil poder registrar y consultar el estado de un siniestro vehicular desde Livva?
+
+#### Preguntas para personas interesadas en seguros de vida
+
+Estas preguntas están orientadas a evaluar la comprensión de los productos de seguros de vida, el proceso de solicitud y la administración de beneficiarios.
+
+1. ¿Te resultó sencillo encontrar las opciones relacionadas con seguros de vida?
+2. ¿La información mostrada sobre los seguros de vida te pareció suficiente para comprender las alternativas disponibles?
+3. ¿El proceso para realizar una solicitud de seguro de vida te pareció fácil de entender?
+4. ¿Consideras útil poder registrar y gestionar información de beneficiarios dentro de la plataforma?
+5. ¿Qué información adicional necesitarías antes de decidir solicitar un seguro de vida mediante Livva?
+
+#### Procedimiento de validación
+
+El proceso de validación contempla la participación de entre tres y cinco representantes de cada segmento objetivo. Durante las sesiones, los participantes interactuarán con las funcionalidades disponibles en la plataforma y posteriormente responderán las preguntas generales y específicas correspondientes a su segmento.
+
+Las entrevistas serán registradas en video, permitiendo documentar las principales opiniones, dificultades y recomendaciones identificadas durante la interacción.
+
+La información recopilada servirá como base para el análisis de resultados y la elaboración de las evaluaciones heurísticas de usabilidad, arquitectura de información y diseño inclusivo.
+
+Los registros y resultados obtenidos serán presentados en las secciones 5.3.2. Registro de Entrevistas y 5.3.3. Evaluaciones según heurísticas.
+
+
 
 ### 5.3.2. Registro de Entrevistas
 
-<!-- [EQUIPO] Registrar por cada entrevista: nombre, edad, distrito, segmento, captura, enlace al video y resumen. -->
+Durante el Sprint 3, Livva Care contempla la realización de entrevistas de validación dirigidas a los segmentos objetivo de la plataforma, con el propósito de recopilar opiniones y observaciones sobre la experiencia de usuario de la Landing Page y la Web Application.
+
+Estas entrevistas permitirán evaluar aspectos relacionados con la facilidad de navegación, claridad de la información, comprensión de los formularios y utilidad de las funcionalidades disponibles. Asimismo, permitirán identificar posibles dificultades y oportunidades de mejora para las siguientes etapas de desarrollo.
+
+El proceso considera la participación de entre tres y cinco representantes de cada segmento objetivo, quienes interactuarán con Livva antes de responder las preguntas establecidas en la sección 5.3.1.
+
+Las entrevistas serán registradas en video y sus resultados se documentarán mediante fichas individuales, capturas representativas y resúmenes de las principales observaciones realizadas por los participantes.
+
+#### Segmento 1: Propietarios de vehículos
+
+Este segmento comprende personas que poseen vehículos particulares y tienen interés en consultar, contratar o administrar seguros vehiculares.
+
+Las entrevistas estarán orientadas a evaluar la experiencia de los usuarios al explorar los productos de seguros, registrar vehículos, consultar pólizas y utilizar las funcionalidades relacionadas con la gestión de seguros vehiculares.
+
+##### Entrevista de Validación N.º 1
+
+| Campo | Información |
+|---|---|
+| Nombre y apellidos | [EQUIPO: nombre del participante] |
+| Edad | [EQUIPO: edad] |
+| Distrito | [EQUIPO: distrito] |
+| Segmento objetivo | Propietarios de vehículos |
+| Fecha de entrevista | [EQUIPO: fecha] |
+| Inicio en el video | [EQUIPO: HH:MM:SS] |
+| Duración | [EQUIPO: duración] |
+| URL del video | [EQUIPO: enlace de Microsoft Stream] |
+
+**Figura: Entrevista de validación N.º 1.**
+
+[Insertar captura representativa del participante durante la entrevista]
+
+**Resumen de la entrevista:**
+
+[EQUIPO: describir las principales opiniones del participante sobre navegación, seguros vehiculares, registro de vehículos, consulta de pólizas, dificultades identificadas y recomendaciones.]
+
+##### Entrevista de Validación N.º 2
+
+| Campo | Información |
+|---|---|
+| Nombre y apellidos | [EQUIPO: nombre del participante] |
+| Edad | [EQUIPO: edad] |
+| Distrito | [EQUIPO: distrito] |
+| Segmento objetivo | Propietarios de vehículos |
+| Fecha de entrevista | [EQUIPO: fecha] |
+| Inicio en el video | [EQUIPO: HH:MM:SS] |
+| Duración | [EQUIPO: duración] |
+| URL del video | [EQUIPO: enlace de Microsoft Stream] |
+
+**Figura: Entrevista de validación N.º 2.**
+
+[Insertar captura representativa del participante durante la entrevista]
+
+**Resumen de la entrevista:**
+
+[EQUIPO: describir las principales respuestas, percepción sobre los productos vehiculares, facilidad para encontrar las funcionalidades, problemas observados y sugerencias de mejora.]
+
+##### Entrevista de Validación N.º 3
+
+| Campo | Información |
+|---|---|
+| Nombre y apellidos | [EQUIPO: nombre del participante] |
+| Edad | [EQUIPO: edad] |
+| Distrito | [EQUIPO: distrito] |
+| Segmento objetivo | Propietarios de vehículos |
+| Fecha de entrevista | [EQUIPO: fecha] |
+| Inicio en el video | [EQUIPO: HH:MM:SS] |
+| Duración | [EQUIPO: duración] |
+| URL del video | [EQUIPO: enlace de Microsoft Stream] |
+
+**Figura: Entrevista de validación N.º 3.**
+
+[Insertar captura representativa del participante durante la entrevista]
+
+**Resumen de la entrevista:**
+
+[EQUIPO: registrar las observaciones sobre la experiencia general, claridad de la información, utilidad de gestionar pólizas y siniestros, y posibles mejoras.]
+
+#### Segmento 2: Personas interesadas en seguros de vida
+
+Este segmento comprende personas interesadas en conocer, solicitar o gestionar seguros de vida, considerando aspectos relacionados con la protección financiera personal y familiar.
+
+Las entrevistas estarán enfocadas en evaluar la comprensión de los productos disponibles, la facilidad del proceso de solicitud, la gestión de beneficiarios y la claridad de la información presentada por Livva.
+
+##### Entrevista de Validación N.º 4
+
+| Campo | Información |
+|---|---|
+| Nombre y apellidos | [EQUIPO: nombre del participante] |
+| Edad | [EQUIPO: edad] |
+| Distrito | [EQUIPO: distrito] |
+| Segmento objetivo | Personas interesadas en seguros de vida |
+| Fecha de entrevista | [EQUIPO: fecha] |
+| Inicio en el video | [EQUIPO: HH:MM:SS] |
+| Duración | [EQUIPO: duración] |
+| URL del video | [EQUIPO: enlace de Microsoft Stream] |
+
+**Figura: Entrevista de validación N.º 4.**
+
+[Insertar captura representativa del participante durante la entrevista]
+
+**Resumen de la entrevista:**
+
+[EQUIPO: describir la primera impresión del participante, comprensión de los productos de seguros de vida, dificultades observadas y recomendaciones.]
+
+##### Entrevista de Validación N.º 5
+
+| Campo | Información |
+|---|---|
+| Nombre y apellidos | [EQUIPO: nombre del participante] |
+| Edad | [EQUIPO: edad] |
+| Distrito | [EQUIPO: distrito] |
+| Segmento objetivo | Personas interesadas en seguros de vida |
+| Fecha de entrevista | [EQUIPO: fecha] |
+| Inicio en el video | [EQUIPO: HH:MM:SS] |
+| Duración | [EQUIPO: duración] |
+| URL del video | [EQUIPO: enlace de Microsoft Stream] |
+
+**Figura: Entrevista de validación N.º 5.**
+
+[Insertar captura representativa del participante durante la entrevista]
+
+**Resumen de la entrevista:**
+
+[EQUIPO: registrar las opiniones relacionadas con navegación, claridad de la información, proceso de solicitud de seguros de vida y gestión de beneficiarios.]
+
+##### Entrevista de Validación N.º 6
+
+| Campo | Información |
+|---|---|
+| Nombre y apellidos | [EQUIPO: nombre del participante] |
+| Edad | [EQUIPO: edad] |
+| Distrito | [EQUIPO: distrito] |
+| Segmento objetivo | Personas interesadas en seguros de vida |
+| Fecha de entrevista | [EQUIPO: fecha] |
+| Inicio en el video | [EQUIPO: HH:MM:SS] |
+| Duración | [EQUIPO: duración] |
+| URL del video | [EQUIPO: enlace de Microsoft Stream] |
+
+**Figura: Entrevista de validación N.º 6.**
+
+[Insertar captura representativa del participante durante la entrevista]
+
+**Resumen de la entrevista:**
+
+[EQUIPO: explicar las principales percepciones del participante sobre la utilidad de Livva, facilidad de uso, información adicional requerida y oportunidades de mejora.]
+
+#### Análisis general de las entrevistas
+
+Una vez concluidas las entrevistas, se realizará un análisis comparativo de las opiniones y observaciones registradas para ambos segmentos objetivo.
+
+El análisis permitirá identificar aspectos comunes y diferencias en la experiencia de usuario, considerando la facilidad de navegación, comprensión de la información, utilidad de las funcionalidades y principales dificultades encontradas.
+
+Los resultados se organizarán de acuerdo con los siguientes criterios:
+
+| Criterio de evaluación | Segmento vehicular | Segmento de seguros de vida |
+|---|---|---|
+| Facilidad de navegación | [EQUIPO: resultados] | [EQUIPO: resultados] |
+| Claridad de información | [EQUIPO: resultados] | [EQUIPO: resultados] |
+| Comprensión de formularios | [EQUIPO: resultados] | [EQUIPO: resultados] |
+| Utilidad de funcionalidades | [EQUIPO: resultados] | [EQUIPO: resultados] |
+| Dificultades identificadas | [EQUIPO: resultados] | [EQUIPO: resultados] |
+| Mejoras sugeridas | [EQUIPO: resultados] | [EQUIPO: resultados] |
+
+Las observaciones recopiladas servirán como referencia para desarrollar la evaluación heurística de la plataforma, estableciendo prioridades de mejora en función de los problemas identificados durante las sesiones.
+
+Los hallazgos obtenidos serán documentados en la sección 5.3.3. Evaluaciones según heurísticas.
+
 
 ### 5.3.3. Evaluaciones según heurísticas
 
