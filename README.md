@@ -3563,8 +3563,8 @@ Durante el Sprint 3, el equipo de Livva Care se enfoca en la implementación de 
 | Sprint 2 Review Summary | Durante el Sprint 2 se desarrolló y desplegó la primera versión funcional de la Web Application de Livva con Vue y PrimeVue, incluyendo autenticación y perfil de usuario, gestión de vehículos, solicitudes de seguros vehiculares y de vida, registro de beneficiarios, consulta y renovación de pólizas, registro de siniestros vehiculares, internacionalización y diseño responsive, utilizando una Fake API con JSON Server. |
 | Sprint 2 Retrospective Summary | Durante el Sprint 2 se logró desarrollar y desplegar la primera versión funcional de la Web Application utilizando Vue 3, PrimeVue y JSON Server. La organización de las actividades permitió avanzar en la implementación de las principales funcionalidades y mantener una estructura modular. Como oportunidades de mejora, se identificó la necesidad de reemplazar los datos simulados por servicios reales, fortalecer las pruebas de funcionamiento y mejorar la integración entre los componentes del sistema. Estas mejoras se consideran prioritarias para el Sprint 3. |
 | Sprint 3 Goal | Nuestro enfoque se centra en implementar la primera versión funcional de los RESTful Web Services de Livva mediante ASP.NET Core 10, Entity Framework Core y MySQL, incorporando los principales bounded contexts del sistema. Creemos que esto permitirá mejorar la gestión de información, garantizar su persistencia y facilitar la integración con la Web Application. Esto se confirmará cuando los endpoints principales respondan correctamente, la conexión con MySQL funcione y los Web Services estén disponibles para su consumo mediante una URL pública. |
-| Sprint 3 Velocity | Pendiente de validar según la capacidad del equipo y los Story Points estimados para el Sprint 3. |
-| Sum of Story Points | Pendiente de calcular a partir de los Story Points de las User Stories y Technical Stories seleccionadas para el Sprint 3. |
+| Sprint 3 Velocity | 94 Story Points. |
+| Sum of Story Points | 94 Story Points. |
 
 
 #### 5.2.3.2. Aspect Leaders and Collaborators
