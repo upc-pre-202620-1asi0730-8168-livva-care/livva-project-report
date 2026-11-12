@@ -71,7 +71,7 @@
 |---|---|---|---|
 | 1.0.0 | 2026-09-18 | Livva Care Team | Primera versión del Project Report correspondiente al AV1. Incluye los capítulos I al V, la implementación del Landing Page y las evidencias del Sprint 1. |
 | 1.1.0 | 2026-10-07 | Livva Care Team | Actualización del informe para TB1: corrección de artefactos, documentación del Sprint 2, primera versión desplegada de la Frontend Web Application. |
-| 2.0.0 | [EQUIPO: fecha de entrega AV2] | Livva Care Team | Actualización del informe para AV2: corrección de errores detectados en la revisión del equipo (tipo de seguro, índice, nombres de secciones), incorporación de herramientas y convenciones de la Frontend Web Application y de los Web Services, registro del repositorio de los Web Services y documentación del Sprint 3. |
+| 3.0.0 | [EQUIPO: fecha de entrega AV2] | Livva Care Team | Actualización del informe para AV2: corrección de errores detectados en la revisión del equipo (tipo de seguro, índice, nombres de secciones), incorporación de herramientas y convenciones de la Frontend Web Application y de los Web Services, registro del repositorio de los Web Services y documentación del Sprint 3. |
 <div style="page-break-after: always;"></div>
 
 
@@ -3567,7 +3567,7 @@ Durante el Sprint 3, el equipo de Livva Care se enfoca en la implementación de 
 | Sum of Story Points | Pendiente de calcular a partir de los Story Points de las User Stories y Technical Stories seleccionadas para el Sprint 3. |
 
 
-### 5.2.3.2. Aspect Leaders and Collaborators
+#### 5.2.3.2. Aspect Leaders and Collaborators
 
 Durante el Sprint 3, el equipo de Livva Care organiza sus responsabilidades considerando los diferentes bounded contexts del backend y las actividades relacionadas con su implementación y despliegue.
 
@@ -3593,7 +3593,7 @@ La asignación de responsabilidades debe corresponder con las actividades desarr
 - **—:** Sin participación asignada.
 
 
-### 5.2.3.3. Sprint Backlog 3
+#### 5.2.3.3. Sprint Backlog 3
 
 El Sprint Backlog 3 organiza las actividades correspondientes a la implementación de la primera versión de los RESTful Web Services de Livva, desarrollados mediante ASP.NET Core 10, Entity Framework Core y MySQL. Durante esta iteración, el equipo se enfoca en desarrollar los principales bounded contexts del sistema, implementar los endpoints necesarios para gestionar los procesos de negocio y preparar la integración con la Web Application.
 
@@ -3694,7 +3694,16 @@ La siguiente tabla presenta los principales commits identificados en el historia
 | livva-web-services | feature/claims-and-indemnities | af9c084 | feat(claims-and-indemnities): add indemnity request audit | Incorporación de auditoría para solicitudes de indemnización. | 2026-11-09 |
 | livva-web-services | feature/claims-and-indemnities | ca0f049 | feat(claims-and-indemnities): add indemnity status history | Incorporación del historial de estados de indemnización. | 2026-11-09 |
 | livva-web-services | feature/claims-and-indemnities | c5e14d1 | feat(claims-and-indemnities): add get vehicle claim by id query | Implementación de la consulta de reclamos mediante identificador. | 2026-11-09 |
-
+| livva-web-services | feature/insurance-offering-and-applications | 97077c3 | feat(insurance-offering): add insurers, products, vehicles, applications and beneficiaries | Implementación de aseguradoras, productos, vehículos, solicitudes de seguro y beneficiarios. | 2026-11-08 |
+| livva-web-services | feature/subscription-management | 5b6e68b | feat(subscription-management): add plans, user subscriptions, payments and mercado pago orders | Implementación de planes, suscripciones, pagos y órdenes de pago con Mercado Pago. | 2026-11-08 |
+| livva-web-services | feature/notification-management | 61a6395 | feat(notification-management): add notifications with expiration notices and read status | Implementación de notificaciones, avisos de vencimiento y estado de lectura. | 2026-11-09 |
+| livva-web-services | feature/claims-and-indemnities | 9399462 | fix(claims-indemnities): align claims with report and web application routes | Alineación de siniestros e indemnizaciones con el diseño de base de datos y las rutas de la Web Application. | 2026-11-12 |
+| livva-web-services | develop | 77840da | Merge branch 'feature/claims-and-indemnities' into develop | Integración del módulo Claims & Indemnities. | 2026-11-12 |
+| livva-web-services | release/1.0.0 | 4ce839b | chore(release): prepare version 1.0.0 | Preparación de la versión 1.0.0 de los Web Services. | 2026-11-12 |
+| livva-web-services | hotfix/1.0.1 | 3c636fb | fix(claims-indemnities): use mysql compatible default values in claims alignment migration | Corrección de la migración de siniestros para su ejecución en MySQL. | 2026-11-12 |
+| livva-web-services | main | 9ad3b94 | Merge branch 'hotfix/1.0.1' into main | Publicación de la versión 1.0.1 en la rama principal. | 2026-11-12 |
+| livva-web-application | feature/backend-integration | d6f2dc7 | feat(integration): connect web application to livva platform api with jwt authentication | Integración de la Web Application con los Web Services mediante autenticación JWT. | 2026-11-12 |
+| livva-web-application | develop | 3c30f87 | Merge branch 'feature/backend-integration' into develop | Integración de la conexión con los Web Services. | 2026-11-12 |
 
 #### Evidencias de implementación
 
@@ -3705,7 +3714,7 @@ La verificación del funcionamiento de los servicios y los resultados obtenidos 
 
 
 
-### 5.2.3.5. Execution Evidence for Sprint Review
+#### 5.2.3.5. Execution Evidence for Sprint Review
 
 Durante el Sprint 3, Livva Care avanzó en la implementación de los Web Services encargados de gestionar los principales procesos de la plataforma. La solución utiliza ASP.NET Core 10, Entity Framework Core y MySQL, permitiendo estructurar los servicios mediante bounded contexts y preparar su integración con la Web Application.
 
@@ -3726,14 +3735,14 @@ La verificación de los endpoints se realizará mediante Scalar, que permite vis
 
 | Funcionalidad | Endpoint | Método HTTP | Evidencia |
 |---|---|---|---|
-| Registro de usuario | `/api/v1/Authentication/sign-up` | POST | Respuesta del registro |
-| Inicio de sesión | `/api/v1/Authentication/sign-in` | POST | Autenticación JWT |
-| Consulta de aseguradoras | `/api/v1/Insurers` | GET | Listado de aseguradoras |
-| Consulta de productos | `/api/v1/InsuranceProducts` | GET | Listado de seguros |
-| Consulta de vehículos | `/api/v1/Vehicles` | GET | Vehículos registrados |
-| Consulta de pólizas | `/api/v1/Policies` | GET | Pólizas disponibles |
-| Planes de suscripción | `/api/v1/SubscriptionPlans` | GET | Planes registrados |
-| Consulta de notificaciones | `/api/v1/Notifications` | GET | Notificaciones disponibles |
+| Registro de usuario | `/api/v1/authentication/sign-up` | POST | Respuesta del registro |
+| Inicio de sesión | `/api/v1/authentication/sign-in` | POST | Autenticación JWT |
+| Consulta de aseguradoras | `/api/v1/insurers` | GET | Listado de aseguradoras |
+| Consulta de productos | `/api/v1/insurance-products` | GET | Listado de seguros |
+| Consulta de vehículos | `/api/v1/vehicles` | GET | Vehículos registrados |
+| Consulta de pólizas | `/api/v1/policies` | GET | Pólizas disponibles |
+| Planes de suscripción | `/api/v1/subscription-plans` | GET | Planes registrados |
+| Consulta de notificaciones | `/api/v1/notifications` | GET | Notificaciones disponibles |
 
 #### Evidencias visuales
 
@@ -3772,7 +3781,7 @@ Como complemento de las evidencias visuales, se incorporará un video demostrati
 Los resultados de las pruebas permitirán comprobar el funcionamiento de los principales servicios, verificar la comunicación con MySQL e identificar posibles errores antes de completar la integración con la Web Application.
 
 
-### 5.2.3.6. Services Documentation Evidence for Sprint Review
+#### 5.2.3.6. Services Documentation Evidence for Sprint Review
 
 Durante el Sprint 3, Livva Care incorporó la documentación de los RESTful Web Services desarrollados mediante ASP.NET Core 10. Los servicios se encuentran organizados según los bounded contexts definidos en la arquitectura del sistema, permitiendo administrar usuarios, seguros, pólizas, suscripciones y notificaciones.
 
@@ -3798,15 +3807,15 @@ Este bounded context permite registrar usuarios, autenticar credenciales y admin
 
 | Método | Endpoint | Descripción | Respuesta |
 |---|---|---|---|
-| POST | `/api/v1/Authentication/sign-up` | Registra un usuario. | 201 |
-| POST | `/api/v1/Authentication/sign-in` | Autentica credenciales y genera un token JWT. | 200 |
-| GET | `/api/v1/Users` | Consulta usuarios registrados. | 200 |
-| GET | `/api/v1/Users/{userId}` | Obtiene un usuario por identificador. | 200 |
-| PATCH | `/api/v1/Users/{userId}` | Actualiza información del usuario. | 200 |
-| POST | `/api/v1/UserProfiles` | Crea un perfil de usuario. | 201 |
-| GET | `/api/v1/UserProfiles` | Consulta los perfiles registrados. | 200 |
-| GET | `/api/v1/UserProfiles/{userProfileId}` | Obtiene un perfil por identificador. | 200 |
-| PATCH | `/api/v1/UserProfiles/{userProfileId}` | Actualiza un perfil existente. | 200 |
+| POST | `/api/v1/authentication/sign-up` | Registra un usuario. | 201 |
+| POST | `/api/v1/authentication/sign-in` | Autentica credenciales y genera un token JWT. | 200 |
+| GET | `/api/v1/users` | Consulta usuarios registrados. | 200 |
+| GET | `/api/v1/users/{userId}` | Obtiene un usuario por identificador. | 200 |
+| PATCH | `/api/v1/users/{userId}` | Actualiza información del usuario. | 200 |
+| POST | `/api/v1/user-profiles` | Crea un perfil de usuario. | 201 |
+| GET | `/api/v1/user-profiles` | Consulta los perfiles registrados. | 200 |
+| GET | `/api/v1/user-profiles/{userProfileId}` | Obtiene un perfil por identificador. | 200 |
+| PATCH | `/api/v1/user-profiles/{userProfileId}` | Actualiza un perfil existente. | 200 |
 
 Las operaciones de consulta permiten utilizar filtros como `email` y `userId`, según el recurso solicitado.
 
@@ -3816,29 +3825,29 @@ Este bounded context gestiona aseguradoras, productos de seguros, vehículos, so
 
 | Método | Endpoint | Descripción | Respuesta |
 |---|---|---|---|
-| GET | `/api/v1/Insurers` | Consulta aseguradoras. | 200 |
-| GET | `/api/v1/Insurers/{insurerId}` | Consulta una aseguradora por ID. | 200 |
-| GET | `/api/v1/InsuranceProducts` | Consulta productos de seguros. | 200 |
-| GET | `/api/v1/InsuranceProducts/{productId}` | Consulta un producto específico. | 200 |
-| POST | `/api/v1/Vehicles` | Registra un vehículo. | 201 |
-| GET | `/api/v1/Vehicles` | Consulta vehículos registrados. | 200 |
-| GET | `/api/v1/Vehicles/{vehicleId}` | Consulta un vehículo por ID. | 200 |
-| PATCH | `/api/v1/Vehicles/{vehicleId}` | Actualiza información de un vehículo. | 200 |
-| DELETE | `/api/v1/Vehicles/{vehicleId}` | Elimina un vehículo. | 204 |
-| POST | `/api/v1/InsuranceApplications` | Registra una solicitud de seguro. | 201 |
-| GET | `/api/v1/InsuranceApplications` | Consulta solicitudes de seguros. | 200 |
-| GET | `/api/v1/InsuranceApplications/{applicationId}` | Consulta una solicitud por ID. | 200 |
-| DELETE | `/api/v1/InsuranceApplications/{applicationId}` | Elimina una solicitud. | 204 |
-| POST | `/api/v1/VehicleInsuranceApplications` | Registra una solicitud de seguro vehicular. | 201 |
-| GET | `/api/v1/VehicleInsuranceApplications` | Consulta solicitudes vehiculares. | 200 |
-| GET | `/api/v1/VehicleInsuranceApplications/{id}` | Consulta el detalle de una solicitud vehicular. | 200 |
-| POST | `/api/v1/LifeInsuranceApplications` | Registra una solicitud de seguro de vida. | 201 |
-| GET | `/api/v1/LifeInsuranceApplications` | Consulta solicitudes de seguros de vida. | 200 |
-| GET | `/api/v1/LifeInsuranceApplications/{id}` | Consulta el detalle de una solicitud de vida. | 200 |
-| POST | `/api/v1/Beneficiaries` | Registra un beneficiario. | 201 |
-| GET | `/api/v1/Beneficiaries` | Consulta beneficiarios registrados. | 200 |
-| GET | `/api/v1/Beneficiaries/{beneficiaryId}` | Consulta un beneficiario por ID. | 200 |
-| PATCH | `/api/v1/Beneficiaries/{beneficiaryId}` | Actualiza información de un beneficiario. | 200 |
+| GET | `/api/v1/insurers` | Consulta aseguradoras. | 200 |
+| GET | `/api/v1/insurers/{insurerId}` | Consulta una aseguradora por ID. | 200 |
+| GET | `/api/v1/insurance-products` | Consulta productos de seguros. | 200 |
+| GET | `/api/v1/insurance-products/{productId}` | Consulta un producto específico. | 200 |
+| POST | `/api/v1/vehicles` | Registra un vehículo. | 201 |
+| GET | `/api/v1/vehicles` | Consulta vehículos registrados. | 200 |
+| GET | `/api/v1/vehicles/{vehicleId}` | Consulta un vehículo por ID. | 200 |
+| PATCH | `/api/v1/vehicles/{vehicleId}` | Actualiza información de un vehículo. | 200 |
+| DELETE | `/api/v1/vehicles/{vehicleId}` | Elimina un vehículo. | 204 |
+| POST | `/api/v1/insurance-applications` | Registra una solicitud de seguro. | 201 |
+| GET | `/api/v1/insurance-applications` | Consulta solicitudes de seguros. | 200 |
+| GET | `/api/v1/insurance-applications/{applicationId}` | Consulta una solicitud por ID. | 200 |
+| DELETE | `/api/v1/insurance-applications/{applicationId}` | Elimina una solicitud. | 204 |
+| POST | `/api/v1/vehicle-insurance-applications` | Registra una solicitud de seguro vehicular. | 201 |
+| GET | `/api/v1/vehicle-insurance-applications` | Consulta solicitudes vehiculares. | 200 |
+| GET | `/api/v1/vehicle-insurance-applications/{id}` | Consulta el detalle de una solicitud vehicular. | 200 |
+| POST | `/api/v1/life-insurance-applications` | Registra una solicitud de seguro de vida. | 201 |
+| GET | `/api/v1/life-insurance-applications` | Consulta solicitudes de seguros de vida. | 200 |
+| GET | `/api/v1/life-insurance-applications/{id}` | Consulta el detalle de una solicitud de vida. | 200 |
+| POST | `/api/v1/beneficiaries` | Registra un beneficiario. | 201 |
+| GET | `/api/v1/beneficiaries` | Consulta beneficiarios registrados. | 200 |
+| GET | `/api/v1/beneficiaries/{beneficiaryId}` | Consulta un beneficiario por ID. | 200 |
+| PATCH | `/api/v1/beneficiaries/{beneficiaryId}` | Actualiza información de un beneficiario. | 200 |
 
 Los servicios de consulta contemplan filtros como `insuranceType`, `insurerId`, `userId`, `applicationId` y `policyId`, según el recurso correspondiente.
 
@@ -3848,16 +3857,16 @@ Este bounded context administra pólizas emitidas, coberturas, documentos y soli
 
 | Método | Endpoint | Descripción | Respuesta |
 |---|---|---|---|
-| GET | `/api/v1/Policies` | Consulta pólizas. | 200 |
-| GET | `/api/v1/Policies/{policyId}` | Consulta una póliza por identificador. | 200 |
-| POST | `/api/v1/Policies` | Registra una póliza. | 201 |
-| GET | `/api/v1/PolicyCoverages` | Consulta coberturas de pólizas. | 200 |
-| GET | `/api/v1/PolicyCoverages/{id}` | Consulta una cobertura por ID. | 200 |
-| GET | `/api/v1/PolicyDocuments` | Consulta documentos asociados a pólizas. | 200 |
-| GET | `/api/v1/PolicyDocuments/{id}` | Consulta un documento por ID. | 200 |
-| POST | `/api/v1/Renewals` | Registra una solicitud de renovación. | 201 |
-| GET | `/api/v1/Renewals` | Consulta renovaciones. | 200 |
-| GET | `/api/v1/Renewals/{renewalId}` | Consulta una renovación por ID. | 200 |
+| GET | `/api/v1/policies` | Consulta pólizas. | 200 |
+| GET | `/api/v1/policies/{policyId}` | Consulta una póliza por identificador. | 200 |
+| POST | `/api/v1/policies` | Registra una póliza. | 201 |
+| GET | `/api/v1/policy-coverages` | Consulta coberturas de pólizas. | 200 |
+| GET | `/api/v1/policy-coverages/{id}` | Consulta una cobertura por ID. | 200 |
+| GET | `/api/v1/policy-documents` | Consulta documentos asociados a pólizas. | 200 |
+| GET | `/api/v1/policy-documents/{id}` | Consulta un documento por ID. | 200 |
+| POST | `/api/v1/renewals` | Registra una solicitud de renovación. | 201 |
+| GET | `/api/v1/renewals` | Consulta renovaciones. | 200 |
+| GET | `/api/v1/renewals/{renewalId}` | Consulta una renovación por ID. | 200 |
 
 #### Endpoints de Subscription Management
 
@@ -3865,17 +3874,17 @@ Este bounded context permite administrar planes, suscripciones y pagos. Además,
 
 | Método | Endpoint | Descripción | Respuesta |
 |---|---|---|---|
-| GET | `/api/v1/SubscriptionPlans` | Consulta planes disponibles. | 200 |
-| GET | `/api/v1/SubscriptionPlans/{planId}` | Consulta un plan por ID. | 200 |
-| POST | `/api/v1/UserSubscriptions` | Registra una suscripción. | 201 |
-| GET | `/api/v1/UserSubscriptions` | Consulta suscripciones de usuarios. | 200 |
-| GET | `/api/v1/UserSubscriptions/{userSubscriptionId}` | Consulta una suscripción por ID. | 200 |
-| PATCH | `/api/v1/UserSubscriptions/{userSubscriptionId}` | Actualiza una suscripción. | 200 |
-| DELETE | `/api/v1/UserSubscriptions/{userSubscriptionId}` | Elimina una suscripción. | 204 |
-| POST | `/api/v1/SubscriptionPayments` | Registra un pago de suscripción. | 201 |
-| GET | `/api/v1/SubscriptionPayments` | Consulta pagos registrados. | 200 |
-| GET | `/api/v1/SubscriptionPayments/{subscriptionPaymentId}` | Consulta un pago por ID. | 200 |
-| POST | `/api/v1/PaymentOrders` | Crea una orden de pago. | 201 |
+| GET | `/api/v1/subscription-plans` | Consulta planes disponibles. | 200 |
+| GET | `/api/v1/subscription-plans/{planId}` | Consulta un plan por ID. | 200 |
+| POST | `/api/v1/user-subscriptions` | Registra una suscripción. | 201 |
+| GET | `/api/v1/user-subscriptions` | Consulta suscripciones de usuarios. | 200 |
+| GET | `/api/v1/user-subscriptions/{userSubscriptionId}` | Consulta una suscripción por ID. | 200 |
+| PATCH | `/api/v1/user-subscriptions/{userSubscriptionId}` | Actualiza una suscripción. | 200 |
+| DELETE | `/api/v1/user-subscriptions/{userSubscriptionId}` | Elimina una suscripción. | 204 |
+| POST | `/api/v1/subscription-payments` | Registra un pago de suscripción. | 201 |
+| GET | `/api/v1/subscription-payments` | Consulta pagos registrados. | 200 |
+| GET | `/api/v1/subscription-payments/{subscriptionPaymentId}` | Consulta un pago por ID. | 200 |
+| POST | `/api/v1/payment-orders` | Crea una orden de pago. | 201 |
 
 Los servicios incluyen filtros por usuario, suscripción y estado activo del plan, según la operación consultada.
 
@@ -3885,13 +3894,28 @@ Este bounded context proporciona operaciones para registrar, consultar y actuali
 
 | Método | Endpoint | Descripción | Respuesta |
 |---|---|---|---|
-| POST | `/api/v1/Notifications` | Registra una notificación. | 201 |
-| GET | `/api/v1/Notifications` | Consulta notificaciones. | 200 |
-| GET | `/api/v1/Notifications/{notificationId}` | Consulta una notificación por ID. | 200 |
-| PATCH | `/api/v1/Notifications/{notificationId}` | Actualiza una notificación. | 200 |
+| POST | `/api/v1/notifications` | Registra una notificación. | 201 |
+| GET | `/api/v1/notifications` | Consulta notificaciones. | 200 |
+| GET | `/api/v1/notifications/{notificationId}` | Consulta una notificación por ID. | 200 |
+| PATCH | `/api/v1/notifications/{notificationId}` | Actualiza una notificación. | 200 |
 
 Las respuestas indicadas corresponden a los códigos de éxito declarados en los controladores. Dependiendo de la solicitud, también pueden producirse errores de validación, autenticación, recursos inexistentes o conflictos.
 
+#### Endpoints de Claims & Indemnities
+
+Este bounded context registra los siniestros vehiculares y las solicitudes de indemnización de seguros de vida, y guarda automáticamente el historial de cambios de estado.
+
+| Método | Endpoint | Descripción | Respuesta |
+|---|---|---|---|
+| GET | `/api/v1/vehicle-claims` | Consulta siniestros vehiculares (filtros `policyId` y `userId`). | 200 |
+| GET | `/api/v1/vehicle-claims/{claimId}` | Consulta un siniestro por identificador. | 200 |
+| POST | `/api/v1/vehicle-claims` | Registra un siniestro vehicular con estado inicial `reported`. | 201 |
+| PATCH | `/api/v1/vehicle-claims/{claimId}` | Actualiza el estado de un siniestro (por ejemplo, `cancelled`). | 200 |
+| GET | `/api/v1/claim-status-histories` | Consulta el historial de estados de un siniestro (filtro `claimId`). | 200 |
+| POST | `/api/v1/indemnity-requests` | Registra una solicitud de indemnización. | 201 |
+| GET | `/api/v1/indemnity-requests` | Consulta solicitudes de indemnización (filtros `policyId` y `beneficiaryId`). | 200 |
+| GET | `/api/v1/indemnity-requests/{requestId}` | Consulta una solicitud de indemnización por identificador. | 200 |
+| PATCH | `/api/v1/indemnity-requests/{requestId}` | Actualiza el estado de una solicitud de indemnización. | 200 |
 #### Ejemplos de solicitudes y respuestas HTTP
 
 La documentación OpenAPI permite identificar los esquemas JSON que utilizan los diferentes servicios.
@@ -3900,7 +3924,7 @@ A continuación se presentan ejemplos ilustrativos basados en los contratos de l
 
 **Ejemplo 1. Registro de usuario**
 
-Endpoint: `POST /api/v1/Authentication/sign-up`
+Endpoint: `POST /api/v1/authentication/sign-up`
 
 Solicitud:
 
@@ -3918,7 +3942,7 @@ Respuesta esperada: `201 Created`, con la información del usuario registrado.
 
 **Ejemplo 2. Inicio de sesión**
 
-Endpoint: `POST /api/v1/Authentication/sign-in`
+Endpoint: `POST /api/v1/authentication/sign-in`
 
 Solicitud:
 
@@ -3935,7 +3959,7 @@ El recurso de respuesta contiene el identificador del usuario, nombre, apellido,
 
 **Ejemplo 3. Consulta de productos de seguros**
 
-Endpoint: `GET /api/v1/InsuranceProducts?insuranceType=vehicle`
+Endpoint: `GET /api/v1/insurance-products?insuranceType=vehicle`
 
 Parámetro utilizado:
 
@@ -3987,7 +4011,7 @@ Se incorporarán capturas de Scalar que permitan demostrar la disponibilidad de 
 | Documento OpenAPI local | http://localhost:5033/openapi/v1.json |
 | Documentación Scalar local | http://localhost:5033/scalar |
 | Documentación pública | [EQUIPO: URL pública de Scalar] |
-| Commits relacionados | [EQUIPO: identificadores de los commits de documentación] |
+| Commits relacionados | `46d37fe` (configuración de OpenAPI, Scalar y Swagger UI), `b389cfe` (esquema de seguridad JWT en OpenAPI) |
 
 La documentación de los Web Services facilita la comprensión de los contratos de comunicación y constituye una referencia técnica para el desarrollo, mantenimiento e integración de la API con la Web Application de Livva.
 
@@ -3995,7 +4019,7 @@ Las capturas de solicitudes ejecutadas y sus resultados se presentarán en la se
 
 
 
-### 5.2.3.7. Software Deployment Evidence for Sprint Review
+#### 5.2.3.7. Software Deployment Evidence for Sprint Review
 
 Durante el Sprint 3, Livva Care contempla el despliegue de la primera versión de sus RESTful Web Services mediante Railway, una plataforma cloud que permite alojar y ejecutar aplicaciones utilizando contenedores Docker.
 
@@ -4114,7 +4138,7 @@ El despliegue de los Web Services permitirá avanzar en la integración de los c
 
 
 
-### 5.2.3.8. Team Collaboration Insights during Sprint
+#### 5.2.3.8. Team Collaboration Insights during Sprint
 
 Durante el Sprint 3, el equipo de Livva Care organizó el desarrollo de los Web Services mediante un esquema de trabajo colaborativo basado en GitFlow, utilizando GitHub para gestionar el código fuente, registrar los avances y facilitar la integración de las funcionalidades implementadas.
 
