@@ -1,4 +1,4 @@
-# Livva
+<img width="810" height="440" alt="Sprint 3" src="https://github.com/user-attachments/assets/92ee6bc0-e854-41e3-90d6-d3a306d9ce43" /><img width="810" height="440" alt="Sprint 3" src="https://github.com/user-attachments/assets/ec328258-8925-41d5-a28e-6432043bbf4d" /># Livva
 <div align="center">
 
   <img src="assets/md-images-front/upc-logo.png" width="150px" />
@@ -3527,7 +3527,6 @@ El proceso de despliegue parte del código integrado en la rama `develop` del re
 | Web Application | [URL](https://livva-web-application.web.app/) |
 | Repositorio Web Application | [[URL](https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-web-application.git)] |
 
-<!--| Landing Page | [Completar URL] | -->
 
 ##### Resultado obtenido
 
@@ -3562,10 +3561,11 @@ Durante el Sprint 3, el equipo de Livva Care se enfoca en la implementación de 
 | Prepared By | Livva Care Team |
 | Attendees | Paredes Chavez, Carlos Augusto / Torres Diaz, Rolando Andre / Contreras Panuera, Fernando Fabrizio / Cespedes Lezcano, Carlos Gabriel / Rivera Aguilar, Scarlet Josefina |
 | Sprint 2 Review Summary | Durante el Sprint 2 se desarrolló y desplegó la primera versión funcional de la Web Application de Livva con Vue y PrimeVue, incluyendo autenticación y perfil de usuario, gestión de vehículos, solicitudes de seguros vehiculares y de vida, registro de beneficiarios, consulta y renovación de pólizas, registro de siniestros vehiculares, internacionalización y diseño responsive, utilizando una Fake API con JSON Server. |
-| Sprint 2 Retrospective Summary | [EQUIPO: aspectos positivos y oportunidades de mejora identificados en la retrospectiva del Sprint 2] |
-| Sprint 3 Goal | [EQUIPO: redactar el Sprint Goal con la estructura "Nuestro enfoque se centra en… Creemos que… Esto se confirmará cuando…"] |
-| Sprint 3 Velocity | [EQUIPO: Story Points] |
-| Sum of Story Points | [EQUIPO: Story Points] |
+| Sprint 2 Retrospective Summary | Durante el Sprint 2 se logró desarrollar y desplegar la primera versión funcional de la Web Application utilizando Vue 3, PrimeVue y JSON Server. La organización de las actividades permitió avanzar en la implementación de las principales funcionalidades y mantener una estructura modular. Como oportunidades de mejora, se identificó la necesidad de reemplazar los datos simulados por servicios reales, fortalecer las pruebas de funcionamiento y mejorar la integración entre los componentes del sistema. Estas mejoras se consideran prioritarias para el Sprint 3. |
+| Sprint 3 Goal | Nuestro enfoque se centra en implementar la primera versión funcional de los RESTful Web Services de Livva mediante ASP.NET Core 10, Entity Framework Core y MySQL, incorporando los principales bounded contexts del sistema. Creemos que esto permitirá mejorar la gestión de información, garantizar su persistencia y facilitar la integración con la Web Application. Esto se confirmará cuando los endpoints principales respondan correctamente, la conexión con MySQL funcione y los Web Services estén disponibles para su consumo mediante una URL pública. |
+| Sprint 3 Velocity | Pendiente de validar según la capacidad del equipo y los Story Points estimados para el Sprint 3. |
+| Sum of Story Points | Pendiente de calcular a partir de los Story Points de las User Stories y Technical Stories seleccionadas para el Sprint 3. |
+
 
 ### 5.2.3.2. Aspect Leaders and Collaborators
 
@@ -3592,19 +3592,67 @@ La asignación de responsabilidades debe corresponder con las actividades desarr
 - **C (Collaborator):** Integrante que colabora en el desarrollo del aspecto.
 - **—:** Sin participación asignada.
 
-#### 5.2.3.3. Sprint Backlog 3
 
-El Sprint Backlog 3 organiza las actividades necesarias para implementar la primera versión de los Web Services de Livva, tomando como referencia las Technical Stories de la sección 3.1.
+### 5.2.3.3. Sprint Backlog 3
 
-**URL pública del tablero:** [EQUIPO: enlace del tablero de Trello del Sprint 3]
+El Sprint Backlog 3 organiza las actividades correspondientes a la implementación de la primera versión de los RESTful Web Services de Livva, desarrollados mediante ASP.NET Core 10, Entity Framework Core y MySQL. Durante esta iteración, el equipo se enfoca en desarrollar los principales bounded contexts del sistema, implementar los endpoints necesarios para gestionar los procesos de negocio y preparar la integración con la Web Application.
 
-**Captura del tablero:** [EQUIPO: captura del tablero]
+Las actividades se distribuyen considerando las Technical Stories definidas en la sección 3.1, así como las tareas complementarias relacionadas con pruebas, documentación, configuración de infraestructura y despliegue.
 
-| Story ID | Story Title | Task ID | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
-|---|---|---|---|---|---|---|---|
-| [EQUIPO] | [EQUIPO] | S3-T01 | [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] | [EQUIPO] |
+El desarrollo se organiza mediante ramas independientes bajo GitFlow, permitiendo mantener el control de versiones y facilitar la integración progresiva de las funcionalidades en la rama `develop`.
 
-Los estados utilizados son To-do, In-Process, To-Review y Done.
+El seguimiento de las actividades se realiza mediante el tablero del Sprint, utilizando los estados `To Do`, `In Process`, `To Review` y `Done`.
+
+**URL pública del tablero:** [https://trello.com/invite/b/6af5299caa855e6fc5a9b0cd/ATTI314d84d654e392e40b225fd07f8d95487F51AFA1/sprint-3]
+
+**Captura del Sprint Board 3:**
+
+ <img src="assets/SprintBoard3-Trello-Livva.png" width="900px" />
+
+#### Sprint Backlog 3
+
+| Story ID | Story Title | Task ID | Task Title | Task Description | Estimation (Hours) | Priority | Status | Assigned To |
+|---|---|---|---|---|---:|---|---|---|
+| — | Project Setup | S3-T01 | Configuración inicial del backend | Crear la solución ASP.NET Core 10 y configurar Shared Kernel y arquitectura base. | 5 | Alta | Done | Carlos Céspedes |
+| TS-33, TS-34 | Localization and API Documentation | S3-T02 | Configurar OpenAPI e i18n | Incorporar Scalar, Swagger y localización en español e inglés. | 5 | Alta | Done | Carlos Céspedes |
+| — | Database Configuration | S3-T03 | Configurar persistencia MySQL | Implementar Entity Framework Core, DbContext y migraciones iniciales. | 5 | Alta | Done | Carlos Céspedes |
+| TS-01, TS-02 | Register and Authenticate User | S3-T04 | Implementar autenticación JWT | Desarrollar los servicios de registro, inicio de sesión y generación de tokens JWT. | 7 | Alta | Done | Carlos Céspedes |
+| TS-03, TS-04 | User Profile Management | S3-T05 | Implementar gestión de perfiles | Desarrollar servicios para consultar y actualizar información de perfiles. | 5 | Alta | Done | Carlos Céspedes |
+| TS-05 | Retrieve Insurance Products | S3-T06 | Implementar catálogo de seguros | Desarrollar servicios para consultar aseguradoras y productos disponibles. | 5 | Alta | Done | Carlos Céspedes |
+| TS-06, TS-07, TS-08 | Vehicle Management | S3-T07 | Implementar gestión de vehículos | Desarrollar operaciones REST para registrar, consultar y actualizar vehículos. | 6 | Alta | Done | Carlos Céspedes |
+| TS-09 a TS-14 | Insurance Applications | S3-T08 | Implementar solicitudes de seguros | Desarrollar servicios para registrar y consultar solicitudes de seguros vehiculares y de vida. | 8 | Alta | Done | Carlos Céspedes |
+| TS-15 a TS-17 | Beneficiary Management | S3-T09 | Implementar gestión de beneficiarios | Desarrollar operaciones para registrar, consultar y actualizar beneficiarios. | 5 | Alta | Done | Carlos Céspedes |
+| TS-18 a TS-20 | Policy Management | S3-T10 | Implementar gestión de pólizas | Desarrollar servicios de consulta de pólizas, coberturas, documentos y renovaciones. | 7 | Alta | Done | Carlos Céspedes |
+| TS-28 a TS-32 | Subscription Management | S3-T11 | Implementar suscripciones y pagos | Desarrollar planes, suscripciones y órdenes de pago mediante Mercado Pago. | 8 | Alta | Done | Carlos Céspedes |
+| TS-27 | Retrieve User Notifications | S3-T12 | Implementar notificaciones | Desarrollar servicios para gestionar notificaciones y avisos de vencimiento. | 5 | Media | Done | Carlos Céspedes |
+| TS-21 a TS-26 | Claims & Indemnities | S3-T13 | Implementar dominio de reclamos | Crear entidades, agregados, estados e historiales para reclamos e indemnizaciones. | 6 | Alta | In Process | Scarlet Rivera |
+| TS-21 a TS-26 | Claims & Indemnities | S3-T14 | Implementar servicios de reclamos | Desarrollar comandos y consultas para registrar y gestionar reclamos e indemnizaciones. | 6 | Alta | In Process | Scarlet Rivera |
+| TS-21 a TS-26 | Claims & Indemnities | S3-T15 | Implementar endpoints de Claims | Incorporar controladores REST, persistencia y migraciones del módulo. | 6 | Alta | To Do | Scarlet Rivera |
+| US-05, US-06 | Authentication Integration | S3-T16 | Configurar conexión HTTP del frontend | Adaptar Axios y las variables de entorno para consumir la API ASP.NET Core. | 5 | Alta | To Do | Carlos Paredes |
+| US-05, US-06 | User Authentication | S3-T17 | Integrar autenticación del frontend | Conectar registro e inicio de sesión con los endpoints reales y administrar el token JWT. | 7 | Alta | To Do | Carlos Paredes |
+| US-03, US-04 | Insurance Information | S3-T18 | Integrar catálogo de seguros | Conectar las vistas de productos vehiculares y de vida con los Web Services. | 5 | Alta | To Do | Carlos Paredes |
+| US-09 a US-11 | Vehicle Management | S3-T19 | Integrar gestión de vehículos | Conectar registro, consulta y actualización de vehículos con la API. | 6 | Alta | To Do | Carlos Paredes |
+| US-19 a US-21 | Policy Management | S3-T20 | Integrar gestión de pólizas | Conectar consulta de pólizas, detalles y renovaciones con los servicios REST. | 6 | Alta | To Do | Carlos Paredes |
+| US-22, US-23 | Vehicle Claims | S3-T21 | Preparar integración de siniestros | Adaptar la comunicación del frontend para registrar y consultar siniestros. | 5 | Media | To Do | Carlos Paredes |
+| — | Frontend Integration Testing | S3-T22 | Verificar integración frontend-backend | Comprobar solicitudes HTTP, autenticación y visualización de respuestas reales. | 6 | Alta | To Do | Carlos Paredes |
+| US-01 a US-04 | Landing Page Improvement | S3-T23 | Actualizar Landing Page | Incorporar mejoras de navegación, contenido y enlaces hacia la Web Application. | 4 | Media | To Do | Carlos Paredes |
+| — | Backend Testing | S3-T24 | Ejecutar pruebas automatizadas | Revisar pruebas unitarias y de integración de los módulos implementados. | 6 | Alta | To Do | Rolando Torres |
+| — | Validation Preparation | S3-T25 | Preparar validaciones | Organizar escenarios de validación y recopilar evidencias de funcionamiento. | 5 | Media | To Do | Rolando Torres |
+| — | Web Services Deployment | S3-T26 | Desplegar backend en Railway | Configurar el servicio cloud, MySQL, variables de entorno y publicar los Web Services. | 7 | Alta | To Do | Fernando Contreras |
+| — | Sprint Documentation | S3-T27 | Documentar evidencias del Sprint 3 | Actualizar el informe con evidencias de desarrollo, documentación y configuración de despliegue. | 6 | Alta | In Process | Fernando Contreras |
+
+#### Organización de las actividades
+
+Las actividades del Sprint 3 se concentran principalmente en la implementación del backend y su integración con los productos digitales de Livva.
+
+La distribución propuesta considera una mayor participación de Carlos Céspedes en la implementación de los bounded contexts principales del backend y de Carlos Paredes en las actividades de integración con la Web Application y actualización del Landing Page.
+
+Asimismo, se consideran actividades especializadas relacionadas con Claims & Indemnities, pruebas de funcionamiento, validaciones, despliegue cloud y documentación técnica.
+
+Las estimaciones representan horas de trabajo propuestas para cada actividad. Los estados y responsables deberán actualizarse de acuerdo con el seguimiento real del tablero de Trello.
+
+El cumplimiento del Sprint Goal será evaluado considerando los servicios implementados, las integraciones realizadas, las pruebas ejecutadas y las evidencias de despliegue obtenidas durante la iteración.
+
 
 #### 5.2.3.4. Development Evidence for Sprint Review
 
@@ -3654,8 +3702,6 @@ La siguiente tabla presenta los principales commits identificados en el historia
 El desarrollo realizado durante el Sprint 3 permitió establecer la estructura técnica de los principales servicios de Livva y avanzar en la implementación de los componentes necesarios para su integración con la Web Application.
 
 La verificación del funcionamiento de los servicios y los resultados obtenidos mediante solicitudes HTTP serán documentados en la sección 5.2.3.5. Execution Evidence for Sprint Review.
-
-<!-- [EQUIPO] Agregar los commits de los bounded contexts implementados durante el Sprint 3. -->
 
 
 
@@ -4067,8 +4113,6 @@ Los resultados obtenidos serán registrados mediante capturas y documentación d
 El despliegue de los Web Services permitirá avanzar en la integración de los componentes de Livva, estableciendo un entorno de ejecución externo que facilite la verificación y disponibilidad de las funcionalidades desarrolladas durante el Sprint 3.
 
 
-#### 5.2.3.8. Team Collaboration Insights during Sprint
-
 
 ### 5.2.3.8. Team Collaboration Insights during Sprint
 
@@ -4117,8 +4161,9 @@ Asimismo, se evidencia el desarrollo incremental del módulo Claims & Indemnitie
 
 | Team Member | GitHub Username | Actividades y responsabilidades |
 |---|---|---|
-| Paredes Chavez, Carlos Augusto | CarlossUPC | [EQUIPO: incorporar actividades y evidencias verificadas] |
-| Torres Diaz, Rolando Andre | ROLO194 | [EQUIPO: incorporar actividades y evidencias verificadas] |
+| Paredes Chavez, Carlos Augusto | CarlossUPC | Responsable de la integración entre la Web Application y los Web Services, incluyendo la configuración de solicitudes HTTP mediante Axios, autenticación JWT, conexión de los módulos de seguros, vehículos y pólizas, así como mejoras de navegación y actualización del Landing Page. |
+| Torres Diaz, Rolando Andre | ROLO194 | Encargado de las pruebas unitarias y de integración del backend, verificación de endpoints RESTful, identificación de errores funcionales y preparación de escenarios para las entrevistas de validación de la plataforma. |
+
 | Contreras Panuera, Fernando Fabrizio | FernSkibidi69 | Documentación de la configuración de despliegue y preparación de las evidencias técnicas correspondientes al Sprint 3. |
 | Cespedes Lezcano, Carlos Gabriel | Leikop | Configuración inicial del proyecto e implementación de Identity & Profile Management, Insurance Offering & Applications, Policy Management, Subscription Management y Notification Management. |
 | Rivera Aguilar, Scarlet Josefina | scarletriveraaguilar-spec | Desarrollo de Claims & Indemnities, incluyendo agregados, comandos, consultas, auditorías e historiales de estados. |
