@@ -1610,7 +1610,7 @@ Para todos los endpoints protegidos:
 | Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con |
 |---|---|---|---|---|
 | TS-33 | Retrieve Localized API Responses | Como Developer, deseo solicitar respuestas localizadas mediante `Accept-Language` para integrar la internacionalización de Livva. | **Scenario 1: Latin American Spanish**<br>**Given** que la solicitud incluye `Accept-Language: es-419`<br>**When** el API genera mensajes dirigidos al usuario<br>**Then** los presenta en español latinoamericano.<br><br>**Scenario 2: Default language**<br>**Given** que no se indica un idioma compatible<br>**When** el API genera la respuesta<br>**Then** utiliza inglés como idioma predeterminado. | Requerimiento i18n |
-| TS-34 | Retrieve OpenAPI Documentation | Como Developer, deseo acceder a la documentación OpenAPI mediante Swagger UI y Scalar para conocer y probar los endpoints disponibles. | **Scenario 1: OpenAPI specification**<br>**Given** que el Web Service está disponible<br>**When** se solicita `GET /openapi/v1.json`<br>**Then** el API responde `200 OK` con las rutas, parámetros, esquemas y respuestas documentadas.<br><br>**Scenario 2: Interactive documentation**<br>**Given** que se accede a `/swagger` o `/scalar`<br>**When** se visualiza la documentación<br>**Then** los endpoints pueden probarse y el contenido utiliza inglés como idioma predeterminado. | Documentación de servicios |
+| TS-34 | Retrieve OpenAPI Documentation | Como Developer, deseo acceder a la documentación OpenAPI Scalar para conocer y probar los endpoints disponibles. | **Scenario 1: OpenAPI specification**<br>**Given** que el Web Service está disponible<br>**When** se solicita `GET /openapi/v1.json`<br>**Then** el API responde `200 OK` con las rutas, parámetros, esquemas y respuestas documentadas.<br><br>**Scenario 2: Interactive documentation**<br>**Given** que se accede a `/scalar`<br>**When** se visualiza la documentación<br>**Then** los endpoints pueden probarse y el contenido utiliza inglés como idioma predeterminado. | Documentación de servicios |
 
 
 ### Epics
@@ -2987,7 +2987,7 @@ Las herramientas utilizadas por el equipo se presentan a continuación:
 | ASP.NET Core Web API | Framework utilizado para implementar el RESTful API de Livva mediante controladores REST. | https://learn.microsoft.com/aspnet/core/web-api/ |
 | Entity Framework Core 10 | ORM utilizado para la persistencia de datos, el mapeo de entidades y la gestión de migraciones de base de datos. | https://learn.microsoft.com/ef/core/ |
 | MySQL Server / MySQL Workbench | Sistema de gestión de base de datos relacional utilizado por los Web Services y herramienta para administrar y consultar la base de datos. | https://dev.mysql.com/downloads/ |
-| OpenAPI / Scalar / Swagger UI | Especificación y herramientas utilizadas para documentar y probar los endpoints del RESTful API. | https://scalar.com/ / https://swagger.io/tools/swagger-ui/ |
+| OpenAPI / Scalar | Especificación y herramientas utilizadas para documentar y probar los endpoints del RESTful API. | https://scalar.com/ |
 | xUnit / Moq | Framework de pruebas y biblioteca de objetos simulados utilizados para las pruebas unitarias y de integración de los Web Services. | https://xunit.net/ / https://github.com/devlooped/moq |
 
 ### 5.1.2. Source Code Management
@@ -3197,7 +3197,7 @@ Las evidencias deben corresponder a cambios reales en la estructura HTML, los es
 
 El alcance del Sprint 1 se concentra en la implementación de la primera versión del Landing Page de Livva. Por este motivo, no contempla el desarrollo de Web Services y no se presentan endpoints documentados en esta iteración.
 
-La documentación del RESTful API se incorporará en los sprints correspondientes a la implementación del backend, utilizando OpenAPI Specification mediante Swagger.
+La documentación del RESTful API se incorporará en los sprints correspondientes a la implementación del backend.
 
 En dichas iteraciones, se incluirá la relación de endpoints implementados, sus verbos HTTP, rutas, parámetros, ejemplos y explicación de respuestas. Asimismo, se incorporarán enlaces a la documentación, capturas de interacción con datos de muestra y los commits relacionados.
 
@@ -3614,7 +3614,7 @@ El seguimiento de las actividades se realiza mediante el tablero del Sprint, uti
 | Story ID | Story Title | Task ID | Task Title | Task Description | Estimation (Hours) | Priority | Status | Assigned To |
 |---|---|---|---|---|---:|---|---|---|
 | — | Project Setup | S3-T01 | Configuración inicial del backend | Crear la solución ASP.NET Core 10 y configurar Shared Kernel y arquitectura base. | 5 | Alta | Done | Carlos Céspedes |
-| TS-33, TS-34 | Localization and API Documentation | S3-T02 | Configurar OpenAPI e i18n | Incorporar Scalar, Swagger y localización en español e inglés. | 5 | Alta | Done | Carlos Céspedes |
+| TS-33, TS-34 | Localization and API Documentation | S3-T02 | Configurar OpenAPI e i18n | Incorporar Scalar y localización en español e inglés. | 5 | Alta | Done | Carlos Céspedes |
 | — | Database Configuration | S3-T03 | Configurar persistencia MySQL | Implementar Entity Framework Core, DbContext y migraciones iniciales. | 5 | Alta | Done | Carlos Céspedes |
 | TS-01, TS-02 | Register and Authenticate User | S3-T04 | Implementar autenticación JWT | Desarrollar los servicios de registro, inicio de sesión y generación de tokens JWT. | 7 | Alta | Done | Carlos Céspedes |
 | TS-03, TS-04 | User Profile Management | S3-T05 | Implementar gestión de perfiles | Desarrollar servicios para consultar y actualizar información de perfiles. | 5 | Alta | Done | Carlos Céspedes |
@@ -3785,7 +3785,7 @@ Los resultados de las pruebas permitirán comprobar el funcionamiento de los pri
 
 Durante el Sprint 3, Livva Care incorporó la documentación de los RESTful Web Services desarrollados mediante ASP.NET Core 10. Los servicios se encuentran organizados según los bounded contexts definidos en la arquitectura del sistema, permitiendo administrar usuarios, seguros, pólizas, suscripciones y notificaciones.
 
-Para documentar las operaciones disponibles se utiliza OpenAPI, junto con Scalar y Swagger UI, herramientas que permiten consultar los endpoints, identificar sus parámetros y visualizar los esquemas de solicitudes y respuestas HTTP.
+Para documentar las operaciones disponibles se utiliza OpenAPI, junto con Scalar, herramientas que permiten consultar los endpoints, identificar sus parámetros y visualizar los esquemas de solicitudes y respuestas HTTP.
 
 La versión del backend revisada contiene 57 operaciones HTTP distribuidas en 19 controladores REST, correspondientes a cinco bounded contexts integrados en la rama `develop`.
 
@@ -3797,7 +3797,6 @@ El backend dispone de las siguientes rutas de documentación:
 |---|---|---|
 | OpenAPI | `/openapi/v1.json` | Especificación de las operaciones REST disponibles. |
 | Scalar | `/scalar` | Interfaz interactiva para consultar y ejecutar endpoints. |
-| Swagger UI | `/swagger` | Interfaz alternativa para consultar la documentación de los servicios. |
 
 La documentación puede consultarse localmente mediante `http://localhost:5033/scalar`, siempre que la aplicación se encuentre ejecutándose en dicho puerto.
 
@@ -4011,7 +4010,7 @@ Se incorporarán capturas de Scalar que permitan demostrar la disponibilidad de 
 | Documento OpenAPI local | http://localhost:5033/openapi/v1.json |
 | Documentación Scalar local | http://localhost:5033/scalar |
 | Documentación pública | [EQUIPO: URL pública de Scalar] |
-| Commits relacionados | `46d37fe` (configuración de OpenAPI, Scalar y Swagger UI), `b389cfe` (esquema de seguridad JWT en OpenAPI) |
+| Commits relacionados | `46d37fe` (configuración de OpenAPI, Scalar), `b389cfe` (esquema de seguridad JWT en OpenAPI) |
 
 La documentación de los Web Services facilita la comprensión de los contratos de comunicación y constituye una referencia técnica para el desarrollo, mantenimiento e integración de la API con la Web Application de Livva.
 
