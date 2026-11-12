@@ -1,5 +1,3 @@
-<img width="810" height="440" alt="Sprint 3" src="https://github.com/user-attachments/assets/92ee6bc0-e854-41e3-90d6-d3a306d9ce43" /><img width="810" height="440" alt="Sprint 3" src="https://github.com/user-attachments/assets/ec328258-8925-41d5-a28e-6432043bbf4d" /># Livva
-<div align="center">
 
   <img src="assets/md-images-front/upc-logo.png" width="150px" />
 
