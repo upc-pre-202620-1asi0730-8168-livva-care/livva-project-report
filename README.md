@@ -4344,24 +4344,24 @@ Las entrevistas estarán enfocadas en evaluar la comprensión de los productos d
 
 ##### Entrevista de Validación N.º 4
 
-| Campo | Información |
-|---|---|
-| Nombre y apellidos | [EQUIPO: nombre del participante] |
-| Edad | [EQUIPO: edad] |
-| Distrito | [EQUIPO: distrito] |
+| Campo | Información        |
+|---|--------------------|
+| Nombre y apellidos | Azul Delgado Sanchez |
+| Edad | 23            |
+| Distrito | Santiago de Surco |
 | Segmento objetivo | Personas interesadas en seguros de vida |
-| Fecha de entrevista | [EQUIPO: fecha] |
-| Inicio en el video | [EQUIPO: HH:MM:SS] |
-| Duración | [EQUIPO: duración] |
-| URL del video | [EQUIPO: enlace de Microsoft Stream] |
+| Fecha de entrevista | 12-11-2026    |
+| Inicio en el video | 00:01:00      |
+| Duración | 3 minutos          |
+| URL del video | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323369_upc_edu_pe/IQBt9z19qoFdT5dRReTRDvdGAdh4obeWluj6Y_An_XOdbA8?e=raVtss |
 
 **Figura: Entrevista de validación N.º 4.**
 
-[Insertar captura representativa del participante durante la entrevista]
+![Entrevista de validación N.° 4](./assets/md-images-interviews/ss_AzulDelgado2.png)
 
 **Resumen de la entrevista:**
 
-[EQUIPO: describir la primera impresión del participante, comprensión de los productos de seguros de vida, dificultades observadas y recomendaciones.]
+El participante tuvo una primera impresión positiva de Livva, destacando que la plataforma presenta un diseño agradable, organizado y fácil de utilizar. Logró comprender las funciones principales y la información básica relacionada con los seguros de vida. Durante la navegación no presentó mayores dificultades, aunque mencionó que algunas opciones podrían ser más visibles y contar con información más detallada. Finalmente, recomendó mejorar la presentación de los beneficios, coberturas y precios de los seguros, así como incorporar opciones que permitan comparar las alternativas disponibles.
 
 ##### Entrevista de Validación N.º 5
 
