@@ -71,7 +71,7 @@
 |---|---|---|---|
 | 1.0.0 | 2026-09-18 | Livva Care Team | Primera versión del Project Report correspondiente al AV1. Incluye los capítulos I al V, la implementación del Landing Page y las evidencias del Sprint 1. |
 | 1.1.0 | 2026-10-07 | Livva Care Team | Actualización del informe para TB1: corrección de artefactos, documentación del Sprint 2, primera versión desplegada de la Frontend Web Application. |
-| 3.0.0 | [EQUIPO: fecha de entrega AV2] | Livva Care Team | Actualización del informe para AV2: corrección de errores detectados en la revisión del equipo (tipo de seguro, índice, nombres de secciones), incorporación de herramientas y convenciones de la Frontend Web Application y de los Web Services, registro del repositorio de los Web Services y documentación del Sprint 3. |
+| 1.1.1 | 2026.11.11 | Livva Care Team | Actualización del informe para AV2: corrección de errores detectados en la revisión del equipo (tipo de seguro, índice, nombres de secciones), incorporación de herramientas y convenciones de la Frontend Web Application y de los Web Services, registro del repositorio de los Web Services y documentación del Sprint 3. |
 <div style="page-break-after: always;"></div>
 
 
@@ -228,7 +228,7 @@ El curso contribuye al cumplimiento del Student Outcome ABET:
 
 **Criterio:** La capacidad de funcionar efectivamente en un equipo cuyos miembros juntos proporcionan liderazgo, crean un entorno de colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen objetivos.
 
-En el siguiente cuadro se describen las acciones realizadas y los enunciados de conclusiones por parte del grupo, que permiten sustentar el cumplimiento del ABET – EAC - Student Outcome 5 durante las entregas AV1 y TB1 del proyecto.
+En el siguiente cuadro se describen las acciones realizadas y los enunciados de conclusiones por parte del grupo, que permiten sustentar el cumplimiento del ABET – EAC - Student Outcome 5 durante las entregas AV1, TB1 y AV2 del proyecto.
 
 ### AV1 y TB1
 
@@ -1969,7 +1969,7 @@ Se consideraron las principales funcionalidades de En esta sección se presenta 
 
 El prototipo permite simular la navegación entre las principales vistas de la aplicación y validar la secuencia de interacción que siguen los usuarios para completar sus tareas principales. Las conexiones entre pantallas fueron definidas considerando los recorridos planteados en los User Flows y el sistema de navegación establecido para la aplicación.
 
-Se consideraron las principales funcionalidades de Livva, como el acceso a la plataforma, visualización del dashboard, consulta y gestión de seguros, reservas, mantenimiento, disponibilidad y seguimiento de servicios.
+Se consideraron las principales funcionalidades de Livva, como el acceso a la plataforma, visualización del dashboard, consulta y gestión de seguros.
 
 A continuación, se presenta una captura del prototipo en funcionamiento y el enlace al video de demostración, donde se muestran los principales flujos de navegación e interacción de la aplicación.
 ![Web Application Prototype](assets/md-livva-webapp-mockups/Prototipo.png)
@@ -3299,21 +3299,21 @@ El seguimiento del trabajo se realiza mediante el tablero del Sprint utilizando 
 
 | User Story ID | User Story Title | Task ID | Task Title | Description | Estimation (Hours) | Priority | Status | Assigned To |
 |---|---|---|---|---|---:|---|---|---|
-| US-01 | Consultar información de Livva | S2-T01 | Refinar información de Livva | Revisar y ajustar la presentación de información general de Livva. | 3 | Media | In Process | Carlos Céspedes |
-| US-02 | Consultar seguros y beneficios | S2-T02 | Refinar seguros y beneficios | Ajustar la presentación de los seguros y beneficios disponibles en Livva. | 3 | Media | In Process | Scarlet Rivera |
-| US-03 | Contactar con Livva | S2-T03 | Implementar contacto | Implementar y validar la sección de contacto con Livva. | 4 | Media | In Process | Scarlet Rivera |
-| US-04 | Cambiar idioma | S2-T04 | Internacionalización | Implementar y validar el cambio entre español e inglés. | 4 | Alta | In Process | Carlos Céspedes |
-| US-09 | Registrar un vehículo | S2-T05 | Registro de vehículo | Implementar el formulario para registrar un vehículo asociado al usuario. | 4 | Alta | In Process | Carlos Paredes |
-| US-09 | Registrar un vehículo | S2-T06 | Validar vehículo | Validar los datos requeridos para registrar un vehículo. | 3 | Alta | In Process | Carlos Paredes |
-| US-10 | Consultar vehículos | S2-T07 | Listado de vehículos | Implementar la visualización de los vehículos registrados por el usuario. | 4 | Alta | In Process | Carlos Paredes |
-| US-11 | Actualizar vehículos | S2-T08 | Editar vehículo | Implementar la actualización de información de un vehículo registrado. | 4 | Media | In Process | Carlos Paredes |
-| US-11 | Actualizar vehículos | S2-T09 | Eliminar vehículo | Incorporar la eliminación de un vehículo registrado por el usuario. | 3 | Media | In Process | Carlos Paredes |
-| US-12 | Solicitar seguro vehicular | S2-T10 | Solicitud vehicular | Implementar el flujo para registrar una solicitud de seguro vehicular. | 6 | Alta | In Process | Carlos Paredes |
-| US-13 | Consultar solicitud vehicular | S2-T11 | Estado de solicitud vehicular | Implementar la visualización del estado de las solicitudes vehiculares. | 4 | Alta | In Process | Carlos Paredes |
-| US-14 | Solicitar seguro de vida | S2-T12 | Solicitud de seguro de vida | Implementar el flujo para registrar una solicitud de seguro de vida. | 6 | Alta | In Process | Fernando Contreras |
-| US-15 | Consultar solicitud de vida | S2-T13 | Estado de solicitud de vida | Implementar la visualización del estado de las solicitudes de seguro de vida. | 4 | Alta | In Process | Fernando Contreras |
-| US-19 | Consultar pólizas | S2-T14 | Listado de pólizas | Implementar la visualización de las pólizas asociadas al usuario. | 4 | Alta | In Process | Rolando Torres |
-| US-20 | Consultar detalle de póliza | S2-T15 | Detalle de póliza | Implementar una vista con información detallada sobre cobertura, vigencia y datos principales de una póliza. | 4 | Alta | In Process | Rolando Torres |
+| US-01 | Consultar información de Livva | S2-T01 | Refinar información de Livva | Revisar y ajustar la presentación de información general de Livva. | 3 | Media | Done | Carlos Céspedes |
+| US-02 | Consultar seguros y beneficios | S2-T02 | Refinar seguros y beneficios | Ajustar la presentación de los seguros y beneficios disponibles en Livva. | 3 | Media | Done | Scarlet Rivera |
+| US-03 | Contactar con Livva | S2-T03 | Implementar contacto | Implementar y validar la sección de contacto con Livva. | 4 | Media | Done | Scarlet Rivera |
+| US-04 | Cambiar idioma | S2-T04 | Internacionalización | Implementar y validar el cambio entre español e inglés. | 4 | Alta | Done | Carlos Céspedes |
+| US-09 | Registrar un vehículo | S2-T05 | Registro de vehículo | Implementar el formulario para registrar un vehículo asociado al usuario. | 4 | Alta | Done | Carlos Paredes |
+| US-09 | Registrar un vehículo | S2-T06 | Validar vehículo | Validar los datos requeridos para registrar un vehículo. | 3 | Alta | Done | Carlos Paredes |
+| US-10 | Consultar vehículos | S2-T07 | Listado de vehículos | Implementar la visualización de los vehículos registrados por el usuario. | 4 | Alta | Done | Carlos Paredes |
+| US-11 | Actualizar vehículos | S2-T08 | Editar vehículo | Implementar la actualización de información de un vehículo registrado. | 4 | Media | Done | Carlos Paredes |
+| US-11 | Actualizar vehículos | S2-T09 | Eliminar vehículo | Incorporar la eliminación de un vehículo registrado por el usuario. | 3 | Media | Done | Carlos Paredes |
+| US-12 | Solicitar seguro vehicular | S2-T10 | Solicitud vehicular | Implementar el flujo para registrar una solicitud de seguro vehicular. | 6 | Alta | Done | Carlos Paredes |
+| US-13 | Consultar solicitud vehicular | S2-T11 | Estado de solicitud vehicular | Implementar la visualización del estado de las solicitudes vehiculares. | 4 | Alta | Done | Carlos Paredes |
+| US-14 | Solicitar seguro de vida | S2-T12 | Solicitud de seguro de vida | Implementar el flujo para registrar una solicitud de seguro de vida. | 6 | Alta | Done | Fernando Contreras |
+| US-15 | Consultar solicitud de vida | S2-T13 | Estado de solicitud de vida | Implementar la visualización del estado de las solicitudes de seguro de vida. | 4 | Alta | Done | Fernando Contreras |
+| US-19 | Consultar pólizas | S2-T14 | Listado de pólizas | Implementar la visualización de las pólizas asociadas al usuario. | 4 | Alta | Done | Rolando Torres |
+| US-20 | Consultar detalle de póliza | S2-T15 | Detalle de póliza | Implementar una vista con información detallada sobre cobertura, vigencia y datos principales de una póliza. | 4 | Alta | Done | Rolando Torres |
 | US-21 | Solicitar renovación de póliza | S2-T21 | Gestión de renovación | Implementar el dominio, infraestructura, estado e interfaz correspondientes al proceso de renovación de pólizas. | 6 | Alta | Done | Carlos Céspedes |
 | US-22 | Registrar un siniestro | S2-T22 | Registro de siniestro vehicular | Implementar la infraestructura y la interfaz necesarias para registrar un siniestro vehicular. | 6 | Alta | Done | Carlos Céspedes |
 | US-23 | Consultar estado de siniestro | S2-T23 | Seguimiento de siniestro | Implementar la gestión de estado necesaria para permitir el seguimiento de los siniestros registrados. | 4 | Alta | Done | Carlos Céspedes |
@@ -3328,7 +3328,7 @@ Durante esta iteración se trabajó en la configuración inicial del proyecto, i
 El desarrollo se organizó mediante GitFlow, utilizando ramas `feature/*` para separar las funcionalidades antes de integrarlas a la rama `develop`. Esto permitió mantener una mayor trazabilidad sobre los cambios realizados y facilitar la integración progresiva de los diferentes módulos de la Web Application.
 
 **Repositorio de la Web Application:**  
-[[URL del repositorio de Livva Web Application](https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-web-application.git)]
+[URL del repositorio de Livva Web Application](https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-web-application.git)]
 
 
 ##### Feature Branches utilizadas
@@ -3524,7 +3524,7 @@ El proceso de despliegue parte del código integrado en la rama `develop` del re
 | Producto | URL |
 |---|---|
 | Web Application | [URL](https://livva-web-application.web.app/) |
-| Repositorio Web Application | [[URL](https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-web-application.git)] |
+| Repositorio Web Application | [URL(https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-web-application.git)] |
 
 
 ##### Resultado obtenido
@@ -3624,8 +3624,8 @@ El seguimiento de las actividades se realiza mediante el tablero del Sprint, uti
 | TS-18 a TS-20 | Policy Management | S3-T10 | Implementar gestión de pólizas | Desarrollar servicios de consulta de pólizas, coberturas, documentos y renovaciones. | 7 | Alta | Done | Carlos Céspedes |
 | TS-28 a TS-32 | Subscription Management | S3-T11 | Implementar suscripciones y pagos | Desarrollar planes, suscripciones y órdenes de pago mediante Mercado Pago. | 8 | Alta | Done | Carlos Céspedes |
 | TS-27 | Retrieve User Notifications | S3-T12 | Implementar notificaciones | Desarrollar servicios para gestionar notificaciones y avisos de vencimiento. | 5 | Media | Done | Carlos Céspedes |
-| TS-21 a TS-26 | Claims & Indemnities | S3-T13 | Implementar dominio de reclamos | Crear entidades, agregados, estados e historiales para reclamos e indemnizaciones. | 6 | Alta | In Process | Scarlet Rivera |
-| TS-21 a TS-26 | Claims & Indemnities | S3-T14 | Implementar servicios de reclamos | Desarrollar comandos y consultas para registrar y gestionar reclamos e indemnizaciones. | 6 | Alta | In Process | Scarlet Rivera |
+| TS-21 a TS-26 | Claims & Indemnities | S3-T13 | Implementar dominio de reclamos | Crear entidades, agregados, estados e historiales para reclamos e indemnizaciones. | 6 | Alta | Done | Scarlet Rivera |
+| TS-21 a TS-26 | Claims & Indemnities | S3-T14 | Implementar servicios de reclamos | Desarrollar comandos y consultas para registrar y gestionar reclamos e indemnizaciones. | 6 | Alta | Done | Scarlet Rivera |
 | TS-21 a TS-26 | Claims & Indemnities | S3-T15 | Implementar endpoints de Claims | Incorporar controladores REST, persistencia y migraciones del módulo. | 6 | Alta | To Do | Scarlet Rivera |
 | US-05, US-06 | Authentication Integration | S3-T16 | Configurar conexión HTTP del frontend | Adaptar Axios y las variables de entorno para consumir la API ASP.NET Core. | 5 | Alta | To Do | Carlos Paredes |
 | US-05, US-06 | User Authentication | S3-T17 | Integrar autenticación del frontend | Conectar registro e inicio de sesión con los endpoints reales y administrar el token JWT. | 7 | Alta | To Do | Carlos Paredes |
@@ -3638,7 +3638,7 @@ El seguimiento de las actividades se realiza mediante el tablero del Sprint, uti
 | — | Backend Testing | S3-T24 | Ejecutar pruebas automatizadas | Revisar pruebas unitarias y de integración de los módulos implementados. | 6 | Alta | To Do | Rolando Torres |
 | — | Validation Preparation | S3-T25 | Preparar validaciones | Organizar escenarios de validación y recopilar evidencias de funcionamiento. | 5 | Media | To Do | Rolando Torres |
 | — | Web Services Deployment | S3-T26 | Desplegar backend en Railway | Configurar el servicio cloud, MySQL, variables de entorno y publicar los Web Services. | 7 | Alta | To Do | Fernando Contreras |
-| — | Sprint Documentation | S3-T27 | Documentar evidencias del Sprint 3 | Actualizar el informe con evidencias de desarrollo, documentación y configuración de despliegue. | 6 | Alta | In Process | Fernando Contreras |
+| — | Sprint Documentation | S3-T27 | Documentar evidencias del Sprint 3 | Actualizar el informe con evidencias de desarrollo, documentación y configuración de despliegue. | 6 | Alta | Done | Fernando Contreras |
 
 #### Organización de las actividades
 
@@ -4151,8 +4151,6 @@ Las integraciones registradas en `develop` evidencian la incorporación progresi
 
 La utilización de GitHub contribuyó al seguimiento del proyecto, facilitando la revisión de cambios y la trazabilidad del código fuente.
 
-#### Resultados de la colaboración
-
 El desarrollo durante el Sprint 3 permitió avanzar en la construcción de los principales Web Services de Livva, estableciendo una base para la gestión de los procesos de negocio mediante una arquitectura orientada a servicios.
 
 La distribución de responsabilidades y la utilización de herramientas de control de versiones facilitaron la organización del trabajo y el seguimiento de los avances técnicos.
@@ -4247,7 +4245,7 @@ Las entrevistas estarán orientadas a evaluar la experiencia de los usuarios al 
 | Duración | 00:05:39 |
 | URL del video | https://www.youtube.com/watch?v=6Dhgr-UBAc0 |
 
-**Figura: Entrevista de validación N.º 2.**
+**Figura: Entrevista de validación N.º 1.**
 
 **Resumen de la entrevista:**
 
@@ -4272,7 +4270,7 @@ En general, manifestó una valoración favorable de Livva Care y expresó su dis
 | Duración | 00:05:59 |
 | URL del video | https://www.youtube.com/watch?v=6Dhgr-UBAc0 |
 
-**Figura: Entrevista de validación N.º 3.**
+**Figura: Entrevista de validación N.º 2.**
 
 **Resumen de la entrevista:**
 
