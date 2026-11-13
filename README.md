@@ -4235,68 +4235,54 @@ Este segmento comprende personas que poseen vehículos particulares y tienen int
 
 Las entrevistas estarán orientadas a evaluar la experiencia de los usuarios al explorar los productos de seguros, registrar vehículos, consultar pólizas y utilizar las funcionalidades relacionadas con la gestión de seguros vehiculares.
 
+
 ##### Entrevista de Validación N.º 1
 
 | Campo | Información |
 |---|---|
-| Nombre y apellidos | [EQUIPO: nombre del participante] |
-| Edad | [EQUIPO: edad] |
-| Distrito | [EQUIPO: distrito] |
+| Nombre | Carlos |
 | Segmento objetivo | Propietarios de vehículos |
-| Fecha de entrevista | [EQUIPO: fecha] |
-| Inicio en el video | [EQUIPO: HH:MM:SS] |
-| Duración | [EQUIPO: duración] |
-| URL del video | [EQUIPO: enlace de Microsoft Stream] |
+| Fecha de entrevista | 10/11/2026 |
+| Inicio en el video | 00:03:55 |
+| Duración | 00:05:39 |
+| URL del video | https://www.youtube.com/watch?v=6Dhgr-UBAc0 |
 
-**Figura: Entrevista de validación N.º 1.**
-
-[Insertar captura representativa del participante durante la entrevista]
+**Figura: Entrevista de validación N.º 2.**
 
 **Resumen de la entrevista:**
 
-[EQUIPO: describir las principales opiniones del participante sobre navegación, seguros vehiculares, registro de vehículos, consulta de pólizas, dificultades identificadas y recomendaciones.]
+Durante la entrevista, el participante destacó que Livva Care presenta una interfaz moderna, limpia e intuitiva, con información organizada y un lenguaje comprensible. Señaló que la plataforma facilita la consulta, cotización y gestión de seguros desde un mismo entorno digital, evitando depender constantemente de asesores o de documentos dispersos.
+
+En relación con los seguros vehiculares, consideró que las opciones se encuentran ubicadas de manera accesible y que la información sobre coberturas permite evaluar alternativas según las necesidades del conductor. También destacó la sencillez del registro de vehículos mediante datos como placa, marca, modelo y año. Asimismo, valoró la posibilidad de consultar pólizas desde un solo lugar, especialmente ante situaciones de emergencia.
+
+Una de las funcionalidades que consideró más relevantes fue el registro y seguimiento de siniestros vehiculares, debido a que permitiría reportar incidentes, adjuntar evidencias y consultar el estado de atención. Como oportunidades de mejora, propuso incorporar un chat de soporte o asistente virtual, una calculadora rápida de precios, recordatorios automáticos de renovaciones y pagos, y una guía interactiva para nuevos usuarios. También sugirió facilitar el retorno al panel principal y la ubicación de consultas anteriores.
+
+En general, manifestó una valoración favorable de Livva Care y expresó su disposición a utilizarla por la autonomía, rapidez y centralización de información que ofrece.
+
+
 
 ##### Entrevista de Validación N.º 2
 
 | Campo | Información |
 |---|---|
-| Nombre y apellidos | [EQUIPO: nombre del participante] |
-| Edad | [EQUIPO: edad] |
-| Distrito | [EQUIPO: distrito] |
+| Nombre | Gabriel |
 | Segmento objetivo | Propietarios de vehículos |
-| Fecha de entrevista | [EQUIPO: fecha] |
-| Inicio en el video | [EQUIPO: HH:MM:SS] |
-| Duración | [EQUIPO: duración] |
-| URL del video | [EQUIPO: enlace de Microsoft Stream] |
-
-**Figura: Entrevista de validación N.º 2.**
-
-[Insertar captura representativa del participante durante la entrevista]
-
-**Resumen de la entrevista:**
-
-[EQUIPO: describir las principales respuestas, percepción sobre los productos vehiculares, facilidad para encontrar las funcionalidades, problemas observados y sugerencias de mejora.]
-
-##### Entrevista de Validación N.º 3
-
-| Campo | Información |
-|---|---|
-| Nombre y apellidos | [EQUIPO: nombre del participante] |
-| Edad | [EQUIPO: edad] |
-| Distrito | [EQUIPO: distrito] |
-| Segmento objetivo | Propietarios de vehículos |
-| Fecha de entrevista | [EQUIPO: fecha] |
-| Inicio en el video | [EQUIPO: HH:MM:SS] |
-| Duración | [EQUIPO: duración] |
-| URL del video | [EQUIPO: enlace de Microsoft Stream] |
+| Fecha de entrevista | 10/11/2026 |
+| Inicio en el video | 00:09:43 |
+| Duración | 00:05:59 |
+| URL del video | https://www.youtube.com/watch?v=6Dhgr-UBAc0 |
 
 **Figura: Entrevista de validación N.º 3.**
 
-[Insertar captura representativa del participante durante la entrevista]
-
 **Resumen de la entrevista:**
 
-[EQUIPO: registrar las observaciones sobre la experiencia general, claridad de la información, utilidad de gestionar pólizas y siniestros, y posibles mejoras.]
+Durante la entrevista, el participante expresó una impresión positiva de Livva Care, describiéndola como una plataforma moderna, ordenada y con opciones claramente organizadas. Destacó que la navegación resulta intuitiva y que es posible encontrar las principales funcionalidades sin mayores dificultades. Asimismo, valoró la centralización de información sobre seguros, ya que evita consultar diferentes páginas o documentos.
+
+Respecto a la experiencia de usuario, consideró que los formularios y las opciones principales son comprensibles, aunque recomendó mejorar la visibilidad de algunos botones e incorporar explicaciones adicionales en determinados campos. También señaló que sería conveniente aclarar ciertos términos relacionados con las coberturas y condiciones de los seguros.
+
+En cuanto a los seguros vehiculares, indicó que pudo localizar fácilmente las opciones disponibles y comprender el proceso de registro y consulta de vehículos. Consideró especialmente útil la posibilidad de administrar pólizas desde una misma plataforma, consultar sus condiciones y fechas de vencimiento, así como realizar el seguimiento de siniestros sin recurrir constantemente a otros canales de atención.
+
+Como principales recomendaciones, propuso incorporar notificaciones sobre vencimientos y renovaciones, además de ofrecer una comparación más detallada de coberturas y exclusiones. En general, manifestó disposición a utilizar Livva Care por la facilidad de consulta, la organización de la información y las posibilidades de seguimiento que ofrece.
 
 #### Segmento 2: Personas interesadas en seguros de vida
 
@@ -4304,89 +4290,27 @@ Este segmento comprende personas interesadas en conocer, solicitar o gestionar s
 
 Las entrevistas estarán enfocadas en evaluar la comprensión de los productos disponibles, la facilidad del proceso de solicitud, la gestión de beneficiarios y la claridad de la información presentada por Livva.
 
-##### Entrevista de Validación N.º 4
+
+##### Entrevista de Validación N.º 3
 
 | Campo | Información |
 |---|---|
-| Nombre y apellidos | [EQUIPO: nombre del participante] |
-| Edad | [EQUIPO: edad] |
-| Distrito | [EQUIPO: distrito] |
+| Nombre y apellidos | Azul Delgado Sánchez |
 | Segmento objetivo | Personas interesadas en seguros de vida |
-| Fecha de entrevista | [EQUIPO: fecha] |
-| Inicio en el video | [EQUIPO: HH:MM:SS] |
-| Duración | [EQUIPO: duración] |
-| URL del video | [EQUIPO: enlace de Microsoft Stream] |
+| Fecha de entrevista | 10/11/2026 |
+| Inicio en el video | 00:00:02 |
+| Duración | 00:03:43 |
+| URL del video | https://www.youtube.com/watch?v=6Dhgr-UBAc0 |
 
-**Figura: Entrevista de validación N.º 4.**
-
-[Insertar captura representativa del participante durante la entrevista]
+**Figura: Entrevista de validación N.º 1.**
 
 **Resumen de la entrevista:**
 
-[EQUIPO: describir la primera impresión del participante, comprensión de los productos de seguros de vida, dificultades observadas y recomendaciones.]
+Durante la entrevista, el participante manifestó una impresión positiva de Livva Care, destacando su diseño agradable, la organización de las secciones y la facilidad para comprender las principales funcionalidades. Consideró que la plataforma permite consultar información y realizar gestiones relacionadas con seguros de manera práctica, aunque señaló que algunas opciones podrían ser más fáciles de localizar.
 
-##### Entrevista de Validación N.º 5
+Respecto a los seguros de vida, indicó que pudo identificar las alternativas disponibles y comprender el proceso de solicitud sin mayores dificultades. Asimismo, valoró positivamente la posibilidad de registrar y administrar beneficiarios, ya que facilita mantener organizada y actualizada su información.
 
-| Campo | Información |
-|---|---|
-| Nombre y apellidos | [EQUIPO: nombre del participante] |
-| Edad | [EQUIPO: edad] |
-| Distrito | [EQUIPO: distrito] |
-| Segmento objetivo | Personas interesadas en seguros de vida |
-| Fecha de entrevista | [EQUIPO: fecha] |
-| Inicio en el video | [EQUIPO: HH:MM:SS] |
-| Duración | [EQUIPO: duración] |
-| URL del video | [EQUIPO: enlace de Microsoft Stream] |
-
-**Figura: Entrevista de validación N.º 5.**
-
-[Insertar captura representativa del participante durante la entrevista]
-
-**Resumen de la entrevista:**
-
-[EQUIPO: registrar las opiniones relacionadas con navegación, claridad de la información, proceso de solicitud de seguros de vida y gestión de beneficiarios.]
-
-##### Entrevista de Validación N.º 6
-
-| Campo | Información |
-|---|---|
-| Nombre y apellidos | [EQUIPO: nombre del participante] |
-| Edad | [EQUIPO: edad] |
-| Distrito | [EQUIPO: distrito] |
-| Segmento objetivo | Personas interesadas en seguros de vida |
-| Fecha de entrevista | [EQUIPO: fecha] |
-| Inicio en el video | [EQUIPO: HH:MM:SS] |
-| Duración | [EQUIPO: duración] |
-| URL del video | [EQUIPO: enlace de Microsoft Stream] |
-
-**Figura: Entrevista de validación N.º 6.**
-
-[Insertar captura representativa del participante durante la entrevista]
-
-**Resumen de la entrevista:**
-
-[EQUIPO: explicar las principales percepciones del participante sobre la utilidad de Livva, facilidad de uso, información adicional requerida y oportunidades de mejora.]
-
-#### Análisis general de las entrevistas
-
-Una vez concluidas las entrevistas, se realizará un análisis comparativo de las opiniones y observaciones registradas para ambos segmentos objetivo.
-
-El análisis permitirá identificar aspectos comunes y diferencias en la experiencia de usuario, considerando la facilidad de navegación, comprensión de la información, utilidad de las funcionalidades y principales dificultades encontradas.
-
-Los resultados se organizarán de acuerdo con los siguientes criterios:
-
-| Criterio de evaluación | Segmento vehicular | Segmento de seguros de vida |
-|---|---|---|
-| Facilidad de navegación | [EQUIPO: resultados] | [EQUIPO: resultados] |
-| Claridad de información | [EQUIPO: resultados] | [EQUIPO: resultados] |
-| Comprensión de formularios | [EQUIPO: resultados] | [EQUIPO: resultados] |
-| Utilidad de funcionalidades | [EQUIPO: resultados] | [EQUIPO: resultados] |
-| Dificultades identificadas | [EQUIPO: resultados] | [EQUIPO: resultados] |
-| Mejoras sugeridas | [EQUIPO: resultados] | [EQUIPO: resultados] |
-
-Las observaciones recopiladas servirán como referencia para desarrollar la evaluación heurística de la plataforma, estableciendo prioridades de mejora en función de los problemas identificados durante las sesiones.
-
-Los hallazgos obtenidos serán documentados en la sección 5.3.3. Evaluaciones según heurísticas.
+Como oportunidades de mejora, recomendó incorporar una funcionalidad para comparar seguros y ampliar la información presentada sobre los beneficios de cada alternativa. También señaló la importancia de mostrar claramente los precios, las coberturas y las condiciones antes de solicitar un seguro de vida. En general, expresó disposición a utilizar Livva Care por la facilidad de acceso a la información y el ahorro de tiempo que podría ofrecer.
 
 
 ### 5.3.3. Evaluaciones según heurísticas
@@ -4430,11 +4354,10 @@ En general, los hallazgos identificados presentan niveles de severidad bajos y m
 
 ## 5.4. Video About-the-Product
 
-<!-- [EQUIPO] Agregar el enlace al video About-the-Product y una breve descripción de su contenido. -->
-
+[About The Product](https://www.youtube.com/watch?v=L4VcMQOwVsE)
 ## Video About-the-Team
 
-<!-- [EQUIPO] Agregar el enlace al video About-the-Team y una breve descripción de su contenido. -->
+[About The Team](https://youtu.be/JtCnvOS_e-k)
 
 ## Conclusiones
 
