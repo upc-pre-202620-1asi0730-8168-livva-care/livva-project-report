@@ -1,6 +1,6 @@
 # Livva
 <div align="center">
-
+	
   <img src="assets/md-images-front/upc-logo.png" width="150px" />
 
   <p>Universidad Peruana de Ciencias Aplicadas</p>
@@ -71,6 +71,7 @@
 |---|---|---|---|
 | 1.0.0 | 2026-09-18 | Livva Care Team | Primera versión del Project Report correspondiente al AV1. Incluye los capítulos I al V, la implementación del Landing Page y las evidencias del Sprint 1. |
 | 1.1.0 | 2026-10-07 | Livva Care Team | Actualización del informe para TB1: corrección de artefactos, documentación del Sprint 2, primera versión desplegada de la Frontend Web Application. |
+| 1.1.1 | 2026.11.11 | Livva Care Team | Actualización del informe para AV2: corrección de errores detectados en la revisión del equipo (tipo de seguro, índice, nombres de secciones), incorporación de herramientas y convenciones de la Frontend Web Application y de los Web Services, registro del repositorio de los Web Services y documentación del Sprint 3. |
 <div style="page-break-after: always;"></div>
 
 
@@ -89,6 +90,10 @@ A continuación, se presenta el repositorio utilizado para la elaboración colab
 #### Link del repositorio de la Web Application:
 
 - https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-web-application.git
+
+#### Link del repositorio de los Web Services:
+
+- https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-web-services.git
 
 ### Entrega AV1:
 
@@ -122,7 +127,7 @@ A continuación, se presenta el repositorio utilizado para la elaboración colab
 - [Capítulo II: Requirements Elicitation & Analysis](#capítulo-ii-requirements-elicitation--analysis)
     - [2.1. Competidores](#21-competidores)
         - [2.1.1. Análisis competitivo](#211-análisis-competitivo)
-        - [ Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
+        - [2.1.2. Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
     - [2.2. Entrevistas](#22-entrevistas)
         - [2.2.1. Diseño de entrevistas](#221-diseño-de-entrevistas)
         - [2.2.2. Registro de entrevistas](#222-registro-de-entrevistas)
@@ -136,6 +141,8 @@ A continuación, se presenta el repositorio utilizado para la elaboración colab
     - [2.5. Ubiquitous Language](#25-ubiquitous-language)
 - [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
     - [3.1. User Stories](#31-user-stories)
+        - [Technical Stories](#technical-stories)
+        - [Epics](#epics)
     - [3.2. Impact Mapping](#32-impact-mapping)
     - [3.3. Product Backlog](#33-product-backlog)
 - [Capítulo IV: Product Design](#capítulo-iv-product-design)
@@ -175,14 +182,14 @@ A continuación, se presenta el repositorio utilizado para la elaboración colab
     - [5.2. Landing Page, Services & Applications Implementation](#52-landing-page-services--applications-implementation)
         - [5.2.1. Sprint 1](#521-sprint-1)
             - [5.2.1.1. Sprint Planning 1](#5211-sprint-planning-1)
-            - [5. Aspect Leaders and Collaborators](#5212-aspect-leaders-and-collaborators)
+            - [5.2.1.2. Aspect Leaders and Collaborators](#5212-aspect-leaders-and-collaborators)
             - [5.2.1.3. Sprint Backlog 1](#5213-sprint-backlog-1)
             - [5.2.1.4. Development Evidence for Sprint Review](#5214-development-evidence-for-sprint-review)
             - [5.2.1.5. Execution Evidence for Sprint Review](#5215-execution-evidence-for-sprint-review)
             - [5.2.1.6. Services Documentation Evidence for Sprint Review](#5216-services-documentation-evidence-for-sprint-review)
             - [5.2.1.7. Software Deployment Evidence for Sprint Review](#5217-software-deployment-evidence-for-sprint-review)
             - [5.2.1.8. Team Collaboration Insights during Sprint](#5218-team-collaboration-insights-during-sprint)
-		- [5.2.2. Sprint 2](#522-sprint-2)
+        - [5.2.2. Sprint 2](#522-sprint-2)
             - [5.2.2.1. Sprint Planning 2](#5221-sprint-planning-2)
             - [5.2.2.2. Aspect Leaders and Collaborators](#5222-aspect-leaders-and-collaborators)
             - [5.2.2.3. Sprint Backlog 2](#5223-sprint-backlog-2)
@@ -191,10 +198,24 @@ A continuación, se presenta el repositorio utilizado para la elaboración colab
             - [5.2.2.6. Services Documentation Evidence for Sprint Review](#5226-services-documentation-evidence-for-sprint-review)
             - [5.2.2.7. Software Deployment Evidence for Sprint Review](#5227-software-deployment-evidence-for-sprint-review)
             - [5.2.2.8. Team Collaboration Insights during Sprint](#5228-team-collaboration-insights-during-sprint)
+        - [5.2.3. Sprint 3](#523-sprint-3)
+            - [5.2.3.1. Sprint Planning 3](#5231-sprint-planning-3)
+            - [5.2.3.2. Aspect Leaders and Collaborators](#5232-aspect-leaders-and-collaborators)
+            - [5.2.3.3. Sprint Backlog 3](#5233-sprint-backlog-3)
+            - [5.2.3.4. Development Evidence for Sprint Review](#5234-development-evidence-for-sprint-review)
+            - [5.2.3.5. Execution Evidence for Sprint Review](#5235-execution-evidence-for-sprint-review)
+            - [5.2.3.6. Services Documentation Evidence for Sprint Review](#5236-services-documentation-evidence-for-sprint-review)
+            - [5.2.3.7. Software Deployment Evidence for Sprint Review](#5237-software-deployment-evidence-for-sprint-review)
+            - [5.2.3.8. Team Collaboration Insights during Sprint](#5238-team-collaboration-insights-during-sprint)
+    - [5.3. Validation Interviews](#53-validation-interviews)
+        - [5.3.1. Diseño de Entrevistas](#531-diseño-de-entrevistas)
+        - [5.3.2. Registro de Entrevistas](#532-registro-de-entrevistas)
+        - [5.3.3. Evaluaciones según heurísticas](#533-evaluaciones-según-heurísticas)
+    - [5.4. Video About-the-Product](#54-video-about-the-product)
+- [Video About-the-Team](#video-about-the-team)
 - [Conclusiones](#conclusiones)
-    - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
+- [Recomendaciones](#recomendaciones)
 - [Bibliografía](#bibliografía)
-- [Anexos](#anexos)
 
 <div style="page-break-after: always;"></div>
 
@@ -207,15 +228,14 @@ El curso contribuye al cumplimiento del Student Outcome ABET:
 
 **Criterio:** La capacidad de funcionar efectivamente en un equipo cuyos miembros juntos proporcionan liderazgo, crean un entorno de colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen objetivos.
 
-En el siguiente cuadro se describen las acciones realizadas y los enunciados de conclusiones por parte del grupo, que permiten sustentar el cumplimiento del ABET – EAC - Student Outcome 5 durante las entregas AV1 y TB1 del proyecto.
+En el siguiente cuadro se describen las acciones realizadas y los enunciados de conclusiones por parte del grupo, que permiten sustentar el cumplimiento del ABET – EAC - Student Outcome 5 durante las entregas AV1, TB1 y AV2 del proyecto.
 
 ### AV1 y TB1
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 |---|---|---|
-| **5.c1. Trabaja en equipo para proporcionar liderazgo en forma conjunta** | **Paredes Chavez, Carlos Augusto**<br>**AV1:** Participó en el refinamiento de la orientación general de Livva, contribuyendo a mantener consistencia entre la problemática, los segmentos objetivo y el alcance de la solución. Asimismo, desarrolló y refinó artefactos de análisis del dominio como el Big Picture EventStorming y el Ubiquitous Language, identificando eventos de negocio, actores, sistemas externos y conceptos relevantes. También colaboró en la definición del enfoque de las entrevistas y en la revisión de los artefactos desarrollados previamente para mantener trazabilidad entre las distintas secciones del proyecto.<br><br>**TB1:** Participó como co-líder de la gestión del Sprint 2 y del Sprint Backlog 2. Organizó las tareas del sprint, definió estimaciones, responsables y estados de avance en Trello y verificó la aplicación de GitFlow, Conventional Commits y Semantic Versioning. También apoyó en las pruebas funcionales de la Landing Page y la Frontend Web Application.<br><br>**Torres Diaz, Rolando Andre**<br>**AV1:** Participó principalmente en el desarrollo del Capítulo IV, contribuyendo a la elaboración de los diferentes diagramas utilizados para representar la estructura y navegación de la propuesta. Su trabajo permitió transformar los requisitos y decisiones previamente definidas en representaciones visuales que facilitaron la comprensión de la experiencia planteada para Livva.<br><br>**TB1:** Ejerció el co-liderazgo de la planificación y documentación del Sprint 2. Participó en la definición del Sprint Goal, la estimación de Story Points, la elaboración del Sprint Backlog 2 y la actualización de las Technical Stories. Además, refinó los criterios de aceptación utilizando la estructura Gherkin y aseguró la relación entre los requisitos especificados y las funcionalidades desarrolladas.<br><br>**Contreras Panuera, Fernando Fabrizio**<br>**AV1:** Participó en el desarrollo de los artefactos relacionados con la especificación de requisitos y definición de usuarios. Contribuyó en la elaboración de User Personas, Epics y User Stories, así como en diferentes elementos correspondientes al Capítulo III, procurando mantener relación entre las necesidades identificadas durante la investigación y las funcionalidades propuestas para Livva.<br><br>**TB1:** Lideró las mejoras relacionadas con la arquitectura de software y el diseño técnico del proyecto. Refinó el Design-Level EventStorming, actualizó los diagramas C4, perfeccionó los diagramas de clases UML y revisó los diagramas de base de datos de los Bounded Contexts. También coordinó la correspondencia entre el modelo de datos y la Fake API implementada con JSON Server.<br><br>**Céspedes Lezcano, Carlos Gabriel**<br>**AV1:** Participó en la planificación y documentación del Sprint correspondiente a la primera entrega, así como en el desarrollo de la primera versión del Landing Page de Livva. Adicionalmente, colaboró en la elaboración de artefactos de diseño como Wireframes y Wireflows, relacionando la implementación inicial del producto con la experiencia de usuario definida por el equipo.<br><br>**TB1:** Lideró la implementación de la Frontend Web Application utilizando Vue y PrimeVue. Desarrolló los módulos de gestión de vehículos, consulta de pólizas, solicitudes de seguros vehiculares y de vida, y registro de beneficiarios. También configuró la internacionalización, la Fake API y el despliegue de la Landing Page, la aplicación web y el servicio de datos.<br><br>**Rivera Aguilar, Scarlet Josefina**<br>**AV1:** Participó principalmente en el desarrollo visual de la propuesta de Livva mediante la elaboración y refinamiento de Wireframes, Mock-ups y Wireflows. Su trabajo permitió representar gráficamente las principales interfaces y recorridos del usuario, manteniendo coherencia visual entre los segmentos objetivo, las funcionalidades propuestas y la futura Web Application.<br><br>**TB1:** Lideró las mejoras relacionadas con Lean UX, Needfinding, arquitectura de información y diseño UX/UI. Refinó los artefactos de los capítulos I, II y IV, incluyendo User Personas, User Journey Maps, Empathy Maps, Wireframes, Wireflows, Mock-ups, User Flows y prototipos. Además, apoyó la validación de la consistencia visual entre la Landing Page y la Frontend Web Application. | Durante AV1, el equipo aplicó un esquema de liderazgo compartido en el que cada integrante asumió responsabilidad sobre diferentes componentes del proyecto. Las responsabilidades abarcaron investigación y modelado del dominio, especificación de requisitos, diseño UX/UI, diagramación, planificación del Sprint e implementación inicial del Landing Page. La revisión e integración de estos aportes permitió mantener coherencia entre las distintas etapas del desarrollo de Livva y avanzar hacia los objetivos definidos para la primera entrega.<br><br>**TB1:** Durante esta entrega, el equipo aplicó un liderazgo compartido basado en la especialización de responsabilidades. Cada integrante lideró un componente relevante del proyecto: planificación y gestión del sprint, especificación de requisitos, arquitectura, desarrollo de la Frontend Web Application, despliegue y diseño UX/UI. La coordinación entre estas responsabilidades permitió integrar los artefactos de análisis, diseño, implementación y documentación en un incremento funcional de Livva. |
-| **5.c2. Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos** | **Paredes Chavez, Carlos Augusto**<br>**AV1:** Coordinó sus actividades de análisis y documentación con los artefactos previamente desarrollados por el equipo, realizando ajustes en la definición del producto, Big Picture EventStorming y Ubiquitous Language cuando fue necesario mantener coherencia con el alcance acordado. Sus aportes fueron desarrollados mediante feature branches, commits y Pull Requests, permitiendo su revisión antes de ser incorporados a la rama `develop`.<br><br>**TB1:** Organizó el seguimiento de las tareas del Sprint 2 mediante Trello, registrando responsables, estimaciones y estados como To-Do, In-Process, To-Review y Done. También actualizó las secciones de Software Configuration Management, Services Documentation Evidence y Team Collaboration Insights, y apoyó en la validación de los flujos principales de la solución.<br><br>**Torres Diaz, Rolando Andre**<br>**AV1:** Organizó el desarrollo de los diagramas del Capítulo IV considerando como entrada los requisitos, flujos y decisiones de diseño elaborados por otros integrantes. Coordinó estos artefactos con el resto del equipo para que las representaciones visuales fueran consistentes con la estructura y comportamiento planteados para el producto.<br><br>**TB1:** Coordinó la documentación del Sprint 2 con los demás integrantes, relacionando el Sprint Goal, el Sprint Backlog, las Technical Stories y las evidencias de desarrollo. También recopiló evidencias de commits, ejecución y despliegue, asegurando la trazabilidad entre los requisitos, las tareas y las funcionalidades construidas.<br><br>**Contreras Panuera, Fernando Fabrizio**<br>**AV1:** Desarrolló los artefactos correspondientes a User Personas, Epics, User Stories y otros elementos del Capítulo III, coordinando sus decisiones con los resultados obtenidos previamente durante Lean UX y UX Research. Esta relación permitió establecer requisitos que respondieran a las necesidades identificadas para los segmentos objetivo de Livva.<br><br>**TB1:** Coordinó las decisiones de arquitectura y modelado de datos con el desarrollo de la Frontend Web Application y la Fake API. Asimismo, actualizó el Registro de Versiones del Informe y el Project Report Collaboration Insights con información sobre los aportes realizados por los integrantes y las actividades desarrolladas en el repositorio.<br><br>**Céspedes Lezcano, Carlos Gabriel**<br>**AV1:** Participó en la organización de las actividades correspondientes al Sprint y en la implementación del Landing Page, coordinando este desarrollo con los Wireframes y Wireflows definidos para la experiencia inicial. Su trabajo contribuyó a materializar parte de la propuesta planteada durante las etapas anteriores del proyecto y al cumplimiento de los objetivos establecidos para AV1.<br><br>**TB1:** Desarrolló e integró las funcionalidades de la Frontend Web Application mediante ramas `feature/*`, commits y Pull Requests. Coordinó el despliegue de la Landing Page, la Frontend Web Application y la Fake API, verificando que los productos quedaran disponibles en entornos públicos y sincronizados con la rama `develop`.<br><br>**Rivera Aguilar, Scarlet Josefina**<br>**AV1:** Desarrolló y refinó Wireframes, Mock-ups y Wireflows considerando los requisitos y recorridos definidos por el equipo. Coordinó las decisiones gráficas con los demás integrantes para mantener consistencia entre las diferentes vistas y facilitar posteriormente su implementación en el Landing Page y la Web Application.<br><br>**TB1:** Coordinó las decisiones de experiencia de usuario con el desarrollo técnico, revisando la consistencia visual, la internacionalización y los criterios básicos de accesibilidad. También participó en la actualización del Student Outcome, las conclusiones y recomendaciones, procurando que la documentación reflejara el trabajo realizado por todo el equipo. | **AV1:** Durante la primera entrega, el equipo organizó el trabajo mediante la distribución de responsabilidades y la dependencia controlada entre los distintos artefactos. La investigación y definición del dominio sirvieron como entrada para la especificación de requisitos; estos requisitos orientaron los diagramas, Wireframes, Mock-ups y Wireflows; y dichos artefactos apoyaron posteriormente la planificación del Sprint y la implementación inicial del Landing Page. El uso de GitFlow, feature branches, Conventional Commits y Pull Requests permitió mantener trazabilidad de los aportes y facilitar su revisión e integración progresiva en el repositorio común.<br><br>**TB1:** El equipo mantuvo un entorno colaborativo mediante la distribución de responsabilidades, la planificación del Sprint 2 y el seguimiento continuo de las tareas en Trello y GitHub. El uso de ramas de trabajo, commits, Pull Requests y revisiones permitió integrar progresivamente los aportes de los integrantes. La coordinación entre requisitos, arquitectura, diseño, implementación, pruebas y despliegue contribuyó al cumplimiento de los objetivos establecidos para TB1. |
-
+| **5.c1. Trabaja en equipo para proporcionar liderazgo en forma conjunta** | **Paredes Chavez, Carlos Augusto**<br>**AV1:** Participó en el refinamiento de la orientación general de Livva, contribuyendo a mantener consistencia entre la problemática, los segmentos objetivo y el alcance de la solución. Asimismo, desarrolló y refinó artefactos de análisis del dominio como el Big Picture EventStorming y el Ubiquitous Language, identificando eventos de negocio, actores, sistemas externos y conceptos relevantes. También colaboró en la definición del enfoque de las entrevistas y en la revisión de los artefactos desarrollados previamente para mantener trazabilidad entre las distintas secciones del proyecto.<br><br>**TB1:** Participó como co-líder de la gestión del Sprint 2 y del Sprint Backlog 2. Organizó las tareas del sprint, definió estimaciones, responsables y estados de avance en Trello y verificó la aplicación de GitFlow, Conventional Commits y Semantic Versioning. También apoyó en las pruebas funcionales de la Landing Page y la Frontend Web Application.<br><br>**AV2:** Participó en la planificación y seguimiento del Sprint 3, colaborando en la organización de actividades, revisión de avances y consolidación de evidencias para la entrega. También apoyó en la coordinación entre las tareas de documentación, implementación y validación, procurando que los aportes de los integrantes mantuvieran relación con los objetivos establecidos para el sprint. Su participación favoreció la toma conjunta de decisiones y el seguimiento de responsabilidades dentro del equipo.<br><br>**Torres Diaz, Rolando Andre**<br>**AV1:** Participó principalmente en el desarrollo del Capítulo IV, contribuyendo a la elaboración de los diferentes diagramas utilizados para representar la estructura y navegación de la propuesta. Su trabajo permitió transformar los requisitos y decisiones previamente definidas en representaciones visuales que facilitaron la comprensión de la experiencia planteada para Livva.<br><br>**TB1:** Ejerció el co-liderazgo de la planificación y documentación del Sprint 2. Participó en la definición del Sprint Goal, la estimación de Story Points, la elaboración del Sprint Backlog 2 y la actualización de las Technical Stories. Además, refinó los criterios de aceptación utilizando la estructura Gherkin y aseguró la relación entre los requisitos especificados y las funcionalidades desarrolladas.<br><br>**AV2:** Participó en el desarrollo y revisión de funcionalidades correspondientes a la oferta de seguros, solicitudes y gestión de información asociada al dominio de Livva. Coordinó sus avances con los demás integrantes para mantener consistencia entre requisitos, comportamiento esperado e implementación. Asimismo, colaboró en la revisión de evidencias del Sprint 3 y en la resolución de observaciones, contribuyendo al liderazgo compartido mediante una comunicación constante con el equipo.<br><br>**Contreras Panuera, Fernando Fabrizio**<br>**AV1:** Participó en el desarrollo de los artefactos relacionados con la especificación de requisitos y definición de usuarios. Contribuyó en la elaboración de User Personas, Epics y User Stories, así como en diferentes elementos correspondientes al Capítulo III, procurando mantener relación entre las necesidades identificadas durante la investigación y las funcionalidades propuestas para Livva.<br><br>**TB1:** Lideró las mejoras relacionadas con la arquitectura de software y el diseño técnico del proyecto. Refinó el Design-Level EventStorming, actualizó los diagramas C4, perfeccionó los diagramas de clases UML y revisó los diagramas de base de datos de los Bounded Contexts. También coordinó la correspondencia entre el modelo de datos y la Fake API implementada con JSON Server.<br><br>**AV2:** Participó en la implementación y revisión de funcionalidades del backend correspondientes a los Web Services de Livva, así como en la preparación de aspectos técnicos relacionados con su despliegue. Coordinó con los demás integrantes la resolución de configuraciones e incidencias necesarias para integrar los servicios con la infraestructura del proyecto. Su participación implicó asumir responsabilidad sobre tareas técnicas específicas y comunicar avances y dificultades para evitar bloqueos en el trabajo del equipo.<br><br>**Céspedes Lezcano, Carlos Gabriel**<br>**AV1:** Participó en la planificación y documentación del Sprint correspondiente a la primera entrega, así como en el desarrollo de la primera versión del Landing Page de Livva. Adicionalmente, colaboró en la elaboración de artefactos de diseño como Wireframes y Wireflows, relacionando la implementación inicial del producto con la experiencia de usuario definida por el equipo.<br><br>**TB1:** Lideró la implementación de la Frontend Web Application utilizando Vue y PrimeVue. Desarrolló los módulos de gestión de vehículos, consulta de pólizas, solicitudes de seguros vehiculares y de vida, y registro de beneficiarios. También configuró la internacionalización, la Fake API y el despliegue de la Landing Page, la aplicación web y el servicio de datos.<br><br>**AV2:** Participó en la integración de la Frontend Web Application con los Web Services desarrollados durante el Sprint 3, revisando flujos de autenticación, consumo de endpoints y funcionamiento de los principales módulos de Livva. También colaboró en pruebas y evidencias de ejecución. La coordinación con los responsables del backend fue constante, especialmente para comunicar incidencias y adaptar la implementación frente a cambios en contratos o respuestas de los servicios.<br><br>**Rivera Aguilar, Scarlet Josefina**<br>**AV1:** Participó principalmente en el desarrollo visual de la propuesta de Livva mediante la elaboración y refinamiento de Wireframes, Mock-ups y Wireflows. Su trabajo permitió representar gráficamente las principales interfaces y recorridos del usuario, manteniendo coherencia visual entre los segmentos objetivo, las funcionalidades propuestas y la futura Web Application.<br><br>**TB1:** Lideró las mejoras relacionadas con Lean UX, Needfinding, arquitectura de información y diseño UX/UI. Refinó los artefactos de los capítulos I, II y IV, incluyendo User Personas, User Journey Maps, Empathy Maps, Wireframes, Wireflows, Mock-ups, User Flows y prototipos. Además, apoyó la validación de la consistencia visual entre la Landing Page y la Frontend Web Application.<br><br>**AV2:** Participó en la revisión de la experiencia de usuario y de la coherencia visual entre los artefactos de diseño, la Landing Page y la Frontend Web Application. Asimismo, colaboró en la preparación de actividades de validación y en la revisión de evidencias correspondientes al Sprint 3. Su participación permitió mantener una perspectiva centrada en el usuario y facilitó la comunicación entre las decisiones de diseño y las posibilidades de implementación técnica. | **AV1:** Durante AV1, el equipo aplicó un esquema de liderazgo compartido en el que cada integrante asumió responsabilidad sobre diferentes componentes del proyecto. Las responsabilidades abarcaron investigación y modelado del dominio, especificación de requisitos, diseño UX/UI, diagramación, planificación del Sprint e implementación inicial del Landing Page. La revisión e integración de estos aportes permitió mantener coherencia entre las distintas etapas del desarrollo de Livva y avanzar hacia los objetivos definidos para la primera entrega.<br><br>**TB1:** Durante esta entrega, el equipo aplicó un liderazgo compartido basado en la especialización de responsabilidades. Cada integrante lideró un componente relevante del proyecto: planificación y gestión del sprint, especificación de requisitos, arquitectura, desarrollo de la Frontend Web Application, despliegue y diseño UX/UI. La coordinación entre estas responsabilidades permitió integrar los artefactos de análisis, diseño, implementación y documentación en un incremento funcional de Livva.<br><br>**AV2:** Durante esta entrega, el equipo fortaleció el liderazgo compartido mediante la distribución de responsabilidades entre planificación, desarrollo backend, integración frontend, despliegue, validación y documentación. Cada integrante asumió responsabilidad sobre distintos componentes del Sprint 3 y colaboró en la revisión e integración del trabajo de los demás. La comunicación continua, la disposición para resolver observaciones y la coordinación entre tareas dependientes permitieron avanzar de manera conjunta hacia el cumplimiento de los objetivos establecidos para AV2. |
+| **5.c2. Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos** | **Paredes Chavez, Carlos Augusto**<br>**AV1:** Coordinó sus actividades de análisis y documentación con los artefactos previamente desarrollados por el equipo, realizando ajustes en la definición del producto, Big Picture EventStorming y Ubiquitous Language cuando fue necesario mantener coherencia con el alcance acordado. Sus aportes fueron desarrollados mediante feature branches, commits y Pull Requests, permitiendo su revisión antes de ser incorporados a la rama `develop`.<br><br>**TB1:** Organizó el seguimiento de las tareas del Sprint 2 mediante Trello, registrando responsables, estimaciones y estados como To-Do, In-Process, To-Review y Done. También actualizó las secciones de Software Configuration Management, Services Documentation Evidence y Team Collaboration Insights, y apoyó en la validación de los flujos principales de la solución.<br><br>**AV2:** Colaboró en la organización y seguimiento del Sprint 3, apoyando la revisión del estado de las tareas y la actualización de la documentación correspondiente a la entrega. Coordinó información proveniente de diferentes áreas del proyecto y participó en la consolidación de evidencias, contribuyendo a que el equipo mantuviera metas comunes, responsabilidades claras y un seguimiento continuo del trabajo realizado.<br><br>**Torres Diaz, Rolando Andre**<br>**AV1:** Organizó el desarrollo de los diagramas del Capítulo IV considerando como entrada los requisitos, flujos y decisiones de diseño elaborados por otros integrantes. Coordinó estos artefactos con el resto del equipo para que las representaciones visuales fueran consistentes con la estructura y comportamiento planteados para el producto.<br><br>**TB1:** Coordinó la documentación del Sprint 2 con los demás integrantes, relacionando el Sprint Goal, el Sprint Backlog, las Technical Stories y las evidencias de desarrollo. También recopiló evidencias de commits, ejecución y despliegue, asegurando la trazabilidad entre los requisitos, las tareas y las funcionalidades construidas.<br><br>**AV2:** Coordinó sus actividades de desarrollo con los requisitos y funcionalidades trabajadas por otros integrantes, participando en revisiones y ajustes cuando se identificaron inconsistencias durante la integración. Esta dinámica requirió mantener una comunicación constante con el equipo y adaptar sus tareas cuando fue necesario, contribuyendo a que el avance individual permaneciera alineado con los objetivos generales del Sprint 3.<br><br>**Contreras Panuera, Fernando Fabrizio**<br>**AV1:** Desarrolló los artefactos correspondientes a User Personas, Epics, User Stories y otros elementos del Capítulo III, coordinando sus decisiones con los resultados obtenidos previamente durante Lean UX y UX Research. Esta relación permitió establecer requisitos que respondieran a las necesidades identificadas para los segmentos objetivo de Livva.<br><br>**TB1:** Coordinó las decisiones de arquitectura y modelado de datos con el desarrollo de la Frontend Web Application y la Fake API. Asimismo, actualizó el Registro de Versiones del Informe y el Project Report Collaboration Insights con información sobre los aportes realizados por los integrantes y las actividades desarrolladas en el repositorio.<br><br>**AV2:** Coordinó actividades relacionadas con el backend y el despliegue de los Web Services, colaborando con los demás integrantes para resolver problemas de configuración, integración e infraestructura. Comunicó avances y dificultades técnicas para facilitar la toma de decisiones y reducir bloqueos en las tareas dependientes, contribuyendo a un entorno de trabajo colaborativo orientado al cumplimiento del Sprint Goal.<br><br>**Céspedes Lezcano, Carlos Gabriel**<br>**AV1:** Participó en la organización de las actividades correspondientes al Sprint y en la implementación del Landing Page, coordinando este desarrollo con los Wireframes y Wireflows definidos para la experiencia inicial. Su trabajo contribuyó a materializar parte de la propuesta planteada durante las etapas anteriores del proyecto y al cumplimiento de los objetivos establecidos para AV1.<br><br>**TB1:** Desarrolló e integró las funcionalidades de la Frontend Web Application mediante ramas `feature/*`, commits y Pull Requests. Coordinó el despliegue de la Landing Page, la Frontend Web Application y la Fake API, verificando que los productos quedaran disponibles en entornos públicos y sincronizados con la rama `develop`.<br><br>**AV2:** Coordinó la integración de la aplicación web con los servicios desarrollados durante el Sprint 3, comunicando incidencias y necesidades de ajuste cuando los contratos o respuestas del backend afectaban los flujos del frontend. También participó en pruebas de funcionamiento y revisión de evidencias. Su capacidad para coordinar dependencias entre componentes contribuyó al avance progresivo hacia una solución integrada y al cumplimiento de los objetivos funcionales de AV2.<br><br>**Rivera Aguilar, Scarlet Josefina**<br>**AV1:** Desarrolló y refinó Wireframes, Mock-ups y Wireflows considerando los requisitos y recorridos definidos por el equipo. Coordinó las decisiones gráficas con los demás integrantes para mantener consistencia entre las diferentes vistas y facilitar posteriormente su implementación en el Landing Page y la Web Application.<br><br>**TB1:** Coordinó las decisiones de experiencia de usuario con el desarrollo técnico, revisando la consistencia visual, la internacionalización y los criterios básicos de accesibilidad. También participó en la actualización del Student Outcome, las conclusiones y recomendaciones, procurando que la documentación reflejara el trabajo realizado por todo el equipo.<br><br>**AV2:** Colaboró con los integrantes responsables de diseño, frontend y documentación para revisar la consistencia de la experiencia de usuario y preparar las actividades de validación de la solución. Participó en la revisión de artefactos y evidencias, aportando observaciones orientadas a mejorar claridad y coherencia visual. Su participación favoreció una dinámica inclusiva en la que las decisiones de diseño fueron contrastadas con las necesidades del usuario y discutidas de manera conjunta con el equipo. | **AV1:** Durante la primera entrega, el equipo organizó el trabajo mediante la distribución de responsabilidades y la dependencia controlada entre los distintos artefactos. La investigación y definición del dominio sirvieron como entrada para la especificación de requisitos; estos requisitos orientaron los diagramas, Wireframes, Mock-ups y Wireflows; y dichos artefactos apoyaron posteriormente la planificación del Sprint y la implementación inicial del Landing Page. El uso de GitFlow, feature branches, Conventional Commits y Pull Requests permitió mantener trazabilidad de los aportes y facilitar su revisión e integración progresiva en el repositorio común.<br><br>**TB1:** El equipo mantuvo un entorno colaborativo mediante la distribución de responsabilidades, la planificación del Sprint 2 y el seguimiento continuo de las tareas en Trello y GitHub. El uso de ramas de trabajo, commits, Pull Requests y revisiones permitió integrar progresivamente los aportes de los integrantes. La coordinación entre requisitos, arquitectura, diseño, implementación, pruebas y despliegue contribuyó al cumplimiento de los objetivos establecidos para TB1.<br><br>**AV2:** Durante AV2, el equipo mantuvo un entorno colaborativo mediante la planificación del Sprint 3, la distribución de responsabilidades y la coordinación continua entre desarrollo, diseño, integración, despliegue, validación y documentación. Las dependencias entre las diferentes áreas exigieron comunicación constante, capacidad de adaptación y revisión entre pares. La disposición de los integrantes para compartir avances, resolver dificultades y ajustar sus actividades permitió cumplir los objetivos del sprint y fortalecer habilidades de comunicación, responsabilidad, cooperación, organización y toma conjunta de decisiones. |
 <div style="page-break-after: always;"></div>
 
 # Capítulo I: Introducción
@@ -1502,11 +1522,17 @@ Para mantener consistencia dentro del dominio de Livva se establecen las siguien
 | US-26 | Registrar una compañía aseguradora | Como representante de una aseguradora, deseo registrar la información de mi compañía para participar en Livva. | **Scenario 1: Registro correcto**<br>**Given** que se proporciona información válida de la compañía<br>**When** se solicita su registro<br>**Then** el sistema registra la compañía aseguradora. | EP-07 |
 | US-27 | Registrar un producto de seguro | Como representante de una aseguradora, deseo registrar un producto de seguro para ofrecerlo mediante Livva. | **Scenario 1: Registro correcto**<br>**Given** que la compañía está registrada y proporciona información válida<br>**When** registra un producto de seguro<br>**Then** el sistema almacena el producto asociado a la compañía. | EP-07 |
 | US-28 | Consultar solicitudes recibidas | Como representante de una aseguradora, deseo consultar las solicitudes asociadas a mis productos para realizar su seguimiento. | **Scenario 1: Solicitudes disponibles**<br>**Given** que existen solicitudes asociadas a la compañía<br>**When** consulta las solicitudes<br>**Then** el sistema presenta las solicitudes correspondientes. | EP-07 |
+| US-29 | Solicitar indemnización de seguro de vida | Como beneficiario de un seguro de vida, deseo registrar una solicitud de indemnización para iniciar el proceso de pago correspondiente. | **Scenario 1: Solicitud correcta**<br>**Given** que el usuario es beneficiario de una póliza de vida y proporciona la información requerida<br>**When** envía la solicitud de indemnización<br>**Then** el sistema registra la solicitud con su estado inicial.<br><br>**Scenario 2: Póliza no válida**<br>**Given** que la información no corresponde con una póliza válida<br>**When** el usuario envía la solicitud<br>**Then** el sistema rechaza el registro. | EP-05 |
+| US-30 | Consultar estado de indemnización | Como beneficiario de un seguro de vida, deseo consultar el estado de mi solicitud de indemnización para conocer su avance. | **Scenario 1: Solicitud existente**<br>**Given** que el beneficiario posee una solicitud registrada<br>**When** consulta su estado<br>**Then** el sistema presenta la información y el estado actual de la solicitud. | EP-05 |
+| US-31 | Consultar planes de suscripción | Como usuario, deseo consultar los planes de suscripción de Livva para conocer sus precios y beneficios. | **Scenario 1: Planes disponibles**<br>**Given** que existen planes activos<br>**When** el usuario consulta los planes<br>**Then** el sistema presenta el nombre, precio y descripción de cada plan. | EP-08 |
+| US-32 | Contratar un plan de suscripción | Como usuario, deseo contratar un plan de suscripción para acceder a los servicios de Livva. | **Scenario 1: Contratación correcta**<br>**Given** que el usuario selecciona un plan activo<br>**When** confirma la contratación y el pago es aprobado<br>**Then** el sistema activa la suscripción.<br><br>**Scenario 2: Suscripción activa existente**<br>**Given** que el usuario ya posee una suscripción activa<br>**When** intenta contratar otro plan<br>**Then** el sistema rechaza la contratación. | EP-08 |
+| US-33 | Consultar mi suscripción | Como usuario suscrito, deseo consultar mi suscripción para conocer el plan contratado, su estado y su vigencia. | **Scenario 1: Suscripción existente**<br>**Given** que el usuario posee una suscripción<br>**When** consulta su suscripción<br>**Then** el sistema presenta el plan, el estado y las fechas correspondientes. | EP-08 |
+| US-34 | Cancelar mi suscripción | Como usuario suscrito, deseo cancelar mi suscripción para finalizar el servicio contratado con Livva. | **Scenario 1: Cancelación correcta**<br>**Given** que el usuario posee una suscripción activa<br>**When** solicita su cancelación<br>**Then** el sistema registra la suscripción como cancelada. | EP-08 |
 
 
 ### Technical Stories
 
-Las Technical Stories especifican las capacidades que el RESTful API de Livva deberá ofrecer a la Web Application. Cada historia se redacta desde la perspectiva de un Developer y define sus interacciones request/response mediante criterios Gherkin.
+Las Technical Stories especifican las capacidades que el RESTful API de Livva deberá ofrecer a la Web Application. Cada historia se redacta desde la perspectiva de un Developer y define sus interacciones request/response mediante criterios Gherkin. Las historias se agrupan según los bounded contexts definidos en el diseño de base de datos (sección 4.8), y las rutas corresponden a los recursos consumidos por la Web Application.
 
 Para todos los endpoints protegidos:
 
@@ -1522,36 +1548,26 @@ Para todos los endpoints protegidos:
 |---|---|---|---|---|
 | TS-01 | Register User Account | Como Developer, deseo registrar una cuenta mediante `POST /api/v1/authentication/sign-up` para permitir que nuevos usuarios accedan a Livva. | **Scenario 1: Successful registration**<br>**Given** que se proporcionan datos válidos y un correo no registrado<br>**When** se envía la solicitud<br>**Then** el API responde `201 Created` con el identificador del usuario.<br><br>**Scenario 2: Duplicate email**<br>**Given** que el correo ya está registrado<br>**When** se envía la solicitud<br>**Then** el API responde `409 Conflict`. | US-05 / EP-02 |
 | TS-02 | Authenticate User | Como Developer, deseo autenticar a un usuario mediante `POST /api/v1/authentication/sign-in` para permitirle acceder a los recursos protegidos. | **Scenario 1: Valid credentials**<br>**Given** que las credenciales son correctas<br>**When** se solicita iniciar sesión<br>**Then** el API responde `200 OK` con un token de acceso.<br><br>**Scenario 2: Invalid credentials**<br>**Given** que las credenciales son incorrectas<br>**When** se solicita iniciar sesión<br>**Then** el API responde `401 Unauthorized`. | US-06 / EP-02 |
-| TS-03 | Retrieve Current Profile | Como Developer, deseo obtener el perfil mediante `GET /api/v1/profiles/me` para mostrar la información del usuario autenticado. | **Scenario 1: Existing profile**<br>**Given** que el usuario está autenticado<br>**When** solicita su perfil<br>**Then** el API responde `200 OK` con su información personal. | US-07 / EP-02 |
-| TS-04 | Update Current Profile | Como Developer, deseo actualizar el perfil mediante `PUT /api/v1/profiles/me` para mantener vigente la información del usuario. | **Scenario 1: Valid update**<br>**Given** que el usuario proporciona información válida<br>**When** solicita actualizar su perfil<br>**Then** el API responde `200 OK` con los datos actualizados.<br><br>**Scenario 2: Invalid information**<br>**Given** que la información no es válida<br>**When** se solicita la actualización<br>**Then** el API responde `400 Bad Request`. | US-08 / EP-02 |
+| TS-03 | Retrieve Current Profile | Como Developer, deseo obtener el perfil mediante `GET /api/v1/user-profiles?userId={userId}` para mostrar la información del usuario autenticado. | **Scenario 1: Existing profile**<br>**Given** que el usuario está autenticado<br>**When** solicita su perfil<br>**Then** el API responde `200 OK` con su información personal. | US-07 / EP-02 |
+| TS-04 | Update Current Profile | Como Developer, deseo actualizar el perfil mediante `PATCH /api/v1/user-profiles/{profileId}` para mantener vigente la información del usuario. | **Scenario 1: Valid update**<br>**Given** que el usuario proporciona información válida<br>**When** solicita actualizar su perfil<br>**Then** el API responde `200 OK` con los datos actualizados.<br><br>**Scenario 2: Invalid information**<br>**Given** que la información no es válida<br>**When** se solicita la actualización<br>**Then** el API responde `400 Bad Request`. | US-08 / EP-02 |
 
-#### Insurance Offering Management
+#### Insurance Offering and Applications
 
 | Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con |
 |---|---|---|---|---|
 | TS-05 | Retrieve Insurance Products | Como Developer, deseo consultar productos mediante `GET /api/v1/insurance-products` para presentar las alternativas académicas de seguros vehiculares y de vida. | **Scenario 1: Available products**<br>**Given** que existen productos registrados<br>**When** se solicita la lista con un tipo de seguro opcional<br>**Then** el API responde `200 OK` con los productos correspondientes.<br><br>**Scenario 2: No matching products**<br>**Given** que no existen productos para el filtro indicado<br>**When** se realiza la consulta<br>**Then** el API responde `200 OK` con una colección vacía. | US-03, US-04, US-12 y US-14 |
-
-#### Vehicle and Vehicle Insurance Application Management
-
-| Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con |
-|---|---|---|---|---|
 | TS-06 | Register Vehicle | Como Developer, deseo registrar un vehículo mediante `POST /api/v1/vehicles` para asociarlo con el usuario autenticado. | **Scenario 1: Valid vehicle**<br>**Given** que se proporcionan datos válidos<br>**When** se registra el vehículo<br>**Then** el API responde `201 Created` con su identificador.<br><br>**Scenario 2: Duplicate license plate**<br>**Given** que la placa ya está registrada<br>**When** se envía la solicitud<br>**Then** el API responde `409 Conflict`. | US-09 / EP-03 |
 | TS-07 | Retrieve User Vehicles | Como Developer, deseo consultar vehículos mediante `GET /api/v1/vehicles` para mostrar los asociados al usuario autenticado. | **Scenario 1: Registered vehicles**<br>**Given** que el usuario posee vehículos<br>**When** solicita la lista<br>**Then** el API responde `200 OK` con sus vehículos.<br><br>**Scenario 2: No vehicles**<br>**Given** que no posee vehículos<br>**When** solicita la lista<br>**Then** el API responde `200 OK` con una colección vacía. | US-10 / EP-03 |
-| TS-08 | Update Vehicle | Como Developer, deseo actualizar un vehículo mediante `PUT /api/v1/vehicles/{vehicleId}` para mantener correcta su información. | **Scenario 1: Valid update**<br>**Given** que el vehículo pertenece al usuario y los datos son válidos<br>**When** se solicita la actualización<br>**Then** el API responde `200 OK` con el vehículo actualizado.<br><br>**Scenario 2: Vehicle unavailable**<br>**Given** que el vehículo no existe o no pertenece al usuario<br>**When** se solicita actualizarlo<br>**Then** el API responde `404 Not Found`. | US-11 / EP-03 |
+| TS-08 | Update Vehicle | Como Developer, deseo actualizar un vehículo mediante `PATCH /api/v1/vehicles/{vehicleId}` para mantener correcta su información. | **Scenario 1: Valid update**<br>**Given** que el vehículo pertenece al usuario y los datos son válidos<br>**When** se solicita la actualización<br>**Then** el API responde `200 OK` con el vehículo actualizado.<br><br>**Scenario 2: Vehicle unavailable**<br>**Given** que el vehículo no existe o no pertenece al usuario<br>**When** se solicita actualizarlo<br>**Then** el API responde `404 Not Found`. | US-11 / EP-03 |
 | TS-09 | Create Vehicle Insurance Application | Como Developer, deseo registrar una solicitud mediante `POST /api/v1/vehicle-insurance-applications` para iniciar la intermediación de un seguro vehicular. | **Scenario 1: Valid application**<br>**Given** que el vehículo pertenece al usuario y el producto está disponible<br>**When** se envía la solicitud<br>**Then** el API responde `201 Created` con su identificador y estado inicial.<br><br>**Scenario 2: Invalid vehicle or product**<br>**Given** que el vehículo o producto no está disponible<br>**When** se envía la solicitud<br>**Then** el API responde `404 Not Found`. | US-12 / EP-03 |
 | TS-10 | Retrieve Vehicle Insurance Applications | Como Developer, deseo consultar `GET /api/v1/vehicle-insurance-applications` para mostrar las solicitudes vehiculares del usuario autenticado. | **Scenario 1: Existing applications**<br>**Given** que el usuario posee solicitudes vehiculares<br>**When** solicita la lista<br>**Then** el API responde `200 OK` con sus solicitudes y estados.<br><br>**Scenario 2: No applications**<br>**Given** que no posee solicitudes<br>**When** realiza la consulta<br>**Then** el API responde `200 OK` con una colección vacía. | US-13 / EP-03 |
 | TS-11 | Retrieve Vehicle Insurance Application Details | Como Developer, deseo consultar `GET /api/v1/vehicle-insurance-applications/{applicationId}` para mostrar el detalle y estado de una solicitud vehicular. | **Scenario 1: Existing application**<br>**Given** que la solicitud pertenece al usuario<br>**When** se consulta su detalle<br>**Then** el API responde `200 OK` con la información correspondiente.<br><br>**Scenario 2: Application unavailable**<br>**Given** que la solicitud no existe o no pertenece al usuario<br>**When** se realiza la consulta<br>**Then** el API responde `404 Not Found`. | US-13 / EP-03 |
-
-#### Life Insurance Application and Beneficiary Management
-
-| Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con |
-|---|---|---|---|---|
 | TS-12 | Create Life Insurance Application | Como Developer, deseo registrar una solicitud mediante `POST /api/v1/life-insurance-applications` para iniciar la intermediación de un seguro de vida. | **Scenario 1: Valid application**<br>**Given** que el usuario proporciona la información requerida y selecciona un producto disponible<br>**When** envía la solicitud<br>**Then** el API responde `201 Created` con su identificador y estado inicial.<br><br>**Scenario 2: Invalid product**<br>**Given** que el producto no existe o no está disponible<br>**When** se envía la solicitud<br>**Then** el API responde `404 Not Found`. | US-14 / EP-04 |
 | TS-13 | Retrieve Life Insurance Applications | Como Developer, deseo consultar `GET /api/v1/life-insurance-applications` para mostrar las solicitudes de vida del usuario autenticado. | **Scenario 1: Existing applications**<br>**Given** que el usuario posee solicitudes<br>**When** solicita la lista<br>**Then** el API responde `200 OK` con sus solicitudes y estados.<br><br>**Scenario 2: No applications**<br>**Given** que no posee solicitudes<br>**When** realiza la consulta<br>**Then** el API responde `200 OK` con una colección vacía. | US-15 / EP-04 |
 | TS-14 | Retrieve Life Insurance Application Details | Como Developer, deseo consultar `GET /api/v1/life-insurance-applications/{applicationId}` para mostrar el detalle y estado de una solicitud de vida. | **Scenario 1: Existing application**<br>**Given** que la solicitud pertenece al usuario<br>**When** se consulta su detalle<br>**Then** el API responde `200 OK` con la información correspondiente.<br><br>**Scenario 2: Application unavailable**<br>**Given** que la solicitud no existe o no pertenece al usuario<br>**When** se realiza la consulta<br>**Then** el API responde `404 Not Found`. | US-15 / EP-04 |
-| TS-15 | Register Beneficiary | Como Developer, deseo registrar un beneficiario mediante `POST /api/v1/life-insurance-policies/{policyId}/beneficiaries` para asociarlo con una póliza de vida. | **Scenario 1: Valid beneficiary**<br>**Given** que la póliza pertenece al usuario y los datos son válidos<br>**When** se registra el beneficiario<br>**Then** el API responde `201 Created`.<br><br>**Scenario 2: Invalid policy**<br>**Given** que la póliza no existe o no pertenece al usuario<br>**When** se envía la solicitud<br>**Then** el API responde `404 Not Found`. | US-16 / EP-04 |
-| TS-16 | Retrieve Beneficiaries | Como Developer, deseo consultar `GET /api/v1/life-insurance-policies/{policyId}/beneficiaries` para mostrar los beneficiarios de una póliza. | **Scenario 1: Existing beneficiaries**<br>**Given** que la póliza pertenece al usuario<br>**When** solicita sus beneficiarios<br>**Then** el API responde `200 OK` con la lista correspondiente.<br><br>**Scenario 2: No beneficiaries**<br>**Given** que la póliza no posee beneficiarios<br>**When** se realiza la consulta<br>**Then** el API responde `200 OK` con una colección vacía. | US-17 / EP-04 |
-| TS-17 | Update Beneficiary | Como Developer, deseo actualizar un beneficiario mediante `PUT /api/v1/life-insurance-policies/{policyId}/beneficiaries/{beneficiaryId}` para mantener sus datos vigentes. | **Scenario 1: Valid update**<br>**Given** que la póliza y el beneficiario pertenecen al usuario<br>**When** se proporcionan datos válidos<br>**Then** el API responde `200 OK` con la información actualizada.<br><br>**Scenario 2: Beneficiary unavailable**<br>**Given** que el beneficiario no existe o no pertenece a la póliza<br>**When** se solicita actualizarlo<br>**Then** el API responde `404 Not Found`. | US-18 / EP-04 |
+| TS-15 | Register Beneficiary | Como Developer, deseo registrar un beneficiario mediante `POST /api/v1/beneficiaries` para asociarlo con una póliza de vida. | **Scenario 1: Valid beneficiary**<br>**Given** que la póliza pertenece al usuario y los datos son válidos<br>**When** se registra el beneficiario<br>**Then** el API responde `201 Created`.<br><br>**Scenario 2: Invalid policy**<br>**Given** que la póliza no existe o no pertenece al usuario<br>**When** se envía la solicitud<br>**Then** el API responde `404 Not Found`. | US-16 / EP-04 |
+| TS-16 | Retrieve Beneficiaries | Como Developer, deseo consultar `GET /api/v1/beneficiaries?policyId={policyId}` para mostrar los beneficiarios de una póliza. | **Scenario 1: Existing beneficiaries**<br>**Given** que la póliza pertenece al usuario<br>**When** solicita sus beneficiarios<br>**Then** el API responde `200 OK` con la lista correspondiente.<br><br>**Scenario 2: No beneficiaries**<br>**Given** que la póliza no posee beneficiarios<br>**When** se realiza la consulta<br>**Then** el API responde `200 OK` con una colección vacía. | US-17 / EP-04 |
+| TS-17 | Update Beneficiary | Como Developer, deseo actualizar un beneficiario mediante `PATCH /api/v1/beneficiaries/{beneficiaryId}` para mantener sus datos vigentes. | **Scenario 1: Valid update**<br>**Given** que el beneficiario pertenece a una póliza del usuario<br>**When** se proporcionan datos válidos<br>**Then** el API responde `200 OK` con la información actualizada.<br><br>**Scenario 2: Beneficiary unavailable**<br>**Given** que el beneficiario no existe o no pertenece a una póliza del usuario<br>**When** se solicita actualizarlo<br>**Then** el API responde `404 Not Found`. | US-18 / EP-04 |
 
 #### Policy Management
 
@@ -1559,23 +1575,18 @@ Para todos los endpoints protegidos:
 |---|---|---|---|---|
 | TS-18 | Retrieve User Policies | Como Developer, deseo consultar pólizas mediante `GET /api/v1/policies` para mostrar las asociadas al usuario autenticado. | **Scenario 1: Existing policies**<br>**Given** que el usuario posee pólizas<br>**When** solicita la lista<br>**Then** el API responde `200 OK` con sus pólizas.<br><br>**Scenario 2: No policies**<br>**Given** que el usuario no posee pólizas<br>**When** realiza la consulta<br>**Then** el API responde `200 OK` con una colección vacía. | US-19 / EP-05 |
 | TS-19 | Retrieve Policy Details | Como Developer, deseo consultar `GET /api/v1/policies/{policyId}` para mostrar la cobertura, vigencia y documentos de una póliza. | **Scenario 1: Existing policy**<br>**Given** que la póliza pertenece al usuario<br>**When** se consulta su detalle<br>**Then** el API responde `200 OK` con su información, coberturas y vigencia.<br><br>**Scenario 2: Policy unavailable**<br>**Given** que la póliza no existe o no pertenece al usuario<br>**When** se realiza la consulta<br>**Then** el API responde `404 Not Found`. | US-20 / EP-05 |
-| TS-20 | Create Policy Renewal Request | Como Developer, deseo registrar una renovación mediante `POST /api/v1/policies/{policyId}/renewal-requests` para iniciar el proceso correspondiente. | **Scenario 1: Eligible policy**<br>**Given** que la póliza pertenece al usuario y puede renovarse<br>**When** se solicita la renovación<br>**Then** el API responde `201 Created` con el estado inicial.<br><br>**Scenario 2: Renewal unavailable**<br>**Given** que la póliza no puede renovarse o ya posee una solicitud pendiente<br>**When** se envía la solicitud<br>**Then** el API responde `409 Conflict`. | US-21 / EP-05 |
+| TS-20 | Create Policy Renewal Request | Como Developer, deseo registrar una renovación mediante `POST /api/v1/renewals` para iniciar el proceso correspondiente para una póliza. | **Scenario 1: Eligible policy**<br>**Given** que la póliza pertenece al usuario y puede renovarse<br>**When** se solicita la renovación<br>**Then** el API responde `201 Created` con el estado inicial.<br><br>**Scenario 2: Renewal unavailable**<br>**Given** que la póliza no puede renovarse o ya posee una solicitud pendiente<br>**When** se envía la solicitud<br>**Then** el API responde `409 Conflict`. | US-21 / EP-05 |
 
-#### Vehicle Claim Management
+#### Claims and Indemnities
 
 | Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con |
 |---|---|---|---|---|
 | TS-21 | Register Vehicle Claim | Como Developer, deseo registrar un siniestro mediante `POST /api/v1/vehicle-claims` para iniciar su seguimiento básico. | **Scenario 1: Valid claim**<br>**Given** que la póliza pertenece al usuario y está vigente<br>**When** se proporciona información válida del incidente<br>**Then** el API responde `201 Created` con el identificador y estado inicial.<br><br>**Scenario 2: Ineligible policy**<br>**Given** que la póliza no está vigente<br>**When** se intenta registrar el siniestro<br>**Then** el API responde `409 Conflict`. | US-22 / EP-05 |
 | TS-22 | Retrieve Vehicle Claims | Como Developer, deseo consultar `GET /api/v1/vehicle-claims` para mostrar los siniestros registrados por el usuario. | **Scenario 1: Existing claims**<br>**Given** que el usuario posee siniestros<br>**When** solicita la lista<br>**Then** el API responde `200 OK` con sus siniestros y estados.<br><br>**Scenario 2: No claims**<br>**Given** que el usuario no posee siniestros<br>**When** realiza la consulta<br>**Then** el API responde `200 OK` con una colección vacía. | US-23 / EP-05 |
 | TS-23 | Retrieve Vehicle Claim Details | Como Developer, deseo consultar `GET /api/v1/vehicle-claims/{claimId}` para mostrar el detalle y estado de un siniestro. | **Scenario 1: Existing claim**<br>**Given** que el siniestro pertenece al usuario<br>**When** se consulta su detalle<br>**Then** el API responde `200 OK` con su información y estado.<br><br>**Scenario 2: Claim unavailable**<br>**Given** que el siniestro no existe o no pertenece al usuario<br>**When** se realiza la consulta<br>**Then** el API responde `404 Not Found`. | US-23 / EP-05 |
-
-#### Life Indemnity Management
-
-| Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con |
-|---|---|---|---|---|
-| TS-24 | Register Life Indemnity Request | Como Developer, deseo registrar una solicitud mediante `POST /api/v1/indemnity-requests` para iniciar el seguimiento de una indemnización de seguro de vida. | **Scenario 1: Valid request**<br>**Given** que el solicitante es beneficiario de la póliza y proporciona la información requerida<br>**When** envía la solicitud<br>**Then** el API responde `201 Created` con su identificador y estado inicial.<br><br>**Scenario 2: Invalid covered event**<br>**Given** que la información no corresponde con una póliza válida<br>**When** se envía la solicitud<br>**Then** el API responde `409 Conflict`. | US-26 propuesta / EP-05 |
-| TS-25 | Retrieve Life Indemnity Requests | Como Developer, deseo consultar `GET /api/v1/indemnity-requests` para mostrar las solicitudes de indemnización del beneficiario autenticado. | **Scenario 1: Existing requests**<br>**Given** que el beneficiario posee solicitudes<br>**When** solicita la lista<br>**Then** el API responde `200 OK` con sus solicitudes y estados.<br><br>**Scenario 2: No requests**<br>**Given** que no posee solicitudes<br>**When** realiza la consulta<br>**Then** el API responde `200 OK` con una colección vacía. | US-27 propuesta / EP-05 |
-| TS-26 | Retrieve Life Indemnity Request Details | Como Developer, deseo consultar `GET /api/v1/indemnity-requests/{requestId}` para mostrar el detalle y estado de una indemnización. | **Scenario 1: Existing request**<br>**Given** que la solicitud corresponde al beneficiario autenticado<br>**When** se consulta su detalle<br>**Then** el API responde `200 OK` con la información y estado.<br><br>**Scenario 2: Request unavailable**<br>**Given** que la solicitud no existe o no corresponde al usuario<br>**When** se realiza la consulta<br>**Then** el API responde `404 Not Found`. | US-27 propuesta / EP-05 |
+| TS-24 | Register Life Indemnity Request | Como Developer, deseo registrar una solicitud mediante `POST /api/v1/indemnity-requests` para iniciar el seguimiento de una indemnización de seguro de vida. | **Scenario 1: Valid request**<br>**Given** que el solicitante es beneficiario de la póliza y proporciona la información requerida<br>**When** envía la solicitud<br>**Then** el API responde `201 Created` con su identificador y estado inicial.<br><br>**Scenario 2: Invalid covered event**<br>**Given** que la información no corresponde con una póliza válida<br>**When** se envía la solicitud<br>**Then** el API responde `409 Conflict`. | US-29 / EP-05 |
+| TS-25 | Retrieve Life Indemnity Requests | Como Developer, deseo consultar `GET /api/v1/indemnity-requests` para mostrar las solicitudes de indemnización del beneficiario autenticado. | **Scenario 1: Existing requests**<br>**Given** que el beneficiario posee solicitudes<br>**When** solicita la lista<br>**Then** el API responde `200 OK` con sus solicitudes y estados.<br><br>**Scenario 2: No requests**<br>**Given** que no posee solicitudes<br>**When** realiza la consulta<br>**Then** el API responde `200 OK` con una colección vacía. | US-30 / EP-05 |
+| TS-26 | Retrieve Life Indemnity Request Details | Como Developer, deseo consultar `GET /api/v1/indemnity-requests/{requestId}` para mostrar el detalle y estado de una indemnización. | **Scenario 1: Existing request**<br>**Given** que la solicitud corresponde al beneficiario autenticado<br>**When** se consulta su detalle<br>**Then** el API responde `200 OK` con la información y estado.<br><br>**Scenario 2: Request unavailable**<br>**Given** que la solicitud no existe o no corresponde al usuario<br>**When** se realiza la consulta<br>**Then** el API responde `404 Not Found`. | US-30 / EP-05 |
 
 #### Notification Management
 
@@ -1583,22 +1594,22 @@ Para todos los endpoints protegidos:
 |---|---|---|---|---|
 | TS-27 | Retrieve User Notifications | Como Developer, deseo consultar notificaciones mediante `GET /api/v1/notifications` para presentar los avisos del usuario autenticado. | **Scenario 1: Existing notifications**<br>**Given** que el usuario posee notificaciones<br>**When** solicita la lista<br>**Then** el API responde `200 OK` con sus avisos ordenados por fecha.<br><br>**Scenario 2: No notifications**<br>**Given** que el usuario no posee avisos<br>**When** realiza la consulta<br>**Then** el API responde `200 OK` con una colección vacía. | US-24 y US-25 / EP-06 |
 
-#### Subscription and Payment Management
+#### Subscription Management
 
 | Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con |
 |---|---|---|---|---|
-| TS-28 | Retrieve Subscription Plans | Como Developer, deseo consultar planes mediante `GET /api/v1/subscription-plans` para mostrar los niveles de servicio ofrecidos por Livva. | **Scenario 1: Active plans**<br>**Given** que existen planes activos<br>**When** se solicita la lista<br>**Then** el API responde `200 OK` con precios, periodicidad y beneficios.<br><br>**Scenario 2: No active plans**<br>**Given** que no existen planes disponibles<br>**When** se realiza la consulta<br>**Then** el API responde `200 OK` con una colección vacía. | US-28 propuesta / EP-07 propuesto |
-| TS-29 | Create Livva Subscription | Como Developer, deseo crear una suscripción mediante `POST /api/v1/subscriptions` para iniciar la contratación de un plan de Livva. | **Scenario 1: Valid plan**<br>**Given** que el usuario selecciona un plan activo<br>**When** crea la suscripción<br>**Then** el API responde `201 Created` con estado pendiente y una referencia de pago sandbox.<br><br>**Scenario 2: Existing active subscription**<br>**Given** que el usuario ya posee una suscripción activa<br>**When** intenta crear otra<br>**Then** el API responde `409 Conflict`. | US-29 propuesta / EP-07 propuesto |
-| TS-30 | Confirm Sandbox Subscription Payment | Como Developer, deseo recibir confirmaciones mediante `POST /api/v1/payments/webhooks/{provider}` para activar una suscripción después de un pago sandbox aprobado. | **Scenario 1: Approved payment**<br>**Given** que el proveedor envía una confirmación válida<br>**When** el API verifica la operación<br>**Then** responde `200 OK` y activa la suscripción.<br><br>**Scenario 2: Invalid signature**<br>**Given** que la confirmación no puede validarse<br>**When** se recibe la solicitud<br>**Then** el API responde `401 Unauthorized` sin activar la suscripción.<br><br>**Scenario 3: Repeated confirmation**<br>**Given** que la operación ya fue procesada<br>**When** se recibe nuevamente<br>**Then** el API responde `200 OK` sin duplicar la activación. | US-29 propuesta / EP-07 propuesto |
-| TS-31 | Retrieve Current Subscription | Como Developer, deseo consultar `GET /api/v1/subscriptions/me` para mostrar el plan y estado de la suscripción del usuario. | **Scenario 1: Existing subscription**<br>**Given** que el usuario posee una suscripción<br>**When** se realiza la consulta<br>**Then** el API responde `200 OK` con su plan, estado y fechas.<br><br>**Scenario 2: No subscription**<br>**Given** que el usuario no posee una suscripción<br>**When** se realiza la consulta<br>**Then** el API responde `404 Not Found`. | US-30 propuesta / EP-07 propuesto |
-| TS-32 | Cancel Livva Subscription | Como Developer, deseo cancelar una suscripción mediante `POST /api/v1/subscriptions/{subscriptionId}/cancellations` para finalizar el servicio contratado con Livva. | **Scenario 1: Active subscription**<br>**Given** que la suscripción pertenece al usuario y está activa<br>**When** se solicita la cancelación<br>**Then** el API responde `200 OK` con el estado cancelado.<br><br>**Scenario 2: Already cancelled**<br>**Given** que la suscripción ya está cancelada<br>**When** se solicita nuevamente la cancelación<br>**Then** el API responde `409 Conflict`. | US-31 propuesta / EP-07 propuesto |
+| TS-28 | Retrieve Subscription Plans | Como Developer, deseo consultar planes mediante `GET /api/v1/subscription-plans` para mostrar los niveles de servicio ofrecidos por Livva. | **Scenario 1: Active plans**<br>**Given** que existen planes activos<br>**When** se solicita la lista<br>**Then** el API responde `200 OK` con precios, periodicidad y beneficios.<br><br>**Scenario 2: No active plans**<br>**Given** que no existen planes disponibles<br>**When** se realiza la consulta<br>**Then** el API responde `200 OK` con una colección vacía. | US-31 / EP-08 |
+| TS-29 | Create Livva Subscription | Como Developer, deseo crear una suscripción mediante `POST /api/v1/user-subscriptions` para iniciar la contratación de un plan de Livva. | **Scenario 1: Valid plan**<br>**Given** que el usuario selecciona un plan activo<br>**When** crea la suscripción<br>**Then** el API responde `201 Created` con estado pendiente y una referencia de pago sandbox.<br><br>**Scenario 2: Existing active subscription**<br>**Given** que el usuario ya posee una suscripción activa<br>**When** intenta crear otra<br>**Then** el API responde `409 Conflict`. | US-32 / EP-08 |
+| TS-30 | Confirm Sandbox Subscription Payment | Como Developer, deseo recibir confirmaciones mediante `POST /api/v1/payments/webhooks/{provider}` para activar una suscripción después de un pago sandbox aprobado. | **Scenario 1: Approved payment**<br>**Given** que el proveedor envía una confirmación válida<br>**When** el API verifica la operación<br>**Then** responde `200 OK` y activa la suscripción.<br><br>**Scenario 2: Invalid signature**<br>**Given** que la confirmación no puede validarse<br>**When** se recibe la solicitud<br>**Then** el API responde `401 Unauthorized` sin activar la suscripción.<br><br>**Scenario 3: Repeated confirmation**<br>**Given** que la operación ya fue procesada<br>**When** se recibe nuevamente<br>**Then** el API responde `200 OK` sin duplicar la activación. | US-32 / EP-08 |
+| TS-31 | Retrieve Current Subscription | Como Developer, deseo consultar `GET /api/v1/user-subscriptions?userId={userId}` para mostrar el plan y estado de la suscripción del usuario. | **Scenario 1: Existing subscription**<br>**Given** que el usuario posee una suscripción<br>**When** se realiza la consulta<br>**Then** el API responde `200 OK` con su plan, estado y fechas.<br><br>**Scenario 2: No subscription**<br>**Given** que el usuario no posee una suscripción<br>**When** se realiza la consulta<br>**Then** el API responde `404 Not Found`. | US-33 / EP-08 |
+| TS-32 | Cancel Livva Subscription | Como Developer, deseo cancelar una suscripción mediante `PATCH /api/v1/user-subscriptions/{subscriptionId}` con el estado `cancelled` para finalizar el servicio contratado con Livva. | **Scenario 1: Active subscription**<br>**Given** que la suscripción pertenece al usuario y está activa<br>**When** se solicita la cancelación<br>**Then** el API responde `200 OK` con el estado cancelado.<br><br>**Scenario 2: Already cancelled**<br>**Given** que la suscripción ya está cancelada<br>**When** se solicita nuevamente la cancelación<br>**Then** el API responde `409 Conflict`. | US-34 / EP-08 |
 
 #### API Internationalization and Documentation
 
 | Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con |
 |---|---|---|---|---|
 | TS-33 | Retrieve Localized API Responses | Como Developer, deseo solicitar respuestas localizadas mediante `Accept-Language` para integrar la internacionalización de Livva. | **Scenario 1: Latin American Spanish**<br>**Given** que la solicitud incluye `Accept-Language: es-419`<br>**When** el API genera mensajes dirigidos al usuario<br>**Then** los presenta en español latinoamericano.<br><br>**Scenario 2: Default language**<br>**Given** que no se indica un idioma compatible<br>**When** el API genera la respuesta<br>**Then** utiliza inglés como idioma predeterminado. | Requerimiento i18n |
-| TS-34 | Retrieve OpenAPI Documentation | Como Developer, deseo acceder a la documentación OpenAPI mediante Swagger para conocer y probar los endpoints disponibles. | **Scenario 1: OpenAPI specification**<br>**Given** que el Web Service está disponible<br>**When** se solicita `GET /swagger/v1/swagger.json`<br>**Then** el API responde `200 OK` con las rutas, parámetros, esquemas y respuestas documentadas.<br><br>**Scenario 2: Swagger interface**<br>**Given** que se accede a Swagger<br>**When** se visualiza la documentación<br>**Then** los endpoints pueden probarse y el contenido utiliza inglés como idioma predeterminado. | Documentación de servicios |
+| TS-34 | Retrieve OpenAPI Documentation | Como Developer, deseo acceder a la documentación OpenAPI Scalar para conocer y probar los endpoints disponibles. | **Scenario 1: OpenAPI specification**<br>**Given** que el Web Service está disponible<br>**When** se solicita `GET /openapi/v1.json`<br>**Then** el API responde `200 OK` con las rutas, parámetros, esquemas y respuestas documentadas.<br><br>**Scenario 2: Interactive documentation**<br>**Given** que se accede a `/scalar`<br>**When** se visualiza la documentación<br>**Then** los endpoints pueden probarse y el contenido utiliza inglés como idioma predeterminado. | Documentación de servicios |
 
 
 ### Epics
@@ -1612,6 +1623,7 @@ Para todos los endpoints protegidos:
 | EP-05 | Gestión de pólizas y siniestros | Agrupa las funcionalidades relacionadas con consulta de pólizas, renovaciones, siniestros e indemnizaciones. |
 | EP-06 | Notificaciones | Agrupa las funcionalidades relacionadas con avisos importantes para los usuarios. |
 | EP-07 | Gestión de compañías aseguradoras | Agrupa las funcionalidades destinadas a las compañías aseguradoras asociadas con Livva. |
+| EP-08 | Gestión de suscripciones y pagos | Agrupa las funcionalidades relacionadas con la consulta, contratación, pago y cancelación de los planes de suscripción de Livva. |
 
 ## 3.2. Impact Mapping
 
@@ -1651,7 +1663,12 @@ Para todos los endpoints protegidos:
 | 26 | US-25 | Consultar notificaciones | Como usuario, deseo consultar mis notificaciones para conocer eventos importantes relacionados con mis seguros. | 2 |
 | 27 | US-07 | Consultar perfil personal | Como usuario registrado, deseo consultar mi información personal para verificar mis datos registrados. | 2 |
 | 28 | US-08 | Actualizar perfil personal | Como usuario registrado, deseo actualizar mis datos personales para mantener mi información vigente. | 3 |
-
+| 29 | US-31 | Consultar planes de suscripción | Como usuario, deseo consultar los planes de suscripción de Livva para conocer sus precios y beneficios. | 2 |
+| 30 | US-32 | Contratar un plan de suscripción | Como usuario, deseo contratar un plan de suscripción para acceder a los servicios de Livva. | 5 |
+| 31 | US-33 | Consultar mi suscripción | Como usuario suscrito, deseo consultar mi suscripción para conocer el plan contratado, su estado y su vigencia. | 2 |
+| 32 | US-34 | Cancelar mi suscripción | Como usuario suscrito, deseo cancelar mi suscripción para finalizar el servicio contratado con Livva. | 3 |
+| 33 | US-29 | Solicitar indemnización de seguro de vida | Como beneficiario de un seguro de vida, deseo registrar una solicitud de indemnización para iniciar el proceso de pago correspondiente. | 5 |
+| 34 | US-30 | Consultar estado de indemnización | Como beneficiario de un seguro de vida, deseo consultar el estado de mi solicitud de indemnización para conocer su avance. | 3 |
 # Capítulo IV: Product Design
 
 ## 4.1. Style Guidelines
@@ -1660,13 +1677,13 @@ Las Style Guidelines de Livva establecen los lineamientos visuales y comunicacio
 
 ### 4.1.1. General Style Guidelines
 
-Las General Style Guidelines de Livva definen los criterios visuales y comunicacionales que permiten mantener una identidad consistente en los productos digitales de la solución. Estas decisiones toman como base la propuesta visual desarrollada para el Landing Page y buscan transmitir confianza, claridad, accesibilidad y simplicidad a los segmentos objetivo relacionados con seguros vehiculares y seguros de salud.
+Las General Style Guidelines de Livva definen los criterios visuales y comunicacionales que permiten mantener una identidad consistente en los productos digitales de la solución. Estas decisiones toman como base la propuesta visual desarrollada para el Landing Page y buscan transmitir confianza, claridad, accesibilidad y simplicidad a los segmentos objetivo relacionados con seguros vehiculares y seguros de vida.
 
 #### Branding
 
 La identidad visual de Livva busca comunicar una imagen moderna, confiable y cercana. La marca utiliza el nombre “Livva” como elemento principal de reconocimiento, acompañado por una propuesta visual limpia y minimalista. El diseño evita elementos innecesarios y prioriza la claridad en la presentación de la información, con el objetivo de reducir la complejidad asociada a la búsqueda y comparación de seguros.
 
-La propuesta de marca se orienta a transmitir seguridad y confianza sin utilizar una comunicación excesivamente formal. Esto permite que Livva mantenga una imagen profesional y, al mismo tiempo, accesible para usuarios que buscan información relacionada con seguros vehiculares y de salud.
+La propuesta de marca se orienta a transmitir seguridad y confianza sin utilizar una comunicación excesivamente formal. Esto permite que Livva mantenga una imagen profesional y, al mismo tiempo, accesible para usuarios que buscan información relacionada con seguros vehiculares y de vida.
 
 #### Typography
 
@@ -1719,7 +1736,7 @@ Los botones incluyen estados visuales de interacción, como cambios de color dur
 
 Las tarjetas se utilizan para presentar información relacionada con los tipos de seguro, planes y otros contenidos relevantes de manera independiente y fácil de identificar. Estas utilizan fondos claros, bordes suaves, esquinas redondeadas y separación suficiente entre elementos.
 
-En la sección de seguros, las cards permiten diferenciar las soluciones de Seguro Vehicular y Seguro de Salud. En la sección de planes, las tarjetas permiten comparar características y beneficios, utilizando mayor énfasis visual en la alternativa recomendada.
+En la sección de seguros, las cards permiten diferenciar las soluciones de Seguro Vehicular y Seguro de Vida. En la sección de planes, las tarjetas permiten comparar características y beneficios, utilizando mayor énfasis visual en la alternativa recomendada.
 
 #### Forms
 
@@ -1757,7 +1774,7 @@ Livva utiliza principalmente un sistema de organización jerárquico y por tópi
 
 En el Landing Page, la información se organiza de manera jerárquica desde los contenidos de mayor relevancia hacia información más específica. La sección inicial presenta la propuesta de valor de Livva y los principales call-to-action, seguida por las soluciones de seguro, planes disponibles, información sobre la plataforma y medios de contacto.
 
-La categorización por tópicos permite agrupar el contenido de acuerdo con su propósito. En la sección de Seguros se distinguen las dos soluciones principales consideradas por Livva: Seguro Vehicular y Seguro de Salud. Esto permite que cada segmento objetivo pueda identificar con facilidad el contenido relacionado con sus necesidades.
+La categorización por tópicos permite agrupar el contenido de acuerdo con su propósito. En la sección de Seguros se distinguen las dos soluciones principales consideradas por Livva: Seguro Vehicular y Seguro de Vida. Esto permite que cada segmento objetivo pueda identificar con facilidad el contenido relacionado con sus necesidades.
 
 La sección de Planes utiliza una organización comparativa, permitiendo presentar diferentes alternativas de servicio con sus respectivos beneficios y precios. De esta manera, el usuario puede contrastar las opciones disponibles antes de realizar una elección.
 
@@ -1771,7 +1788,7 @@ El sistema de etiquetado de Livva busca representar la información mediante nom
 
 La navegación principal utiliza las etiquetas “Inicio”, “Seguros”, “Planes”, “Nosotros” y “Contacto”. Cada una representa de forma directa el contenido asociado a su sección, permitiendo que el usuario anticipe el tipo de información que encontrará antes de seleccionarla.
 
-La etiqueta “Seguros” agrupa las principales soluciones consideradas dentro del alcance de Livva. Dentro de esta sección se utilizan las denominaciones “Seguro Vehicular” y “Seguro de Salud”, manteniendo una correspondencia directa con los dos segmentos objetivo definidos para el proyecto.
+La etiqueta “Seguros” agrupa las principales soluciones consideradas dentro del alcance de Livva. Dentro de esta sección se utilizan las denominaciones “Seguro Vehicular” y “Seguro de Vida”, manteniendo una correspondencia directa con los dos segmentos objetivo definidos para el proyecto.
 
 La etiqueta “Planes” identifica la sección en la que se presentan las alternativas de servicio y sus respectivos beneficios. Para diferenciar las opciones se emplean nombres como “Plan Básico” y “Livva Pro”, facilitando la comparación entre niveles de servicio.
 
@@ -1788,8 +1805,8 @@ Para el Landing Page se establecen los siguientes valores:
 | Tag | Valor |
 |---|---|
 | Title | Livva - La plataforma inteligente para tu seguro ideal |
-| Description | Livva te permite comparar y gestionar alternativas de seguros vehiculares y de salud de forma simple, clara y digital. |
-| Keywords | seguros, seguro vehicular, seguro de salud, comparación de seguros, Livva |
+| Description | Livva te permite comparar y gestionar alternativas de seguros vehiculares y de vida de forma simple, clara y digital. |
+| Keywords | seguros, seguro vehicular, seguro de vida, comparación de seguros, Livva |
 | Author | Livva Care |
 
 Estas etiquetas se incluyen dentro del elemento `<head>` del documento HTML y permiten describir de manera resumida el contenido principal del Landing Page.
@@ -1830,7 +1847,7 @@ Los flujos de navegación buscarán mantener rutas claras entre las distintas vi
 
 ## 4.3. Landing Page UI Design
 
-La propuesta de interfaz de usuario del Landing Page de Livva traduce las decisiones establecidas en las Style Guidelines y en la Information Architecture hacia una experiencia visual clara, consistente y orientada a los segmentos objetivo. El diseño prioriza la comprensión rápida de la propuesta de valor, la identificación de las soluciones de Seguro Vehicular y Seguro de Salud, así como el acceso sencillo a los principales call-to-action.
+La propuesta de interfaz de usuario del Landing Page de Livva traduce las decisiones establecidas en las Style Guidelines y en la Information Architecture hacia una experiencia visual clara, consistente y orientada a los segmentos objetivo. El diseño prioriza la comprensión rápida de la propuesta de valor, la identificación de las soluciones de Seguro Vehicular y Seguro de Vida, así como el acceso sencillo a los principales call-to-action.
 
 La interfaz ha sido planteada siguiendo criterios de jerarquía visual, simplicidad, accesibilidad y responsive design, buscando mantener una experiencia coherente tanto en navegadores de escritorio como en dispositivos móviles.
 
@@ -1952,7 +1969,7 @@ Se consideraron las principales funcionalidades de En esta sección se presenta 
 
 El prototipo permite simular la navegación entre las principales vistas de la aplicación y validar la secuencia de interacción que siguen los usuarios para completar sus tareas principales. Las conexiones entre pantallas fueron definidas considerando los recorridos planteados en los User Flows y el sistema de navegación establecido para la aplicación.
 
-Se consideraron las principales funcionalidades de Livva, como el acceso a la plataforma, visualización del dashboard, consulta y gestión de seguros, reservas, mantenimiento, disponibilidad y seguimiento de servicios.
+Se consideraron las principales funcionalidades de Livva, como el acceso a la plataforma, visualización del dashboard, consulta y gestión de seguros.
 
 A continuación, se presenta una captura del prototipo en funcionamiento y el enlace al video de demostración, donde se muestran los principales flujos de navegación e interacción de la aplicación.
 ![Web Application Prototype](assets/md-livva-webapp-mockups/Prototipo.png)
@@ -1963,12 +1980,138 @@ A continuación, se presenta una captura del prototipo en funcionamiento y el en
 
 ### 4.6.1. Design-Level Event Storming
 
-**Event Storming**
+El Design-Level EventStorming refina el Big Picture EventStorming (sección 2.4) para cada uno de los bounded contexts definidos en el diseño de base de datos (sección 4.8). A partir de los Domain Events identificados previamente, se incorporan los comandos que los originan, los agregados que los procesan, las políticas que reaccionan ante ellos, los modelos de lectura que consulta la Web Application y los sistemas externos que participan en cada flujo. Los comandos y modelos de lectura se relacionan con las User Stories y Technical Stories de la sección 3.1. Los diagramas se mantienen como código (Diagram-as-Code) mediante Mermaid.
 
-![Design-Level Event Storming](assets/md-big-picture-event-storming/big-picture-event-storming.PNG)
+| Elemento | Color | Descripción |
+|---|---|---|
+| Actor | Amarillo | Persona que inicia un comando. |
+| Command | Azul | Acción o intención que se solicita al sistema. |
+| Aggregate | Amarillo claro | Entidad del dominio que procesa el comando y garantiza sus reglas. |
+| Domain Event | Naranja | Hecho relevante del negocio que ya ocurrió. |
+| Policy | Lila | Regla que reacciona ante un evento ("cuando ocurre…, entonces…"). |
+| Read Model | Verde | Información que se consulta para tomar decisiones. |
+| External System | Rosado | Sistema externo que participa en el flujo. |
+
+#### Identity & Profile Management
+
+```mermaid
+flowchart LR
+    visitor(["Visitor"]):::actor --> signUp["Sign Up"]:::command --> user1["User"]:::aggregate --> accountRegistered["User Account Registered"]:::event
+    registered(["Registered User"]):::actor --> signIn["Sign In"]:::command --> user2["User"]:::aggregate --> authenticated["User Authenticated"]:::event
+    registered --> updateProfile["Update User Profile"]:::command --> profile["UserProfile"]:::aggregate --> profileUpdated["User Profile Updated"]:::event
+    profileView[("User Profile")]:::readmodel -.-> registered
+    classDef actor fill:#fff59d,stroke:#c9b800,color:#000
+    classDef command fill:#90caf9,stroke:#1e6fb8,color:#000
+    classDef aggregate fill:#fff9c4,stroke:#c9b800,color:#000
+    classDef event fill:#ffb74d,stroke:#c77800,color:#000
+    classDef policy fill:#ce93d8,stroke:#7b3f8c,color:#000
+    classDef readmodel fill:#a5d6a7,stroke:#3d8b40,color:#000
+    classDef external fill:#f8bbd0,stroke:#b0476d,color:#000
+```
+
+#### Insurance Offering & Applications
+
+```mermaid
+flowchart LR
+    owner(["Vehicle Owner"]):::actor --> registerVehicle["Register Vehicle"]:::command --> vehicle["Vehicle"]:::aggregate --> vehicleRegistered["Vehicle Registered"]:::event
+    products[("Insurance Products")]:::readmodel -.-> owner
+    products -.-> lifeApplicant
+    owner --> submitVehicle["Submit Vehicle Insurance Application"]:::command --> app1["InsuranceApplication"]:::aggregate --> vehicleSubmitted["Vehicle Insurance Application Submitted"]:::event
+    lifeApplicant(["Life Insurance Applicant"]):::actor --> submitLife["Submit Life Insurance Application"]:::command --> app2["InsuranceApplication"]:::aggregate --> lifeSubmitted["Life Insurance Application Submitted"]:::event
+    vehicleSubmitted --> insurer["Insurance Company"]:::external
+    lifeSubmitted --> insurer
+    insurer --> underEvaluation["Application Under Evaluation"]:::event
+    underEvaluation --> approved["Application Approved"]:::event
+    underEvaluation --> rejected["Application Rejected"]:::event
+    approved --> notifyDecision["When an application decision occurs, notify the applicant"]:::policy
+    rejected --> notifyDecision
+    applicationsView[("Insurance Applications and Status")]:::readmodel -.-> owner
+    policyholder(["Policyholder"]):::actor --> registerBeneficiary["Register Beneficiary"]:::command --> beneficiary["Beneficiary"]:::aggregate --> beneficiaryRegistered["Beneficiary Registered"]:::event
+    classDef actor fill:#fff59d,stroke:#c9b800,color:#000
+    classDef command fill:#90caf9,stroke:#1e6fb8,color:#000
+    classDef aggregate fill:#fff9c4,stroke:#c9b800,color:#000
+    classDef event fill:#ffb74d,stroke:#c77800,color:#000
+    classDef policy fill:#ce93d8,stroke:#7b3f8c,color:#000
+    classDef readmodel fill:#a5d6a7,stroke:#3d8b40,color:#000
+    classDef external fill:#f8bbd0,stroke:#b0476d,color:#000
+```
+
+#### Policy Management
+
+```mermaid
+flowchart LR
+    approved["Application Approved"]:::event --> issuePolicy["When an application is approved, register the issued policy"]:::policy --> registerPolicy["Register Issued Policy"]:::command --> policy1["Policy"]:::aggregate --> policyRegistered["Issued Policy Registered"]:::event
+    policy2["Policy"]:::aggregate --> approaching["Policy Approaching Expiration"]:::event --> notifyExpiration["When expiration approaches, notify the policyholder"]:::policy
+    policyholder(["Policyholder"]):::actor --> requestRenewal["Request Renewal"]:::command --> renewal["Renewal"]:::aggregate --> renewalRequested["Renewal Requested"]:::event --> insurer["Insurance Company"]:::external
+    insurer --> renewed["Policy Renewed"]:::event
+    insurer --> renewalRejected["Renewal Rejected"]:::event
+    policiesView[("Policies with Coverages and Documents")]:::readmodel -.-> policyholder
+    classDef actor fill:#fff59d,stroke:#c9b800,color:#000
+    classDef command fill:#90caf9,stroke:#1e6fb8,color:#000
+    classDef aggregate fill:#fff9c4,stroke:#c9b800,color:#000
+    classDef event fill:#ffb74d,stroke:#c77800,color:#000
+    classDef policy fill:#ce93d8,stroke:#7b3f8c,color:#000
+    classDef readmodel fill:#a5d6a7,stroke:#3d8b40,color:#000
+    classDef external fill:#f8bbd0,stroke:#b0476d,color:#000
+```
+
+#### Claims & Indemnities
+
+```mermaid
+flowchart LR
+    owner(["Insured Vehicle Owner"]):::actor --> reportClaim["Report Vehicle Claim"]:::command --> claim["VehicleClaim"]:::aggregate --> claimReported["Vehicle Claim Reported"]:::event --> insurer1["Insurance Company"]:::external
+    insurer1 --> claimReview["Claim Under Review"]:::event --> claimUpdated["Claim Status Updated"]:::event --> claimResolved["Claim Status Resolved"]:::event
+    claimUpdated --> notifyClaim["When claim status changes, record it in the status history and notify the policyholder"]:::policy
+    claimsView[("Vehicle Claims and Status History")]:::readmodel -.-> owner
+    beneficiary(["Beneficiary"]):::actor --> submitIndemnity["Submit Indemnity Request"]:::command --> indemnity["IndemnityRequest"]:::aggregate --> indemnitySubmitted["Indemnity Request Submitted"]:::event --> insurer2["Insurance Company"]:::external
+    insurer2 --> indemnityReview["Indemnity Request Under Review"]:::event --> indemnityUpdated["Indemnity Status Updated"]:::event --> indemnityResolved["Indemnity Request Resolved"]:::event
+    indemnityUpdated --> notifyIndemnity["When indemnity status changes, record it in the status history and notify the beneficiary"]:::policy
+    indemnityView[("Indemnity Requests and Status History")]:::readmodel -.-> beneficiary
+    classDef actor fill:#fff59d,stroke:#c9b800,color:#000
+    classDef command fill:#90caf9,stroke:#1e6fb8,color:#000
+    classDef aggregate fill:#fff9c4,stroke:#c9b800,color:#000
+    classDef event fill:#ffb74d,stroke:#c77800,color:#000
+    classDef policy fill:#ce93d8,stroke:#7b3f8c,color:#000
+    classDef readmodel fill:#a5d6a7,stroke:#3d8b40,color:#000
+    classDef external fill:#f8bbd0,stroke:#b0476d,color:#000
+```
+
+#### Subscription Management
+
+```mermaid
+flowchart LR
+    plansView[("Subscription Plans")]:::readmodel -.-> user
+    user(["Registered User"]):::actor --> selectPlan["Select Subscription Plan"]:::command --> sub1["UserSubscription"]:::aggregate --> planSelected["Subscription Plan Selected"]:::event
+    planSelected --> initiatePayment["Initiate Subscription Payment"]:::command --> payment["SubscriptionPayment"]:::aggregate --> paymentInitiated["Subscription Payment Initiated"]:::event --> provider["Payment Provider"]:::external
+    provider --> paymentConfirmed["Subscription Payment Confirmed"]:::event --> activatePolicy["When payment is confirmed, activate the selected Livva plan"]:::policy --> activate["Activate Subscription"]:::command --> sub2["UserSubscription"]:::aggregate --> activated["Livva Subscription Activated"]:::event
+    user --> cancel["Cancel Subscription"]:::command --> sub3["UserSubscription"]:::aggregate --> cancellationRequested["Subscription Cancellation Requested"]:::event --> cancelled["Livva Subscription Cancelled"]:::event
+    mySubscription[("Current Subscription")]:::readmodel -.-> user
+    classDef actor fill:#fff59d,stroke:#c9b800,color:#000
+    classDef command fill:#90caf9,stroke:#1e6fb8,color:#000
+    classDef aggregate fill:#fff9c4,stroke:#c9b800,color:#000
+    classDef event fill:#ffb74d,stroke:#c77800,color:#000
+    classDef policy fill:#ce93d8,stroke:#7b3f8c,color:#000
+    classDef readmodel fill:#a5d6a7,stroke:#3d8b40,color:#000
+    classDef external fill:#f8bbd0,stroke:#b0476d,color:#000
+```
+
+#### Notification Management
+
+```mermaid
+flowchart LR
+    approaching["Policy Approaching Expiration"]:::event --> notifyExpiration["When expiration approaches, notify the policyholder"]:::policy --> generate["Generate Expiration Notification"]:::command --> notification1["Notification"]:::aggregate --> generated["Expiration Notification Generated"]:::event
+    user(["Registered User"]):::actor --> markRead["Mark Notification as Read"]:::command --> notification2["Notification"]:::aggregate --> read["Notification Read"]:::event
+    notificationsView[("User Notifications")]:::readmodel -.-> user
+    classDef actor fill:#fff59d,stroke:#c9b800,color:#000
+    classDef command fill:#90caf9,stroke:#1e6fb8,color:#000
+    classDef aggregate fill:#fff9c4,stroke:#c9b800,color:#000
+    classDef event fill:#ffb74d,stroke:#c77800,color:#000
+    classDef policy fill:#ce93d8,stroke:#7b3f8c,color:#000
+    classDef readmodel fill:#a5d6a7,stroke:#3d8b40,color:#000
+    classDef external fill:#f8bbd0,stroke:#b0476d,color:#000
+```
 
 ---
-
 ### 4.6.2. Software Architecture Context Diagram
 
 ![Software Architecture Context Diagram](assets/md-images-c4-diagrams/software-architecture-context-diagram.png)
@@ -1977,58 +2120,834 @@ A continuación, se presenta una captura del prototipo en funcionamiento y el en
 
 ### 4.6.3. Software Architecture Container Diagrams
 
-![Software Architecture Container Diagram](assets/md-images-c4-diagrams/software-architecture-container-diagram.png)
+El Container Diagram presenta los contenedores que conforman Livva: el Landing Page, la Web Application, el RESTful API y la base de datos MySQL, así como su relación con los usuarios y con los sistemas externos (Insurance Company System y Payment Provider). El diagrama se mantiene como código (Diagram-as-Code) mediante Mermaid.
+
+```mermaid
+flowchart TB
+    visitor(["Visitor"])
+    customer(["Customer"])
+    representative(["Insurance Company Representative"])
+
+    subgraph livva["Livva System"]
+        landing["<b>Landing Page</b><br/>[Container: HTML5, CSS3, JavaScript]<br/>Presents Livva services and value proposition."]
+        webapp["<b>Web Application</b><br/>[Container: Vue + PrimeVue]<br/>Manages insurance requests, policies, claims, renewals, subscriptions and notifications."]
+        api["<b>RESTful API</b><br/>[Container: ASP.NET Core / C# + Entity Framework Core]<br/>Handles business logic and application services."]
+        db[("<b>Livva Database</b><br/>[Container: MySQL]<br/>Stores users, vehicles, policies, requests, claims, subscriptions and notifications.")]
+    end
+
+    insurer["<b>Insurance Company System</b><br/>[External System]<br/>Evaluates applications, claims and renewals."]
+    payment["<b>Payment Provider</b><br/>[External System]<br/>Processes subscription payments."]
+
+    visitor -- "Browses services" --> landing
+    customer -- "Uses Livva" --> webapp
+    representative -- "Reviews insurance operations" --> webapp
+    landing -- "Redirects users" --> webapp
+    webapp -- "HTTPS / JSON REST" --> api
+    api -- "Reads / Writes" --> db
+    api -- "Applications, claims, renewals" --> insurer
+    insurer -- "Decisions and statuses" --> api
+    api -- "Payment request" --> payment
+    payment -- "Payment result" --> api
+
+    classDef person fill:#08427b,stroke:#052e56,color:#ffffff
+    classDef container fill:#1168bd,stroke:#0b4884,color:#ffffff
+    classDef external fill:#999999,stroke:#6b6b6b,color:#ffffff
+    class visitor,customer,representative person
+    class landing,webapp,api,db container
+    class insurer,payment external
+```
 
 ---
 
 ### 4.6.4. Software Architecture Components Diagrams
 
+#### Web Application Component Diagram
+
 ![Web Application Component Diagram](assets/md-images-c4-diagrams/web-application-component-diagram.png)
+
+#### RESTful API Component Diagram
+
+El Component Diagram del RESTful API muestra la organización interna del contenedor implementado con ASP.NET Core. Cada bounded context agrupa sus controladores REST, sus servicios de aplicación (comandos y consultas) y sus repositorios implementados con Entity Framework Core. El contexto Shared provee el Unit of Work y el AppDbContext utilizados para la persistencia en MySQL.
+
+```mermaid
+flowchart LR
+    webapp["<b>Web Application</b><br/>[Container: Vue + PrimeVue]"]
+
+    subgraph api["RESTful API [Container: ASP.NET Core / C#]"]
+        direction LR
+
+        subgraph iam["Identity & Profile Management"]
+            direction TB
+            iamCtl["<b>Authentication, Users and User Profiles Controllers</b><br/>[REST Controllers]"]
+            iamSvc["<b>Command & Query Services</b><br/>[Application Services]<br/>Sign-up, sign-in (BCrypt + JWT) and profile management."]
+            iamRepo["<b>User and UserProfile Repositories</b><br/>[EF Core Repositories]"]
+            iamCtl --> iamSvc --> iamRepo
+        end
+
+        subgraph ioa["Insurance Offering & Applications"]
+            direction TB
+            ioaCtl["<b>Insurers, Insurance Products, Vehicles, Applications and Beneficiaries Controllers</b><br/>[REST Controllers]"]
+            ioaSvc["<b>Command & Query Services</b><br/>[Application Services]"]
+            ioaRepo["<b>Offering and Application Repositories</b><br/>[EF Core Repositories]"]
+            ioaCtl --> ioaSvc --> ioaRepo
+        end
+
+        subgraph pm["Policy Management"]
+            direction TB
+            pmCtl["<b>Policies, Policy Coverages, Policy Documents and Renewals Controllers</b><br/>[REST Controllers]"]
+            pmSvc["<b>Command & Query Services</b><br/>[Application Services]"]
+            pmRepo["<b>Policy Repositories</b><br/>[EF Core Repositories]"]
+            pmCtl --> pmSvc --> pmRepo
+        end
+
+        subgraph ci["Claims & Indemnities"]
+            direction TB
+            ciCtl["<b>Vehicle Claims, Indemnity Requests and Status Histories Controllers</b><br/>[REST Controllers]"]
+            ciSvc["<b>Command & Query Services</b><br/>[Application Services]"]
+            ciRepo["<b>Claim and Indemnity Repositories</b><br/>[EF Core Repositories]"]
+            ciCtl --> ciSvc --> ciRepo
+        end
+
+        subgraph sm["Subscription Management"]
+            direction TB
+            smCtl["<b>Subscription Plans, User Subscriptions and Subscription Payments Controllers</b><br/>[REST Controllers]"]
+            smSvc["<b>Command & Query Services</b><br/>[Application Services]"]
+            smRepo["<b>Subscription Repositories</b><br/>[EF Core Repositories]"]
+            smCtl --> smSvc --> smRepo
+        end
+
+        subgraph nm["Notification Management"]
+            direction TB
+            nmCtl["<b>Notifications Controller</b><br/>[REST Controller]"]
+            nmSvc["<b>Command & Query Services</b><br/>[Application Services]"]
+            nmRepo["<b>Notification Repository</b><br/>[EF Core Repository]"]
+            nmCtl --> nmSvc --> nmRepo
+        end
+
+        subgraph shared["Shared"]
+            direction TB
+            uow["<b>Unit of Work</b><br/>[EF Core]"]
+            ctx["<b>AppDbContext</b><br/>[EF Core DbContext]<br/>snake_case naming and audit timestamps."]
+            uow --> ctx
+        end
+    end
+
+    db[("<b>Livva Database</b><br/>[Container: MySQL]")]
+    insurer["<b>Insurance Company System</b><br/>[External System]"]
+    payment["<b>Payment Provider</b><br/>[External System]"]
+
+    webapp -- "HTTPS / JSON REST" --> iamCtl & ioaCtl & pmCtl & ciCtl & smCtl & nmCtl
+    iamRepo & ioaRepo & pmRepo & ciRepo & smRepo & nmRepo --> ctx
+    iamSvc & ioaSvc & pmSvc & ciSvc & smSvc & nmSvc --> uow
+    ctx -- "Reads / Writes" --> db
+    ioaSvc -- "Applications" --> insurer
+    pmSvc -- "Renewals" --> insurer
+    ciSvc -- "Claims and indemnities" --> insurer
+    smSvc -- "Payment request" --> payment
+
+    classDef container fill:#1168bd,stroke:#0b4884,color:#ffffff
+    classDef component fill:#85bbf0,stroke:#5d82a8,color:#000000
+    classDef external fill:#999999,stroke:#6b6b6b,color:#ffffff
+    class webapp,db container
+    class iamCtl,iamSvc,iamRepo,ioaCtl,ioaSvc,ioaRepo,pmCtl,pmSvc,pmRepo,ciCtl,ciSvc,ciRepo,smCtl,smSvc,smRepo,nmCtl,nmSvc,nmRepo,uow,ctx component
+    class insurer,payment external
+```
 
 ## 4.7. Software Object-Oriented Design
 
 ### 4.7.1. Class Diagrams
 
+Los diagramas de clases se organizan según los bounded contexts definidos en el diseño de base de datos (sección 4.8). Los atributos corresponden a las columnas de cada tabla y los tipos enumerados representan los estados y categorías del dominio. Los diagramas se mantienen como código (Diagram-as-Code) mediante Mermaid.
+
 #### Identity & Profile Management Class Diagram
 
-![Identity & Profile Management Class Diagram](assets/md-images-class-diagrams/identity-profile-management-class-diagram.png)
+```mermaid
+classDiagram
+    direction LR
+    class UserRole {
+        <<enumeration>>
+        CUSTOMER
+        INSURANCE_REPRESENTATIVE
+        ADMIN
+    }
+    class User {
+        -id: Long
+        -firstName: String
+        -lastName: String
+        -email: String
+        -passwordHash: String
+        -phone: String
+        -role: UserRole
+        -active: Boolean
+        -createdAt: DateTime
+        -updatedAt: DateTime
+        +register() void
+        +authenticate(email: String, password: String) Boolean
+        +updateProfile() void
+        +deactivate() void
+    }
+    class UserProfile {
+        -id: Long
+        -userId: Long
+        -documentType: String
+        -documentNumber: String
+        -birthDate: Date
+        -address: String
+        -district: String
+        -province: String
+        -department: String
+        -country: String
+        -createdAt: DateTime
+        -updatedAt: DateTime
+        +updatePersonalData() void
+        +updateAddress() void
+    }
+    User "1" *-- "1" UserProfile : owns
+    User --> UserRole
+```
 
 ---
 
-#### Insurance Request Management Class Diagram
+#### Insurance Offering & Applications Class Diagram
 
-![Insurance Request Management Class Diagram](assets/md-images-class-diagrams/insurance-request-management-class-diagram.png)
+```mermaid
+classDiagram
+    class InsuranceType {
+        <<enumeration>>
+        VEHICLE
+        LIFE
+    }
+    class RequestStatus {
+        <<enumeration>>
+        PENDING
+        UNDER_REVIEW
+        APPROVED
+        REJECTED
+        CANCELLED
+    }
+    class Insurer {
+        -id: Long
+        -externalReference: String
+        -name: String
+        -active: Boolean
+        -createdAt: DateTime
+        -updatedAt: DateTime
+        +activate() void
+        +deactivate() void
+    }
+    class InsuranceProduct {
+        -id: Long
+        -insurerId: Long
+        -name: String
+        -insuranceType: InsuranceType
+        -coverageAmount: Decimal
+        -premiumAmount: Decimal
+        -active: Boolean
+        -createdAt: DateTime
+        -updatedAt: DateTime
+        +activate() void
+        +deactivate() void
+        +updateProduct() void
+    }
+    class InsuranceApplication {
+        <<abstract>>
+        -id: Long
+        -userId: Long
+        -productId: Long
+        -requestedCoverage: Decimal
+        -status: RequestStatus
+        -createdAt: DateTime
+        -updatedAt: DateTime
+        +submit() void
+        +startEvaluation() void
+        +approve() void
+        +reject() void
+        +cancel() void
+    }
+    class VehicleInsuranceApplication {
+        -applicationId: Long
+        -vehicleId: Long
+        +validateVehicle() Boolean
+    }
+    class LifeInsuranceApplication {
+        -applicationId: Long
+    }
+    class Vehicle {
+        -id: Long
+        -userId: Long
+        -licensePlate: String
+        -brand: String
+        -model: String
+        -manufactureYear: Integer
+        -estimatedValue: Decimal
+        -createdAt: DateTime
+        -updatedAt: DateTime
+        +updateInformation() void
+        +validateData() Boolean
+    }
+    class Beneficiary {
+        -id: Long
+        -policyId: Long
+        -fullName: String
+        -documentType: String
+        -documentNumber: String
+        -relationship: String
+        -birthDate: Date
+        -participationPercentage: Decimal
+        -createdAt: DateTime
+        -updatedAt: DateTime
+        +updateInformation() void
+        +validatePercentage() Boolean
+    }
+    Insurer "1" *-- "0..*" InsuranceProduct : offers
+    InsuranceProduct "1" -- "0..*" InsuranceApplication : selected for
+    InsuranceApplication <|-- VehicleInsuranceApplication
+    InsuranceApplication <|-- LifeInsuranceApplication
+    Vehicle "1" -- "0..*" VehicleInsuranceApplication : used for
+    InsuranceProduct --> InsuranceType
+    InsuranceApplication --> RequestStatus
+```
 
 ---
 
 #### Policy Management Class Diagram
 
-![Policy Management Class Diagram](assets/md-images-class-diagrams/policy-management-class-diagram.png)
+```mermaid
+classDiagram
+    class InsuranceType {
+        <<enumeration>>
+        VEHICLE
+        LIFE
+    }
+    class PolicyStatus {
+        <<enumeration>>
+        PENDING
+        ACTIVE
+        EXPIRED
+        CANCELLED
+        PENDING_RENEWAL
+    }
+    class RenewalStatus {
+        <<enumeration>>
+        PENDING
+        UNDER_REVIEW
+        APPROVED
+        REJECTED
+    }
+    class Policy {
+        -id: Long
+        -userId: Long
+        -applicationId: Long
+        -policyNumber: String
+        -insuranceType: InsuranceType
+        -startDate: Date
+        -expirationDate: Date
+        -premiumAmount: Decimal
+        -coverageAmount: Decimal
+        -status: PolicyStatus
+        -createdAt: DateTime
+        -updatedAt: DateTime
+        +activate() void
+        +markAsExpiring() void
+        +expire() void
+        +requestRenewal() Renewal
+    }
+    class PolicyCoverage {
+        -id: Long
+        -policyId: Long
+        -name: String
+        -description: String
+        -coverageLimit: Decimal
+        -createdAt: DateTime
+        -updatedAt: DateTime
+    }
+    class PolicyDocument {
+        -id: Long
+        -policyId: Long
+        -documentType: String
+        -name: String
+        -fileUrl: String
+        -createdAt: DateTime
+        -updatedAt: DateTime
+    }
+    class Renewal {
+        -id: Long
+        -policyId: Long
+        -requestedAt: DateTime
+        -proposedExpirationDate: Date
+        -proposedPremium: Decimal
+        -status: RenewalStatus
+        -resolvedAt: DateTime
+        -createdAt: DateTime
+        -updatedAt: DateTime
+        +startReview() void
+        +approve() void
+        +reject() void
+    }
+    Policy "1" *-- "0..*" PolicyCoverage : contains
+    Policy "1" *-- "0..*" PolicyDocument : has
+    Policy "1" *-- "0..*" Renewal : renews
+    Policy --> InsuranceType
+    Policy --> PolicyStatus
+    Renewal --> RenewalStatus
+```
 
 ---
 
-#### Insurance Company, Product & Subscription Management Class Diagram
+#### Claims & Indemnities Class Diagram
 
-![Insurance Company, Product & Subscription Management Class Diagram](assets/md-images-class-diagrams/insurancecompany-product-subsmanagement-class-diagram.png)
+```mermaid
+classDiagram
+    class ClaimStatus {
+        <<enumeration>>
+        REPORTED
+        UNDER_REVIEW
+        APPROVED
+        REJECTED
+        RESOLVED
+    }
+    class IndemnityStatus {
+        <<enumeration>>
+        SUBMITTED
+        UNDER_REVIEW
+        APPROVED
+        REJECTED
+        RESOLVED
+    }
+    class VehicleClaim {
+        -id: Long
+        -policyId: Long
+        -userId: Long
+        -incidentDate: Date
+        -incidentLocation: String
+        -description: String
+        -estimatedDamageAmount: Decimal
+        -status: ClaimStatus
+        -compensationAmount: Decimal
+        -reportedAt: DateTime
+        -resolvedAt: DateTime
+        -createdAt: DateTime
+        -updatedAt: DateTime
+        +report() void
+        +startReview() void
+        +updateStatus() void
+        +resolve() void
+    }
+    class ClaimStatusHistory {
+        -id: Long
+        -claimId: Long
+        -status: ClaimStatus
+        -comment: String
+        -changedAt: DateTime
+        -createdAt: DateTime
+    }
+    class IndemnityRequest {
+        -id: Long
+        -policyId: Long
+        -beneficiaryId: Long
+        -requestDate: Date
+        -description: String
+        -status: IndemnityStatus
+        -indemnityAmount: Decimal
+        -submittedAt: DateTime
+        -resolvedAt: DateTime
+        -createdAt: DateTime
+        -updatedAt: DateTime
+        +submit() void
+        +startReview() void
+        +updateStatus() void
+        +resolve() void
+    }
+    class IndemnityStatusHistory {
+        -id: Long
+        -indemnityRequestId: Long
+        -status: IndemnityStatus
+        -comment: String
+        -changedAt: DateTime
+    }
+    VehicleClaim "1" *-- "0..*" ClaimStatusHistory : has
+    IndemnityRequest "1" *-- "0..*" IndemnityStatusHistory : has
+    VehicleClaim --> ClaimStatus
+    IndemnityRequest --> IndemnityStatus
+```
+
+---
+
+#### Subscription Management Class Diagram
+
+```mermaid
+classDiagram
+    class SubscriptionStatus {
+        <<enumeration>>
+        PENDING
+        ACTIVE
+        CANCELLED
+        EXPIRED
+    }
+    class PaymentStatus {
+        <<enumeration>>
+        PENDING
+        APPROVED
+        FAILED
+    }
+    class BillingCycle {
+        <<enumeration>>
+        MONTHLY
+        ANNUAL
+    }
+    class SubscriptionPlan {
+        -id: Long
+        -name: String
+        -description: String
+        -monthlyPrice: Decimal
+        -annualPrice: Decimal
+        -benefits: List~String~
+        -active: Boolean
+        -createdAt: DateTime
+        -updatedAt: DateTime
+        +updatePrices() void
+        +activate() void
+        +deactivate() void
+    }
+    class UserSubscription {
+        -id: Long
+        -userId: Long
+        -planId: Long
+        -billingCycle: BillingCycle
+        -status: SubscriptionStatus
+        -startDate: DateTime
+        -nextBillingDate: DateTime
+        -cancellationRequestedAt: DateTime
+        -cancelledAt: DateTime
+        -createdAt: DateTime
+        -updatedAt: DateTime
+        +activate() void
+        +cancel() void
+        +expire() void
+    }
+    class SubscriptionPayment {
+        -id: Long
+        -userSubscriptionId: Long
+        -userId: Long
+        -planId: Long
+        -provider: String
+        -providerPaymentId: String
+        -amount: Decimal
+        -currency: String
+        -status: PaymentStatus
+        -paidAt: DateTime
+        -createdAt: DateTime
+        -updatedAt: DateTime
+        +initiate() void
+        +confirm() void
+        +fail() void
+    }
+    SubscriptionPlan "1" -- "0..*" UserSubscription : selected for
+    UserSubscription "1" *-- "0..*" SubscriptionPayment : payments
+    UserSubscription --> SubscriptionStatus
+    UserSubscription --> BillingCycle
+    SubscriptionPayment --> PaymentStatus
+```
+
+---
+
+#### Notification Management Class Diagram
+
+```mermaid
+classDiagram
+    class Notification {
+        -id: Long
+        -userId: Long
+        -type: String
+        -policyId: Long
+        -policyNumber: String
+        -expirationDate: Date
+        -isRead: Boolean
+        -readAt: DateTime
+        -createdAt: DateTime
+        -updatedAt: DateTime
+        +markAsRead() void
+    }
+```
+
 ## 4.8. Database Design
 
 ### 4.8.1. Database Diagrams
 
-### Indentity & Profile Management Bounded Context Database Design Diagram
-![Identity & Profile Management Bounded Context Database Design Diagram](assets/md-images-database-diagrams/identity-and-profile-management.PNG)
+Los diagramas de base de datos se organizan por bounded context y se mantienen como código (Diagram-as-Code) mediante Mermaid. Las tablas y columnas corresponden a los recursos utilizados por la Web Application. Las referencias entre tablas de distintos bounded contexts (por ejemplo, `userId` o `policyId`) se almacenan como identificadores sin clave foránea, para mantener la independencia entre contextos.
+
+### Identity & Profile Management Bounded Context Database Design Diagram
+
+```mermaid
+erDiagram
+    Users ||--|| UserProfiles : owns
+    Users {
+        BIGINT id PK
+        VARCHAR(100) firstName "NOT NULL"
+        VARCHAR(100) lastName "NOT NULL"
+        VARCHAR(255) email UK "NOT NULL"
+        VARCHAR(255) passwordHash "NOT NULL"
+        VARCHAR(30) phone
+        VARCHAR(30) role "NOT NULL"
+        BOOLEAN active "NOT NULL, DEFAULT TRUE"
+        TIMESTAMP createdAt "NOT NULL"
+        TIMESTAMP updatedAt "NOT NULL"
+    }
+    UserProfiles {
+        BIGINT id PK
+        BIGINT userId FK, UK "NOT NULL"
+        VARCHAR(30) documentType "NOT NULL"
+        VARCHAR(30) documentNumber "NOT NULL"
+        DATE birthDate
+        VARCHAR(255) address
+        VARCHAR(100) district
+        VARCHAR(100) province
+        VARCHAR(100) department
+        VARCHAR(100) country
+        TIMESTAMP createdAt "NOT NULL"
+        TIMESTAMP updatedAt "NOT NULL"
+    }
+```
 
 ### Insurance Offering & Applications Bounded Context Database Design Diagram
-![Insurance Offering & Applications Bounded Context Database Design Diagram](assets/md-images-database-diagrams/insurance-offering-and-applications.png)
+
+```mermaid
+erDiagram
+    Insurers ||--o{ InsuranceProducts : offers
+    InsuranceProducts ||--o{ InsuranceApplications : selectedFor
+    InsuranceApplications ||--o| VehicleInsuranceApplications : vehicleDetails
+    InsuranceApplications ||--o| LifeInsuranceApplications : lifeDetails
+    Vehicles ||--o{ VehicleInsuranceApplications : usedFor
+    Insurers {
+        BIGINT id PK
+        VARCHAR externalReference UK
+        VARCHAR name
+        BOOLEAN active
+        TIMESTAMP createdAt
+        TIMESTAMP updatedAt
+    }
+    InsuranceProducts {
+        BIGINT id PK
+        BIGINT insurerId FK
+        VARCHAR name
+        VARCHAR insuranceType
+        DECIMAL coverageAmount
+        DECIMAL premiumAmount
+        BOOLEAN active
+        TIMESTAMP createdAt
+        TIMESTAMP updatedAt
+    }
+    InsuranceApplications {
+        BIGINT id PK
+        BIGINT userId
+        BIGINT productId FK
+        DECIMAL requestedCoverage
+        VARCHAR status
+        TIMESTAMP createdAt
+        TIMESTAMP updatedAt
+    }
+    VehicleInsuranceApplications {
+        BIGINT id PK
+        BIGINT applicationId FK, UK
+        BIGINT vehicleId FK
+    }
+    LifeInsuranceApplications {
+        BIGINT id PK
+        BIGINT applicationId FK, UK
+    }
+    Vehicles {
+        BIGINT id PK
+        BIGINT userId
+        VARCHAR licensePlate UK
+        VARCHAR brand
+        VARCHAR model
+        INTEGER manufactureYear
+        DECIMAL estimatedValue
+        TIMESTAMP createdAt
+        TIMESTAMP updatedAt
+    }
+    Beneficiaries {
+        BIGINT id PK
+        BIGINT policyId
+        VARCHAR fullName
+        VARCHAR documentType
+        VARCHAR documentNumber
+        VARCHAR relationship
+        DATE birthDate
+        DECIMAL participationPercentage
+        TIMESTAMP createdAt
+        TIMESTAMP updatedAt
+    }
+```
 
 ### Policy Management Bounded Context Database Design Diagram
-![Policy Management Bounded Context Database Design Diagram](assets/md-images-database-diagrams/policy-management.png)
+
+```mermaid
+erDiagram
+    Policies ||--o{ PolicyCoverages : contains
+    Policies ||--o{ PolicyDocuments : has
+    Policies ||--o{ Renewals : renews
+    Policies {
+        BIGINT id PK
+        BIGINT userId
+        BIGINT applicationId
+        VARCHAR policyNumber UK
+        VARCHAR insuranceType
+        DATE startDate
+        DATE expirationDate
+        DECIMAL premiumAmount
+        DECIMAL coverageAmount
+        VARCHAR status
+        TIMESTAMP createdAt
+        TIMESTAMP updatedAt
+    }
+    PolicyCoverages {
+        BIGINT id PK
+        BIGINT policyId FK
+        VARCHAR name
+        VARCHAR description
+        DECIMAL coverageLimit
+        TIMESTAMP createdAt
+        TIMESTAMP updatedAt
+    }
+    PolicyDocuments {
+        BIGINT id PK
+        BIGINT policyId FK
+        VARCHAR documentType
+        VARCHAR name
+        VARCHAR fileUrl
+        TIMESTAMP createdAt
+        TIMESTAMP updatedAt
+    }
+    Renewals {
+        BIGINT id PK
+        BIGINT policyId FK
+        TIMESTAMP requestedAt
+        DATE proposedExpirationDate
+        DECIMAL proposedPremium
+        VARCHAR status
+        TIMESTAMP resolvedAt
+        TIMESTAMP createdAt
+        TIMESTAMP updatedAt
+    }
+```
 
 ### Claims & Indemnities Bounded Context Database Design Diagram
-![Claims & Indemnities Bounded Context Database Design Diagram](assets/md-images-database-diagrams/claims-and-indemnities.png)
+
+```mermaid
+erDiagram
+    VehicleClaims ||--o{ ClaimStatusHistories : has
+    IndemnityRequests ||--o{ IndemnityStatusHistories : has
+    VehicleClaims {
+        BIGINT id PK
+        BIGINT policyId
+        BIGINT userId
+        DATE incidentDate
+        VARCHAR incidentLocation
+        VARCHAR description
+        DECIMAL estimatedDamageAmount
+        VARCHAR status
+        DECIMAL compensationAmount
+        TIMESTAMP reportedAt
+        TIMESTAMP resolvedAt
+        TIMESTAMP createdAt
+        TIMESTAMP updatedAt
+    }
+    ClaimStatusHistories {
+        BIGINT id PK
+        BIGINT claimId FK
+        VARCHAR status
+        VARCHAR comment
+        TIMESTAMP changedAt
+        TIMESTAMP createdAt
+    }
+    IndemnityRequests {
+        BIGINT id PK
+        BIGINT policyId
+        BIGINT beneficiaryId
+        DATE requestDate
+        VARCHAR description
+        VARCHAR status
+        DECIMAL indemnityAmount
+        TIMESTAMP submittedAt
+        TIMESTAMP resolvedAt
+        TIMESTAMP createdAt
+        TIMESTAMP updatedAt
+    }
+    IndemnityStatusHistories {
+        BIGINT id PK
+        BIGINT indemnityRequestId FK
+        VARCHAR status
+        VARCHAR comment
+        TIMESTAMP changedAt
+    }
+```
 
 ### Subscription Management Bounded Context Database Design Diagram
-![Subscription Management Bounded Context Database Design Diagram](assets/md-images-database-diagrams/subscription-management.png)
 
+```mermaid
+erDiagram
+    SubscriptionPlans ||--o{ UserSubscriptions : selectedFor
+    UserSubscriptions ||--o{ SubscriptionPayments : payments
+    SubscriptionPlans {
+        BIGINT id PK
+        VARCHAR name
+        VARCHAR description
+        DECIMAL monthlyPrice
+        DECIMAL annualPrice
+        JSON benefits
+        BOOLEAN active
+        TIMESTAMP createdAt
+        TIMESTAMP updatedAt
+    }
+    UserSubscriptions {
+        BIGINT id PK
+        BIGINT userId
+        BIGINT planId FK
+        VARCHAR billingCycle
+        VARCHAR status
+        TIMESTAMP startDate
+        TIMESTAMP nextBillingDate
+        TIMESTAMP cancellationRequestedAt
+        TIMESTAMP cancelledAt
+        TIMESTAMP createdAt
+        TIMESTAMP updatedAt
+    }
+    SubscriptionPayments {
+        BIGINT id PK
+        BIGINT userSubscriptionId FK
+        BIGINT userId
+        BIGINT planId
+        VARCHAR provider
+        VARCHAR providerPaymentId
+        DECIMAL amount
+        VARCHAR currency
+        VARCHAR status
+        TIMESTAMP paidAt
+        TIMESTAMP createdAt
+        TIMESTAMP updatedAt
+    }
+```
+
+### Notification Management Bounded Context Database Design Diagram
+
+La tabla Notifications almacena los avisos generados para los usuarios, como el próximo vencimiento de una póliza. Al igual que las demás tablas principales, incluye las columnas de auditoría createdAt y updatedAt.
+
+```mermaid
+erDiagram
+    Notifications {
+        BIGINT id PK
+        BIGINT userId
+        VARCHAR type
+        BIGINT policyId
+        VARCHAR policyNumber
+        DATE expirationDate
+        BOOLEAN isRead
+        TIMESTAMP readAt
+        TIMESTAMP createdAt
+        TIMESTAMP updatedAt
+    }
+```
 # Capítulo V: Product Implementation, Validation & Deployment
 
 ## 5.1. Software Configuration Management
@@ -2047,7 +2966,7 @@ Las herramientas utilizadas por el equipo se presentan a continuación:
 |---|---|---|
 | GitHub | Plataforma utilizada para alojar los repositorios del Project Report y de los productos de software de Livva. Permite la colaboración del equipo, revisión del historial de cambios y gestión de ramas. | https://github.com/ |
 | Git | Sistema de control de versiones distribuido utilizado para registrar cambios realizados en los archivos del proyecto y trabajar con el workflow GitFlow. | https://git-scm.com/downloads |
-| JetBrains Rider | Entorno de desarrollo utilizado para trabajar con los archivos del proyecto, editar la documentación en Markdown, utilizar la terminal integrada y gestionar operaciones relacionadas con Git y GitFlow. | https://www.jetbrains.com/rider/download/ |
+| JetBrains Rider | Entorno de desarrollo utilizado para trabajar con los archivos del proyecto, editar la documentación en Markdown, implementar los Web Services en C#, utilizar la terminal integrada y gestionar operaciones relacionadas con Git y GitFlow. | https://www.jetbrains.com/rider/download/ |
 | Figma | Herramienta utilizada para elaborar los wireframes, mock-ups y prototipos de la Landing Page y Web Application de Livva. | https://www.figma.com/ |
 | FigJam | Herramienta utilizada como apoyo para la representación de flujos de usuario, wireflows y otros diagramas colaborativos relacionados con UX/UI. | https://www.figma.com/figjam/ |
 | HTML5 | Lenguaje de marcado utilizado para definir la estructura del Landing Page de Livva. | https://developer.mozilla.org/en-US/docs/Web/HTML |
@@ -2055,9 +2974,32 @@ Las herramientas utilizadas por el equipo se presentan a continuación:
 | JavaScript | Lenguaje utilizado para implementar comportamiento e interactividad en el Landing Page, incluyendo funcionalidades de la interfaz de usuario. | https://developer.mozilla.org/en-US/docs/Web/JavaScript |
 | Markdown | Formato utilizado para elaborar y mantener la documentación principal del Final Project Documentation Report mediante el archivo README.md. | https://www.markdownguide.org/ |
 | Microsoft Edge / Brave | Navegadores web utilizados durante el desarrollo para visualizar, probar y validar el funcionamiento de las interfaces web implementadas. | https://www.microsoft.com/edge / https://brave.com/ |
+| Vue 3 | Framework de JavaScript utilizado para construir la Frontend Web Application de Livva mediante componentes reutilizables. | https://vuejs.org/ |
+| PrimeVue / PrimeFlex / PrimeIcons | Biblioteca de componentes de interfaz, utilidades de diseño responsive e íconos utilizados en la Frontend Web Application. | https://primevue.org/ |
+| Pinia | Biblioteca de gestión de estado utilizada en los stores de cada bounded context de la Frontend Web Application. | https://pinia.vuejs.org/ |
+| Vue Router / Vue I18n | Bibliotecas utilizadas para la navegación entre vistas y la internacionalización (inglés y español latinoamericano) de la Frontend Web Application. | https://router.vuejs.org/ / https://vue-i18n.intlify.dev/ |
+| Axios | Cliente HTTP utilizado por la Frontend Web Application para consumir servicios REST. | https://axios-http.com/ |
+| Vite | Herramienta de construcción y servidor de desarrollo de la Frontend Web Application. | https://vite.dev/ |
+| JSON Server | Fake API utilizada durante el Sprint 2 para simular los servicios REST antes de contar con el backend definitivo. | https://github.com/typicode/json-server |
+| Node.js / npm | Entorno de ejecución y gestor de paquetes utilizados para instalar dependencias y ejecutar la Frontend Web Application. | https://nodejs.org/ |
+| .NET 10 SDK | Kit de desarrollo utilizado para compilar, ejecutar y probar los Web Services de Livva implementados con C# 14 y ASP.NET Core. | https://dotnet.microsoft.com/download/dotnet/10.0 |
+| ASP.NET Core Web API | Framework utilizado para implementar el RESTful API de Livva mediante controladores REST. | https://learn.microsoft.com/aspnet/core/web-api/ |
+| Entity Framework Core 10 | ORM utilizado para la persistencia de datos, el mapeo de entidades y la gestión de migraciones de base de datos. | https://learn.microsoft.com/ef/core/ |
+| MySQL Server / MySQL Workbench | Sistema de gestión de base de datos relacional utilizado por los Web Services y herramienta para administrar y consultar la base de datos. | https://dev.mysql.com/downloads/ |
+| OpenAPI / Scalar | Especificación y herramientas utilizadas para documentar y probar los endpoints del RESTful API. | https://scalar.com/ |
+| xUnit / Moq | Framework de pruebas y biblioteca de objetos simulados utilizados para las pruebas unitarias y de integración de los Web Services. | https://xunit.net/ / https://github.com/devlooped/moq |
 
 ### 5.1.2. Source Code Management
 La gestión del código fuente de Livva se realiza mediante Git como sistema de control de versiones distribuido y GitHub como plataforma de alojamiento y colaboración de los repositorios del proyecto.
+
+Los repositorios del proyecto se encuentran en la organización de GitHub del equipo:
+
+| Repositorio | Contenido | URL |
+|---|---|---|
+| livva-project-report | Final Project Documentation Report (README.md y recursos en `assets`). | https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-project-report |
+| livva-landing-page | Landing Page implementado con HTML5, CSS3 y JavaScript. | https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-landing-page |
+| livva-web-application | Frontend Web Application implementada con Vue y PrimeVue. | https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-web-application |
+| livva-web-services | RESTful API implementado con C#, ASP.NET Core y Entity Framework Core. | https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-web-services |
 
 El equipo utiliza GitFlow como estrategia de ramificación para organizar el desarrollo y mantener separadas las versiones estables, las integraciones y las nuevas funcionalidades. La estructura principal empleada es la siguiente:
 
@@ -2103,6 +3045,26 @@ En el caso del Landing Page, desarrollado con HTML5, CSS3 y JavaScript, se sigue
 - Se prioriza la reutilización de estilos y estructuras antes de duplicar código.
 - Los elementos interactivos consideran estados de interacción y criterios básicos de accesibilidad.
 
+En el caso de la Frontend Web Application, desarrollada con Vue 3 y PrimeVue, se siguen las siguientes convenciones:
+
+- El código se organiza por bounded context (por ejemplo, `identity-and-profile-management`, `policy-management`, `subscription-management`), y cada uno contiene las capas `domain`, `application`, `infrastructure` y `presentation`.
+- Los archivos y carpetas utilizan `kebab-case` con un sufijo que indica su responsabilidad: `*.entity.js`, `*.assembler.js`, `*-api.js`, `*.store.js`, `*-view.vue` y `*.routes.js`.
+- Las entidades del dominio se implementan como clases en `PascalCase`, y las variables y funciones en `camelCase`.
+- El estado de cada bounded context se gestiona mediante stores de Pinia, y el acceso a servicios REST se centraliza en clientes Axios que comparten una configuración base.
+- Los textos visibles se obtienen de los archivos de internacionalización de Vue I18n, evitando textos fijos en los componentes.
+- Las rutas de los recursos REST y la URL base del API se configuran mediante variables de entorno (`VITE_*`).
+
+En el caso de los Web Services, desarrollados con C# 14, ASP.NET Core y Entity Framework Core, se siguen las convenciones de codificación de C# recomendadas por Microsoft y las siguientes decisiones del equipo:
+
+- El código se organiza por bounded context, más un contexto `Shared` para abstracciones transversales. Cada bounded context contiene las capas `Domain`, `Application`, `Infrastructure` e `Interfaces`.
+- Los namespaces reflejan la estructura de carpetas (por ejemplo, `LivvaPlatform.API.Shared.Domain.Repositories`).
+- Las clases, records, métodos y propiedades utilizan `PascalCase`; los parámetros y variables locales utilizan `camelCase`; las interfaces llevan el prefijo `I` y los métodos asíncronos el sufijo `Async`.
+- Los nombres de clases indican su responsabilidad: `*Command`, `*Query`, `*CommandService`, `*QueryService`, `*Repository`, `*Controller`, `*Resource` y `*Assembler`.
+- Las rutas REST utilizan minúsculas, `kebab-case` y el prefijo `/api/v1`.
+- En la base de datos, las tablas y columnas utilizan `snake_case`, y los nombres de tabla se expresan en plural.
+- Los mensajes dirigidos al usuario se localizan mediante archivos `.resx`, y los errores se devuelven en formato `ProblemDetails`.
+- La documentación del código se redacta en inglés mediante comentarios XML.
+
 Para la documentación del proyecto en Markdown, se mantiene una estructura jerárquica consistente mediante encabezados, listas, tablas, enlaces e imágenes. Los nombres de los archivos multimedia se definen de forma descriptiva y se almacenan dentro del directorio `assets`, agrupados según el tipo de evidencia o artefacto.
 
 Asimismo, el equipo aplica Conventional Commits para estandarizar los mensajes registrados en Git. La estructura utilizada es:
@@ -2121,21 +3083,23 @@ Estas convenciones permiten que el código y la documentación sean más fácile
 ### 5.1.4. Software Deployment Configuration
 La configuración de despliegue de Livva define el proceso que permitirá publicar los productos digitales de la solución a partir de sus respectivos repositorios de código fuente.
 
-Para el AV1, el producto que debe encontrarse desplegado es la primera versión del Landing Page. El proceso de despliegue parte del repositorio correspondiente en GitHub y considera una versión estable del código previamente integrada y validada por el equipo.
+Para el AV2, el proceso de despliegue se amplía para incluir los RESTful Web Services de Livva, desarrollados mediante ASP.NET Core 10 y Entity Framework Core. Para su publicación se utilizará Railway, una plataforma cloud que permite ejecutar aplicaciones mediante contenedores Docker y configurar los recursos necesarios para su funcionamiento.
 
-El flujo general de despliegue definido por el equipo es el siguiente:
+El repositorio `livva-web-services` dispone de un archivo `Dockerfile` que establece las instrucciones de construcción y ejecución de la aplicación. Este archivo utiliza imágenes oficiales de .NET 10 y permite configurar el puerto de escucha mediante la variable de entorno `PORT`, proporcionada por Railway.
 
-1. El desarrollo se realiza en ramas `feature/*` creadas a partir de `develop`.
-2. Una vez completada y revisada una funcionalidad, los cambios se integran a `develop`.
-3. Antes de realizar una publicación, se verifica el correcto funcionamiento del producto en el entorno local.
-4. La versión aprobada para publicación se integra a la rama estable correspondiente.
-5. La plataforma de despliegue obtiene el código fuente desde el repositorio de GitHub.
-6. Se ejecuta el proceso de publicación de los archivos necesarios para poner el producto disponible mediante una URL pública.
-7. Finalmente, el equipo realiza una validación de la versión desplegada para comprobar navegación, diseño responsive, accesibilidad básica, internacionalización y funcionamiento de los elementos interactivos.
+La configuración prevista para el despliegue contempla los siguientes elementos:
 
-Para el Landing Page, el artefacto desplegado está compuesto principalmente por archivos HTML5, CSS3 y JavaScript. El despliegue debe conservar la estructura de directorios, los recursos multimedia y las referencias necesarias para que el sitio funcione correctamente fuera del entorno local.
+- **Railway:** plataforma utilizada para alojar los Web Services y gestionar su ejecución.
+- **Docker:** herramienta que permite empaquetar la aplicación y sus dependencias en un contenedor.
+- **MySQL:** sistema de gestión de base de datos utilizado para almacenar la información de los diferentes módulos de Livva.
+- **GitHub:** plataforma de control de versiones desde la cual se obtendrá el código fuente del backend.
+- **Variables de entorno:** configuración de las credenciales de MySQL, la clave de autenticación JWT, el acceso a Mercado Pago y los orígenes permitidos mediante CORS.
 
-En entregas posteriores, este proceso será ampliado para incluir el despliegue de la Frontend Web Application y de los Web Services, manteniendo los repositorios de GitHub como fuente de las versiones que serán publicadas.
+El procedimiento considera vincular el repositorio de GitHub con Railway, configurar las variables de entorno del servicio, establecer la conexión con MySQL y realizar la publicación del backend. Asimismo, se contempla la ejecución de las migraciones de Entity Framework Core para preparar la estructura de la base de datos.
+
+Una vez realizado el despliegue, se verificará el funcionamiento de los endpoints mediante Scalar, disponible en la ruta `/scalar`, comprobando la comunicación con la base de datos y la disponibilidad de los servicios RESTful para su integración con la Frontend Web Application.
+
+Las evidencias del procedimiento, capturas de configuración y resultados de verificación se incorporarán en la sección **5.2.3.7. Software Deployment Evidence for Sprint Review**, correspondiente al Sprint 3.
 
 ## 5.2. Landing Page, Services & Applications Implementation
 En esta sección se documenta el proceso de implementación de los productos digitales de Livva durante los diferentes sprints del proyecto.
@@ -2149,7 +3113,7 @@ A continuación, se presentan las actividades, evidencias de desarrollo, ejecuci
 ### 5.2.1. Sprint 1
 El Sprint 1 corresponde a la primera iteración de implementación del proyecto Livva. Durante este sprint, el equipo trabajó en la construcción de la primera versión del Landing Page a partir de los wireframes, mock-ups, Style Guidelines e Information Architecture definidos durante la etapa de Product Design.
 
-El objetivo principal fue transformar los artefactos de diseño en una interfaz web funcional que permitiera comunicar la propuesta de valor de Livva y presentar sus principales servicios orientados a seguros vehiculares y seguros de salud.
+El objetivo principal fue transformar los artefactos de diseño en una interfaz web funcional que permitiera comunicar la propuesta de valor de Livva y presentar sus principales servicios orientados a seguros vehiculares y seguros de vida.
 
 Asimismo, se trabajó de manera colaborativa mediante Git y GitHub, utilizando GitFlow para organizar el desarrollo y Conventional Commits para registrar de forma clara los cambios realizados en el repositorio.
 
@@ -2197,8 +3161,6 @@ El seguimiento del trabajo se registra en el tablero del sprint, donde se identi
 
 <img src="assets/md-images-chapter-05/trelloav1.PNG" width="700px" />
 
-La siguiente descomposición constituye una propuesta que debe contrastarse con las actividades efectivamente realizadas. Los responsables, estimaciones y estados se completarán de acuerdo con el tablero del equipo.
-
 | Story ID | Story Title | Task ID | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
 |---|---|---|---|---|---|---|---|
 | US-01 | Conocer Livva | S1-T01 | Estructura del Landing Page | Implementar la estructura HTML, encabezado, navegación y footer a partir del diseño definido. | 1 | Carlos Céspedes | Done |
@@ -2210,7 +3172,7 @@ La siguiente descomposición constituye una propuesta que debe contrastarse con 
 | — | Requerimiento transversal | S1-T07 | Internacionalización | Implementar el contenido en inglés y español latinoamericano, con inglés como idioma predeterminado. | 1 | Carlos Céspedes | Done |
 | — | Requerimiento transversal | S1-T08 | Adaptación responsive | Ajustar la distribución de las secciones y la navegación para diferentes tamaños de pantalla. | 1 | Scarlet Rivera | Done |
 | — | Requerimiento transversal | S1-T09 | Accesibilidad básica | Revisar HTML semántico, labels, textos alternativos, navegación por teclado y atributos ARIA. | 1 | Carlos Céspedes | Done |
-| — | Requerimiento transversal | S1-T10 | Contenido complementario | Incorporar o revisar la información de planes, equipo, contacto y enlaces del footer previstos en el diseño. | 1 | Scarlet | Done |
+| — | Requerimiento transversal | S1-T10 | Contenido complementario | Incorporar o revisar la información de planes, equipo, contacto y enlaces del footer previstos en el diseño. | 1 | Scarlet Rivera | Done |
 | — | Requerimiento transversal | S1-T11 | Verificación del Landing Page | Comprobar criterios de aceptación, navegación, idiomas, carga de recursos y comportamiento responsive. | 2 | Carlos Céspedes | Done |
 | — | Requerimiento transversal | S1-T12 | Despliegue del Landing Page | Publicar la versión aprobada y verificar su funcionamiento mediante la URL pública. | 3 | Carlos Céspedes | Done |
 | — | Requerimiento transversal | S1-T13 | Registro de evidencias | Recopilar commits, capturas, video de ejecución y registros de colaboración. | 1 | Carlos Paredes | Done |
@@ -2226,11 +3188,15 @@ Las evidencias deben corresponder a cambios reales en la estructura HTML, los es
 
 **Repositorio del Landing Page:** [Repositorio](https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-landing-page/tree/develop).
 
+#### 5.2.1.5. Execution Evidence for Sprint Review
+
+<!-- [EQUIPO] Completar con capturas de las principales vistas del Landing Page en ejecución (inicio, beneficios, seguros vehiculares y de vida, planes, cambio de idioma y vista responsive) y el enlace al video de ejecución del Sprint 1. -->
+
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
 El alcance del Sprint 1 se concentra en la implementación de la primera versión del Landing Page de Livva. Por este motivo, no contempla el desarrollo de Web Services y no se presentan endpoints documentados en esta iteración.
 
-La documentación del RESTful API se incorporará en los sprints correspondientes a la implementación del backend, utilizando OpenAPI Specification mediante Swagger.
+La documentación del RESTful API se incorporará en los sprints correspondientes a la implementación del backend.
 
 En dichas iteraciones, se incluirá la relación de endpoints implementados, sus verbos HTTP, rutas, parámetros, ejemplos y explicación de respuestas. Asimismo, se incorporarán enlaces a la documentación, capturas de interacción con datos de muestra y los commits relacionados.
 
@@ -2333,21 +3299,21 @@ El seguimiento del trabajo se realiza mediante el tablero del Sprint utilizando 
 
 | User Story ID | User Story Title | Task ID | Task Title | Description | Estimation (Hours) | Priority | Status | Assigned To |
 |---|---|---|---|---|---:|---|---|---|
-| US-01 | Consultar información de Livva | S2-T01 | Refinar información de Livva | Revisar y ajustar la presentación de información general de Livva. | 3 | Media | In Process | Carlos Céspedes |
-| US-02 | Consultar seguros y beneficios | S2-T02 | Refinar seguros y beneficios | Ajustar la presentación de los seguros y beneficios disponibles en Livva. | 3 | Media | In Process | Scarlet Rivera |
-| US-03 | Contactar con Livva | S2-T03 | Implementar contacto | Implementar y validar la sección de contacto con Livva. | 4 | Media | In Process | Scarlet Rivera |
-| US-04 | Cambiar idioma | S2-T04 | Internacionalización | Implementar y validar el cambio entre español e inglés. | 4 | Alta | In Process | Carlos Céspedes |
-| US-09 | Registrar un vehículo | S2-T05 | Registro de vehículo | Implementar el formulario para registrar un vehículo asociado al usuario. | 4 | Alta | In Process | Carlos Paredes |
-| US-09 | Registrar un vehículo | S2-T06 | Validar vehículo | Validar los datos requeridos para registrar un vehículo. | 3 | Alta | In Process | Carlos Paredes |
-| US-10 | Consultar vehículos | S2-T07 | Listado de vehículos | Implementar la visualización de los vehículos registrados por el usuario. | 4 | Alta | In Process | Carlos Paredes |
-| US-11 | Actualizar vehículos | S2-T08 | Editar vehículo | Implementar la actualización de información de un vehículo registrado. | 4 | Media | In Process | Carlos Paredes |
-| US-11 | Actualizar vehículos | S2-T09 | Eliminar vehículo | Incorporar la eliminación de un vehículo registrado por el usuario. | 3 | Media | In Process | Carlos Paredes |
-| US-12 | Solicitar seguro vehicular | S2-T10 | Solicitud vehicular | Implementar el flujo para registrar una solicitud de seguro vehicular. | 6 | Alta | In Process | Carlos Paredes |
-| US-13 | Consultar solicitud vehicular | S2-T11 | Estado de solicitud vehicular | Implementar la visualización del estado de las solicitudes vehiculares. | 4 | Alta | In Process | Carlos Paredes |
-| US-14 | Solicitar seguro de vida | S2-T12 | Solicitud de seguro de vida | Implementar el flujo para registrar una solicitud de seguro de vida. | 6 | Alta | In Process | Fernando Contreras |
-| US-15 | Consultar solicitud de vida | S2-T13 | Estado de solicitud de vida | Implementar la visualización del estado de las solicitudes de seguro de vida. | 4 | Alta | In Process | Fernando Contreras |
-| US-19 | Consultar pólizas | S2-T14 | Listado de pólizas | Implementar la visualización de las pólizas asociadas al usuario. | 4 | Alta | In Process | Rolando Torres |
-| US-20 | Consultar detalle de póliza | S2-T15 | Detalle de póliza | Implementar una vista con información detallada sobre cobertura, vigencia y datos principales de una póliza. | 4 | Alta | In Process | Rolando Torres |
+| US-01 | Consultar información de Livva | S2-T01 | Refinar información de Livva | Revisar y ajustar la presentación de información general de Livva. | 3 | Media | Done | Carlos Céspedes |
+| US-02 | Consultar seguros y beneficios | S2-T02 | Refinar seguros y beneficios | Ajustar la presentación de los seguros y beneficios disponibles en Livva. | 3 | Media | Done | Scarlet Rivera |
+| US-03 | Contactar con Livva | S2-T03 | Implementar contacto | Implementar y validar la sección de contacto con Livva. | 4 | Media | Done | Scarlet Rivera |
+| US-04 | Cambiar idioma | S2-T04 | Internacionalización | Implementar y validar el cambio entre español e inglés. | 4 | Alta | Done | Carlos Céspedes |
+| US-09 | Registrar un vehículo | S2-T05 | Registro de vehículo | Implementar el formulario para registrar un vehículo asociado al usuario. | 4 | Alta | Done | Carlos Paredes |
+| US-09 | Registrar un vehículo | S2-T06 | Validar vehículo | Validar los datos requeridos para registrar un vehículo. | 3 | Alta | Done | Carlos Paredes |
+| US-10 | Consultar vehículos | S2-T07 | Listado de vehículos | Implementar la visualización de los vehículos registrados por el usuario. | 4 | Alta | Done | Carlos Paredes |
+| US-11 | Actualizar vehículos | S2-T08 | Editar vehículo | Implementar la actualización de información de un vehículo registrado. | 4 | Media | Done | Carlos Paredes |
+| US-11 | Actualizar vehículos | S2-T09 | Eliminar vehículo | Incorporar la eliminación de un vehículo registrado por el usuario. | 3 | Media | Done | Carlos Paredes |
+| US-12 | Solicitar seguro vehicular | S2-T10 | Solicitud vehicular | Implementar el flujo para registrar una solicitud de seguro vehicular. | 6 | Alta | Done | Carlos Paredes |
+| US-13 | Consultar solicitud vehicular | S2-T11 | Estado de solicitud vehicular | Implementar la visualización del estado de las solicitudes vehiculares. | 4 | Alta | Done | Carlos Paredes |
+| US-14 | Solicitar seguro de vida | S2-T12 | Solicitud de seguro de vida | Implementar el flujo para registrar una solicitud de seguro de vida. | 6 | Alta | Done | Fernando Contreras |
+| US-15 | Consultar solicitud de vida | S2-T13 | Estado de solicitud de vida | Implementar la visualización del estado de las solicitudes de seguro de vida. | 4 | Alta | Done | Fernando Contreras |
+| US-19 | Consultar pólizas | S2-T14 | Listado de pólizas | Implementar la visualización de las pólizas asociadas al usuario. | 4 | Alta | Done | Rolando Torres |
+| US-20 | Consultar detalle de póliza | S2-T15 | Detalle de póliza | Implementar una vista con información detallada sobre cobertura, vigencia y datos principales de una póliza. | 4 | Alta | Done | Rolando Torres |
 | US-21 | Solicitar renovación de póliza | S2-T21 | Gestión de renovación | Implementar el dominio, infraestructura, estado e interfaz correspondientes al proceso de renovación de pólizas. | 6 | Alta | Done | Carlos Céspedes |
 | US-22 | Registrar un siniestro | S2-T22 | Registro de siniestro vehicular | Implementar la infraestructura y la interfaz necesarias para registrar un siniestro vehicular. | 6 | Alta | Done | Carlos Céspedes |
 | US-23 | Consultar estado de siniestro | S2-T23 | Seguimiento de siniestro | Implementar la gestión de estado necesaria para permitir el seguimiento de los siniestros registrados. | 4 | Alta | Done | Carlos Céspedes |
@@ -2362,7 +3328,7 @@ Durante esta iteración se trabajó en la configuración inicial del proyecto, i
 El desarrollo se organizó mediante GitFlow, utilizando ramas `feature/*` para separar las funcionalidades antes de integrarlas a la rama `develop`. Esto permitió mantener una mayor trazabilidad sobre los cambios realizados y facilitar la integración progresiva de los diferentes módulos de la Web Application.
 
 **Repositorio de la Web Application:**  
-[[URL del repositorio de Livva Web Application](https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-web-application.git)]
+[URL del repositorio de Livva Web Application](https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-web-application.git)]
 
 
 ##### Feature Branches utilizadas
@@ -2558,9 +3524,8 @@ El proceso de despliegue parte del código integrado en la rama `develop` del re
 | Producto | URL |
 |---|---|
 | Web Application | [URL](https://livva-web-application.web.app/) |
-| Repositorio Web Application | [[URL](https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-web-application.git)] |
+| Repositorio Web Application | [URL(https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-web-application.git)] |
 
-<!--| Landing Page | [Completar URL] | -->
 
 ##### Resultado obtenido
 
@@ -2580,31 +3545,849 @@ La integración progresiva de las ramas permitió mantener trazabilidad sobre lo
 
 El equipo también realizó revisiones de las funcionalidades implementadas con el objetivo de comprobar su funcionamiento, mantener consistencia con los requerimientos definidos y preparar las evidencias correspondientes al Sprint Review.
 
+### 5.2.3. Sprint 3
+
+Durante el Sprint 3, el equipo de Livva Care se enfoca en la implementación de la primera versión de los Web Services de Livva, desarrollados como un RESTful API con C#, ASP.NET Core y Entity Framework Core sobre una base de datos MySQL. El desarrollo se organiza por los bounded contexts definidos en el diseño de base de datos (sección 4.8) y busca que la Web Application pueda consumir servicios reales en lugar de la Fake API utilizada durante el Sprint 2.
+
+#### 5.2.3.1. Sprint Planning 3
+
+| Campo | Descripción |
+|---|---|
+| Sprint # | Sprint 3 |
+| Date | 2026 - 11 -11 |
+| Time | 5:00 PM |
+| Location | Reunion virtual |
+| Prepared By | Livva Care Team |
+| Attendees | Paredes Chavez, Carlos Augusto / Torres Diaz, Rolando Andre / Contreras Panuera, Fernando Fabrizio / Cespedes Lezcano, Carlos Gabriel / Rivera Aguilar, Scarlet Josefina |
+| Sprint 2 Review Summary | Durante el Sprint 2 se desarrolló y desplegó la primera versión funcional de la Web Application de Livva con Vue y PrimeVue, incluyendo autenticación y perfil de usuario, gestión de vehículos, solicitudes de seguros vehiculares y de vida, registro de beneficiarios, consulta y renovación de pólizas, registro de siniestros vehiculares, internacionalización y diseño responsive, utilizando una Fake API con JSON Server. |
+| Sprint 2 Retrospective Summary | Durante el Sprint 2 se logró desarrollar y desplegar la primera versión funcional de la Web Application utilizando Vue 3, PrimeVue y JSON Server. La organización de las actividades permitió avanzar en la implementación de las principales funcionalidades y mantener una estructura modular. Como oportunidades de mejora, se identificó la necesidad de reemplazar los datos simulados por servicios reales, fortalecer las pruebas de funcionamiento y mejorar la integración entre los componentes del sistema. Estas mejoras se consideran prioritarias para el Sprint 3. |
+| Sprint 3 Goal | Nuestro enfoque se centra en implementar la primera versión funcional de los RESTful Web Services de Livva mediante ASP.NET Core 10, Entity Framework Core y MySQL, incorporando los principales bounded contexts del sistema. Creemos que esto permitirá mejorar la gestión de información, garantizar su persistencia y facilitar la integración con la Web Application. Esto se confirmará cuando los endpoints principales respondan correctamente, la conexión con MySQL funcione y los Web Services estén disponibles para su consumo mediante una URL pública. |
+| Sprint 3 Velocity | 94 Story Points. |
+| Sum of Story Points | 94 Story Points. |
+
+
+#### 5.2.3.2. Aspect Leaders and Collaborators
+
+Durante el Sprint 3, el equipo de Livva Care organiza sus responsabilidades considerando los diferentes bounded contexts del backend y las actividades relacionadas con su implementación y despliegue.
+
+Para establecer una distribución adecuada de responsabilidades, se utiliza la Leadership-and-Collaboration Matrix (LACX), que permite identificar a los integrantes responsables del liderazgo y la colaboración en cada aspecto del desarrollo.
+
+La letra L representa al líder responsable de coordinar las actividades correspondientes a un aspecto, mientras que la letra C identifica a los integrantes que participan como colaboradores.
+
+Los aspectos considerados durante este Sprint son Identity & Profile Management, Insurance Offering & Applications, Policy Management, Claims & Indemnities, Subscription Management, Notification Management y Web Services Deployment.
+
+La asignación de responsabilidades debe corresponder con las actividades desarrolladas por cada integrante y las evidencias de participación registradas en GitHub.
+
+| Team Member | GitHub Username | Identity & Profile | Insurance Offering | Policy Management | Claims & Indemnities | Subscription Management | Notification Management | Web Services Deployment |
+|---|---|---|---|---|---|---|---|---|
+| Paredes Chavez, Carlos Augusto | CarlossUPC | L | C | L | L | C | C | C |
+| Torres Diaz, Rolando Andre | ROLO194 | C | C | C | C | C | C | C |
+| Contreras Panuera, Fernando Fabrizio | FernSkibidi69 | C | C | C | C | C | C | C |
+| Cespedes Lezcano, Carlos Gabriel | Leikop | L | L | L | C | L | L | C |
+| Rivera Aguilar, Scarlet Josefina | scarletriveraaguilar-spec | C | C | C | L | C | C | C |
+
+**Leyenda:**
+- **L (Leader):** Responsable principal del aspecto.
+- **C (Collaborator):** Integrante que colabora en el desarrollo del aspecto.
+- **—:** Sin participación asignada.
+
+
+#### 5.2.3.3. Sprint Backlog 3
+
+El Sprint Backlog 3 organiza las actividades correspondientes a la implementación de la primera versión de los RESTful Web Services de Livva, desarrollados mediante ASP.NET Core 10, Entity Framework Core y MySQL. Durante esta iteración, el equipo se enfoca en desarrollar los principales bounded contexts del sistema, implementar los endpoints necesarios para gestionar los procesos de negocio y preparar la integración con la Web Application.
+
+Las actividades se distribuyen considerando las Technical Stories definidas en la sección 3.1, así como las tareas complementarias relacionadas con pruebas, documentación, configuración de infraestructura y despliegue.
+
+El desarrollo se organiza mediante ramas independientes bajo GitFlow, permitiendo mantener el control de versiones y facilitar la integración progresiva de las funcionalidades en la rama `develop`.
+
+El seguimiento de las actividades se realiza mediante el tablero del Sprint, utilizando los estados `To Do`, `In Process`, `To Review` y `Done`.
+
+**URL pública del tablero:** [https://trello.com/invite/b/6af5299caa855e6fc5a9b0cd/ATTI314d84d654e392e40b225fd07f8d95487F51AFA1/sprint-3]
+
+**Captura del Sprint Board 3:**
+
+ <img src="assets/SprintBoard3-Trello-Livva.png" width="900px" />
+
+#### Sprint Backlog 3
+
+| Story ID | Story Title | Task ID | Task Title | Task Description | Estimation (Hours) | Priority | Status | Assigned To |
+|---|---|---|---|---|---:|---|---|---|
+| — | Project Setup | S3-T01 | Configuración inicial del backend | Crear la solución ASP.NET Core 10 y configurar Shared Kernel y arquitectura base. | 5 | Alta | Done | Carlos Céspedes |
+| TS-33, TS-34 | Localization and API Documentation | S3-T02 | Configurar OpenAPI e i18n | Incorporar Scalar y localización en español e inglés. | 5 | Alta | Done | Carlos Céspedes |
+| — | Database Configuration | S3-T03 | Configurar persistencia MySQL | Implementar Entity Framework Core, DbContext y migraciones iniciales. | 5 | Alta | Done | Carlos Céspedes |
+| TS-01, TS-02 | Register and Authenticate User | S3-T04 | Implementar autenticación JWT | Desarrollar los servicios de registro, inicio de sesión y generación de tokens JWT. | 7 | Alta | Done | Carlos Céspedes |
+| TS-03, TS-04 | User Profile Management | S3-T05 | Implementar gestión de perfiles | Desarrollar servicios para consultar y actualizar información de perfiles. | 5 | Alta | Done | Carlos Céspedes |
+| TS-05 | Retrieve Insurance Products | S3-T06 | Implementar catálogo de seguros | Desarrollar servicios para consultar aseguradoras y productos disponibles. | 5 | Alta | Done | Carlos Céspedes |
+| TS-06, TS-07, TS-08 | Vehicle Management | S3-T07 | Implementar gestión de vehículos | Desarrollar operaciones REST para registrar, consultar y actualizar vehículos. | 6 | Alta | Done | Carlos Céspedes |
+| TS-09 a TS-14 | Insurance Applications | S3-T08 | Implementar solicitudes de seguros | Desarrollar servicios para registrar y consultar solicitudes de seguros vehiculares y de vida. | 8 | Alta | Done | Carlos Céspedes |
+| TS-15 a TS-17 | Beneficiary Management | S3-T09 | Implementar gestión de beneficiarios | Desarrollar operaciones para registrar, consultar y actualizar beneficiarios. | 5 | Alta | Done | Carlos Céspedes |
+| TS-18 a TS-20 | Policy Management | S3-T10 | Implementar gestión de pólizas | Desarrollar servicios de consulta de pólizas, coberturas, documentos y renovaciones. | 7 | Alta | Done | Carlos Céspedes |
+| TS-28 a TS-32 | Subscription Management | S3-T11 | Implementar suscripciones y pagos | Desarrollar planes, suscripciones y órdenes de pago mediante Mercado Pago. | 8 | Alta | Done | Carlos Céspedes |
+| TS-27 | Retrieve User Notifications | S3-T12 | Implementar notificaciones | Desarrollar servicios para gestionar notificaciones y avisos de vencimiento. | 5 | Media | Done | Carlos Céspedes |
+| TS-21 a TS-26 | Claims & Indemnities | S3-T13 | Implementar dominio de reclamos | Crear entidades, agregados, estados e historiales para reclamos e indemnizaciones. | 6 | Alta | Done | Scarlet Rivera |
+| TS-21 a TS-26 | Claims & Indemnities | S3-T14 | Implementar servicios de reclamos | Desarrollar comandos y consultas para registrar y gestionar reclamos e indemnizaciones. | 6 | Alta | Done | Scarlet Rivera |
+| TS-21 a TS-26 | Claims & Indemnities | S3-T15 | Implementar endpoints de Claims | Incorporar controladores REST, persistencia y migraciones del módulo. | 6 | Alta | To Do | Scarlet Rivera |
+| US-05, US-06 | Authentication Integration | S3-T16 | Configurar conexión HTTP del frontend | Adaptar Axios y las variables de entorno para consumir la API ASP.NET Core. | 5 | Alta | To Do | Carlos Paredes |
+| US-05, US-06 | User Authentication | S3-T17 | Integrar autenticación del frontend | Conectar registro e inicio de sesión con los endpoints reales y administrar el token JWT. | 7 | Alta | To Do | Carlos Paredes |
+| US-03, US-04 | Insurance Information | S3-T18 | Integrar catálogo de seguros | Conectar las vistas de productos vehiculares y de vida con los Web Services. | 5 | Alta | To Do | Carlos Paredes |
+| US-09 a US-11 | Vehicle Management | S3-T19 | Integrar gestión de vehículos | Conectar registro, consulta y actualización de vehículos con la API. | 6 | Alta | To Do | Carlos Paredes |
+| US-19 a US-21 | Policy Management | S3-T20 | Integrar gestión de pólizas | Conectar consulta de pólizas, detalles y renovaciones con los servicios REST. | 6 | Alta | To Do | Carlos Paredes |
+| US-22, US-23 | Vehicle Claims | S3-T21 | Preparar integración de siniestros | Adaptar la comunicación del frontend para registrar y consultar siniestros. | 5 | Media | To Do | Carlos Paredes |
+| — | Frontend Integration Testing | S3-T22 | Verificar integración frontend-backend | Comprobar solicitudes HTTP, autenticación y visualización de respuestas reales. | 6 | Alta | To Do | Carlos Paredes |
+| US-01 a US-04 | Landing Page Improvement | S3-T23 | Actualizar Landing Page | Incorporar mejoras de navegación, contenido y enlaces hacia la Web Application. | 4 | Media | To Do | Carlos Paredes |
+| — | Backend Testing | S3-T24 | Ejecutar pruebas automatizadas | Revisar pruebas unitarias y de integración de los módulos implementados. | 6 | Alta | To Do | Rolando Torres |
+| — | Validation Preparation | S3-T25 | Preparar validaciones | Organizar escenarios de validación y recopilar evidencias de funcionamiento. | 5 | Media | To Do | Rolando Torres |
+| — | Web Services Deployment | S3-T26 | Desplegar backend en Railway | Configurar el servicio cloud, MySQL, variables de entorno y publicar los Web Services. | 7 | Alta | To Do | Fernando Contreras |
+| — | Sprint Documentation | S3-T27 | Documentar evidencias del Sprint 3 | Actualizar el informe con evidencias de desarrollo, documentación y configuración de despliegue. | 6 | Alta | Done | Fernando Contreras |
+
+#### Organización de las actividades
+
+Las actividades del Sprint 3 se concentran principalmente en la implementación del backend y su integración con los productos digitales de Livva.
+
+La distribución propuesta considera una mayor participación de Carlos Céspedes en la implementación de los bounded contexts principales del backend y de Carlos Paredes en las actividades de integración con la Web Application y actualización del Landing Page.
+
+Asimismo, se consideran actividades especializadas relacionadas con Claims & Indemnities, pruebas de funcionamiento, validaciones, despliegue cloud y documentación técnica.
+
+Las estimaciones representan horas de trabajo propuestas para cada actividad. Los estados y responsables deberán actualizarse de acuerdo con el seguimiento real del tablero de Trello.
+
+El cumplimiento del Sprint Goal será evaluado considerando los servicios implementados, las integraciones realizadas, las pruebas ejecutadas y las evidencias de despliegue obtenidas durante la iteración.
+
+
+#### 5.2.3.4. Development Evidence for Sprint Review
+
+
+Durante el Sprint 3, se registraron avances significativos en la implementación de los RESTful Web Services de Livva, siguiendo una arquitectura basada en Domain-Driven Design (DDD) y utilizando ASP.NET Core 10, Entity Framework Core y MySQL.
+
+El historial de GitHub evidencia el desarrollo incremental de los diferentes bounded contexts, mediante ramas independientes que permiten organizar las funcionalidades y mantener un control adecuado sobre los cambios realizados.
+
+Entre los principales avances se encuentran la configuración inicial del proyecto, la implementación de los módulos Identity & Profile Management, Insurance Offering & Applications, Policy Management, Subscription Management y Notification Management.
+
+Asimismo, se registraron avances en Claims & Indemnities, incluyendo la implementación de agregados de dominio, comandos, consultas, auditorías y mecanismos de seguimiento de estados relacionados con reclamos vehiculares y solicitudes de indemnización.
+
+Las evidencias obtenidas mediante el historial de commits permiten verificar la evolución del código fuente y la integración progresiva de funcionalidades hacia la rama `develop`.
+
+#### Registro de commits del Sprint 3
+
+La siguiente tabla presenta los principales commits identificados en el historial del repositorio.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|---|---|---|---|---|---|
+| livva-web-services | develop | ca33303 | chore: initialize asp.net core web api project | Inicialización de la solución ASP.NET Core Web API. | 2026-11-08 |
+| livva-web-services | feature/project-setup | 46d37fe | feat: add shared kernel, localization, openapi configuration and test projects | Incorporación de componentes compartidos, localización, OpenAPI y proyectos de pruebas. | 2026-11-08 |
+| livva-web-services | develop | a32d4a3 | Merge branch 'feature/project-setup' into develop | Integración de la configuración inicial del proyecto. | 2026-11-08 |
+| livva-web-services | feature/identity-and-profile-management | b389cfe | feat(iam): add identity and profile management with jwt authentication | Implementación del módulo de usuarios, perfiles y autenticación JWT. | 2026-11-08 |
+| livva-web-services | develop | 051ff40 | Merge branch 'feature/identity-and-profile-management' into develop | Integración del módulo Identity & Profile Management. | 2026-11-08 |
+| livva-web-services | feature/policy-management | 7102db6 | feat(policy-management): add policies, coverages, documents and renewals | Implementación de pólizas, coberturas, documentos y renovaciones. | 2026-11-08 |
+| livva-web-services | develop | 637821b | Merge branch 'feature/policy-management' into develop | Integración del módulo Policy Management. | 2026-11-08 |
+| livva-web-services | develop | bd19b2e | Merge branch 'feature/insurance-offering-and-applications' into develop | Integración de los servicios relacionados con seguros y solicitudes. | 2026-11-08 |
+| livva-web-services | develop | fb115a4 | Merge branch 'feature/subscription-management' into develop | Integración del módulo Subscription Management. | 2026-11-08 |
+| livva-web-services | develop | f3554bc | Merge branch 'feature/notification-management' into develop | Integración del módulo Notification Management. | 2026-11-09 |
+| livva-web-services | feature/claims-and-indemnities | da2ae2f | feat(claims-and-indemnities): add vehicle claim status | Incorporación de estados para reclamos vehiculares. | 2026-11-09 |
+| livva-web-services | feature/claims-and-indemnities | f7329f9 | feat(claims-and-indemnities): add indemnity request statuses | Incorporación de estados para solicitudes de indemnización. | 2026-11-09 |
+| livva-web-services | feature/claims-and-indemnities | aaff711 | feat(claims-and-indemnities): add create vehicle claim command | Incorporación del comando para registrar reclamos vehiculares. | 2026-11-09 |
+| livva-web-services | feature/claims-and-indemnities | a66a176 | feat(claims-and-indemnities): add change vehicle claim status command | Incorporación del comando para modificar estados de reclamos. | 2026-11-09 |
+| livva-web-services | feature/claims-and-indemnities | 840eeff | feat(claims-and-indemnities): add vehicle claim aggregate | Implementación del agregado de reclamos vehiculares. | 2026-11-09 |
+| livva-web-services | feature/claims-and-indemnities | 89d0f05 | feat(claims-and-indemnities): add vehicle claim status history | Incorporación del historial de estados de reclamos. | 2026-11-09 |
+| livva-web-services | feature/claims-and-indemnities | 0726ceb | feat(claims-and-indemnities): add vehicle claim audit | Incorporación de auditoría para reclamos vehiculares. | 2026-11-09 |
+| livva-web-services | feature/claims-and-indemnities | ecdbcff | feat(claims-and-indemnities): add indemnity request aggregate | Implementación del agregado de solicitudes de indemnización. | 2026-11-09 |
+| livva-web-services | feature/claims-and-indemnities | af9c084 | feat(claims-and-indemnities): add indemnity request audit | Incorporación de auditoría para solicitudes de indemnización. | 2026-11-09 |
+| livva-web-services | feature/claims-and-indemnities | ca0f049 | feat(claims-and-indemnities): add indemnity status history | Incorporación del historial de estados de indemnización. | 2026-11-09 |
+| livva-web-services | feature/claims-and-indemnities | c5e14d1 | feat(claims-and-indemnities): add get vehicle claim by id query | Implementación de la consulta de reclamos mediante identificador. | 2026-11-09 |
+| livva-web-services | feature/insurance-offering-and-applications | 97077c3 | feat(insurance-offering): add insurers, products, vehicles, applications and beneficiaries | Implementación de aseguradoras, productos, vehículos, solicitudes de seguro y beneficiarios. | 2026-11-08 |
+| livva-web-services | feature/subscription-management | 5b6e68b | feat(subscription-management): add plans, user subscriptions, payments and mercado pago orders | Implementación de planes, suscripciones, pagos y órdenes de pago con Mercado Pago. | 2026-11-08 |
+| livva-web-services | feature/notification-management | 61a6395 | feat(notification-management): add notifications with expiration notices and read status | Implementación de notificaciones, avisos de vencimiento y estado de lectura. | 2026-11-09 |
+| livva-web-services | feature/claims-and-indemnities | 9399462 | fix(claims-indemnities): align claims with report and web application routes | Alineación de siniestros e indemnizaciones con el diseño de base de datos y las rutas de la Web Application. | 2026-11-12 |
+| livva-web-services | develop | 77840da | Merge branch 'feature/claims-and-indemnities' into develop | Integración del módulo Claims & Indemnities. | 2026-11-12 |
+| livva-web-services | release/1.0.0 | 4ce839b | chore(release): prepare version 1.0.0 | Preparación de la versión 1.0.0 de los Web Services. | 2026-11-12 |
+| livva-web-services | hotfix/1.0.1 | 3c636fb | fix(claims-indemnities): use mysql compatible default values in claims alignment migration | Corrección de la migración de siniestros para su ejecución en MySQL. | 2026-11-12 |
+| livva-web-services | main | 9ad3b94 | Merge branch 'hotfix/1.0.1' into main | Publicación de la versión 1.0.1 en la rama principal. | 2026-11-12 |
+| livva-web-application | feature/backend-integration | d6f2dc7 | feat(integration): connect web application to livva platform api with jwt authentication | Integración de la Web Application con los Web Services mediante autenticación JWT. | 2026-11-12 |
+| livva-web-application | develop | 3c30f87 | Merge branch 'feature/backend-integration' into develop | Integración de la conexión con los Web Services. | 2026-11-12 |
+
+#### Evidencias de implementación
+
+
+El desarrollo realizado durante el Sprint 3 permitió establecer la estructura técnica de los principales servicios de Livva y avanzar en la implementación de los componentes necesarios para su integración con la Web Application.
+
+La verificación del funcionamiento de los servicios y los resultados obtenidos mediante solicitudes HTTP serán documentados en la sección 5.2.3.5. Execution Evidence for Sprint Review.
+
+
+
+#### 5.2.3.5. Execution Evidence for Sprint Review
+
+Durante el Sprint 3, Livva Care avanzó en la implementación de los Web Services encargados de gestionar los principales procesos de la plataforma. La solución utiliza ASP.NET Core 10, Entity Framework Core y MySQL, permitiendo estructurar los servicios mediante bounded contexts y preparar su integración con la Web Application.
+
+Para comprobar el funcionamiento de los servicios desarrollados, se contemplan los siguientes escenarios de ejecución:
+
+- **Ejecución del backend:** verificación del inicio de la aplicación ASP.NET Core y la disponibilidad de los controladores REST mediante solicitudes HTTP.
+- **Autenticación de usuarios:** pruebas de registro e inicio de sesión mediante los endpoints SignUp y SignIn, verificando la generación de tokens JWT.
+- **Gestión de seguros:** consulta de aseguradoras, productos de seguros y vehículos mediante los endpoints del módulo Insurance Offering & Applications.
+- **Gestión de pólizas:** verificación de las operaciones de consulta y registro de pólizas, coberturas y renovaciones.
+- **Gestión de suscripciones:** consulta de planes y verificación de los servicios relacionados con suscripciones y órdenes de pago.
+- **Gestión de notificaciones:** consulta y administración de notificaciones asociadas a los usuarios.
+- **Persistencia de información:** comprobación de las tablas generadas mediante las migraciones de Entity Framework Core y su conexión con MySQL.
+- **Integración Frontend-Backend:** verificación de la comunicación entre la Web Application desarrollada con Vue 3 y los servicios RESTful, conforme se incorporen las conexiones reales.
+
+#### Evidencias de ejecución de los Web Services
+
+La verificación de los endpoints se realizará mediante Scalar, que permite visualizar los recursos disponibles y ejecutar solicitudes HTTP.
+
+| Funcionalidad | Endpoint | Método HTTP | Evidencia |
+|---|---|---|---|
+| Registro de usuario | `/api/v1/authentication/sign-up` | POST | Respuesta del registro |
+| Inicio de sesión | `/api/v1/authentication/sign-in` | POST | Autenticación JWT |
+| Consulta de aseguradoras | `/api/v1/insurers` | GET | Listado de aseguradoras |
+| Consulta de productos | `/api/v1/insurance-products` | GET | Listado de seguros |
+| Consulta de vehículos | `/api/v1/vehicles` | GET | Vehículos registrados |
+| Consulta de pólizas | `/api/v1/policies` | GET | Pólizas disponibles |
+| Planes de suscripción | `/api/v1/subscription-plans` | GET | Planes registrados |
+| Consulta de notificaciones | `/api/v1/notifications` | GET | Notificaciones disponibles |
+
+#### Evidencias visuales
+
+
+
+**Figura 1. Documentación de los servicios REST mediante Scalar.**
+
+
+<img src="assets/Sprint3-Execution-Evidence/Sprint3-Scalar-Endpoints.png.png" width="900px" />
+
+
+**Figura 2. Verificación del registro e inicio de sesión mediante autenticación JWT.**
+
+
+<img src="assets/Sprint3-Execution-Evidence/Sprint3-Authentication-Register.png" width="900px" />
+
+<img src="assets/Sprint3-Execution-Evidence/Sprint3-Authentication-Login.png" width="900px" />
+
+
+
+
+**Figura 3. Verificación de la persistencia de datos en MySQL desplegado en Railway.**
+
+
+<img src="assets/Sprint3-Execution-Evidence/Sprint3-MySQL-Persistence.png" width="900px" />
+
+#### 5.2.3.6. Services Documentation Evidence for Sprint Review
+
+Durante el Sprint 3, Livva Care incorporó la documentación de los RESTful Web Services desarrollados mediante ASP.NET Core 10. Los servicios se encuentran organizados según los bounded contexts definidos en la arquitectura del sistema, permitiendo administrar usuarios, seguros, pólizas, suscripciones y notificaciones.
+
+Para documentar las operaciones disponibles se utiliza OpenAPI, junto con Scalar, herramientas que permiten consultar los endpoints, identificar sus parámetros y visualizar los esquemas de solicitudes y respuestas HTTP.
+
+La versión del backend revisada contiene 57 operaciones HTTP distribuidas en 19 controladores REST, correspondientes a cinco bounded contexts integrados en la rama `develop`.
+
+#### Documentación OpenAPI
+
+El backend dispone de las siguientes rutas de documentación:
+
+| Herramienta | Ruta | Descripción |
+|---|---|---|
+| OpenAPI | `/openapi/v1.json` | Especificación de las operaciones REST disponibles. |
+| Scalar | `/scalar` | Interfaz interactiva para consultar y ejecutar endpoints. |
+
+La documentación puede consultarse localmente mediante `http://localhost:5033/scalar`, siempre que la aplicación se encuentre ejecutándose en dicho puerto.
+
+#### Endpoints de Identity & Profile Management
+
+Este bounded context permite registrar usuarios, autenticar credenciales y administrar perfiles personales mediante servicios protegidos con JWT.
+
+| Método | Endpoint | Descripción | Respuesta |
+|---|---|---|---|
+| POST | `/api/v1/authentication/sign-up` | Registra un usuario. | 201 |
+| POST | `/api/v1/authentication/sign-in` | Autentica credenciales y genera un token JWT. | 200 |
+| GET | `/api/v1/users` | Consulta usuarios registrados. | 200 |
+| GET | `/api/v1/users/{userId}` | Obtiene un usuario por identificador. | 200 |
+| PATCH | `/api/v1/users/{userId}` | Actualiza información del usuario. | 200 |
+| POST | `/api/v1/user-profiles` | Crea un perfil de usuario. | 201 |
+| GET | `/api/v1/user-profiles` | Consulta los perfiles registrados. | 200 |
+| GET | `/api/v1/user-profiles/{userProfileId}` | Obtiene un perfil por identificador. | 200 |
+| PATCH | `/api/v1/user-profiles/{userProfileId}` | Actualiza un perfil existente. | 200 |
+
+Las operaciones de consulta permiten utilizar filtros como `email` y `userId`, según el recurso solicitado.
+
+#### Endpoints de Insurance Offering & Applications
+
+Este bounded context gestiona aseguradoras, productos de seguros, vehículos, solicitudes de seguros vehiculares y de vida, así como beneficiarios.
+
+| Método | Endpoint | Descripción | Respuesta |
+|---|---|---|---|
+| GET | `/api/v1/insurers` | Consulta aseguradoras. | 200 |
+| GET | `/api/v1/insurers/{insurerId}` | Consulta una aseguradora por ID. | 200 |
+| GET | `/api/v1/insurance-products` | Consulta productos de seguros. | 200 |
+| GET | `/api/v1/insurance-products/{productId}` | Consulta un producto específico. | 200 |
+| POST | `/api/v1/vehicles` | Registra un vehículo. | 201 |
+| GET | `/api/v1/vehicles` | Consulta vehículos registrados. | 200 |
+| GET | `/api/v1/vehicles/{vehicleId}` | Consulta un vehículo por ID. | 200 |
+| PATCH | `/api/v1/vehicles/{vehicleId}` | Actualiza información de un vehículo. | 200 |
+| DELETE | `/api/v1/vehicles/{vehicleId}` | Elimina un vehículo. | 204 |
+| POST | `/api/v1/insurance-applications` | Registra una solicitud de seguro. | 201 |
+| GET | `/api/v1/insurance-applications` | Consulta solicitudes de seguros. | 200 |
+| GET | `/api/v1/insurance-applications/{applicationId}` | Consulta una solicitud por ID. | 200 |
+| PATCH | `/api/v1/insurance-applications/{applicationId}` | Cambia el estado de una solicitud (por ejemplo, cancelarla). | 200 |
+| DELETE | `/api/v1/insurance-applications/{applicationId}` | Elimina una solicitud. | 204 |
+| POST | `/api/v1/vehicle-insurance-applications` | Registra una solicitud de seguro vehicular. | 201 |
+| GET | `/api/v1/vehicle-insurance-applications` | Consulta solicitudes vehiculares. | 200 |
+| GET | `/api/v1/vehicle-insurance-applications/{id}` | Consulta el detalle de una solicitud vehicular. | 200 |
+| POST | `/api/v1/life-insurance-applications` | Registra una solicitud de seguro de vida. | 201 |
+| GET | `/api/v1/life-insurance-applications` | Consulta solicitudes de seguros de vida. | 200 |
+| GET | `/api/v1/life-insurance-applications/{id}` | Consulta el detalle de una solicitud de vida. | 200 |
+| POST | `/api/v1/beneficiaries` | Registra un beneficiario. | 201 |
+| GET | `/api/v1/beneficiaries` | Consulta beneficiarios registrados. | 200 |
+| GET | `/api/v1/beneficiaries/{beneficiaryId}` | Consulta un beneficiario por ID. | 200 |
+| PATCH | `/api/v1/beneficiaries/{beneficiaryId}` | Actualiza información de un beneficiario. | 200 |
+
+Los servicios de consulta contemplan filtros como `insuranceType`, `insurerId`, `userId`, `applicationId` y `policyId`, según el recurso correspondiente.
+
+#### Endpoints de Policy Management
+
+Este bounded context administra pólizas emitidas, coberturas, documentos y solicitudes de renovación.
+
+| Método | Endpoint | Descripción | Respuesta |
+|---|---|---|---|
+| GET | `/api/v1/policies` | Consulta pólizas. | 200 |
+| GET | `/api/v1/policies/{policyId}` | Consulta una póliza por identificador. | 200 |
+| POST | `/api/v1/policies` | Registra una póliza. | 201 |
+| GET | `/api/v1/policy-coverages` | Consulta coberturas de pólizas. | 200 |
+| GET | `/api/v1/policy-coverages/{id}` | Consulta una cobertura por ID. | 200 |
+| GET | `/api/v1/policy-documents` | Consulta documentos asociados a pólizas. | 200 |
+| GET | `/api/v1/policy-documents/{id}` | Consulta un documento por ID. | 200 |
+| POST | `/api/v1/renewals` | Registra una solicitud de renovación. | 201 |
+| GET | `/api/v1/renewals` | Consulta renovaciones. | 200 |
+| GET | `/api/v1/renewals/{renewalId}` | Consulta una renovación por ID. | 200 |
+
+#### Endpoints de Subscription Management
+
+Este bounded context permite administrar planes, suscripciones y pagos. Además, incorpora un servicio de órdenes de pago asociado con Mercado Pago.
+
+| Método | Endpoint | Descripción | Respuesta |
+|---|---|---|---|
+| GET | `/api/v1/subscription-plans` | Consulta planes disponibles. | 200 |
+| GET | `/api/v1/subscription-plans/{planId}` | Consulta un plan por ID. | 200 |
+| POST | `/api/v1/user-subscriptions` | Registra una suscripción. | 201 |
+| GET | `/api/v1/user-subscriptions` | Consulta suscripciones de usuarios. | 200 |
+| GET | `/api/v1/user-subscriptions/{userSubscriptionId}` | Consulta una suscripción por ID. | 200 |
+| PATCH | `/api/v1/user-subscriptions/{userSubscriptionId}` | Actualiza una suscripción. | 200 |
+| DELETE | `/api/v1/user-subscriptions/{userSubscriptionId}` | Elimina una suscripción. | 204 |
+| POST | `/api/v1/subscription-payments` | Registra un pago de suscripción. | 201 |
+| GET | `/api/v1/subscription-payments` | Consulta pagos registrados. | 200 |
+| GET | `/api/v1/subscription-payments/{subscriptionPaymentId}` | Consulta un pago por ID. | 200 |
+| POST | `/api/v1/payment-orders` | Crea una orden de pago. | 201 |
+
+Los servicios incluyen filtros por usuario, suscripción y estado activo del plan, según la operación consultada.
+
+#### Endpoints de Notification Management
+
+Este bounded context proporciona operaciones para registrar, consultar y actualizar notificaciones de los usuarios.
+
+| Método | Endpoint | Descripción | Respuesta |
+|---|---|---|---|
+| POST | `/api/v1/notifications` | Registra una notificación. | 201 |
+| GET | `/api/v1/notifications` | Consulta notificaciones. | 200 |
+| GET | `/api/v1/notifications/{notificationId}` | Consulta una notificación por ID. | 200 |
+| PATCH | `/api/v1/notifications/{notificationId}` | Actualiza una notificación. | 200 |
+
+Las respuestas indicadas corresponden a los códigos de éxito declarados en los controladores. Dependiendo de la solicitud, también pueden producirse errores de validación, autenticación, recursos inexistentes o conflictos.
+
+#### Endpoints de Claims & Indemnities
+
+Este bounded context registra los siniestros vehiculares y las solicitudes de indemnización de seguros de vida, y guarda automáticamente el historial de cambios de estado.
+
+| Método | Endpoint | Descripción | Respuesta |
+|---|---|---|---|
+| GET | `/api/v1/vehicle-claims` | Consulta siniestros vehiculares (filtros `policyId` y `userId`). | 200 |
+| GET | `/api/v1/vehicle-claims/{claimId}` | Consulta un siniestro por identificador. | 200 |
+| POST | `/api/v1/vehicle-claims` | Registra un siniestro vehicular con estado inicial `reported`. | 201 |
+| PATCH | `/api/v1/vehicle-claims/{claimId}` | Actualiza el estado de un siniestro (por ejemplo, `cancelled`). | 200 |
+| GET | `/api/v1/claim-status-histories` | Consulta el historial de estados de un siniestro (filtro `claimId`). | 200 |
+| POST | `/api/v1/indemnity-requests` | Registra una solicitud de indemnización. | 201 |
+| GET | `/api/v1/indemnity-requests` | Consulta solicitudes de indemnización (filtros `policyId` y `beneficiaryId`). | 200 |
+| GET | `/api/v1/indemnity-requests/{requestId}` | Consulta una solicitud de indemnización por identificador. | 200 |
+| PATCH | `/api/v1/indemnity-requests/{requestId}` | Actualiza el estado de una solicitud de indemnización. | 200 |
+#### Ejemplos de solicitudes y respuestas HTTP
+
+La documentación OpenAPI permite identificar los esquemas JSON que utilizan los diferentes servicios.
+
+A continuación se presentan ejemplos ilustrativos basados en los contratos de la API.
+
+**Ejemplo 1. Registro de usuario**
+
+Endpoint: `POST /api/v1/authentication/sign-up`
+
+Solicitud:
+
+```json
+{
+  "firstName": "Usuario",
+  "lastName": "Prueba",
+  "email": "usuario@example.com",
+  "password": "Password123",
+  "phone": "999999999"
+}
+```
+
+Respuesta esperada: `201 Created`, con la información del usuario registrado.
+
+**Ejemplo 2. Inicio de sesión**
+
+Endpoint: `POST /api/v1/authentication/sign-in`
+
+Solicitud:
+
+```json
+{
+  "email": "usuario@example.com",
+  "password": "Password123"
+}
+```
+
+Respuesta esperada: `200 OK`.
+
+El recurso de respuesta contiene el identificador del usuario, nombre, apellido, correo electrónico, teléfono, rol, estado de la cuenta y token JWT.
+
+**Ejemplo 3. Consulta de productos de seguros**
+
+Endpoint: `GET /api/v1/insurance-products?insuranceType=vehicle`
+
+Parámetro utilizado:
+
+- `insuranceType`: permite filtrar productos según el tipo de seguro, vehicular o de vida.
+
+Respuesta esperada: `200 OK`, con una colección de productos que incluye identificadores, aseguradora, nombre del producto, tipo de seguro, cobertura, prima y estado.
+
+#### Seguridad y autenticación
+
+Los servicios protegidos utilizan autenticación JWT. Para acceder a ellos, el cliente debe enviar un token válido mediante el encabezado HTTP:
+
+`Authorization: Bearer {token}`
+
+Los tokens se obtienen mediante el endpoint de inicio de sesión y permiten autenticar las solicitudes realizadas a los recursos protegidos.
+
+#### Evidencias de documentación de servicios
+
+Se incorporarán capturas de Scalar que permitan demostrar la disponibilidad de la documentación y los contratos de los endpoints desarrollados.
+
+
+**Figura 1. Documentación OpenAPI de Livva mediante Scalar.**
+
+<img src="assets/Sprint3-Services-Documentation/Sprint3-Scalar-API-Documentation.png" width="900px" />
+
+**Figura 2. Documentación del endpoint de registro de usuarios.**
+
+<img src="assets/Sprint3-Services-Documentation/Sprint3-Authentication.png" width="900px" />
+
+**Figura 3. Documentación de los endpoints de Insurance Offering & Applications.**
+
+<img src="assets/Sprint3-Services-Documentation/Sprint3-Scalar-Insurance-Offering.png" width="900px" />
+
+**Figura 4. Documentación del módulo Policy Management.**
+
+<img src="assets/Sprint3-Services-Documentation/Sprint3-Scalar-Policy-Management.png" width="900px" />
+
+**Figura 5. Documentación del módulo Subscription Management.**
+
+<img src="assets/Sprint3-Services-Documentation/Sprint3-Scalar-Subscription-Management.png" width="900px" />
+
+
+#### Información de referencia
+
+| Elemento | Información |
+|---|---|
+| Repositorio | https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-web-services |
+| Documento OpenAPI local | http://localhost:5033/openapi/v1.json |
+| Documentación Scalar local | http://localhost:5033/scalar |
+| Documentación pública | https://livva-web-services-production.up.railway.app/scalar/#description/introduction |
+| Commits relacionados | `46d37fe` (configuración de OpenAPI, Scalar), `b389cfe` (esquema de seguridad JWT en OpenAPI) |
+
+La documentación de los Web Services facilita la comprensión de los contratos de comunicación y constituye una referencia técnica para el desarrollo, mantenimiento e integración de la API con la Web Application de Livva.
+
+Las capturas de solicitudes ejecutadas y sus resultados se presentarán en la sección de Execution Evidence, mientras que las evidencias de la publicación cloud se incorporarán en Software Deployment Evidence.
+
+
+
+#### 5.2.3.7. Software Deployment Evidence for Sprint Review
+
+Durante el Sprint 3, Livva Care contempla el despliegue de la primera versión de sus RESTful Web Services mediante Railway, una plataforma cloud que permite alojar y ejecutar aplicaciones utilizando contenedores Docker.
+
+El objetivo de esta implementación es disponer de un backend accesible mediante una URL pública, permitiendo que la Web Application pueda consumir servicios reales para la gestión de usuarios, seguros, pólizas, suscripciones y notificaciones.
+
+Para el despliegue se utilizará el repositorio `livva-web-services`, desarrollado con ASP.NET Core 10 y Entity Framework Core, junto con una base de datos MySQL encargada de almacenar la información de los diferentes bounded contexts.
+
+#### Configuración del entorno de despliegue
+
+La arquitectura de despliegue contempla los siguientes componentes:
+
+| Componente | Tecnología | Descripción |
+|---|---|---|
+| Web Services | ASP.NET Core 10 | Implementación de los servicios RESTful de Livva. |
+| Cloud Hosting | Railway | Plataforma de alojamiento y ejecución del backend. |
+| Containerization | Docker | Construcción y ejecución del backend mediante contenedores. |
+| Database | MySQL | Almacenamiento de información de la plataforma. |
+| Data Persistence | Entity Framework Core | Gestión de entidades, consultas y migraciones de base de datos. |
+| API Documentation | Scalar y OpenAPI | Documentación y verificación de los endpoints disponibles. |
+| Version Control | GitHub | Administración del código fuente y sus versiones. |
+
+El repositorio cuenta con un archivo `Dockerfile` que permite construir la aplicación utilizando las imágenes oficiales de .NET 10.
+
+Este archivo establece las instrucciones necesarias para restaurar dependencias, compilar el proyecto y ejecutar la aplicación en un contenedor. Asimismo, permite utilizar la variable `PORT` proporcionada por Railway para configurar el puerto de escucha.
+
+#### Configuración de variables de entorno
+
+Para garantizar el funcionamiento del backend en Railway, se requiere establecer las variables de entorno relacionadas con la conexión a MySQL, autenticación JWT y comunicación con servicios externos.
+
+| Variable | Descripción |
+|---|---|
+| `MYSQLHOST` | Dirección del servidor MySQL. |
+| `MYSQLPORT` | Puerto utilizado para la conexión con MySQL. |
+| `MYSQLUSER` | Usuario de acceso a la base de datos. |
+| `MYSQLPASSWORD` | Contraseña de conexión a MySQL. |
+| `MYSQLDATABASE` | Nombre de la base de datos utilizada por Livva. |
+| `JWT_SECRET` | Clave secreta utilizada para firmar los tokens JWT. |
+| `MERCADO_PAGO_ACCESS_TOKEN` | Credencial utilizada para las operaciones de pago con Mercado Pago. |
+| `Cors__AllowedOrigins` | Direcciones autorizadas para consumir los Web Services desde aplicaciones externas. |
+
+La configuración de producción se encuentra definida en `appsettings.Production.json`, donde la cadena de conexión utiliza las variables correspondientes a MySQL.
+
+Asimismo, el backend requiere una clave JWT de al menos 32 caracteres para permitir el funcionamiento del sistema de autenticación.
+
+Las credenciales serán administradas mediante las variables de entorno de Railway, evitando almacenar información sensible directamente en el código fuente.
+
+#### Procedimiento de despliegue
+
+El procedimiento previsto para la publicación del backend comprende las siguientes actividades:
+
+1. Acceder a Railway y crear un proyecto para los Web Services de Livva.
+2. Vincular el repositorio `livva-web-services` alojado en GitHub.
+3. Seleccionar la rama correspondiente para realizar el despliegue.
+4. Configurar el servicio utilizando el archivo `Dockerfile`.
+5. Incorporar un servicio MySQL y establecer las variables de conexión.
+6. Configurar las variables de autenticación JWT, Mercado Pago y CORS.
+7. Ejecutar la construcción y publicación del backend.
+8. Verificar la aplicación de las migraciones de Entity Framework Core.
+9. Generar una URL pública para los Web Services.
+10. Comprobar la disponibilidad de los endpoints mediante Scalar.
+
+#### Evidencias del despliegue
+
+
+
+
+<img src="assets/Sprint3-Services-Documentation/Sprint3-Scalar-API-Documentation.png" width="900px" />
+
+
+
+
+#### URLs de los productos desplegados
+
+| Producto | URL |
+|---|---|
+| Landing Page | [Landing Page](https://upc-pre-202620-1asi0730-8168-livva-care.github.io/livva-landing-page/) |
+| Web Application | [Web App](https://livva-web-application.web.app/) |
+| Documentación Scalar |[Scalar](https://livva-web-services-production.up.railway.app/scalar/#description/introduction) |
+
+#### Verificación del despliegue
+
+Una vez publicado el backend, se realizarán verificaciones para comprobar el funcionamiento de los servicios y su comunicación con la base de datos.
+
+Los aspectos principales que se evaluarán son los siguientes:
+
+- Disponibilidad del servicio ASP.NET Core desde una URL pública.
+- Conexión correcta con la instancia MySQL.
+- Aplicación satisfactoria de las migraciones de Entity Framework Core.
+- Acceso a la documentación interactiva mediante Scalar.
+- Funcionamiento de los endpoints RESTful mediante solicitudes HTTP.
+- Validación de la autenticación JWT.
+- Disponibilidad de los servicios para su integración con la Web Application.
+
+Los resultados obtenidos serán registrados mediante capturas y documentación de las pruebas realizadas.
+
+El despliegue de los Web Services permitirá avanzar en la integración de los componentes de Livva, estableciendo un entorno de ejecución externo que facilite la verificación y disponibilidad de las funcionalidades desarrolladas durante el Sprint 3.
+
+
+
+#### 5.2.3.8. Team Collaboration Insights during Sprint
+
+Durante el Sprint 3, el equipo de Livva Care organizó el desarrollo de los Web Services mediante un esquema de trabajo colaborativo basado en GitFlow, utilizando GitHub para gestionar el código fuente, registrar los avances y facilitar la integración de las funcionalidades implementadas.
+
+El trabajo se distribuyó considerando los diferentes bounded contexts del sistema, permitiendo desarrollar los módulos de manera independiente y mantener una estructura organizada durante la implementación del backend.
+
+Para gestionar los cambios, se utilizaron ramas `feature/*`, donde se desarrollaron las funcionalidades correspondientes antes de incorporarlas progresivamente a la rama `develop`. Asimismo, los commits se registraron siguiendo la especificación Conventional Commits, facilitando la identificación de los cambios realizados.
+
+#### Organización y colaboración durante el Sprint 3
+
+La distribución de responsabilidades se estableció mediante la matriz Leadership-and-Collaboration (LACX), considerando las actividades de implementación, integración, pruebas, documentación y despliegue de los Web Services.
+
+Entre las principales actividades desarrolladas se encuentran:
+
+- Configuración inicial de la solución ASP.NET Core 10.
+- Implementación de los bounded contexts del backend.
+- Configuración de autenticación mediante JWT.
+- Integración de Entity Framework Core con MySQL.
+- Incorporación de documentación OpenAPI mediante Scalar.
+- Desarrollo de componentes relacionados con Claims & Indemnities.
+- Preparación de la configuración de despliegue de los Web Services.
+- Actualización de la documentación técnica correspondiente al Sprint 3.
+
+#### Evidencias de colaboración en GitHub
+
+El historial de commits permite identificar las contribuciones relacionadas con el desarrollo de los principales módulos del sistema.
+
+En las capturas del repositorio se observan integraciones de los módulos Identity & Profile Management, Insurance Offering & Applications, Policy Management, Subscription Management y Notification Management hacia la rama `develop`.
+
+#### Registro de participación del equipo
+
+| Team Member | GitHub Username | Actividades y responsabilidades |
+|---|---|---|
+| Paredes Chavez, Carlos Augusto | CarlossUPC | Responsable de la integración entre la Web Application y los Web Services, incluyendo la configuración de solicitudes HTTP mediante Axios, autenticación JWT, conexión de los módulos de seguros, vehículos y pólizas, así como mejoras de navegación y actualización del Landing Page. |
+| Torres Diaz, Rolando Andre | ROLO194 | Encargado de las pruebas unitarias y de integración del backend, verificación de endpoints RESTful, identificación de errores funcionales y preparación de escenarios para las entrevistas de validación de la plataforma. |
+| Contreras Panuera, Fernando Fabrizio | FernSkibidi69 | Documentación de la configuración de despliegue y preparación de las evidencias técnicas correspondientes al Sprint 3. |
+| Cespedes Lezcano, Carlos Gabriel | Leikop | Configuración inicial del proyecto e implementación de Identity & Profile Management, Insurance Offering & Applications, Policy Management, Subscription Management y Notification Management. |
+| Rivera Aguilar, Scarlet Josefina | scarletriveraaguilar-spec | Desarrollo de Claims & Indemnities, incluyendo agregados, comandos, consultas, auditorías e historiales de estados. |
+
+#### Project Collaboration Insights
+
+El proceso de desarrollo permitió organizar las funcionalidades del backend mediante ramas independientes, manteniendo un registro de los cambios realizados durante el Sprint 3.
+
+Las integraciones registradas en `develop` evidencian la incorporación progresiva de componentes, mientras que los commits de las ramas feature permiten identificar las actividades de implementación correspondientes a cada módulo.
+
+La utilización de GitHub contribuyó al seguimiento del proyecto, facilitando la revisión de cambios y la trazabilidad del código fuente.
+
+El desarrollo durante el Sprint 3 permitió avanzar en la construcción de los principales Web Services de Livva, estableciendo una base para la gestión de los procesos de negocio mediante una arquitectura orientada a servicios.
+
+La distribución de responsabilidades y la utilización de herramientas de control de versiones facilitaron la organización del trabajo y el seguimiento de los avances técnicos.
+
+Las evidencias de colaboración recopiladas permiten relacionar las actividades desarrolladas con los objetivos establecidos para el Sprint 3 y con el Student Outcome ABET 5, enfocado en liderazgo compartido, trabajo colaborativo, planificación y cumplimiento de objetivos.
+
+
+## 5.3. Validation Interviews
+
+### 5.3.1. Diseño de Entrevistas
+
+Durante el Sprint 3, el equipo de Livva Care plantea la realización de entrevistas de validación dirigidas a los segmentos objetivo de la plataforma, con la finalidad de evaluar la experiencia de usuario, identificar dificultades de interacción y recopilar opiniones sobre las funcionalidades implementadas.
+
+El diseño de las entrevistas se enfoca en analizar aspectos relacionados con la usabilidad, navegación, claridad de la información, accesibilidad y utilidad de las funcionalidades disponibles en la Landing Page y la Web Application.
+
+Para desarrollar este proceso, se consideran dos segmentos objetivo: propietarios de vehículos y personas interesadas en adquirir seguros de vida. Cada participante deberá interactuar previamente con las funcionalidades disponibles de Livva para posteriormente responder las preguntas correspondientes.
+
+Las entrevistas estarán organizadas en dos grupos de preguntas: generales sobre la experiencia con la plataforma y específicas relacionadas con las necesidades de cada segmento.
+
+#### Preguntas generales sobre el producto
+
+Estas preguntas están dirigidas a todos los participantes y buscan conocer su percepción general después de interactuar con Livva.
+
+1. Luego de utilizar Livva, ¿cuál fue tu primera impresión de la plataforma?
+2. ¿Te resultó fácil entender para qué sirve Livva y qué acciones puedes realizar dentro de ella?
+3. ¿La navegación entre las diferentes secciones te pareció clara y sencilla? ¿Por qué?
+4. ¿La información mostrada sobre seguros te pareció comprensible y suficientemente clara?
+5. ¿Tuviste alguna dificultad al utilizar alguna funcionalidad de la plataforma? ¿Cuál?
+6. ¿Qué funcionalidad de Livva te pareció más útil?
+7. ¿Hubo alguna función que esperabas encontrar y que actualmente no está disponible?
+8. ¿Consideras que el diseño de la plataforma permite identificar fácilmente botones, formularios y opciones de navegación?
+9. ¿Utilizarías una plataforma como Livva para realizar consultas o gestionar tus seguros? ¿Por qué?
+10. ¿Qué cambio o mejora realizarías para que la experiencia con Livva sea mejor?
+
+#### Preguntas para propietarios de vehículos
+
+Las siguientes preguntas permiten evaluar las funcionalidades relacionadas con seguros vehiculares, registro de vehículos, gestión de pólizas y seguimiento de siniestros.
+
+1. ¿Te resultó sencillo encontrar las opciones relacionadas con seguros vehiculares?
+2. ¿La información presentada te ayudaría a tomar una decisión al momento de solicitar un seguro para tu vehículo?
+3. ¿Te resultó comprensible el proceso para registrar o consultar información relacionada con tu vehículo?
+4. ¿Consideras útil poder visualizar y gestionar tus pólizas desde una misma plataforma?
+5. ¿Te resultaría útil poder registrar y consultar el estado de un siniestro vehicular desde Livva?
+
+#### Preguntas para personas interesadas en seguros de vida
+
+Estas preguntas están orientadas a evaluar la comprensión de los productos de seguros de vida, el proceso de solicitud y la administración de beneficiarios.
+
+1. ¿Te resultó sencillo encontrar las opciones relacionadas con seguros de vida?
+2. ¿La información mostrada sobre los seguros de vida te pareció suficiente para comprender las alternativas disponibles?
+3. ¿El proceso para realizar una solicitud de seguro de vida te pareció fácil de entender?
+4. ¿Consideras útil poder registrar y gestionar información de beneficiarios dentro de la plataforma?
+5. ¿Qué información adicional necesitarías antes de decidir solicitar un seguro de vida mediante Livva?
+
+#### Procedimiento de validación
+
+El proceso de validación contempla la participación de entre tres y cinco representantes de cada segmento objetivo. Durante las sesiones, los participantes interactuarán con las funcionalidades disponibles en la plataforma y posteriormente responderán las preguntas generales y específicas correspondientes a su segmento.
+
+Las entrevistas serán registradas en video, permitiendo documentar las principales opiniones, dificultades y recomendaciones identificadas durante la interacción.
+
+La información recopilada servirá como base para el análisis de resultados y la elaboración de las evaluaciones heurísticas de usabilidad, arquitectura de información y diseño inclusivo.
+
+Los registros y resultados obtenidos serán presentados en las secciones 5.3.2. Registro de Entrevistas y 5.3.3. Evaluaciones según heurísticas.
+
+
+
+### 5.3.2. Registro de Entrevistas
+
+Durante el Sprint 3, Livva Care contempla la realización de entrevistas de validación dirigidas a los segmentos objetivo de la plataforma, con el propósito de recopilar opiniones y observaciones sobre la experiencia de usuario de la Landing Page y la Web Application.
+
+Estas entrevistas permitirán evaluar aspectos relacionados con la facilidad de navegación, claridad de la información, comprensión de los formularios y utilidad de las funcionalidades disponibles. Asimismo, permitirán identificar posibles dificultades y oportunidades de mejora para las siguientes etapas de desarrollo.
+
+El proceso considera la participación de entre tres y cinco representantes de cada segmento objetivo, quienes interactuarán con Livva antes de responder las preguntas establecidas en la sección 5.3.1.
+
+Las entrevistas serán registradas en video y sus resultados se documentarán mediante fichas individuales, capturas representativas y resúmenes de las principales observaciones realizadas por los participantes.
+
+#### Segmento 1: Propietarios de vehículos
+
+Este segmento comprende personas que poseen vehículos particulares y tienen interés en consultar, contratar o administrar seguros vehiculares.
+
+Las entrevistas estarán orientadas a evaluar la experiencia de los usuarios al explorar los productos de seguros, registrar vehículos, consultar pólizas y utilizar las funcionalidades relacionadas con la gestión de seguros vehiculares.
+
+
+##### Entrevista de Validación N.º 1
+
+| Campo | Información |
+|---|---|
+| Nombre | Carlos |
+| Segmento objetivo | Propietarios de vehículos |
+| Fecha de entrevista | 10/11/2026 |
+| Inicio en el video | 00:03:55 |
+| Duración | 00:05:39 |
+| URL del video | https://www.youtube.com/watch?v=6Dhgr-UBAc0 |
+
+**Figura: Entrevista de validación N.º 1.**
+
+**Resumen de la entrevista:**
+
+Durante la entrevista, el participante destacó que Livva Care presenta una interfaz moderna, limpia e intuitiva, con información organizada y un lenguaje comprensible. Señaló que la plataforma facilita la consulta, cotización y gestión de seguros desde un mismo entorno digital, evitando depender constantemente de asesores o de documentos dispersos.
+
+En relación con los seguros vehiculares, consideró que las opciones se encuentran ubicadas de manera accesible y que la información sobre coberturas permite evaluar alternativas según las necesidades del conductor. También destacó la sencillez del registro de vehículos mediante datos como placa, marca, modelo y año. Asimismo, valoró la posibilidad de consultar pólizas desde un solo lugar, especialmente ante situaciones de emergencia.
+
+Una de las funcionalidades que consideró más relevantes fue el registro y seguimiento de siniestros vehiculares, debido a que permitiría reportar incidentes, adjuntar evidencias y consultar el estado de atención. Como oportunidades de mejora, propuso incorporar un chat de soporte o asistente virtual, una calculadora rápida de precios, recordatorios automáticos de renovaciones y pagos, y una guía interactiva para nuevos usuarios. También sugirió facilitar el retorno al panel principal y la ubicación de consultas anteriores.
+
+En general, manifestó una valoración favorable de Livva Care y expresó su disposición a utilizarla por la autonomía, rapidez y centralización de información que ofrece.
+
+
+
+##### Entrevista de Validación N.º 2
+
+| Campo | Información |
+|---|---|
+| Nombre | Gabriel |
+| Segmento objetivo | Propietarios de vehículos |
+| Fecha de entrevista | 10/11/2026 |
+| Inicio en el video | 00:09:43 |
+| Duración | 00:05:59 |
+| URL del video | https://www.youtube.com/watch?v=6Dhgr-UBAc0 |
+
+**Figura: Entrevista de validación N.º 2.**
+
+**Resumen de la entrevista:**
+
+Durante la entrevista, el participante expresó una impresión positiva de Livva Care, describiéndola como una plataforma moderna, ordenada y con opciones claramente organizadas. Destacó que la navegación resulta intuitiva y que es posible encontrar las principales funcionalidades sin mayores dificultades. Asimismo, valoró la centralización de información sobre seguros, ya que evita consultar diferentes páginas o documentos.
+
+Respecto a la experiencia de usuario, consideró que los formularios y las opciones principales son comprensibles, aunque recomendó mejorar la visibilidad de algunos botones e incorporar explicaciones adicionales en determinados campos. También señaló que sería conveniente aclarar ciertos términos relacionados con las coberturas y condiciones de los seguros.
+
+En cuanto a los seguros vehiculares, indicó que pudo localizar fácilmente las opciones disponibles y comprender el proceso de registro y consulta de vehículos. Consideró especialmente útil la posibilidad de administrar pólizas desde una misma plataforma, consultar sus condiciones y fechas de vencimiento, así como realizar el seguimiento de siniestros sin recurrir constantemente a otros canales de atención.
+
+Como principales recomendaciones, propuso incorporar notificaciones sobre vencimientos y renovaciones, además de ofrecer una comparación más detallada de coberturas y exclusiones. En general, manifestó disposición a utilizar Livva Care por la facilidad de consulta, la organización de la información y las posibilidades de seguimiento que ofrece.
+
+#### Segmento 2: Personas interesadas en seguros de vida
+
+Este segmento comprende personas interesadas en conocer, solicitar o gestionar seguros de vida, considerando aspectos relacionados con la protección financiera personal y familiar.
+
+Las entrevistas estarán enfocadas en evaluar la comprensión de los productos disponibles, la facilidad del proceso de solicitud, la gestión de beneficiarios y la claridad de la información presentada por Livva.
+
+
+##### Entrevista de Validación N.º 3
+
+| Campo | Información |
+|---|---|
+| Nombre y apellidos | Azul Delgado Sánchez |
+| Segmento objetivo | Personas interesadas en seguros de vida |
+| Fecha de entrevista | 10/11/2026 |
+| Inicio en el video | 00:00:02 |
+| Duración | 00:03:43 |
+| URL del video | https://www.youtube.com/watch?v=6Dhgr-UBAc0 |
+
+**Figura: Entrevista de validación N.º 1.**
+
+**Resumen de la entrevista:**
+
+Durante la entrevista, el participante manifestó una impresión positiva de Livva Care, destacando su diseño agradable, la organización de las secciones y la facilidad para comprender las principales funcionalidades. Consideró que la plataforma permite consultar información y realizar gestiones relacionadas con seguros de manera práctica, aunque señaló que algunas opciones podrían ser más fáciles de localizar.
+
+Respecto a los seguros de vida, indicó que pudo identificar las alternativas disponibles y comprender el proceso de solicitud sin mayores dificultades. Asimismo, valoró positivamente la posibilidad de registrar y administrar beneficiarios, ya que facilita mantener organizada y actualizada su información.
+
+Como oportunidades de mejora, recomendó incorporar una funcionalidad para comparar seguros y ampliar la información presentada sobre los beneficios de cada alternativa. También señaló la importancia de mostrar claramente los precios, las coberturas y las condiciones antes de solicitar un seguro de vida. En general, expresó disposición a utilizar Livva Care por la facilidad de acceso a la información y el ahorro de tiempo que podría ofrecer.
+
+
+### 5.3.3. Evaluaciones según heurísticas
+
+Para complementar las entrevistas de validación, se realizó una evaluación de la experiencia de usuario de Livva utilizando heurísticas de usabilidad basadas en los principios de Nielsen. Esta evaluación permite identificar posibles problemas relacionados con la interfaz, navegación, claridad de la información, prevención de errores y facilidad de interacción dentro de los principales flujos de la plataforma.
+
+Para el análisis se tomaron en consideración las observaciones obtenidas durante las entrevistas de validación realizadas a los segmentos objetivo. Los hallazgos identificados permiten determinar qué aspectos de Livva presentan una experiencia adecuada y cuáles requieren mejoras para facilitar el uso de la plataforma.
+
+La evaluación se concentra en los principales flujos relacionados con la consulta de seguros, navegación entre secciones, solicitudes de seguros, gestión de beneficiarios, pólizas y demás funcionalidades disponibles para los usuarios.
+
+##### Matriz de evaluación heurística
+
+| Heurística | Criterio de evaluación en Livva | Flujo evaluado | Severidad | Hallazgo | Recomendación |
+|---|---|---|---:|---|---|
+| Visibilidad del estado del sistema | El usuario debe saber si una acción fue completada correctamente, si una solicitud fue registrada o si una operación se encuentra en proceso. | Solicitudes de seguros, registro de información y gestión de pólizas | 2 | Durante la validación se identificó que algunas acciones podrían brindar una retroalimentación más clara luego de registrar o actualizar información. | Incorporar mensajes de confirmación, indicadores de carga y notificaciones visibles después de completar acciones importantes. |
+| Relación entre el sistema y el mundo real | La plataforma debe utilizar términos comprensibles para los usuarios al momento de consultar seguros, pólizas, beneficiarios y vehículos. | Consulta de seguros, pólizas y beneficiarios | 1 | Los términos principales utilizados en Livva fueron comprendidos por el participante, aunque algunos conceptos relacionados con seguros podrían requerir una explicación adicional. | Agregar descripciones breves o ayudas contextuales en términos específicos relacionados con seguros. |
+| Control y libertad del usuario | El usuario debe poder cancelar, retroceder o corregir información antes de completar una acción. | Formularios de solicitud y gestión de información | 2 | Algunas acciones podrían ofrecer opciones más visibles para volver, cancelar o modificar información durante el proceso. | Incorporar botones de volver, cancelar o cerrar en formularios y procesos donde sea necesario. |
+| Consistencia y estándares | Los botones, formularios, menús y elementos visuales deben mantener una apariencia y comportamiento uniforme en toda la plataforma. | Navegación general de la Web Application | 1 | El participante indicó que los botones y opciones son visibles y fáciles de reconocer, lo que demuestra una adecuada consistencia visual. | Mantener los mismos estilos, colores, tamaños y nombres de acciones en las diferentes secciones de Livva. |
+| Prevención de errores | La plataforma debe evitar que el usuario envíe información incompleta o incorrecta durante el uso de formularios. | Solicitudes de seguros, registro de beneficiarios y vehículos | 2 | No se reportaron errores graves durante la entrevista, pero los formularios podrían reforzar la prevención de datos incompletos o incorrectos. | Implementar validaciones claras en los campos obligatorios y mostrar indicaciones específicas antes de permitir el envío de información incorrecta. |
+| Reconocimiento antes que memoria | El usuario debe poder identificar fácilmente las acciones disponibles sin tener que recordar información de pantallas anteriores. | Navegación entre secciones, consulta de seguros y gestión de pólizas | 2 | Durante la entrevista se identificó que algunas opciones tomaron más tiempo en ser encontradas, aunque finalmente pudieron ser localizadas sin ayuda. | Mejorar la organización de ciertas opciones y utilizar nombres e íconos más descriptivos para facilitar su reconocimiento. |
+| Flexibilidad y eficiencia de uso | La plataforma debe permitir que el usuario complete sus tareas de manera rápida y sencilla. | Consulta de seguros, solicitudes y gestión de información | 1 | El participante consideró que Livva permite consultar información y realizar gestiones de manera práctica, lo que contribuye al ahorro de tiempo. | Incorporar accesos rápidos a las funcionalidades más utilizadas y mejorar filtros u opciones de búsqueda cuando sea necesario. |
+| Diseño estético y minimalista | La interfaz debe presentar únicamente la información necesaria, evitando sobrecargar al usuario. | Web Application general | 1 | La percepción del participante fue positiva, indicando que Livva posee un diseño agradable y fácil de entender. | Mantener una estructura visual simple y priorizar la información más relevante en cada sección. |
+| Ayuda para reconocer, diagnosticar y recuperarse de errores | La plataforma debe informar de manera clara cuando ocurre un error y orientar al usuario sobre cómo solucionarlo. | Inicio de sesión, formularios y solicitudes | 2 | Durante la entrevista no se presentaron errores graves, pero se identificó la necesidad de contar con mensajes más claros cuando una operación no pueda completarse correctamente. | Mostrar mensajes específicos que indiquen qué ocurrió y qué debe hacer el usuario para corregir el problema. |
+| Ayuda y documentación | El usuario debe contar con información suficiente para comprender las funcionalidades y tomar decisiones dentro de la plataforma. | Consulta de productos de seguros y proceso de solicitud | 2 | El participante indicó que sería útil disponer de más información sobre precios, coberturas, condiciones y beneficios de los seguros antes de tomar una decisión. | Incorporar información detallada de cada producto, ayudas contextuales, preguntas frecuentes y opciones de comparación entre seguros. |
+
+##### Resultado esperado de la evaluación
+
+La evaluación heurística permitió identificar que Livva presenta una base de usabilidad adecuada, especialmente en aspectos relacionados con la claridad general de la interfaz, la consistencia visual y la facilidad para comprender las principales funcionalidades de la plataforma.
+
+A partir de los hallazgos obtenidos, se identificaron las siguientes oportunidades de mejora:
+
+- Incorporar mensajes de confirmación y estados de carga después de realizar acciones importantes.
+- Mejorar la visibilidad de algunas opciones de navegación para que puedan ser encontradas con mayor rapidez.
+- Reforzar las validaciones en formularios para evitar el ingreso de información incompleta o incorrecta.
+- Mostrar mensajes de error más claros que indiquen cómo resolver un problema.
+- Incorporar información más detallada sobre precios, coberturas, condiciones y beneficios de los seguros.
+- Agregar opciones que permitan comparar productos de seguros de manera más sencilla.
+- Incluir ayudas contextuales en términos o procesos que puedan resultar poco familiares para los usuarios.
+
+En general, los hallazgos identificados presentan niveles de severidad bajos y medios, por lo que no se evidenciaron problemas críticos que impidan completar los principales flujos de la plataforma. Sin embargo, las mejoras propuestas permitirían optimizar la experiencia de usuario y facilitar la toma de decisiones dentro de Livva.
+
+## 5.4. Video About-the-Product
+
+[About The Product](https://www.youtube.com/watch?v=L4VcMQOwVsE)
+## Video About-the-Team
+
+[About The Team](https://youtu.be/JtCnvOS_e-k)
+
 ## Conclusiones
 
-Durante esta etapa se logró consolidar una versión funcional de Livva, integrada por la Landing Page y la Web Application. La solución permite gestionar usuarios, vehículos, solicitudes de seguros vehiculares y de vida, pólizas, renovaciones, beneficiarios, siniestros, notificaciones y suscripciones.
+Durante la AV2 se consolidó una versión más completa e integrada de Livva, incorporando la Landing Page, la Web Application, los Web Services y una base de datos persistente. La solución permite gestionar usuarios, vehículos, solicitudes de seguros vehiculares y de vida, pólizas, renovaciones, beneficiarios, siniestros, notificaciones y suscripciones dentro de una arquitectura distribuida.
 
-El desarrollo de los sprints permitió transformar los requerimientos identificados en funcionalidades verificables. Asimismo, el uso de ramas, commits convencionales, Pull Requests y revisiones en GitHub facilitó la integración ordenada de los avances y mejoró la trazabilidad del trabajo realizado por el equipo.
+El desarrollo del Sprint 3 permitió evolucionar desde una solución apoyada en servicios simulados hacia una arquitectura basada en ASP.NET Core, Entity Framework Core y MySQL, manteniendo la separación por responsabilidades y Bounded Contexts. Asimismo, la integración entre frontend y backend permitió validar los principales flujos de negocio mediante servicios REST.
 
-Las pruebas manuales permitieron comprobar el funcionamiento de los principales flujos de la aplicación, incluyendo el registro e inicio de sesión, la consulta de información, el envío de solicitudes, la gestión de beneficiarios, el seguimiento de siniestros, la visualización de notificaciones y la contratación de suscripciones.
+La documentación de los Web Services mediante OpenAPI y Scalar facilitó la verificación de los endpoints implementados y mejoró la trazabilidad entre los requisitos, las funcionalidades desarrolladas y las evidencias técnicas presentadas durante el Sprint Review.
 
-El proyecto también permitió reconocer las responsabilidades éticas y profesionales relacionadas con el manejo de información personal y procesos vinculados con seguros. Por ello, se mantuvo a Livva como una plataforma de intermediación y acompañamiento digital, sin asumir funciones propias de una compañía aseguradora.
+Las pruebas realizadas permitieron comprobar los principales escenarios funcionales, incluyendo autenticación, consulta y registro de información, gestión de pólizas y solicitudes, suscripciones, notificaciones y otros procesos asociados al dominio de Livva. También se reforzó la importancia de controlar el acceso a la información de acuerdo con el usuario autenticado.
 
-Finalmente, la versión desarrollada representa una base funcional para continuar con la evolución del proyecto. Sin embargo, algunas funcionalidades todavía utilizan datos simulados y servicios de prueba, por lo que será necesario realizar mejoras antes de considerar una implementación productiva.
+Finalmente, la AV2 permitió integrar el trabajo realizado en requisitos, arquitectura, diseño, implementación, validación y despliegue. La coordinación mediante GitFlow, ramas de trabajo, commits convencionales, Pull Requests y revisión entre integrantes contribuyó a mantener la trazabilidad del desarrollo y a cumplir los objetivos planteados para el Sprint 3.
 
 ## Recomendaciones
 
-- Reemplazar JSON Server por una API y una base de datos persistente para evitar la pérdida de información cuando el servidor se reinicie.
+- Continuar reforzando la autorización de los Web Services para garantizar que cada usuario únicamente pueda consultar o modificar los recursos que le corresponden.
 
-- Implementar autenticación y autorización del lado del backend para garantizar que cada usuario solo pueda consultar y modificar sus propios datos.
+- Ampliar la cobertura de pruebas automatizadas e incluir escenarios de integración contra MySQL real, además de las pruebas unitarias y de integración existentes.
 
-- Mejorar el flujo de estados de las solicitudes, renovaciones y siniestros mediante historiales que permitan registrar cada cambio y su correspondiente observación.
+- Mantener sincronizados los contratos del backend y el consumo realizado desde la Web Application para reducir errores durante futuras integraciones.
 
-- Incorporar opciones controladas para cancelar solicitudes pendientes y corregir información de siniestros que todavía no hayan pasado a revisión.
+- Continuar validando el comportamiento de las migraciones de Entity Framework Core y la persistencia de información en los entornos desplegados.
 
-- Completar la generación de notificaciones para eventos como cambios de estado, renovaciones, información pendiente y vencimiento de pólizas.
+- Reforzar la gestión segura de variables de entorno, credenciales, JWT y servicios externos, evitando almacenar información sensible dentro de los repositorios.
 
-- Sustituir el flujo de pagos de prueba por una integración de producción cuando el proyecto cuente con las condiciones de seguridad y configuración necesarias.
+- Realizar pruebas adicionales de experiencia de usuario, accesibilidad y responsive design sobre la solución integrada para identificar mejoras antes de la entrega final.
+
+- Continuar estabilizando los flujos relacionados con siniestros, notificaciones, renovaciones y suscripciones, considerando escenarios alternativos y manejo adecuado de errores.
+
+- Mantener actualizadas las evidencias de implementación, pruebas, documentación de servicios y despliegue para asegurar correspondencia entre el informe y el estado real de la solución.
+
+- Utilizar los resultados obtenidos durante las entrevistas de validación y la evaluación heurística como entrada para priorizar las mejoras correspondientes a la siguiente etapa del proyecto.
 
 # Bibliografía
 
