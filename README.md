@@ -4413,7 +4413,42 @@ Los hallazgos obtenidos serán documentados en la sección 5.3.3. Evaluaciones s
 
 ### 5.3.3. Evaluaciones según heurísticas
 
-<!-- [EQUIPO] Registrar los problemas de usabilidad encontrados, su severidad y la propuesta de solución. -->
+Para complementar las entrevistas de validación, se realizó una evaluación de la experiencia de usuario de Livva utilizando heurísticas de usabilidad basadas en los principios de Nielsen. Esta evaluación permite identificar posibles problemas relacionados con la interfaz, navegación, claridad de la información, prevención de errores y facilidad de interacción dentro de los principales flujos de la plataforma.
+
+Para el análisis se tomaron en consideración las observaciones obtenidas durante las entrevistas de validación realizadas a los segmentos objetivo. Los hallazgos identificados permiten determinar qué aspectos de Livva presentan una experiencia adecuada y cuáles requieren mejoras para facilitar el uso de la plataforma.
+
+La evaluación se concentra en los principales flujos relacionados con la consulta de seguros, navegación entre secciones, solicitudes de seguros, gestión de beneficiarios, pólizas y demás funcionalidades disponibles para los usuarios.
+
+##### Matriz de evaluación heurística
+
+| Heurística | Criterio de evaluación en Livva | Flujo evaluado | Severidad | Hallazgo | Recomendación |
+|---|---|---|---:|---|---|
+| Visibilidad del estado del sistema | El usuario debe saber si una acción fue completada correctamente, si una solicitud fue registrada o si una operación se encuentra en proceso. | Solicitudes de seguros, registro de información y gestión de pólizas | 2 | Durante la validación se identificó que algunas acciones podrían brindar una retroalimentación más clara luego de registrar o actualizar información. | Incorporar mensajes de confirmación, indicadores de carga y notificaciones visibles después de completar acciones importantes. |
+| Relación entre el sistema y el mundo real | La plataforma debe utilizar términos comprensibles para los usuarios al momento de consultar seguros, pólizas, beneficiarios y vehículos. | Consulta de seguros, pólizas y beneficiarios | 1 | Los términos principales utilizados en Livva fueron comprendidos por el participante, aunque algunos conceptos relacionados con seguros podrían requerir una explicación adicional. | Agregar descripciones breves o ayudas contextuales en términos específicos relacionados con seguros. |
+| Control y libertad del usuario | El usuario debe poder cancelar, retroceder o corregir información antes de completar una acción. | Formularios de solicitud y gestión de información | 2 | Algunas acciones podrían ofrecer opciones más visibles para volver, cancelar o modificar información durante el proceso. | Incorporar botones de volver, cancelar o cerrar en formularios y procesos donde sea necesario. |
+| Consistencia y estándares | Los botones, formularios, menús y elementos visuales deben mantener una apariencia y comportamiento uniforme en toda la plataforma. | Navegación general de la Web Application | 1 | El participante indicó que los botones y opciones son visibles y fáciles de reconocer, lo que demuestra una adecuada consistencia visual. | Mantener los mismos estilos, colores, tamaños y nombres de acciones en las diferentes secciones de Livva. |
+| Prevención de errores | La plataforma debe evitar que el usuario envíe información incompleta o incorrecta durante el uso de formularios. | Solicitudes de seguros, registro de beneficiarios y vehículos | 2 | No se reportaron errores graves durante la entrevista, pero los formularios podrían reforzar la prevención de datos incompletos o incorrectos. | Implementar validaciones claras en los campos obligatorios y mostrar indicaciones específicas antes de permitir el envío de información incorrecta. |
+| Reconocimiento antes que memoria | El usuario debe poder identificar fácilmente las acciones disponibles sin tener que recordar información de pantallas anteriores. | Navegación entre secciones, consulta de seguros y gestión de pólizas | 2 | Durante la entrevista se identificó que algunas opciones tomaron más tiempo en ser encontradas, aunque finalmente pudieron ser localizadas sin ayuda. | Mejorar la organización de ciertas opciones y utilizar nombres e íconos más descriptivos para facilitar su reconocimiento. |
+| Flexibilidad y eficiencia de uso | La plataforma debe permitir que el usuario complete sus tareas de manera rápida y sencilla. | Consulta de seguros, solicitudes y gestión de información | 1 | El participante consideró que Livva permite consultar información y realizar gestiones de manera práctica, lo que contribuye al ahorro de tiempo. | Incorporar accesos rápidos a las funcionalidades más utilizadas y mejorar filtros u opciones de búsqueda cuando sea necesario. |
+| Diseño estético y minimalista | La interfaz debe presentar únicamente la información necesaria, evitando sobrecargar al usuario. | Web Application general | 1 | La percepción del participante fue positiva, indicando que Livva posee un diseño agradable y fácil de entender. | Mantener una estructura visual simple y priorizar la información más relevante en cada sección. |
+| Ayuda para reconocer, diagnosticar y recuperarse de errores | La plataforma debe informar de manera clara cuando ocurre un error y orientar al usuario sobre cómo solucionarlo. | Inicio de sesión, formularios y solicitudes | 2 | Durante la entrevista no se presentaron errores graves, pero se identificó la necesidad de contar con mensajes más claros cuando una operación no pueda completarse correctamente. | Mostrar mensajes específicos que indiquen qué ocurrió y qué debe hacer el usuario para corregir el problema. |
+| Ayuda y documentación | El usuario debe contar con información suficiente para comprender las funcionalidades y tomar decisiones dentro de la plataforma. | Consulta de productos de seguros y proceso de solicitud | 2 | El participante indicó que sería útil disponer de más información sobre precios, coberturas, condiciones y beneficios de los seguros antes de tomar una decisión. | Incorporar información detallada de cada producto, ayudas contextuales, preguntas frecuentes y opciones de comparación entre seguros. |
+
+##### Resultado esperado de la evaluación
+
+La evaluación heurística permitió identificar que Livva presenta una base de usabilidad adecuada, especialmente en aspectos relacionados con la claridad general de la interfaz, la consistencia visual y la facilidad para comprender las principales funcionalidades de la plataforma.
+
+A partir de los hallazgos obtenidos, se identificaron las siguientes oportunidades de mejora:
+
+- Incorporar mensajes de confirmación y estados de carga después de realizar acciones importantes.
+- Mejorar la visibilidad de algunas opciones de navegación para que puedan ser encontradas con mayor rapidez.
+- Reforzar las validaciones en formularios para evitar el ingreso de información incompleta o incorrecta.
+- Mostrar mensajes de error más claros que indiquen cómo resolver un problema.
+- Incorporar información más detallada sobre precios, coberturas, condiciones y beneficios de los seguros.
+- Agregar opciones que permitan comparar productos de seguros de manera más sencilla.
+- Incluir ayudas contextuales en términos o procesos que puedan resultar poco familiares para los usuarios.
+
+En general, los hallazgos identificados presentan niveles de severidad bajos y medios, por lo que no se evidenciaron problemas críticos que impidan completar los principales flujos de la plataforma. Sin embargo, las mejoras propuestas permitirían optimizar la experiencia de usuario y facilitar la toma de decisiones dentro de Livva.
 
 ## 5.4. Video About-the-Product
 
@@ -4422,31 +4457,38 @@ Los hallazgos obtenidos serán documentados en la sección 5.3.3. Evaluaciones s
 ## Video About-the-Team
 
 <!-- [EQUIPO] Agregar el enlace al video About-the-Team y una breve descripción de su contenido. -->
+
 ## Conclusiones
 
-Durante esta etapa se logró consolidar una versión funcional de Livva, integrada por la Landing Page y la Web Application. La solución permite gestionar usuarios, vehículos, solicitudes de seguros vehiculares y de vida, pólizas, renovaciones, beneficiarios, siniestros, notificaciones y suscripciones.
+Durante la AV2 se consolidó una versión más completa e integrada de Livva, incorporando la Landing Page, la Web Application, los Web Services y una base de datos persistente. La solución permite gestionar usuarios, vehículos, solicitudes de seguros vehiculares y de vida, pólizas, renovaciones, beneficiarios, siniestros, notificaciones y suscripciones dentro de una arquitectura distribuida.
 
-El desarrollo de los sprints permitió transformar los requerimientos identificados en funcionalidades verificables. Asimismo, el uso de ramas, commits convencionales, Pull Requests y revisiones en GitHub facilitó la integración ordenada de los avances y mejoró la trazabilidad del trabajo realizado por el equipo.
+El desarrollo del Sprint 3 permitió evolucionar desde una solución apoyada en servicios simulados hacia una arquitectura basada en ASP.NET Core, Entity Framework Core y MySQL, manteniendo la separación por responsabilidades y Bounded Contexts. Asimismo, la integración entre frontend y backend permitió validar los principales flujos de negocio mediante servicios REST.
 
-Las pruebas manuales permitieron comprobar el funcionamiento de los principales flujos de la aplicación, incluyendo el registro e inicio de sesión, la consulta de información, el envío de solicitudes, la gestión de beneficiarios, el seguimiento de siniestros, la visualización de notificaciones y la contratación de suscripciones.
+La documentación de los Web Services mediante OpenAPI y Scalar facilitó la verificación de los endpoints implementados y mejoró la trazabilidad entre los requisitos, las funcionalidades desarrolladas y las evidencias técnicas presentadas durante el Sprint Review.
 
-El proyecto también permitió reconocer las responsabilidades éticas y profesionales relacionadas con el manejo de información personal y procesos vinculados con seguros. Por ello, se mantuvo a Livva como una plataforma de intermediación y acompañamiento digital, sin asumir funciones propias de una compañía aseguradora.
+Las pruebas realizadas permitieron comprobar los principales escenarios funcionales, incluyendo autenticación, consulta y registro de información, gestión de pólizas y solicitudes, suscripciones, notificaciones y otros procesos asociados al dominio de Livva. También se reforzó la importancia de controlar el acceso a la información de acuerdo con el usuario autenticado.
 
-Finalmente, la versión desarrollada representa una base funcional para continuar con la evolución del proyecto. Sin embargo, algunas funcionalidades todavía utilizan datos simulados y servicios de prueba, por lo que será necesario realizar mejoras antes de considerar una implementación productiva.
+Finalmente, la AV2 permitió integrar el trabajo realizado en requisitos, arquitectura, diseño, implementación, validación y despliegue. La coordinación mediante GitFlow, ramas de trabajo, commits convencionales, Pull Requests y revisión entre integrantes contribuyó a mantener la trazabilidad del desarrollo y a cumplir los objetivos planteados para el Sprint 3.
 
 ## Recomendaciones
 
-- Reemplazar JSON Server por una API y una base de datos persistente para evitar la pérdida de información cuando el servidor se reinicie.
+- Continuar reforzando la autorización de los Web Services para garantizar que cada usuario únicamente pueda consultar o modificar los recursos que le corresponden.
 
-- Implementar autenticación y autorización del lado del backend para garantizar que cada usuario solo pueda consultar y modificar sus propios datos.
+- Ampliar la cobertura de pruebas automatizadas e incluir escenarios de integración contra MySQL real, además de las pruebas unitarias y de integración existentes.
 
-- Mejorar el flujo de estados de las solicitudes, renovaciones y siniestros mediante historiales que permitan registrar cada cambio y su correspondiente observación.
+- Mantener sincronizados los contratos del backend y el consumo realizado desde la Web Application para reducir errores durante futuras integraciones.
 
-- Incorporar opciones controladas para cancelar solicitudes pendientes y corregir información de siniestros que todavía no hayan pasado a revisión.
+- Continuar validando el comportamiento de las migraciones de Entity Framework Core y la persistencia de información en los entornos desplegados.
 
-- Completar la generación de notificaciones para eventos como cambios de estado, renovaciones, información pendiente y vencimiento de pólizas.
+- Reforzar la gestión segura de variables de entorno, credenciales, JWT y servicios externos, evitando almacenar información sensible dentro de los repositorios.
 
-- Sustituir el flujo de pagos de prueba por una integración de producción cuando el proyecto cuente con las condiciones de seguridad y configuración necesarias.
+- Realizar pruebas adicionales de experiencia de usuario, accesibilidad y responsive design sobre la solución integrada para identificar mejoras antes de la entrega final.
+
+- Continuar estabilizando los flujos relacionados con siniestros, notificaciones, renovaciones y suscripciones, considerando escenarios alternativos y manejo adecuado de errores.
+
+- Mantener actualizadas las evidencias de implementación, pruebas, documentación de servicios y despliegue para asegurar correspondencia entre el informe y el estado real de la solución.
+
+- Utilizar los resultados obtenidos durante las entrevistas de validación y la evaluación heurística como entrada para priorizar las mejoras correspondientes a la siguiente etapa del proyecto.
 
 # Bibliografía
 
