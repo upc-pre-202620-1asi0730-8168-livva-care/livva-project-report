@@ -3835,6 +3835,7 @@ Este bounded context gestiona aseguradoras, productos de seguros, vehículos, so
 | POST | `/api/v1/insurance-applications` | Registra una solicitud de seguro. | 201 |
 | GET | `/api/v1/insurance-applications` | Consulta solicitudes de seguros. | 200 |
 | GET | `/api/v1/insurance-applications/{applicationId}` | Consulta una solicitud por ID. | 200 |
+| PATCH | `/api/v1/insurance-applications/{applicationId}` | Cambia el estado de una solicitud (por ejemplo, cancelarla). | 200 |
 | DELETE | `/api/v1/insurance-applications/{applicationId}` | Elimina una solicitud. | 204 |
 | POST | `/api/v1/vehicle-insurance-applications` | Registra una solicitud de seguro vehicular. | 201 |
 | GET | `/api/v1/vehicle-insurance-applications` | Consulta solicitudes vehiculares. | 200 |
