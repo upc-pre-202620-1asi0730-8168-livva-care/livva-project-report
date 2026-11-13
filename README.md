@@ -4496,31 +4496,38 @@ En general, los hallazgos identificados presentan niveles de severidad bajos y m
 ## Video About-the-Team
 
 <!-- [EQUIPO] Agregar el enlace al video About-the-Team y una breve descripción de su contenido. -->
+
 ## Conclusiones
 
-Durante esta etapa se logró consolidar una versión funcional de Livva, integrada por la Landing Page y la Web Application. La solución permite gestionar usuarios, vehículos, solicitudes de seguros vehiculares y de vida, pólizas, renovaciones, beneficiarios, siniestros, notificaciones y suscripciones.
+Durante la AV2 se consolidó una versión más completa e integrada de Livva, incorporando la Landing Page, la Web Application, los Web Services y una base de datos persistente. La solución permite gestionar usuarios, vehículos, solicitudes de seguros vehiculares y de vida, pólizas, renovaciones, beneficiarios, siniestros, notificaciones y suscripciones dentro de una arquitectura distribuida.
 
-El desarrollo de los sprints permitió transformar los requerimientos identificados en funcionalidades verificables. Asimismo, el uso de ramas, commits convencionales, Pull Requests y revisiones en GitHub facilitó la integración ordenada de los avances y mejoró la trazabilidad del trabajo realizado por el equipo.
+El desarrollo del Sprint 3 permitió evolucionar desde una solución apoyada en servicios simulados hacia una arquitectura basada en ASP.NET Core, Entity Framework Core y MySQL, manteniendo la separación por responsabilidades y Bounded Contexts. Asimismo, la integración entre frontend y backend permitió validar los principales flujos de negocio mediante servicios REST.
 
-Las pruebas manuales permitieron comprobar el funcionamiento de los principales flujos de la aplicación, incluyendo el registro e inicio de sesión, la consulta de información, el envío de solicitudes, la gestión de beneficiarios, el seguimiento de siniestros, la visualización de notificaciones y la contratación de suscripciones.
+La documentación de los Web Services mediante OpenAPI y Scalar facilitó la verificación de los endpoints implementados y mejoró la trazabilidad entre los requisitos, las funcionalidades desarrolladas y las evidencias técnicas presentadas durante el Sprint Review.
 
-El proyecto también permitió reconocer las responsabilidades éticas y profesionales relacionadas con el manejo de información personal y procesos vinculados con seguros. Por ello, se mantuvo a Livva como una plataforma de intermediación y acompañamiento digital, sin asumir funciones propias de una compañía aseguradora.
+Las pruebas realizadas permitieron comprobar los principales escenarios funcionales, incluyendo autenticación, consulta y registro de información, gestión de pólizas y solicitudes, suscripciones, notificaciones y otros procesos asociados al dominio de Livva. También se reforzó la importancia de controlar el acceso a la información de acuerdo con el usuario autenticado.
 
-Finalmente, la versión desarrollada representa una base funcional para continuar con la evolución del proyecto. Sin embargo, algunas funcionalidades todavía utilizan datos simulados y servicios de prueba, por lo que será necesario realizar mejoras antes de considerar una implementación productiva.
+Finalmente, la AV2 permitió integrar el trabajo realizado en requisitos, arquitectura, diseño, implementación, validación y despliegue. La coordinación mediante GitFlow, ramas de trabajo, commits convencionales, Pull Requests y revisión entre integrantes contribuyó a mantener la trazabilidad del desarrollo y a cumplir los objetivos planteados para el Sprint 3.
 
 ## Recomendaciones
 
-- Reemplazar JSON Server por una API y una base de datos persistente para evitar la pérdida de información cuando el servidor se reinicie.
+- Continuar reforzando la autorización de los Web Services para garantizar que cada usuario únicamente pueda consultar o modificar los recursos que le corresponden.
 
-- Implementar autenticación y autorización del lado del backend para garantizar que cada usuario solo pueda consultar y modificar sus propios datos.
+- Ampliar la cobertura de pruebas automatizadas e incluir escenarios de integración contra MySQL real, además de las pruebas unitarias y de integración existentes.
 
-- Mejorar el flujo de estados de las solicitudes, renovaciones y siniestros mediante historiales que permitan registrar cada cambio y su correspondiente observación.
+- Mantener sincronizados los contratos del backend y el consumo realizado desde la Web Application para reducir errores durante futuras integraciones.
 
-- Incorporar opciones controladas para cancelar solicitudes pendientes y corregir información de siniestros que todavía no hayan pasado a revisión.
+- Continuar validando el comportamiento de las migraciones de Entity Framework Core y la persistencia de información en los entornos desplegados.
 
-- Completar la generación de notificaciones para eventos como cambios de estado, renovaciones, información pendiente y vencimiento de pólizas.
+- Reforzar la gestión segura de variables de entorno, credenciales, JWT y servicios externos, evitando almacenar información sensible dentro de los repositorios.
 
-- Sustituir el flujo de pagos de prueba por una integración de producción cuando el proyecto cuente con las condiciones de seguridad y configuración necesarias.
+- Realizar pruebas adicionales de experiencia de usuario, accesibilidad y responsive design sobre la solución integrada para identificar mejoras antes de la entrega final.
+
+- Continuar estabilizando los flujos relacionados con siniestros, notificaciones, renovaciones y suscripciones, considerando escenarios alternativos y manejo adecuado de errores.
+
+- Mantener actualizadas las evidencias de implementación, pruebas, documentación de servicios y despliegue para asegurar correspondencia entre el informe y el estado real de la solución.
+
+- Utilizar los resultados obtenidos durante las entrevistas de validación y la evaluación heurística como entrada para priorizar las mejoras correspondientes a la siguiente etapa del proyecto.
 
 # Bibliografía
 
