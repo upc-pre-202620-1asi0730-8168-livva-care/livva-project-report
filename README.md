@@ -3745,40 +3745,28 @@ La verificación de los endpoints se realizará mediante Scalar, que permite vis
 
 #### Evidencias visuales
 
-**Figura 1. Ejecución del backend y documentación de endpoints mediante Scalar.**
 
-[Insertar captura de Scalar con los servicios disponibles]
 
-**Figura 2. Verificación del registro e inicio de sesión.**
+**Figura 1. Documentación de los servicios REST mediante Scalar.**
 
-[Insertar captura de las solicitudes HTTP y sus respuestas]
 
-**Figura 3. Consulta de productos de seguros.**
+<img src="assets/Sprint3-Execution-Evidence/Sprint3-Scalar-Endpoints.png.png" width="900px" />
 
-[Insertar captura del endpoint y los datos obtenidos]
 
-**Figura 4. Verificación de la persistencia de información en MySQL.**
+**Figura 2. Verificación del registro e inicio de sesión mediante autenticación JWT.**
 
-[Insertar captura de las tablas y registros de la base de datos]
 
-**Figura 5. Ejecución de la Web Application de Livva.**
+<img src="assets/Sprint3-Execution-Evidence/Sprint3-Authentication-Register.png" width="900px" />
 
-[Insertar captura de las principales funcionalidades disponibles]
+<img src="assets/Sprint3-Execution-Evidence/Sprint3-Authentication-Login.png" width="900px" />
 
-#### Video de ejecución
 
-Como complemento de las evidencias visuales, se incorporará un video demostrativo de las principales funcionalidades implementadas durante el Sprint 3.
 
-| Elemento | Descripción |
-|---|---|
-| Producto | Livva Web Services y Web Application |
-| Sprint | Sprint 3 |
-| Herramientas | ASP.NET Core 10, Scalar, MySQL y Vue 3 |
-| Video de ejecución | [EQUIPO: URL de Microsoft Stream] |
-| Duración | [EQUIPO: duración del video] |
 
-Los resultados de las pruebas permitirán comprobar el funcionamiento de los principales servicios, verificar la comunicación con MySQL e identificar posibles errores antes de completar la integración con la Web Application.
+**Figura 3. Verificación de la persistencia de datos en MySQL desplegado en Railway.**
 
+
+<img src="assets/Sprint3-Execution-Evidence/Sprint3-MySQL-Persistence.png" width="900px" />
 
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review
 
@@ -3978,29 +3966,27 @@ Los tokens se obtienen mediante el endpoint de inicio de sesión y permiten aute
 
 Se incorporarán capturas de Scalar que permitan demostrar la disponibilidad de la documentación y los contratos de los endpoints desarrollados.
 
+
 **Figura 1. Documentación OpenAPI de Livva mediante Scalar.**
 
-[Insertar captura de la interfaz de Scalar mostrando los controladores disponibles]
+<img src="assets/Sprint3-Services-Documentation/Sprint3-Scalar-API-Documentation.png" width="900px" />
 
 **Figura 2. Documentación del endpoint de registro de usuarios.**
 
-[Insertar captura del método POST, parámetros y esquema de respuesta]
+<img src="assets/Sprint3-Services-Documentation/Sprint3-Authentication.png" width="900px" />
 
 **Figura 3. Documentación de los endpoints de Insurance Offering & Applications.**
 
-[Insertar captura de los endpoints de productos de seguros y vehículos]
+<img src="assets/Sprint3-Services-Documentation/Sprint3-Scalar-Insurance-Offering.png" width="900px" />
 
 **Figura 4. Documentación del módulo Policy Management.**
 
-[Insertar captura de los endpoints relacionados con pólizas]
+<img src="assets/Sprint3-Services-Documentation/Sprint3-Scalar-Policy-Management.png" width="900px" />
 
 **Figura 5. Documentación del módulo Subscription Management.**
 
-[Insertar captura de la documentación de suscripciones y órdenes de pago]
+<img src="assets/Sprint3-Services-Documentation/Sprint3-Scalar-Subscription-Management.png" width="900px" />
 
-**Figura 6. Documentación del módulo Notification Management.**
-
-[Insertar captura de los endpoints de notificaciones]
 
 #### Información de referencia
 
@@ -4009,7 +3995,7 @@ Se incorporarán capturas de Scalar que permitan demostrar la disponibilidad de 
 | Repositorio | https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-web-services |
 | Documento OpenAPI local | http://localhost:5033/openapi/v1.json |
 | Documentación Scalar local | http://localhost:5033/scalar |
-| Documentación pública | [EQUIPO: URL pública de Scalar] |
+| Documentación pública | https://livva-web-services-production.up.railway.app/scalar/#description/introduction |
 | Commits relacionados | `46d37fe` (configuración de OpenAPI, Scalar), `b389cfe` (esquema de seguridad JWT en OpenAPI) |
 
 La documentación de los Web Services facilita la comprensión de los contratos de comunicación y constituye una referencia técnica para el desarrollo, mantenimiento e integración de la API con la Web Application de Livva.
@@ -4081,9 +4067,14 @@ El procedimiento previsto para la publicación del backend comprende las siguien
 10. Comprobar la disponibilidad de los endpoints mediante Scalar.
 
 #### Evidencias del despliegue
-<!-- Imágenes de los endpoints-->
 
-[Insertar captura de Scalar utilizando la URL pública del backend]
+
+
+
+<img src="assets/Sprint3-Services-Documentation/Sprint3-Scalar-API-Documentation.png" width="900px" />
+
+
+
 
 #### URLs de los productos desplegados
 
@@ -4091,7 +4082,7 @@ El procedimiento previsto para la publicación del backend comprende las siguien
 |---|---|
 | Landing Page | [Landing Page](https://upc-pre-202620-1asi0730-8168-livva-care.github.io/livva-landing-page/) |
 | Web Application | [Web App](https://livva-web-application.web.app/) |
-| Documentación Scalar | [EQUIPO: URL pública de Scalar](https://livva-web-services-production.up.railway.app/scalar/#description/introduction) |
+| Documentación Scalar |[Scalar](https://livva-web-services-production.up.railway.app/scalar/#description/introduction) |
 
 #### Verificación del despliegue
 
@@ -4141,20 +4132,6 @@ Entre las principales actividades desarrolladas se encuentran:
 El historial de commits permite identificar las contribuciones relacionadas con el desarrollo de los principales módulos del sistema.
 
 En las capturas del repositorio se observan integraciones de los módulos Identity & Profile Management, Insurance Offering & Applications, Policy Management, Subscription Management y Notification Management hacia la rama `develop`.
-
-Asimismo, se evidencia el desarrollo incremental del módulo Claims & Indemnities mediante commits relacionados con agregados de dominio, comandos, consultas, auditorías e historiales de estados.
-
-**Figura 1. Historial de commits del repositorio livva-web-services.**
-
-[Insertar captura del historial de commits de GitHub]
-
-**Figura 2. Ramas feature utilizadas durante el Sprint 3.**
-
-[Insertar captura de las ramas del repositorio]
-
-**Figura 3. Integración de funcionalidades hacia la rama develop.**
-
-[Insertar captura de los merges realizados]
 
 #### Registro de participación del equipo
 
