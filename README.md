@@ -58,7 +58,7 @@
   </table>
   <br>
 
-  <p><b>Septiembre, 2026</b></p>
+  <p><b>Noviembre, 2026</b></p>
 
 </div>
 
@@ -4955,6 +4955,265 @@ A continuación, se presentan los commits relacionados con la implementación, c
 
 La documentación de los Web Services proporciona una referencia para la consulta, ejecución e integración de las operaciones REST de Livva Care, facilitando la comprensión de sus contratos y el mantenimiento de las funcionalidades asociadas a los productos digitales.
 
+
+
+
+#### 5.2.4.7. Software Deployment Evidence for Sprint Review
+
+Durante el Sprint 4, las actividades de despliegue se enfocaron en consolidar los entornos de producción de Livva Care, incorporando las nuevas funcionalidades, correcciones y mejoras realizadas sobre la Landing Page, la Web Application y los Web Services.
+
+El proceso de publicación contempla la integración de los cambios mediante el flujo de trabajo establecido en GitHub, la configuración de los servicios de alojamiento y la verificación del funcionamiento de los productos digitales en sus respectivos entornos de producción.
+
+##### Landing Page Deployment
+
+La Landing Page constituye el principal punto de acceso a la propuesta de valor de Livva Care, proporcionando información sobre los servicios ofrecidos y facilitando el acceso a la Web Application.
+
+Las actividades correspondientes al Sprint 4 comprenden la actualización de los contenidos informativos, la incorporación de las versiones finales de los recursos audiovisuales y la revisión de los enlaces hacia las funcionalidades de la plataforma.
+
+| Field | Information |
+|---|---|
+| Repository | [livva-landing-page](https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-landing-page) |
+| Hosting Platform | GitHub Pages |
+| Deployment URL | [Landing Page](URL) |
+| Release Version | [Versión final] |
+| Deployment Date | YYYY-MM-DD |
+
+**Deployment Configuration**
+
+La publicación de la Landing Page se realiza mediante GitHub Pages, utilizando los archivos HTML, CSS y JavaScript almacenados en el repositorio correspondiente. Esta configuración permite mantener una relación directa entre el código fuente y la versión publicada del sitio web.
+
+<!-- Insertar captura de la configuración de GitHub Pages -->
+
+<!-- Insertar captura del proceso de despliegue -->
+
+**Deployment Verification**
+
+La verificación de la Landing Page contempla la disponibilidad del contenido actualizado, la reproducción de los recursos audiovisuales y el funcionamiento de los enlaces de navegación hacia la Web Application.
+
+<!-- Insertar captura de la Landing Page publicada -->
+
+<!-- Insertar captura de los recursos audiovisuales actualizados -->
+
+<!-- Insertar captura de los Call-to-Action funcionando -->
+
+##### Web Application Deployment
+
+La Web Application de Livva Care se encuentra alojada mediante Firebase Hosting. Su configuración permite distribuir los archivos estáticos generados durante el proceso de compilación de Vue y proporcionar acceso a las funcionalidades implementadas dentro de la plataforma.
+
+Durante el Sprint 4, las actividades de publicación contemplan la incorporación del catálogo y comparador de seguros, el módulo de indemnizaciones y las mejoras relacionadas con la gestión de sesiones, internacionalización, accesibilidad y manejo de errores.
+
+| Field | Information |
+|---|---|
+| Repository | [livva-web-application](https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-web-application) |
+| Hosting Platform | Firebase Hosting |
+| Deployment URL | https://livva-web-application.web.app |
+| Release Version | [Versión final] |
+| Deployment Date | YYYY-MM-DD |
+| Build Directory | dist |
+
+**Production Environment Configuration**
+
+La configuración del entorno de producción establece la comunicación entre la Web Application y los Web Services desplegados en Railway mediante variables de entorno utilizadas durante el proceso de compilación.
+
+Asimismo, Firebase Hosting utiliza una configuración de redireccionamiento que permite gestionar las rutas internas de la aplicación bajo el enfoque Single Page Application (SPA).
+
+<!-- Insertar captura de la configuración de .env.production sin exponer credenciales -->
+
+<!-- Insertar captura de firebase.json -->
+
+<!-- Insertar captura de la configuración del proyecto Firebase -->
+
+**Application Build**
+
+El proceso de compilación genera los archivos estáticos necesarios para la publicación de la Web Application. Para ello, se realiza la instalación de las dependencias del proyecto y se ejecuta el comando de compilación correspondiente.
+
+```bash
+npm ci
+npm run build
+```
+
+Los archivos generados se almacenan en el directorio dist, el cual se encuentra configurado como directorio público dentro de Firebase Hosting.
+
+<!-- Insertar captura de la instalación de dependencias -->
+
+<!-- Insertar captura del proceso de compilación satisfactorio -->
+
+<!-- Insertar captura del directorio dist generado -->
+
+**Firebase Hosting Deployment**
+
+La publicación de la Web Application se realiza mediante Firebase CLI, utilizando la configuración establecida para el proyecto de alojamiento.
+
+```bash
+firebase deploy --only hosting --project livva-web-application
+```
+
+Este procedimiento permite actualizar la versión publicada de la aplicación con los cambios incorporados en el código fuente.
+
+<!-- Insertar captura del comando de despliegue -->
+
+<!-- Insertar captura del resultado satisfactorio del despliegue -->
+
+<!-- Insertar captura del historial de versiones en Firebase Hosting -->
+
+**Deployment Verification**
+
+La verificación del entorno de producción comprende el acceso a la aplicación publicada, la navegación entre sus módulos y la comunicación con los Web Services.
+
+<!-- Insertar captura de la Web Application publicada -->
+
+<!-- Insertar captura del catálogo y comparador de seguros en producción -->
+
+<!-- Insertar captura del módulo de indemnizaciones en producción -->
+
+<!-- Insertar captura de una operación realizada mediante la API desplegada -->
+
+##### Web Services Deployment
+
+Los Web Services de Livva Care se encuentran alojados en Railway, proporcionando acceso a las operaciones REST utilizadas por la Web Application y permitiendo la comunicación con la base de datos MySQL.
+
+Durante el Sprint 4, se publicó la versión v1.0.4, correspondiente a una corrección en el procesamiento de valores decimales durante el registro de vehículos bajo configuraciones regionales en español.
+
+Esta actualización contribuye a mantener la consistencia de las operaciones independientemente del idioma seleccionado por el usuario.
+
+| Field | Information |
+|---|---|
+| Repository | [livva-web-services](https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-web-services) |
+| Hosting Platform | Railway |
+| API Base URL | https://livva-web-services-production.up.railway.app/api/v1 |
+| API Documentation | [Scalar](URL) |
+| Release Version | [Versión final] |
+| Deployment Date | YYYY-MM-DD |
+| Framework | ASP.NET Core |
+| Database Management System | MySQL |
+
+**Railway Environment Configuration**
+
+La configuración del entorno de Railway contempla los parámetros necesarios para la ejecución de los Web Services, incluyendo la conexión con la base de datos y las variables correspondientes a los servicios utilizados por la plataforma.
+
+Las credenciales y configuraciones sensibles se gestionan mediante variables de entorno, evitando su exposición dentro del código fuente y la documentación pública.
+
+<!-- Insertar captura de la configuración del servicio en Railway -->
+
+<!-- Insertar captura de las variables de entorno con valores sensibles ocultos -->
+
+<!-- Insertar captura de la configuración de conexión con MySQL -->
+
+**Web Services Deployment Process**
+
+El proceso de publicación se encuentra asociado al repositorio de Web Services, permitiendo generar nuevas versiones del servicio a partir de los cambios incorporados en el código fuente.
+
+La revisión de los registros de compilación y ejecución permite identificar posibles errores durante la publicación y verificar la disponibilidad del servicio.
+
+<!-- Insertar captura del repositorio conectado a Railway -->
+
+<!-- Insertar captura del historial de despliegues -->
+
+<!-- Insertar captura de los registros de compilación -->
+
+<!-- Insertar captura del despliegue activo -->
+
+**Deployment Verification**
+
+La disponibilidad de los Web Services se verifica mediante el acceso a la documentación interactiva de Scalar y la ejecución de operaciones REST desde el entorno de producción.
+
+<!-- Insertar captura de Scalar desplegado -->
+
+<!-- Insertar captura de una petición HTTP satisfactoria -->
+
+<!-- Insertar captura del registro de vehículos con configuración regional en español -->
+
+##### Database Deployment
+
+La persistencia de información de Livva Care se realiza mediante MySQL, utilizando Entity Framework Core para gestionar el acceso a los datos desde los Web Services.
+
+La configuración de la base de datos permite almacenar la información relacionada con los usuarios, vehículos, solicitudes de seguros, pólizas, beneficiarios, indemnizaciones y demás recursos gestionados por la plataforma.
+
+| Field | Information |
+|---|---|
+| Database Management System | MySQL |
+| Hosting Platform | [Plataforma de alojamiento] |
+| Object-Relational Mapping | Entity Framework Core |
+| Database Environment | Production |
+| Deployment Status | [Estado verificado] |
+
+**Database Configuration and Persistence**
+
+La configuración de persistencia contempla la conexión entre los Web Services y la base de datos, así como la revisión de la estructura y consistencia de los registros generados mediante las operaciones realizadas desde la Web Application.
+
+<!-- Insertar captura del servicio MySQL -->
+
+<!-- Insertar captura de la estructura de la base de datos -->
+
+<!-- Insertar evidencia de registros almacenados durante una prueba funcional -->
+
+<!-- Insertar evidencia de migraciones, si corresponde -->
+
+##### External Service Configuration
+
+Livva Care contempla la integración con Mercado Pago para proporcionar soporte a las operaciones relacionadas con los pagos y las suscripciones.
+
+La configuración del servicio externo comprende la gestión de los parámetros de integración y las credenciales necesarias, manteniendo los valores sensibles fuera de los repositorios públicos.
+
+<!-- Insertar captura de la configuración de integración con Mercado Pago, sin exponer credenciales -->
+
+<!-- Insertar evidencia de una operación realizada en el entorno de pruebas -->
+
+<!-- Completar según la configuración final verificada -->
+
+##### Production Integration Verification
+
+La integración de los productos digitales considera la navegación desde la Landing Page hacia la Web Application, la comunicación con los Web Services mediante solicitudes HTTP y la persistencia de información en MySQL.
+
+Para verificar el funcionamiento conjunto de los componentes, se consideran los principales flujos funcionales asociados a la gestión de seguros vehiculares y de vida.
+
+| Verification | Expected Result | Status |
+|---|---|---|
+| Landing Page availability | Acceso satisfactorio al sitio web publicado. | |
+| Web Application availability | Acceso satisfactorio a la aplicación publicada. | |
+| Web Services availability | Disponibilidad de los servicios REST. | |
+| Landing Page and Web Application integration | Navegación correcta mediante los Call-to-Action. | |
+| Frontend and Backend integration | Comunicación satisfactoria mediante solicitudes HTTP. | |
+| Database persistence | Almacenamiento y recuperación de información. | |
+| External service integration | Comunicación con el servicio externo según el flujo implementado. | |
+
+<!-- Insertar evidencia de navegación desde la Landing Page hacia la Web Application -->
+
+<!-- Insertar captura de una solicitud HTTP realizada desde el frontend -->
+
+<!-- Insertar captura de la respuesta proporcionada por los Web Services -->
+
+<!-- Insertar evidencia de persistencia de la operación en MySQL -->
+
+##### Release Management
+
+La gestión de versiones de los productos digitales se realiza mediante GitHub, siguiendo las convenciones de GitFlow, Conventional Commits y Semantic Versioning establecidas para el proyecto.
+
+Las versiones publicadas permiten identificar los cambios incorporados en cada producto digital y mantener la trazabilidad entre el código fuente y los componentes desplegados.
+
+| Repository | Release Version | Release Date | Release URL |
+|---|---|---|---|
+| livva-landing-page | | | |
+| livva-web-application | | | |
+| livva-web-services | | | |
+
+<!-- Insertar captura del release de la Landing Page -->
+
+<!-- Insertar captura del release de la Web Application -->
+
+<!-- Insertar captura del release de los Web Services -->
+
+##### Deployment Summary
+
+La siguiente tabla resume los entornos de alojamiento, las direcciones de acceso y las versiones correspondientes a los productos digitales de Livva Care.
+
+| Digital Product | Hosting Platform | Deployment URL | Release Version | Status |
+|---|---|---|---|---|
+| Landing Page | GitHub Pages | | | |
+| Web Application | Firebase Hosting | https://livva-web-application.web.app | | |
+| Web Services | Railway | https://livva-web-services-production.up.railway.app | | |
+
+La configuración de los entornos de producción permite establecer una infraestructura distribuida para los componentes de Livva Care, manteniendo la separación de responsabilidades entre la presentación de la propuesta de valor, la interacción con los usuarios, el procesamiento de la lógica de negocio y la persistencia de información.
 
 
 
