@@ -4181,6 +4181,17 @@ El Sprint 4 corresponde a la etapa final del desarrollo de Livva Care, enfocada 
 | Sprint 4 Velocity | [Pendiente] Story Points.|
 | Sum of Story Points | [Pendiente] Story Points.|
 
+#### 5.2.4.2. Aspect Leaders and Collaborators
+
+Durante el Sprint 4, el equipo distribuyó sus responsabilidades considerando los principales aspectos funcionales y técnicos relacionados con la ampliación y consolidación de Livva Care. Esta organización permitió establecer responsables para cada área de trabajo y facilitar la colaboración entre los integrantes.
+
+| Team Member (Last Name, First Name) | GitHub Username | Insurance Catalog and Comparison | Life Insurance and Compensation Management | Insurance Application and Policy Lifecycle | Security and Session Management | Internationalization and Inclusive Design | RESTful API Reliability and Integration | Landing Page Content and Product Communication | Software Testing and Quality Assurance | Release and Deployment Management |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Paredes Chavez, Carlos Augusto | CarlossUPC | L | C | C | C | C | L | C | L | L |
+| Torres Diaz, Rolando Andre | ROLO194 | C | C | C | L | C | C | C | L | C |
+| Cespedes Lezcano, Carlos Gabriel | Leikop | C | L | L | C | C | C | L | C | C |
+| Rivera Aguilar, Scarlet Josefina | scarletriveraaguilar-spec | C | C | C | C | L | C | L | C | C |
+
 
 ## 5.3. Validation Interviews
 
