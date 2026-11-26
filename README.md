@@ -4236,6 +4236,318 @@ Asimismo, se consideraron actividades de pruebas, actualización de la Landing P
 
 
 
+
+
+#### 5.2.4.4. Development Evidence for Sprint Review
+
+Durante el Sprint 4, el equipo enfocó sus actividades de desarrollo en la ampliación de las funcionalidades de Livva Care y la consolidación de los componentes que conforman la solución.
+
+Los principales avances estuvieron relacionados con la incorporación del catálogo y comparador de seguros, la gestión de indemnizaciones, la integración del ciclo de vida de las solicitudes y pólizas, y las mejoras de seguridad, accesibilidad e internacionalización.
+
+Asimismo, se abordaron actividades de mantenimiento, corrección de errores, integración de servicios y preparación de los productos digitales para su publicación.
+
+##### Landing Page Development
+
+Las actividades correspondientes a la Landing Page se enfocaron en la actualización de la información presentada a los visitantes y la consolidación de los recursos utilizados para comunicar la propuesta de valor de Livva Care.
+
+Los aspectos considerados durante esta iteración comprenden:
+
+- Actualización de los contenidos informativos de Livva Care.
+- Incorporación de la versión final del video About-the-Product.
+- Incorporación de la versión final del video About-the-Team.
+- Revisión de los enlaces de navegación hacia la Web Application.
+- Revisión de los enlaces correspondientes a los términos del servicio y las políticas de privacidad.
+- Mantenimiento de la consistencia visual entre los productos digitales.
+
+**Repository:** [livva-landing-page](https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-landing-page)
+
+**Development Commits**
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|---|---|---|---|---|---|
+| livva-landing-page | | | | | |
+
+<!-- Agregar los commits correspondientes al Sprint 4 -->
+
+**Development Evidence**
+
+<!-- Insertar captura de las modificaciones realizadas en el código fuente -->
+
+<!-- Insertar captura de los commits relacionados con la actualización de contenidos -->
+
+<!-- Insertar captura de los cambios correspondientes a los recursos audiovisuales -->
+
+##### Web Application Development
+
+Durante el Sprint 4, el desarrollo de la Web Application se enfocó en ampliar las funcionalidades disponibles para los segmentos de seguros vehiculares y de vida, así como en mejorar la interacción de los usuarios con la plataforma.
+
+**Repository:** [livva-web-application](https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-web-application)
+
+###### Insurance Product Catalog and Comparison
+
+Se incorporó un catálogo de productos de seguros que permite consultar las alternativas disponibles para los segmentos objetivo de Livva Care.
+
+Asimismo, se implementó un mecanismo de comparación simultánea de hasta tres productos, facilitando la revisión de sus características y permitiendo iniciar solicitudes directamente desde el catálogo.
+
+Las actividades de implementación comprenden:
+
+- Desarrollo de los componentes de visualización de productos.
+- Implementación de la selección de productos para su comparación.
+- Desarrollo de la interfaz de comparación.
+- Integración del catálogo con los servicios de consulta de productos.
+- Integración de los productos seleccionados con los formularios de solicitud.
+
+<!-- Insertar captura del código correspondiente al catálogo de seguros -->
+
+<!-- Insertar captura del código correspondiente al comparador -->
+
+<!-- Insertar captura de la integración con las solicitudes de seguros -->
+
+###### Life Insurance Compensation Management
+
+Se incorporó el módulo de indemnizaciones dentro de la sección de seguros de vida, permitiendo gestionar el registro y seguimiento de solicitudes de indemnización.
+
+El desarrollo comprende la implementación de las vistas, formularios y componentes necesarios para representar la información de las solicitudes y su historial de estados.
+
+- Implementación de la vista de indemnizaciones.
+- Desarrollo del formulario de registro de solicitudes.
+- Implementación de la consulta del historial de estados.
+- Integración de los componentes con los servicios correspondientes.
+- Incorporación de las opciones de navegación hacia el nuevo módulo.
+
+<!-- Insertar captura del código correspondiente al módulo de indemnizaciones -->
+
+<!-- Insertar captura de los formularios y componentes implementados -->
+
+<!-- Insertar captura de la integración con los servicios REST -->
+
+###### Insurance Application and Policy Lifecycle
+
+Se incorporó un mecanismo de demostración del procesamiento de solicitudes de seguros vehiculares y de vida.
+
+Este mecanismo permite representar el flujo comprendido entre el registro de una solicitud, su aprobación simulada, la generación de una póliza y la emisión de una notificación.
+
+La aprobación automática corresponde únicamente a un escenario de demostración y no representa la aprobación efectiva de una solicitud por parte de una compañía aseguradora.
+
+- Integración del procesamiento de solicitudes vehiculares.
+- Integración del procesamiento de solicitudes de vida.
+- Implementación del flujo de aprobación en modo de demostración.
+- Integración con la generación de pólizas.
+- Integración con los mecanismos de notificación.
+
+<!-- Insertar captura del código correspondiente al procesamiento de solicitudes -->
+
+<!-- Insertar captura de la implementación del mecanismo de demostración -->
+
+<!-- Insertar captura de la integración con pólizas y notificaciones -->
+
+###### Beneficiary Management Improvements
+
+Se corrigió un problema identificado durante la navegación por el módulo de beneficiarios, relacionado con el procesamiento de campos de fecha vacíos.
+
+La modificación permite gestionar adecuadamente estos valores y evitar interrupciones durante el acceso a las vistas correspondientes.
+
+<!-- Insertar captura del código corregido -->
+
+<!-- Insertar captura del commit correspondiente a la corrección -->
+
+###### Security and Session Management
+
+Se incorporaron mejoras relacionadas con la gestión de sesiones, considerando la expiración de los mecanismos de autenticación y el comportamiento de la aplicación frente a respuestas no autorizadas.
+
+La implementación permite finalizar la sesión expirada, redirigir al usuario hacia la vista de inicio de sesión y presentar un mensaje informativo.
+
+- Gestión de sesiones expiradas.
+- Tratamiento de respuestas de autenticación inválida.
+- Redirección hacia la vista de inicio de sesión.
+- Presentación de mensajes relacionados con el estado de autenticación.
+
+<!-- Insertar captura del código de gestión de sesiones -->
+
+<!-- Insertar captura del tratamiento de respuestas HTTP 401 -->
+
+<!-- Insertar captura del mecanismo de redirección -->
+
+###### RESTful API Error Handling
+
+Se mejoró el procesamiento de errores producidos durante la comunicación entre la Web Application y los Web Services.
+
+La implementación incorpora mecanismos para presentar mensajes informativos mediante notificaciones visuales, facilitando la identificación de problemas durante la ejecución de las operaciones.
+
+<!-- Insertar captura del código de manejo de errores HTTP -->
+
+<!-- Insertar captura de los componentes de notificaciones visuales -->
+
+###### Internationalization
+
+Se actualizaron los recursos de internacionalización de la Web Application, considerando las nuevas funcionalidades y los mensajes relacionados con la interacción de los usuarios.
+
+Asimismo, se incorporó el envío de la configuración regional seleccionada hacia los Web Services, favoreciendo la consistencia entre el idioma de las interfaces y las respuestas proporcionadas por la API.
+
+- Actualización de los recursos de traducción en inglés.
+- Actualización de los recursos de traducción en español.
+- Normalización de los archivos de internacionalización.
+- Integración de la configuración regional con las solicitudes HTTP.
+
+<!-- Insertar captura de los archivos de traducción actualizados -->
+
+<!-- Insertar captura del código correspondiente al envío de la configuración regional -->
+
+###### Inclusive Design and Accessibility
+
+Se incorporaron mejoras orientadas a facilitar la interacción con la Web Application mediante mecanismos de navegación accesibles.
+
+Las modificaciones comprenden la incorporación de enlaces de acceso directo al contenido principal, indicadores de foco visible y etiquetas ARIA internacionalizadas.
+
+- Implementación del enlace Skip to Content.
+- Incorporación de indicadores de foco visible.
+- Mejora de la navegación mediante teclado.
+- Internacionalización de las etiquetas ARIA.
+
+<!-- Insertar captura del código correspondiente al Skip to Content -->
+
+<!-- Insertar captura de los estilos de foco visible -->
+
+<!-- Insertar captura de los atributos ARIA implementados -->
+
+###### Legal Information Integration
+
+Se incorporaron enlaces a los términos del servicio y las políticas de privacidad dentro del footer de la Web Application.
+
+Esta modificación facilita el acceso a la información legal disponible desde la Landing Page y mantiene la integración entre ambos productos digitales.
+
+<!-- Insertar captura del código correspondiente al footer -->
+
+<!-- Insertar captura de la incorporación de los enlaces legales -->
+
+###### Web Application Development Commits
+
+La siguiente tabla presenta los commits relacionados con las funcionalidades, correcciones y mejoras desarrolladas en la Web Application durante el Sprint 4.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|---|---|---|---|---|---|
+| livva-web-application | | | | | |
+| livva-web-application | | | | | |
+| livva-web-application | | | | | |
+| livva-web-application | | | | | |
+
+<!-- Agregar los commits reales correspondientes al Sprint 4 -->
+
+<!-- Insertar captura del historial de commits -->
+
+<!-- Insertar captura de los Pull Requests correspondientes -->
+
+##### Web Services Development
+
+Las actividades relacionadas con los Web Services se orientaron a consolidar la integración con la Web Application, mejorar la estabilidad de las operaciones REST y corregir problemas identificados durante la ejecución de los procesos de negocio.
+
+**Repository:** [livva-web-services](https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-web-services)
+
+###### Vehicle Registration Hotfix
+
+Se identificó un problema relacionado con el procesamiento de valores decimales durante el registro de vehículos bajo configuraciones regionales en español.
+
+La corrección fue incorporada mediante la versión v1.0.4 de los Web Services, acompañada de una prueba de regresión y la actualización del historial de cambios.
+
+Las actividades realizadas comprenden:
+
+- Identificación del problema de procesamiento de valores decimales.
+- Corrección del comportamiento asociado a la configuración regional.
+- Incorporación de una prueba de regresión.
+- Actualización del CHANGELOG.
+- Integración de la corrección mediante el flujo de trabajo hotfix.
+
+<!-- Insertar captura del código correspondiente a la corrección -->
+
+<!-- Insertar captura del código de la prueba de regresión -->
+
+<!-- Insertar captura del CHANGELOG actualizado -->
+
+<!-- Insertar captura del Pull Request correspondiente al hotfix -->
+
+###### RESTful API Integration
+
+La ampliación de las funcionalidades de la Web Application requiere la coordinación de los contratos utilizados para la comunicación con los Web Services.
+
+Las actividades de integración consideran los servicios relacionados con productos de seguros, solicitudes, pólizas, beneficiarios, indemnizaciones y notificaciones.
+
+La revisión de estos servicios permite identificar oportunidades de mejora en la consistencia de los datos, las estructuras de respuesta y el procesamiento de las operaciones.
+
+<!-- Insertar captura de los servicios utilizados por las nuevas funcionalidades -->
+
+<!-- Insertar captura de los contratos de comunicación entre frontend y backend -->
+
+<!-- Incorporar las modificaciones efectivamente realizadas en los Web Services -->
+
+###### User Resource Authorization
+
+La protección de los recursos asociados a los usuarios constituye un aspecto relevante para mantener la seguridad de las operaciones realizadas dentro de Livva Care.
+
+Las actividades consideradas comprenden la revisión de los mecanismos de autorización y las restricciones de acceso a los recursos pertenecientes a otros usuarios.
+
+<!-- Completar con la descripción de los controles efectivamente implementados -->
+
+<!-- Insertar captura del código correspondiente a la autorización de recursos -->
+
+<!-- Insertar captura de las validaciones de propiedad de recursos -->
+
+###### External Services and Anti-Corruption Layer
+
+La integración con servicios externos requiere mantener una separación entre los contratos propios del dominio de Livva Care y los modelos utilizados por los proveedores externos.
+
+En este aspecto, se considera la revisión de la integración con Mercado Pago y de los mecanismos de adaptación utilizados para las operaciones relacionadas con pagos y suscripciones.
+
+<!-- Completar con los resultados de la revisión arquitectónica -->
+
+<!-- Insertar captura de los contratos y adaptadores implementados -->
+
+<!-- Insertar captura de los componentes correspondientes al Anti-Corruption Layer, si corresponde -->
+
+###### Software Testing and Quality Assurance
+
+Las actividades de aseguramiento de la calidad contemplan la revisión de las funcionalidades incorporadas, la validación de las correcciones realizadas y la comprobación de la integración entre los diferentes componentes de Livva Care.
+
+Entre los aspectos considerados se encuentran:
+
+- Pruebas de registro de vehículos.
+- Pruebas de procesamiento de solicitudes de seguros.
+- Pruebas de persistencia de información.
+- Validación de los mecanismos de autenticación y autorización.
+- Verificación de la integración con servicios externos.
+- Pruebas de regresión sobre las funcionalidades existentes.
+
+<!-- Insertar captura del código de las pruebas automatizadas implementadas -->
+
+<!-- Insertar captura de las pruebas funcionales realizadas -->
+
+<!-- Completar con los resultados reales de las pruebas del Sprint 4 -->
+
+###### Web Services Development Commits
+
+La siguiente tabla presenta los commits relacionados con las actividades de implementación, mantenimiento y corrección de los Web Services durante el Sprint 4.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|---|---|---|---|---|---|
+| livva-web-services | | | | | |
+| livva-web-services | | | | | |
+| livva-web-services | | | | | |
+
+<!-- Agregar los commits reales correspondientes al Sprint 4 -->
+
+<!-- Insertar captura del historial de commits -->
+
+<!-- Insertar captura de los Pull Requests correspondientes -->
+
+##### Development Summary
+
+Las actividades de desarrollo del Sprint 4 permitieron ampliar el alcance funcional de Livva Care mediante la incorporación del catálogo y comparador de seguros, la gestión de indemnizaciones y las mejoras relacionadas con el procesamiento de solicitudes.
+
+Asimismo, se abordaron aspectos técnicos correspondientes a la internacionalización, accesibilidad, gestión de sesiones, manejo de errores e integración de los productos digitales.
+
+La gestión del código fuente mediante GitHub permite mantener la trazabilidad de las modificaciones realizadas y establecer una base para el mantenimiento y la evolución de la plataforma.
+
+
+
 #### 5.2.4.5. Execution Evidence for Sprint Review
 
 Durante el Sprint 4, el equipo se enfocó en ampliar las funcionalidades de Livva Care y consolidar la integración de sus productos digitales. Las principales mejoras estuvieron relacionadas con la comparación de seguros, la gestión de indemnizaciones, el procesamiento de solicitudes, la seguridad, la internacionalización y la accesibilidad.
