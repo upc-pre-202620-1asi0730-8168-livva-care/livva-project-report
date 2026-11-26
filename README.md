@@ -4236,6 +4236,233 @@ Asimismo, se consideraron actividades de pruebas, actualización de la Landing P
 
 
 
+#### 5.2.4.5. Execution Evidence for Sprint Review
+
+Durante el Sprint 4, el equipo se enfocó en ampliar las funcionalidades de Livva Care y consolidar la integración de sus productos digitales. Las principales mejoras estuvieron relacionadas con la comparación de seguros, la gestión de indemnizaciones, el procesamiento de solicitudes, la seguridad, la internacionalización y la accesibilidad.
+
+A continuación, se presentan las evidencias de ejecución correspondientes a las funcionalidades y mejoras desarrolladas durante esta iteración.
+
+##### Landing Page
+
+La Landing Page de Livva Care presenta la propuesta de valor de la plataforma y proporciona información sobre sus principales funcionalidades para los segmentos de seguros vehiculares y de vida.
+
+Durante el Sprint 4, se consideró la actualización de los recursos audiovisuales y contenidos informativos, manteniendo la consistencia visual con la Web Application y facilitando el acceso a sus funcionalidades.
+
+**Actualización de los recursos audiovisuales**
+
+La sección de recursos audiovisuales presenta los videos About-the-Product y About-the-Team, permitiendo que los visitantes conozcan las funcionalidades de Livva Care y el proceso de desarrollo realizado por el equipo.
+
+<!-- Insertar captura de la sección About-the-Product -->
+
+<!-- Insertar captura de la sección About-the-Team -->
+
+**Términos y políticas de privacidad**
+
+La Landing Page proporciona acceso a los términos del servicio y las políticas de privacidad, facilitando la consulta de información relacionada con el uso de la plataforma y el tratamiento de los datos personales.
+
+<!-- Insertar captura del footer de la Landing Page -->
+
+<!-- Insertar captura de los términos del servicio -->
+
+<!-- Insertar captura de la política de privacidad -->
+
+##### Web Application
+
+Durante esta iteración, se incorporaron nuevas funcionalidades y mejoras orientadas a facilitar la gestión de seguros, mejorar la interacción con los usuarios y mantener una comunicación consistente con los Web Services.
+
+**Insurance Product Catalog**
+
+El catálogo de seguros permite consultar los productos disponibles para los segmentos de seguros vehiculares y de vida. La información se presenta de manera organizada, facilitando la identificación de las características de cada producto y la selección de alternativas según las necesidades del usuario.
+
+<!-- Insertar captura del catálogo de seguros vehiculares -->
+
+<!-- Insertar captura del catálogo de seguros de vida -->
+
+**Insurance Product Comparison**
+
+El comparador permite seleccionar hasta tres productos de seguros y visualizar sus características de manera simultánea. Esta funcionalidad facilita el análisis de las alternativas disponibles y proporciona información para que los usuarios puedan tomar decisiones más informadas.
+
+<!-- Insertar captura de la selección de productos -->
+
+<!-- Insertar captura de la comparación de tres productos -->
+
+**Direct Insurance Application**
+
+Desde el catálogo de seguros, los usuarios pueden iniciar una solicitud asociada al producto seleccionado. Esta integración reduce los pasos necesarios para acceder al proceso de solicitud y mantiene la continuidad de la navegación dentro de la plataforma.
+
+<!-- Insertar captura del producto seleccionado -->
+
+<!-- Insertar captura del formulario de solicitud -->
+
+<!-- Insertar captura de la confirmación de la solicitud -->
+
+**Life Insurance Compensation Management**
+
+Se incorporó el módulo de indemnizaciones dentro de la sección de seguros de vida. Esta funcionalidad permite registrar solicitudes de indemnización y consultar la información correspondiente desde un mismo espacio.
+
+<!-- Insertar captura del módulo de indemnizaciones -->
+
+<!-- Insertar captura del formulario de registro de indemnización -->
+
+<!-- Insertar captura de la indemnización registrada -->
+
+**Compensation Status History**
+
+Los usuarios pueden consultar el historial de estados de sus solicitudes de indemnización, facilitando el seguimiento del proceso y proporcionando mayor visibilidad sobre su evolución.
+
+<!-- Insertar captura del detalle de una indemnización -->
+
+<!-- Insertar captura del historial de estados -->
+
+**Beneficiary Management Improvements**
+
+Se corrigió un problema de navegación en el módulo de beneficiarios relacionado con el procesamiento de fechas vacías. Esta mejora permite acceder a las vistas del módulo sin interrupciones y favorece una experiencia de navegación más consistente.
+
+<!-- Insertar captura de la lista de beneficiarios -->
+
+<!-- Insertar captura del detalle o formulario de beneficiarios -->
+
+**Insurance Application Lifecycle**
+
+Se integró un mecanismo de demostración que permite simular el procesamiento y la aprobación de solicitudes de seguros vehiculares y de vida.
+
+En este escenario, las solicitudes son aprobadas automáticamente después de un breve intervalo, generando la póliza correspondiente y una notificación para el usuario. Los resultados del proceso se almacenan en la base de datos, permitiendo demostrar la interacción entre los diferentes módulos de Livva Care.
+
+Este mecanismo corresponde a un escenario controlado de demostración y no representa la aprobación real de un seguro por parte de una compañía aseguradora.
+
+<!-- Insertar captura de una solicitud de seguro vehicular registrada -->
+
+<!-- Insertar captura de una solicitud de seguro de vida registrada -->
+
+<!-- Insertar captura de una solicitud aprobada en modo de demostración -->
+
+<!-- Insertar captura de la póliza generada -->
+
+<!-- Insertar captura de la notificación recibida -->
+
+**Internationalization**
+
+Se actualizaron y reorganizaron los recursos de internacionalización de la aplicación, manteniendo la disponibilidad de las interfaces en inglés y español latinoamericano.
+
+Asimismo, se incorporó el envío de la configuración regional seleccionada por el usuario hacia los Web Services, favoreciendo la consistencia entre el idioma de la interfaz y los mensajes proporcionados por la API.
+
+<!-- Insertar captura de la aplicación en inglés -->
+
+<!-- Insertar captura de la aplicación en español -->
+
+<!-- Insertar captura de un mensaje de la API internacionalizado -->
+
+**Inclusive Design and Accessibility**
+
+Se incorporaron mejoras de accesibilidad orientadas a facilitar la interacción con la plataforma mediante diferentes mecanismos de navegación.
+
+Entre estas mejoras se encuentran los enlaces para acceder directamente al contenido principal, los indicadores de foco visible durante la navegación por teclado y la internacionalización de las etiquetas ARIA.
+
+<!-- Insertar captura del enlace Skip to Content -->
+
+<!-- Insertar captura de la navegación mediante teclado -->
+
+<!-- Insertar captura de los indicadores de foco visible -->
+
+<!-- Insertar evidencia de los atributos ARIA -->
+
+**Legal Information Integration**
+
+Se incorporaron enlaces a los términos del servicio y las políticas de privacidad desde el footer de la Web Application. Estos enlaces permiten acceder a la información legal disponible en la Landing Page, manteniendo la continuidad entre ambos productos digitales.
+
+<!-- Insertar captura del footer de la Web Application -->
+
+<!-- Insertar captura de la navegación hacia los términos y privacidad -->
+
+##### Web Services
+
+Las actividades relacionadas con los Web Services estuvieron orientadas a mejorar la estabilidad de las operaciones, la consistencia de las respuestas y la integración con la Web Application.
+
+**Vehicle Registration Improvements**
+
+Se corrigió un problema en el procesamiento de valores decimales durante el registro de vehículos bajo configuraciones regionales en español.
+
+La corrección permite procesar adecuadamente estos valores, evitando errores internos durante la operación de registro y manteniendo un comportamiento consistente independientemente del idioma seleccionado.
+
+<!-- Insertar captura del formulario de registro de vehículos -->
+
+<!-- Insertar captura de la solicitud ejecutada mediante Scalar -->
+
+<!-- Insertar captura de la respuesta HTTP satisfactoria -->
+
+<!-- Insertar captura del vehículo registrado -->
+
+**RESTful API Internationalization**
+
+La comunicación entre la Web Application y los Web Services considera la configuración regional seleccionada por el usuario. Esto permite mantener la coherencia del idioma utilizado en los mensajes y respuestas internacionalizadas de la plataforma.
+
+<!-- Insertar captura de una solicitud HTTP con configuración regional en inglés -->
+
+<!-- Insertar captura de una solicitud HTTP con configuración regional en español -->
+
+**User Resource Authorization**
+
+<!-- Completar la descripción cuando se verifique la implementación de los controles de autorización por usuario. -->
+
+<!-- Insertar evidencia de acceso autorizado a recursos propios -->
+
+<!-- Insertar evidencia de acceso restringido a recursos de otros usuarios -->
+
+**External Service Integration**
+
+<!-- Completar la descripción después de verificar la integración final con Mercado Pago y los mecanismos de adaptación de servicios externos. -->
+
+<!-- Insertar evidencia de la integración con Mercado Pago -->
+
+<!-- Insertar evidencia de las operaciones de pago y suscripción -->
+
+##### Integration Evidence
+
+La integración entre la Web Application, los Web Services y la base de datos permite que las operaciones realizadas por los usuarios sean procesadas mediante los servicios REST y que la información correspondiente se mantenga disponible para consultas posteriores.
+
+**Frontend and Backend Integration**
+
+La Web Application utiliza los servicios REST de Livva Care para ejecutar las operaciones relacionadas con los módulos funcionales de la plataforma.
+
+<!-- Insertar captura de una operación realizada desde la Web Application -->
+
+<!-- Insertar captura de la petición HTTP en Network -->
+
+<!-- Insertar captura de la respuesta proporcionada por la API -->
+
+**Database Persistence**
+
+La persistencia de información mediante MySQL permite conservar los registros asociados a las operaciones realizadas desde la plataforma y mantener la disponibilidad de los datos para futuras consultas.
+
+<!-- Insertar captura de los registros almacenados en MySQL -->
+
+<!-- Insertar captura de la consulta de información desde la Web Application -->
+
+**Functional and Regression Testing**
+
+<!-- Completar la descripción con los resultados reales de las pruebas funcionales, de integración y regresión ejecutadas durante el Sprint 4. -->
+
+<!-- Insertar captura de los resultados de las pruebas del backend -->
+
+<!-- Insertar evidencias de las pruebas funcionales del frontend -->
+
+##### Product Navigation Video
+
+El video de navegación del Sprint 4 presenta las principales funcionalidades y mejoras incorporadas en Livva Care durante esta iteración.
+
+La demostración comprende la navegación por la plataforma, la consulta y comparación de seguros, el registro y procesamiento de solicitudes, la generación de pólizas, la gestión de indemnizaciones y las mejoras relacionadas con la experiencia de usuario.
+
+| Campo | Información |
+|---|---|
+| Video | Product Navigation — Sprint 4 |
+| Duración | HH:MM:SS |
+| Fecha | YYYY-MM-DD |
+| URL del video | [Product Navigation Video](URL) |
+
+<!-- Insertar captura representativa del video -->
+
+<!-- Incorporar enlace definitivo del video -->
+
 
 
 ## 5.3. Validation Interviews
