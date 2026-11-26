@@ -5216,6 +5216,190 @@ La siguiente tabla resume los entornos de alojamiento, las direcciones de acceso
 La configuración de los entornos de producción permite establecer una infraestructura distribuida para los componentes de Livva Care, manteniendo la separación de responsabilidades entre la presentación de la propuesta de valor, la interacción con los usuarios, el procesamiento de la lógica de negocio y la persistencia de información.
 
 
+#### 5.2.4.8. Team Collaboration Insights during Sprint
+
+Durante el Sprint 4, el equipo orientó sus actividades colaborativas hacia la ampliación de las funcionalidades de Livva Care, la resolución de problemas técnicos y la consolidación de los componentes que conforman la solución.
+
+La organización de responsabilidades se estableció mediante los aspectos definidos en la Leadership-and-Collaboration Matrix (LACX) y las tareas registradas en el Sprint Backlog. Esta distribución permite identificar las responsabilidades individuales y establecer mecanismos de colaboración entre los integrantes.
+
+GitHub constituye la principal herramienta para el seguimiento de las contribuciones, la gestión de ramas, la revisión de cambios y la integración del código fuente correspondiente a los productos digitales.
+
+##### Sprint Organization and Collaboration
+
+Las actividades del Sprint 4 se organizaron considerando los aspectos funcionales y técnicos relacionados con la comparación de seguros, la gestión de indemnizaciones, el ciclo de vida de las solicitudes y pólizas, la seguridad, internacionalización, accesibilidad, integración de servicios y publicación de los productos digitales.
+
+El seguimiento de las actividades mediante Trello facilita la identificación de las responsabilidades asignadas, el estado de las tareas y los avances correspondientes a los objetivos del sprint.
+
+<!-- Insertar captura del tablero de Trello -->
+
+<!-- Insertar evidencia de una sesión real de coordinación del equipo -->
+
+<!-- Insertar evidencia del seguimiento de las actividades del Sprint 4 -->
+
+##### Source Code Management and GitFlow
+
+El equipo utiliza GitFlow como estrategia para gestionar la evolución de los repositorios y mantener una separación entre los cambios en desarrollo y las versiones estables de los productos digitales.
+
+Las ramas feature permiten organizar las modificaciones correspondientes a funcionalidades específicas, mientras que la rama develop facilita la integración progresiva de los cambios. Las ramas release y hotfix permiten gestionar la publicación de nuevas versiones y la corrección de problemas identificados en los entornos de producción.
+
+Durante el Sprint 4, se integraron funcionalidades y correcciones relacionadas con la Web Application y los Web Services. Asimismo, se realizó la eliminación de ramas finalizadas, conservando los cambios previamente integrados y su correspondiente historial.
+
+<!-- Insertar captura de las ramas utilizadas durante el Sprint 4 -->
+
+<!-- Insertar captura del historial de integración de cambios -->
+
+<!-- Insertar evidencia de los Pull Requests correspondientes -->
+
+##### Landing Page Collaboration
+
+Las actividades colaborativas relacionadas con la Landing Page comprenden la actualización de los contenidos informativos, la integración de los recursos audiovisuales y la revisión de los mecanismos de navegación hacia la Web Application.
+
+Estas actividades buscan mantener la coherencia entre la información presentada a los visitantes y las funcionalidades disponibles en Livva Care.
+
+**Repository:** [livva-landing-page](https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-landing-page)
+
+**Contributors**
+
+<!-- Insertar captura de GitHub Insights - Contributors -->
+
+**Commit Activity**
+
+<!-- Insertar captura de la actividad de commits correspondiente al Sprint 4 -->
+
+**Pull Requests**
+
+<!-- Insertar captura de los Pull Requests relacionados con las modificaciones de la Landing Page -->
+
+<!-- Describir las contribuciones individuales identificadas en las evidencias -->
+
+##### Web Application Collaboration
+
+La colaboración en el desarrollo de la Web Application se enfocó en la implementación de nuevas funcionalidades y la mejora de los componentes existentes.
+
+Entre las actividades abordadas se encuentran el catálogo y comparador de seguros, la gestión de indemnizaciones, el procesamiento de solicitudes, las mejoras de internacionalización y accesibilidad, la gestión de sesiones y la corrección de problemas relacionados con la navegación.
+
+El trabajo sobre estos componentes requiere mantener la consistencia de las interfaces, los contratos de comunicación con los Web Services y las convenciones de desarrollo establecidas para el proyecto.
+
+**Repository:** [livva-web-application](https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-web-application)
+
+**Contributors**
+
+<!-- Insertar captura de GitHub Insights - Contributors -->
+
+**Commit Activity**
+
+<!-- Insertar captura de la actividad de commits correspondiente al Sprint 4 -->
+
+**Pull Requests**
+
+<!-- Insertar captura de los Pull Requests relacionados con las funcionalidades y correcciones implementadas -->
+
+**Development Contributions**
+
+<!-- Insertar evidencia de las contribuciones correspondientes al catálogo y comparador de seguros -->
+
+<!-- Insertar evidencia de las contribuciones correspondientes al módulo de indemnizaciones -->
+
+<!-- Insertar evidencia de las contribuciones correspondientes a accesibilidad e internacionalización -->
+
+<!-- Describir las contribuciones individuales identificadas en las evidencias -->
+
+##### Web Services Collaboration
+
+Las actividades colaborativas correspondientes a los Web Services se orientaron al mantenimiento de las operaciones REST, la corrección de problemas de procesamiento de información y la coordinación de los contratos utilizados por la Web Application.
+
+Durante el Sprint 4, se desarrolló una corrección relacionada con el registro de vehículos bajo configuraciones regionales en español. Esta modificación fue incorporada mediante un hotfix, acompañada de una prueba de regresión y la actualización del historial de cambios correspondiente.
+
+La revisión de los servicios y su integración con el frontend permite mantener la consistencia entre las operaciones del dominio y las funcionalidades disponibles para los usuarios.
+
+**Repository:** [livva-web-services](https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-web-services)
+
+**Contributors**
+
+<!-- Insertar captura de GitHub Insights - Contributors -->
+
+**Commit Activity**
+
+<!-- Insertar captura de la actividad de commits correspondiente al Sprint 4 -->
+
+**Pull Requests**
+
+<!-- Insertar captura de los Pull Requests relacionados con los Web Services -->
+
+**Hotfix Management**
+
+<!-- Insertar captura del Pull Request correspondiente al hotfix v1.0.4 -->
+
+<!-- Insertar captura de los commits relacionados con la corrección -->
+
+<!-- Insertar evidencia de la actualización del CHANGELOG -->
+
+<!-- Describir las contribuciones individuales identificadas en las evidencias -->
+
+##### Pull Requests and Code Integration
+
+Los Pull Requests permiten mantener un registro de los cambios realizados sobre los repositorios y facilitar su revisión antes de incorporarlos a las ramas de integración o publicación.
+
+Este mecanismo contribuye a mantener la trazabilidad de las funcionalidades implementadas, las correcciones realizadas y las actividades de integración correspondientes al Sprint 4.
+
+| Repository | Pull Request | Source Branch | Target Branch | Author | Reviewers | Status |
+|---|---|---|---|---|---|---|
+| livva-landing-page | | | | | | |
+| livva-web-application | | | | | | |
+| livva-web-services | | | | | | |
+
+<!-- Agregar los Pull Requests correspondientes al Sprint 4 -->
+
+<!-- Insertar capturas de los Pull Requests seleccionados -->
+
+<!-- Insertar evidencia de revisiones y comentarios, cuando corresponda -->
+
+<!-- Describir los principales resultados del proceso de integración -->
+
+##### Team Member Contributions
+
+La participación de los integrantes se encuentra relacionada con los aspectos y responsabilidades definidos para el Sprint 4.
+
+La siguiente tabla resume las principales contribuciones individuales realizadas sobre los productos digitales, considerando las actividades de implementación, corrección, integración, pruebas y despliegue.
+
+| Team Member | GitHub Username | Assigned Aspects | Main Contributions | Evidence |
+|---|---|---|---|---|
+| [Integrante 1] | | | | |
+| [Integrante 2] | | | | |
+| [Integrante 3] | | | | |
+| [Integrante 4] | | | | |
+
+<!-- Completar la información según las responsabilidades establecidas en la matriz LACX y las contribuciones registradas en GitHub -->
+
+##### Collaboration Metrics
+
+Las métricas de colaboración permiten identificar la participación de los integrantes en los repositorios de los productos digitales y complementar el análisis de las actividades desarrolladas durante el Sprint 4.
+
+| Team Member | Landing Page Commits | Web Application Commits | Web Services Commits | Total Commits |
+|---|---:|---:|---:|---:|
+| [Integrante 1] | | | | |
+| [Integrante 2] | | | | |
+| [Integrante 3] | | | | |
+| [Integrante 4] | | | | |
+| **Total** | | | | |
+
+<!-- Completar las métricas utilizando únicamente los commits correspondientes al periodo del Sprint 4 -->
+
+<!-- Insertar capturas de las analíticas de colaboración -->
+
+La cantidad de commits constituye un indicador complementario de participación y debe interpretarse junto con el alcance de las actividades realizadas, las revisiones de código, las pruebas y las responsabilidades asumidas por cada integrante.
+
+##### Sprint 4 Collaboration Summary
+
+El trabajo colaborativo durante el Sprint 4 se orientó a la consolidación de los componentes de Livva Care y a la integración de las mejoras funcionales y técnicas desarrolladas a lo largo del proyecto.
+
+La distribución de responsabilidades mediante la matriz LACX, el seguimiento de actividades mediante Trello y la gestión del código fuente mediante GitHub proporcionan mecanismos para mantener la organización, la comunicación y la trazabilidad del trabajo realizado.
+
+La colaboración entre los integrantes permite coordinar las modificaciones de los diferentes componentes, abordar los problemas identificados durante la implementación y mantener un enfoque común hacia los objetivos establecidos para el sprint.
+
+<!-- Complementar con los resultados reales de colaboración y cumplimiento de objetivos al finalizar el Sprint 4 -->
+
+
 
 ## 5.3. Validation Interviews
 
