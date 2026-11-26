@@ -4465,6 +4465,499 @@ La demostración comprende la navegación por la plataforma, la consulta y compa
 
 
 
+
+#### 5.2.4.6. Services Documentation Evidence for Sprint Review
+
+Durante el Sprint 4, las actividades relacionadas con los Web Services se enfocaron en consolidar la integración de los servicios REST con las funcionalidades de Livva Care, mejorar la consistencia de las operaciones y corregir problemas identificados durante la ejecución de la plataforma.
+
+La documentación de los servicios se mantiene mediante OpenAPI y Scalar, proporcionando información sobre los endpoints disponibles, los métodos HTTP, los parámetros de entrada, las estructuras de respuesta y los códigos de estado correspondientes.
+
+En esta sección se presentan los servicios relacionados con las funcionalidades y mejoras abordadas durante el Sprint 4, junto con sus respectivas evidencias de documentación y ejecución.
+
+##### Web Services Documentation
+
+Los Web Services de Livva Care se encuentran desarrollados mediante ASP.NET Core, utilizando Entity Framework Core para la persistencia de información en MySQL. La documentación interactiva permite consultar y ejecutar las operaciones disponibles, facilitando la integración con la Web Application.
+
+| Field | Information |
+|---|---|
+| Repository | [livva-web-services](https://github.com/upc-pre-202620-1asi0730-8168-livva-care/livva-web-services) |
+| API Base URL | https://livva-web-services-production.up.railway.app/api/v1 |
+| API Documentation | [Scalar](URL) |
+| OpenAPI Specification | [OpenAPI](URL) |
+| Hosting Platform | Railway |
+| Database Management System | MySQL |
+
+**Figura: Documentación de los Web Services mediante Scalar.**
+
+<!-- Insertar captura de la página principal de Scalar -->
+
+##### RESTful API Endpoints
+
+Los servicios REST considerados durante esta iteración se encuentran relacionados con la consulta de productos de seguros, la gestión de solicitudes, indemnizaciones, pólizas, beneficiarios, notificaciones y vehículos.
+
+La siguiente tabla presenta las operaciones asociadas a las funcionalidades trabajadas durante el Sprint 4.
+
+| Bounded Context | HTTP Method | Endpoint | Description | Documentation URL |
+|---|---|---|---|---|
+| [Bounded Context] | GET | /api/v1/insurance-products | Consultar los productos de seguros disponibles. | [Scalar](URL) |
+| [Bounded Context] | POST | /api/v1/vehicle-insurance-applications | Registrar una solicitud de seguro vehicular. | [Scalar](URL) |
+| [Bounded Context] | POST | /api/v1/life-insurance-applications | Registrar una solicitud de seguro de vida. | [Scalar](URL) |
+| [Bounded Context] | [HTTP Method] | [Endpoint] | Registrar una solicitud de indemnización. | [Scalar](URL) |
+| [Bounded Context] | [HTTP Method] | [Endpoint] | Consultar las solicitudes de indemnización. | [Scalar](URL) |
+| [Bounded Context] | [HTTP Method] | [Endpoint] | Consultar el historial de estados de una indemnización. | [Scalar](URL) |
+| [Bounded Context] | [HTTP Method] | [Endpoint] | Actualizar el estado de una solicitud de seguro. | [Scalar](URL) |
+| [Bounded Context] | GET | /api/v1/policies | Consultar las pólizas registradas. | [Scalar](URL) |
+| [Bounded Context] | [HTTP Method] | [Endpoint] | Registrar la póliza asociada a una solicitud aprobada. | [Scalar](URL) |
+| [Bounded Context] | GET | /api/v1/beneficiaries | Consultar la información de los beneficiarios. | [Scalar](URL) |
+| [Bounded Context] | GET | /api/v1/notifications | Consultar las notificaciones disponibles. | [Scalar](URL) |
+| [Bounded Context] | POST | /api/v1/vehicles | Registrar un vehículo. | [Scalar](URL) |
+
+<!-- Verificar los métodos HTTP, las rutas exactas y los nombres de los bounded contexts con la documentación de Scalar. -->
+
+##### Insurance Product Catalog
+
+La consulta de productos de seguros proporciona la información utilizada por el catálogo de Livva Care. Este servicio permite recuperar los productos disponibles y sus características, proporcionando los datos necesarios para su presentación y comparación dentro de la Web Application.
+
+La comparación de productos utiliza la información proporcionada por los Web Services, facilitando la selección de alternativas según las necesidades de los usuarios.
+
+| Field | Information |
+|---|---|
+| HTTP Method | GET |
+| Endpoint | /api/v1/insurance-products |
+| Parameters | [Completar según Scalar] |
+| Response Status Code | [Código HTTP obtenido] |
+| Documentation URL | [Scalar](URL) |
+
+**Request Example**
+
+<!-- Insertar ejemplo real de la solicitud HTTP -->
+
+**Response Example**
+
+<!-- Insertar respuesta JSON obtenida -->
+
+**Figura: Documentación del endpoint de consulta de productos de seguros.**
+
+<!-- Insertar captura del endpoint en Scalar -->
+
+**Figura: Ejecución de la consulta de productos de seguros.**
+
+<!-- Insertar captura de la respuesta HTTP -->
+
+##### Vehicle Insurance Applications
+
+Los servicios relacionados con las solicitudes de seguros vehiculares permiten registrar la información necesaria para iniciar el proceso de solicitud de un producto de seguro.
+
+Su integración con la Web Application facilita la creación de solicitudes desde los formularios correspondientes y desde el catálogo de productos, manteniendo la continuidad del proceso de gestión de seguros.
+
+| Field | Information |
+|---|---|
+| HTTP Method | POST |
+| Endpoint | /api/v1/vehicle-insurance-applications |
+| Parameters | [Completar según Scalar] |
+| Request Body | [Campos definidos en el contrato de la API] |
+| Response Status Code | [Código HTTP obtenido] |
+| Documentation URL | [Scalar](URL) |
+
+**Request Example**
+
+<!-- Insertar JSON utilizado para registrar una solicitud -->
+
+**Response Example**
+
+<!-- Insertar respuesta JSON obtenida -->
+
+**Figura: Documentación del endpoint de registro de solicitudes vehiculares.**
+
+<!-- Insertar captura de Scalar -->
+
+**Figura: Ejecución del registro de una solicitud vehicular.**
+
+<!-- Insertar captura de la solicitud y respuesta HTTP -->
+
+##### Life Insurance Applications
+
+Los servicios correspondientes a las solicitudes de seguros de vida proporcionan soporte al registro de las operaciones realizadas desde la Web Application.
+
+Estos servicios permiten mantener la información asociada a las solicitudes y facilitan su integración con las funcionalidades de gestión de pólizas y beneficiarios.
+
+| Field | Information |
+|---|---|
+| HTTP Method | POST |
+| Endpoint | /api/v1/life-insurance-applications |
+| Parameters | [Completar según Scalar] |
+| Request Body | [Campos definidos en el contrato de la API] |
+| Response Status Code | [Código HTTP obtenido] |
+| Documentation URL | [Scalar](URL) |
+
+**Request Example**
+
+<!-- Insertar JSON utilizado para registrar una solicitud -->
+
+**Response Example**
+
+<!-- Insertar respuesta JSON obtenida -->
+
+**Figura: Documentación del endpoint de solicitudes de seguros de vida.**
+
+<!-- Insertar captura de Scalar -->
+
+**Figura: Ejecución del registro de una solicitud de seguro de vida.**
+
+<!-- Insertar captura de la solicitud y respuesta HTTP -->
+
+##### Life Insurance Compensation Management
+
+Los servicios asociados a la gestión de indemnizaciones proporcionan soporte a las operaciones realizadas desde el módulo de seguros de vida.
+
+La integración de estos servicios permite gestionar la información correspondiente a las solicitudes de indemnización y facilitar su consulta y seguimiento desde la Web Application.
+
+###### Compensation Request Registration
+
+Esta operación permite registrar la información correspondiente a una solicitud de indemnización.
+
+| Field | Information |
+|---|---|
+| HTTP Method | [Completar según Scalar] |
+| Endpoint | [Endpoint de registro] |
+| Parameters | [Parámetros] |
+| Request Body | [Campos requeridos] |
+| Response Status Code | [Código HTTP obtenido] |
+| Documentation URL | [Scalar](URL) |
+
+**Request Example**
+
+<!-- Insertar JSON utilizado para registrar una indemnización -->
+
+**Response Example**
+
+<!-- Insertar respuesta JSON obtenida -->
+
+**Figura: Documentación del servicio de registro de indemnizaciones.**
+
+<!-- Insertar captura del endpoint en Scalar -->
+
+**Figura: Ejecución del registro de una indemnización.**
+
+<!-- Insertar captura de la solicitud y respuesta HTTP -->
+
+###### Compensation Requests Retrieval
+
+Esta operación permite recuperar la información correspondiente a las solicitudes de indemnización, proporcionando los datos necesarios para su visualización dentro de la Web Application.
+
+| Field | Information |
+|---|---|
+| HTTP Method | [Completar según Scalar] |
+| Endpoint | [Endpoint de consulta] |
+| Parameters | [Parámetros] |
+| Response Status Code | [Código HTTP obtenido] |
+| Documentation URL | [Scalar](URL) |
+
+**Response Example**
+
+<!-- Insertar respuesta JSON obtenida -->
+
+**Figura: Documentación del servicio de consulta de indemnizaciones.**
+
+<!-- Insertar captura de Scalar -->
+
+**Figura: Resultado de la consulta de indemnizaciones.**
+
+<!-- Insertar captura de la respuesta HTTP -->
+
+###### Compensation Status History
+
+La consulta del historial de estados proporciona información sobre la evolución de una solicitud de indemnización, permitiendo presentar su seguimiento dentro de la plataforma.
+
+| Field | Information |
+|---|---|
+| HTTP Method | [Completar según Scalar] |
+| Endpoint | [Endpoint del historial de estados] |
+| Parameters | [Parámetros] |
+| Response Status Code | [Código HTTP obtenido] |
+| Documentation URL | [Scalar](URL) |
+
+**Response Example**
+
+<!-- Insertar respuesta JSON obtenida -->
+
+**Figura: Documentación del servicio de consulta del historial de estados.**
+
+<!-- Insertar captura de Scalar -->
+
+**Figura: Resultado de la consulta del historial de estados.**
+
+<!-- Insertar captura de la respuesta HTTP -->
+
+##### Insurance Application and Policy Lifecycle
+
+La integración de los servicios relacionados con las solicitudes, pólizas y notificaciones permite representar las distintas etapas del proceso de gestión de seguros.
+
+Para escenarios de demostración, se incorporó un mecanismo de aprobación automática que permite visualizar la transición de una solicitud hacia la generación de una póliza y su correspondiente notificación. Este mecanismo no representa una aprobación efectiva por parte de una compañía aseguradora.
+
+A continuación, se presentan las operaciones REST que intervienen en dicho flujo.
+
+###### Insurance Application Status Management
+
+| Field | Information |
+|---|---|
+| HTTP Method | [Completar según Scalar] |
+| Endpoint | [Endpoint de actualización de estado] |
+| Parameters | [Parámetros] |
+| Request Body | [Campos requeridos] |
+| Response Status Code | [Código HTTP obtenido] |
+| Documentation URL | [Scalar](URL) |
+
+**Request Example**
+
+<!-- Insertar solicitud de actualización de estado -->
+
+**Response Example**
+
+<!-- Insertar respuesta JSON obtenida -->
+
+**Figura: Ejecución de la actualización del estado de una solicitud.**
+
+<!-- Insertar captura de la operación en Scalar -->
+
+###### Policy Management
+
+Los servicios de gestión de pólizas proporcionan soporte al registro y consulta de la información asociada a los seguros gestionados dentro de Livva Care.
+
+| Field | Information |
+|---|---|
+| HTTP Method | GET |
+| Endpoint | /api/v1/policies |
+| Parameters | [Completar según Scalar] |
+| Response Status Code | [Código HTTP obtenido] |
+| Documentation URL | [Scalar](URL) |
+
+**Response Example**
+
+<!-- Insertar respuesta JSON de la consulta de pólizas -->
+
+**Figura: Documentación del servicio de consulta de pólizas.**
+
+<!-- Insertar captura de Scalar -->
+
+**Figura: Consulta de la póliza asociada a una solicitud aprobada en modo de demostración.**
+
+<!-- Insertar captura de la respuesta HTTP -->
+
+<!-- Incorporar adicionalmente la documentación de la operación de registro de pólizas si existe como endpoint independiente. -->
+
+###### Notification Management
+
+Los servicios de notificaciones permiten recuperar información relacionada con los eventos y operaciones gestionados dentro de la plataforma.
+
+Su integración con la Web Application facilita la comunicación de novedades relacionadas con las solicitudes y pólizas de los usuarios.
+
+| Field | Information |
+|---|---|
+| HTTP Method | GET |
+| Endpoint | /api/v1/notifications |
+| Parameters | [Completar según Scalar] |
+| Response Status Code | [Código HTTP obtenido] |
+| Documentation URL | [Scalar](URL) |
+
+**Response Example**
+
+<!-- Insertar respuesta JSON obtenida -->
+
+**Figura: Documentación del servicio de consulta de notificaciones.**
+
+<!-- Insertar captura de Scalar -->
+
+**Figura: Consulta de la notificación asociada al procesamiento de una solicitud.**
+
+<!-- Insertar captura de la respuesta HTTP -->
+
+##### Beneficiary Management
+
+Los servicios de gestión de beneficiarios proporcionan la información utilizada por las funcionalidades correspondientes a los seguros de vida.
+
+Durante el Sprint 4, se corrigieron problemas relacionados con el procesamiento de fechas vacías en la Web Application, por lo que resulta relevante verificar la consistencia de la información proporcionada por estos servicios.
+
+| Field | Information |
+|---|---|
+| HTTP Method | GET |
+| Endpoint | /api/v1/beneficiaries |
+| Parameters | [Completar según Scalar] |
+| Response Status Code | [Código HTTP obtenido] |
+| Documentation URL | [Scalar](URL) |
+
+**Response Example**
+
+<!-- Insertar respuesta JSON obtenida -->
+
+**Figura: Documentación del servicio de consulta de beneficiarios.**
+
+<!-- Insertar captura de Scalar -->
+
+**Figura: Resultado de la consulta de beneficiarios.**
+
+<!-- Insertar captura de la respuesta HTTP -->
+
+##### Vehicle Registration Improvements
+
+Durante el Sprint 4, se corrigió un problema relacionado con el procesamiento de valores decimales en el registro de vehículos cuando los Web Services operaban bajo configuraciones regionales en español.
+
+La corrección fue incorporada mediante la versión v1.0.4 de los Web Services, buscando mantener un comportamiento consistente en el procesamiento de información independientemente de la configuración regional utilizada.
+
+| Field | Information |
+|---|---|
+| HTTP Method | POST |
+| Endpoint | /api/v1/vehicles |
+| Parameters | [Completar según Scalar] |
+| Request Body | [Campos requeridos] |
+| Response Status Code | [Código HTTP obtenido] |
+| Release Version | v1.0.4 |
+| Documentation URL | [Scalar](URL) |
+
+**Request Example**
+
+<!-- Insertar JSON utilizado para registrar un vehículo -->
+
+**Response Example**
+
+<!-- Insertar respuesta JSON obtenida -->
+
+**Figura: Documentación del servicio de registro de vehículos.**
+
+<!-- Insertar captura de Scalar -->
+
+**Figura: Ejecución del registro de vehículos con configuración regional en español.**
+
+<!-- Insertar captura de la solicitud y respuesta HTTP -->
+
+**Figura: Prueba de regresión correspondiente al registro de vehículos.**
+
+<!-- Insertar captura del resultado de la prueba automatizada -->
+
+##### RESTful API Internationalization
+
+La comunicación entre la Web Application y los Web Services considera la configuración regional seleccionada por el usuario, con el propósito de mantener la consistencia entre los mensajes de la interfaz y las respuestas internacionalizadas de los servicios.
+
+Para comprobar este comportamiento, se consideran solicitudes equivalentes ejecutadas bajo configuraciones regionales en inglés y español latinoamericano.
+
+| Language | Locale | HTTP Header | Response |
+|---|---|---|---|
+| English | en-US | [Verificar cabecera y valor utilizados] | [Respuesta obtenida] |
+| Latin American Spanish | es-419 | [Verificar cabecera y valor utilizados] | [Respuesta obtenida] |
+
+**Figura: Ejecución de una solicitud con configuración regional en inglés.**
+
+<!-- Insertar captura de la solicitud y respuesta -->
+
+**Figura: Ejecución de una solicitud con configuración regional en español.**
+
+<!-- Insertar captura de la solicitud y respuesta -->
+
+##### Authentication and Resource Authorization
+
+Los Web Services utilizan mecanismos de autenticación para controlar el acceso a las operaciones protegidas de Livva Care.
+
+La validación de estos mecanismos considera tanto la autenticidad de las solicitudes como las restricciones de acceso a los recursos asociados a cada usuario.
+
+###### Authentication and Session Validation
+
+La interacción con los servicios protegidos requiere una sesión de usuario válida. La Web Application gestiona la expiración de las sesiones y presenta los mensajes correspondientes cuando se produce un error de autenticación.
+
+| Scenario | HTTP Status Code | Expected Result |
+|---|---|---|
+| Valid authentication token | [Según la operación] | Acceso a la operación autorizada. |
+| Missing authentication token | 401 Unauthorized | Rechazo de la solicitud protegida. |
+| Expired authentication token | 401 Unauthorized | Rechazo de la solicitud por autenticación inválida. |
+
+**Figura: Ejecución de una solicitud con autenticación válida.**
+
+<!-- Insertar captura de Scalar sin exponer el token -->
+
+**Figura: Ejecución de una solicitud con autenticación inválida.**
+
+<!-- Insertar captura de la respuesta HTTP -->
+
+###### User Resource Authorization
+
+<!-- Completar esta sección después de implementar y verificar los controles de propiedad de recursos por usuario. -->
+
+| Scenario | HTTP Status Code | Expected Result |
+|---|---|---|
+| Access to owned resource | [Según la operación] | Acceso permitido al recurso propio. |
+| Access to another user's resource | [403 o 404, según la implementación] | Acceso restringido al recurso. |
+
+**Figura: Consulta autorizada de un recurso propio.**
+
+<!-- Insertar captura de la ejecución -->
+
+**Figura: Restricción de acceso a un recurso perteneciente a otro usuario.**
+
+<!-- Insertar captura de la respuesta HTTP -->
+
+##### External Service Integration
+
+Livva Care contempla la integración con Mercado Pago para dar soporte a las operaciones relacionadas con los pagos y las suscripciones.
+
+La documentación de esta integración debe reflejar las operaciones internas utilizadas por la plataforma, manteniendo una separación entre los contratos propios del dominio y los proporcionados por el servicio externo.
+
+<!-- Completar la descripción de acuerdo con la implementación final de Mercado Pago y los mecanismos de adaptación existentes. -->
+
+| HTTP Method | Endpoint | Description | Documentation URL |
+|---|---|---|---|
+| [HTTP Method] | [Endpoint] | Gestión de órdenes de pago. | [Scalar](URL) |
+| [HTTP Method] | [Endpoint] | Consulta del estado de las operaciones de pago. | [Scalar](URL) |
+| [HTTP Method] | [Endpoint] | Gestión del estado de las suscripciones. | [Scalar](URL) |
+
+**Figura: Documentación de los servicios de pago y suscripción.**
+
+<!-- Insertar captura de Scalar -->
+
+**Figura: Evidencia de ejecución de una operación de pago.**
+
+<!-- Insertar captura de una operación realizada en el entorno de pruebas -->
+
+##### API Error Handling
+
+El tratamiento de errores de los Web Services permite comunicar los resultados de las operaciones mediante códigos de estado HTTP y mensajes descriptivos.
+
+Esta información facilita la identificación de solicitudes inválidas, problemas de autenticación y otras condiciones que impiden completar una operación. La Web Application utiliza estas respuestas para presentar mensajes comprensibles a los usuarios.
+
+| HTTP Status Code | Description |
+|---|---|
+| 200 OK | Operación ejecutada satisfactoriamente. |
+| 201 Created | Recurso registrado satisfactoriamente. |
+| 400 Bad Request | Solicitud inválida o incumplimiento de validaciones. |
+| 401 Unauthorized | Autenticación ausente, inválida o expirada. |
+| 403 Forbidden | Operación no permitida para el usuario autenticado. |
+| 404 Not Found | Recurso no encontrado. |
+| 409 Conflict | Conflicto con el estado actual de un recurso. |
+| 500 Internal Server Error | Error interno inesperado del servicio. |
+
+<!-- Conservar únicamente los códigos aplicables a las operaciones documentadas y verificar sus respuestas reales. -->
+
+**Figura: Respuesta correspondiente a una solicitud inválida.**
+
+<!-- Insertar captura de una respuesta de validación -->
+
+**Figura: Respuesta correspondiente a un recurso no encontrado.**
+
+<!-- Insertar captura de la respuesta HTTP -->
+
+##### Services Documentation Commits
+
+A continuación, se presentan los commits relacionados con la implementación, corrección y documentación de los Web Services durante el Sprint 4.
+
+| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
+|---|---|---|---|---|---|
+| livva-web-services | | | | | |
+
+<!-- Incorporar los commits reales relacionados con los servicios y su documentación. -->
+
+La documentación de los Web Services proporciona una referencia para la consulta, ejecución e integración de las operaciones REST de Livva Care, facilitando la comprensión de sus contratos y el mantenimiento de las funcionalidades asociadas a los productos digitales.
+
+
+
+
 ## 5.3. Validation Interviews
 
 ### 5.3.1. Diseño de Entrevistas
