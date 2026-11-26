@@ -5837,6 +5837,36 @@ En cuanto a los seguros vehiculares, indicó que pudo localizar fácilmente las 
 
 Como principales recomendaciones, propuso incorporar notificaciones sobre vencimientos y renovaciones, además de ofrecer una comparación más detallada de coberturas y exclusiones. En general, manifestó disposición a utilizar Livva Care por la facilidad de consulta, la organización de la información y las posibilidades de seguimiento que ofrece.
 
+
+##### Entrevista de Validación N.º 3
+
+| Campo | Información |
+|---|---|
+| Nombre y apellidos | |
+| Edad | |
+| Distrito | |
+| Segmento objetivo | Propietarios de vehículos |
+| Fecha de entrevista | |
+| Inicio en el video | |
+| Duración | |
+| URL del video | |
+
+**Figura: Entrevista de validación N.º 3.**
+
+<!-- Insertar captura de la entrevista -->
+
+**Resumen de la entrevista:**
+
+<!-- Borrador basado en respuestas de ejemplo. Validar con la entrevista real antes de publicar. -->
+
+En el escenario planteado, el participante destacó el diseño moderno y la organización de las secciones de Livva Care, considerando que la navegación resulta sencilla y permite identificar rápidamente las funcionalidades relacionadas con los seguros vehiculares.
+
+Respecto a la gestión de seguros, valoró positivamente la posibilidad de comparar diferentes productos sin necesidad de consultar individualmente las páginas de las aseguradoras. Asimismo, consideró comprensible el formulario de registro de vehículos y útil la centralización de las pólizas y el seguimiento de siniestros dentro de una misma plataforma.
+
+Como oportunidades de mejora, sugirió incorporar recordatorios sobre el vencimiento de las pólizas y complementar la información de las coberturas mediante ejemplos de situaciones concretas. En general, expresó interés en utilizar Livva Care para facilitar la gestión de sus seguros vehiculares.
+
+
+
 #### Segmento 2: Personas interesadas en seguros de vida
 
 Este segmento comprende personas interesadas en conocer, solicitar o gestionar seguros de vida, considerando aspectos relacionados con la protección financiera personal y familiar.
@@ -5844,7 +5874,7 @@ Este segmento comprende personas interesadas en conocer, solicitar o gestionar s
 Las entrevistas estarán enfocadas en evaluar la comprensión de los productos disponibles, la facilidad del proceso de solicitud, la gestión de beneficiarios y la claridad de la información presentada por Livva.
 
 
-##### Entrevista de Validación N.º 3
+##### Entrevista de Validación N.º 4
 
 | Campo | Información |
 |---|---|
@@ -5855,7 +5885,7 @@ Las entrevistas estarán enfocadas en evaluar la comprensión de los productos d
 | Duración | 00:03:43 |
 | URL del video | https://www.youtube.com/watch?v=6Dhgr-UBAc0 |
 
-**Figura: Entrevista de validación N.º 1.**
+**Figura: Entrevista de validación N.º 4.**
 
 **Resumen de la entrevista:**
 
@@ -5864,6 +5894,64 @@ Durante la entrevista, el participante manifestó una impresión positiva de Liv
 Respecto a los seguros de vida, indicó que pudo identificar las alternativas disponibles y comprender el proceso de solicitud sin mayores dificultades. Asimismo, valoró positivamente la posibilidad de registrar y administrar beneficiarios, ya que facilita mantener organizada y actualizada su información.
 
 Como oportunidades de mejora, recomendó incorporar una funcionalidad para comparar seguros y ampliar la información presentada sobre los beneficios de cada alternativa. También señaló la importancia de mostrar claramente los precios, las coberturas y las condiciones antes de solicitar un seguro de vida. En general, expresó disposición a utilizar Livva Care por la facilidad de acceso a la información y el ahorro de tiempo que podría ofrecer.
+
+
+
+##### Entrevista de Validación N.º 5
+
+| Campo | Información |
+|---|---|
+| Nombre y apellidos | |
+| Edad | |
+| Distrito | |
+| Segmento objetivo | Personas interesadas en seguros de vida |
+| Fecha de entrevista | |
+| Inicio en el video | |
+| Duración | |
+| URL del video | |
+
+**Figura: Entrevista de validación N.º 5**
+
+<!-- Insertar captura de la entrevista -->
+
+**Resumen de la entrevista:**
+
+<!-- Borrador basado en respuestas de ejemplo. Validar con la entrevista real antes de publicar. -->
+
+En el escenario planteado, el participante manifestó una percepción favorable de Livva Care, destacando la facilidad para comprender su propósito y encontrar las opciones relacionadas con los seguros de vida. Consideró que la organización de los formularios y los elementos de navegación facilita la interacción con la plataforma.
+
+Respecto a los productos de seguros de vida, señaló que el proceso de consulta, comparación y solicitud resulta sencillo de comprender. También valoró positivamente la posibilidad de registrar y actualizar la información de los beneficiarios desde una misma plataforma.
+
+Como oportunidades de mejora, recomendó utilizar términos más sencillos para explicar las características de los seguros, así como presentar información detallada sobre los costos mensuales, las coberturas y las restricciones de cada producto. En general, expresó disposición a utilizar Livva Care por la facilidad que ofrece para consultar diferentes alternativas antes de tomar una decisión.
+
+
+##### Entrevista de Validación N.º 6
+
+| Campo | Información |
+|---|---|
+| Nombre y apellidos | |
+| Edad | |
+| Distrito | |
+| Segmento objetivo | Personas interesadas en seguros de vida |
+| Fecha de entrevista | |
+| Inicio en el video | |
+| Duración | |
+| URL del video | |
+
+**Figura: Entrevista de validación N.º 6**
+
+<!-- Insertar captura de la entrevista -->
+
+**Resumen de la entrevista:**
+
+<!-- Borrador basado en respuestas de ejemplo. Validar con la entrevista real antes de publicar. -->
+
+En el escenario planteado, el participante consideró que Livva Care ofrece una experiencia práctica para consultar y gestionar seguros de vida. Destacó la organización de las funcionalidades y la claridad de la información presentada, aunque indicó que inicialmente necesitó explorar el menú para familiarizarse con las diferentes opciones.
+
+Respecto a las funcionalidades de la plataforma, valoró la posibilidad de administrar beneficiarios, consultar pólizas y realizar el seguimiento de las solicitudes de indemnización. Consideró que estas herramientas permiten mantener organizada la información y conocer el estado de los trámites realizados.
+
+Como oportunidades de mejora, señaló la necesidad de incorporar instrucciones adicionales en los formularios de indemnización y una sección de preguntas frecuentes que permita resolver dudas sobre coberturas, requisitos y documentación. En general, consideró que Livva Care podría facilitar la gestión de seguros de vida, especialmente para personas con poca experiencia en su contratación.
+
 
 
 ### 5.3.3. Evaluaciones según heurísticas
