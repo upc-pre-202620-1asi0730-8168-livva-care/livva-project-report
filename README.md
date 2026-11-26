@@ -4158,6 +4158,30 @@ La distribución de responsabilidades y la utilización de herramientas de contr
 Las evidencias de colaboración recopiladas permiten relacionar las actividades desarrolladas con los objetivos establecidos para el Sprint 3 y con el Student Outcome ABET 5, enfocado en liderazgo compartido, trabajo colaborativo, planificación y cumplimiento de objetivos.
 
 
+
+
+### 5.2.4. Sprint 4
+
+El Sprint 4 corresponde a la etapa final del desarrollo de Livva Care, enfocada en consolidar las funcionalidades implementadas durante los sprints anteriores y garantizar el correcto funcionamiento de los productos digitales que conforman la solución. Durante este sprint, el equipo priorizó la integración entre la Landing Page, la Web Application y los Web Services, la corrección de problemas identificados durante las entrevistas de validación y la mejora de la experiencia de usuario.
+
+#### 5.2.4.1. Sprint Planning 4
+
+| Sprint # | Sprint 4 |
+|---|---|
+| **Sprint Planning Background** | |
+| Date | [2026-11-25] |
+| Time | [8:00 PM] |
+| Location | Meet Via Discord |
+| Prepared By | Livva Care Team |
+| Attendees | Paredes Chavez, Carlos Augusto / Torres Diaz, Rolando Andre / Cespedes Lezcano, Carlos Gabriel / Rivera Aguilar, Scarlet Josefina |
+| Sprint 3 Review Summary | Durante el Sprint 3, el equipo avanzó en la implementación de los Web Services y su integración con la Web Application. Se desarrollaron funcionalidades relacionadas con la gestión de seguros, se documentaron los endpoints mediante OpenAPI y Scalar, y se realizaron entrevistas de validación que permitieron identificar oportunidades de mejora en la experiencia de usuario. |
+| Sprint 3 Retrospective Summary | El equipo identificó como principales fortalezas la colaboración mediante GitHub, el desarrollo progresivo de las funcionalidades y la integración de los componentes de la solución. Como oportunidades de mejora, se estableció reforzar la coordinación entre frontend y backend, realizar pruebas continuas y mejorar la distribución de responsabilidades para asegurar el cumplimiento de los objetivos del siguiente sprint. |
+| **Sprint Goal & User Stories** | |
+| Sprint 4 Goal | Consolidar la gestión de seguros vehiculares y de vida mediante la integración de los servicios REST, permitiendo a los usuarios gestionar sus solicitudes, pólizas, beneficiarios y siniestros desde una plataforma desplegada y funcional. |
+| Sprint 4 Velocity | [Pendiente] Story Points.|
+| Sum of Story Points | [Pendiente] Story Points.|
+
+
 ## 5.3. Validation Interviews
 
 ### 5.3.1. Diseño de Entrevistas
