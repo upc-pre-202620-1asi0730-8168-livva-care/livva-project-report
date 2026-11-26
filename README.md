@@ -4192,6 +4192,51 @@ Durante el Sprint 4, el equipo distribuyó sus responsabilidades considerando lo
 | Cespedes Lezcano, Carlos Gabriel | Leikop | C | L | L | C | C | C | L | C | C |
 | Rivera Aguilar, Scarlet Josefina | scarletriveraaguilar-spec | C | C | C | C | L | C | L | C | C |
 
+#### 5.2.4.3. Sprint Backlog 4
+
+El Sprint Backlog 4 comprende las actividades relacionadas con la ampliación y consolidación de las funcionalidades de Livva Care. Durante esta iteración, se priorizó la comparación de productos de seguros, la gestión de indemnizaciones, la integración de los servicios REST y las mejoras de seguridad, accesibilidad e internacionalización.
+Asimismo, se consideraron actividades de pruebas, actualización de la Landing Page y despliegue de los productos digitales, con el propósito de garantizar una experiencia consistente y funcional para los usuarios.
+
+**Sprint 4 Board**
+
+- **Tool:** Trello.
+- **Board URL:** <!-- URL del Trello-->
+
+**Figura: Tablero de actividades del Sprint 4.**
+
+<!-- Imagen del Trello -->
+
+| Sprint # | Sprint 4 |
+|---|---|
+
+| User Story ID | User Story Title | Task ID | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
+|---|---|---|---|---|---:|---|---|
+| US-35 | Comparar seguros | T4-01 | Insurance Product Catalog | Implementar un catálogo de productos de seguros vehiculares y de vida, mostrando precios, coberturas y características principales. | 4 | | Done |
+| US-35 | Comparar seguros | T4-02 | Insurance Product Comparison | Implementar la selección y comparación simultánea de hasta tres productos de seguros. | 5 | | Done |
+| US-35 | Comparar seguros | T4-03 | Direct Insurance Application | Integrar la generación de solicitudes de seguros directamente desde el catálogo de productos. | 3 | | Done |
+| — | Gestionar indemnizaciones | T4-04 | Compensation Management Interface | Implementar las vistas del módulo de indemnizaciones dentro de la sección de seguros de vida. | 4 | | Done |
+| — | Gestionar indemnizaciones | T4-05 | Compensation Request Registration | Implementar el formulario de registro de solicitudes de indemnización y su integración con los servicios REST. | 4 | | Done |
+| — | Consultar estado de indemnizaciones | T4-06 | Compensation Status History | Implementar la consulta del historial de estados de las solicitudes de indemnización. | 3 | | Done |
+| — | Gestionar beneficiarios | T4-07 | Beneficiary Navigation Fix | Corregir el error de navegación del módulo de beneficiarios asociado al procesamiento de fechas vacías. | 2 | | Done |
+| — | Gestionar solicitudes de seguros | T4-08 | Insurance Application Lifecycle | Integrar el procesamiento de solicitudes vehiculares y de vida con la generación de pólizas y notificaciones, utilizando un modo controlado de demostración. | 5 | | Done |
+| — | Gestionar sesión de usuario | T4-09 | Session Expiration Handling | Implementar el cierre de sesión y la redirección al inicio de sesión cuando expire la autenticación del usuario. | 2 | | Done |
+| — | Technical Story | T4-10 | User Resource Authorization | Implementar controles de autorización para restringir el acceso a los recursos pertenecientes a otros usuarios. | 5 | | Done |
+| — | Technical Story | T4-11 | API Error Handling | Mejorar el tratamiento de errores de los servicios REST y presentar mensajes descriptivos mediante notificaciones visuales. | 3 | | Done |
+| — | Technical Story | T4-12 | Vehicle Registration Hotfix | Corregir el procesamiento de valores decimales durante el registro de vehículos bajo configuraciones regionales en español. | 3 | | Done |
+| — | Technical Story | T4-13 | Anti-Corruption Layer Review | Revisar y consolidar la separación entre los modelos internos del dominio y los contratos de servicios externos mediante mecanismos de adaptación. | 4 | | Done |
+| — | Cambiar idioma de la plataforma | T4-14 | Application Internationalization | Actualizar las traducciones de las funcionalidades, normalizar los archivos de idiomas y transmitir la configuración regional a los servicios REST. | 3 | | Done |
+| — | Technical Story | T4-15 | Inclusive Design Improvements | Incorporar enlaces de navegación directa al contenido, indicadores de foco visible y atributos ARIA traducidos. | 3 | | Done |
+| — | Consultar términos y privacidad | T4-16 | Legal Information Integration | Incorporar enlaces a los términos de servicio y políticas de privacidad desde la Web Application y verificar su disponibilidad en la Landing Page. | 2 | | Done |
+| — | Technical Story | T4-17 | Payment Service Integration Validation | Verificar la integración con Mercado Pago y la consistencia de los estados de órdenes de pago y suscripciones. | 3 | | Done |
+| — | Conocer Livva Care | T4-18 | Landing Page Content Update | Actualizar los contenidos de la Landing Page e integrar los recursos audiovisuales correspondientes a la versión final del producto. | 3 | | Done |
+| — | Technical Story | T4-19 | Functional and Regression Testing | Ejecutar pruebas funcionales y de regresión sobre los principales módulos de la Web Application y los Web Services. | 5 | | Done |
+| — | Technical Story | T4-20 | RESTful API Documentation | Actualizar y verificar la documentación de los servicios REST mediante OpenAPI y Scalar, incluyendo ejemplos de solicitudes y respuestas. | 3 | | Done |
+| — | Technical Story | T4-21 | Production Environment Configuration | Consolidar la configuración de los entornos de producción, la comunicación entre servicios y las variables necesarias para el despliegue. | 3 | | Done |
+| — | Technical Story | T4-22 | Release and Deployment Management | Integrar los cambios mediante Pull Requests, generar las versiones correspondientes y desplegar los productos digitales en sus entornos de producción. | 4 | | Done |
+
+
+
+
 
 ## 5.3. Validation Interviews
 
